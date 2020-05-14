@@ -13,11 +13,15 @@
 * Wednesday, 05/13/2020
 * Thursday, 05/14/2020
 ** [[Changelog]]
-*** Make it impossible for the server to know anything about the user's github token  [[security]]
+*** [[https://excalidraw.com/][Excalidraw]] Integration. [[Draw]] [[Features]] 
+Excalidraw is a [[https://github.com/excalidraw/excalidraw][open sourcing]] virtual whiteboard for sketching hand-drawn like diagrams.
+Open https://logseq.com/draw and enjoy it!
+*** Make it impossible for the server to know anything about the user's github token  [[Security]]
 Now your personal github access token will be encrypted using a randomly generated key,
 then the encrypted token will be stored in localstorage and the random key will be sent to the server. Next time you refresh the browser, the server can return this random key and the encrypted token can be decrypted correctly!
 
 The cons is that you need to input your personal access token each time you need to login.
+*** A [[https://logseq.com/demo][live demo]] for guest users to try!
 * Friday, 05/15/2020
 * Saturday, 05/16/2020
 * Sunday, 05/17/2020
