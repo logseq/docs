@@ -14,7 +14,12 @@
 * Thursday, 05/14/2020
 ** [[Changelog]]
 *** Encrypted github personal access token [[security]]
-The server won't see any plain token from the browser request
+The server won't see any plain token from the browser request (inside cookie), 
+so now your token will be encrypted first before sending it to the server! 
+
+But why sending the *access token* to the server?
+We have two choices in the browser:
+1. Store the plain token inside local storage or indexeddb, but
 ## [[Changelog]]
 ***
 ***
