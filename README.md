@@ -1,2 +1,1 @@
-# docs
-logseq.com docs
+# Logseq.com docs
