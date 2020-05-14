@@ -12,6 +12,12 @@
 * Tuesday, 05/12/2020
 * Wednesday, 05/13/2020
 * Thursday, 05/14/2020
+** [[Changelog]]
+*** Encrypted github personal access token :security:
+The server won't see any plain token from the browser request
+## [[Changelog]]
+***
+***
 * Friday, 05/15/2020
 * Saturday, 05/16/2020
 * Sunday, 05/17/2020
