@@ -13,7 +13,7 @@
 * Wednesday, 05/13/2020
 * Thursday, 05/14/2020
 ** [[Changelog]]
-*** Encrypted github personal access token :security:
+*** Encrypted github personal access token [[security]]
 The server won't see any plain token from the browser request
 ## [[Changelog]]
 ***
