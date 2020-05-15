@@ -23,6 +23,11 @@ then the encrypted token will be stored in localstorage and the random key will 
 The cons is that you need to input your personal access token each time you need to login.
 *** A [[https://logseq.com/docs][live demo]] for guest users to try!
 * Friday, 05/15/2020
+** [[Changelog]]
+*** No need to input github person token each time when you login.
+*** Disable tab adjusting level when there's any links input modal
+*** Fix an editor issue when there's no headings in the file
+*** Fix issue of /tab/ key adjusting level
 * Saturday, 05/16/2020
 * Sunday, 05/17/2020
 * Monday, 05/18/2020
