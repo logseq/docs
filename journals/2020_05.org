@@ -28,6 +28,7 @@ The cons is that you need to input your personal access token each time you need
 *** Disable tab adjusting level when there's any links input modal
 *** Fix an editor issue when there's no headings in the file
 *** Fix issue of /tab/ key adjusting level
+*** Move datascript dbs to indexeddb
 * Saturday, 05/16/2020
 * Sunday, 05/17/2020
 * Monday, 05/18/2020
