@@ -40,9 +40,9 @@ The cons is that you need to input your personal access token each time you need
 E.g ~((block))~
 *** Add zoom in && out to edit specific heading, click the ~dot~ before the heading.
 *** Add keybindings for adjusting levels.
-    You can already use `tab` to add or remove one level, two more bindings were added:
-    1. `alt+shift+left` to remove one level each time.
-    2. `alt+shift+right` to add one level each time.
+    You can already use ~tab~ to add or remove one level, two more bindings were added:
+    1. ^^alt+shift+left^^ to remove one level each time.
+    2. ^^alt+shift+right^^ to add one level each time.
 ** Issues
 *** Logout will clear both localstorage and indexeddb.
 * Monday, 05/18/2020
