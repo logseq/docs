@@ -43,6 +43,7 @@ E.g ~((block))~
     You can already use ~tab~ to add or remove one level, two more bindings were added:
     1. ^^alt+shift+left^^ to remove one level each time.
     2. ^^alt+shift+right^^ to add one level each time.
+*** Defaults to solarized dark theme.
 ** [[Fixed issues]]
 *** Logout will clear both localstorage and indexeddb.
 * Monday, 05/18/2020
