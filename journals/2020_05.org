@@ -34,6 +34,11 @@ The cons is that you need to input your personal access token each time you need
 *** 
 ** ((5ec11d99-65be-470d-b303-ec1a3b07a5e0))
 Move datascript dbs to indexeddb
+** [[Changelog]]
+** [[Changelog]]
+*** Add block reference
+E.g ~((block))~
+*** Add zoom in && out to edit specific heading, click the ~dot~ before the heading.
 ** ((5ec11d99-65be-470d-b303-ec1a3b07a5e0))
 * Saturday, 05/16/2020
 * Sunday, 05/17/2020
