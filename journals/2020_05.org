@@ -13,7 +13,7 @@
 * Wednesday, 05/13/2020
 * Thursday, 05/14/2020
 ** [[Changelog]]
-*** [[https://excalidraw.com/][Excalidraw]] Integration. [[Draw]] [[Features]] 
+*** [[https://excalidraw.com/][Excalidraw]] Integration. [[Draw]] [[Features]]
 Excalidraw is a [[https://github.com/excalidraw/excalidraw][open sourcing]] virtual whiteboard for sketching hand-drawn like diagrams.
 Open https://logseq.com/draw and enjoy it!
 *** Make it impossible for the server to know anything about the user's github token  [[Security]]
@@ -31,16 +31,20 @@ The cons is that you need to input your personal access token each time you need
    :END:
 *** Fix an editor issue when there's no headings in the file
 *** Fix issue of /tab/ key adjusting level
-*** 
-** ((5ec11d99-65be-470d-b303-ec1a3b07a5e0))
-Move datascript dbs to indexeddb
+*** Move datascript dbs to indexeddb
+
+* Saturday, 05/16/2020
+* Sunday, 05/17/2020
 ** [[Changelog]]
 *** Add block reference
 E.g ~((block))~
 *** Add zoom in && out to edit specific heading, click the ~dot~ before the heading.
-** ((5ec11d99-65be-470d-b303-ec1a3b07a5e0))
-* Saturday, 05/16/2020
-* Sunday, 05/17/2020
+*** Add keybindings for adjusting levels.
+    You can already use `tab` to add or remove one level, two more bindings were added:
+    1. `alt+shift+left` to remove one level each time.
+    2. `alt+shift+right` to add one level each time.
+** Issues
+*** Logout will clear both localstorage and indexeddb.
 * Monday, 05/18/2020
 * Tuesday, 05/19/2020
 * Wednesday, 05/20/2020
