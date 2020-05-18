@@ -48,7 +48,8 @@ E.g ~((block))~
 *** Logout will clear both localstorage and indexeddb.
 * Monday, 05/18/2020
 ** [[Changelog]]
-***
+*** Add a right sidebar.
+*** When editing, no longer showing both ~##~ (for markdown users) and ~**~ (for Org mode users).
 * Tuesday, 05/19/2020
 * Wednesday, 05/20/2020
 * Thursday, 05/21/2020
