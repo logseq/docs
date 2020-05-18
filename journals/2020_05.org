@@ -47,6 +47,8 @@ E.g ~((block))~
 ** [[Fixed issues]]
 *** Logout will clear both localstorage and indexeddb.
 * Monday, 05/18/2020
+** [[Changelog]]
+***
 * Tuesday, 05/19/2020
 * Wednesday, 05/20/2020
 * Thursday, 05/21/2020
