@@ -60,6 +60,8 @@ You can ~shift~ + ~click~ to open any page, heading, or reference.
 *** [[https://github.com/org-roam/org-roam][Org roam]] Integration.
 Rudimentary Roam replica with Org-mode. 
 [[Features]]
+*** Basic page graph.
+ [[Features]] 
 ** [[Fixed issues]]
 *** Definition list parsing
 * Thursday, 05/21/2020
