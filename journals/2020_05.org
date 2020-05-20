@@ -55,6 +55,11 @@ You can ~shift~ + ~click~ to open any page, heading, or reference.
 *** Allow editing contents before any headings when editing files.
 * Tuesday, 05/19/2020
 * Wednesday, 05/20/2020
+** [[Changelog]]
+*** Add page aliases (Only supporting org mode for now)
+*** [[https://github.com/org-roam/org-roam][Org roam]] Integration
+Rudimentary Roam replica with Org-mode. 
+[[Features]]
 * Thursday, 05/21/2020
 * Friday, 05/22/2020
 * Saturday, 05/23/2020
