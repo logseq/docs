@@ -65,6 +65,9 @@ Rudimentary Roam replica with Org-mode.
 ** [[Fixed issues]]
 *** Definition list parsing
 * Thursday, 05/21/2020
+** [[Changelog]]
+*** Add a white theme (dark theme is coming).
+*** Now you can add new pages.
 * Friday, 05/22/2020
 * Saturday, 05/23/2020
 * Sunday, 05/24/2020
