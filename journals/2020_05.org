@@ -73,7 +73,11 @@ Rudimentary Roam replica with Org-mode.
 *** Fixed slow editing
 * Friday, 05/22/2020
 ** [[Changelog]]
-*** Add a dark theme, inspired by the famous [[https://ethanschoonover.com/solarized/][Solarized dark theme]]. 
+*** Add a dark theme, inspired by the famous [[https://ethanschoonover.com/solarized/][Solarized dark theme]].
+*** Search support ~pages~, ~files~ and ~blocks~ now. Also there's a link for creating ~New page~
+*** Editing should be a lot faster than before!
+** [[Fixed issues]]
+*** Fix scroll not working when the right sidebar is open.
 * Saturday, 05/23/2020
 * Sunday, 05/24/2020
 * Monday, 05/25/2020
