@@ -14,21 +14,21 @@
 * Thursday, 05/14/2020
 ** [[Changelog]]
 *** [[https://excalidraw.com/][Excalidraw]] Integration. [[Draw]] [[Features]]
-Excalidraw is a [[https://github.com/excalidraw/excalidraw][open sourcing]] virtual whiteboard for sketching hand-drawn like diagrams.
-Open <https://logseq.com/draw> and enjoy it!
+    Excalidraw is a [[https://github.com/excalidraw/excalidraw][open sourcing]] virtual whiteboard for sketching hand-drawn like diagrams.
+    Open <https://logseq.com/draw> and enjoy it!
 *** Make it impossible for the server to know anything about the user's github token  [[Security]]
-Now your personal github access token will be encrypted using a randomly generated key,
-then the encrypted token will be stored in localstorage and the random key will be sent to the server. Next time you refresh the browser, the server can return this random key and the encrypted token can be decrypted correctly!
+    Now your personal github access token will be encrypted using a randomly generated key,
+    then the encrypted token will be stored in localstorage and the random key will be sent to the server. Next time you refresh the browser, the server can return this random key and the encrypted token can be decrypted correctly!
 
-The cons is that you need to input your personal access token each time you need to login.
+    The cons is that you need to input your personal access token each time you need to login.
 *** A [[https://logseq.com/docs][live demo]] for guest users to try!
 * Friday, 05/15/2020
 ** [[Changelog]]
 *** No need to input github person token each time when you login.
 *** Disable tab adjusting level when there's any links input modal
-   :PROPERTIES:
-   :CUSTOM_ID: 5ec11d99-65be-470d-b303-ec1a3b07a5e0
-   :END:
+    :PROPERTIES:
+    :CUSTOM_ID: 5ec11d99-65be-470d-b303-ec1a3b07a5e0
+    :END:
 *** Fix an editor issue when there's no headings in the file
 *** Fix issue of /tab/ key adjusting level
 *** Move datascript dbs to indexeddb
@@ -37,7 +37,7 @@ The cons is that you need to input your personal access token each time you need
 * Sunday, 05/17/2020
 ** [[Changelog]]
 *** Add block reference
-E.g ~((block))~
+    E.g ~((block))~
 *** Add zoom in && out to edit specific heading, click the ~dot~ before the heading.
 *** Add keybindings for adjusting levels.
     You can already use ~tab~ to add or remove one level, two more bindings were added:
@@ -49,7 +49,7 @@ E.g ~((block))~
 * Monday, 05/18/2020
 ** [[Changelog]]
 *** Add a right sidebar.
-You can ~shift~ + ~click~ to open any page, heading, or reference.
+    You can ~shift~ + ~click~ to open any page, heading, or reference.
 *** When editing, no longer showing both ~##~ (for markdown users) and ~**~ (for Org mode users).
 ** [[Fixed issues]]
 *** Allow editing contents before any headings when editing files.
@@ -58,17 +58,17 @@ You can ~shift~ + ~click~ to open any page, heading, or reference.
 ** [[Changelog]]
 *** Add page aliases (Only supporting org mode for now).
 *** [[https://github.com/org-roam/org-roam][Org roam]] Integration.
-Rudimentary Roam replica with Org-mode. 
-[[Features]]
+    Rudimentary Roam replica with Org-mode.
+    [[Features]]
 *** Basic page graph.
- [[Features]] 
+    [[Features]]
 ** [[Fixed issues]]
 *** Definition list parsing
 * Thursday, 05/21/2020
 ** [[Changelog]]
 *** Add a white theme (dark theme is coming).
 *** Now you can add new pages.
-[[https://cdn.logseq.com/%2F59c4036f-98b3-42b6-b6a6-2800a06f44a12020_05_21_Screenshot%202020-05-21%2023-05-27%20%2B0800.png?Expires=4743673557&Signature=TcfZIqnSCw8llL8MIosuA2CxXBU7DRJE80Eea0HIUHD84mM-Nf6WctPpDa8cMtNuw7QN78CG6lMfcv-pfVf5Cu8xbIj6GYYOF-88qviC9TgtUhShsfuLFvKtEHFuxksX2b9M1NWzPFavyXgzEG~xdefeDKE7j6D5kgIjdcB1vP2-hQvP2EIyvBjx78-NdH4iadFp5ja1~xMRlLBaF4qJJGIPpaxtyuFvNr52eQL55xDLGis5CifX3H1TAKE10giCTg5F4CXnW6l7cipaEq10csIXIbtK4VzGfEyihl3OYYafz20rPzMk-QvXwxqf3IzVI0dZACIHTBzbGiTYdg6cWA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_05_21_Screenshot 2020-05-21 23-05-27 +0800.png]] 
+    [[https://cdn.logseq.com/%2F59c4036f-98b3-42b6-b6a6-2800a06f44a12020_05_21_Screenshot%202020-05-21%2023-05-27%20%2B0800.png?Expires=4743673557&Signature=TcfZIqnSCw8llL8MIosuA2CxXBU7DRJE80Eea0HIUHD84mM-Nf6WctPpDa8cMtNuw7QN78CG6lMfcv-pfVf5Cu8xbIj6GYYOF-88qviC9TgtUhShsfuLFvKtEHFuxksX2b9M1NWzPFavyXgzEG~xdefeDKE7j6D5kgIjdcB1vP2-hQvP2EIyvBjx78-NdH4iadFp5ja1~xMRlLBaF4qJJGIPpaxtyuFvNr52eQL55xDLGis5CifX3H1TAKE10giCTg5F4CXnW6l7cipaEq10csIXIbtK4VzGfEyihl3OYYafz20rPzMk-QvXwxqf3IzVI0dZACIHTBzbGiTYdg6cWA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_05_21_Screenshot 2020-05-21 23-05-27 +0800.png]]
 ** [[Fixed issues]]
 *** Fixed slow editing
 * Friday, 05/22/2020
@@ -84,11 +84,96 @@ Rudimentary Roam replica with Org-mode.
 * Monday, 05/25/2020
 ** [[Changelog]]
 *** Add a git status ~dot~ to the heading.
-[[https://cdn.logseq.com/%2F59c4036f-98b3-42b6-b6a6-2800a06f44a12020_05_25_Screenshot%202020-05-25%2016-29-44%20%2B0800.png?Expires=4743995397&Signature=exWvdf-0DamW6KaW8TzXh3QfkNzQhHgb4TML0rtSpkF~lGQNzziPt55G33Gbr12rxcIxD2z06hFFLMtfdepuFrLqyDmfR-znKlwpgWwOZTlpEJnJ-N52FqrJOnJ9qrzHYIGKG0Q4XcJYMTfIT1NYzHzGXdHsFDx3G-4elHsDPxVvw6wereuD3EuxSt6uVDaJNjLUhreSq~3fBln3~IUl1BgZObT8SaglqS-IZxUY1weYRN11JYKLWze2pOLTbRnwjogUm4jSc1rRU0xYDZBVhfVaBdNJwKXi5tMnXOEbhVgGJZj34HrSRHOHkZ40bOoj4dGjYoYm7NJlq8-mZu4zTg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_05_25_Screenshot 2020-05-25 16-29-44 +0800.png]] 
+    [[https://cdn.logseq.com/%2F59c4036f-98b3-42b6-b6a6-2800a06f44a12020_05_25_Screenshot%202020-05-25%2016-29-44%20%2B0800.png?Expires=4743995397&Signature=exWvdf-0DamW6KaW8TzXh3QfkNzQhHgb4TML0rtSpkF~lGQNzziPt55G33Gbr12rxcIxD2z06hFFLMtfdepuFrLqyDmfR-znKlwpgWwOZTlpEJnJ-N52FqrJOnJ9qrzHYIGKG0Q4XcJYMTfIT1NYzHzGXdHsFDx3G-4elHsDPxVvw6wereuD3EuxSt6uVDaJNjLUhreSq~3fBln3~IUl1BgZObT8SaglqS-IZxUY1weYRN11JYKLWze2pOLTbRnwjogUm4jSc1rRU0xYDZBVhfVaBdNJwKXi5tMnXOEbhVgGJZj34HrSRHOHkZ40bOoj4dGjYoYm7NJlq8-mZu4zTg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_05_25_Screenshot 2020-05-25 16-29-44 +0800.png]]
 *** Editing and inserting new headings should be fast now!
 * Tuesday, 05/26/2020
 * Wednesday, 05/27/2020
+** Fixed issues
+*** Fixed issue of login.
+*** Fixed issue of git pull.
+*** Don't re-render the right sidebar if there's no data changed.
 * Thursday, 05/28/2020
+** Changelog
+*** Add history support.
+    | Name | Shortcut |
+    |------+----------|
+    | Undo | ~Ctrl-c~ |
+    | Redo | ~Ctrl-y~ |
+
 * Friday, 05/29/2020
+** Changelog
+*** Add auto pairs, it supports ~(~, ~[~ and ~{~ now.
+** Fixed issues
+*** Selection are working fine on Chrome.
+*** ~Ctrl-x~ can copy now.
 * Saturday, 05/30/2020
+** Changelog
+*** Add custom datalog query support.
+    1. Add multiple queries to the journals page:
+       For example, to see all your todos for the last 2 days in the home page,
+       add the content below to your ~logseq.edn~:
+       #+BEGIN_SRC clojure
+        :default-queries
+        {:journals [{:title "TODO"
+                     :query "[[:find (pull ?h [*])
+                              :in $ ?start ?today
+                              :where
+                              [?h :heading/marker ?marker]
+                              [?h :heading/page ?p]
+                              [?p :page/journal? true]
+                              [?p :page/journal-day ?d]
+                              [(>= ?d ?start)]
+                              [(< ?d ?today)]
+                              [(contains? #{\"TODO\" \"DOING\" \"WAITING\" \"WAIT\"} ?marker)]]
+                             :2d
+                             :today]"}]}
+       #+END_SRC
+    2. Add a query block to any pages:
+       For example:
+
+       #+BEGIN_QUERY
+         [[:find (pull ?h [*])
+           :in $ ?start ?today
+           :where
+           [?h :heading/marker ?marker]
+           [?h :heading/page ?p]
+           [?p :page/journal? true]
+           [?p :page/journal-day ?d]
+           [(>= ?d ?start)]
+           [(< ?d ?today)]
+           [(contains? #{"TODO" "DOING" "WAITING" "WAIT"} ?marker)]]
+          :2d
+          :today]
+       #+END_QUERY
+
 * Sunday, 05/31/2020
+**  Changelog
+***  Custom journal date format support. [[Features]]
+    You can set the ~:date-formatter~ in ~logseq.edn~.
+    The default formatter is ~"MMM do, yyyy"~, which will be something like
+    ~Jun 1st, 2020~.
+*** Templates support . [[Features]]
+    You can set the option ~:default-templates~ in the file ~logseq.edn~.
+**** For Markdown users
+     #+BEGIN_SRC clojure
+       :default-templates
+       {:journals "## [[Work]]
+       ###
+       ## [[Family]]
+       ###
+       "}
+     #+END_SRC
+**** For Org mode users
+     #+BEGIN_SRC clojure
+       :default-templates
+       {:journals "** [[Work]]
+       ,***
+       ,** [[Family]]
+       ,***
+       "}
+     #+END_SRC
+
+** Fixed issues
+*** Org mode auto link parsing.
+*** Markdown definition parsing (it supports both multiple definitions and multiple lines now).
+*** Footnote parsing.
