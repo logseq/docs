@@ -1,34 +1,34 @@
 * Jun 1st, 2020
-** [[Changelog]] 
-*** Admonitions, inspired by [[https://asciidoctor.org/docs/user-manual/#admonition][Asciidoctor Admonitions]]. [[Features]] 
+** [[Changelog]]
+*** Admonitions, inspired by [[https://asciidoctor.org/docs/user-manual/#admonition][Asciidoctor Admonitions]]. [[Features]]
 **** Note
-#+BEGIN_NOTE
-It supports */formats/* too.
-- Item 1
-  - Item nested 1
-  - Item nested 2
-- Item 2
-#+END_NOTE
+     #+BEGIN_NOTE
+     It supports */formats/* too.
+     - Item 1
+       - Item nested 1
+       - Item nested 2
+     - Item 2
+     #+END_NOTE
 
 **** Tip
-#+BEGIN_TIP
-Tips.
-#+END_TIP
+     #+BEGIN_TIP
+     Tips.
+     #+END_TIP
 
 **** Important
-#+BEGIN_IMPORTANT
-IMPORTANT
-#+END_IMPORTANT
+     #+BEGIN_IMPORTANT
+     IMPORTANT
+     #+END_IMPORTANT
 
 **** Caution
-#+BEGIN_CAUTION
-CAUTION
-#+END_CAUTION
+     #+BEGIN_CAUTION
+     CAUTION
+     #+END_CAUTION
 
 **** Warning
-#+BEGIN_WARNING
-WARNING
-#+END_WARNING
+     #+BEGIN_WARNING
+     WARNING
+     #+END_WARNING
 * Jun 2nd, 2020
 * Jun 3rd, 2020
 * Jun 4th, 2020
