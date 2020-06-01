@@ -1,1 +1,10 @@
-{}
+{:git-push-secs 10
+ :git-pull-secs 60
+ :hidden []
+ :text-formats []
+ :image-formats []
+ :starred ["Changelog" "Features" "Security"]
+ :commands
+ [["changelog" "[[Changelog]]"]
+  ["features" "[[Features]]"]
+  ["security" "[[Security]]"]]}
