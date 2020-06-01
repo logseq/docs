@@ -1,6 +1,6 @@
 * Jun 1st, 2020
 ** [[Changelog]] 
-*** Admonitions, inspired by [[https://asciidoctor.org/docs/user-manual/#admonition][Asciidoctor Admonitions]]
+*** Admonitions, inspired by [[https://asciidoctor.org/docs/user-manual/#admonition][Asciidoctor Admonitions]]. [[Features]] 
 **** Note
 #+BEGIN_NOTE
 It supports */formats/* too.
