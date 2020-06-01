@@ -132,20 +132,11 @@
        For example:
 
        #+BEGIN_QUERY
-         [[:find (pull ?h [*])
-           :in $ ?start ?today
-           :where
-           [?h :heading/marker ?marker]
-           [?h :heading/page ?p]
-           [?p :page/journal? true]
-           [?p :page/journal-day ?d]
-           [(>= ?d ?start)]
-           [(< ?d ?today)]
-           [(contains? #{"TODO" "DOING" "WAITING" "WAIT"} ?marker)]]
-          :2d
-          :today]
+ [[:find (pull ?h [*])
+        :where
+        [?h :heading/content ?content]
+        [(re-find "Features" ?content)]]]
        #+END_QUERY
-
 * Sunday, 05/31/2020
 **  Changelog
 ***  Custom journal date format support. [[Features]]
