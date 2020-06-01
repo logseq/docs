@@ -132,11 +132,12 @@
        For example:
 
        #+BEGIN_QUERY
- [[:find (pull ?h [*])
+[[:find (pull ?h [*])
         :where
         [?h :heading/content ?content]
-        [(re-find "Features" ?content)]]]
-       #+END_QUERY
+        [?h :heading/page ?p]
+        [?p :page/name "jun 1st, 2020"]]]
+#+END_QUERY
 * Sunday, 05/31/2020
 **  Changelog
 ***  Custom journal date format support. [[Features]]
