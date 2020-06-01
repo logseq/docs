@@ -131,21 +131,21 @@
     2. Add a query block to any pages:
        For example:
 
-#+BEGIN_SRC clojure
-  [[:find (pull ?h [*])
-    :where
-    [?h :heading/content ?content]
-    [?h :heading/page ?p]
-    [?p :page/name "jun 1st, 2020"]]]
-#+END_SRC
+    #+BEGIN_SRC clojure
+    [[:find (pull ?h [*])
+     :where
+     [?h :heading/content ?content]
+     [?h :heading/page ?p]
+     [?p :page/name "jun 1st, 2020"]]]
+    #+END_SRC
 
-       #+BEGIN_QUERY
-[[:find (pull ?h [*])
-        :where
-        [?h :heading/content ?content]
-        [?h :heading/page ?p]
-        [?p :page/name "jun 1st, 2020"]]]
-#+END_QUERY
+    #+BEGIN_QUERY
+    [[:find (pull ?h [*])
+     :where
+     [?h :heading/content ?content]
+     [?h :heading/page ?p]
+     [?p :page/name "jun 1st, 2020"]]]
+    #+END_QUERY
 * Sunday, 05/31/2020
 **  Changelog
 ***  Custom journal date format support. [[Features]]
