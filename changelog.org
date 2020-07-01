@@ -1,0 +1,5 @@
+#+TITLE: Changelog
+#+TAGS:
+
+** [[Jul 1st, 2020]]
+*** Add shortcut ~Ctrl+Alt+r~ to toggle the right sidebar. #shortcuts
