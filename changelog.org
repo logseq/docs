@@ -1,6 +1,7 @@
-
 #+TITLE: Changelog
 #+PERMALINK: changelog
+#+PUBLISHED: true
+
 ** [[Jul 1st, 2020]]
 *** Add shortcut ~Ctrl+Alt+r~ to toggle the right sidebar. #shortcuts
 *** Huge performance improvement, editing should be fast now! 🔥🔥
