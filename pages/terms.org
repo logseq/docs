@@ -1,0 +1,28 @@
+#+TITLE: Terms
+#+TAGS:
+#+PUBLISHED: true
+
+** *Terms & Conditions*
+
+By downloading or using the Service, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app. You’re not allowed to copy any part of the app, or our trademarks in any way.  The website itself, and all the trade marks, copyright, database rights and other intellectual property rights related to it, still belong to Logseq.com.
+
+The team is committed to ensuring that the website is as useful and efficient as possible. For that reason, we reserve the right to make changes to the service or to charge for its services, at any time and for any reason. We will never charge you for the website or its services without making it very clear to you exactly what you’re paying for.
+
+The service stores and processes personal data that you have provided to us, in order to provide the Service. It’s your responsibility to keep your pc and access to the website secure. 
+
+
+The Serivice does use third party services that declare their own Terms and Conditions.
+
+Link to Terms and Conditions of third party service providers used by the website
+
+- [[https://sentry.io/terms/][Sentry]]
+
+*Changes to This Terms and Conditions*
+
+We may update our Terms and Conditions from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Terms and Conditions on this page.
+
+These terms and conditions are effective as of 2020-07-23
+
+*Contact Us*
+
+If you have any questions or suggestions about the Terms and Conditions, do not hesitate to contact me at tiensonqin@gmail.com.
