@@ -1,4 +1,7 @@
-#+TITLE: Faq
-#+TAGS:
 
-** 
+#+TITLE: Faq
+** How to create a Github personal access token?
+1. Follow the Github official guide [[https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token][Creating a personal access token]].
+
+2. Select corresponding scopes:
+[[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_07_23_Screenshot%202020-07-23%2014-20-45%20%2B0800.png?Expires=4749085265&Signature=gaHX2r-hab8mp1ul60CGBzjIYPpB32776DspqgPzrUw5yXWqWTWQ6RMHQ4VzJADQWQpWnpbqimsFeSE-h0H0l1gO42GPOL0j8btPc56299mWjxaYefw-TJBP4SbYm66k9raHXHkXWXJUG18Sv70V9UyhhBM8QtuaGwq06PQRs91NqPN4HRht3miPDkZBiOOffPtHg~P8aHbigdOi1VHL0ptZfTvNaKCGXO~jyNJ93KFWGbsjSVR4194AOEWZst0fBnsUdUrXjIYWskD2hRyNwbWJaT4GyWz5nQsn-aAE1YMPfKoeM6GGqD25t3D2y2Id5kzXBUeL3B6tV7TVnTuTGg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_07_23_Screenshot 2020-07-23 14-20-45 +0800.png]] 
