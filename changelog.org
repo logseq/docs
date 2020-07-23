@@ -1,7 +1,11 @@
+
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
-
+** [[Jul 23rd, 2020]]
+*Version 0.0.1-1*
+*** Fixed the issue that menu is not visible in draw page. (reported by [[https://github.com/Kamalnrf ][@Kamalnrf]])
+*** Fixed the issue that git clone not working (repo ending with a `.repo`) (Also, reported by)
 ** [[Jul 1st, 2020]]
 *** Add shortcut ~Ctrl+Alt+r~ to toggle the right sidebar. #shortcuts
 *** Huge performance improvement, editing should be fast now! 🔥🔥
