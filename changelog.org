@@ -5,9 +5,11 @@
 ** [[Jul 24th, 2020]]
 *Versin 0.0.1-3*
 *** [[Features]]
-- Custom git commit message support.
+**** Custom git commit message support.
 Once you have some changes, type ~c~ will display the dialog below:
-
+[[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_07_24_Screenshot%202020-07-24%2012-17-31%20%2B0800.png?Expires=4749164265&Signature=AMmK5UrT-Z5hUA2BmZaEU0t-VdjH~MVqVW~u7mWbcJybA6IGMlq3g~BIWSS0eMLfjTkIHTz2pgZnInvdDw3q~~NJPMb9siE~ZvW0linvKhqTZstsLDSzFG0ZpXMUAkG5540Pn~aKPbN0LDPb0QjtohnAT2pzBsc0sjOWg3HkKHvRjMU0Iqs1iTG7A9peMy0Hc2FAXq6sFRUPqd9AiqKtv7KU68C7OauAcftqq69BLmPnkTo9NrYipUqro8DklPHqvynnfKd1N1PMlYKstwgYIYIjl2wRKgHb5fyl84jcZfAZj5WdIARVk4Gxn6nHZiXaTTbjdcMYRv9AoEGCUSVfFA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_07_24_Screenshot 2020-07-24 12-17-31 +0800.png]]
+*** [[Fixed Issues]]
+**** New markdown pages will have a ~.md~ suffix instead of ~.markdown~
 ** [[Jul 24th, 2020]]
 *Version 0.0.1-2*
 *** Fixed [[https://github.com/logseq/logseq/issues/2][Linked References]]
