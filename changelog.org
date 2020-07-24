@@ -1,7 +1,11 @@
+
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
-
+** [[Jul 24th, 2020]]
+*Version 0.0.1-2*
+*** Fixed [[https://github.com/logseq/logseq/issues/2][Linked References]]
+*** Fixed [[https://github.com/logseq/logseq/issues/3][Does not load in Firefox incognito mode]]
 ** [[Jul 23rd, 2020]]
 *Version 0.0.1-1*
 *** Fixed the issue that menu is not visible in draw page. (Reported by [[https://github.com/Kamalnrf ][@Kamalnrf]])
