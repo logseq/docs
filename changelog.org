@@ -3,6 +3,12 @@
 #+PERMALINK: changelog
 #+PUBLISHED: true
 ** [[Jul 24th, 2020]]
+*Versin 0.0.1-3*
+*** [[Features]]
+- Custom git commit message support.
+Once you have some changes, type ~c~ will display the dialog below:
+
+** [[Jul 24th, 2020]]
 *Version 0.0.1-2*
 *** Fixed [[https://github.com/logseq/logseq/issues/2][Linked References]]
 *** Fixed [[https://github.com/logseq/logseq/issues/3][Does not load in Firefox incognito mode]]
