@@ -3,7 +3,7 @@
 #+PUBLISHED: true
 
 ** [[Jul 24th, 2020]]
-*Versin 0.0.1-3*
+*Version 0.0.1-3*
 *** [[Features]]
 **** Custom git commit message support.
 Once you have some changes, type ~c~ will display the dialog below:
