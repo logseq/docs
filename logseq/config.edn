@@ -1,4 +1,6 @@
-{:shortcuts {:editor/new-heading "alt+enter"},
+{:project {:name "blog"
+           :alias "Logseq Blog"}
+ :shortcuts {:editor/new-heading "alt+enter"},
  :text-formats [],
  :git-pull-secs 60,
  :git-push-secs 10,
