@@ -2,7 +2,7 @@
 #+PUBLISHED: true
 #+PERMALINK: about
 
-**  Hi, welcome to [[https://logseq.com][Logseq]].
+** Hi, welcome to [[https://logseq.com][Logseq]].
 
   *Logseq* is a /local-only/, /non-linear/, /outliner/ notebook for organizing and
   [[https://logseq.com/blog][sharing]] your personal knowledge base.
@@ -14,7 +14,6 @@
   plain text files, we support both Markdown and Emacs Org mode for the time being. Even if the website is down or can't be maintained, your data is always yours.
 
   *Logseq* is hugely inspired by [[https://roamresearch.com/][Roam Research]], [[https://orgmode.org/][Org Mode]], [[https://tiddlywiki.com/][Tiddlywiki]] and [[https://workflowy.com/][Workflowy]], hats off to all of them!
-
 ** Where are my notes saved?
    Your notes will be stored in the local browser storage. We are using IndexedDB.
 
