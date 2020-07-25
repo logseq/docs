@@ -45,7 +45,7 @@
    - Backlinks between ~[[Page]]~s
    - Block embed
    - Page embed
-   - Graph visualisation
+   - Graph visualization
    - Heading properties
    - Datalog queries, the notes db is powered by [[https://github.com/tonsky/datascript][Datascript]]
    - Custom view component
@@ -54,7 +54,6 @@
      * Katex latex
      * Raw [[https://github.com/weavejester/hiccup][hiccup]]
      * Raw html
-
 ** Learn more
    - Twitter: https://twitter.com/logseq
    - Discord: https://discord.gg/KpN4eHY where we ask questions and share tips
