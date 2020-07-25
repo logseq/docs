@@ -14,6 +14,7 @@
   plain text files, we support both Markdown and Emacs Org mode for the time being. Even if the website is down or can't be maintained, your data is always yours.
 
   *Logseq* is hugely inspired by [[https://roamresearch.com/][Roam Research]], [[https://orgmode.org/][Org Mode]], [[https://tiddlywiki.com/][Tiddlywiki]] and [[https://workflowy.com/][Workflowy]], hats off to all of them!
+[[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_07_25_Screenshot%202020-07-25%2013-24-18%20%2B0800.png?Expires=4749254678&Signature=kDNaXULaW~PSrm5Qx4o-VoyD44IhSIebWB0Tnkv1XUh5XiEavsABW3WweSsofggYhE1j8IAYSVvYTF6A~YBoBU~FjD1D3IPJ2vzojDyIcDN3dy8ybu0YHpP1TyjVaH1JnF1VyMaQN6lxtgllpA-FtALznsXresBaTZfRsuhJP2a8LEao1oHpJKry~udBhCv6ZcBWv3VTWwIhNGgfhEvt96~p03PdW0oTzkfN0LXzzlwE1z8FfuJO1XeLSaTGxKCEKihWFhXu75XL2iI9nzCCvd2b2mLIh-vHU9~qt11PJcaHWp0A7Qu4vuYVcwLW8l2ihPo8mxhz7LIBkMqFkDFlgg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_07_25_Screenshot 2020-07-25 13-24-18 +0800.png]] 
 ** Where are my notes saved?
    Your notes will be stored in the local browser storage. We are using IndexedDB.
 
