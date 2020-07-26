@@ -1,7 +1,11 @@
+
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
-
+** [[Jul 26th, 2020]] 
+*Version 0.0.1-4*
+*** [[Fixed Issues]]
+**** [[https://github.com/logseq/logseq/issues/8][Typed text disappears after clicking into another block]]
 ** [[Jul 24th, 2020]]
 *Version 0.0.1-3*
 *** [[Features]]
