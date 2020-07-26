@@ -6,7 +6,7 @@
 *Version 0.0.1-6*
 *** [[Fixed Issues]] 
 **** [[https://github.com/logseq/logseq/issues/15][Pressing enter in the middle doesn't create a new heading with the text behind the cursor]]
-**** [[https://github.com/logseq/logseq/issues/15][Select a word and type either `[` (to make it a page) or `(` (a block) not working]]
+**** [[https://github.com/logseq/logseq/issues/16][Select a word and type either `[` (to make it a page) or `(` (a block) not working]]
 ** [[Jul 26th, 2020]] 
 *Version 0.0.1-4*
 *** [[Features]]
