@@ -7,6 +7,7 @@
 *** [[Features]]
 **** Settings support preferred format
 **** Settings support Github Personal Access Token
+[[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_07_26_Screenshot%202020-07-26%2021-09-07%20%2B0800.png?Expires=4749368983&Signature=ELrfup~D22I8jn-~46LJvuCiGoMyIdn-m2fJkV0r5u4LaXI2BW79ZUJM4EmXfcQXTFQMv-opnn1~hF8OTM9o6UEFHNt5dpIhduLNx1K1bloNgVqD78jarjQVI2azL2wWZh9Sphml7aSnXfQfxlVOkzEkNFYRcZfLiDJnx7InJ4fsmXxkgqjjsHa-OIvIt6bGojBx60b-KkkysZ5qIGRHTjcLY0CHgPsMAHR3Dqp-Sf~3bHVr24ExOY2qw9cK2h3MxOyXlmBYoeW7l6SCZ1~we1eescBlTwVFDL02Z0dOX53gMVlwdtKpi0AaIO5HoqONNkiWKdSd4Pub1S90xmdIrQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_07_26_Screenshot 2020-07-26 21-09-07 +0800.png]] 
 *** [[Fixed Issues]]
 **** [[https://github.com/logseq/logseq/issues/8][Typed text disappears after clicking into another block]]
 *** [[Style changes]]
