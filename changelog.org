@@ -2,6 +2,11 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
+** [[Jul 27th, 2020]] 
+*Version 0.0.1-6*
+*** [[Fixed Issues]] 
+**** [[https://github.com/logseq/logseq/issues/15][Pressing enter in the middle doesn't create a new heading with the text behind the cursor]]
+****
 ** [[Jul 26th, 2020]] 
 *Version 0.0.1-4*
 *** [[Features]]
