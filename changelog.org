@@ -4,8 +4,13 @@
 #+PUBLISHED: true
 ** [[Jul 26th, 2020]] 
 *Version 0.0.1-4*
+*** [[Features]]
+**** Settings support preferred format
+**** Settings support Github Personal Access Token
 *** [[Fixed Issues]]
 **** [[https://github.com/logseq/logseq/issues/8][Typed text disappears after clicking into another block]]
+*** [[Style changes]]
+**** Add a border to page references
 ** [[Jul 24th, 2020]]
 *Version 0.0.1-3*
 *** [[Features]]
