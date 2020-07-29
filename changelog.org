@@ -1,7 +1,11 @@
+
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
-
+** [[Jul 29th, 2020]] 
+*Version 0.0.1-8*
+*** [[Fixed Issues]]
+**** Fix file corrupted
 ** [[Jul 27th, 2020]] 
 *Version 0.0.1-7*
 *** [[Fixed Issues]]
