@@ -1,6 +1,14 @@
+
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
+** [[Jul 30th, 2020]] 
+*Version 0.0.1-9*
+*** [[Fixed Issues]]
+**** [[https://github.com/logseq/logseq/issues/26][Capitalization of acronyms in page titles]] #26
+**** [[https://github.com/logseq/logseq/issues/29][Graph showed empty even there're pages which are not journals #29]]
+*** [[Features]]
+**** Add the option ~Export as JSON~ for any blocks, pages and repos.
 
 ** [[Jul 29th, 2020]] 
 *Version 0.0.1-8*
