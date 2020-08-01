@@ -2,6 +2,14 @@
 #+PERMALINK: changelog
 #+PUBLISHED: true
 
+** [[Aug 1nd, 2020]] 
+*Version 0.0.1-10*
+*** [[Fixed issues]]
+**** 1. [[https://github.com/logseq/logseq/issues/35][Lists parsing]]
+**** 2. [[https://github.com/logseq/logseq/issues/26][Page search options should be consistent with page titles]]
+*** [[Features]]
+**** 1. Add page rename support
+**** 2. Add page delete support
 ** [[Jul 30th, 2020]] 
 *Version 0.0.1-9*
 *** [[Fixed Issues]]
