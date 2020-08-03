@@ -23,7 +23,7 @@
     Currently, we only support syncing through Github, more options (e.g.
     Gitlab, Dropbox, Google Drive, WebDAV, etc.) will be added soon.
 
-    We are using an excellent web git client called [[isomorphic-git.org][isomorphic-git]].
+    We are using an excellent web git client called [[https://isomorphic-git.org/][isomorphic-git]].
 
 **** Step 1
      Click the button /Login with Github/.
@@ -66,7 +66,7 @@
    - [[https://orgmode.org/][Org Mode]]
    - [[https://tiddlywiki.com/][Tiddlywiki]]
    - [[https://workflowy.com/][Workflowy]]
-   - [[clojure.org][Clojure && Clojurescript]]
+   - [[https://clojure.org][Clojure && Clojurescript]]
    - [[https://ocaml.org/][OCaml]] && [[https://github.com/inhabitedtype/angstrom][Angstrom]], the document [[https://github.com/mldoc/mldoc][parser]] is built on Angstrom.
    - [[https://github.com/talex5/cuekeeper][Cuekeeper]] - Browser-based GTD (TODO list) system.
    - [[https://github.com/tonsky/datascript][Datascript]] - Immutable database and Datalog query engine for Clojure, ClojureScript and JS
