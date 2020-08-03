@@ -23,7 +23,7 @@
     Currently, we only support syncing through Github, more options (e.g.
     Gitlab, Dropbox, Google Drive, WebDAV, etc.) will be added soon.
 
-    We are using an excellent web git client called [[isomorphic-git.org][isomorphic-git]].
+    We are using an excellent web git client called [[https://isomorphic-git.org/][isomorphic-git]].
 
 **** Step 1
      Click the button /Login with Github/.
