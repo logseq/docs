@@ -2,6 +2,24 @@
 #+PERMALINK: changelog
 #+PUBLISHED: true
 
+** [[Aug 4th, 2020]] 
+*Version 0.0.1-12*
+*** [[Fixed issues]]
+**** 1. [[https://github.com/logseq/logseq/issues/75][Don't change the cursor position when indent or unindent]]
+**** 2. [[https://github.com/logseq/logseq/issues/71][Pressing Enter on empty bullet should outdent]]
+**** 3. [[https://github.com/logseq/logseq/issues/68][Main-pane freezes upon editing in sidebar]]
+**** 4. [[https://github.com/logseq/logseq/issues/70][Editable embeds]]
+**** 5. [[https://github.com/logseq/logseq/issues/72][Breadcrumb when focus on a bullet within a page]]
+**** 6. [[https://github.com/logseq/logseq/issues/25][Display text nested under a page-reference in the linked reference box]]
+*** [[Features]]
+**** 1. Add details and summary support in raw html
+<details>
+    <summary>Details</summary>
+    Something small enough to escape casual notice.
+</details>
+**** 2. Add list checkbox support, toggle is not supported yet
+- [x] Read
+- [ ] Write
 ** [[Aug 1nd, 2020]] 
 *Version 0.0.1-10*
 *** [[Fixed issues]]
