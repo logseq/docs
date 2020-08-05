@@ -19,7 +19,7 @@ Currently, the git bindings we are using only support [[https://www.datree.io/re
 Click your user avatar and go to ~Settings~, input a custom CORS proxy server.
 See more at https://github.com/isomorphic-git/cors-proxy
 [[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_08_05_Screenshot%202020-08-05%2014-21-43%20%2B0800.png?Expires=4750208955&Signature=bzBGfNnA7GDNzPlrQp4~UL40Qn5yTut~PaMPNx33XQli31bsrkUb954VldwLWVyqI3unibd5PX82z78T8rEKKq8Zl8FyA10amLi~hbusqUrQqCK2RE7ys7kAqKuonD5QcOCML4~tUNZrX9bRel37zhcXeBOl8O9L~VtrMt9Vq4bKkPYNGakzZClkqeMV3iHxz~GTd66YRdGRMk8WzfWMp1oL5BG-ZSOYe7wUt5dA4FPL~9yKRuUv9m-Fg6k4GEP4q92AF9h0sz-lH61ttqXxTvrPSjwK2g8EXajE1yupvEvvDSpJA~nlx5pSSzCp8S~VbyTXT-p3K6frnAs7tk4LPQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_08_05_Screenshot 2020-08-05 14-21-43 +0800.png]]
-** How to export the files?
+** How to export files?
 - Hover the sync status dot in the heading bar, it'll show something like this if you have any changed files:
 [[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_08_05_Screenshot%202020-08-05%2016-59-18%20%2B0800.png?Expires=4750218060&Signature=HjvI5TPh8adeJgvgk4HLNAw3TZjqbgNZmWOC1REsENIYrv6u6qiAyRPyAhNpzt4-w2HxCuvFxy5UhEShdW4iAYjTCFEY8s3gtucwwFD74-Aj5-o9vM0huaJ64vhMKQJhclJXOOF~V1GDcdnUkWRZ4uVo46tJDHYaoVDzBQYwIZbaQcm0Y7cJwMP5ZeuT~d-XJHJVtesZ2nkOxE9ArB~BVaNapmKRFkT6Ws8pg~UoNrSv4gzw5JAD7MwnH30rL-i3plB0tkj9A8km~phZft~Mp9E9S5cOAiSYh7WkFYpK6DTfhnoNJi8iNbTN8DB~5D9YMHUNjTh44juehAez8WFLrA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_08_05_Screenshot 2020-08-05 16-59-18 +0800.png]] 
 - Go to all files and click "Download" to download any file.
