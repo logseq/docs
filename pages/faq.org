@@ -1,7 +1,7 @@
-
 #+TITLE: FAQ
 #+PUBLISHED: true
 #+PERMALINK: faq
+
 ** How to create a Github personal access token?
 1. Follow the Github official guide [[https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token][Creating a personal access token]].
 
@@ -16,4 +16,6 @@ Click the ~Clear site data~ button, and log in again. If it's not working, go to
 Currently, the git bindings we are using only support [[https://www.datree.io/resources/git-push-force][git force push]], it will alter your commits history, so be carefully! The other option is save all your local changes and Re-index your current repo.
 [[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_07_25_Screenshot%202020-07-25%2023-48-27%20%2B0800.png?Expires=4749292209&Signature=OGiF6PmroS8KK-5Tt4L17d~jawihYqaSYAg3XiAi69oKyVY7zCeD60g5ZhMoZ3KbvAzWGg2PIoEA90krccG2qqLGXaM8EgJr69PBHlarcQAcQ4dwqq7zrf8gSzmhfr51SIaBAsv7qJFhniX7v4hajNjfiMeEEsCftYzoaJh2DyIZ9HEGQhD2wAtxa788IydrU0~Y1Kgag-mmuyw7cvYb2UVIyfKeT-wyC10KaeCczprkgCBo8HdYXUVHE4WUC224qIQ8v3R99Aqh385dNGy5vGn6VMyLBq6ef7Kv0nslUVibqQZs9LOZSNAEx5KuKKihe~1vIXGIFYmPqmoa0aYIcA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_07_25_Screenshot 2020-07-25 23-48-27 +0800.png]]
 ** I can't push or pull from GitHub, what should I do?
-
+Click your user avatar and go to ~Settings~, input a custom CORS proxy server.
+See more at https://github.com/isomorphic-git/cors-proxy
+[[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_08_05_Screenshot%202020-08-05%2014-21-43%20%2B0800.png?Expires=4750208955&Signature=bzBGfNnA7GDNzPlrQp4~UL40Qn5yTut~PaMPNx33XQli31bsrkUb954VldwLWVyqI3unibd5PX82z78T8rEKKq8Zl8FyA10amLi~hbusqUrQqCK2RE7ys7kAqKuonD5QcOCML4~tUNZrX9bRel37zhcXeBOl8O9L~VtrMt9Vq4bKkPYNGakzZClkqeMV3iHxz~GTd66YRdGRMk8WzfWMp1oL5BG-ZSOYe7wUt5dA4FPL~9yKRuUv9m-Fg6k4GEP4q92AF9h0sz-lH61ttqXxTvrPSjwK2g8EXajE1yupvEvvDSpJA~nlx5pSSzCp8S~VbyTXT-p3K6frnAs7tk4LPQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_08_05_Screenshot 2020-08-05 14-21-43 +0800.png]]
