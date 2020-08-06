@@ -2,6 +2,10 @@
 #+PERMALINK: changelog
 #+PUBLISHED: true
 
+** [[Aug 6th, 2020]] 
+*Version 0.0.1-13*
+*** [[Fixed issues]]
+**** 1. [[https://github.com/logseq/logseq/issues/67][Indent children upon indent parent]]
 ** [[Aug 4th, 2020]] 
 *Version 0.0.1-12*
 *** [[Fixed issues]]
