@@ -1,7 +1,15 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
-
+** [[Aug 9th, 2020]] 
+*Version 0.0.1-14*
+*** [[Fixed issues]]
+**** 1. [[https://github.com/logseq/logseq/issues/7][Clicking shift + up / down arrow on text highlights the block as opposed to a line of text]]
+**** 2. [[https://github.com/logseq/logseq/issues/107][Wrong heading title parsing]]
+*** [[Features]]
+**** 1. [[https://github.com/logseq/logseq/issues/105][Better UX for Markdown front matter and Org mode directives]]
+**** 2. Local image render support
+**** 3. Relative file path support
 ** [[Aug 6th, 2020]] 
 *Version 0.0.1-13*
 *** [[Fixed issues]]
