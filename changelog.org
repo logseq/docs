@@ -11,7 +11,8 @@
 **** 1.  Add mobile quickbar, indent, outdent, move up, move down (by [[https://github.com/HaojiXu][Haoji]])
 **** 2. Add moving block support.
 Shortcuts: ~Alt+Shift+Up~, ~Alt+Shift+Down~.
-****
+**** 3. Add collapse/expand shortcuts:
+~Ctrl+Up~ for collapse and ~Ctrl+Down~ for expand.
 ** [[Aug 9th, 2020]] 
 *Version 0.0.1-14*
 *** [[Fixed issues]]
