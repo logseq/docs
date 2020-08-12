@@ -7,7 +7,7 @@
 *** [[Fixed issues]]
 **** 1. Add auto page deletion and properly retracts ref (by [[https://github.com/HaojiXu][Haoji]])
 **** 2. Fixed multiple heading ~custom-id~s in properties
-**** 3. Use `Cmd` in Mac OS X instead of `Ctrl` keycode.
+**** 3. Use ~Cmd~ in Mac OS X instead of ~Ctrl~ keycode.
 *** [[Features]]
 **** 1.  Add mobile quickbar, indent, outdent, move up, move down (by [[https://github.com/HaojiXu][Haoji]])
 **** 2. Add moving block support.
