@@ -13,8 +13,10 @@
 Shortcuts: ~Alt+Shift+Up~, ~Alt+Shift+Down~.
 **** 3. Add collapse/expand shortcuts:
 ~Ctrl(Cmd)+Up~ for collapse and ~Ctrl(Cmd)+Down~ for expand.
-**** 4. ~Ctrl(Cmd)+Enter~
-**** 5. Add a preferred workflow option to settings, you can choose either ~NOW/LATER~ or ~TODO/DONE~
+**** 4. Add a preferred workflow option to settings, you can choose either ~NOW/LATER~ or ~TODO/DONE~
+**** 5. ~Ctrl(Cmd)+Enter~ to cycle between your preferred todo keywords.
+**** 6. A lot improvements on Graph.
+[[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_08_12_Screenshot%202020-08-12%2022-17-45%20%2B0800.png?Expires=4750843938&Signature=SAKbkr2QBG5hSmdxGvySfK8k1aR0Lw1KkPcVNcEHNBwVwZXcUkJC-jcBa7KoM0BeBipXroqTDOdvKzmOu-GKbhrOLdLDvRc9gM-5t7RK8OMVdq5pG4wJSCwgWBLCYfATo8IXrBwt-jaLAqbXaPiOcUsWcjFNsld5YZaXCJzc364iksFnHI3H4ivt6rmWCkpFViraiuH97mA1Qw-HdYXT7-SLG0k7kK-OvytEF7TGc~pJ7JBVAZD8T4mLa6wGvJSaCYOTw8IDhwjd2x4VKSa90oJk~V~prD55wpaDowpJHfteYUrgYTZivIAbLuepkEtLQ1mHZfHiMKtpE9q~tMyJlA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_08_12_Screenshot 2020-08-12 22-17-45 +0800.png]]
 ** [[Aug 9th, 2020]] 
 *Version 0.0.1-14*
 *** [[Fixed issues]]
