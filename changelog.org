@@ -12,7 +12,9 @@
 **** 2. Add moving block support.
 Shortcuts: ~Alt+Shift+Up~, ~Alt+Shift+Down~.
 **** 3. Add collapse/expand shortcuts:
-~Ctrl+Up~ for collapse and ~Ctrl+Down~ for expand.
+~Ctrl(Cmd)+Up~ for collapse and ~Ctrl(Cmd)+Down~ for expand.
+**** 4. ~Ctrl(Cmd)+Enter~
+**** 5. Add a preferred workflow option to settings, you can choose either ~NOW/LATER~ or ~TODO/DONE~
 ** [[Aug 9th, 2020]] 
 *Version 0.0.1-14*
 *** [[Fixed issues]]
