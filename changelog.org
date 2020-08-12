@@ -1,6 +1,11 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
+** [[Aug 12th, 2020]] 
+*Version 0.0.1-15*
+*** [[Fixed issues]]
+**** 1. Add auto page deletion and properly retracts ref (by [[https://github.com/HaojiXu][Haoji]])
+**** 2. Fixed multiple heading ~custom-id~s in properties
 ** [[Aug 9th, 2020]] 
 *Version 0.0.1-14*
 *** [[Fixed issues]]
