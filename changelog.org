@@ -3,7 +3,7 @@
 #+PUBLISHED: true
 
 ** [[Aug 18th, 2020]] 
-*Version 0.0.1-16*
+*Version 0.0.1-17*
 *** [[Fixed issues]]
 **** 1. [[https://github.com/logseq/logseq/issues/115][Fix enter not working in a heading page]] #115
 **** 2. [[https://github.com/logseq/logseq/issues/154][Distinguish the color of #tag and page reference in the text]] #154
