@@ -2,6 +2,19 @@
 #+PERMALINK: changelog
 #+PUBLISHED: true
 
+** [[Aug 18th, 2020]] 
+*Version 0.0.1-16*
+*** [[Fixed issues]]
+**** 1. [[https://github.com/logseq/logseq/issues/115][Fix enter not working in a heading page]] #115
+**** 2. [[https://github.com/logseq/logseq/issues/154][Distinguish the color of #tag and page reference in the text]] #154
+*** [[Features]]
+**** 1. [[https://github.com/logseq/logseq/issues/48][Bulk indent/unindent]] #48
+**** 2. [[https://github.com/logseq/logseq/issues/104][Bulk convert bullets to TODOs]] #104
+**** 3. [[https://github.com/logseq/logseq/issues/13][Allow links to pages where link text != page title]] #13
+> by gereleth:
+> Describe the solution you'd like:
+> I write a sentence with a markdown link: I'm scared of /[mice](Mouse)/.
+> It's rendered as I'm scared of [[mice]] where the link leads to the Mouse page.
 ** [[Aug 12th, 2020]] 
 *Version 0.0.1-15*
 *** [[Fixed issues]]
