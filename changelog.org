@@ -7,6 +7,7 @@
 **** 1. Fix block search scroll and highlight
 **** 2. Don't show ~##~ when searching block
 **** 3. Auto edit the last heading when creating a new page
+**** 4. Fixed project publishing error
 ** [[Aug 18th, 2020]] 
 *Version 0.0.1-17*
 *** [[Fixed issues]]

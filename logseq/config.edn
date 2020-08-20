@@ -1,6 +1,6 @@
 {:project {:name "blog"
            :alias "Logseq Blog"}
- :shortcuts {:editor/new-heading "alt+enter"},
+ :shortcuts {:editor/new-block "alt+enter"},
  :text-formats [],
  :git-pull-secs 60,
  :git-push-secs 10,
@@ -11,8 +11,8 @@
     :query [:find (pull ?h [*])
             :in $ ?start ?today
             :where
-            [?h :heading/marker ?marker]
-            [?h :heading/page ?p]
+            [?h :block/marker ?marker]
+            [?h :block/page ?p]
             [?p :page/journal? true]
             [?p :page/journal-day ?d]
             [(>= ?d ?start)]
@@ -21,18 +21,18 @@
     :inputs [:14d :today]
     :result-transform (fn [result]
                         (sort-by (fn [h]
-                                   (get h :heading/priority "Z")) result))
+                                   (get h :block/priority "Z")) result))
     :collapsed? true}
    {:title "📅 NEXT"
     :query [:find (pull ?h [*])
             :in $ ?start ?next
             :where
-            [?h :heading/marker ?marker]
-            [?h :heading/ref-pages ?p]
+            [?h :block/marker ?marker]
+            [?h :block/ref-pages ?p]
             [?p :page/journal? true]
             [?p :page/journal-day ?d]
             [(> ?d ?start)]
             [(< ?d ?next)]
             [(contains? #{"NOW" "LATER"} ?marker)]]
     :inputs [:today :7d-after]
-    :collapsed? true}]}}
+    :collapsed? false}]}}
