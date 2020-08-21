@@ -1,7 +1,21 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
-
+** [[Aug 22nd, 2020]]
+*Version 0.0.1-19*
+*** [[Fixed Issues]]
+**** ~Shift-click~ hashtags now adds linked to sidebar (by [[haoji]])
+**** Graph dot size increases when there're more linked references
+*** [[Features]]
+**** Roam Research JSON importer #experiment
+How to import the data?
+Go to https://logseq.com/import
+**** Excalidraw embed support #experiment
+How to use it?
+Type ~/draw~
+**** ~Ctrl+Alt+t~ to toggle between dark/light theme
+**** Nested pages support
+e.g [[Introduction to [[Logseq]]]]
 ** [[Aug 20th, 2020]] 
 *Version 0.0.1-18*
 *** [[Fixed issues]]
