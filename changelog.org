@@ -12,7 +12,10 @@ How to import the data?
 Go to https://logseq.com/import
 **** Excalidraw embed support #experiment
 How to use it?
-Type ~/draw~
+1. Type ~/draw~
+2. Input a title
+3. Save the block (either ~ESC~ or click outside the block)
+4. Draw it!
 **** ~Ctrl+Alt+t~ to toggle between dark/light theme
 **** Nested pages support
 e.g [[Introduction to [[Logseq]]]]
