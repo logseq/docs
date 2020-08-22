@@ -1,25 +1,30 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
-
+** [[Aug 22nd, 2020]]
+*Version 0.0.1-20*
+*** [[Fixed Issues]]
+**** 1. Selection fixes (Finally!)
+**** 2. Allow nested page link in page title
+**** 3. Fix blocks can't move upward embed blocks
 ** [[Aug 22nd, 2020]]
 *Version 0.0.1-19*
 *** [[Fixed Issues]]
-**** 1. ~Shift-click~ hashtags now adds linked to sidebar (by [[haoji]])
-**** 2. Graph dot size increases when there're more linked references
+**** ~Shift-click~ hashtags now adds linked to sidebar (by [[haoji]])
+**** Graph dot size increases when there're more linked references
 *** [[Features]]
-**** 1. Roam Research JSON importer #experiment
+**** Roam Research JSON importer #experiment
 How to import the data?
 Go to https://logseq.com/import
-**** 2. Excalidraw embed support #experiment
+**** Excalidraw embed support #experiment
 How to use it?
 1. Type ~/draw~
 2. Input a title
 3. Save the block (either ~ESC~ or click outside the block)
 4. Draw it!
-**** 3. ~Ctrl+Alt+t~ to toggle between dark/light theme
-**** 4. Nested pages support
-E.g. ~[[Introduction to [[Logseq]]]]~
+**** ~Ctrl+Alt+t~ to toggle between dark/light theme
+**** Nested pages support
+e.g [[Introduction to [[Logseq]]]]
 ** [[Aug 20th, 2020]] 
 *Version 0.0.1-18*
 *** [[Fixed issues]]
