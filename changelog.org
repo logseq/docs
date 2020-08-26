@@ -13,6 +13,14 @@
 *** [[Features]]
 **** 1. Show tags and relationship on global graph
 **** 2. Show tags and relationship on page graph
+**** 3. Add a ~:journal-basis~ option, the value could be either ~Monthly~ or ~Daily~
+There's also an option called ~:date-formatter~ which will be used for the journal title.
+
+Say if you're using Org-roam which creates one journal file each day, you can add those two lines to the file ~logseq/config.edn~:
+#+BEGIN_SRC clojure
+ :journal-basis "daily"
+ :date-formatter "yyyy-MM-dd"
+#+END_SRC
 ** [[Aug 24th, 2020]]
 *Version 0.0.1-21*
 *** [[Fixed issues]]
