@@ -1,6 +1,17 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
+** [[Aug 26th, 2020]] 
+*Version 0.0.2.0*
+*** [[Fixed issues]]
+**** 1. Fix footnote not jump right
+**** 2. Fix relative path
+**** 3. Fix parsers error which ignores newlines for paragraphs and code block
+*** [[Improvements]]
+**** 1. Much faster to clone and write thanks to IndexedDB batch optimization
+*** [[Features]]
+**** 1. Show tags and relationship on global graph
+**** 2. Show tags and relationship on page graph
 ** [[Aug 24th, 2020]]
 *Version 0.0.1-21*
 *** [[Fixed issues]]
