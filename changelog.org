@@ -1,7 +1,10 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
-
+** [[Aug 31st, 2020]] 
+*** [[Features]]
+**** 1. Better mobile bar for a more pretty and functional user experience
+**** 2. Now hashtags have auto-complete just like page and block refs do
 ** [[Aug 29th, 2020]] 
 *Version 0.0.2.2*
 *** [[Fixed issues]]
