@@ -1,6 +1,7 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
+
 ** [[Aug 31st, 2020]] 
 *** [[Features]]
 **** 1. Better mobile bar for a more pretty and functional user experience
