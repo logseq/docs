@@ -5,11 +5,13 @@
 ** [[Sep 2nd, 2020]]
 *Version 0.0.2.3 *
 *** [[Fixed issues]]
-**** 1. Fixed the loading issue, let us know if it appears again
+**** 1. Fixed several loading issues, not all of them!!
 **** 2. Fixed blank page, let us know if it appears again
 **** 3. Fixed Markdown alias
 **** 4. Fixed push not working for big size repos
 **** 5. Git push is much faster than before for some repos
+*** [[Notices]]
+**** 1. It seems that sometimes the clone will failed when the network is pretty slow.
 ** [[Aug 31st, 2020]]
 *** [[Features]]
 **** 1. Better mobile bar for a more pretty and functional user experience
