@@ -3,6 +3,7 @@
 #+PUBLISHED: true
 
 ** [[Sep 2nd, 2020]]
+*Version 0.0.2.3 *
 *** [[Fixed issues]]
 **** 1. Fixed the loading issue, let us know if it appears again
 **** 2. Fixed blank page, let us know if it appears again
