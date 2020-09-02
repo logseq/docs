@@ -17,7 +17,7 @@
 ** [[Aug 29th, 2020]]
    *Version 0.0.2.2*
 *** [[Fixed issues]]
-**** 1. Fixed all the existing issues related to GitHub App Installation.
+**** 1. Fixed all the existing issues related to GitHub App Installation
 ** [[Aug 26th, 2020]]
    *Version 0.0.2.0*
 *** [[Fixed issues]]
