@@ -4,8 +4,8 @@
 ** [[Sep 5th, 2020]] 
 *Version 0.0.2.4*
 *** [[Fixed Issues]]
-**** 1. Fixed page autocomplete might not work under certain circumstances (By haoji)
-**** 2. Better hashtag autocomplete handling (By haoji)
+**** 1. Fixed page autocomplete might not work under certain circumstances (by haoji)
+**** 2. Better hashtag autocomplete handling (by haoji)
 **** 3. Fixed Git force push not working
 **** 4. Hide the front matter when there's only a ~title~ attribute
 **** 5. Fixed loading files issue
