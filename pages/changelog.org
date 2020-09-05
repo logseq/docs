@@ -1,7 +1,12 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
-
+** [[Sep 5th, 2020]] 
+*Version 0.0.2.4-1 (minor change)*
+*** [[Fixed Issues]]
+**** 1. Doesn't show the dot when there's only a ~title~ attribute
+**** 2. Page attributes block has a different background color
+**** 3. Both ~All files~ and ~All pages~ use wide layout now
 ** [[Sep 5th, 2020]] 
 *Version 0.0.2.4*
 *** [[Fixed Issues]]
