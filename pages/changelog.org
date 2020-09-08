@@ -1,11 +1,12 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
+
 ** [[Sep 8th, 2020]] 
 *Version 0.0.2.5*
 *** [[Performance]]
 **** 1. Huge performance improvement
-Tested on 1k+ notes
+Tested on 1k+ notes, make sure to click the ~Cancel~ button and then click the ~Save~ button when the browser prompts that you have some unsaved changes.
 *** [[Fixed Issues]]
 **** 1. Fixed all pages loading slow (by haoji)
 **** 2. Fixed auto pairs (by haoji)
