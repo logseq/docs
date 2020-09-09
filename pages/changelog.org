@@ -12,8 +12,6 @@ Logseq is migrating to creating journal pages on a daily basis for better perfor
 *** [[Features]]
 **** 1. In search menu, you can press ~shift~ when clicking on a link to open it in sidebar
 **** 2. Supports directly adding pages to contents in page menu
-[[https://user-images.githubusercontent.com/29003511/92605382-3ee6cd80-f2e4-11ea-92cf-5536cf0f36b1.png][migration-help]]
-
 ** [[Sep 8th, 2020]] 
 *Version 0.0.2.5*
 *** [[Performance]]
