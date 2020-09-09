@@ -2,6 +2,18 @@
 #+PERMALINK: changelog
 #+PUBLISHED: true
 
+** [[Sep 9th, 2020]] 
+*Version 0.0.2.6*
+*** [[Daily Notes Migration]]
+Logseq is migrating to creating journal pages on a daily basis for better performance and data safety. In the future, the current method of storing journal files once a month would be removed. You will receive a notification to migrate to daily basis when you open Logseq, and if it didn't appear, refresh your browser.
+*** [[Fixed Issues]]
+**** 1. Fixed not able to DELETE a Page or even Rename a page
+**** 2. Fixed an issue where contents page might show ~[[]]~ on page links
+*** [[Features]]
+**** 1. In search menu, you can press ~shift~ when clicking on a link to open it in sidebar
+**** 2. Supports directly adding pages to contents in page menu
+[[https://user-images.githubusercontent.com/29003511/92605382-3ee6cd80-f2e4-11ea-92cf-5536cf0f36b1.png][migration-help]]
+
 ** [[Sep 8th, 2020]] 
 *Version 0.0.2.5*
 *** [[Performance]]
