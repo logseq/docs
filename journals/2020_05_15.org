@@ -1,0 +1,11 @@
+* Friday, 05/15/2020
+** [[Changelog]]
+*** No need to input github person token each time when you login.
+*** Disable tab adjusting level when there's any links input modal
+    :PROPERTIES:
+    :CUSTOM_ID: 5ec11d99-65be-470d-b303-ec1a3b07a5e0
+    :END:
+*** Fix an editor issue when there's no headings in the file
+*** Fix issue of /tab/ key adjusting level
+*** Move datascript dbs to indexeddb
+

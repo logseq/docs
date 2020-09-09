@@ -1,0 +1,5 @@
+* Monday, 05/25/2020
+** [[Changelog]]
+*** Add a git status ~dot~ to the heading.
+    [[https://cdn.logseq.com/%2F59c4036f-98b3-42b6-b6a6-2800a06f44a12020_05_25_Screenshot%202020-05-25%2016-29-44%20%2B0800.png?Expires=4743995397&Signature=exWvdf-0DamW6KaW8TzXh3QfkNzQhHgb4TML0rtSpkF~lGQNzziPt55G33Gbr12rxcIxD2z06hFFLMtfdepuFrLqyDmfR-znKlwpgWwOZTlpEJnJ-N52FqrJOnJ9qrzHYIGKG0Q4XcJYMTfIT1NYzHzGXdHsFDx3G-4elHsDPxVvw6wereuD3EuxSt6uVDaJNjLUhreSq~3fBln3~IUl1BgZObT8SaglqS-IZxUY1weYRN11JYKLWze2pOLTbRnwjogUm4jSc1rRU0xYDZBVhfVaBdNJwKXi5tMnXOEbhVgGJZj34HrSRHOHkZ40bOoj4dGjYoYm7NJlq8-mZu4zTg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_05_25_Screenshot 2020-05-25 16-29-44 +0800.png]]
+*** Editing and inserting new headings should be fast now!

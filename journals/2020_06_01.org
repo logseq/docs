@@ -29,32 +29,3 @@
      #+BEGIN_WARNING
      WARNING
      #+END_WARNING
-* Jun 2nd, 2020
-* Jun 3rd, 2020
-* Jun 4th, 2020
-* Jun 5th, 2020
-* Jun 6th, 2020
-* Jun 7th, 2020
-* Jun 8th, 2020
-* Jun 9th, 2020
-* Jun 10th, 2020
-* Jun 11th, 2020
-* Jun 12th, 2020
-* Jun 13th, 2020
-* Jun 14th, 2020
-* Jun 15th, 2020
-* Jun 16th, 2020
-* Jun 17th, 2020
-* Jun 18th, 2020
-* Jun 19th, 2020
-* Jun 20th, 2020
-* Jun 21st, 2020
-* Jun 22nd, 2020
-* Jun 23rd, 2020
-* Jun 24th, 2020
-* Jun 25th, 2020
-* Jun 26th, 2020
-* Jun 27th, 2020
-* Jun 28th, 2020
-* Jun 29th, 2020
-* Jun 30th, 2020

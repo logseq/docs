@@ -1,0 +1,12 @@
+* Sunday, 05/17/2020
+** [[Changelog]]
+*** Add block reference
+    E.g ~((block))~
+*** Add zoom in && out to edit specific heading, click the ~dot~ before the heading.
+*** Add keybindings for adjusting levels.
+    You can already use ~tab~ to add or remove one level, two more bindings were added:
+    1. ^^alt+shift+left^^ to remove one level each time.
+    2. ^^alt+shift+right^^ to add one level each time.
+*** Defaults to solarized dark theme.
+** [[Fixed issues]]
+*** Logout will clear both localstorage and indexeddb.

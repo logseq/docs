@@ -1,0 +1,10 @@
+* Wednesday, 05/20/2020
+** [[Changelog]]
+*** Add page aliases (Only supporting org mode for now).
+*** [[https://github.com/org-roam/org-roam][Org roam]] Integration.
+    Rudimentary Roam replica with Org-mode.
+    [[Features]]
+*** Basic page graph.
+    [[Features]]
+** [[Fixed issues]]
+*** Definition list parsing
