@@ -2,6 +2,19 @@
 #+PERMALINK: changelog
 #+PUBLISHED: true
 
+** [[Sep 11th, 2020]] 
+*Version 0.0.2.7*
+*** [[Fixed Issues]]
+**** 1. Fixed copy which needs at least twice before
+**** 2. Better page name integration with other tools like Obsidian
+**** 3. Fixed can't load previous journals (by haoji)
+**** 4. Fixed bugs on opening/closing brackets and asterisks
+**** 5. Fixed code block highlighting performance issue
+**** 6. Make it compatible with new date format with roam when importing json
+**** 7. Fixed page rename && delete
+*** [[Features]]
+**** 1. [[Developer mode]] (by haoji) #experiment
+Developer mode helps contributors and extension developers test their integration with Logseq more efficient.
 ** [[Sep 9th, 2020]] 
 *Version 0.0.2.6*
 *** [[Daily Notes Migration]]
