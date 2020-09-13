@@ -1,12 +1,15 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
+
 ** [[Sep 13th, 2020]]
 *Version 0.0.2.8*
 *** [[Fixed issues]]
 **** 1. Fixed issues related to roam json importer (still experiment)
 **** 2. Fixed not creating new journal page automatically
 **** 3. Better undo/redo behavior
+**** 4. Support multiple notifications now (by haoji)
+**** 5. *All pages* support ~shift+click~ to open in right sidebar (by haoji)
 *** [[Features]]
 **** 1. [[Shortcuts change]]
 [[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_09_13_Screenshot%202020-09-13%2015-36-10%20%2B0800.png?Expires=4753582587&Signature=GAjAjKEAx-8ItK04aNXqQzd8NQjfnHi9~CVJeho2yBP5E38BFKqMSVYC5Y1eQaz7jbksyKMuJi27NnM92FrZYJiCgUWtuV1txBhl2ANBRnRHUON7QzLFvY1wZI9~7~QTTsLYBxCDnsynoz3Bp0gS1kmn8eBWFq1KZtrHZ3mGs7HHDREI2PZJHTQsE4qXN1DENh~0RuZ0UsCBisu~5H1JtzDT2riUCurZm08G3EdSZ33Yrr7InA7~EDT8W-lCGhJp9VJSeWpRkYJXPKuwT6RQiA6ZyrLKtDPzn4p3Ik9bNSemIYaNedUt-TKAgDbk17TKrCYk~6QYI8~7EwK87crLQA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_09_13_Screenshot 2020-09-13 15-36-10 +0800.png]]
