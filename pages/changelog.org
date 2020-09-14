@@ -1,7 +1,15 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
-
+** [[Sep 14th, 2020]]
+*Version 0.0.2.9*
+*** [[Features]]
+**** 1. [[Internationalization]] (Special thanks to @Kamal for support!)
+你好世界！ Logseq is coming to 30+ languages, and this release adds support for Chinese (Simplified). Languages will be automatically applied depending on your browser settings; if not, go to Settings to manually select languages.
+***** English, Chinese (Simplified), Afrikaans: Supported today
+Thanks @Slipboxnutter for Afrikaans translation!
+***** German, French, Japanese, and more: stay tuned for more update!
+If you want to help translate Logseq, sign up here: https://crwd.in/logseq
 ** [[Sep 13th, 2020]]
 *Version 0.0.2.8*
 *** [[Fixed issues]]
