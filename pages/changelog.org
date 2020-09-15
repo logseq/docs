@@ -1,6 +1,27 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
+
+** [[Sep 15th, 2020]] 
+*Version 0.0.3.0*
+*** [[Fixed issues]]
+**** 1. Fixed deleting make it not editable in the block page (zoom-in)
+**** 2. Fixed deleting in backlinks not triggering github sync
+**** 3. Fixed Page titles when zoomed into a block
+**** 4. Fixed embedded todos don't consistently update as expected
+*** [[Features]]
+**** Convert a block to/from a heading
+   :PROPERTIES:
+   :background-color: rgb(83, 62, 125)
+   :heading: true
+   :END:
+*How to convert a block to a heading?*
+Right click the left dot of any block, click ~Convert to a heading~.
+
+*How to convert it back to a block?*
+Click ~Convert back to a block~.
+
+You can also change the background color of any block, it doesn't have to be a heading.
 ** [[Sep 14th, 2020]]
 *Version 0.0.2.9*
 *** [[Features]]
