@@ -1,7 +1,16 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
-
+** [[Sep 19th, 2020]] 
+*Version 0.0.3.1*
+*** [[Fixed issues]]
+**** 1. Fixed embedded todos don't consistently update as expected
+**** 2. Don't show diff page if there's no changes
+**** 3. Page name disallows slash anymore
+**** 4. Fixed org-roam alias in logseq
+*** [[Enhancement]]
+**** 1. Logseq can handle very long block list now (similar to virtual-list)
+**** 2. Preserve the editing position when switching pages (e.g., ~ctrl+o~)
 ** [[Sep 15th, 2020]] 
 *Version 0.0.3.0*
 *** [[Fixed issues]]
