@@ -1,7 +1,7 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
-** [[Sep 19th, 2020]] 
+** [[Sep 18th, 2020]] 
 *Version 0.0.3.1*
 *** [[Fixed issues]]
 **** 1. Fixed embedded todos don't consistently update as expected
@@ -11,6 +11,8 @@
 *** [[Enhancement]]
 **** 1. Logseq can handle very long block list now (similar to virtual-list)
 **** 2. Preserve the editing position when switching pages (e.g., ~ctrl+o~)
+**** 3. *Properties* UX huge improvement
+To add a property to any block, you can right click the left dot and click ~Add a property~.
 ** [[Sep 15th, 2020]] 
 *Version 0.0.3.0*
 *** [[Fixed issues]]
@@ -21,7 +23,7 @@
 *** [[Features]]
 **** Convert a block to/from a heading
    :PROPERTIES:
-   :background-color: rgb(83, 62, 125)
+   :background_color: rgb(83, 62, 125)
    :heading: true
    :END:
 *How to convert a block to a heading?*
