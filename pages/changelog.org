@@ -1,7 +1,22 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
-
+** [[Sep 21st, 2020]]
+*Version 0.0.3.3*
+*** [[Fixed issues]]
+**** 1. Fixed saving the first block on empty page not working
+**** 2. Continue editing after first bullet on new page
+**** 3. Fixed embedding block with only table shows nothing
+**** 4. Fixed embedding an empty page (no block) creates unreadable .md files
+**** 5. Fixed embedded todos don't consistently update as expected
+*** [[Features]]
+**** 1. You can change the default home page now, check #faq
+** [[Sep 20th, 2020]] 
+*Version 0.0.3.2*
+*** [[Fixed issues]]
+**** 1. Multiple editing issues (page/block auto-complete, cursor jumping)
+*** [[Enhancement]]
+**** 1. You don't have to specify a title for source code, list item, quotes anymore
 ** [[Sep 18th, 2020]] 
 *Version 0.0.3.1*
 *** [[Fixed issues]]
