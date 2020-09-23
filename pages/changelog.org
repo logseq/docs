@@ -12,12 +12,8 @@
 *** [[Features]]
 **** Multi-line displayed math support, there're two ways now:
 
-$$
-\begin{gather*} 
-2x - 5y =  8 \\ 
-3x^2 + 9y =  3a + c
-\end{gather*}
-$$
+$$\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} 
+{1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }$$
 ** [[Sep 21st, 2020]]
 *Version 0.0.3.3*
 *** [[Fixed issues]]
