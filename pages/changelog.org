@@ -10,14 +10,14 @@
 **** 4. Fixed code block doesn't render when it starts with ~:xx~
 **** 5. Fixed ~Ctrl + K~ linking not inserting cursor correctly
 *** [[Features]]
-**** 1. Multi-line displayed math support, there're two ways now:
+**** Multi-line displayed math support, there're two ways now:
 
-#+BEGIN_EXPORT latex
-\begin{align*} 
-2x - 5y &=  8 \\ 
-3x + 9y &=  -12
-\end{align*}
-#+END_EXPORT
+$$
+\begin{gather*} 
+2x - 5y =  8 \\ 
+3x^2 + 9y =  3a + c
+\end{gather*}
+$$
 ** [[Sep 21st, 2020]]
 *Version 0.0.3.3*
 *** [[Fixed issues]]
