@@ -9,6 +9,13 @@
 **** 3. Fixed deleting blocks not working in the "References" section
 **** 4. Fixed code block doesn't render when it starts with ~:xx~
 **** 5. Fixed ~Ctrl + K~ linking not inserting cursor correctly
+*** [[Features]]
+**** 1. Multi-line displayed math support, there're two ways now:
+
+#+BEGIN_EXPORT latex
+\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} 
+{1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
+#+END_EXPORT
 ** [[Sep 21st, 2020]]
 *Version 0.0.3.3*
 *** [[Fixed issues]]
