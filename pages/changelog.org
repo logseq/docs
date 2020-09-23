@@ -13,8 +13,10 @@
 **** 1. Multi-line displayed math support, there're two ways now:
 
 #+BEGIN_EXPORT latex
-\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} 
-{1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
+\begin{align*} 
+2x - 5y &=  8 \\ 
+3x + 9y &=  -12
+\end{align*}
 #+END_EXPORT
 ** [[Sep 21st, 2020]]
 *Version 0.0.3.3*
