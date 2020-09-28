@@ -11,7 +11,7 @@ title: Tutorial
 Type `Enter` to create a new block.
 Type `Shift+Enter` to create a new line.
 Type `/` to show all the commands.
-Type `[[` to link or create a new page.
+Type `[[` to reference or create a new page.
 Type `((` to reference a block.
 Click the help button at the bottom right to see more keybindings. 
 #+END_TIP
