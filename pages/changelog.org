@@ -4,7 +4,13 @@
 ** [[Sep 28th, 2020]] 
 *Version 0.0.3.5*
 *** [[Fixed issues]]
-**** 1. Links support emphasis now, e.g. *[[Learn the shortcuts]]*
+**** 1. Links support emphasis now, e.g. ~**[[Learn the shortcuts]]**~ (for markdown) will be rendered as *[[Learn the shortcuts]]*.
+**** 2. Fixed embeded blocks not changing when the original block changed.
+**** 3. Journal pages can be embedded now
+*** [[Enhancement]]
+**** 1. Support fullscreen on mobile now (Thanks @denvey)
+**** 2. Add onboarding "Getting started"
+**** 3. Add credits for tools which logseq was influnced by
 ** [[Sep 23rd, 2020]] 
 *Version 0.0.3.4*
 *** [[Fixed issues]]
