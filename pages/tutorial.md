@@ -26,4 +26,4 @@ some changes on the right sidebar, those referenced blocks will be changed too!
 ## 4. What if I want to embed the whole page? Here you go:
 ### {{{embed [[How to take dummy notes?]] }}}
 ## 5. Does logseq support tags?
-### Of course, #dummy
+### Of course, this is a #dummy tag.
