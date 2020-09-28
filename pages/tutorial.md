@@ -2,7 +2,7 @@
 title: Tutorial
 ---
 
-## This is a 10 minutes tutorial on how to use Logseq, let's get started!
+## This is a 10 minutes tutorial on how to use Logseq. Let's get started!
 :PROPERTIES:
 :background_color: rgb(38, 76, 155)
 :END:
@@ -22,7 +22,7 @@ Click the help button at the bottom right to see more keybindings.
 some changes on the right sidebar, those referenced blocks will be changed too!
 ### ((5f713e91-8a3c-4b04-a33a-c39482428e2d)) : This is a block reference.
 ### ((5f713ea8-8cba-403d-ac00-9964b1ec7190)) : This is another block reference.
-## 3. I don't want to just reference the block title, how about embedding the whole block with it's children?
+## 3. I don't want to reference the block title, how about embedding the whole block with its children?
 ### {{{embed ((5f713e91-8a3c-4b04-a33a-c39482428e2d)) }}}
 ## 4. What if I want to embed the whole page? Here you go:
 ### {{{embed [[How to take dummy notes?]] }}}
@@ -44,3 +44,4 @@ some changes on the right sidebar, those referenced blocks will be changed too!
           :width "653"}]]
 ### DONE Create a page
 ### CANCELED [#C] Write a page with more than 1000 blocks
+## That's it! Thanks for your time and having fun!
