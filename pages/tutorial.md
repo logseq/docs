@@ -29,8 +29,8 @@ some changes on the right sidebar, those referenced blocks will be changed too!
 ### Of course, this is a #dummy tag.
 ## 6. Do you support tasks like todo/doing/done and priorities?
 ### Yes!
-### NOW A dummy tutorial on [[How to take dummy notes?]]
-### LATER Watch Ed's video on how to install logseq app on your GitHub repo and other cool features like graph view.
+### NOW [#A] A dummy tutorial on [[How to take dummy notes?]]
+### LATER [#A] Watch Ed's video on how to install logseq app on your GitHub repo and other cool features like graph view. 
 
 [:div.videoWrapper
         [:iframe
