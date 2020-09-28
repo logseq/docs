@@ -6,7 +6,7 @@ title: Tutorial
 :PROPERTIES:
 :background_color: rgb(38, 76, 155)
 :END:
-## Some tips might be useful.
+## Here are some tips might be useful.
 #+BEGIN_TIP
 Type `Enter` to create a new block.
 Type `Shift+Enter` to create a new line.
