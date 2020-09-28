@@ -4,8 +4,7 @@ title: Tutorial
 
 ## This is a 5 minutes tutorial on how to use Logseq, let's go!
 :PROPERTIES:
-:heading: true
-:background_color: rgb(121, 62, 62)
+:background_color: rgb(83, 62, 125)
 :END:
-## 1. Let's create a page [[How to take dummy notes]].
+## 1. Let's create a page [[How to take dummy notes]], the page wrapped by `[[]]` will be a new page if it doesn't exists. You can click it to go to that page, or you can `Shift+Click` to open it in the right sidebar!
 ##
