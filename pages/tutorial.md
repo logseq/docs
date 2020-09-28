@@ -19,3 +19,5 @@ Click the help button at the bottom right to see more keybindings.
 ## 2. Let's reference some blocks on [[How to take dummy notes?]], for example:
 ### ((5f713e91-8a3c-4b04-a33a-c39482428e2d))
 ### ((5f713ea8-8cba-403d-ac00-9964b1ec7190))
+## 3. I don't want to just reference the title, how about embedding the whole block with it's children?
+### {{{embed ((5f713e91-8a3c-4b04-a33a-c39482428e2d)) }}}
