@@ -17,4 +17,5 @@ Click the help button at the bottom right to see more keybindings.
 #+END_TIP
 ## 1. Let's create a page [[How to take dummy notes?]]. You can click it to go to that page, or you can `Shift+Click` to open it in the right sidebar! Now you should see both _Linked References_ and _Unlinked References_.
 ## 2. Let's create some blocks on [[How to take dummy notes?]], for example:
-((5f713e91-8a3c-4b04-a33a-c39482428e2d))
+### 1. ((5f713e91-8a3c-4b04-a33a-c39482428e2d))
+### 2. ((5f713ea8-8cba-403d-ac00-9964b1ec7190))

@@ -6,3 +6,7 @@ title: How to take dummy notes?
 :PROPERTIES:
 :custom_id: 5f713e91-8a3c-4b04-a33a-c39482428e2d
 :END:
+## Hey, I'm another block!
+:PROPERTIES:
+:custom_id: 5f713ea8-8cba-403d-ac00-9964b1ec7190
+:END:
