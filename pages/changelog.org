@@ -1,6 +1,8 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
+** [[Sep 28th, 2020]] 
+*Version 0.0.3.5*
 ** [[Sep 23rd, 2020]] 
 *Version 0.0.3.4*
 *** [[Fixed issues]]
