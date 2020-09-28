@@ -3,6 +3,8 @@
 #+PUBLISHED: true
 ** [[Sep 28th, 2020]] 
 *Version 0.0.3.5*
+*** [[Fixed issues]]
+**** 1. Links support emphasis now, e.g. *[[Learn the shortcuts]]*
 ** [[Sep 23rd, 2020]] 
 *Version 0.0.3.4*
 *** [[Fixed issues]]
