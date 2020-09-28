@@ -25,5 +25,19 @@ some changes on the right sidebar, those referenced blocks will be changed too!
 ### {{{embed ((5f713e91-8a3c-4b04-a33a-c39482428e2d)) }}}
 ## 4. What if I want to embed the whole page? Here you go:
 ### {{{embed [[How to take dummy notes?]] }}}
-## 5. Does logseq support tags?
+## 5. Do you support tags?
 ### Of course, this is a #dummy tag.
+## 6. Do you support tasks like todo/doing/done and priorities?
+### Yes!
+### NOW A dummy tutorial on [[How to take dummy notes?]]
+### LATER Watch Ed's video on how to install logseq app on your GitHub repo and other cool features like graph view.
+
+[:div.videoWrapper
+        [:iframe
+         {:allowfullscreen "allowfullscreen"
+          :allow
+          "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          :frameborder "0"
+          :src "https://www.youtube.com/embed/Vw-x7yTTO0s"
+          :height "367"
+          :width "653"}]]
