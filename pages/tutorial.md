@@ -43,3 +43,5 @@ some changes on the right sidebar, those referenced blocks will be changed too!
           :width "653"}]]
 ### DONE Create a page
 ### CANCELED [#C] Write a page with more than 1000 blocks
+## 7. Do you support free drawing?
+### Yes, type `/Draw`
