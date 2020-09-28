@@ -28,7 +28,7 @@ some changes on the right sidebar, those referenced blocks will be changed too!
 ## 5. Do you support tags?
 ### Of course, this is a #dummy tag.
 ## 6. Do you support tasks like todo/doing/done and priorities?
-### Yes, type `/` and pick your favorite todo keyword.
+### Yes, type `/` and pick your favorite todo keyword or priority (A/B/C).
 ### NOW [#A] A dummy tutorial on [[How to take dummy notes?]]
 ### LATER [#A] Watch Ed's video on how to install logseq app on your GitHub repo and other cool features like graph view. 
 
@@ -41,4 +41,5 @@ some changes on the right sidebar, those referenced blocks will be changed too!
           :src "https://www.youtube.com/embed/Vw-x7yTTO0s"
           :height "367"
           :width "653"}]]
-### DONE
+### DONE Create a page
+### CANCELED [#C] Write a page with more than 1000 blocks
