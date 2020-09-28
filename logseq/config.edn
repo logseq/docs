@@ -1,6 +1,6 @@
 {:project {:name "blog"
            :alias "Logseq Blog"}
- :preferred-format "markdown"
+ :preferred-format "Markdown"
  :shortcuts {:editor/new-block "alt+enter"},
  :text-formats [],
  :git-pull-secs 60,
