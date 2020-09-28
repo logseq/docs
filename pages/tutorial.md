@@ -21,3 +21,5 @@ Click the help button at the bottom right to see more keybindings.
 ### ((5f713ea8-8cba-403d-ac00-9964b1ec7190))
 ## 3. I don't want to just reference the block title, how about embedding the whole block with it's children?
 ### {{{embed ((5f713e91-8a3c-4b04-a33a-c39482428e2d)) }}}
+## 4. What if I want to embed the whole page? Here you go:
+### {{{embed [[How to take dummy notes?]] }}}
