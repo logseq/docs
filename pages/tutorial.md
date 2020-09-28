@@ -2,12 +2,15 @@
 title: Tutorial
 ---
 
-## This is a 10 minutes tutorial on how to use Logseq. Let's get started!
+## Hi, welcome to Logseq!
 :PROPERTIES:
-:background_color: rgb(38, 76, 155)
+:heading: true
 :END:
+## Logseq is a _privacy-first_, _open-source_ platform for _knowledge_ sharing and management.
+## This is a 10 minutes tutorial on how to use Logseq. Let's get started!
 ## Here are some tips might be useful.
 #+BEGIN_TIP
+Click to edit any block.
 Type `Enter` to create a new block.
 Type `Shift+Enter` to create a new line.
 Type `/` to show all the commands.
@@ -31,17 +34,17 @@ some changes on the right sidebar, those referenced blocks will be changed too!
 ## 6. Do you support tasks like todo/doing/done and priorities?
 ### Yes, type `/` and pick your favorite todo keyword or priority (A/B/C).
 ### NOW [#A] A dummy tutorial on "How to take dummy notes?"
-### LATER [#A] Watch Ed's video on how to install logseq app on your GitHub repo and other cool features like graph view. 
+### LATER [#A] Check out this awesome video by [:a {:href "https://twitter.com/EdTravelling" :target "_blank"} "@EdTravelling"], which shows how to install logseq app on your GitHub repo and other cool features like graph view.
 
 [:div.videoWrapper.mb-4
         [:iframe
-         {:allowfullscreen "allowfullscreen"
+         {:allowFullScreen "allowfullscreen"
           :allow
           "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          :frameborder "0"
-          :src "https://www.youtube.com/embed/Vw-x7yTTO0s"
-          :height "367"
-          :width "653"}]]
+        :frameBorder "0"
+        :src "https://www.youtube.com/embed/Vw-x7yTTO0s"
+        :height "367"
+        :width "653"}]]
 ### DONE Create a page
 ### CANCELED [#C] Write a page with more than 1000 blocks
 ## That's it! Thanks for your time and having fun!
