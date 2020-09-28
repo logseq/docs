@@ -1,5 +1,5 @@
 ---
-title: Tutorial
+title: Getting started
 ---
 
 ## Hi, welcome to Logseq!
