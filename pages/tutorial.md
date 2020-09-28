@@ -2,7 +2,7 @@
 title: Tutorial
 ---
 
-## This is a 5 minutes tutorial on how to use Logseq, let's go!
+## This is a 10 minutes tutorial on how to use Logseq, let's go!
 :PROPERTIES:
 :background_color: rgb(38, 76, 155)
 :END:
