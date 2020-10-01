@@ -1,8 +1,0 @@
-* Thursday, 05/28/2020
-** Changelog
-*** Add history support.
-    | Name | Shortcut |
-    |------+----------|
-    | Undo | ~Ctrl-c~ |
-    | Redo | ~Ctrl-y~ |
-

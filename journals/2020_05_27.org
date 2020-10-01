@@ -1,5 +1,0 @@
-* Wednesday, 05/27/2020
-** Fixed issues
-*** Fixed issue of login.
-*** Fixed issue of git pull.
-*** Don't re-render the right sidebar if there's no data changed.

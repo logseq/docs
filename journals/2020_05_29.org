@@ -1,6 +1,0 @@
-* Friday, 05/29/2020
-** Changelog
-*** Add auto pairs, it supports ~(~, ~[~ and ~{~ now.
-** Fixed issues
-*** Selection are working fine on Chrome.
-*** ~Ctrl-x~ can copy now.

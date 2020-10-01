@@ -1,7 +1,0 @@
-* Thursday, 05/21/2020
-** [[Changelog]]
-*** Add a white theme (dark theme is coming).
-*** Now you can add new pages.
-    [[https://cdn.logseq.com/%2F59c4036f-98b3-42b6-b6a6-2800a06f44a12020_05_21_Screenshot%202020-05-21%2023-05-27%20%2B0800.png?Expires=4743673557&Signature=TcfZIqnSCw8llL8MIosuA2CxXBU7DRJE80Eea0HIUHD84mM-Nf6WctPpDa8cMtNuw7QN78CG6lMfcv-pfVf5Cu8xbIj6GYYOF-88qviC9TgtUhShsfuLFvKtEHFuxksX2b9M1NWzPFavyXgzEG~xdefeDKE7j6D5kgIjdcB1vP2-hQvP2EIyvBjx78-NdH4iadFp5ja1~xMRlLBaF4qJJGIPpaxtyuFvNr52eQL55xDLGis5CifX3H1TAKE10giCTg5F4CXnW6l7cipaEq10csIXIbtK4VzGfEyihl3OYYafz20rPzMk-QvXwxqf3IzVI0dZACIHTBzbGiTYdg6cWA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_05_21_Screenshot 2020-05-21 23-05-27 +0800.png]]
-** [[Fixed issues]]
-*** Fixed slow editing
