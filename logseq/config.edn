@@ -3,6 +3,9 @@
  :preferred-format "Markdown"
  :shortcuts {:editor/new-block "alt+enter"},
  :text-formats [],
+ :all-pages-public? true,
+ :default-home {:page "Changelog"
+                :sidebar "Contents"}
  :git-pull-secs 60,
  :git-push-secs 10,
  :git-auto-push false,
