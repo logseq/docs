@@ -9,7 +9,8 @@
 **** 3. Allow deleting journal pages
 **** 4. Fixed dropdown modal display (by [[meh]])
 *** [[Features]]
-****
+**** 1. Publishing #experiment 
+Check out the [[https://logseq.github.io/page/publishing][docs]].
 ** [[Sep 28th, 2020]] 
 *Version 0.0.3.5*
 *** [[Fixed issues]]
