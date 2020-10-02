@@ -1,7 +1,15 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
-
+** [[Oct 2nd, 2020]] 
+*Version 0.0.3.6*
+*** [[Fixed issues]]
+**** 1. Fixed logout sometimes not working well
+**** 2. Fixed custom queries which make the app not responding
+**** 3. Allow deleting journal pages
+**** 4. Fixed dropdown modal display (by [[meh]])
+*** [[Features]]
+****
 ** [[Sep 28th, 2020]] 
 *Version 0.0.3.5*
 *** [[Fixed issues]]
