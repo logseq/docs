@@ -22,4 +22,5 @@ See more at https://github.com/isomorphic-git/cors-proxy
 *** Is Logseq just a rip-off of Roam Research or another note-taking program?
 *** When I hover over the orange/green dot, I see `Push now` and `Pull now` buttons. What do those mean?
 *** How can I see a list of all of my pages?
-*** Something is not working. What
+*** Something is not working. What are the first first troubleshooting steps I should try?
+*** Why doesn't `Enter` create a new block (or new bullet point)?
