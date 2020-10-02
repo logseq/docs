@@ -14,3 +14,4 @@ title: Publishing
 
 - Go to https://logseq.com, click the user avatar and then click "Publishing" to download an `index.html` file, put it in your unzipped folder.
 - Deploy the folder to your github pages (gh-pages branch) or any server.
+## We'll make it much easier for publishing in the future, for example, you can click a "Publish" button which will deploy to your preferred hosting solution (gh pages, netlify, etc.).
