@@ -1,6 +1,12 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
+** [[Oct 3rd, 2020]] 
+*Version 0.0.3.7*
+*** [[Fixed issues]]
+**** 1. Fixed [[https://github.com/logseq/logseq/issues/373][performance issues typing gets slow and very laggy]]
+**** 2. Fixed redundant blocks in sidebar (by [[meh]])
+**** 3. Fixed bugs in project create / update (by [[meh]])
 ** [[Oct 2nd, 2020]] 
 *Version 0.0.3.6*
 *** [[Fixed issues]]
