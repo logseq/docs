@@ -1,6 +1,21 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
+
+** [[Oct 5th, 2020]]
+*Version 0.0.3.8*
+*** [[Fixed issues]]
+**** 1. Replace block parent path separator, the old one didn't render in any browser on MacOS (by [[River]])
+**** 2. Fixed new page contents are not synced to github until the page is edited for the second time (by [[meh]])
+**** 3. Fixed block embeds blank
+**** 4. Fixed file not saved when switching to other page
+**** 5. Fixed git branches other than ~master~ not working
+*** [[Enhancement]]
+**** Better undo && redo
+*** [[Features]]
+**** 1. Type ~s~ to switch between the file and the corresponding page (non editing mode)
+**** 2. Grammarly support even for single-line blocks
+Add ~:enable-grammarly? true~ to the file ~logseq/config.edn~.
 ** [[Oct 3rd, 2020]] 
 *Version 0.0.3.7*
 *** [[Fixed issues]]
