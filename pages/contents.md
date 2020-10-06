@@ -13,6 +13,7 @@
 ### [[Tasks]]
 ### [[Publishing]]
 ### [[Graph]]
+### [[Block properties]] test
 ### [[Draw]]
 ### [[Slide]]
 ### [[Creating your own templates]]
