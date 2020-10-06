@@ -33,6 +33,7 @@
 ### [[Hiccup]]
 ### [[Queries]]
 ### [[Custom views]]
+## [[Ideas]]
 ## [[Contribute]]
 ### Github: https://github.com/logseq/logseq
 ### Docs: https://github.com/logseq/docs
