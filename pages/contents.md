@@ -9,7 +9,7 @@
 ## [[Features]]
 ### [[Backlinks]]
 ### [[Page embed]]
-### [[Block embed]] test
+### [[Block embed]]
 ### [[Tasks]]
 ### [[Publishing]]
 ### [[Graph]]
