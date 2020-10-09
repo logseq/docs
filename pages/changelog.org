@@ -15,7 +15,10 @@
 **** 9. Fix inline math parsing
 *** [[Features]]
 **** 1. [[Custom theme]] support!!
-**** 2. CodeMirror integration
+***** There're two ways for custom themes:
+****** 1. Add a css file "logseq/custom.css".
+****** 2. Specify a ~:custom-css-url~ in "logseq/config.edn".
+**** 2. CodeMirror integration!
 ** [[Oct 5th, 2020]]
 *Version 0.0.3.8*
 *** [[Fixed issues]]
