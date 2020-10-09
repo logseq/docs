@@ -17,6 +17,7 @@
 ### [[Draw]]
 ### [[Slide]]
 ### [[Creating your own templates]]
+### [[Custom theme]]
 ## [[Document syntax]]
 ### [[Markdown]]
 ### [[Org Mode]]

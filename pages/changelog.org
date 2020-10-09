@@ -4,7 +4,18 @@
 ** [[Oct 9th, 2020]] 
 *Version 0.0.3.9*
 *** [[Fixed issues]]
-**** 1.
+**** 1. [[https://github.com/logseq/logseq/issues/399][Clean up properties for all blocks when inserting from a template]] (by [[meh]]) #editor
+**** 2. [[https://github.com/logseq/logseq/issues/429][Merge simple conflicts automatically using isomorphic-git instead of resorting to manual merging and force-push]] #sync
+**** 3. Fixed git diff issues
+**** 4. [[https://github.com/logseq/logseq/issues/428][ctrl-o creates a broken page, if page is being created and not existent]] #editor
+**** 5. [[https://github.com/logseq/logseq/issues/420][Fix broken tree structure when number of blocks > 500]] (by [[meh]])
+**** 6. [[https://github.com/logseq/logseq/issues/436][Builtin diff/merge does not work well when new files have been created]] #diff #sync
+**** 7. [[https://github.com/logseq/logseq-internal/pull/154][Cannot drag a block to the first position in a page]] (by [[meh]])
+**** 8. [[https://github.com/logseq/logseq/issues/376][Fix cannot drag a block to the first position in a page]] (by [[meh]])
+**** 9. Fix inline math parsing
+*** [[Features]]
+**** 1. [[Custom theme]] support!!
+**** 2. CodeMirror integration
 ** [[Oct 5th, 2020]]
 *Version 0.0.3.8*
 *** [[Fixed issues]]
