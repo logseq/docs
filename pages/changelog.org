@@ -3,7 +3,7 @@
 #+PUBLISHED: true
 ** [[Oct 9th, 2020]] 
 *Version 0.0.3.9*
-*** [[Fixed issues]]
+*** [Fixed issues]]
 **** 1. [[https://github.com/logseq/logseq/issues/399][Clean up properties for all blocks when inserting from a template]] (by [[meh]]) #editor
 **** 2. [[https://github.com/logseq/logseq/issues/429][Merge simple conflicts automatically using isomorphic-git instead of resorting to manual merging and force-push]] #sync
 **** 3. Fixed git diff issues
@@ -19,6 +19,9 @@
 ****** 1. Add a css file "logseq/custom.css".
 ****** 2. Specify a ~:custom-css-url~ in "logseq/config.edn".
 **** 2. CodeMirror integration!
+#+BEGIN_SRC clojure
+(prn "Finally!")
+#+END_SRC
 ** [[Oct 5th, 2020]]
 *Version 0.0.3.8*
 *** [[Fixed issues]]
