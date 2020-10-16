@@ -1,6 +1,27 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
+** [[Oct 16th, 2020]] 
+*Version 0.0.4.0*
+*** [[Fixed issues]]
+**** 1. Fix page name not updated after editing title in file (by [[meh]])
+**** 2. Fix code row lines appear in front of right click menu button
+**** 3. Fix size of text area changes depending on editing vs not editing
+**** 4. Show Cmd instead of Ctrl in Mac OS
+**** 5. Fix unlinked pages
+**** 6. Fix breadcrumb bug: doesn't show the correct tree branch (by [[meh]])
+**** 7. Fix child blocks in Linked references are misordered (by [[meh]] )
+**** 8. Fix CMD + Enter makes todo AND starts a new line
+**** 9. Allow to push anytime
+**** 10. Force to push/pull when clicking "Push now" or "Pull now"
+**** 11. Fix wrong links in global graph
+**** 12. Fix deleting top block (non pre-block)
+**** 13. Fix /yesterday command buggy (by [[meh]])
+**** 14. Fix hiccup not rendering for block-cp (by [[meh]])
+**** 15. Fix input lag causing weird cursor behavior
+**** 16. Fix pressing enter quickly causing file corruption and jumping to top
+*** [[Translation]]
+**** Traditional Chinese support by [[meh]]
 ** [[Oct 9th, 2020]] 
 *Version 0.0.3.9*
 *** [[Fixed issues]]
