@@ -35,3 +35,4 @@ See more at https://github.com/isomorphic-git/cors-proxy
 *** Something is not working. What are the first first troubleshooting steps I should try?
 *** My sync dot has been orange for a long time. Do I need to worry about this?
 *** Can I run Logseq locally, without syncing files to an online location?
+*** Can Logseq reference blocks or embed blocks?
