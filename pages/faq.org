@@ -25,6 +25,8 @@ See more at https://github.com/isomorphic-git/cors-proxy
 *** There is a setting to choose whether new blocks are created using ~Enter~ or ~Alt+Enter~. Click the ~Alt+Enter~ tag at the top of your window to change this, or click outside all blocks to exit editing mode and type ~t e~ (for ~t~oggle ~e~nter).
 ** How can I help with translating Logseq documentation into my language?
 *** Thanks for asking! Please go [[https://crowdin.com/project/logseq][here]].
+** Why was Logseq written in Clojure?
+*** Answered [[https://www.reddit.com/r/logseq/comments/j5gcyn/why_clojure/][here]].
 ** FAQs to be answered soon:
 *** I love Logseq! How can I donate money?
 *** Is Logseq just a rip-off of Roam Research or another note-taking program?
