@@ -1,6 +1,44 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
+** [[Oct 23rd, 2020]] 
+*Version 0.0.4.1*
+*** [[Fixed issues]]
+**** 1. Fix block priority can't be deleted
+**** 2. Fix block tags can't be deleted
+*** [[Enhancement]]
+**** Global css variables support! 🎉🎉🎉
+Thank you [[lachyc]]!
+*** [[Features]]
+**** 1. Add ~Deadline~ and ~Scheduled~ support!
+*How to use it?*
+1. Type ~/deadline~ or ~/scheduled~ in the block editor.
+2. Pick a date, time (optional), and a repeater (optional, see below).
+3. Click the ~Submit~ button.
+[[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_10_23_Screenshot%202020-10-23%2020-36-43%20%2B0800.png?Expires=4757056622&Signature=mOSq9~NdKi5UpGsnuf5RH7VpwrY14l56ouPHCYcZ-TyNvOYE2OJ-Je0fT29AtODAyAmpz0U0sOBk147kT1hkjaBur6KRq5NXXRz8plSai8xGxNRIxuCgtw32E0xsE-nJ8BOTd9wfmXJXPAqEIpfDNI5XOLpmnogv4aflG1BiUPzD6Ap815Sss6kP6qozV0lBtihJha1Vj3yGJbMtjJfpuIuqwstse2Cac6icLt5oiFyjNTsHM3kwbRAXl37oyJCb9-tBU~RYruGvp3FrwvJZYAPqAQhFR69XHqdk54GNCE-sY5xGN0nwA6fjZKJoHTGKxkyUZT7VINPz~ORtdpwQqA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_10_23_Screenshot 2020-10-23 20-36-43 +0800.png]]
+**** 2. 🔁 Recurring tasks
+The below picture shows that we have a weekly review every Friday.
+[[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_10_23_Screenshot%202020-10-23%2020-38-23%20%2B0800.png?Expires=4757056716&Signature=Qm8ZNKNGtGZrlTCdZkcBomkQRW6UILIrONTq1Tl7mwaNrrUVBmJ3Wpv8QQ~Y9wQ9wLl8lJddZBVc4GE7SEZW38zDq0LpHBr4facba8pWFSyVsXqO5CO-t4GDNy0CnVe6yyMLbNEeDFoRIGKweAIESS5eAawz9d2ZyOrjr3Yu7h0Q8bt-CLaRHzDwdtEsjF-ihvtFpL-4O6TeokKLiwF-DPUFYgQAZwSofv0wKu9ERzofC2rna7jsjY5d7GX0VS~q0OagEPhZuCutaZB10FDzWhLHkgByEpUXF1dqQAVi6q9QatiHe1ol-a1XiPhJ7aOLvEFup~j6hQ1V5-o12MNZqg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_10_23_Screenshot 2020-10-23 20-38-23 +0800.png]]
+***** You can change the number ~1~ to your need, for example, ~2~ weeks.
+***** You can change the duration to:
+| y    | m     | d   | w    | h    |
+|------+-------+-----+------+------|
+| year | month | day | week | hour |
+***** You can change the repeater kind to:
+****** 1. ~.+~
+It'll repeat from the last time you marked the block done.
+****** 2. ~++~
+It'll keep it on the same day of the week.
+****** 3. ~+~
+It'll repeat in X y/m/w/d/h from when you originally scheduled it.
+**** 3. ⏱️ Time tracker
+Logseq will record the time when you add or update the block todo keyword and display the spent time once you checked the task.
+***** DONE Example 
+:PROPERTIES:
+:now: 1603457565500
+:done: 1603457583299
+:END:
+The spent time for this block is ~18s~.
 ** [[Oct 16th, 2020]] 
 *Version 0.0.4.0*
 *** [[Fixed issues]]
