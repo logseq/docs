@@ -1,4 +1,5 @@
 ## [[Changelog]]
+## [[https://github.com/logseq/logseq/projects/1][Roadmap]]
 ## [[Videos]]
 ## ❓[[FAQ]]
 ## 🌟 [[New to Logseq?]]
