@@ -1,6 +1,12 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
+** [[Oct 26th, 2020]] 
+*Version 0.0.4.2*
+*** [[Fixed issues]]
+**** 1. Hide built-in properties to have a smooth experience for time tracker
+**** 2. Fix tag starts with ~#~ can't be saved
+**** 3. Fix ~<~ commands not working
 ** [[Oct 23rd, 2020]] 
 *Version 0.0.4.1*
 *** [[Fixed issues]]
