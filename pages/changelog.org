@@ -1,6 +1,21 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
+** [[Oct 28th, 2020]]
+*Version 0.0.4.3*
+*** [[Fixed issues]]
+**** 1. Fix mobile toolbar
+**** 2. Fix sync file links
+**** 3. Fix "Backspacing under a todo and into the todo above, deletes all the content"
+**** 4. Fix "Timetracking times have background that doesn't match its context"
+**** 5. Fix can't use arrow keys to pick date picker anymore
+**** 6. Fix "`CMD-C` should copy selected text instead of creating a commit"
+**** 7. Fix pictures not displayed with suffixs like ".PNG" or ".JPG"
+**** 8. Fix date picker style
+**** 9. Fix new journal not created automatically
+*** [[Enhancement]]
+**** 1. Preserve the editor position when setting a todo keyword
+**** 2. Improve performance when deleting a block
 ** [[Oct 26th, 2020]] 
 *Version 0.0.4.2*
 *** [[Fixed issues]]
