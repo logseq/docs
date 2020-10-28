@@ -27,6 +27,28 @@ See more at https://github.com/isomorphic-git/cors-proxy
 *** Thanks for asking! Please go [[https://crowdin.com/project/logseq][here]].
 ** Why was Logseq written in Clojure?
 *** Answered [[https://www.reddit.com/r/logseq/comments/j5gcyn/why_clojure/][here]].
+** How to change the default date formatter?
+*** Add your favorite date-formatter to ~logseq/config.edn~:
+#+BEGIN_SRC clojure
+:date-formatter "yyyy-MM-dd"
+#+END_SRC
+Currently, logseq support:
+#+BEGIN_SRC clojure
+     "MMM do, yyyy"
+     "E, MM/dd/yyyy"
+     "E, yyyy/MM/dd"
+     "EEE, MM/dd/yyyy"
+     "EEE, yyyy/MM/dd"
+     "EEEE, MM/dd/yyyy"
+     "EEEE, yyyy/MM/dd"
+     "MM/dd/yyyy"
+     "MM-dd-yyyy"
+     "MM_dd_yyyy"
+     "yyyy/MM/dd"
+     "yyyy-MM-dd"
+     "yyyy_MM_dd"
+     "yyyy年MM月dd日"
+#+END_SRC
 ** FAQs to be answered soon:
 *** I love Logseq! How can I donate money?
 *** Is Logseq just a rip-off of Roam Research or another note-taking program?
