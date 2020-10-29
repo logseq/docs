@@ -102,6 +102,21 @@ Query example:
  }
 #+END_QUERY
 #+END_SRC
+### 8. All todos tagged using current page
+#+BEGIN_SRC clojure
+
+#+BEGIN_QUERY
+{:title "All todos tagged using current page"
+ :query [:find (pull ?b [*])
+         :in $ ?current-page
+         :where
+         [?p :page/name ?current-page]
+         [?b :block/marker ?marker]
+         [?b :block/ref-pages ?p]
+         [(= "TODO" ?marker)]]
+ :inputs [:current-page]}
+#+END_QUERY
+#+END_SRC
 ## **Resources**
 ### [^1]: [Learn Datalog Today](http://www.learndatalogtoday.org/)  is an interactive tutorial designed to teach you the Datomic dialect of Datalog.
 ### [^2]: [[https://docs.datomic.com/query.html][Datomic query documentation]]
