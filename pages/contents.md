@@ -17,6 +17,7 @@
 ### [[Block properties]]
 ### [[Draw]]
 ### [[Slide]]
+### [[Page Alias]]
 ### [[Creating your own templates]]
 ### [[Custom theme]]
 ## [[Document syntax]]
