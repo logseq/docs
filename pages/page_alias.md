@@ -6,7 +6,9 @@ title: Page Alias
 ### For [[Markdown]] users:
 ####
 #+BEGIN_EXAMPLE
+---
 alias: page1, page2
+---
 #+END_EXAMPLE
 ### For [[Org Mode]] users:
 ####

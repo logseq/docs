@@ -1,6 +1,28 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
+** [[Nov 7th, 2020]] 
+*Version 0.0.4.4*
+*** [[Fixed issues]]
+**** 1. Fix input lag (lmk if you encounter it again)
+**** 2. Close dropdown menu after clicking items
+**** 3. Add embed pages to the graph
+**** 4. Display full children for references
+**** 5. Fixed Roam Research import issue (block refs)
+**** 6. Fix ~git add~ issue
+**** 7. Fix latex render issue
+**** 8. Fix properties editing issue
+**** 9. Fix file download encoding issue
+**** 10. Zoom out to parent page instead of today's journal page
+**** 11. Fix recurring task timestamps when it's marked as "DONE"
+**** 12. Fix a lot of CSS issues!!
+*** [[Enhancement]]
+**** 1. Push immediately after you save any block/create a new page
+*** [[Features]]
+**** [[Page Alias]]
+***** Actually, it's added months ago but it's not ready before.
+***** *How to use it?*
+****** {{{embed [[Page Alias]] }}}
 ** [[Oct 28th, 2020]]
 *Version 0.0.4.3*
 *** [[Fixed issues]]
