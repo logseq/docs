@@ -1,6 +1,18 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
+** [[Nov 13th, 2020]] 
+*Version 0.0.4.5*
+*** [[Fixed issues]]
+**** Fix several git sync issues
+**** Fix iOS bottom bar
+**** Fix mobile scroll issue
+**** Add global css colors variables for tables (by [[Sly]])
+**** Fix deleted/renamed pages not refreshed in the right sidebar
+**** Only pull when online detected
+**** Fix `hidden` paths
+*** [[Enhancement]]
+**** The editor performance is much better now
 ** [[Nov 7th, 2020]] 
 *Version 0.0.4.4*
 *** [[Fixed issues]]
