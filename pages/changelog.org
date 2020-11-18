@@ -1,6 +1,24 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
+** [[Nov 18th, 2020]] 
+*Version 0.0.4.6*
+*** [[Fixed issues]]
+**** Rename the corresponding file when renaming the page
+**** Better handling of "$" and Inline math
+**** Don't show autocomplete commands when paste a link
+**** ~Shift+Click~ to open a page in the search box
+**** Fix nothing found for entity id
+**** Fix front matter tags parsing
+**** Don't render block embed children recursively
+**** Don't alert "file already exists" when creating a new page
+**** Fix editing the current block when press "Enter" and the position is zero
+**** Fix right sidebar style issue
+*** [[Org Mode]] better org-roam integration
+**** 1. [[https://github.com/logseq/logseq/issues/672][Support org mode file links]]
+**** 2. Add block ~ID~ support
+*** [[Languages]]
+Add French language support by [[Kramer]]
 ** [[Nov 13th, 2020]] 
 *Version 0.0.4.5*
 *** [[Fixed issues]]
