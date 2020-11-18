@@ -16,6 +16,9 @@
 **** Fix right sidebar style issue
 *** [[Org Mode]] better org-roam integration
 **** 1. [[https://github.com/logseq/logseq/issues/672][Support org mode file links]]
+***** *How?*
+****** Add ~:org-mode/insert-file-link? true~ to the file ~logseq/config.edn~.
+[[https://www.loom.com/share/ab662e93400d449b91496108bf61794a][Gif]]
 **** 2. Add block ~ID~ support
 *** [[Languages]]
 Add French language support by [[Kramer]]
