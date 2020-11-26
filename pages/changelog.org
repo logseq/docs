@@ -305,6 +305,9 @@ Developer mode helps contributors and extension developers test their integratio
 ** [[Sep 9th, 2020]] 
 *Version 0.0.2.6*
 *** [[Daily Notes Migration]]
+:PROPERTIES:
+:id: 5fbf4fbf-82c5-4d81-ba82-b66726bda00c
+:END:
 Logseq is migrating to creating journal pages on a daily basis for better performance and data safety. In the future, the current method of storing journal files once a month would be removed. You will receive a notification to migrate to daily basis when you open Logseq, and if it didn't appear, refresh your browser.
 *** [[Fixed Issues]]
 **** 1. Fixed not able to DELETE a Page or even Rename a page
