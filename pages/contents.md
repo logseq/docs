@@ -9,11 +9,13 @@
 ## [[Learn the shortcuts]]
 ## [[Features]]
 ### [[Backlinks]]
+### [[Commands]]
+#### [[Advanced commands]]
 ### [[Page embed]]
 ### [[Block embed]]
 ### [[Tasks]]
 ### [[Publishing]]
-### [[Graph]]
+### [[https://logseq.github.io/graph][Graph]]
 ### [[Block properties]]
 ### [[Draw]]
 ### [[Slide]]
@@ -37,7 +39,6 @@
 ### [[Hiccup]]
 ### [[Queries]]
 ### [[Custom views]]
-## [[Ideas]]
 ## [[Contribute]]
 ### Github: https://github.com/logseq/logseq
 ### Docs: https://github.com/logseq/docs
