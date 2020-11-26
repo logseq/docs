@@ -92,6 +92,7 @@ Query example:
 #+END_SRC
 ### 7. Get all the blocks with the property "type" and the value "programming_lang"
 #+BEGIN_SRC clojure
+
 #+BEGIN_QUERY
 {:title [:h2 "Programming languages list"]
  :query [:find (pull ?b [*])
