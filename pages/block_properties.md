@@ -2,7 +2,11 @@
 title: Block properties
 ---
 
-## Properties are key-value pairs associated with an block.
+## Properties are key-value pairs associated with a block.
+## A Properties section can be defined:
+### by selecting the command `<Properties`
+### by right clicking the left dot and clicking `Add a property`.
+## Usage Example:
 ### Let's add two books:
 #### [[How to take smart notes]]
 :PROPERTIES:
@@ -15,7 +19,7 @@ title: Block properties
 :type: [[book]]
 :author: [[G Polya]] [[John H Conway]]
 :END:
-## `Properties` can be used for building the queries you'd like.
+## `Properties` can be used for selecting specific blocks.
 ### For example, let's query all the blocks with the property "type" and the value "book"
 #+BEGIN_SRC clojure
 #+BEGIN_QUERY
