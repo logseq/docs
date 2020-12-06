@@ -1,6 +1,28 @@
 #+TITLE: Changelog
 #+PERMALINK: changelog
 #+PUBLISHED: true
+** [[Dec 6th, 2020]] 
+*Version 0.0.4.8*
+*** [[Fixed issues]]
+**** 1. Retry if github token is expired
+**** 2. Only periodically pull and push the current repo instead of all the repos
+**** 3. Display image upload progress percent
+**** 4. Fix clicking pages on the left drawer (on mobile) not closing the drawer
+**** 5. Don't rename journal files
+**** 6. Do not show intro on published sites
+**** 7. ~Push now~ should always work
+**** 8. Changed files are scrollable so that you can always click ~Download all files as a zip~
+**** Fix a lot of CSS issues (especially on iOS)
+*** [[Features]] #experiment 
+*Chrome native file system support!*
+#+BEGIN_WARNING
+This is an experimental feature, please only use it for testing purpose.
+#+END_WARNING
+**** How to import notes from local directories?
+***** Click the ~Open~ link on the header.
+****** [[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_12_07_Screenshot%202020-12-06%2023-59-25%20%2B0800.png?Expires=4760870553&Signature=n57cBhnQU3MVHZKv2YDH4eY6c6~5U0XMzouvjnYrnuE0RXvDPDjo6GORRMUP-TWSNckqZ8rhqIvjOjhzFbxT0TmvJIWjo94ewlDPLMQsfTAt9AwcRSO7DQSJyaarOTBSEgBL5GRk2hHo5RYIzcvVbZ2lEx0tq6G8Yh1pBxU2ltwKQwZjcW2odt2MY-dOZZmA3o6j0hVX8~xIklJl~Sy0r1bECauSJY8b8Wj6OLh9JDb307Ob7SP42vFDzxvfkMCUyKEE3cG5c1do-Nd0QQodtcGLL5~MsdPvvZcHcqvcFCTYTofBWg65GDciZuNPyYTs2OWOc-f3LEN0cdpf0FpPfg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_12_07_Screenshot 2020-12-06 23-59-25 +0800.png]]
+***** After logged in, go to ~All graphs~ and click ~Open a local directory~.
+****** [[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_12_07_Screenshot%202020-12-07%2000-00-32%20%2B0800.png?Expires=4760870565&Signature=jczCF7j46EwuUpPZYwtXiFmGXYUqd5crV-M1tWfSZvmHjxS4n3mbGQz~7CwQaAsdWkNA0iCjoyE7ysHTKlPkTV1kjGKZ0KDQMhiLBde31n74pzg0RxsK88oOzzeEJls9fku3EEfZupWLXJiqRyRwRA4QBcEwIit01PVxhywsCyudA2JULkVJDwymQ1l~LyNB6bwffzSMEYUn2rDmRdyM-9lgvIzJissUr2vHZpO~pXMch2DqblQJj38lj~cxpg15iONFHvYr70BSwpKZSEoFmuoygR60ZG9gf5g386wf7Nhd4gMCtWJ0y6Jo62Y4JqSdL873Kd1JimdVOhSMWERpaQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_12_07_Screenshot 2020-12-07 00-00-32 +0800.png]]
 ** [[Nov 29th, 2020]] 
 *Version 0.0.4.7*
 *** [[Fixed issues]]
