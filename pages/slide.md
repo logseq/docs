@@ -19,4 +19,4 @@ It'll open the current page's slide in the right sidebar.
 :END:
 #+END_EXAMPLE
 ### How do I set other attributes?
-#### You need to remove the `data-` part, for example, `data-transition` should be `transition`.
+####

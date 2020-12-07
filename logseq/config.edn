@@ -1,13 +1,10 @@
-{:journal-basis "daily" 
-
- :project {
-           ;; Selected public notes can be published to https://logseq.com/your-project-or-your-username.
-           :name ""
-           :alias ""
-           ;; your twitter handle
-           :twitter ""
-           ;; description supports both hiccup and html
-           :description ""}
+{:project {:name "blog"
+           :alias "Logseq Blog"}
+ :shortcuts {:editor/new-block "alt+enter"},
+ :text-formats [],	
+ :all-pages-public? true,	 ;; Git settings
+ :default-home {:page "Changelog"	
+                :sidebar "Contents"}
 
  ;; Currently, we support either "Markdown" or "Org".
  ;; This can overwrite your global preference so that
