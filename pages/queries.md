@@ -11,6 +11,7 @@ https://gist.github.com/tiensonqin/9a40575827f8f63eec54432443ecb929
 1. Page names are stored as lower case in the database. 
 #+END_TIP
 ## **Examples**
+Thanks to @Pospi for these useful queries!
 ### 1. Get all tasks
 
 #+BEGIN_SRC clojure
@@ -34,7 +35,7 @@ https://gist.github.com/tiensonqin/9a40575827f8f63eec54432443ecb929
 #+END_SRC
 ### 3. Blocks in 7ds with a page reference of datalog
 #+BEGIN_SRC clojure
-Query example:
+
 #+BEGIN_QUERY
 {:title "Blocks in 7ds with a page reference of datalog"
  :query [:find (pull ?b [*])
@@ -118,6 +119,112 @@ Query example:
  :inputs [:current-page]}
 #+END_QUERY
 #+END_SRC
+### 9. Tasks made active in the last 2 weeks
+#+BEGIN_SRC clojure
+
+#+BEGIN_QUERY
+{:title "🟢 ACTIVE"
+    :query [:find (pull ?h [*])
+            :in $ ?start ?today
+            :where
+            [?h :block/marker ?marker]
+            [?h :block/page ?p]
+            [?p :page/journal? true]
+            [?p :page/journal-day ?d]
+            [(>= ?d ?start)]
+            [(<= ?d ?today)]
+            [(contains? #{"NOW" "DOING"} ?marker)]]
+    :inputs [:14d :today]
+    :result-transform (fn [result]
+                        (sort-by (fn [h]
+                                   (get h :block/priority "Z")) result))
+    :collapsed? false}
+#+END_QUERY
+#+END_SRC
+### 10. Tasks referencing due dates in the past
+#+BEGIN_SRC clojure
+
+#+BEGIN_QUERY
+   {:title "⚠️ OVERDUE"
+    :query [:find (pull ?h [*])
+            :in $ ?start ?today
+            :where
+            [?h :block/marker ?marker]
+            [?h :block/ref-pages ?p]
+            [?p :page/journal? true]
+            [?p :page/journal-day ?d]
+            [(>= ?d ?start)]
+            [(<= ?d ?today)]
+            [(contains? #{"NOW" "LATER" "TODO" "DOING"} ?marker)]]
+    :inputs [:56d :today]
+    :collapsed? false}
+#+END_QUERY
+#+END_SRC
+### 11. Tasks referencing due dates up to 10 days ahead
+#+BEGIN_SRC clojure
+
+#+BEGIN_QUERY
+      {:title "📅 NEXT"
+    :query [:find (pull ?h [*])
+            :in $ ?start ?next
+            :where
+            [?h :block/marker ?marker]
+            [?h :block/ref-pages ?p]
+            [?p :page/journal? true]
+            [?p :page/journal-day ?d]
+            [(> ?d ?start)]
+            [(< ?d ?next)]
+            [(contains? #{"NOW" "LATER" "DOING" "TODO"} ?marker)]]
+    :inputs [:today :10d-after]
+    :collapsed? false}
+#+END_QUERY
+#+END_SRC
+### 12. Tasks from last week which are still outstanding (may slip soon!)
+#+BEGIN_SRC clojure
+
+#+BEGIN_QUERY
+     {:title "🟠 SLIPPING"
+    :query [:find (pull ?h [*])
+            :in $ ?start ?today
+            :where
+            [?h :block/marker ?marker]
+            [?h :block/page ?p]
+            [?p :page/journal? true]
+            [?p :page/journal-day ?d]
+            [(>= ?d ?start)]
+            [(<= ?d ?today)]
+            [(contains? #{"NOW" "LATER" "TODO" "DOING"} ?marker)]]
+    :inputs [:7d :today]
+    :result-transform (fn [result]
+                        (sort-by (fn [h]
+                                   (get h :block/created-at)) result))
+    :collapsed? true}
+#+END_QUERY
+#+END_SRC
+### 13. Tasks created more than 1 week ago, less old than 2 months but still outstanding
+#+BEGIN_SRC clojure
+
+#+BEGIN_QUERY
+{:title "🔴 STALLED"
+    :query [:find (pull ?h [*])
+            :in $ ?start ?today
+            :where
+            [?h :block/marker ?marker]
+            [?h :block/page ?p]
+            [?p :page/journal? true]
+            [?p :page/journal-day ?d]
+            [(>= ?d ?start)]
+            [(<= ?d ?today)]
+            [(contains? #{"NOW" "LATER" "TODO" "DOING"} ?marker)]]
+    :inputs [:56d :8d]
+    :result-transform (fn [result]
+                        (sort-by (fn [h]
+                                   (get h :block/created-at)) result))
+    :collapsed? true}
+ ]}
+#+END_QUERY
+#+END_SRC
 ## **Resources**
 ### [^1]: [Learn Datalog Today](http://www.learndatalogtoday.org/)  is an interactive tutorial designed to teach you the Datomic dialect of Datalog.
 ### [^2]: [[https://docs.datomic.com/query.html][Datomic query documentation]]
+
