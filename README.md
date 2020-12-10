@@ -1,6 +1,6 @@
 # Logseq.com docs
 
-# Contributing
+## Contributing
 
 To contribute you will want to see how your changes look in logseq.com. In order to do this you
 should:
