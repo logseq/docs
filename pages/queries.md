@@ -224,6 +224,26 @@ Thanks to @Pospi for these useful queries!
  ]}
 #+END_QUERY
 #+END_SRC
+### 14. Tasks with schedule and deadline and still outstanding
+#+BEGIN_SRC clojure
+
+#+BEGIN_QUERY
+
+  {:title "🔥 OVERDUE"
+    :query [:find (pull ?b [*])
+            :in $ ?start ?next
+            :where
+            (or [?b :block/scheduled ?s] 
+                [?b :block/deadline ?s])
+            [(< ?s ?start)]
+            [(< ?s ?next)]
+            [?b :block/marker ?marker]
+            [(contains? #{"NOW" "LATER" "DOING" "TODO"} ?marker)]]
+    :inputs [:today :30d-after]
+    :collapsed? false}
+#+END_QUERY
+#+END_SRC
+
 ## **Resources**
 ### [^1]: [Learn Datalog Today](http://www.learndatalogtoday.org/)  is an interactive tutorial designed to teach you the Datomic dialect of Datalog.
 ### [^2]: [[https://docs.datomic.com/query.html][Datomic query documentation]]
