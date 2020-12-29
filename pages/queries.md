@@ -27,7 +27,7 @@ title: Queries
 1. Simple queries by using `{{query }}`, the format is something like this:
  #+BEGIN_EXAMPLE
  {{query Something you're looking for}}
- #+END_EXAMPLE 
+ #+END_EXAMPLE
  You can type `/query` to create a simple query.
 2. [[Advanced Queries]]
 ## **Simple Queries filters**
@@ -43,7 +43,7 @@ title: Queries
 Examples:
 #+BEGIN_EXAMPLE
 (and [[page 1]] [[page 2]])
-#+END_EXAMPLE 
+#+END_EXAMPLE
 
 #+BEGIN_EXAMPLE
 (and (todo now later done) [[page]])
@@ -78,12 +78,11 @@ There're several built-in symbols:
  1. `today|yesterday|tomorrow|now`
  2. `+|-` number `y|m|w|d|h|min`
 
-
 Examples:
 #+BEGIN_EXAMPLE
 (between -7d +7d)
 (between -2w today)
-(between created_at -7d 7d) 
+(between created_at -7d 7d)
 (between last_modified_at -7d 7d)
 #+END_EXAMPLE
 ### **property** [[Block properties]]
@@ -91,7 +90,7 @@ Examples:
 :created_at: 1609237428110
 :last_modified_at: 1609242908625
 :END:
-Examples: 
+Examples:
 {{query (property type book)}}
 ### **todo**
 :PROPERTIES:
@@ -157,7 +156,7 @@ Format: `(sort-by key order)` or `(sort-by key)`
 :END:
 #+BEGIN_EXAMPLE
 {{query [[tag1]]}}
-#+END_EXAMPLE 
+#+END_EXAMPLE
 {{query [[tag1]]}}
 ### 2. Find the blocks containing both `tag1` and `tag2`
 :PROPERTIES:
@@ -166,7 +165,7 @@ Format: `(sort-by key order)` or `(sort-by key)`
 :END:
 #+BEGIN_EXAMPLE
 {{query (and [[tag1]] [[tag2]])}}
-#+END_EXAMPLE 
+#+END_EXAMPLE
 {{query (and [[tag1]] [[tag2]])}}
 ### 3. Find the blocks containing either `tag1` or `tag2`
 :PROPERTIES:
@@ -175,7 +174,7 @@ Format: `(sort-by key order)` or `(sort-by key)`
 :END:
 #+BEGIN_EXAMPLE
 {{query (or [[tag1]] [[tag2]])}}
-#+END_EXAMPLE 
+#+END_EXAMPLE
 {{query (or [[tag1]] [[tag2]])}}
 ### 4. Find the blocks containing `tag2` but not `tag1`
 :PROPERTIES:
@@ -183,7 +182,7 @@ Format: `(sort-by key order)` or `(sort-by key)`
 :last_modified_at: 1609236840152
 :END:
 {{query (and [[tag2]] (not [[tag1]]))}}
-### 5. Find journal blocks created between [[Dec 5th, 2020]] to [[Dec 7th, 2020]] 
+### 5. Find journal blocks created between [[Dec 5th, 2020]] to [[Dec 7th, 2020]]
 :PROPERTIES:
 :created_at: 1609242222695
 :last_modified_at: 1609242323029
