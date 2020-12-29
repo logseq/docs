@@ -1,5 +1,6 @@
 ---
 title: Block embed
+tags: [[embed]]
 ---
 
 ## Also known as block embedding allows a portion of a page to be displayed within another. Edits made to the embedded content are also made in the referenced content.

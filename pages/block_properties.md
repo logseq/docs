@@ -11,16 +11,28 @@ title: Block properties
 #### [[How to take smart notes]]
 :PROPERTIES:
 :type: [[book]]
-:author: [[Sönke Ahrens]]
-:publication date: February 21, 2017
+:author: [[sönke ahrens]]
+:publication date: february 21, 2017
+:created_at: 1609233078964
+:last_modified_at: 1609246163003
 :END:
 #### [[How to solve it]]
 :PROPERTIES:
 :type: [[book]]
-:author: [[G Polya]] [[John H Conway]]
+:author: [[g polya]] [[john h conway]]
+:created_at: 1609233053383
+:last_modified_at: 1609233075686
 :END:
 ## `Properties` can be used for selecting specific blocks.
-### For example, let's query all the blocks with the property "type" and the value "book"
+:PROPERTIES:
+:created_at: 1609233183055
+:last_modified_at: 1609233190917
+:END:
+### For example, let's query all the blocks with the property "type" and the value "book" #examples #books  
+:PROPERTIES:
+:created_at: 1609233197980
+:last_modified_at: 1609233317859
+:END:
 #+BEGIN_SRC clojure
 #+BEGIN_QUERY
 {:title [:h2 "My books"]

@@ -2,6 +2,7 @@
 ## [[https://github.com/logseq/logseq/projects/1][Roadmap]]
 ## [[Videos]]
 ## ❓[[FAQ]]
+## [[Questions]]
 ## 🌟 [[New to Logseq?]]
 ### [[Testimonials]]
 ### [[Create new page]]
@@ -17,6 +18,10 @@
 ### [[Publishing]]
 ### [[https://logseq.github.io/graph][Graph]]
 ### [[Block properties]]
+:PROPERTIES:
+:created_at: 1609233128830
+:last_modified_at: 1609233128830
+:END:
 ### [[Draw]]
 ### [[Slide]]
 ### [[Page Alias]]
@@ -36,8 +41,9 @@
 ## 🔒 [[Security]]
 ## [[Import && Export]]
 ## [[Advanced features]]
-### [[Hiccup]]
 ### [[Queries]]
+#### [[Advanced Queries]]
+### [[Hiccup]]
 ### [[Custom views]]
 ## [[Contribute]]
 ### Github: https://github.com/logseq/logseq

@@ -1,9 +1,9 @@
 {:project {:name "blog"
            :alias "Logseq Blog"}
  :shortcuts {:editor/new-block "alt+enter"},
- :text-formats [],	
- :all-pages-public? true,	 ;; Git settings
- :default-home {:page "Changelog"	
+ :text-formats [],
+ :all-pages-public? true,        ;; Git settings
+ :default-home {:page "Changelog"
                 :sidebar "Contents"}
 
  ;; Currently, we support either "Markdown" or "Org".
@@ -12,8 +12,8 @@
  ;; need to use Markdown for some projects.
  ;; :preferred-format ""
  :preferred-format "Markdown"
- :feature/enable-grammarly? true
- 
+ :feature/enable-grammarly? false
+
  ;; Git settings
  :git-pull-secs 60
  :git-push-secs 10
@@ -77,4 +77,8 @@
  ;; input "{{{poem(red,blue)}}}"
  ;; becomes
  ;; Rose is red, violet's blue. Life's ordered: Org assists you.
- :macros {}}
+ :macros {"query-example" "#+BEGIN_EXAMPLE
+{{query $1}}
+#+END_EXAMPLE
+{{query $1}}"}
+ :feature/enable-block-time? true}
