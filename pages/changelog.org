@@ -1,7 +1,74 @@
 #+TITLE: Changelog
-#+PERMALINK: changelog
-#+PUBLISHED: true
-** [[Dec 6th, 2020]] 
+** [[Dec 29th, 2020]] 
+:PROPERTIES:
+:created_at: 1609250283049
+:last_modified_at: 1609250283049
+:END:
+This is our last release for 2020,  it is a challenging year for everyone, stay safe and healthy!
+*Version 0.0.4.9*
+*** [[Announcement]] 
+:PROPERTIES:
+:created_at: 1609250309399
+:last_modified_at: 1609250719690
+:END:
+🥳 [[Local file storage]] is stable now! Many people have been using it for weeks and there's no need to worry about data loss anymore!
+*** [[Fixed issues]]
+:PROPERTIES:
+:created_at: 1609250757697
+:last_modified_at: 1609250757697
+:END:
+**** I will not attempt to list them all here, tons of issues are fixed, especially for both Github Sync and using on mobile.
+:PROPERTIES:
+:created_at: 1609250758098
+:last_modified_at: 1609251021197
+:END:
+*** [[Features]]
+:PROPERTIES:
+:created_at: 1609249850194
+:last_modified_at: 1609249850194
+:END:
+**** Simple [[Queries]] support #experiment
+:PROPERTIES:
+:created_at: 1609249966260
+:last_modified_at: 1609251607921
+:END:
+For example:
+{{query (and (todo now later done) [[tag1]])}}
+{{embed ((5feb30e3-fedc-4c2a-aa03-b44020c21c68)) }}
+**** [[Block Timestamps]] support #experiment
+:PROPERTIES:
+:created_at: 1609251098164
+:last_modified_at: 1609251374853
+:END:
+Each block will have both a ~created_at~ property and a ~last_modified_at~ property. You can write some simple queries to use both properties.
+***** How to enable it? 
+:PROPERTIES:
+:created_at: 1609251099027
+:last_modified_at: 1609251243271
+:END:
+Go to ~Settings~ and toggle this button: 
+[[https://cdn.logseq.com/%2F5ff0a01d-47d4-487d-b346-4a43ded21ad02020_12_29_Screenshot%202020-12-29%2022-11-59%20%2B0800.png?Expires=4762851199&Signature=GMZt7WsfluDKWPeM1mNeg0ITna9S8ZCf4VYqKLKuVrrsYNHXggkMclB8af6hTaozDpNSBIxh-55d~edmfi3vquCKvXKPAccwkpLj2Uy-OIEy13h~vUzsWN0M59u17qnhgLWdfLxH9yOgasjoE8rv-oDNoI~TCl7Z6~aKRq~peGre2ikgJ6E6pPXTelwEW9NqnWKjho3R~aE9XcA3~aUSYjzTjxPG7z4SDVMrLm1ZQH~xqmoDEAe3TwHbSnrfrswElRMtYVaiGTancvSmRoxw-tsR6M7kFItwJmc8sGeiRPBG2lga9zP~2PH5Itws2TazQGNBqor8qWOhgdb5X4rF2A__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_12_29_Screenshot 2020-12-29 22-11-59 +0800.png]]
+**** [[Page Alias]] redirection support
+:PROPERTIES:
+:created_at: 1609251086056
+:last_modified_at: 1609251086056
+:END:
+**** Fuzzy searching for both page title and block content
+:PROPERTIES:
+:created_at: 1609249946465
+:last_modified_at: 1609250515882
+:END:
+**** Login with Google
+:PROPERTIES:
+:created_at: 1609250028827
+:last_modified_at: 1609250028827
+:END:
+**** Toggle displaying the brackets (in the settings page)
+:PROPERTIES:
+:created_at: 1609250139351
+:last_modified_at: 1609250212163
+:END:
+** [[Dec 6th, 2020]]
 *Version 0.0.4.8*
 *** [[Fixed issues]]
 **** 1. Retry if github token is expired
@@ -13,17 +80,18 @@
 **** 7. ~Push now~ should always work
 **** 8. Changed files are scrollable so that you can always click ~Download all files as a zip~
 **** Fix a lot of CSS issues (especially on iOS)
-*** [[Features]] #experiment 
-*Chrome native file system support!*
-#+BEGIN_WARNING
-This is an experimental feature, please only use it for testing purpose.
-#+END_WARNING
+*** [[Features]]
+:PROPERTIES:
+:created_at: 1609250411844
+:last_modified_at: 1609250585182
+:END:
+[[Local file storage]] *support*
 **** How to import notes from local directories?
 ***** Click the ~Open~ link on the header.
 ****** [[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_12_07_Screenshot%202020-12-06%2023-59-25%20%2B0800.png?Expires=4760870553&Signature=n57cBhnQU3MVHZKv2YDH4eY6c6~5U0XMzouvjnYrnuE0RXvDPDjo6GORRMUP-TWSNckqZ8rhqIvjOjhzFbxT0TmvJIWjo94ewlDPLMQsfTAt9AwcRSO7DQSJyaarOTBSEgBL5GRk2hHo5RYIzcvVbZ2lEx0tq6G8Yh1pBxU2ltwKQwZjcW2odt2MY-dOZZmA3o6j0hVX8~xIklJl~Sy0r1bECauSJY8b8Wj6OLh9JDb307Ob7SP42vFDzxvfkMCUyKEE3cG5c1do-Nd0QQodtcGLL5~MsdPvvZcHcqvcFCTYTofBWg65GDciZuNPyYTs2OWOc-f3LEN0cdpf0FpPfg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_12_07_Screenshot 2020-12-06 23-59-25 +0800.png]]
 ***** After logged in, go to ~All graphs~ and click ~Open a local directory~.
 ****** [[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_12_07_Screenshot%202020-12-07%2000-00-32%20%2B0800.png?Expires=4760870565&Signature=jczCF7j46EwuUpPZYwtXiFmGXYUqd5crV-M1tWfSZvmHjxS4n3mbGQz~7CwQaAsdWkNA0iCjoyE7ysHTKlPkTV1kjGKZ0KDQMhiLBde31n74pzg0RxsK88oOzzeEJls9fku3EEfZupWLXJiqRyRwRA4QBcEwIit01PVxhywsCyudA2JULkVJDwymQ1l~LyNB6bwffzSMEYUn2rDmRdyM-9lgvIzJissUr2vHZpO~pXMch2DqblQJj38lj~cxpg15iONFHvYr70BSwpKZSEoFmuoygR60ZG9gf5g386wf7Nhd4gMCtWJ0y6Jo62Y4JqSdL873Kd1JimdVOhSMWERpaQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_12_07_Screenshot 2020-12-07 00-00-32 +0800.png]]
-** [[Nov 29th, 2020]] 
+** [[Nov 29th, 2020]]
 *Version 0.0.4.7*
 *** [[Fixed issues]]
 **** 1. Better alignement for todo marker (by [[Sly]])
@@ -50,7 +118,7 @@ This is an experimental feature, please only use it for testing purpose.
 [[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_11_29_Screenshot%202020-11-29%2023-42-09%20%2B0800.png?Expires=4760264603&Signature=n-hAo72C2l5wyXfOuPxas0505ftBOHNE~Yv61VEWF9m2ysp5RMkCkUJ5ZH-zYnop3AL5bpZiMIWXRH49yxpPfC1aIvcQWWp~71ZGEAIsLB3~aoL34XsfkNjujsREUE8~QXOabnzbSS8wAJ-X71TRzEOMYAhr5V0UEYJNwDEEDtUNtuE-hX1dTwZgVmoUrONDaw2oeg5cyawoxW2KIgX9UkvnhytKs8BXswM78UCFQTTNBL-QvuyjULmEObBdAjnh9I0X1YHZFg4cF-s7AB5EKYCTidpD--3lw9n-Wa2My~Te2g5VvHCZ8PwDWbCvKVN6CXMf8Zyd56EGqkYujPdwAg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_11_29_Screenshot 2020-11-29 23-42-09 +0800.png]]
 **** 3. Add escape formatting support
 ((5fc3be83-7f22-4488-b3ec-cfabb0639b3b))
-** [[Nov 18th, 2020]] 
+** [[Nov 18th, 2020]]
 *Version 0.0.4.6*
 *** [[Fixed issues]]
 **** Rename the corresponding file when renaming the page
@@ -71,7 +139,7 @@ This is an experimental feature, please only use it for testing purpose.
 **** 2. Add block ~ID~ support
 *** [[Languages]]
 Add French language support by [[Kramer]]
-** [[Nov 13th, 2020]] 
+** [[Nov 13th, 2020]]
 *Version 0.0.4.5*
 *** [[Fixed issues]]
 **** Fix several git sync issues
@@ -83,7 +151,7 @@ Add French language support by [[Kramer]]
 **** Fix `hidden` paths
 *** [[Enhancement]]
 **** The editor performance is much better now
-** [[Nov 7th, 2020]] 
+** [[Nov 7th, 2020]]
 *Version 0.0.4.4*
 *** [[Fixed issues]]
 **** 1. Fix input lag (lmk if you encounter it again)
@@ -120,13 +188,13 @@ Add French language support by [[Kramer]]
 *** [[Enhancement]]
 **** 1. Preserve the editor position when setting a todo keyword
 **** 2. Improve performance when deleting a block
-** [[Oct 26th, 2020]] 
+** [[Oct 26th, 2020]]
 *Version 0.0.4.2*
 *** [[Fixed issues]]
 **** 1. Hide built-in properties to have a smooth experience for time tracker
 **** 2. Fix tag starts with ~#~ can't be saved
 **** 3. Fix ~<~ commands not working
-** [[Oct 23rd, 2020]] 
+** [[Oct 23rd, 2020]]
 *Version 0.0.4.1*
 *** [[Fixed issues]]
 **** 1. Fix block priority can't be deleted
@@ -158,13 +226,13 @@ It'll keep it on the same day of the week.
 It'll repeat in X y/m/w/d/h from when you originally scheduled it.
 **** 3. ⏱️ Time tracker
 Logseq will record the time when you add or update the block todo keyword and display the spent time once you checked the task.
-***** DONE Example 
+***** DONE Example
 :PROPERTIES:
 :now: 1603457565500
 :done: 1603457583299
 :END:
 The spent time for this block is ~18s~.
-** [[Oct 16th, 2020]] 
+** [[Oct 16th, 2020]]
 *Version 0.0.4.0*
 *** [[Fixed issues]]
 **** 1. Fix page name not updated after editing title in file (by [[meh]])
@@ -185,7 +253,7 @@ The spent time for this block is ~18s~.
 **** 16. Fix pressing enter quickly causing file corruption and jumping to top
 *** [[Translation]]
 **** Traditional Chinese support by [[meh]]
-** [[Oct 9th, 2020]] 
+** [[Oct 9th, 2020]]
 *Version 0.0.3.9*
 *** [[Fixed issues]]
 **** 1. [[https://github.com/logseq/logseq/issues/399][Clean up properties for all blocks when inserting from a template]] (by [[meh]]) #editor
@@ -220,13 +288,13 @@ The spent time for this block is ~18s~.
 **** 1. Type ~s~ to switch between the file and the corresponding page (non editing mode)
 **** 2. Grammarly support even for single-line blocks
 Add ~:enable-grammarly? true~ to the file ~logseq/config.edn~.
-** [[Oct 3rd, 2020]] 
+** [[Oct 3rd, 2020]]
 *Version 0.0.3.7*
 *** [[Fixed issues]]
 **** 1. Fixed [[https://github.com/logseq/logseq/issues/373][performance issues typing gets slow and very laggy]]
 **** 2. Fixed redundant blocks in sidebar (by [[meh]])
 **** 3. Fixed bugs in project create / update (by [[meh]])
-** [[Oct 2nd, 2020]] 
+** [[Oct 2nd, 2020]]
 *Version 0.0.3.6*
 *** [[Fixed issues]]
 **** 1. Fixed logout sometimes not working well
@@ -234,9 +302,9 @@ Add ~:enable-grammarly? true~ to the file ~logseq/config.edn~.
 **** 3. Allow deleting journal pages
 **** 4. Fixed dropdown modal display (by [[meh]])
 *** [[Features]]
-**** 1. Publishing #experiment 
+**** 1. Publishing #experiment
 Check out the [[https://logseq.github.io/page/publishing][docs]].
-** [[Sep 28th, 2020]] 
+** [[Sep 28th, 2020]]
 *Version 0.0.3.5*
 *** [[Fixed issues]]
 **** 1. Links support emphasis now, e.g. ~**[[Learn the shortcuts]]**~ (for markdown) will be rendered as *[[Learn the shortcuts]]*.
@@ -246,7 +314,7 @@ Check out the [[https://logseq.github.io/page/publishing][docs]].
 **** 1. Support fullscreen on mobile now (Thanks @denvey)
 **** 2. Add onboarding "Getting started"
 **** 3. Add credits for tools which logseq was influnced by
-** [[Sep 23rd, 2020]] 
+** [[Sep 23rd, 2020]]
 *Version 0.0.3.4*
 *** [[Fixed issues]]
 **** 1. Both "🔨 NOW" and "📅 NEXT" will not auto close when blocks changed
@@ -258,17 +326,17 @@ Check out the [[https://logseq.github.io/page/publishing][docs]].
 **** 1. Multi-line *Displayed Math* support (Katex syntax wrapped by ~$$~)
 #+BEGIN_EXAMPLE
 $$
-\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} 
+\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}}
 {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
 $$
-#+END_EXAMPLE 
+#+END_EXAMPLE
 
 $$
-\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} 
+\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}}
 {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
 $$
 **** 2. *Template* support
-You can right click the block dot and click "Make template" to give it a name. For example, you create a template with the name "meeting", then you can type ~/template~ and select "meeting" to avoid repeated work. 
+You can right click the block dot and click "Make template" to give it a name. For example, you create a template with the name "meeting", then you can type ~/template~ and select "meeting" to avoid repeated work.
 [[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_09_23_Screenshot%202020-09-23%2021-28-53%20%2B0800.png?Expires=4754467895&Signature=LX9u5RsG6-xLF~nAnDv~LiP5eDdLf4vW3hLmMtVN3alob8R7JzFavfu44jOkltIuoXjAJk0Oa7vnyrDvLcT8LvS4oDPRE8S9xuqj7Z7TlGxqbGxMRtpvuUmLaHArIIxIMN4UzEbeO2CMc3UUq8Ja4ABeXsVqJXvj8ZsbZ4SERT-dI37ILz1oBrruOR~V0HTU0S9RjkDHFY5qiGCerzTw5Iwx6JK0uBlcH9vp7-CWu6~0BhNFDrgAdLqgiQ9Wh-JzH-LQ712jdOAZ1kpSeRaRlgbXK-Ewpn53HLVMWxPergqgjw9ykejCwnI97~AJPxLmxL-9RxaZJuhpc5DaBmUdwA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_09_23_Screenshot 2020-09-23 21-28-53 +0800.png]]
 ** [[Sep 21st, 2020]]
 *Version 0.0.3.3*
@@ -280,13 +348,13 @@ You can right click the block dot and click "Make template" to give it a name. F
 **** 5. Fixed embedded todos don't consistently update as expected
 *** [[Features]]
 **** 1. You can change the default home page now, check #faq
-** [[Sep 20th, 2020]] 
+** [[Sep 20th, 2020]]
 *Version 0.0.3.2*
 *** [[Fixed issues]]
 **** 1. Multiple editing issues (page/block auto-complete, cursor jumping)
 *** [[Enhancement]]
 **** 1. You don't have to specify a title for source code, list item, quotes anymore
-** [[Sep 18th, 2020]] 
+** [[Sep 18th, 2020]]
 *Version 0.0.3.1*
 *** [[Fixed issues]]
 **** 1. Fixed embedded todos don't consistently update as expected
@@ -298,7 +366,7 @@ You can right click the block dot and click "Make template" to give it a name. F
 **** 2. Preserve the editing position when switching pages (e.g., ~ctrl+o~)
 **** 3. *Properties* UX huge improvement
 To add a property to any block, you can right click the left dot and click ~Add a property~.
-** [[Sep 15th, 2020]] 
+** [[Sep 15th, 2020]]
 *Version 0.0.3.0*
 *** [[Fixed issues]]
 **** 1. Fixed deleting make it not editable in the block page (zoom-in)
@@ -338,7 +406,7 @@ If you want to help translate Logseq, sign up here: https://crwd.in/logseq
 *** [[Features]]
 **** 1. [[Shortcuts change]]
 [[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_09_13_Screenshot%202020-09-13%2015-36-10%20%2B0800.png?Expires=4753582587&Signature=GAjAjKEAx-8ItK04aNXqQzd8NQjfnHi9~CVJeho2yBP5E38BFKqMSVYC5Y1eQaz7jbksyKMuJi27NnM92FrZYJiCgUWtuV1txBhl2ANBRnRHUON7QzLFvY1wZI9~7~QTTsLYBxCDnsynoz3Bp0gS1kmn8eBWFq1KZtrHZ3mGs7HHDREI2PZJHTQsE4qXN1DENh~0RuZ0UsCBisu~5H1JtzDT2riUCurZm08G3EdSZ33Yrr7InA7~EDT8W-lCGhJp9VJSeWpRkYJXPKuwT6RQiA6ZyrLKtDPzn4p3Ik9bNSemIYaNedUt-TKAgDbk17TKrCYk~6QYI8~7EwK87crLQA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_09_13_Screenshot 2020-09-13 15-36-10 +0800.png]]
-** [[Sep 11th, 2020]] 
+** [[Sep 11th, 2020]]
 *Version 0.0.2.7*
 *** [[Fixed Issues]]
 **** 1. Fixed copy which needs at least twice before
@@ -351,7 +419,7 @@ If you want to help translate Logseq, sign up here: https://crwd.in/logseq
 *** [[Features]]
 **** 1. [[Developer mode]] (by haoji) #experiment
 Developer mode helps contributors and extension developers test their integration with Logseq more efficient.
-** [[Sep 9th, 2020]] 
+** [[Sep 9th, 2020]]
 *Version 0.0.2.6*
 *** [[Daily Notes Migration]]
 :PROPERTIES:
@@ -364,7 +432,7 @@ Logseq is migrating to creating journal pages on a daily basis for better perfor
 *** [[Features]]
 **** 1. In search menu, you can press ~shift~ when clicking on a link to open it in sidebar
 **** 2. Supports directly adding pages to contents in page menu
-** [[Sep 8th, 2020]] 
+** [[Sep 8th, 2020]]
 *Version 0.0.2.5*
 *** [[Performance]]
 **** 1. Huge performance improvement

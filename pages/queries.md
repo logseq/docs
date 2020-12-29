@@ -17,7 +17,8 @@ title: Queries
 ## **How to write queries?**
 :PROPERTIES:
 :created_at: 1609231967174
-:last_modified_at: 1609231967174
+:last_modified_at: 1609251558592
+:id: 5feb30e3-fedc-4c2a-aa03-b44020c21c68
 :END:
 ### There're two kinds of queries:
 :PROPERTIES:
