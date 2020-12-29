@@ -12,16 +12,16 @@ title: Block properties
 :PROPERTIES:
 :type: [[book]]
 :author: [[sönke ahrens]]
-:publication date: february 21, 2017
+:publication date: [[february 21, 2017]]
 :created_at: 1609233078964
-:last_modified_at: 1609246163003
+:last_modified_at: 1609247942538
 :END:
 #### [[How to solve it]]
 :PROPERTIES:
 :type: [[book]]
-:author: [[g polya]] [[john h conway]]
+:author: [[george polya]]
 :created_at: 1609233053383
-:last_modified_at: 1609233075686
+:last_modified_at: 1609247725120
 :END:
 ## `Properties` can be used for selecting specific blocks.
 :PROPERTIES:

@@ -5,7 +5,7 @@ title: Queries
 ## **What are "Queries"?**
 :PROPERTIES:
 :created_at: 1609230242742
-:last_modified_at: 1609236953158
+:last_modified_at: 1609247076654
 :END:
 ### Queries are for asking questions from your knowledge base and the outside world (in the coming weeks).
 :PROPERTIES:
@@ -88,7 +88,7 @@ Examples:
 ### **property** [[Block properties]]
 :PROPERTIES:
 :created_at: 1609237428110
-:last_modified_at: 1609242908625
+:last_modified_at: 1609247365218
 :END:
 Examples:
 {{query (property type book)}}
@@ -191,6 +191,8 @@ Format: `(sort-by key order)` or `(sort-by key)`
 ### 6. Find all the blocks created today (you need to enable [[block timestamps]] before using this query)
 :PROPERTIES:
 :created_at: 1609235122723
-:last_modified_at: 1609242327763
+:last_modified_at: 1609249085047
 :END:
+#+BEGIN_EXAMPLE
 {{query (between created_at today tomorrow)}}
+#+END_EXAMPLE
