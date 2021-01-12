@@ -1,5 +1,5 @@
 * Monday, 05/18/2020
-** [[Changelog]]
+** [[Changelog 2020]]
 *** Add a right sidebar.
     You can ~shift~ + ~click~ to open any page, heading, or reference.
 *** When editing, no longer showing both ~##~ (for markdown users) and ~**~ (for Org mode users).

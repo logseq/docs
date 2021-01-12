@@ -1,5 +1,5 @@
 * Sunday, 05/17/2020
-** [[Changelog]]
+** [[Changelog 2020]]
 *** Add block reference
     E.g ~((block))~
 *** Add zoom in && out to edit specific heading, click the ~dot~ before the heading.

@@ -1,5 +1,5 @@
 * Jun 1st, 2020
-** [[Changelog]]
+** [[Changelog 2020]]
 *** Admonitions, inspired by [[https://asciidoctor.org/docs/user-manual/#admonition][Asciidoctor Admonitions]]. [[Features]]
 **** Note
      #+BEGIN_NOTE

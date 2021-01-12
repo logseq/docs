@@ -1,4 +1,4 @@
-## [[Changelog]]
+## [[Changelog 2020]]
 ## [[https://github.com/logseq/logseq/projects/1][Roadmap]]
 ## [[Videos]]
 ## ❓[[FAQ]]

@@ -1,5 +1,5 @@
 * Friday, 05/15/2020
-** [[Changelog]]
+** [[Changelog 2020]]
 *** No need to input github person token each time when you login.
 *** Disable tab adjusting level when there's any links input modal
     :PROPERTIES:

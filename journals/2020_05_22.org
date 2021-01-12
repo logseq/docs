@@ -1,5 +1,5 @@
 * Friday, 05/22/2020
-** [[Changelog]]
+** [[Changelog 2020]]
 *** Add a dark theme, inspired by the famous [[https://ethanschoonover.com/solarized/][Solarized dark theme]].
 *** Search support ~pages~, ~files~ and ~blocks~ now. Also,  there's a link for creating ~New page~.
 *** Editing should be a lot faster than before!

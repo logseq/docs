@@ -1,5 +1,5 @@
 * Thursday, 05/14/2020
-** [[Changelog]]
+** [[Changelog 2020]]
 *** [[https://excalidraw.com/][Excalidraw]] Integration. [[Draw]] [[Features]]
     Excalidraw is a [[https://github.com/excalidraw/excalidraw][open sourcing]] virtual whiteboard for sketching hand-drawn like diagrams.
     Open <https://logseq.com/draw> and enjoy it!
