@@ -13,7 +13,8 @@ You can copy and paste any pictures to a page, those pictures will be stored in 
 For example: (page "Page Alias"):
 {{query (page "Page Alias")}}
 ### [[Enhancement]]
-#### 1. Much better Undo && Redo
+#### 1. **Much stable Undo && Redo**
+`Notice`: It could be slow with page that has many blocks.
 There's a bug with block timestamps enabled, so we disabled it temporally.
 #### 2. `Ctrl+s` to save and push to GitHub
 #### 3. Add `git-auto-push` to settings page, you can disable the auto push and type `Ctrl+s` to push yourself :)
