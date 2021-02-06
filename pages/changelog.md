@@ -4,7 +4,7 @@ title: Changelog
 
 ## [[Jan 12th, 2021]]
 **Version 0.0.5.1**
-### [[Features]]
+### [[特性]]
 #### 1. **Local images support!**
 `Notice:` it only supports local file storage.
 You can copy and paste any pictures to a page, those pictures will be stored in the folder `assets/`.

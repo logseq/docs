@@ -1,44 +1,48 @@
-## 🌟 [[New to Logseq?]]
-### [[Getting started]]
-### [[Videos]]
+---
+title: 目录
+---
+
+## [[新加入 Logseq？]]
+### [[入门指南]]
+### [[视频]]
 ### [[FAQ]]
-### [Glossary](https://discuss.logseq.com/t/glossary-draft-work-in-progress/196)
+### [词汇](https://discuss.logseq.com/t/glossary-draft-work-in-progress/196)
 ### [[Testimonials]]
-## [[Features]]
-### [[Backlinks]]
-### [[Knowledge Graph]]
+## [[特性]]
+### [[反向链接]]
+### [[知识图谱]]
 ### [[Page and Block Embeds][Page and Block Embeds - {{embed (())}}]]
 ### [[Page and Block References][Page and Block References - ((block))]]
 ### [[Tasks & Todos]]
-### [[Commands]]
-#### [[Advanced commands]]
+### [[指令]]
+#### [[高级指令]]
 ### [Templates](https://discuss.logseq.com/t/templates-how-to-create-edit-and-insert/200)
 ### [[Import && Export]]
-### [[Page Alias]]
-### [[Publishing]]
-### [[Block properties]]
+### [[页面别名]]
+### [[发布]]
+### [[块属性]]
 :PROPERTIES:
 :created_at: 1609233128830
 :last_modified_at: 1609233128830
 :END:
 ### [[Draw]]
-### [[Slide]]
+### [[幻灯片]]
 ### [[Custom theme]]
 ## Logseq for...
-### [[Writers & Thinkers]]
-### [[A Personal CRM]]
-### [[Meetings]]
-### [[Students]]
-### [[Programmers]]
-## [[Document syntax]]
+### [[作家 & 思想家]]
+### [[个人 CRM]]
+### [[会议]]
+### [[学生]]
+### [[程序猿]]
+## [[文档语法]]
 ### [[Markdown]]
 ### [[Org Mode]]
-## 👤 [[Settings]]
+## 👤 [[设置]]
 ## 🔒 [[Security]]
-## ✨ [[Tips and Tricks]]
+## ✨ [[提示和技巧]]
 ## [[Advanced Logseq]]
-### [[Queries]]
-#### [[Advanced Queries]]
+### [[查询]]
+#### [[高级查询]]
 ### [[Hiccup]]
 ### [[Custom views]]
 ### [Self Hosting Logseq](https://github.com/dustinlacewell/logseq-guide)
