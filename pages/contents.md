@@ -1,22 +1,21 @@
-## [[Changelog 2020]]
-## [[https://github.com/logseq/logseq/projects/1][Roadmap]]
-## [[Videos]]
-## ❓[[FAQ]]
-## [[Questions]]
 ## 🌟 [[New to Logseq?]]
-### [[Testimonials]]
-### [[Create new page]]
 ### [[Getting started]]
-## [[Learn the shortcuts]]
+### [[Videos]]
+### [[FAQ]]
+### [Glossary](https://discuss.logseq.com/t/glossary-draft-work-in-progress/196)
+### [[Testimonials]]
 ## [[Features]]
 ### [[Backlinks]]
+### [[Knowledge Graph]]
+### [[Page and Block Embeds][Page and Block Embeds - {{embed (())}}]]
+### [[Page and Block References][Page and Block References - ((block))]]
+### [[Tasks & Todos]]
 ### [[Commands]]
 #### [[Advanced commands]]
-### [[Page embed]]
-### [[Block embed]]
-### [[Tasks]]
+### [Templates](https://discuss.logseq.com/t/templates-how-to-create-edit-and-insert/200)
+### [[Import && Export]]
+### [[Page Alias]]
 ### [[Publishing]]
-### [[https://logseq.github.io/graph][Graph]]
 ### [[Block properties]]
 :PROPERTIES:
 :created_at: 1609233128830
@@ -24,30 +23,31 @@
 :END:
 ### [[Draw]]
 ### [[Slide]]
-### [[Page Alias]]
-### [[Creating your own templates]]
 ### [[Custom theme]]
+## Logseq for...
+### [[Writers & Thinkers]]
+### [[A Personal CRM]]
+### [[Meetings]]
+### [[Students]]
+### [[Programmers]]
 ## [[Document syntax]]
 ### [[Markdown]]
 ### [[Org Mode]]
 ## 👤 [[Settings]]
-## ✨ [[Tips and Tricks]]
-## [[Workflows]]
-### [[CRM]]
-### [[Meetings]]
-### [[Teachers]]
-### [[Students]]
-### [[Programmers]]
 ## 🔒 [[Security]]
-## [[Import && Export]]
-## [[Advanced features]]
+## ✨ [[Tips and Tricks]]
+## [[Advanced Logseq]]
 ### [[Queries]]
 #### [[Advanced Queries]]
 ### [[Hiccup]]
 ### [[Custom views]]
+### [Self Hosting Logseq](https://github.com/dustinlacewell/logseq-guide)
+## [[2020 Changelog]]
 ## [[Contribute]]
-### Github: https://github.com/logseq/logseq
-### Docs: https://github.com/logseq/docs
-## 💬 [[Talk to Us]]
-### Discord: https://discord.gg/KpN4eHY
-### Twitter: [[https://twitter.com/logseq][@logseq]]
+### [[https://github.com/logseq/logseq/projects/1][Roadmap]]
+### Make a [Feature Request](https://discuss.logseq.com/)
+### [Check us out on Github](https://github.com/logseq/logseq)
+### [Contribute to Our Docs](https://github.com/logseq/docs)
+## 💬
+### Message us on [Discord](https://discord.gg/KpN4eHY) (We love feedback!)
+### Tweet us [[https://twitter.com/logseq][@logseq]]

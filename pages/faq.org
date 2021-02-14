@@ -2,32 +2,32 @@
 #+PUBLISHED: true
 #+PERMALINK: faq
 
-** Got a blank page after cloning the repo, where do i write notes?
+** *Got a blank page after cloning the repo, where do i write notes?*
 *** On the browser, Right click -> inspect, you should see the pictures as below:
 [[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_07_25_Screenshot%202020-07-25%2023-42-00%20%2B0800.png?Expires=4749291738&Signature=gmzQX1oTCcldOZWpaYTbbWpqNDYu7K~sYko5Uo4ivgleeplbwtUPL0kFHzo~4g5iKiRl9U2jubfHxM2jO5U-SorxlbCrtQdJkSMRntcTCyWe~Si9iq697lMEDVQfqOCE9XO7xwDNKykAzjOwFv21Hx1-BsPxrz2zYOmVFOI2ZFuHf1PNFrWt5Ij7oHSGQtk8isA614-rxcbfH7XW78GbnlXMC89F8qva1pvd7Lji9DmiooZuzfuAMEhpuFo0IPLGkbBEIj52GmMfxjBgLMB92CD6JEpZiXTR3nGrxb5yL3Jl-jPGt5OKGQgHJTbseG0UcRSwafX4Vdp2g1TQEUvQvA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_07_25_Screenshot 2020-07-25 23-42-00 +0800.png]]
 
 Click the ~Clear site data~ button, and log in again. If it's not working, go to our discord group and tell us!
-** The browser redirects to the ~/diff~ page, what should I do?
-*** Currently, the git bindings we are using only support [[https://www.datree.io/resources/git-push-force][git force push]], it will alter your commits history, so be carefully! The other option is save all your local changes and Re-index your current repo.
+** *The browser redirects to the ~/diff~ page, what should I do?*
+*** Currently, the git bindings we are using only support [[https://www.datree.io/resources/git-push-force][git force push]], it will alter your commits history, so be careful! The other option is save all your local changes and Re-index your current repo.
 [[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_07_25_Screenshot%202020-07-25%2023-48-27%20%2B0800.png?Expires=4749292209&Signature=OGiF6PmroS8KK-5Tt4L17d~jawihYqaSYAg3XiAi69oKyVY7zCeD60g5ZhMoZ3KbvAzWGg2PIoEA90krccG2qqLGXaM8EgJr69PBHlarcQAcQ4dwqq7zrf8gSzmhfr51SIaBAsv7qJFhniX7v4hajNjfiMeEEsCftYzoaJh2DyIZ9HEGQhD2wAtxa788IydrU0~Y1Kgag-mmuyw7cvYb2UVIyfKeT-wyC10KaeCczprkgCBo8HdYXUVHE4WUC224qIQ8v3R99Aqh385dNGy5vGn6VMyLBq6ef7Kv0nslUVibqQZs9LOZSNAEx5KuKKihe~1vIXGIFYmPqmoa0aYIcA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_07_25_Screenshot 2020-07-25 23-48-27 +0800.png]]
-** I can't push or pull from GitHub, what should I do?
+** *I can't push or pull from GitHub, what should I do?*
 **** Click your user avatar and go to ~Settings~, input a custom CORS proxy server.
 See more at https://github.com/isomorphic-git/cors-proxy
 [[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_08_05_Screenshot%202020-08-05%2014-21-43%20%2B0800.png?Expires=4750208955&Signature=bzBGfNnA7GDNzPlrQp4~UL40Qn5yTut~PaMPNx33XQli31bsrkUb954VldwLWVyqI3unibd5PX82z78T8rEKKq8Zl8FyA10amLi~hbusqUrQqCK2RE7ys7kAqKuonD5QcOCML4~tUNZrX9bRel37zhcXeBOl8O9L~VtrMt9Vq4bKkPYNGakzZClkqeMV3iHxz~GTd66YRdGRMk8WzfWMp1oL5BG-ZSOYe7wUt5dA4FPL~9yKRuUv9m-Fg6k4GEP4q92AF9h0sz-lH61ttqXxTvrPSjwK2g8EXajE1yupvEvvDSpJA~nlx5pSSzCp8S~VbyTXT-p3K6frnAs7tk4LPQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_08_05_Screenshot 2020-08-05 14-21-43 +0800.png]]
-** How to export files?
+** *How do I export files?*
 *** Hover the sync status dot in the heading bar, it'll show something like this if you have any changed files:
 [[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_08_05_Screenshot%202020-08-05%2016-59-18%20%2B0800.png?Expires=4750218060&Signature=HjvI5TPh8adeJgvgk4HLNAw3TZjqbgNZmWOC1REsENIYrv6u6qiAyRPyAhNpzt4-w2HxCuvFxy5UhEShdW4iAYjTCFEY8s3gtucwwFD74-Aj5-o9vM0huaJ64vhMKQJhclJXOOF~V1GDcdnUkWRZ4uVo46tJDHYaoVDzBQYwIZbaQcm0Y7cJwMP5ZeuT~d-XJHJVtesZ2nkOxE9ArB~BVaNapmKRFkT6Ws8pg~UoNrSv4gzw5JAD7MwnH30rL-i3plB0tkj9A8km~phZft~Mp9E9S5cOAiSYh7WkFYpK6DTfhnoNJi8iNbTN8DB~5D9YMHUNjTh44juehAez8WFLrA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_08_05_Screenshot 2020-08-05 16-59-18 +0800.png]]
 *** Go to all files and click "Download" to download any file.
 [[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_08_05_Screenshot%202020-08-05%2016-57-15%20%2B0800.png?Expires=4750217856&Signature=Y7Fz1vHY751f1FahSc6LwXqXyMX7OQRzMSspYeut~gpQ55WiFS-EJWV59iilS4CRUvuC~2p2ygqxfPY6SA-Irg3uP-g9cfNVKomtZ5a0dTd3Q9vJJkw8GlSp2~wTpXUFOwf8W274qkknvW2Ry1gqnOuAjSdwAOdezQZ1qW4nq9srLJwb2OtuY8249CwSSzCBVKnJxJT1IHiKV0v-ObdjFqRehTRpxB-h-fo~S~49ABX2ar~OCPUlCE8spTjymMKmsSBJeRWbH8mbMkEN8SGUq60M25cLoFYCWf26FThOn6Ob0xoXWv3Xh0TRww~FLhUxgLm3SKQOecMEeKt8CQMUlQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_08_05_Screenshot 2020-08-05 16-57-15 +0800.png]]
-** Can I backup my files to a cloud service other than GitHub, such as Dropbox or Google Drive?
+** *Can I backup my files to a cloud service other than GitHub, such as Dropbox or Google Drive?*
 **** Not at the moment, but this is on our roadmap!
-** Why doesn't ~Enter~ create a new block (or new bullet point)?
+** *Why doesn't Enter create a new block (or new bullet point)?*
 *** There is a setting to choose whether new blocks are created using ~Enter~ or ~Alt+Enter~. Click the ~Alt+Enter~ tag at the top of your window to change this, or click outside all blocks to exit editing mode and type ~t e~ (for ~t~oggle ~e~nter).
-** How can I help with translating Logseq documentation into my language?
+** *How can I help with translating Logseq documentation into my language?*
 *** Thanks for asking! Please go [[https://crowdin.com/project/logseq][here]].
-** Why was Logseq written in Clojure?
+** *Why was Logseq written in Clojure?*
 *** Answered [[https://www.reddit.com/r/logseq/comments/j5gcyn/why_clojure/][here]].
-** How to change the default date formatter?
+** *How to change the default date formatter?*
 *** Add your favorite date-formatter to ~logseq/config.edn~:
 #+BEGIN_SRC clojure
 :date-formatter "yyyy-MM-dd"
@@ -49,7 +49,7 @@ Currently, logseq support:
      "yyyy_MM_dd"
      "yyyy年MM月dd日"
 #+END_SRC
-** FAQs to be answered soon:
+** *FAQs to be answered soon:*
 *** I love Logseq! How can I donate money?
 *** Is Logseq just a rip-off of Roam Research or another note-taking program?
 *** When I hover over the orange/green dot, I see `Push now` and `Pull now` buttons. What do those mean?
@@ -58,3 +58,4 @@ Currently, logseq support:
 *** My sync dot has been orange for a long time. Do I need to worry about this?
 *** Can I run Logseq locally, without syncing files to an online location?
 *** Can Logseq reference blocks or embed blocks?
+** Feel free to ask more questions over on the [[https://discuss.logseq.com/c/faq/6][FAQ Section of the Forum]] or #questions channel on [[https://discord.gg/KpN4eHY][Discord]]!
