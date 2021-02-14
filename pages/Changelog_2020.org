@@ -336,7 +336,8 @@ $$
 \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}}
 {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
 $$
-**** 2. *Template* support
+**** 2. *Template* support 
+[[Creating your own templates]] 
 You can right click the block dot and click "Make template" to give it a name. For example, you create a template with the name "meeting", then you can type ~/template~ and select "meeting" to avoid repeated work.
 [[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_09_23_Screenshot%202020-09-23%2021-28-53%20%2B0800.png?Expires=4754467895&Signature=LX9u5RsG6-xLF~nAnDv~LiP5eDdLf4vW3hLmMtVN3alob8R7JzFavfu44jOkltIuoXjAJk0Oa7vnyrDvLcT8LvS4oDPRE8S9xuqj7Z7TlGxqbGxMRtpvuUmLaHArIIxIMN4UzEbeO2CMc3UUq8Ja4ABeXsVqJXvj8ZsbZ4SERT-dI37ILz1oBrruOR~V0HTU0S9RjkDHFY5qiGCerzTw5Iwx6JK0uBlcH9vp7-CWu6~0BhNFDrgAdLqgiQ9Wh-JzH-LQ712jdOAZ1kpSeRaRlgbXK-Ewpn53HLVMWxPergqgjw9ykejCwnI97~AJPxLmxL-9RxaZJuhpc5DaBmUdwA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_09_23_Screenshot 2020-09-23 21-28-53 +0800.png]]
 ** [[Sep 21st, 2020]]
