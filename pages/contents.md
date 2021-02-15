@@ -4,6 +4,7 @@
 ### [[FAQ]]
 ### [Glossary](https://discuss.logseq.com/t/glossary-draft-work-in-progress/196)
 ### [[Testimonials]]
+### [Awesome Logseq](https://github.com/logseq/awesome-logseq)
 ## [[Features]]
 ### [[Backlinks]]
 ### [[Knowledge Graph]]
@@ -42,7 +43,7 @@
 ### [[Hiccup]]
 ### [[Custom views]]
 ### [Self Hosting Logseq](https://github.com/dustinlacewell/logseq-guide)
-## [[2020 Changelog]]
+## [[Changelog 2020]]
 ## [[Contribute]]
 ### [[https://github.com/logseq/logseq/projects/1][Roadmap]]
 ### Make a [Feature Request](https://discuss.logseq.com/)

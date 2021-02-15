@@ -2,6 +2,34 @@
 title: Changelog
 ---
 
+## [[Feb 14th, 2021]] 
+:PROPERTIES:
+:id: 60292a79-59c5-41fd-aa05-3c5f1e1b4908
+:END:
+**Version 0.0.8**
+### [[Thanks]]
+#### [[Lupin]] support both Images and [[Time Spaced  Repetition]] (by [[akhater]])
+https://github.com/akhater/Lupin
+#### Fix of bug "TODO mobile bar shortcut only works when called in the beginning of the line" (#1283) (by [[akhater]])
+#### Continue improvements on encryption (by [[kanru]])
+#### Using Logseq with Todoist and Google Calendar (by [[WilliamDurin]])
+https://github.com/WilliamDurin/todoist2logseq
+https://github.com/WilliamDurin/gcal2logseq
+### [[Fixed issues]]
+#### Fix block references count not working
+#### Fix block references auto-complete not working
+#### Fix wrong prompts when the file is only edited by logseq
+#### Allow ~-~ inside file name
+#### Fix relative asset path
+#### Fix fuzzy search causing freezes/lag
+#### Display the main menu dots on mobile
+#### Importing roam's code blocks
+#### Don't jump to new journal when in editing mode
+#### And other fixes
+### [[Enhancement]]
+#### Better Undo && Redo
+#### Faster full-text search
+#### Add built-in pages such as TODO keywords and priorities
 ## [[Feb 5th, 2021]] 
 **Version 0.0.7**
 [[Desktop app]] download link:
@@ -17,7 +45,7 @@ https://github.com/logseq/logseq/releases/tag/0.0.7
 #### [CSS mod colorful indentation lines](https://discuss.logseq.com/t/css-mod-colorful-indentation-lines/229), by [[cannibalox]] #css
 #### [CSS mod custom columns/cards view (kanban)](https://discuss.logseq.com/t/css-mod-custom-columns-cards-view-kanban/228), by [[cannibalox]] #css
 #### [Glossary - draft work in progress](https://discuss.logseq.com/t/glossary-draft-work-in-progress/196), by [[Cobblebot]] #doc
-#### Awesome video by [[Santi Younger]]
+#### Awesome video by [[Santi Younger]] [[Videos]] 
 {{youtube https://www.youtube.com/watch?v=jovMt17_Vd4&ab_channel=SantiYounger}}
 ### [[Fixed Issues]] 
 Some highlights:

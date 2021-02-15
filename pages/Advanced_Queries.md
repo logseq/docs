@@ -12,7 +12,7 @@ https://gist.github.com/tiensonqin/9a40575827f8f63eec54432443ecb929
 :last_modified_at: 1609244703085
 :END:
 #+BEGIN_TIP
-1. Page names are stored as lower case in the database. 
+1. Page names are stored as lower case in the database.
 #+END_TIP
 ## The query format is something like this:
 :PROPERTIES:
@@ -27,7 +27,7 @@ https://gist.github.com/tiensonqin/9a40575827f8f63eec54432443ecb929
  :view             (fn [query-result] [:div ...])
  :result-transform (fn [query-result] ...)
  :collapsed? true}
-#+END_EXAMPLE 
+#+END_EXAMPLE
 
 | Name             | Description                      | Default | Optional |
 |------------------|----------------------------------|---------|----------|
@@ -38,7 +38,6 @@ https://gist.github.com/tiensonqin/9a40575827f8f63eec54432443ecb929
 | collapsed?       | Whether to collapse the result   | false   | true     |
 | result-transform | (fn [query-result] do something) |         | true     |
 ## **Examples**
-Thanks to @Pospi for these useful queries!
 ### 1. Get all tasks
 :PROPERTIES:
 :created_at: 1609232063516
