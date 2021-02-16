@@ -38,6 +38,7 @@
 ## 🔒 [[Security]]
 ## ✨ [[Tips and Tricks]]
 ## [[Advanced Logseq]]
+### [[Custom keyboard shortcuts]]
 ### [[Queries]]
 #### [[Advanced Queries]]
 ### [[Hiccup]]
