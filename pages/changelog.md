@@ -2,10 +2,46 @@
 title: Changelog
 ---
 
-## [[Feb 14th, 2021]] 
+## [[Feb 20th, 2021]] 
 :PROPERTIES:
 :id: 60292a79-59c5-41fd-aa05-3c5f1e1b4908
 :END:
+**Version 0.0.9**
+### [[Features]]
+#### Add the ability to delete your account on the settings page
+#### [[Custom keyboard shortcuts]] support
+#### [[Templates]] support [[Dynamic Variables]] now
+{{embed ((60311eda-b6f7-4779-8187-8830545b3a64)) }}
+#### **Smarter** [[queries]]
+Previously, `(and [[Project 1]] (todo now))` will only query those blocks that have both the `Project 1` reference and a `NOW` marker. Now it works as long as if the block parents have the `Project 1` reference and the block has a `NOW` marker.
+#+BEGIN_NOTE
+Make sure to unlink your graph first and import your data to make it works!
+#+END_NOTE
+##### For example:
+{{query (and [[Project 1]] (todo now))}}
+##### [[Project 1]]
+###### NOW Do something
+:PROPERTIES:
+:now: 1613831559033
+:END:
+#### Add `data-refs-self` for css mods
+### [[Fixed issues]]
+#### Duplicated blocks when editing
+#### Don't append image width/height metadata when not dragging
+#### Images from github repos can't be displayed
+#### `Tab` to collapse not working
+#### Can't `Enter` to create a block after undo
+#### Use `Command` instead of `Alt` on Mac
+### [[Enhancement]]
+#### Up/Down to navigate to the first/last block
+#### The parser is much faster now
+### [[Thanks]]
+#### [Trigger columns/kanban view with tags](https://discuss.logseq.com/t/css-trigger-columns-kanban-view-with-tags/390) (by [[cannibalox]] )
+#### [[Piotr]] built a calendar in the "Contents" page!
+https://dynalist.io/d/ao7N0QbfJfDiZ_dNRnW4PI9_
+#### [[Lupin]] can generate the calendars (by [[akhater]])
+#### Fix missing update properties when the marker changes (by [[rainmote]])
+## [[Feb 14th, 2021]] 
 **Version 0.0.8**
 ### [[Thanks]]
 #### [[Lupin]] support both Images and [[Time Spaced  Repetition]] (by [[akhater]])
