@@ -1,10 +1,10 @@
 * Sunday, 05/31/2020
 **  Changelog
-***  Custom journal date format support. [[Features]]
+*** Custom journal date format support. [[特色功能]]
     You can set the ~:date-formatter~ in ~logseq.edn~.
     The default formatter is ~"MMM do, yyyy"~, which will be something like
     ~Jun 1st, 2020~.
-*** Templates support . [[Features]]
+*** Templates support . [[特色功能]]
     You can set the option ~:default-templates~ in the file ~logseq.edn~.
 **** For Markdown users
      #+BEGIN_SRC clojure

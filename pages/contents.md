@@ -5,12 +5,12 @@
 ### [Glossary](https://discuss.logseq.com/t/glossary-draft-work-in-progress/196)
 ### [[Testimonials]]
 ### [Awesome Logseq](https://github.com/logseq/awesome-logseq)
-## [[Features]]
-### [[Backlinks]]
-### [[Knowledge Graph]]
+## [[特色功能]]
+### [[反向链接]]
+### [[知识图谱]]
 ### [[Page and Block Embeds][Page and Block Embeds - {{embed (())}}]]
 ### [[Page and Block References][Page and Block References - ((block))]]
-### [[Tasks & Todos]]
+### [[任务和待办事项]]
 ### [[Commands]]
 #### [[Advanced commands]]
 ### [Templates](https://discuss.logseq.com/t/templates-how-to-create-edit-and-insert/200)

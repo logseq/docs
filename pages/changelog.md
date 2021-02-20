@@ -34,7 +34,7 @@ https://github.com/WilliamDurin/gcal2logseq
 **Version 0.0.7**
 [[Desktop app]] download link:
 https://github.com/logseq/logseq/releases/tag/0.0.7
-### [[Features]]
+### [[特色功能]]
 #### 1. Auto-update support for desktop app #experiment
 #### 2. Add both `data-refs` and `data-href` attributes to [make css more power](https://discuss.logseq.com/t/propositions-to-empower-css-mods/289/1)
 ### [[Thanks]]
@@ -92,7 +92,7 @@ Some highlights:
 #### 3. Drag && drop any files (in editing mode), you can click the link to open the file with the system default app
 ## [[Jan 12th, 2021]]
 **Version 0.0.5.1**
-### [[Features]]
+### [[特色功能]]
 #### 1. **Local images support!**
 `Notice:` it only supports local file storage.
 You can copy and paste any pictures to a page, those pictures will be stored in the folder `assets/`.
