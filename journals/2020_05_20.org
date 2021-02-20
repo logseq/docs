@@ -3,8 +3,8 @@
 *** Add page aliases (Only supporting org mode for now).
 *** [[https://github.com/org-roam/org-roam][Org roam]] Integration.
     Rudimentary Roam replica with Org-mode.
-    [[Features]]
+    [[特色功能]]
 *** Basic page graph.
-    [[Features]]
+    [[特色功能]]
 ** [[Fixed issues]]
 *** Definition list parsing

@@ -23,7 +23,7 @@ This is our last release for 2020,  it is a challenging year for everyone, stay 
 :created_at: 1609250758098
 :last_modified_at: 1609251021197
 :END:
-*** [[Features]]
+*** [[特色功能]]
 :PROPERTIES:
 :created_at: 1609249850194
 :last_modified_at: 1609249850194
@@ -81,7 +81,7 @@ Go to ~Settings~ and toggle this button:
 **** 7. ~Push now~ should always work
 **** 8. Changed files are scrollable so that you can always click ~Download all files as a zip~
 **** Fix a lot of CSS issues (especially on iOS)
-*** [[Features]]
+*** [[特色功能]]
 :PROPERTIES:
 :created_at: 1609250411844
 :last_modified_at: 1609250585182
@@ -113,7 +113,7 @@ Go to ~Settings~ and toggle this button:
 **** 16. Avoid Git empty commits
 *** [[Enhancement]]
 **** 1. Display orange dot when in editing mode
-*** [[Features]]
+*** [[特色功能]]
 **** 1. Auto-export notes as zip files when you refresh the browser and there're new changes on the database schema. #data-safety
 **** 2. Add ~Download all files as a zip~ support #data-safety
 [[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_11_29_Screenshot%202020-11-29%2023-42-09%20%2B0800.png?Expires=4760264603&Signature=n-hAo72C2l5wyXfOuPxas0505ftBOHNE~Yv61VEWF9m2ysp5RMkCkUJ5ZH-zYnop3AL5bpZiMIWXRH49yxpPfC1aIvcQWWp~71ZGEAIsLB3~aoL34XsfkNjujsREUE8~QXOabnzbSS8wAJ-X71TRzEOMYAhr5V0UEYJNwDEEDtUNtuE-hX1dTwZgVmoUrONDaw2oeg5cyawoxW2KIgX9UkvnhytKs8BXswM78UCFQTTNBL-QvuyjULmEObBdAjnh9I0X1YHZFg4cF-s7AB5EKYCTidpD--3lw9n-Wa2My~Te2g5VvHCZ8PwDWbCvKVN6CXMf8Zyd56EGqkYujPdwAg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_11_29_Screenshot 2020-11-29 23-42-09 +0800.png]]
@@ -169,7 +169,7 @@ Add French language support by [[Kramer]]
 **** 12. Fix a lot of CSS issues!!
 *** [[Enhancement]]
 **** 1. Push immediately after you save any block/create a new page
-*** [[Features]]
+*** [[特色功能]]
 **** [[Page Alias]]
 ***** Actually, it's added months ago but it's not ready before.
 ***** *How to use it?*
@@ -203,7 +203,7 @@ Add French language support by [[Kramer]]
 *** [[Enhancement]]
 **** Global css variables support! 🎉🎉🎉
 Thank you [[lachyc]]!
-*** [[Features]]
+*** [[特色功能]]
 **** 1. Add ~Deadline~ and ~Scheduled~ support!
 *How to use it?*
 1. Type ~/deadline~ or ~/scheduled~ in the block editor.
@@ -266,7 +266,7 @@ The spent time for this block is ~18s~.
 **** 7. [[https://github.com/logseq/logseq-internal/pull/154][Cannot drag a block to the first position in a page]] (by [[meh]])
 **** 8. [[https://github.com/logseq/logseq/issues/376][Fix cannot drag a block to the first position in a page]] (by [[meh]])
 **** 9. Fix inline math parsing
-*** [[Features]]
+*** [[特色功能]]
 **** 1. [[Custom theme]] support!!
 ***** There're two ways for custom themes:
 ****** 1. Add a css file "logseq/custom.css".
@@ -285,7 +285,7 @@ The spent time for this block is ~18s~.
 **** 5. Fixed git branches other than ~master~ not working
 *** [[Enhancement]]
 **** Better undo && redo
-*** [[Features]]
+*** [[特色功能]]
 **** 1. Type ~s~ to switch between the file and the corresponding page (non editing mode)
 **** 2. Grammarly support even for single-line blocks
 Add ~:enable-grammarly? true~ to the file ~logseq/config.edn~.
@@ -302,7 +302,7 @@ Add ~:enable-grammarly? true~ to the file ~logseq/config.edn~.
 **** 2. Fixed custom queries which make the app not responding
 **** 3. Allow deleting journal pages
 **** 4. Fixed dropdown modal display (by [[meh]])
-*** [[Features]]
+*** [[特色功能]]
 **** 1. Publishing #experiment
 Check out the [[https://logseq.github.io/page/publishing][docs]].
 ** [[Sep 28th, 2020]]
@@ -323,7 +323,7 @@ Check out the [[https://logseq.github.io/page/publishing][docs]].
 **** 3. Fixed deleting blocks not working in the "References" section
 **** 4. Fixed code block doesn't render when it starts with ~:xx~
 **** 5. Fixed ~Ctrl + K~ linking not inserting cursor correctly
-*** [[Features]]
+*** [[特色功能]]
 **** 1. Multi-line *Displayed Math* support (Katex syntax wrapped by ~$$~)
 #+BEGIN_EXAMPLE
 $$
@@ -348,7 +348,7 @@ You can right click the block dot and click "Make template" to give it a name. F
 **** 3. Fixed embedding block with only table shows nothing
 **** 4. Fixed embedding an empty page (no block) creates unreadable .md files
 **** 5. Fixed embedded todos don't consistently update as expected
-*** [[Features]]
+*** [[特色功能]]
 **** 1. You can change the default home page now, check #faq
 ** [[Sep 20th, 2020]]
 *Version 0.0.3.2*
@@ -375,7 +375,7 @@ To add a property to any block, you can right click the left dot and click ~Add 
 **** 2. Fixed deleting in backlinks not triggering github sync
 **** 3. Fixed Page titles when zoomed into a block
 **** 4. Fixed embedded todos don't consistently update as expected
-*** [[Features]]
+*** [[特色功能]]
 **** Convert a block to/from a heading
    :PROPERTIES:
    :background_color: rgb(83, 62, 125)
@@ -390,7 +390,7 @@ Click ~Convert back to a block~.
 You can also change the background color of any block, it doesn't have to be a heading.
 ** [[Sep 14th, 2020]]
 *Version 0.0.2.9*
-*** [[Features]]
+*** [[特色功能]]
 **** 1. [[Internationalization]] (Special thanks to @Kamal for support!)
 你好世界！ Logseq is coming to 30+ languages, and this release adds support for Chinese (Simplified) and Afrikaans. Languages will be automatically applied depending on your browser settings; if not, go to Settings to manually select languages.
 ***** English, Chinese (Simplified), Afrikaans: Supported today
@@ -405,7 +405,7 @@ If you want to help translate Logseq, sign up here: https://crwd.in/logseq
 **** 3. Better undo/redo behavior
 **** 4. Support multiple notifications now (by haoji)
 **** 5. *All pages* support ~shift+click~ to open in right sidebar (by haoji)
-*** [[Features]]
+*** [[特色功能]]
 **** 1. [[Shortcuts change]]
 [[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_09_13_Screenshot%202020-09-13%2015-36-10%20%2B0800.png?Expires=4753582587&Signature=GAjAjKEAx-8ItK04aNXqQzd8NQjfnHi9~CVJeho2yBP5E38BFKqMSVYC5Y1eQaz7jbksyKMuJi27NnM92FrZYJiCgUWtuV1txBhl2ANBRnRHUON7QzLFvY1wZI9~7~QTTsLYBxCDnsynoz3Bp0gS1kmn8eBWFq1KZtrHZ3mGs7HHDREI2PZJHTQsE4qXN1DENh~0RuZ0UsCBisu~5H1JtzDT2riUCurZm08G3EdSZ33Yrr7InA7~EDT8W-lCGhJp9VJSeWpRkYJXPKuwT6RQiA6ZyrLKtDPzn4p3Ik9bNSemIYaNedUt-TKAgDbk17TKrCYk~6QYI8~7EwK87crLQA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_09_13_Screenshot 2020-09-13 15-36-10 +0800.png]]
 ** [[Sep 11th, 2020]]
@@ -418,7 +418,7 @@ If you want to help translate Logseq, sign up here: https://crwd.in/logseq
 **** 5. Fixed code block highlighting performance issue
 **** 6. Make it compatible with new date format with roam when importing json
 **** 7. Fixed page rename && delete
-*** [[Features]]
+*** [[特色功能]]
 **** 1. [[Developer mode]] (by haoji) #experiment
 Developer mode helps contributors and extension developers test their integration with Logseq more efficient.
 ** [[Sep 9th, 2020]]
@@ -431,7 +431,7 @@ Logseq is migrating to creating journal pages on a daily basis for better perfor
 *** [[Fixed Issues]]
 **** 1. Fixed not able to DELETE a Page or even Rename a page
 **** 2. Fixed an issue where contents page might show ~[[]]~ on page links
-*** [[Features]]
+*** [[特色功能]]
 **** 1. In search menu, you can press ~shift~ when clicking on a link to open it in sidebar
 **** 2. Supports directly adding pages to contents in page menu
 ** [[Sep 8th, 2020]]
