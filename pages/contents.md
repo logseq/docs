@@ -17,7 +17,7 @@
 ### [[导入和导出]]
 ### [[页面别名]]
 ### [[公开发布]]
-### [[Block properties]]
+### [[块属性]]
 :PROPERTIES:
 :created_at: 1609233128830
 :last_modified_at: 1609233128830
@@ -39,8 +39,8 @@
 ## ✨ [[Tips and Tricks]]
 ## [[Advanced Logseq]]
 ### [[Custom keyboard shortcuts]]
-### [[Queries]]
-#### [[Advanced Queries]]
+### [[查询]]
+#### [[高级查询]]
 ### [[Hiccup]]
 ### [[Custom views]]
 ### [Self Hosting Logseq](https://github.com/dustinlacewell/logseq-guide)
