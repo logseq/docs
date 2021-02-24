@@ -14,9 +14,9 @@
 ### [[Commands]]
 #### [[Advanced commands]]
 ### [Templates](https://discuss.logseq.com/t/templates-how-to-create-edit-and-insert/200)
-### [[Import && Export]]
-### [[Page Alias]]
-### [[Publishing]]
+### [[导入和导出]]
+### [[页面别名]]
+### [[公开发布]]
 ### [[Block properties]]
 :PROPERTIES:
 :created_at: 1609233128830
