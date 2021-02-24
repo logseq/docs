@@ -28,7 +28,7 @@ This is our last release for 2020,  it is a challenging year for everyone, stay 
 :created_at: 1609249850194
 :last_modified_at: 1609249850194
 :END:
-**** Simple [[Queries]] support #experiment
+**** Simple [[查询]] support #experiment
 :PROPERTIES:
 :created_at: 1609249966260
 :last_modified_at: 1609251607921

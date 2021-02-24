@@ -6,9 +6,9 @@ title: Advanced commands
 ## List of advanced commands:
 ### `<Quote` - Displays text as quoted by indenting text and giving it left and right margins.
 ### `<Src` - Syntax highlights code text using CodeMirror. Passing an argument to the block e.g. `#+BEGIN_SRC clojure` sets the language. Default language is javascript.
-### `<Query` - Defines a block for [[Advanced Queries]]. Block renders query results when not being edited.
+### `<Query` - Defines a block for [[高级查询]]. Block renders query results when not being edited.
 ### `<Latex export` - TODO
-### `<Properties`- Defines [[Block properties]]. Each line is a different property.
+### `<Properties`- Defines [[块属性]]. Each line is a different property.
 ### Admonition commands display an icon next to a block to call attention to it for a specific purpose. These are inspired by [Asciidoctor admonitions](https://asciidoctor.org/docs/user-manual/#admonition).
 #### `<Note`
 #### `<Tip`
