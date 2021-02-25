@@ -4,7 +4,7 @@ title: Advanced Queries
 
 ## The database that Logseq used is [[https://github.com/tonsky/datascript][Datascript]], which is an immutable in-memory database and [Datalog](https://en.wikipedia.org/wiki/Datalog) query engine in Clojure and ClojureScript.
 ## Logseq's database schema:
-https://gist.github.com/tiensonqin/9a40575827f8f63eec54432443ecb929
+https://github.com/logseq/logseq/blob/master/src/main/frontend/db_schema.cljs
 ## Please check _Learn Datalog Today_ [^1] and _Datomic query syntax_ [^2] first if you're not familiar with Datalog.
 ## **Some tips**
 :PROPERTIES:
