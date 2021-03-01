@@ -96,7 +96,7 @@ https://github.com/logseq/logseq/blob/master/src/main/frontend/db_schema.cljs
 {:title "All page tags"
 :query [:find ?tag-name
         :where
-        [?tag :tag/name ?tag-name]]
+        [?tag :page/name ?tag-name]]
 :view (fn [tags]
         [:div
          (for [tag (flatten tags)]
@@ -111,7 +111,7 @@ https://github.com/logseq/logseq/blob/master/src/main/frontend/db_schema.cljs
  :query [:find ?name
          :in $ ?tag
          :where
-         [?t :tag/name ?tag]
+         [?t :page/name ?tag]
          [?p :page/tags ?t]
          [?p :page/name ?name]]
  :inputs ["programming"]
