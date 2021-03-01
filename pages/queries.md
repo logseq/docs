@@ -16,7 +16,7 @@ title: Queries
 [:div.text-sm "By " [:a {:href "https://unsplash.com/photos/oMpAz-DN-9I" :target "_blank"} "Greg Rakozy"]]
 ##
 #+BEGIN_NOTE
-Both `created_at` and `last-modified-at` are disabled temporarily, we'll add both back later.
+Both `created_at` and `last_modified_at` are disabled temporarily, we'll add both back later.
 #+END_NOTE
 ## **How to write queries?**
 :PROPERTIES:
