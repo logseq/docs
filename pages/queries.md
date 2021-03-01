@@ -69,8 +69,8 @@ Examples:
 #+END_EXAMPLE
 ### **between**
 :PROPERTIES:
-:created_at: 1609237415572
 :last_modified_at: 1609243879053
+:created_at: 1609237415572
 :END:
 The format `(between start end)` will only support blocks on the journal pages.
 `(between created_at|last_modified_at start end)` support blocks on all the pages, you need to enable [[block timestamps]] to have those timestamps for new blocks.
@@ -86,6 +86,9 @@ Examples:
 (between created_at -7d 7d)
 (between last_modified_at -7d 7d)
 #+END_EXAMPLE
+### **Page**
+Examples: [[questions]] 
+{{query (and (page "Page Alias"))}}
 ### **property** [[Block properties]]
 :PROPERTIES:
 :created_at: 1609237428110

@@ -2,10 +2,39 @@
 title: Changelog
 ---
 
-## [[Feb 20th, 2021]] 
+## [[Feb 26th, 2021]] 
 :PROPERTIES:
 :id: 60292a79-59c5-41fd-aa05-3c5f1e1b4908
 :END:
+**Version 0.0.10**
+### [[Features]]
+#### [[Encryption]] support contributed by [[kanru]] 🔒 #experiment 
+Both git repos and local directories support encryption!
+You need to enable the encryption feature on the settings page, and then re-index your graph to make it works.
+#### Resizable right sidebar!
+#### [[Queries]] support the [[Dynamic Variables]] too
+For example:
+{{query (and (page <% today %>) (todo now))}}
+{{query (and (between <% 7 days ago %> <% today %>) (todo now done))}}
+#### [[Templates]] support multiple blocks in the same level
+### [[Fixed issues]] #highlights
+#### Don't overwrite the file on disk when it's newer than the file cache in logseq
+#### Can't [[Search]] block body
+#### Can't delete files on desktop
+#### Change title in the page property doesn't delete the old file
+#### Page graph doesn't work for block page
+#### Custom date configuration not working
+### [[Enhancement]]
+#### `Ctrl+Shift+z` or `Command+Shift+z` on Mac to redo
+#### `t c` to toggle Contents in the right sidebar
+#### Lots of UI and performance improvements
+### [[Thanks]]
+#### [[Kanru]] for encryption support
+#### [[Piotr]] released [logseq-tools](https://piotrsss.github.io/logseq-tools/public/#/mini-calendar)
+#### [[Lupin]] supports encryption too
+#### [[Santi Younger]] add a [Cobra](https://discuss.logseq.com/t/cobra-theme-black-and-yellow-awesome-dark-mode/440/10) theme #theme
+#### [[Handuo]] add a [Forest night theme](https://discuss.logseq.com/t/forest-night-theme-for-dark-mode/447) #theme
+## [[Feb 20th, 2021]] 
 **Version 0.0.9**
 ### [[Features]]
 #### Add the ability to delete your account on the settings page
