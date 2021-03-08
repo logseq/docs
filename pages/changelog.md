@@ -2,10 +2,44 @@
 title: Changelog
 ---
 
-## [[Feb 26th, 2021]] 
+## [[Mar 8th, 2021]] 
 :PROPERTIES:
 :id: 60292a79-59c5-41fd-aa05-3c5f1e1b4908
 :END:
+**Version 0.0.11**
+### [[Thanks]]
+#### [[Sam]] for adding filters
+#### [[Piotr]] released the wonderful [clean theme](https://github.com/PiotrSss/logseq-clean-themes)
+##### https://cdn.discordapp.com/attachments/756886540038438992/815659579655585802/wanderer.png
+##### https://cdn.discordapp.com/attachments/756886540038438992/815659573683683388/night_in_nature.png
+#### [[cannibalox]] released a priority matrix
+https://discuss.logseq.com/t/css-template-eisenhower-matrix/526
+##### https://discuss.logseq.com/uploads/default/original/1X/b7b600c4c91c6108e9900f093dc69c7e91b4038e.gif
+#### [[Westofer]] made an archlinux aur package [logseq-desktop-bin](https://aur.archlinux.org/packages/logseq-desktop-bin/)
+#### [[Bryan Jenks]] made a #gruvbox #theme
+##### https://user-images.githubusercontent.com/479169/110302289-0b3af500-8034-11eb-8232-93c3c459f715.jpeg
+### [[Features]]
+#### Linked references [[Filters]] by [[Sam]] 🥳
+https://github.com/samfundev
+##### https://user-images.githubusercontent.com/6759716/98471636-c2754b80-21bb-11eb-856c-425af4f97ce0.gif
+### [[Fixed issues]] #highlights
+#### Both schedule and deadlines including today's blocks
+#### Can't click and jump to the embed block
+#### Allow `.` in tag names
+#### Don't remember preferred workflows
+#### Can't open local files on Mac && Windows
+#### Display block's content if it doesn't have a title, e.g. code block, image, etc.
+#### Tags autocomplete doesn't work in raw file mode (you can type `s` to switch between the outliner mode and raw file mode)
+#### Many parser, UI and query issues
+### [[Performance]] improvements
+#### It doesn't feel laggy anymore when working with 10k notes
+#### Logseq can parse [10000 markdown files](https://github.com/Zettelkasten-Method/10000-markdown-files) in 3 minutes on Mac M1 chip
+### [[Enhancement]]
+#### Press `t s` to toggle settings
+#### Display search button by default
+#### Better search results
+#### UI improvements
+## [[Feb 26th, 2021]] 
 **Version 0.0.10**
 ### [[Features]]
 #### [[Encryption]] support contributed by [[kanru]] 🔒 #experiment 

@@ -6,7 +6,7 @@ title: Getting started
 :PROPERTIES:
 :heading: true
 :END:
-##
+## 
 > Logseq is a _privacy-first_, _open-source_ platform for _knowledge_ sharing and management.
 ## Here are some tips that might be useful:
 :PROPERTIES:
