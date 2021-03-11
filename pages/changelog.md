@@ -7,6 +7,7 @@ title: Changelog
 :id: 60292a79-59c5-41fd-aa05-3c5f1e1b4908
 :END:
 **Version 0.0.12**
+Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.12
 ### [[Thanks]]
 #### [[Collin Lefeber]] for adding `/Embed Vimeo video` command
 #### [[akhater]] for adding `<Pinned` command
