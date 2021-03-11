@@ -2,10 +2,44 @@
 title: Changelog
 ---
 
-## [[Mar 8th, 2021]] 
+## [[Mar 11th, 2021]] 
 :PROPERTIES:
 :id: 60292a79-59c5-41fd-aa05-3c5f1e1b4908
 :END:
+**Version 0.0.12**
+### [[Thanks]]
+#### [[Collin Lefeber]] for adding `/Embed Vimeo video` command
+#### [[akhater]] for adding `<Pinned` command
+#####
+#+BEGIN_PINNED
+a pinned example
+#+END_PINNED
+#### [[karlicoss]] for fixing the clojure version in Docker container
+### [[Features]]
+#### Enable simple query in [[Advanced Queries]]
+##### For example:
+#+BEGIN_EXAMPLE
+{:title "All todos"
+ :query (todo todo later done)}
+#+END_EXAMPLE 
+
+#+BEGIN_QUERY
+{:title "All todos"
+ :query (and (todo todo later done doing now))}
+#+END_QUERY
+#### Much better [[Excalidraw]] integration, type `/draw` to start,
+the excalidraw file will be stored in your local file system too.
+##### **Gif**
+<div style="position: relative; padding-bottom: 56.25%; height: 0; "><iframe src="https://www.loom.com/embed/cdc10a6d54644d7c9bb88cdcb3a0168b" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+#### Desktop app add AppImage format for linux
+### [[Fixed issues]]
+#### Linux env titlebar not showing
+#### Encryption not works on desktop
+#### Desktop app can't quit
+### [[Enhancement]]
+#### The block search results should be more precise
+#### Undo will open another page in the right sidebar if it's not the same with the current page.
+## [[Mar 8th, 2021]] 
 **Version 0.0.11**
 ### [[Thanks]]
 #### [[Sam]] for adding filters
