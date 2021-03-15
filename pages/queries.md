@@ -91,7 +91,7 @@ Examples:
 (between last_modified_at -7d 7d)
 #+END_EXAMPLE
 ### **Page**
-Examples: [[questions]] 
+Examples: [[questions]]
 {{query (and (page "Page Alias"))}}
 ### **property** [[Block properties]]
 :PROPERTIES:
@@ -100,6 +100,12 @@ Examples: [[questions]]
 :END:
 Examples:
 {{query (property type book)}}
+
+### **Full-text query**
+Examples:
+1. {{query "Something"}}
+2. {{query "project-[\\d]+"}}
+
 ### **todo**
 :PROPERTIES:
 :created_at: 1609237429937
