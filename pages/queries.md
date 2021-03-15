@@ -103,9 +103,7 @@ Examples:
 
 ### **Full-text query**
 Examples:
-1. {{query "Something"}}
-2. {{query "project-[\\d]+"}}
-
+{{query "alias"}}
 ### **todo**
 :PROPERTIES:
 :created_at: 1609237429937
