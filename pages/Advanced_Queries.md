@@ -254,6 +254,23 @@ https://github.com/logseq/logseq/blob/master/src/main/frontend/db_schema.cljs
  ]}
 #+END_QUERY
 #+END_SRC
+### 14. Next 7 days' deadline or schedule
+ ((60531c23-238e-4748-9b19-27088f9c3771)) 
+#+BEGIN_SRC clojure
+#+BEGIN_QUERY
+{:title "next 7 days' deadline or schedule"
+    :query [:find (pull ?block [*])
+            :in $ ?start ?next
+            :where
+            (or
+              [?block :block/scheduled ?d]
+              [?block :block/deadline ?d])
+            [(> ?d ?start)]
+            [(< ?d ?next)]]
+    :inputs [:today :7d-after]
+    :collapsed? false}
+#+END_QUERY
+#+END_SRC
 ## **Resources**
 ### [^1]: [Learn Datalog Today](http://www.learndatalogtoday.org/)  is an interactive tutorial designed to teach you the Datomic dialect of Datalog.
 ### [^2]: [[https://docs.datomic.com/query.html][Datomic query documentation]]

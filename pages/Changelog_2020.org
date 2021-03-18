@@ -204,8 +204,11 @@ Add French language support by [[Kramer]]
 **** Global css variables support! 🎉🎉🎉
 Thank you [[lachyc]]!
 *** [[Features]]
-**** 1. Add ~Deadline~ and ~Scheduled~ support!
-*How to use it?*
+**** 1. Add ~Deadline~ and ~Scheduled~ support! 
+:PROPERTIES:
+:id: 60531c23-238e-4748-9b19-27088f9c3771
+:END:
+*How to use it?* 
 1. Type ~/deadline~ or ~/scheduled~ in the block editor.
 2. Pick a date, time (optional), and a repeater (optional, see below).
 3. Click the ~Submit~ button.
