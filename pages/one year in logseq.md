@@ -5,7 +5,7 @@ title: One year in Logseq
 ## **Hello, everyone!**
 ## **A little about the team**
 ### **Michael** 
-![image.png](../assets/pages_one year in logseq_1616235681415_0.png)
+![image.png](../assets/pages_one year in logseq_1616235681415_0.png){:height 560, :width 960}
 ### **Charlie**  ![image.png](../assets/pages_one year in logseq_1616235711538_0.png)
 ### **Zhiyuan**
 ![image.png](../assets/pages_one year in logseq_1616235763365_0.png)
@@ -18,7 +18,7 @@ title: One year in Logseq
 ## **What's logseq?**
 ### At present, it's a note-taking app
 #### It's also a community for knowledge sharing and collaboration, yes, our discord group and forum!
-### In the future, we hope Logseq can be more helpful for young students around the world.
+### In the future, we hope Logseq can be more helpful for everyone around the world.
 ## **Why the name?**
 :PROPERTIES:
 :later: 1616236181947
