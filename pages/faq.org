@@ -1,5 +1,4 @@
 #+TITLE: FAQ
-#+PUBLISHED: true
 #+PERMALINK: faq
 
 ** *Got a blank page after cloning the repo, where do i write notes?*
