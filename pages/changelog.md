@@ -2,10 +2,37 @@
 title: Changelog
 ---
 
-## [[Mar 11th, 2021]] 
+## [[Mar 17th, 2021]] 
 :PROPERTIES:
 :id: 60292a79-59c5-41fd-aa05-3c5f1e1b4908
 :END:
+**Version 0.0.13**
+Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.13
+### [[Thanks]]
+#### [[pengx17]] for adding js/ts/tsx modes to codemirror support
+#### [Deta](https://twitter.com/detahq) for becoming the first company sponsor
+### [[Features]]
+#### Much better publishing experience!
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/39a34471c10f498bb5c37e898661b2d9" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+[:hr]
+##### The desktop app can export all the public notes and logseq's Javascript and CSS files to a specified directory, then you can deploy it to GitHub pages, Vercel or your hosting service!
+
+Read more at [[Publishing (Desktop App Only)]]
+#### Initial support for [[namespace pages]], namespace can be used to avoid name conflicts, also, it can be used for building hierarchical relationships later.
+[[book/how to take dummy notes]] will create the parent page `book`.
+##### Discussion thread at https://discuss.logseq.com/t/auto-create-pages-and-assign-page-tags-when-using-namespaces/573
+#### [[Export]] graph as an [EDN](https://github.com/edn-format/edn) file, it's mostly for developers who'd like to analysis their graphs using other tools.
+Logseq uses [Datascript](https://github.com/tonsky/datascript) , which is a database provides datalog queries.
+##### Go to "All graphs" -> click "Export as EDN"
+### [[Fixed Issues]] #highlights
+#### Search fails for long text
+#### Org mode `TITLE` directive after properties
+#### graph-view width now limited by the main container width
+### [[Enhancement]]
+#### Don't create a journal file until input
+#### Redirect to all pages when no default page in publishing mode
+#### Display original title when renaming a page
+## [[Mar 11th, 2021]] 
 **Version 0.0.12**
 Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.12
 ### [[Thanks]]
