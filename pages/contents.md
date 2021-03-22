@@ -1,6 +1,7 @@
 ## 🌟 [[New to Logseq?]]
 ### [[Getting started]]
 ### [[Videos]]
+### [[Desktop app]]
 ### [[FAQ]]
 ### [Glossary](https://discuss.logseq.com/t/glossary-draft-work-in-progress/196)
 ### [[Testimonials]]
