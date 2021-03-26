@@ -8,7 +8,7 @@ Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.14
 ### [[Thanks]]
 #### [ahonn](https://github.com/ahonn) for adding remember electron windows state enhancement
 #### [martinklepsch](https://github.com/martinklepsch) for adding clj-kondo support
-#### [pengx17](https://github.com/pengx17) for providind feedback and suggestion on journals loading page
+#### [pengx17](https://github.com/pengx17) for providing feedback and suggestion on journals loading page
 ### [[Features]]
 #### Support export single page to markdown
 [](https://user-images.githubusercontent.com/5608710/112099687-ec656280-8bde-11eb-8d69-fe99dedb68a1.gif)
