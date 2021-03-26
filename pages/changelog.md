@@ -10,7 +10,10 @@ Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.14
 #### [martinklepsch](https://github.com/martinklepsch) for adding clj-kondo support
 #### [pengx17](https://github.com/pengx17) for providing feedback and suggestion on journals loading page
 ### [[Features]]
-#### Support export single page to markdown
+#### [[Export]] graph as markdown files
+##### Go to “Export” -> click “Export as Markdown”
+##### add config option ‘:export/heading-to-list?’ to toggle exported-heading to bullet list or not
+#### Support [[Export]] single page to markdown
 [](https://user-images.githubusercontent.com/5608710/112099687-ec656280-8bde-11eb-8d69-fe99dedb68a1.gif)
 #### New [[Commands]] /Underline to support markdown underline
 #### [[Block Alias]] support with markdown
