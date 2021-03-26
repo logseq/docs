@@ -7,25 +7,30 @@ title: Changelog
 Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.14
 ### [[Thanks]]
 #### [ahonn](https://github.com/ahonn) for adding remember electron windows state enhancement
-#### [martinklepsch](https://github.com/martinklepsch) for adding clj-kondo support
+#### [martinklepsch](https://github.com/martinklepsch) for both react profiling and adding clj-kondo support
 #### [pengx17](https://github.com/pengx17) for providing feedback and suggestion on journals loading page
 ### [[Features]]
 #### [[Export]] graph as markdown files
 ##### Go to “Export” -> click “Export as Markdown”
-##### add config option ‘:export/heading-to-list?’ to toggle exported-heading to bullet list or not
+##### Add config option ‘:export/heading-to-list?’ to toggle exported-heading to bullet list or not
 #### Support [[Export]] single page to markdown
 [](https://user-images.githubusercontent.com/5608710/112099687-ec656280-8bde-11eb-8d69-fe99dedb68a1.gif)
-#### New [[Commands]] /Underline to support markdown underline
+#### New [[Commands]] `/Underline` to support markdown underline
 #### [[Block Alias]] support with markdown
 Syntax: `[alias](((block-id)))`
 #### Supports render inline html
 ### [[Fixed Issues]]
+#### Add custom css when publishing
+#### Graph doesn't show on the full page
 #### Incorrect journal shortcut in help page
 #### Copy paste buffer stay intact after deleting blocks
 #### Don't show brackets for tags
+#### Roam macro import
+#### Remove picture-in-picture from youtube iframe for security reason
+#### Many parser issues fixed by [[Zhiyuan]]
 ### [[Enhancement]]
-#### [[Desktop app]] remembers last window setting when reopened
 #### Better and smooth loading for journals page
+#### [[Desktop app]] remembers last window setting when reopened
 ## [[Mar 17th, 2021]] 
 **Version 0.0.13**
 Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.13
