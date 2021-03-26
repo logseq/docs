@@ -2,10 +2,28 @@
 title: Changelog
 ---
 
+## [[Mar 26th, 2021]]
+**Version 0.0.14**
+Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.14
+### [[Thanks]]
+#### [ahonn](https://github.com/ahonn) for adding remember electron windows state enhancement
+#### [martinklepsch](https://github.com/martinklepsch) for adding clj-kondo support
+#### [pengx17](https://github.com/pengx17) for providind feedback and suggestion on journals loading page
+### [[Features]]
+#### Support export single page to markdown
+[](https://user-images.githubusercontent.com/5608710/112099687-ec656280-8bde-11eb-8d69-fe99dedb68a1.gif)
+#### New [[Commands]] /Underline to support markdown underline
+#### [[Block Alias]] support with markdown
+Syntax: `[alias](((block-id)))`
+#### Supports render inline html
+### [[Fixed Issues]]
+#### Incorrect journal shortcut in help page
+#### Copy paste buffer stay intact after deleting blocks
+#### Don't show brackets for tags
+### [[Enhancement]]
+#### [[Desktop app]] remembers last window setting when reopened
+#### Better and smooth loading for journals page
 ## [[Mar 17th, 2021]] 
-:PROPERTIES:
-:id: 60292a79-59c5-41fd-aa05-3c5f1e1b4908
-:END:
 **Version 0.0.13**
 Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.13
 ### [[Thanks]]
