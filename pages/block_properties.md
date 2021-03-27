@@ -16,7 +16,7 @@ title: Block properties
 :PROPERTIES:
 :type: [[book]]
 :author: [[sönke ahrens]]
-:publication date: [[february 21, 2017]]
+:publication_date: [[february 21, 2017]]
 :created_at: 1609233078964
 :last_modified_at: 1609337624066
 :id: 5fec89e0-b3ea-4d90-ba98-40d2503f7500
@@ -72,4 +72,4 @@ title: Block properties
  }
 #+END_QUERY
 ## **Resources**
-### 1. [[https://orgmode.org/guide/Properties.html][Org-mode properties]]
+### 1. [Org-mode properties](https://orgmode.org/guide/Properties.html)

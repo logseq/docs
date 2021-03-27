@@ -2,7 +2,17 @@
 title: Changelog
 ---
 
-## [[Mar 26th, 2021]]
+## [[Mar 28th, 2021]] 
+:PROPERTIES:
+:id: 605deea9-da6c-41c7-8d0f-1a1084d870ab
+:END:
+**Version 0.0.15**
+Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.15
+### [[Fixed Issues]]
+#### Some queries not working anymore
+#### Reload stuck on the desktop app
+#### `#[[some tag]]` has no references
+## [[Mar 27th, 2021]]
 **Version 0.0.14**
 Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.14
 ### [[Thanks]]
