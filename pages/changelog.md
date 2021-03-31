@@ -2,10 +2,37 @@
 title: Changelog
 ---
 
-## [[Mar 28th, 2021]] 
+## [[Mar 31st, 2021]] 
 :PROPERTIES:
 :id: 605deea9-da6c-41c7-8d0f-1a1084d870ab
 :END:
+**Version 0.0.16**
+Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.16
+### [[Fixed Issues]]
+#### Stuck loading on the desktop app
+#### Re-index should be faster
+#### File corrupts when editing code blocks
+#### `/Deadline` sometimes create `/Scheduled`
+#### Parsing error for page ref followed by a link
+#### Blank page for bad macros
+#### Can't change the case of a page name
+#### Org mode doesn't support image's file path in link
+#### Add to pages for TAGS and other properties inside block properties
+### [[Features]]
+#### Initial **PDF** embed on desktop app
+##### 
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/b550c995cc8b44828d13e6a159461bd4" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+[:hr]
+### [[Enhancement]]
+#### You don't have to go to edit mode first to select words 😂
+#### The page graph will auto-refresh when redirecting to a new page
+##### 
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/f9309fec81ff473a87ec7648a2698f96" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+[:hr]
+#### Rendering is much faster thanks to the hints by [[martinklepsch]]
+#### Scheduled && deadline includes tasks in the next 7 days too, we'll make the number configurable soon
+#### Auto update on Mac
+## [[Mar 28th, 2021]] 
 **Version 0.0.15**
 Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.15
 ### [[Fixed Issues]]
