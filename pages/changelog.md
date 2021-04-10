@@ -18,7 +18,7 @@ Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.18
 #### Add icon for linux appimage
 #### Re-enable full-text query on the desktop app
 ### [[Enhancement]]
-#### Full-text search are using SQLite now, which is both fast and more accurate, tested with 10k markdown files
+#### Full-text search is using SQLite now, which is both fast and more accurate, tested with 10k markdown files
 #### Add block breadcrumb to search result
 #### `Enter` will jump and highlight the matched block when searching
 ## [[Apr 1st, 2021]] 
