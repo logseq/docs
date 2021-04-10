@@ -102,6 +102,9 @@ Examples:
 {{query (property type book)}}
 
 ### **Full-text query**
+#+BEGIN_NOTE
+It's only enabled on the desktop app at the moment.
+#+END_NOTE 
 Examples:
 {{query "alias"}}
 ### **todo**

@@ -2,10 +2,43 @@
 title: Changelog
 ---
 
-## [[Mar 31st, 2021]] 
+## [[Apr 10th, 2021]] 
 :PROPERTIES:
 :id: 605deea9-da6c-41c7-8d0f-1a1084d870ab
 :END:
+**Version 0.0.18**
+Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.18
+### [[Thanks]]
+#### [[pengx17]] for fixing an issue when clicking bullets in embedded block/page
+#### [[karlicoss]] for adding check for Docker image consistency
+#### [[haydenull]] for adding sass/scss/less modes to codemirror and highlight active line
+### [[Fixed Issues]]
+#### Can't select blocks in edit mode
+#### Can't toggle from NOW to LATER
+#### Add icon for linux appimage
+#### Re-enable full-text query on the desktop app
+### [[Enhancement]]
+#### Full-text search are using SQLite now, which is both fast and more accurate, tested with 10k markdown files
+#### Add block breadcrumb to search result
+#### `Enter` will jump and highlight the matched block when searching
+## [[Apr 1st, 2021]] 
+**Version 0.0.17**
+Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.17
+### [[Thanks]]
+#### [[pengx17]] for support previewing videos and fixing image resize style issue
+### [[Fixed Issues]]
+#### PDF embed doesn't work if the page name has blanks
+#### Rename page name in raw file view
+#### Display page's original name in linked references
+#### Blank page for page graph
+#### Disable multiple instances at the moment
+##### The reason is that in the current system, logseq cached all the graphs locally in IndexedDB, which is impossible to be shared between multiple instances. We also need to handle other situations if we plan to enable multiple instances.
+#### When selecting some text, the shortcuts for bold, italics and highlight should jump to a correct position
+#### Multiple parser issues
+### [[Features]]
+#### Add an option `:scheduled/future-days` for the `Scheduled and Deadline` section, the default value is `0`, which means it only display tasks for `Today`.
+##### For example, if you'd like to see all the scheduled tasks && deadlines in 7 days, add `:scheduled/future-days 7` to the file `config.edn`
+## [[Mar 31st, 2021]] 
 **Version 0.0.16**
 Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.16
 ### [[Fixed Issues]]
