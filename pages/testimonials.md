@@ -30,3 +30,15 @@ Of course I am sure what most people say will tip this over the edge will be the
 Thanks so much for making such a brilliant app. Looking forward to see where this goes in the future.
 #+END_QUOTE
 By Luke (@white999 on Discord)
+##
+#+BEGIN_QUOTE
+I jumped the boat from Roam Research to Logseq because I wanted something that
+- is open-source,
+- uses local filesystem without a paywall,
+- does not need an account, and
+- provides a seamless transition from Roam Research.
+Logseq has them all. I believe most Roam Research users will agree that Logseq is a fantastic alternative.
+
+I had also tried some other alternatives, but they don't fit my need. They provide fancy user interfaces that distract me from simply taking notes. I just want a desktop app that helps take notes of my random thoughts and <u><b><i>links</i></b></u> these snippets of thoughts. But don't get me wrong: Logseq is very powerful. It's just that Logseq hides advanced functions in the user interface and keeps the look clean. Whenever a user needs an advanced feature that other alternatives have, he/she can still find it in Logseq. And when a user can't find the needed feature, she/he will be impressed by how responsive/accessible Logseq's development team is!
+#+END_QUOTE
+By [Pi-Yueh Chuang](https://github.com/piyueh)
