@@ -1,11 +1,43 @@
 ---
 title: Changelog
 ---
-
-## [[Apr 10th, 2021]] 
+## [[Apr 19th, 2021]]
 :PROPERTIES:
 :id: 605deea9-da6c-41c7-8d0f-1a1084d870ab
 :END:
+**Version 0.0.20**
+Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.20
+### [[Thanks]]
+#### [[Testimonials]]
+##### ((607d1394-3b32-4613-9acf-9bade8ad7817))
+#### [[Fixed Issues]]
+##### Don't show assets and block ids in graph view
+##### Switching graphs makes the journal page queries disappear
+##### Can't exit when there's no graph
+##### Block ref should be able to wrap
+##### Scroll in the right sidebar doesn't affect the main view
+#### [[Enhancement]]
+##### A toggle icon for the right sidebar is always on the top right
+###### The shortcut is `t r`, notice it only works in non-editing mode
+##### Both the main view and the right sidebar have scrollbars now
+##### Contents/Recent/Page graph/Help are always on the top of the right sidebar
+## [[Apr 12th, 2021]]
+**Version 0.0.19**
+Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.19
+### [[Thanks]]
+#### [[Testimonials]]
+##### {{embed ((607454a1-a6a5-4356-af6d-ae5ed0a2051a))}}
+##### {{embed ((607454a1-043d-4beb-b86e-c513a68ad47e)) }}
+### [[Fixed Issues]]
+#### Can't drag && drop
+#### Can't set repeater for schedule && deadlines
+#### Nested page in page properties
+### [[Enhancement]]
+#### Search in current page
+##### [[Shortucts]] `Ctrl+Shift+u` or `Cmd+Shift+u` (on Mac)
+#### Click `More` to get more search results
+#### Add custom date format to the settings page
+## [[Apr 10th, 2021]]
 **Version 0.0.18**
 Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.18
 ### [[Thanks]]
@@ -21,7 +53,7 @@ Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.18
 #### Full-text search is using SQLite now, which is both fast and more accurate, tested with 10k markdown files
 #### Add block breadcrumb to search result
 #### `Enter` will jump and highlight the matched block when searching
-## [[Apr 1st, 2021]] 
+## [[Apr 1st, 2021]]
 **Version 0.0.17**
 Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.17
 ### [[Thanks]]
@@ -38,7 +70,7 @@ Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.17
 ### [[Features]]
 #### Add an option `:scheduled/future-days` for the `Scheduled and Deadline` section, the default value is `0`, which means it only display tasks for `Today`.
 ##### For example, if you'd like to see all the scheduled tasks && deadlines in 7 days, add `:scheduled/future-days 7` to the file `config.edn`
-## [[Mar 31st, 2021]] 
+## [[Mar 31st, 2021]]
 **Version 0.0.16**
 Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.16
 ### [[Fixed Issues]]
@@ -53,19 +85,19 @@ Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.16
 #### Add to pages for TAGS and other properties inside block properties
 ### [[Features]]
 #### Initial **PDF** embed on desktop app
-##### 
+#####
 <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/b550c995cc8b44828d13e6a159461bd4" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 [:hr]
 ### [[Enhancement]]
 #### You don't have to go to edit mode first to select words 😂
 #### The page graph will auto-refresh when redirecting to a new page
-##### 
+#####
 <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/f9309fec81ff473a87ec7648a2698f96" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 [:hr]
 #### Rendering is much faster thanks to the hints by [[martinklepsch]]
 #### Scheduled && deadline includes tasks in the next 7 days too, we'll make the number configurable soon
 #### Auto update on Mac
-## [[Mar 28th, 2021]] 
+## [[Mar 28th, 2021]]
 **Version 0.0.15**
 Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.15
 ### [[Fixed Issues]]
@@ -101,7 +133,7 @@ Syntax: `[alias](((block-id)))`
 ### [[Enhancement]]
 #### Better and smooth loading for journals page
 #### [[Desktop app]] remembers last window setting when reopened
-## [[Mar 17th, 2021]] 
+## [[Mar 17th, 2021]]
 **Version 0.0.13**
 Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.13
 ### [[Thanks]]
@@ -128,7 +160,7 @@ Logseq uses [Datascript](https://github.com/tonsky/datascript) , which is a data
 #### Don't create a journal file until input
 #### Redirect to all pages when no default page in publishing mode
 #### Display original title when renaming a page
-## [[Mar 11th, 2021]] 
+## [[Mar 11th, 2021]]
 **Version 0.0.12**
 Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.12
 ### [[Thanks]]
@@ -145,7 +177,7 @@ a pinned example
 #+BEGIN_EXAMPLE
 {:title "All todos"
  :query (todo todo later done)}
-#+END_EXAMPLE 
+#+END_EXAMPLE
 
 #+BEGIN_QUERY
 {:title "All todos"
@@ -163,7 +195,7 @@ the excalidraw file will be stored in your local file system too.
 ### [[Enhancement]]
 #### The block search results should be more precise
 #### Undo will open another page in the right sidebar if it's not the same with the current page.
-## [[Mar 8th, 2021]] 
+## [[Mar 8th, 2021]]
 **Version 0.0.11**
 ### [[Thanks]]
 #### [[Sam]] for adding filters
@@ -197,10 +229,10 @@ https://github.com/samfundev
 #### Display search button by default
 #### Better search results
 #### UI improvements
-## [[Feb 26th, 2021]] 
+## [[Feb 26th, 2021]]
 **Version 0.0.10**
 ### [[Features]]
-#### [[Encryption]] support contributed by [[kanru]] 🔒 #experiment 
+#### [[Encryption]] support contributed by [[kanru]] 🔒 #experiment
 Both git repos and local directories support encryption!
 You need to enable the encryption feature on the settings page, and then re-index your graph to make it works.
 #### Resizable right sidebar!
@@ -226,7 +258,7 @@ For example:
 #### [[Lupin]] supports encryption too
 #### [[Santi Younger]] add a [Cobra](https://discuss.logseq.com/t/cobra-theme-black-and-yellow-awesome-dark-mode/440/10) theme #theme
 #### [[Handuo]] add a [Forest night theme](https://discuss.logseq.com/t/forest-night-theme-for-dark-mode/447) #theme
-## [[Feb 20th, 2021]] 
+## [[Feb 20th, 2021]]
 **Version 0.0.9**
 ### [[Features]]
 #### Add the ability to delete your account on the settings page
@@ -262,7 +294,7 @@ Make sure to unlink your graph first and import your data to make it works!
 https://dynalist.io/d/ao7N0QbfJfDiZ_dNRnW4PI9_
 #### [[Lupin]] can generate the calendars (by [[akhater]])
 #### Fix missing update properties when the marker changes (by [[rainmote]])
-## [[Feb 14th, 2021]] 
+## [[Feb 14th, 2021]]
 **Version 0.0.8**
 ### [[Thanks]]
 #### [[Lupin]] support both Images and [[Time Spaced  Repetition]] (by [[akhater]])
@@ -287,7 +319,7 @@ https://github.com/WilliamDurin/gcal2logseq
 #### Better Undo && Redo
 #### Faster full-text search
 #### Add built-in pages such as TODO keywords and priorities
-## [[Feb 5th, 2021]] 
+## [[Feb 5th, 2021]]
 **Version 0.0.7**
 [[Desktop app]] download link:
 https://github.com/logseq/logseq/releases/tag/0.0.7
@@ -302,9 +334,9 @@ https://github.com/logseq/logseq/releases/tag/0.0.7
 #### [CSS mod colorful indentation lines](https://discuss.logseq.com/t/css-mod-colorful-indentation-lines/229), by [[cannibalox]] #css
 #### [CSS mod custom columns/cards view (kanban)](https://discuss.logseq.com/t/css-mod-custom-columns-cards-view-kanban/228), by [[cannibalox]] #css
 #### [Glossary - draft work in progress](https://discuss.logseq.com/t/glossary-draft-work-in-progress/196), by [[Cobblebot]] #doc
-#### Awesome video by [[Santi Younger]] [[Videos]] 
+#### Awesome video by [[Santi Younger]] [[Videos]]
 {{youtube https://www.youtube.com/watch?v=jovMt17_Vd4&ab_channel=SantiYounger}}
-### [[Fixed Issues]] 
+### [[Fixed Issues]]
 Some highlights:
 #### Relative file path issue, local images should be displayed well on GitHub now
 #### Don't display properties in the block breadcrumbs
@@ -314,7 +346,7 @@ Some highlights:
 #### Display a loading button when importing files from the disk
 #### Display a warning box if there're multiple files with the same `title` attribute
 #### UI improvements
-## [[Feb 2nd, 2021]] 
+## [[Feb 2nd, 2021]]
 **Version 0.0.6**
 [[Desktop app]] download link:
 https://github.com/logseq/logseq/releases/tag/0.0.6
@@ -331,7 +363,7 @@ Here's a simple footnote,[^1] and here's a longer one.[^bignote]
 #### Fix both preferred workflow and preferred format settings not working
 #### Fix `/` commands list is empty
 #### Add windows menubar
-## [[Jan 31st, 2021]] 
+## [[Jan 31st, 2021]]
 **Version 0.0.5.3**
 [[Desktop app]] download link: https://github.com/logseq/logseq/releases/tag/0.0.5.3
 ### [[Fixed issues]]
@@ -340,7 +372,7 @@ Here's a simple footnote,[^1] and here's a longer one.[^bignote]
 #### Fix recent pages can't be open in the main view
 #### Fix block references not updated when the source text changed
 #### Fix can't found code-editor.js on desktop by [[rainmote]]
-## [[Jan 29th, 2021]] 
+## [[Jan 29th, 2021]]
 **Version 0.0.5.2**
 ### [[Desktop app]] 🥳🥳🥳
 Some highlights:
