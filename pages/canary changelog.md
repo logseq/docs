@@ -4,7 +4,9 @@ title: Canary Changelog
 
 ## [[Apr 30th, 2021]]
 Canary Version 0.0.1
-Desktop app download link: 
+Desktop app download link:
+
+<Proper 
 
 Logseq Canary is for early adopters and developers to test new features and APIs without affecting the stable working environment. It will be installed as a separate app besides the stable one.
 
@@ -15,4 +17,13 @@ To play it safe, we recommend using new content only with the canary app. If you
 ### [[Enhancement]]
 #### A refactored core that is simpler and more robust.
 #### A much better undo/redo experience.
-#### Support unordered list as headings
+#### Markdown improvements:
+##### The grammar of properties changes as below while staying the same in Org mode:
+#+BEGIN_QUOTE
+title
+property-1:: value-1
+property-2:: value-2
+body
+#+END_QUOTE
+##### Support unordered list as headings
+##### Support headings as top-level blocks, with convenient /h1 ~ /h6 commands
