@@ -17,6 +17,8 @@ To play it safe, we recommend using new content only with the canary app. If you
 ### [[Enhancement]]
 #### A refactored core that is simpler and more robust.
 #### A much better undo/redo experience.
+#### Better keyboard navigation:
+![2021-04-30 20.38.58.gif](../assets/2021-04-30_20.38.58_1619786417157_0.gif)
 #### Markdown improvements:
 ##### The grammar of properties changes as below while staying the same in Org mode:
 #+BEGIN_QUOTE
