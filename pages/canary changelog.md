@@ -16,7 +16,7 @@ To play it safe, we recommend using new content only with the canary app. If you
 #### A refactored core that is simpler and more robust.
 #### A much better undo/redo experience.
 #### Better keyboard navigation:
-##### ![2021-04-30 21.10.23.gif](../assets/2021-04-30_21.10.23_1619788837457_0.gif)
+##### [](https://user-images.githubusercontent.com/45989292/116767907-a44f2080-aa65-11eb-9cc3-e2ed34e4b6aa.gif)
 ##### We've made most of above shortcuts customizable as well. If you don't like arrow keys, you can change it. Also for navigation keys in auto-completion, search, and more.
 
 To add custom shortcuts, you can add/modify the `:shortcuts` section in config.edn like before, but now you can also add multiple bindings for one shortcut, for example here's my personal vim like bindings:
