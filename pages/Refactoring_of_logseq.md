@@ -20,7 +20,7 @@ Now it's time to do something to improve, which I think they are reducing comple
 
 Below is the architecture before refactoring.
 
-![Architecture-before-refactoring.png](../assets/Architecture-before-refactoring_1619596948551_0.png)
+![Architecture-before-refactoring.png](https://user-images.githubusercontent.com/45989292/116767914-ab762e80-aa65-11eb-8f40-99d25425288b.png)
 ## What have we done?
 
 Let me post a new architecture first.
@@ -36,11 +36,11 @@ The most critical component in Logseq Core is the outliner. Let's take some more
 
 If taking the previous design, we'll continuously have to deal with the headache strings and bytes and hardly optimize it. So, we need to seek another solution. We should move all the string and byte calculations out of the outliner logic in the first step. So we had moved the logic of serialization and deserialization of a block into plugins. Doing this brings another significant benefit: we can easily implement multiple persistent storages such as markdown files, org-mode files, AsciiDoc files, or SQLite, etc., by just writing different serialize & deserialize adaptors. The outliner module, which is the main component of Logseq Core, only receives and sends meaningful structured data that have been deserialized or will be serialized. Then, we need to decide how to organize the relationship between blocks. Assuming that we have some blocks:
 
-![logseq-tree.png](../assets/logseq-tree_1619596972997_0.png) 
+![logseq-tree.png](https://user-images.githubusercontent.com/45989292/116767915-ac0ec500-aa65-11eb-81fd-15cd9b104af2.png) 
 
 The relations in Logseq looks like a tree in the picture below (the picture below is from the Internet) :
 
-![tree.png](../assets/tree_1619596988525_0.png) [](/refactoring-of-logseq/tree.png)
+![tree.png](https://user-images.githubusercontent.com/45989292/116767932-b7fa8700-aa65-11eb-83b2-c223984c819f.png) [](/refactoring-of-logseq/tree.png)
 
 At the very beginning, I proposed a data structure to organize the block relations. After a long discussion (about costs & benefits & whether it fit us and ...), other workmates confirmed its feasibility. Then it became the most fundamental part of outliner operation in Logseq until now, and it's straightforward.
 
