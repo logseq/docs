@@ -5,6 +5,7 @@ title: Canary Changelog
 ## [[Apr 30th, 2021]]
 Canary Version 0.0.1
 Desktop app download link:
+https://github.com/logseq/logseq/releases/tag/0.0.1
 
 Logseq Canary is for early adopters and developers to test new features and APIs without affecting the stable working environment. It will be installed as a separate app besides the stable one.
 
