@@ -25,12 +25,13 @@ title: Canary Changelog
               :shortcuts
                {:editor/new-block "enter"
                :editor/new-line "shift+enter"
+               :editor/insert-link "ctrl+shift+k"
                :editor/up ["ctrl+k" "up"]
                :editor/down ["ctrl+j" "down"]
                :editor/left ["ctrl+h" "left"]
                :editor/right ["ctrl+l" "right"]
                :editor/open-edit ["i" "enter"]
-               :editor/delete ["ctrl+d" "backspace"]
+               :editor/backspace ["ctrl+d" "backspace"]
               
                :date-picker/complete ["enter"]
                :date-picker/prev-day ["ctrl+h" "left"]
