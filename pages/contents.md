@@ -18,7 +18,7 @@
     - [[Advanced commands]]
   - [Templates](https://discuss.logseq.com/t/templates-how-to-create-edit-and-insert/200)
   - [[Import && Export]]
-  - [[Page Alias]]
+  - [Page Alias]([[term/alias]])
   - [[Publishing (Desktop App Only)]]
   - [[Block properties]]
     created_at:: 1609233128830

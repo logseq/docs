@@ -1,2 +1,0 @@
-- You can add any page alias to your existing pages.
-- Check [[term/alias]] for details
