@@ -1,5 +1,5 @@
----
-title: Page and Block References
----
-
-- {{embed (())}}
+- Type `[[]]` to create or reference any other page. You can also make a new page in the search bar.
+- Type `(())` to reference a block on any page.
+- related terms:
+	- {{embed [[term/page link]]}}
+	- {{embed [[term/block link]] }}

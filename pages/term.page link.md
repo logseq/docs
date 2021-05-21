@@ -1,4 +1,4 @@
 - description:
-  - a clickable link that will take you to a particular Logseq page
+	- a clickable link that will take you to a particular Logseq page
 - produced by:
-  - putting a [[term/page reference]] (i.e. the page title) inside double square brackets `[[ ]]`
+	- putting a [page reference]([[term/page reference]])  (i.e. the page title) inside double square brackets `[[ ]]`

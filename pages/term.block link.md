@@ -1,4 +1,4 @@
 - description:
-  - a clickable link that will take you to a particular Logseq block
+	- a clickable link that will take you to a particular Logseq block
 - produced by:
-  - putting a ((60a77d61-fc7d-46e7-b34f-c8eb4f54dce2)) inside double brackets `(())`
+	- putting a [block reference]([[term/block reference]]) `60a7bce1-7124-49d6-ad6a-29da1ef64f6f` inside double brackets `(())`
