@@ -1,0 +1,12 @@
+* Logseq support [[Org Mode]] syntaxes, includes some extended syntaxes.
+* *Standard* syntax
+** ~*Bold*~ -> *Bold*
+** ~/Italics/~ -> /Italics/
+** ~+Strikethrough+~ -> +Strikethrough+
+** ~^^Highlight^^~ -> ^^Highlight^^
+**
+[:div [:code "~Code~"] " -> " [:code "Code"]]
+** ~[[https://www.example.com][label]]~ -> [[https://www.example.com][label]]
+** ~[[https://asset.logseq.com/static/img/logo.png][image]]~ -> [[https://asset.logseq.com/static/img/logo.png][image]]
+** and so on ...
+* {{embed ((60a78b6b-a0ff-49fe-822f-87216fbf79ff)) }}
