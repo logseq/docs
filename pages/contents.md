@@ -1,55 +1,55 @@
 - 🌟 [[New to Logseq?]]
-  - [[Getting started]]
-  - [[Videos]]
-  - [[Desktop app]]
-  - [[FAQ]]
-  - [[Glossary]]
-  - [[Testimonials]]
-    - ((6071c223-b0ed-4235-80b2-f5e44d3679b9))
-  - [Awesome Logseq](https://github.com/logseq/awesome-logseq)
-  - [Roadmap](https://trello.com/b/8txSM12G/logseq-roadmap)
+	- [[Getting started]]
+	- [[Videos]]
+	- [[Desktop app]]
+	- [[FAQ]]
+	- [[Glossary]]
+	- [[Testimonials]]
+		- ((6071c223-b0ed-4235-80b2-f5e44d3679b9))
+	- [Awesome Logseq](https://github.com/logseq/awesome-logseq)
+	- [Roadmap](https://trello.com/b/8txSM12G/logseq-roadmap)
 - [[Features]]
-  - [[Backlinks]]
-  - [[Knowledge Graph]]
-  - [[Page and block references]]
-  - [[Page and block embeds]]
-  - [[Tasks & Todos]]
-  - [[Commands]]
-    - [[Advanced commands]]
-  - [Templates](https://discuss.logseq.com/t/templates-how-to-create-edit-and-insert/200)
-  - [[Import && Export]]
-  - [Page Alias]([[term/alias]])
-  - [[Publishing (Desktop App Only)]]
-  - [[Block properties]]
-    created_at:: 1609233128830
-    last_modified_at:: 1609233128830
-  - [[Draw]]
-  - [[Slide]]
-  - [[Custom theme]]
+	- [Backlink]([[term/backlink]])
+	- [[Knowledge Graph]]
+	- [[Page and block references]]
+	- [[Page and block embeds]]
+	- [[Tasks & Todos]]
+	- [[Commands]]
+		- [[Advanced commands]]
+	- [Templates](https://discuss.logseq.com/t/templates-how-to-create-edit-and-insert/200)
+	- [[Import && Export]]
+	- [Page Alias]([[term/alias]])
+	- [[Publishing (Desktop App Only)]]
+	- [[Block properties]]
+	  created_at:: 1609233128830
+	  last_modified_at:: 1609233128830
+	- [[Draw]]
+	- [[Slide]]
+	- [[Custom theme]]
 - Logseq for...
-  - [[Writers & Thinkers]]
-  - [[A Personal CRM]]
-  - [[Meetings]]
-  - [[Students]]
-  - [[Programmers]]
+	- [[Writers & Thinkers]]
+	- [[A Personal CRM]]
+	- [[Meetings]]
+	- [[Students]]
+	- [[Programmers]]
 - [[Document syntax]]
-  - [[Markdown]]
-  - [[Org Mode]]
+	- [[Markdown]]
+	- [[Org Mode]]
 - 👤 [[Settings]]
 - 🔒 [[Security]]
 - ✨ [[Tips and Tricks]]
 - [[Advanced Logseq]]
-  - [[Custom keyboard shortcuts]]
-  - [[Queries]]
-    - [[Advanced Queries]]
-  - [[Hiccup]]
-  - [[Custom views]]
-  - [Self Hosting Logseq](https://github.com/dustinlacewell/logseq-guide)
+	- [[Custom keyboard shortcuts]]
+	- [[Queries]]
+		- [[Advanced Queries]]
+	- [[Hiccup]]
+	- [[Custom views]]
+	- [Self Hosting Logseq](https://github.com/dustinlacewell/logseq-guide)
 - [[Changelog 2020]]
 - [[Contribute]]
-  - Make a [Feature Request](https://discuss.logseq.com/)
-  - [Check us out on Github](https://github.com/logseq/logseq)
-  - [Contribute to Our Docs](https://github.com/logseq/docs)
+	- Make a [Feature Request](https://discuss.logseq.com/)
+	- [Check us out on Github](https://github.com/logseq/logseq)
+	- [Contribute to Our Docs](https://github.com/logseq/docs)
 - 💬
-  - Message us on [Discord](https://discord.gg/KpN4eHY) (We love feedback!)
-  - Tweet us [[https://twitter.com/logseq][@logseq]]
+	- Message us on [Discord](https://discord.gg/KpN4eHY) (We love feedback!)
+	- Tweet us [[https://twitter.com/logseq][@logseq]]
