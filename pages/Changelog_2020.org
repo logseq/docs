@@ -49,11 +49,7 @@ Each block will have both a ~created_at~ property and a ~last_modified_at~ prope
 :END:
 Go to ~Settings~ and toggle this button: 
 [[https://cdn.logseq.com/%2F5ff0a01d-47d4-487d-b346-4a43ded21ad02020_12_29_Screenshot%202020-12-29%2022-11-59%20%2B0800.png?Expires=4762851199&Signature=GMZt7WsfluDKWPeM1mNeg0ITna9S8ZCf4VYqKLKuVrrsYNHXggkMclB8af6hTaozDpNSBIxh-55d~edmfi3vquCKvXKPAccwkpLj2Uy-OIEy13h~vUzsWN0M59u17qnhgLWdfLxH9yOgasjoE8rv-oDNoI~TCl7Z6~aKRq~peGre2ikgJ6E6pPXTelwEW9NqnWKjho3R~aE9XcA3~aUSYjzTjxPG7z4SDVMrLm1ZQH~xqmoDEAe3TwHbSnrfrswElRMtYVaiGTancvSmRoxw-tsR6M7kFItwJmc8sGeiRPBG2lga9zP~2PH5Itws2TazQGNBqor8qWOhgdb5X4rF2A__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_12_29_Screenshot 2020-12-29 22-11-59 +0800.png]]
-**** [[Page Alias]] redirection support
-:PROPERTIES:
-:created_at: 1609251086056
-:last_modified_at: 1609251086056
-:END:
+**** [Page Alias]([[term/alias]]) redirection support
 **** Fuzzy searching for both page title and block content
 :PROPERTIES:
 :created_at: 1609249946465
