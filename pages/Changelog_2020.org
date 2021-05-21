@@ -166,10 +166,10 @@ Add French language support by [[Kramer]]
 *** [[Enhancement]]
 **** 1. Push immediately after you save any block/create a new page
 *** [[Features]]
-**** [[Page Alias]]
+**** [Page Alias]([[page/alias]])
 ***** Actually, it's added months ago but it's not ready before.
 ***** *How to use it?*
-****** {{{embed [[Page Alias]] }}}
+****** {{{embed [[page/alias]] }}}
 ** [[Oct 28th, 2020]]
 *Version 0.0.4.3*
 *** [[Fixed issues]]
