@@ -39,5 +39,5 @@ id:: 60a790f8-d187-499a-b2e2-73bf137356dd
   - template example 2
     template:: template-example-2
     including-parent:: false
-line1
-line2
+    - line1
+      - line2
