@@ -1,0 +1,4 @@
+- description:
+  - a clickable link that will take you to a particular Logseq block
+- produced by:
+  - putting a ((60a77d61-fc7d-46e7-b34f-c8eb4f54dce2)) inside double brackets `(())`

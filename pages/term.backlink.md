@@ -1,0 +1,7 @@
+- description:
+  - A Logseq page link for a page that links to a currently displayed page, whether it has focus or not.
+  - A list of backlinks are presented in a particular location or frame, and “backlinks” refers to the page links in this area only.
+- produced by:
+  - automatically created by Logseq
+- example:
+  - this is a backlink to [[Glossary]]

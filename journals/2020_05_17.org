@@ -1,6 +1,9 @@
 * Sunday, 05/17/2020
 ** [[Changelog 2020]]
 *** Add block reference
+:PROPERTIES:
+:id: 60a77d61-fc7d-46e7-b34f-c8eb4f54dce2
+:END:
     E.g ~((block))~
 *** Add zoom in && out to edit specific heading, click the ~dot~ before the heading.
 *** Add keybindings for adjusting levels.

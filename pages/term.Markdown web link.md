@@ -1,0 +1,6 @@
+- description:
+  - a clickable link that will take you to a webpage outside Logseq
+- produced by:
+  - putting a web page URL inside markdown syntax like this: `[link text](https://www.google.com)` (will display link text upon block rendering)
+  - or use command `/Link` to insert link
+- example: [link to google](https://www.google.com)

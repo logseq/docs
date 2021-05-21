@@ -1,0 +1,4 @@
+- description:
+  - a Logseq page title
+- produced by:
+  - entering a new page title in the Search or Create Page field , typing a page link with a new page title
