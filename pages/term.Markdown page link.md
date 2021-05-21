@@ -1,4 +1,7 @@
 - description:
-  - a clickable link that will take you to a particular Logseq block
+  - a clickable link that will take you to a particular Logseq page
 - produced by:
-  - putting a block link inside markdown link syntax like this: `[display text](((60011009-ddd9-4a8c-8925-37249791f525)))`
+  - putting a block link inside markdown link syntax like this: `[display text]([[page name]])))`
+- example:
+  - i'm a markdown page link:
+    [displayed as all terms]([[term]])

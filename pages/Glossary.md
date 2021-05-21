@@ -20,8 +20,15 @@
   - [[term/page link]]
   - [[term/block link]]
   - [[term/Markdown page link]]
+  - [[term/Markdown block link]]
   - [[term/Markdown web link]]
   - [[term/Markdown file link]]
   - [[term/backlink]]
 ## Concepts and Modes
   - [[term/properties]]
+  - [[term/block rendering]]
+  - [[term/editing mode]]
+  - [[term/network of connected ideas]]
+## Embeds
+  - [[term/embedded page]]
+  - [[term/embedded block]]

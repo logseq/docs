@@ -26,4 +26,5 @@ id:: 60a78c12-4e12-4d81-a33f-9f63695aaf32
   - I'm an apple block with below custom properties
     color:: red
     origin:: Spain
+    id:: 60a78e9e-59dc-40ab-9a01-5317dc09365f
   - this first block of this page ((60a78c12-4e12-4d81-a33f-9f63695aaf32)) serves an example for page property
