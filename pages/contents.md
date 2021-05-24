@@ -15,7 +15,7 @@
 	- [[Page and block embeds]]
 	- [[Tasks & Todos]]
 	- [[Commands]]
-		- [[Advanced commands]]
+	- [[Advanced commands]]
 	- [Templates](https://discuss.logseq.com/t/templates-how-to-create-edit-and-insert/200)
 	- [[Import && Export]]
 	- [Page Alias]([[term/alias]])

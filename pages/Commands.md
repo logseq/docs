@@ -1,0 +1,1 @@
+- Type `/` to show all the commands and explore.
