@@ -14,10 +14,10 @@
 ** {{embed ((60ab3eb7-c1e8-47ad-8a18-770896a10c5c))}}
 ** {{embed ((60ab3eb7-2fb1-4148-af2b-9ba2319ef5b6))}}
 ** {{embed ((60ab3eb7-5a6b-4e6a-90e0-80dd11e47c48))}}
-** [[Page link]]
+** [[term/page link with display alias]]
 *** syntax: ~[[page name][display text]]~
-** [[Block link]]
-*** syntax: ~[[((block-uuid))][]display text]~
+** [[term/block link with display alias]]
+*** syntax: ~[[((block-uuid))][display text]]~
 ** {{embed ((60ab4582-b191-496a-be39-0a865f9ecece))}}
 ** {{embed ((60ab5bc7-f196-4f87-91aa-164ac71184ed))}}
 ** {{embed ((60ab5bc7-f08f-4e7d-a293-add673533700))}}
