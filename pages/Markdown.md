@@ -32,8 +32,8 @@ id:: 60a78b6b-a0ff-49fe-822f-87216fbf79ff
 	- [[term/embedded page]]
 	  id:: 60ab3eb7-2fb1-4148-af2b-9ba2319ef5b6
 		- syntax: `{{embed [[page name]]}}`
-			- It will embed whole page content into current editing block.
-			  id:: 60a78b6b-b43d-4328-a1dc-934f0d3dbff7
+		- It will embed whole page content into current editing block.
+		  id:: 60a78b6b-b43d-4328-a1dc-934f0d3dbff7
 	- [[term/embedded block]]
 	  id:: 60ab3eb7-5a6b-4e6a-90e0-80dd11e47c48
 		- syntax: `{{embed ((block-uuid))}}`
@@ -43,12 +43,12 @@ id:: 60a78b6b-a0ff-49fe-822f-87216fbf79ff
 		- syntax: `key:: value`
 		- some examples
 			- [[Templates]] related properties
-		-
-		  [:code "template:: template-name"]
-		-
-		  [:code "including-parent:: false"]
-		- {{embed ((60a790f8-d187-499a-b2e2-73bf137356dd))}}
-			- see also: [[Block properties]]
+				-
+				  [:code "template:: template-name"]
+				-
+				  [:code "including-parent:: false"]
+				- {{embed ((60a790f8-d187-499a-b2e2-73bf137356dd))}}
+		- see also: [[Block properties]]
 	- [[term/page link with display alias]]
 		- syntax: `[display text]([[page name]])`
 	- [[term/block link with display alias]]
@@ -60,6 +60,7 @@ id:: 60a78b6b-a0ff-49fe-822f-87216fbf79ff
 	- Priority
 	  id:: 60ab4582-b191-496a-be39-0a865f9ecece
 		- syntax: `[#A]` `[#B]` `[#C]`
+		- Priorities can be set with commands(`/A`, `/B`, `/C`)
 	- [[Hiccup]]
 	  id:: 60ab5bc7-f196-4f87-91aa-164ac71184ed
 		- Sometimes you want to express more complex text structure, you can embed Hiccup in blocks.
