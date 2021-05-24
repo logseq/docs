@@ -21,8 +21,8 @@
 	- [[term/block link]]
 	- [[term/page link with label]]
 	- [[term/block link with label]]
-	- [[term/Markdown web link]]
-	- [[term/Markdown file link]]
+	- [[term/web link]]
+	- [[term/file link]]
 	- [[term/backlink]]
 ## Concepts and Modes
 	- [[term/properties]]

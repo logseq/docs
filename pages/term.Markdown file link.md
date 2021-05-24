@@ -1,4 +1,0 @@
-- description:
-  - a clickable link that will take you to a file outside Logseq
-- produced by:
-  - putting a file path inside markdown syntax like this: `[link text](file://filepath/filename.png)` (will display link text upon block rendering)

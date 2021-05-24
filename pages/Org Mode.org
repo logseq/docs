@@ -7,7 +7,13 @@
 **
 [:div [:code "~Code~"] " -> " [:code "Code"]]
 ** ~[[https://www.example.com][label]]~ -> [[https://www.example.com][label]]
+:PROPERTIES:
+:id: 60ab7486-1318-48cc-85bc-02561429e331
+:END:
 ** ~[[https://asset.logseq.com/static/img/logo.png][image]]~ -> [[https://asset.logseq.com/static/img/logo.png][image]]{:height 53, :width 42}
+:PROPERTIES:
+:id: 60aba888-5cf4-4cb0-94df-1e4a07b3af34
+:END:
 ** and so on ...
 * *Extended* syntax
 ** {{embed ((60ab4582-5a6e-4f3a-84a2-71ae056455a0))}}

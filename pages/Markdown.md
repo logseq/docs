@@ -7,7 +7,9 @@
 	-
 	  [:div [:code  "`Code`"]  "-> " [:code "Code"]]
 	- `[label](https://example.com)` -> [label](https://example.com)
+	  id:: 60ab7486-8119-4c9a-888c-1e6213fd28e0
 	- `![image](https://asset.logseq.com/static/img/logo.png)` -> ![image](https://asset.logseq.com/static/img/logo.png){:height 53, :width 42}
+	  id:: 60aba887-96f4-461f-a9f0-d205d766d78b
 	- and so on...
 ### **Extended** syntax
 id:: 60a78b6b-a0ff-49fe-822f-87216fbf79ff
