@@ -40,7 +40,8 @@ id:: 60a78b6b-a0ff-49fe-822f-87216fbf79ff
 		- It will embed whole block content into current editing block.
 		  id:: 60a78b6b-70c6-4209-bb26-045395458a04
 	- [[term/properties]]
-		- syntax: `key:: value`
+		- syntax: `property:: value`
+		  id:: 60ab6f5b-4bdc-4ef0-a0f8-6cad9dcad2b2
 		- some examples
 			- [[Templates]] related properties
 				-
@@ -49,10 +50,12 @@ id:: 60a78b6b-a0ff-49fe-822f-87216fbf79ff
 				  [:code "including-parent:: false"]
 				- {{embed ((60a790f8-d187-499a-b2e2-73bf137356dd))}}
 		- see also: [[Block properties]]
-	- [[term/page link with display alias]]
+	- [[term/page link with label]]
 		- syntax: `[display text]([[page name]])`
-	- [[term/block link with display alias]]
+		  id:: 60ab6d72-e70c-4eb4-a60a-3802f12874c4
+	- [[term/block link with label]]
 		- syntax: `[display text](((block-uuid)))`
+		  id:: 60ab6f5b-a01f-44eb-8d4a-fb8ca1893dcf
 	- [[Tasks & Todos]] marker
 		- syntax: `TODO` `DOING` `DONE` `LATER` `NOW`
 		- These markers can be set with commands(`/TODO`) 

@@ -1,6 +1,6 @@
 -
   #+BEGIN_NOTE
-  All credits and special thanks to [[Cobblebot]] for this!
+  Credits and special thanks to [[Cobblebot]] for this!
   Original source: [forum](https://discuss.logseq.com/t/glossary-draft-work-in-progress/196)
   #+END_NOTE
 ## Basic terms
@@ -19,8 +19,8 @@
 ## Links
 	- [[term/page link]]
 	- [[term/block link]]
-	- [[term/page link with display alias]]
-	- [[term/block link with display alias]]
+	- [[term/page link with label]]
+	- [[term/block link with label]]
 	- [[term/Markdown web link]]
 	- [[term/Markdown file link]]
 	- [[term/backlink]]
