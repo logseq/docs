@@ -17,7 +17,7 @@
 	-
 	  1. You can right click the block dot and click "Make template" to give it a name:
 	  ![template.gif](../assets/template_1621928689810_0.gif)
-	  	-
+	-
 	  2. Or you can add [[term/properties]] of `template` with its name directly:
 	  ![template2.gif](../assets/template2_1621928922947_0.gif)
 - To use the template, simply type `/Template` command and choose the name of template:
