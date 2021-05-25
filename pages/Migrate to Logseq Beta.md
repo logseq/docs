@@ -15,7 +15,7 @@
 	-
 	  5. Finally, click the right three dots menu, go to `All graphs` and unlink the graph and open it again to reload the graph
 - Tutorial:
-  ![migrate.gif](/home/weihua/repo/logseq.com/docs/assets/migrate_1621935713657_0.gif)
+  ![migrate.gif](../assets/migrate_1621935713657_0.gif)
 - Why & underneath the hood:
 	- Previously Logseq use `#` markdown heading as outliner bullets, since beta, we've changed to use more standard `-` unordered list as outliner bullets
 	- The converter essentially converts all Markdown headings to unordered lists (`#` -> `-`)
