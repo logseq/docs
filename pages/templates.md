@@ -17,19 +17,15 @@
 	-
 	  1. You can right click the block dot and click "Make template" to give it a name:
 	  ![template.gif](../assets/template_1621928689810_0.gif)
-	-
+	  	-
 	  2. Or you can add [[term/properties]] of `template` with its name directly:
 	  ![template2.gif](../assets/template2_1621928922947_0.gif)
 - To use the template, simply type `/Template` command and choose the name of template:
   ![template3.gif](../assets/template3_1621929392325_0.gif)
 - other resources to learn how to template:
 	- [[Cobblebot]] contributed this wonderful [tutorial from forum](https://discuss.logseq.com/t/templates-how-to-create-edit-and-insert/200)
-	-
-	  #+BEGIN_COMMENT
-	  remove this comment after consent from @OneStutteringMind
-	  this great video from @OneStutteringMind also shows how to use templates (note the property syntax in this video is no longer used, check [[term/properties]] for latest syntax)
+	- this great video from [[OneStutteringMind]] also shows how to use templates (note the property syntax in this video is no longer used, check [[term/properties]] for latest syntax)
 	  {{youtube https://www.youtube.com/watch?v=l4keRsRFnuc}}
-	  #+END_COMMENT
 - [[Dynamic Variables]] support
   id:: 60311eda-b6f7-4779-8187-8830545b3a64
 	- **Notice:** [[Macros]] support dynamic variables too
