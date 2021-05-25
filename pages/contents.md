@@ -18,7 +18,6 @@
 	- [[Commands]]
 	- [[Advanced commands]]
 	- [[Templates]]
-	- [[Import && Export]]
 	- [Page Alias]([[term/alias]])
 	- [[Publishing (Desktop App Only)]]
 	- [[Block properties]]

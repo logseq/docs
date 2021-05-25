@@ -28,5 +28,5 @@
 	  key: value
 	  ---
 	  ```
-	  Use below new syntax instead [[term/alias]] 
+	  Use below new [[term/properties]] syntax instead
 	  {{embed ((60ab6f5b-4bdc-4ef0-a0f8-6cad9dcad2b2))}}
