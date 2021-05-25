@@ -16,7 +16,7 @@
 	- [[Tasks & Todos]]
 	- [[Commands]]
 	- [[Advanced commands]]
-	- [Templates](https://discuss.logseq.com/t/templates-how-to-create-edit-and-insert/200)
+	- [[Templates]]
 	- [[Import && Export]]
 	- [Page Alias]([[term/alias]])
 	- [[Publishing (Desktop App Only)]]

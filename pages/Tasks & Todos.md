@@ -1,7 +1,7 @@
 - Logseq comes with two built-in flavors to mark your block with built-in workflow mark keywords and manage your tasks:
   + `LATER` -> `NOW` -> `DONE` flavor (default)
-  + `TODO` -> `DOING` -> `DONE` flavor
-  	- You can toggle between those two flavors in setting page
+  + `TODO` -> `DOING` -> `DONE` flavor 
+  + You can toggle between those two flavors in setting page
 - There're two ways to attach workflow mark to your task(block)
 	- when editing the block, press `Ctrl/Cmd+enter` to cycle through the workflow mark
 	- type these mark as command directly, eg `/LATER` `/NOW` `/DONE` `/TODO` etc..

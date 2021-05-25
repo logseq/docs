@@ -16,7 +16,7 @@ id:: 60a78c12-4e12-4d81-a33f-9f63695aaf32
 	  {{embed ((60ab7357-2744-42bc-a8fd-a9c8db3051df))}}
 - example:
 	- I'm an apple block with below custom properties
+	  id:: 60a78e9e-59dc-40ab-9a01-5317dc09365f
 	  color:: red
 	  origin:: Spain
-	  id:: 60a78e9e-59dc-40ab-9a01-5317dc09365f
 	- this **first block** of this page serves an example for **page property**

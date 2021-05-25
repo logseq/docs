@@ -46,6 +46,7 @@ id:: 60a78b6b-a0ff-49fe-822f-87216fbf79ff
 		  id:: 60ab6f5b-4bdc-4ef0-a0f8-6cad9dcad2b2
 		- some examples
 			- [[Templates]] related properties
+			  id:: 60aca587-77bd-4d4e-afcd-c475b52cb754
 				-
 				  [:code "template:: template-name"]
 				-
