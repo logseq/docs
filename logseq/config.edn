@@ -1,5 +1,5 @@
-{:project {:name "blog"
-           :alias "Logseq Blog"}
+{:project {:name "Wiki"
+           :alias "Logseq Wiki"}
  :text-formats [],
  :all-pages-public? true,        ;; Git settings
  :default-home {:page "Contents"}
