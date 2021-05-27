@@ -24,7 +24,7 @@ title: Changelog
 		- And tons of bugs
 	- [[Enhancement]]
 		- **Add our old direct outdenting back and make it default**
-			- There's an option "Enable logical outdenting" on the settings page
+			- There's an option "Enable logical outdenting" on the settings page [[setting/enable logical outdenting]]
 			- Related thread: https://discuss.logseq.com/t/whats-your-preferred-outdent-behavior-the-direct-one-or-the-logical-one/978
 		- Add a "Clear cache" button in the settings page
 			- It'll clear both search cache and logseq's database's cache

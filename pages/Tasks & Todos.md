@@ -26,3 +26,7 @@
 	  after typing the command and click `Add repeater` in the date picker
 		- eg: daily exercise routine at 7am
 		  SCHEDULED: <2021-05-26 Wed 7:00 .+1d>
+- Time tracker
+  id:: 60af74c1-62f8-434a-827c-abc6d2a71734
+	- {{embed ((60acdeba-b3fd-4f90-ab54-3093caa4d5fa))}}
+	- you can toggle this off by [[setting/enable timetracking]]

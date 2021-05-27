@@ -19,11 +19,9 @@
 	- [[Commands]]
 	- [[Advanced commands]]
 	- [[Templates]]
-	- [Page Alias]([[term/alias]])
+	- [Page alias]([[term/alias]])
 	- [[Publishing (Desktop App Only)]]
-	- [[Block properties]]
-	  created_at:: 1609233128830
-	  last_modified_at:: 1609233128830
+	- [Block properties]([[term/properties]])
 	- [[Draw]]
 	- [[Slide]]
 	- [[Custom theme]]

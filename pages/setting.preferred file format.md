@@ -1,0 +1,6 @@
+- You can set your preferred file format for creating new page.
+- This setting in `Settings` page works globally across different graphs.
+- If you'd like to override this setting on a per graph level, check out `:perferred-format` in [[config.edn]]
+- Options:
+	- `Markdown`
+	- `Org` for org-mode
