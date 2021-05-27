@@ -1,7 +1,8 @@
+id:: 60a78c12-4e12-4d81-a33f-9f63695aaf32
 type:: term
 name:: i'm a page property
+alias:: Block properties
 click:: click me to edit
-id:: 60a78c12-4e12-4d81-a33f-9f63695aaf32
 
 - description:
 	- a user defined dictionary consists of multiple pairs key and value which is used to annotate a block or a page
@@ -42,15 +43,15 @@ id:: 60a78c12-4e12-4d81-a33f-9f63695aaf32
 	- Or we can use [[Advanced Queries]]
 	-
 	  #+BEGIN_SRC clojure
-	  	  #+BEGIN_QUERY
-	  	  {:title [:h2 "My books"]
-	  	   :query [:find (pull ?b [*])
-	  	         :where
-	  	         [?b :block/properties ?p]
-	  	         [(get ?p :type) ?t]
-	  	         [(= "[[book]]" ?t)]]}
-	  	  #+END_QUERY
-	  	  #+END_SRC
+	  	  	  #+BEGIN_QUERY
+	  	  	  {:title [:h2 "My books"]
+	  	  	   :query [:find (pull ?b [*])
+	  	  	         :where
+	  	  	         [?b :block/properties ?p]
+	  	  	         [(get ?p :type) ?t]
+	  	  	         [(= "[[book]]" ?t)]]}
+	  	  	  #+END_QUERY
+	  	  	  #+END_SRC
 		-
 		  #+BEGIN_QUERY
 		  {:title [:h2 "My books"]

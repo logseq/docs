@@ -20,8 +20,8 @@
 	- [[Advanced commands]]
 	- [[Templates]]
 	- [Page alias]([[term/alias]])
-	- [[Publishing (Desktop App Only)]]
 	- [Block properties]([[term/properties]])
+	- [[Publishing (Desktop App Only)]]
 	- [[Draw]]
 	- [[Slide]]
 	- [[Custom theme]]
@@ -40,7 +40,7 @@
 - [[Advanced Logseq]]
 	- [[Custom keyboard shortcuts]]
 	- [[Queries]]
-		- [[Advanced Queries]]
+	- [[Advanced Queries]]
 	- [[Hiccup]]
 	- [[Custom views]]
 	- [Self Hosting Logseq](https://github.com/dustinlacewell/logseq-guide)

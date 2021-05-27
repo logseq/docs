@@ -271,9 +271,6 @@ The spent time for this block is ~18s~.
 **** 9. Fix inline math parsing
 *** [[Features]]
 **** 1. [[Custom theme]] support!!
-***** There're two ways for custom themes:
-****** 1. Add a css file "logseq/custom.css".
-****** 2. Specify a ~:custom-css-url~ in "logseq/config.edn".
 **** 2. CodeMirror integration!
 #+BEGIN_SRC clojure
 (prn "Finally!")
