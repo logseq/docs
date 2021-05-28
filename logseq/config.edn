@@ -83,4 +83,5 @@
  :feature/enable-timetracking? true
  :feature/enable-journals? true
  :ui/show-brackets? true
- :feature/enable-encryption? false}
+ :feature/enable-encryption? false
+ :markdown/version 2}
