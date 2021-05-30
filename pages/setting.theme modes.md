@@ -3,3 +3,4 @@
 	- `dark` mode
 	- `system` mode will choose between `light` and `dark` mode based on your operating system's theme mode
 - You can toggle between `light` or `dark` mode with command `t t` when not in text editing
+- ![CleanShot 2021-05-29 at 00.51.24@2x.png](../assets/CleanShot_202021-05-29_20at_2000.51.24@2x_1622220701200_0.png)
