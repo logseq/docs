@@ -1,14 +1,15 @@
 - [[May 30th, 2021]] 
+  id:: 60b3a579-56db-41ed-8940-70c8b54f8e34
   **Beta 0.1.2**
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.1.1
-- {{embed ((60b3a414-1e93-46c3-96fc-54d3a0760f2c)) }}
-- [[Thanks]]
-	- [[Matt Furden]] for wonderful bug reporting
-- [[Fixed Issues]]
-	- All the existing Markdown converter issues
-	- Most issues related to copy && paste
-	- Sometimes the cursor will jump to the end when editing the first block
-	- Weird characters on code blocks
+	- {{embed ((60b3a414-1e93-46c3-96fc-54d3a0760f2c)) }}
+	- [[Thanks]]
+		- [[Matt Furden]] for wonderful bug reporting
+	- [[Fixed Issues]]
+		- All the existing Markdown converter issues
+		- Most issues related to copy && paste
+		- Sometimes the cursor will jump to the end when editing the first block
+		- Weird characters on code blocks
 - [[May 29th, 2021]] 
   **Beta 0.1.1**
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.1.1
