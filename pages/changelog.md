@@ -1,3 +1,14 @@
+- [[May 30th, 2021]] 
+  **Beta 0.1.2**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.1.1
+- {{embed ((60b3a414-1e93-46c3-96fc-54d3a0760f2c)) }}
+- [[Thanks]]
+	- [[Matt Furden]] for wonderful bug reporting
+- [[Fixed Issues]]
+	- All the existing Markdown converter issues
+	- Most issues related to copy && paste
+	- Sometimes the cursor will jump to the end when editing the first block
+	- Weird characters on code blocks
 - [[May 29th, 2021]] 
   **Beta 0.1.1**
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.1.1
@@ -6,7 +17,7 @@
   We are launching on Product Hunt next Wednesday, Jun 2. 🚀  If you want to show your support, come stop by, and give us some feedback, we'll be hanging out on Product Hunt all day!
   #+END_NOTE
 	- **How to migrate to the new Markdown syntax?**
-	  collapsed:: true
+	  id:: 60b3a414-1e93-46c3-96fc-54d3a0760f2c
 		- <div style="position: relative; padding-bottom: 53.59375000000001%; height: 0;"><iframe src="https://www.loom.com/embed/19df38ad08e04bc4978d38d4a3e251b7" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 		  [:hr]
 	- [[Thanks]]
