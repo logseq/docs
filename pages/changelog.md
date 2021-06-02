@@ -1,3 +1,20 @@
+- [[Jun 2nd, 2021]] 
+  **Beta 0.1.3**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.1.3
+	- {{embed ((60b3a414-1e93-46c3-96fc-54d3a0760f2c))}}
+	- [[Thanks]] 🚀
+		- [[bensu]] for a [[Calculator]] mode like numi or soulver (there'll be another PR!)
+		  https://discuss.logseq.com/t/calculator-mode-like-numi-or-soulver/1059
+		- [[devon]] for adding `resolve-input` for more Datalog queries
+		  https://github.com/logseq/logseq/pull/2061
+	- [[Fixed Issues]]
+		- Linked references could be lost when files have been updated on the disk
+			- By another editor or Logseq in another device
+		- Can't copy and paste multiple blocks into the first empty block
+		- Can't jump to pages on mobile
+		- Keep CodeMirror mode as null when language not set
+	- [[Features]]
+		- Export either the graph or a page as OPML 🎉
 - [[May 30th, 2021]] 
   id:: 60b3a579-56db-41ed-8940-70c8b54f8e34
   **Beta 0.1.2**
