@@ -1,55 +1,47 @@
-## 🌟 [[New to Logseq?]]
-### [[Getting started]]
-### [[Videos]]
-### [[FAQ]]
-### [Glossary](https://discuss.logseq.com/t/glossary-draft-work-in-progress/196)
-### [[Testimonials]]
-### [Awesome Logseq](https://github.com/logseq/awesome-logseq)
-## [[特色功能]]
-### [[反向链接]]
-### [[知识图谱]]
-### [[Page and Block Embeds][Page and Block Embeds - {{embed (())}}]]
-### [[Page and Block References][Page and Block References - ((block))]]
-### [[任务和待办事项]]
-### [[Commands]]
-#### [[Advanced commands]]
-### [Templates](https://discuss.logseq.com/t/templates-how-to-create-edit-and-insert/200)
-### [[导入和导出]]
-### [[页面别名]]
-### [[公开发布]]
-### [[块属性]]
-:PROPERTIES:
-:created_at: 1609233128830
-:last_modified_at: 1609233128830
-:END:
-### [[Draw]]
-### [[Slide]]
-### [[Custom theme]]
-## Logseq for...
-### [[Writers & Thinkers]]
-### [[A Personal CRM]]
-### [[Meetings]]
-### [[Students]]
-### [[Programmers]]
-## [[Document syntax]]
-### [[Markdown]]
-### [[Org Mode]]
-## 👤 [[Settings]]
-## 🔒 [[Security]]
-## ✨ [[Tips and Tricks]]
-## [[Advanced Logseq]]
-### [[Custom keyboard shortcuts]]
-### [[查询]]
-#### [[高级查询]]
-### [[Hiccup]]
-### [[Custom views]]
-### [Self Hosting Logseq](https://github.com/dustinlacewell/logseq-guide)
-## [[Changelog 2020]]
-## [[Contribute]]
-### [[https://github.com/logseq/logseq/projects/1][Roadmap]]
-### Make a [Feature Request](https://discuss.logseq.com/)
-### [Check us out on Github](https://github.com/logseq/logseq)
-### [Contribute to Our Docs](https://github.com/logseq/docs)
-## 💬
-### Message us on [Discord](https://discord.gg/KpN4eHY) (We love feedback!)
-### Tweet us [[https://twitter.com/logseq][@logseq]]
+- 🌟 [[New to Logseq?]]
+	- [[Getting started]]
+	- [[Migrate to Logseq Beta]]
+	- [[Videos]]
+	- [[Desktop app]]
+	- [[FAQ]]
+	- [[Glossary]]
+	- [[Testimonials]]
+		- ((6071c223-b0ed-4235-80b2-f5e44d3679b9))
+	- [Awesome Logseq](https://github.com/logseq/awesome-logseq)
+	- [Roadmap](https://trello.com/b/8txSM12G/logseq-roadmap)
+	- [[Changelog]]
+- [[特色功能]]
+	- [反向链接]([[term/backlink]])
+	- [[知识图谱]]
+	- [[Page and block references]]
+	- [[Page and block embeds]]
+	- [[任务和待办事项]]
+	- [[Commands]]
+	- [[Advanced commands]]
+	- [[Templates]]
+	- [页面别名]([[term/alias]])
+	- [块属性]([[term/properties]])
+	- [[公开发布 (只支持桌面版)]]
+	- [[Draw]]
+	- [[Slide]]
+	- [[Custom theme]]
+- [[Document syntax]]
+	- [[Markdown]]
+	- [[Org Mode]]
+- 👤 [[Settings]]
+- ✨ [[Tips and Tricks]]
+- [[Advanced Logseq]]
+	- [[Custom keyboard shortcuts]]
+	- [[查询]]
+	- [[高级查询]]
+	- [[Hiccup]]
+	- [[Custom views]]
+	- [Self Hosting Logseq](https://github.com/dustinlacewell/logseq-guide)
+- [[Changelog 2020]]
+- [[Contribute]]
+	- Make a [Feature Request](https://discuss.logseq.com/)
+	- [Check us out on Github](https://github.com/logseq/logseq)
+	- [Contribute to Our Docs](https://github.com/logseq/docs)
+- 💬
+	- Message us on [Discord](https://discord.gg/KpN4eHY) (We love feedback!)
+	- Tweet us [[https://twitter.com/logseq][@logseq]]

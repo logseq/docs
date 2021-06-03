@@ -1,5 +1,4 @@
 #+TITLE: About
-#+PUBLISHED: true
 #+PERMALINK: about
 
 ** Hi, welcome to [[https://logseq.com][Logseq]].

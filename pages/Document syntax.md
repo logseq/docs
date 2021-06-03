@@ -1,0 +1,1 @@
+- Logseq currently supports [[Markdown]] and [[Org Mode]] syntaxes.

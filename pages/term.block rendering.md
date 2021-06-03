@@ -1,0 +1,5 @@
+- description:
+  - blocks in editing mode are shown in plain text while in that mode but are “rendered” to show different styling for ease of use when not in editing mode
+- produced by:
+  - block rendering occurs automatically when not in editing mode
+  - press `Esc` to quit editing mode

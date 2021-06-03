@@ -1,5 +1,4 @@
 #+TITLE: Privacy Policy
-#+PUBLISHED: false
 #+PERMALINK: privacy%20policy
 
 ** *TLDR: * Logseq doesn't store your notes, nor do we own your data, nor do we sell it to others or use it for advertising. 

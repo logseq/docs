@@ -1,0 +1,2 @@
+- Logseq has [[Excalidraw]] integration built-in, type `/draw` command to start drawing.
+- {{embed ((60acbe13-f12d-451a-9793-56201f858074))}}
