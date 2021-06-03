@@ -1,15 +1,10 @@
 * Sunday, 05/31/2020
-<<<<<<< ours
-**  Changelog
-*** Custom journal date format support. [[特色功能]]
-=======
 ** Changelog
-*** Custom journal date format support. [[Features]]
+*** Custom journal date format support. [[特色功能]]
 :PROPERTIES:
 :id: 60acdeb9-aa65-492b-8398-d4d65c1631c1
 :END:
 
->>>>>>> theirs
     You can set the ~:date-formatter~ in ~logseq.edn~.
     The default formatter is ~"MMM do, yyyy"~, which will be something like
     ~Jun 1st, 2020~.
