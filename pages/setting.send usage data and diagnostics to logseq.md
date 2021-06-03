@@ -1,0 +1,3 @@
+- Logseq neither collect your local graph data nor sell your usage data.
+- However Logseq do use third part services like [Sentry](https://sentry.io/) for error collecting and product analytics purpose. The data is masked without any personal information that can trace back to you. And would help us tremendously for debugging existing product issues.
+- If you'd like to opt out, you can leverage this option to toggle it off in `Settings` page.

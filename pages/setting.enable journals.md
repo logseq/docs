@@ -1,0 +1,2 @@
+- An empty journal file is created by default each day.
+- You can disable that with this setting toggled off.

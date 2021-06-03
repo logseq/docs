@@ -1,0 +1,2 @@
+- {{embed [[term/embedded page]] }}
+- {{embed [[term/embedded block]] }}

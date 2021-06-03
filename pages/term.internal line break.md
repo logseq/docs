@@ -1,0 +1,6 @@
+- description: a line break within a block
+- produced by:
+  - users can set Logseq to either of the following behaviors:
+    - (default) `Enter` creates a new block and `Shift-Enter` creates an internal line break
+    - `Shift-Enter` creates a new block and `Enter` creates an internal line break
+    - In non editing state, user can press `t e` to toggle between those two behavior

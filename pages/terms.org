@@ -1,6 +1,5 @@
 #+TITLE: Terms
 #+TAGS:
-#+PUBLISHED: true
 
 ** *Terms & Conditions*
 

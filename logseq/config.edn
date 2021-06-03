@@ -1,10 +1,8 @@
-{:project {:name "blog"
-           :alias "Logseq Blog"}
- :shortcuts {:editor/new-block "alt+enter"},
+{:project {:name "Wiki"
+           :alias "Logseq Wiki"}
  :text-formats [],
  :all-pages-public? true,        ;; Git settings
- :default-home {:page "Changelog"
-                :sidebar "Contents"}
+ :default-home {:page "Contents"}
 
  ;; Currently, we support either "Markdown" or "Org".
  ;; This can overwrite your global preference so that
@@ -81,4 +79,9 @@
 {{query $1}}
 #+END_EXAMPLE
 {{query $1}}"}
- :feature/enable-block-time? true}
+ :feature/enable-block-time? true
+ :feature/enable-timetracking? true
+ :feature/enable-journals? true
+ :ui/show-brackets? true
+ :feature/enable-encryption? false
+ :markdown/version 2}

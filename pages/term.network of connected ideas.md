@@ -1,0 +1,2 @@
+- description:
+  - Your Logseq repository contains content (ideas, facts, references, etc.) that are linked together. You can think of the network as a a connection of blocks and pages that act as network “nodes” that are linked together using certain text markers (such as `[[ ]]` and `(( ))` and `{{embed}}` much like the network of linked neurons in your brain.
