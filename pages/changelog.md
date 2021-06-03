@@ -1,3 +1,15 @@
+- [[Jun 3rd, 2021]]
+  id:: 60b8f68d-1c28-45f8-ab8e-0976163c2116
+  **Beta 0.1.4**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.1.4
+	- [[Fixed Issues]]
+		- Logseq freezes when hovering a page and clicking to edit it later
+		- Block refs are difficult to click
+		- Can't see the last matched result when searching (DOWN arrow)
+		- Sometimes can't paste files into Logseq
+		- Add block's page to `:block/path-refs`, `[[page]]` in the query will return all the blocks belong to this page and blocks that mentioned `[[page]]`
+		- `:org-mode/insert-file-link? true` not working anymore
+		- block-reference a block with heading:: true will display extra `-`
 - [[Jun 2nd, 2021]] 
   id:: 60b770c6-1e15-4e2b-b6a4-a08de9cde5f8
   **Beta 0.1.3**
