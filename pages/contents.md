@@ -1,6 +1,6 @@
 - 🌟 [[New to Logseq?]]
 	- [[开始]]
-	- [[Migrate to Logseq Beta]]
+	- [[迁移到测试版]]
 	- [[Videos]]
 	- [[Desktop app]]
 	- [[FAQ]]

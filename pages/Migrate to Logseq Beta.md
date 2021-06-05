@@ -1,32 +1,35 @@
+title:: 迁移到测试版
+
 -
   #+BEGIN_WARNING
-  **BACKUP** all your notes somewhere **first** before continue
+  在继续之前请**备份**你的笔记
   #+END_WARNING
-- This migration guide is mainly targeted for Logseq users of pre-beta version with Markdown notes
-- **Backup(make an extra copy)** of all your old notes first, then:
+- 这份迁移指南主要是针对使用 Markdown 格式的 pre-beta 版本的用户。
+- 首先**备份（复制一份）**你所有的笔记，然后：
 	-
-	  1. Load and open your old graph folder in this new Beta app
+	  1. 在新的测试版软件中加载旧的笔记。
 	-
-	  2. Click the right three dots menu, go to `Export` and select `Convert Markdown headings to unordered lists (# -> -)`
+	  2. 单击右上角三个点图标，点击 `导出`然后选择`转换Markdown格式(Unordered list或Heading)`。
 	-
-	  3. Above will create a zip file of all your converted new notes under `/journals` and `/pages` folder, extract the zip to your desired location.
+	  3. 上面的操作将在' /journals '和' /pages '文件夹下创建一个压缩文件，将压缩文件解压到你想要的位置。
 	-
-	  4. Copy and replace all pages under `/journals` and `/pages` folder back to that same graph folder
+	  4. 复制解压出来的页面，然后替换当前库`/journals` 和 `/pages` 文件夹下的所有页面。
 	-
-	  5. Finally, click the right three dots menu, go to `All graphs` and unlink the graph and open it again to reload the graph
+	  5. 最后，单击右上角的三个点图标，选择`所有库`然后`unlink` 当前库并再次打开它
 - Tutorial:
   ![migrate.gif](../assets/migrate_1621935713657_0.gif)
-- Why & underneath the hood:
-	- Previously Logseq use `#` markdown heading as outliner bullets, since beta, we've changed to use more standard `-` unordered list as outliner bullets
-	- The converter essentially converts all Markdown headings to unordered lists (`#` -> `-`)
-- Further steps you may need:
-	- Since Logseq is using `-` unordered list for bullets, `-` will not work as a list item anymore, replace `-` with `*` or `+` if you need it. The converter doesn't convert it automatically because it might break your contents.
-- Other noticeable changes:
-	- Old syntax of adding property for Markdown is no longer recommanded
+- 为什么 & 背后的原因：
+	- 之前 Logseq 使用 `#` 号作为大纲项目符号，从 beta 版开始，我们改成了更为通用的 `-`。
+	- 转换器本质上是把所有的 Markdown 标题转换为了无序列表（`#` -> `-`）。
+- 你可能需要更进一步操作：
+	- Logseq 使用 `-` 作为大纲符号，`-` 将不再作为项目列表使用，如果有需要，把`-` 替换为`*`或`+`。转换器不会自动进行转为，因为这样有可能会破坏你的内容。
+- 其它值得注意的变化：
+	- 不再推荐使用旧的属性语法
+	-
 	  ``` Markdown
-	  ---
-	  key: value
-	  ---
-	  ```
-	  Use below new [[term/properties]] syntax instead
-	  {{embed ((60ab6f5b-4bdc-4ef0-a0f8-6cad9dcad2b2))}}
+	  	  ---
+	  	  key: value
+	  	  ---
+	  	  ```
+	  	  请使用新语法 [[term/properties]] 替代
+	  	  {{embed ((60ab6f5b-4bdc-4ef0-a0f8-6cad9dcad2b2))}}
