@@ -1,6 +1,4 @@
----
-title: 开始
----
+title:: 开始
 
 - hi，欢迎来到 logseq！
   heading:: true
