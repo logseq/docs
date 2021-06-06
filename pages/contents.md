@@ -2,7 +2,7 @@
 	- [[开始]]
 	- [[迁移到测试版]]
 	- [[视频]]
-	- [[Desktop app]]
+	- [[桌面版]]
 	- [[FAQ]]
 	- [[Glossary]]
 	- [[Testimonials]]
