@@ -1,3 +1,41 @@
+- [[Jun 8th, 2021]]
+  id:: 60be49ad-b87f-47cf-946b-5ddbc5a08ead
+  **Beta 0.1.5**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.1.5
+	- [[Fixed issues]]
+		- Linked references don't work if the tag has emojis and other special characters
+		- Page reference disappears when clicking outside the editor
+		- Extra space and tab characters will be inserted into the file
+		- Wrong indentation for paragraphs and lists (in the Markdown file)
+		- Fix wrong Alias behaviour
+			- An alias page reference will jump to the source page if the alias page is empty
+		- Display all the aliases (if any) in the page's properties
+		- Page filters doesn't work on block children
+		- Can't remove local assets on the web app
+		- Search bar can't be scrolled
+		- Can't delete multiple blocks if the first one and the last one are not the same level
+		- Add `level` back to the dom
+	- [[Enhancement]]
+		- Tooltips will be hidden quickly now
+		- Page searching is more accurate
+		- Search jumping to a block will be selected by default, so that you can quickly press `Enter` or Left/Right arrow to edit it.
+	- [[Features]]
+		- Now you can collapse/expand the whole page by pressing `Command+up` and `Command+down`
+			- ![2021-06-08 00.42.40.gif](../assets/2021-06-08_00.42.40_1623084200686_0.gif)
+		- JSON and EDN export
+		- Both block embeds and references are included when exporting OPML and Markdown
+- [[Jun 3rd, 2021]]
+  id:: 60b8f68d-1c28-45f8-ab8e-0976163c2116
+  **Beta 0.1.4**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.1.4
+	- [[Fixed Issues]]
+		- Logseq freezes when hovering a page and clicking to edit it later
+		- Block refs are difficult to click
+		- Can't see the last matched result when searching (DOWN arrow)
+		- Sometimes can't paste files into Logseq
+		- Add block's page to `:block/path-refs`, `[[page]]` in the query will return all the blocks belong to this page and blocks that mentioned `[[page]]`
+		- `:org-mode/insert-file-link? true` not working anymore
+		- block-reference a block with heading:: true will display extra `-`
 - [[Jun 2nd, 2021]] 
   id:: 60b770c6-1e15-4e2b-b6a4-a08de9cde5f8
   **Beta 0.1.3**
