@@ -1,4 +1,13 @@
 - [[Jun 8th, 2021]]
+  id:: 60bf567e-1aaf-4500-92dd-19dfc5e8cff4
+  **Beta 0.1.6**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.1.6
+	- [[Fixed issues]]
+		- App nonresponsive
+		- Error when pressing `Ctrl+UP` or `Ctrl+DOWN`
+		- CPU high usage when tooltips are enabled
+		- Bump better-sqlite3 to fix glibc issue on Linux
+- [[Jun 8th, 2021]]
   id:: 60be49ad-b87f-47cf-946b-5ddbc5a08ead
   **Beta 0.1.5**
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.1.5
