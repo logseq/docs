@@ -11,7 +11,7 @@
 	- [Roadmap](https://trello.com/b/8txSM12G/logseq-roadmap)
 	- [[Changelog]]
 - [[特色功能]]
-	- [反向链接]([[term/backlink]])
+	- [[反向链接]]
 	- [[知识图谱]]
 	- [[Page and block references]]
 	- [[Page and block embeds]]
