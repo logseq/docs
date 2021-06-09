@@ -4,11 +4,10 @@
   #+END_CAUTION
 - This guide will walk you through creating a simple Hello World plugin for Logseq.
 ## Preparations
-	- Since Logseq plugin is built with web technologies, you need to get Node.js and NPM here: https://nodejs.org/en/download/.
 	- Right now plugin development needs the Logseq desktop app, get the latest one here: https://github.com/logseq/logseq/releases.
 	- Click the three-dots menu, go to `Settings` and turn on `Developer Mode`. After that, there will be a `plugins` button inside the menu. Click it to go to the plugin list page.
 ## Project Bootstrap
-	- create a folder called `logseq-hello-world` and run `npm init -y` inside to create a placeholder `package.json`.
+	- Create a folder called `logseq-hello-world` and a `package.json` inside.
 	- There are three required fields: `name`, `main`, and `logseq`. Leave `name` to `logseq-hello-world` and change `main` to `index.html`. The `logseq` is for plugin configuration. For now just set it to an empty object `{}`. It will look like this:
 	-
 	  ```json
