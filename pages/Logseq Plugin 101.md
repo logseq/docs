@@ -51,6 +51,9 @@
 ## Run the Plugin
 	- In the plugin list page, click `Load unpacked plugin` and choose the `logseq-hello-world` folder. A "Hello World Logseq!" message will show immediately and every time the app lanuches. Congratulations on writing your first Logseq plugin!
 ## Next Steps
-	- Learn from many plugin samples: https://github.com/logseq/logseq-plugin-samples
+	- Learn from many plugin samples:
+	  https://github.com/logseq/logseq-plugin-samples
 	- Ask questions and discuss on Discord: https://discord.com/channels/725182569297215569/752845167030960141
+	- The plugin architecture:
+	  https://whimsical.com/logseq-plugins-draft-wip-B2iSbFBuWx1S4E4CkJed9y
 	- Read the Plugin API documentation: TODO
