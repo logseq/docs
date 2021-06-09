@@ -10,6 +10,7 @@
 	- [Awesome Logseq](https://github.com/logseq/awesome-logseq)
 	- [Roadmap](https://trello.com/b/8txSM12G/logseq-roadmap)
 	- [[Changelog]]
+	- [[Logseq Plugin 101]]
 - [[Features]]
 	- [Backlink]([[term/backlink]])
 	- [[Knowledge Graph]]
