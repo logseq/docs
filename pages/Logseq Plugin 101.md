@@ -30,7 +30,7 @@
 	      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	      <title>Logseq Hello World</title>
-	      <script src="https://cdn.jsdelivr.net/npm/@logseq/libs@0.0.1-alpha.15/dist/lsplugin.user.min.js"></script>
+	      <script src="https://cdn.jsdelivr.net/npm/@logseq/libs/dist/lsplugin.user.min.js"></script>
 	    </head>
 	    <body>
 	      <script>
