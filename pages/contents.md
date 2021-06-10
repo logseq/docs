@@ -13,6 +13,7 @@
 - [[特色功能]]
 	- [[反向链接]]
 	- [[知识图谱]]
+	- [[Logseq Plugin 101]]
 	- [[Page and block references]]
 	- [[Page and block embeds]]
 	- [[任务和待办事项]]
