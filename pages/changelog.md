@@ -1,3 +1,32 @@
+- [[Jun 11th, 2021]] [[test soemthing]]
+  id:: 60c37f16-0fcb-4b0a-8874-c3c3f1a561ca
+  **Beta 0.1.7**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.1.7
+	- [[Thanks]]
+		- [[pengx17]] for adding several plugins and many thoughtful discussions
+		- [[tekacs]] for adding both editor/strike-through binding `ctrl/cmd + shift +s` and 
+		  [toggle formatting of selected area instead of double-wrapping](https://github.com/logseq/logseq/pull/2166)
+		- [[Cobblebot]] for the suggestion to have a central place for all the UI/UX suggestions.
+			- https://discuss.logseq.com/c/ux-ui-suggestion/13
+	- [[Fixed Issues]]
+		- Cursor moving in the editor
+		- Bring back template support without the parent block
+			- ![CleanShot 2021-06-11 at 23.25.41.png](../assets/CleanShot_202021-06-11_20at_2023.25.41_1623425156403_0.png)
+		- Ctrl-z not working if all the blocks of a page were deleted
+		- Code block editing
+		- Repeated aliases in page's properties
+		- Cursor blinks when editing in zoom mode
+		- Import JSON from Roam uses `-` instead of `#`
+		- Rename page doesn't work for markdown with front matter
+		- Using a #tag in a line followed by a `[[page-link]]` causes line to be erased
+		- Marker keywords in bullet content change on ctrl+enter
+		- Display normal text size if a heading block has body content (not just a title)
+	- [[Enhancement]]
+		- Rename "Contents" to **Favorites**
+			- You can specify the display name by changing `:name/favorites` in `config.edn`, for example:
+			  `:name/favorites "My favorites"`
+		- Better UX for the graph switcher
+			- ![CleanShot 2021-06-11 at 23.23.57.png](../assets/CleanShot_202021-06-11_20at_2023.23.57_1623425044315_0.png)
 - [[Jun 8th, 2021]]
   id:: 60bf567e-1aaf-4500-92dd-19dfc5e8cff4
   **Beta 0.1.6**
