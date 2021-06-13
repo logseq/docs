@@ -15,7 +15,7 @@
 	- [[知识图谱]]
 	- [[Logseq 插件 101]]
 	- [[页面和块引用]]
-	- [[Page and block embeds]]
+	- [[页面和块嵌入]]
 	- [[任务和待办事项]]
 	- [[Commands]]
 	- [[Advanced commands]]
