@@ -17,7 +17,7 @@
 	- [[页面和块引用]]
 	- [[页面和块嵌入]]
 	- [[任务和待办事项]]
-	- [[Commands]]
+	- [[命令]]
 	- [[Advanced commands]]
 	- [[Templates]]
 	- [页面别名]([[term/alias]])
