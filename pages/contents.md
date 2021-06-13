@@ -14,7 +14,7 @@
 	- [[反向链接]]
 	- [[知识图谱]]
 	- [[Logseq 插件 101]]
-	- [[Page and block references]]
+	- [[页面和块引用]]
 	- [[Page and block embeds]]
 	- [[任务和待办事项]]
 	- [[Commands]]
