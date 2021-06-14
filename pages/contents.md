@@ -1,23 +1,25 @@
-- 🌟 [[New to Logseq?]]
-	- [[Getting started]]
-	- [[Migrate to Logseq Beta]]
-	- [[Videos]]
-	- [[Desktop app]]
+- 🌟 [[刚入门吗？]]
+	- [[开始]]
+	- [[迁移到测试版]]
+	- [[视频]]
+	- [[桌面版]]
 	- [[FAQ]]
-	- [[Glossary]]
-	- [[Testimonials]]
+	- [[术语]]
+	- [[大家怎么说？]]
 		- ((6071c223-b0ed-4235-80b2-f5e44d3679b9))
 	- [Awesome Logseq](https://github.com/logseq/awesome-logseq)
 	- [Roadmap](https://trello.com/b/8txSM12G/logseq-roadmap)
 	- [[Changelog]]
+    - [[Logseq 插件 101]]
+    - [[Logseq Plugin 202 - Build a mind map plugin]]
 - [[特色功能]]
-	- [反向链接]([[term/backlink]])
+	- [[反向链接]]
 	- [[知识图谱]]
-	- [[Page and block references]]
-	- [[Page and block embeds]]
+	- [[页面和块引用]]
+	- [[页面和块嵌入]]
 	- [[任务和待办事项]]
-	- [[Commands]]
-	- [[Advanced commands]]
+	- [[命令]]
+	- [[高级命令]]
 	- [[Templates]]
 	- [页面别名]([[term/alias]])
 	- [块属性]([[term/properties]])

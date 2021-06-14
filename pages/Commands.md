@@ -1,1 +1,3 @@
-- Type `/` to show all the commands and explore.
+title:: 命令
+
+- 输入 `/` 查看并探索所有的命令。

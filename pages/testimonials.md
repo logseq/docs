@@ -1,8 +1,6 @@
----
-title: Testimonials
----
+title:: 大家怎么说？
 
-- This page lists generous things that our community have said about Logseq. Feel free to [add](https://github.com/logseq/docs/edit/master/pages/testimonials.md) yours or messaging tienson at <tienson@logseq.com>
+- 这个页面列出了我们社区用户对于 Logseq 的慷慨的评论。请随意[添加](https://github.com/logseq/docs/edit/master/pages/testimonials.md)你的评论或者联系天生 <tienson@logseq.com>
   id:: 6071c223-b0ed-4235-80b2-f5e44d3679b9
 -
   id:: 607454a1-a6a5-4356-af6d-ae5ed0a2051a
