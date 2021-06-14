@@ -10,10 +10,11 @@
 	- [Awesome Logseq](https://github.com/logseq/awesome-logseq)
 	- [Roadmap](https://trello.com/b/8txSM12G/logseq-roadmap)
 	- [[Changelog]]
+    - [[Logseq 插件 101]]
+    - [[Logseq Plugin 202 - Build a mind map plugin]]
 - [[特色功能]]
 	- [[反向链接]]
 	- [[知识图谱]]
-	- [[Logseq 插件 101]]
 	- [[页面和块引用]]
 	- [[页面和块嵌入]]
 	- [[任务和待办事项]]
