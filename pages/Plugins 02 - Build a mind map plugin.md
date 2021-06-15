@@ -1,4 +1,4 @@
-- In [[Logseq Plugin 101]] we demonstrated how to get started developing Logseq plugins. To recap, the simple steps are:
+- In [[Plugins 01]] we demonstrated how to get started developing Logseq plugins. To recap, the simple steps are:
 	- download the latest Logseq app
 	- turn on developer mode
 	- build a normal web app with JavaScript, HTML & CSS, plus the Logseq plugin sdks: @logseq/libs
@@ -9,7 +9,7 @@
 	- To build more sophisticated plugins for Logseq, it's better for us to understand a little bit how it works. Currently, each plugin runs in an iframe separate from the main Logseq app. The main app provides some APIs (such as operations on the block, getting app settings) through the SDK to the plugins. The iframe serves as the plugin's UI and can be shown or hidden through related APIs. What's more, the main Logseq app provides ways to *inject* UI elements such as icons or buttons to some specific positions in the main app.
 	- That's all, let's get started!
 ## Preparations
-	- As we do in [[Logseq Plugin 101]], create a project folder contains a package.json, which contains three required fields: `name`, `main` and `logseq`.
+	- As we do in [[Plugins 01]], create a project folder contains a package.json, which contains three required fields: `name`, `main` and `logseq`.
 	- In our `index.html` we need to add the scripts that we need:
 	-
 	  ```html 

@@ -10,8 +10,6 @@
 	- [Awesome Logseq](https://github.com/logseq/awesome-logseq)
 	- [Roadmap](https://trello.com/b/8txSM12G/logseq-roadmap)
 	- [[Changelog]]
-	- [[Logseq Plugin 101]]
-	- [[Logseq Plugin 202 - Build a mind map plugin]]
 - [[Features]]
 	- [Backlink]([[term/backlink]])
 	- [[Knowledge Graph]]
@@ -27,6 +25,10 @@
 	- [[Draw]]
 	- [[Slide]]
 	- [[Custom theme]]
+- [[Logseq School]]
+	- [[Plugins 101]]
+		- [[Plugins 01]]
+		- [[Plugins 02 - Build a mind map plugin]]
 - [[Document syntax]]
 	- [[Markdown]]
 	- [[Org Mode]]
