@@ -26,9 +26,7 @@
 	- [[Slide]]
 	- [[Custom theme]]
 - [[Logseq School]]
-	- [[Plugins 101]]
-		- [[Plugins 01]]
-		- [[Plugins 02 - Build a mind map plugin]]
+	- {{embed [[Plugins 101]] }}
 - [[Document syntax]]
 	- [[Markdown]]
 	- [[Org Mode]]

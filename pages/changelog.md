@@ -1,4 +1,43 @@
-- [[Jun 11th, 2021]] [[test soemthing]]
+- [[Jun 15th, 2021]] 
+  id:: 60c8be46-6179-40c0-ad3a-74ecdeaa595e
+  **Beta 0.1.8**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.1.8
+	-
+	  #+BEGIN_NOTE
+	  The draft Plugins API is out! 🚀🚀  Any feedback or suggestions are appreciated!
+	  The documentation is at https://logseq.github.io/plugins/
+	  We have some short tutorials too, check [[Plugins 101]].
+	  #+END_NOTE
+	- [[Thanks]]
+		- [[Calc]] mode by [[bensu]] 🎉🎉
+		  #+BEGIN_EXAMPLE
+		  ```calc
+		  1 + 1
+		  a = 1
+		  b = 2
+		  a * b + a
+		  1.0e3 + 2
+		  ```
+		  #+END_EXAMPLE
+			-
+			  ```calc
+			  1 + 1
+			  a = 1
+			  b = 2
+			  a * b + a
+			  1.0e3 + 2
+			  ```
+		- Scroll to follow the moving block by [[bensu]]
+		- Several minor issues fixed by [[pengx17]]
+	- [[Features]]
+		- Import from [[OPML]]
+	- [[Fixed Issues]]
+		- Wrong order when copy/paste or create blocks from a template
+		- Nothing found for entity id [:block/uuid nil]
+		- Don't create a new file if there's only one block with empty
+		- Can't parse and load some files
+		- Quick input（）will clear the current block
+- [[Jun 11th, 2021]]
   id:: 60c37f16-0fcb-4b0a-8874-c3c3f1a561ca
   **Beta 0.1.7**
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.1.7
