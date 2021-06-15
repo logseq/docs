@@ -4,10 +4,11 @@
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.1.8
 	-
 	  #+BEGIN_NOTE
-	  The draft Plugins API is out! 🚀🚀  Any feedback or suggestions are appreciated!
+	  The draft Plugins API is out! 🚀🚀  Any feedback or suggestions are appreciated! 
 	  The documentation is at https://logseq.github.io/plugins/
 	  We have some short tutorials too, check [[Plugins 101]].
 	  #+END_NOTE
+		- You can enable the `Developer mode` in the settings page, we only enable it for the desktop app for the time being, we'll add the support to the web app when it's more stable. The plugins are mostly for developers to test, we don't recommend it for daily usage.
 	- [[Thanks]]
 		- [[Calc]] mode by [[bensu]] 🎉🎉
 		  #+BEGIN_EXAMPLE
