@@ -1,3 +1,32 @@
+- [[Jun 18th, 2021]]
+  id:: 60cb89fb-1518-471d-8ec2-f41a634bea70
+  **Beta 0.1.9**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.1.9
+	- [[Plugins]]
+		- [[Charlie]] made a reddit hot news page! 🎉
+			- Source code: https://github.com/logseq/logseq-plugin-samples/tree/master/logseq-reddit-hot-news
+			- ![demo.gif](../assets/demo_1623952403703_0.gif)
+	- [[Thanks]]
+		- [[Nikhil Warke]] added a shortcut to collapse/expand all the blocks `t o`
+		- [[Devon Zuegel]] updated the modal so that click on backdrop closes the modal and bump up opacity on icons to increase contrast
+		- [[Peng Xiao]] fixed the issue that page title when preview should use its original name
+	- [[Fixed issues]]
+		- Support nested headings for Markdown
+		  collapsed:: true
+			- #### Something like this
+		- Select blocks sometimes doesn't work
+		- Weird behavior when toggling edit mode for long text
+		- Writing in new page in sidebar makes new line after each keypress
+		- [display name]([[page name]]) is not counted as a page reference
+		- Nested queries
+	- [[Features]]
+		- [[Roam Research]] JSON export
+	- [[Enhancement]]
+		- Lazy loading page/block previews, reduce CPU usage
+		- Add a custom shortcut for escape editing
+		- Grouped commands
+		  collapsed:: true
+			- ![CleanShot 2021-06-18 at 01.58.08@2x.png](../assets/CleanShot_202021-06-18_20at_2001.58.08@2x_1623952699819_0.png){:height 305, :width 241}
 - [[Jun 15th, 2021]] 
   id:: 60c8be46-6179-40c0-ad3a-74ecdeaa595e
   **Beta 0.1.8**
