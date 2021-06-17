@@ -3,7 +3,10 @@
   **Beta 0.1.9**
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.1.9
 	- [[Plugins]]
+		- [[Peng Xiao]] created a react template for Logseq plugins
+		  https://github.com/pengx17/logseq-plugin-template-react
 		- [[Charlie]] made a reddit hot news page! 🎉
+		  collapsed:: true
 			- Source code: https://github.com/logseq/logseq-plugin-samples/tree/master/logseq-reddit-hot-news
 			- ![demo.gif](../assets/demo_1623952403703_0.gif)
 	- [[Thanks]]
