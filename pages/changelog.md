@@ -1,3 +1,48 @@
+- [[Jun 23rd, 2021]] 
+  id:: 60d3353a-8999-4186-adcc-1f99b0f71560
+  **Beta 0.2.0**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.2.0
+	- [[Thanks]]
+		- [[andrevem]] added Spanish translation
+		- [[Devon Zuegel]] added `/calculator` slash command
+		- [[Peng Xiao]]
+			- Preview block reference with its children
+			- Show block breadcrumbs in preview
+			- Output custom.css instead of append for publish
+			- Do not pass theme to tippy
+		- [[bensu]] don't show calc parse errors to the UI
+		- [[Nikhil Warke]] fix non ml-doc file links in org syntax
+		- [[Michael Schmidt-Korth]] Page rename: Use current title as default
+	- [[Fixed Issues]]
+		- Remove `collapsed:: false` property (this only works for new pages)
+		- Newline after scheduled and deadlines
+		- `:hidden` config doesn't work for both nfs and the desktop app
+		- Second settings can't be opened
+		- Entity not found err when import opml with non-existed block-ref-id
+		- Broken slash command registry #plugin
+		- Unlinked references search alias as well
+		- Copy heading with children
+		- Can't drag a block as the first child of a parent block
+		- Exported md files includes block children from embed source block
+		- ID-links follow the ID when clicked [[Org Mode]]
+	- [[Features]]
+		- Alt-dragging to create a block reference
+	- [[Enhancement]]
+		- Open the second level children by default for linked references
+			- A new option `:ref/default-open-blocks-level` was added to `config.edn` #settings, the default value is `2`
+			  #+BEGIN_EXAMPLE
+			  The default level to be opened for the linked references.
+			  For example, if we have some example blocks like this:
+			  - a [[page]] (level 1)
+			    - b        (level 2)
+			       - c      (level 3)
+			          - d    (level 4)
+			  
+			  With the default value of level 2, `b` will be collapsed.
+			  If we set the level's value to 3, `b` will be opened and `c` will be collapsed.
+			  #+END_EXAMPLE
+		- Customize shortcuts UI support
+		- `Ctrl+Shift+r` to replace a block reference at point with its text (editing mode)
 - [[Jun 18th, 2021]]
   id:: 60cb89fb-1518-471d-8ec2-f41a634bea70
   **Beta 0.1.9**
