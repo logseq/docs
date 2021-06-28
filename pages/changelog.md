@@ -1,3 +1,33 @@
+- [[Jun 28th, 2021]] 
+  **Beta 0.2.1**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.2.1
+	- [[Thanks]]
+		- [[Devon Zuegel]]
+			- Added shortcut setting visual polishing and refactoring
+			- Refactor setting page ui code and fix React warnings
+		- [[bensu]]
+			- Added fix for codemirror click editing issue
+			- Enhanced parsing rule for calculator
+	- [[Fixed Issues]]
+		- Fix link syntax behavior
+			- Markdown
+				- `![label](url)` will display pdf preview (desktop app) or image
+				- `[label](url)` only display as clickable label
+			- Org-mode
+				- `[[url][label]]{:show true}`
+					- pdf preview (desktop app)
+					- image inline display
+				- `[[url][label]]{:show false}` just display as clickable label
+				- `[[url][label]]` keep same behaviors as before: inline images if its suffix included in `#{:gif :svg :jpeg :ico :png :jpg :bmp}`
+		- Exported markdown with spaces and wrong format
+		- Expand action does not delete collapsed property issue
+	- [[Features]]
+		- Namespace pages now display with hierarchy
+		- New command `paste-text-in-one-block-at-point` (mod+shift+v) will paste multi paragraph text in clipboard as one block
+		  ![demo](https://user-images.githubusercontent.com/5608710/123242793-f6b43700-d514-11eb-9076-2443cf1c7a0a.gif)
+	- [[Enhancement]]
+		- Display pdf by default
+		- Make it easier to drag files to the editor
 - [[Jun 23rd, 2021]] 
   id:: 60d3353a-8999-4186-adcc-1f99b0f71560
   **Beta 0.2.0**
