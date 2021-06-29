@@ -1,3 +1,22 @@
+- [[Jun 29th, 2021]]
+  id:: 60db3824-3728-458b-b7e1-ed359c275d96
+  **Beta 0.2.2**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.2.2
+	- [[Thanks]]
+		- [[Devon Zuegel]]
+			- Make block control available via CSS selectors so it can be customized
+		- [[Sebastian Bensusan]]
+			- Allow numbers to have commas in calc
+		- [[Peng Xiao]]
+	- [[Fixed Issues]]
+		- Pages set to public not getting published
+		- Dragging file may create dulplicated files in /assets
+		- Image doesn't show
+		- Error when editing config.edn
+		- Should align with baseline for multi-line headings
+		- Collapse take account of block body
+		- Desktop App fails to render images that are on newline
+		- Rename a Page without spaces to one with spaces impacts tags
 - [[Jun 28th, 2021]] 
   **Beta 0.2.1**
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.2.1
