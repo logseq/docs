@@ -7,7 +7,6 @@
 			- Make block control available via CSS selectors so it can be customized
 		- [[Sebastian Bensusan]]
 			- Allow numbers to have commas in calc
-		- [[Peng Xiao]]
 	- [[Fixed Issues]]
 		- Pages set to public not getting published
 		- Dragging file may create dulplicated files in /assets
