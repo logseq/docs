@@ -28,7 +28,7 @@
      :where
      [?h :heading/content ?content]
      [?h :heading/page ?p]
-     [?p :page/name "jun 1st, 2020"]]]
+     [?p :block/name "jun 1st, 2020"]]]
     #+END_SRC
 
     #+BEGIN_QUERY
@@ -36,5 +36,5 @@
      :where
      [?h :heading/content ?content]
      [?h :heading/page ?p]
-     [?p :page/name "jun 1st, 2020"]]]
+     [?p :block/name "jun 1st, 2020"]]]
     #+END_QUERY

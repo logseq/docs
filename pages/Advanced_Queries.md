@@ -24,7 +24,7 @@ title: Advanced Queries
    :result-transform (fn [query-result] ...)
    :collapsed? true}
   #+END_EXAMPLE
-  
+
   | Name             | Description                      | Default | Optional |
   |------------------|----------------------------------|---------|----------|
   | title            | query title, supports hiccup     |         | true     |
@@ -37,7 +37,7 @@ title: Advanced Queries
     - 1. Get all tasks
       created_at:: 1609232063516
       last_modified_at:: 1609245970090
-      
+
       #+BEGIN_SRC clojure
       #+BEGIN_QUERY
       {:title "All tasks"
@@ -53,13 +53,13 @@ title: Advanced Queries
       {:title "All todos with tag project"
        :query [:find (pull ?b [*])
              :where
-             [?p :page/name "project"]
+             [?p :block/name "project"]
              [?b :block/ref-pages ?p]]}
       #+END_QUERY
       #+END_SRC
     - 3. Blocks in 7ds with a page reference of datalog
       #+BEGIN_SRC clojure
-      
+
       #+BEGIN_QUERY
       {:title "Blocks in 7ds with a page reference of datalog"
        :query [:find (pull ?b [*])
@@ -70,7 +70,7 @@ title: Advanced Queries
              [(>= ?d ?start)]
              [(<= ?d ?today)]
              [?b :block/ref-pages ?rp]
-             [?rp :page/name ?tag]]
+             [?rp :block/name ?tag]]
        :inputs [:7d-before :today "datalog"]}
       #+END_QUERY
       #+END_SRC
@@ -90,7 +90,7 @@ title: Advanced Queries
       {:title "All page tags"
       :query [:find ?tag-name
             :where
-            [?tag :page/name ?tag-name]]
+            [?tag :block/name ?tag-name]]
       :view (fn [tags]
             [:div
              (for [tag (flatten tags)]
@@ -105,9 +105,9 @@ title: Advanced Queries
        :query [:find ?name
              :in $ ?tag
              :where
-             [?t :page/name ?tag]
+             [?t :block/name ?tag]
              [?p :page/tags ?t]
-             [?p :page/name ?name]]
+             [?p :block/name ?name]]
        :inputs ["programming"]
        :view (fn [result]
              [:div.flex.flex-col
@@ -117,26 +117,26 @@ title: Advanced Queries
       #+END_SRC
     - 7. Get all the blocks with the property "type" and the value "programming_lang"
       #+BEGIN_SRC clojure
-      
+
       #+BEGIN_QUERY
       {:title [:h2 "Programming languages list"]
        :query [:find (pull ?b [*])
              :where
              [?b :block/properties ?p]
-             [(get ?p "type") ?t]
+             [(get ?p :type) ?t]
              [(= "programming_lang" ?t)]]
        }
       #+END_QUERY
       #+END_SRC
     - 8. All todos tagged using current page
       #+BEGIN_SRC clojure
-      
+
       #+BEGIN_QUERY
       {:title "All todos tagged using current page"
        :query [:find (pull ?b [*])
              :in $ ?current-page
              :where
-             [?p :page/name ?current-page]
+             [?p :block/name ?current-page]
              [?b :block/marker ?marker]
              [?b :block/ref-pages ?p]
              [(= "TODO" ?marker)]]
@@ -145,7 +145,7 @@ title: Advanced Queries
       #+END_SRC
     - 9. Tasks made active in the last 2 weeks
       #+BEGIN_SRC clojure
-      
+
       #+BEGIN_QUERY
       {:title "🟢 ACTIVE"
         :query [:find (pull ?h [*])
@@ -167,7 +167,7 @@ title: Advanced Queries
       #+END_SRC
     - 10. Tasks referencing due dates in the past
       #+BEGIN_SRC clojure
-      
+
       #+BEGIN_QUERY
        {:title "⚠️ OVERDUE"
         :query [:find (pull ?h [*])
@@ -186,7 +186,7 @@ title: Advanced Queries
       #+END_SRC
     - 11. Tasks referencing due dates up to 10 days ahead
       #+BEGIN_SRC clojure
-      
+
       #+BEGIN_QUERY
           {:title "📅 NEXT"
         :query [:find (pull ?h [*])
@@ -205,7 +205,7 @@ title: Advanced Queries
       #+END_SRC
     - 12. Tasks from last week which are still outstanding (may slip soon!)
       #+BEGIN_SRC clojure
-      
+
       #+BEGIN_QUERY
          {:title "🟠 SLIPPING"
         :query [:find (pull ?h [*])
@@ -227,7 +227,7 @@ title: Advanced Queries
       #+END_SRC
     - 13. Tasks created more than 1 week ago, less old than 2 months but still outstanding
       #+BEGIN_SRC clojure
-      
+
       #+BEGIN_QUERY
       {:title "🔴 STALLED"
         :query [:find (pull ?h [*])
@@ -249,7 +249,7 @@ title: Advanced Queries
       #+END_QUERY
       #+END_SRC
     - 14. Next 7 days' deadline or schedule
-       ((60531c23-238e-4748-9b19-27088f9c3771)) 
+       ((60531c23-238e-4748-9b19-27088f9c3771))
       #+BEGIN_SRC clojure
       #+BEGIN_QUERY
       {:title "next 7 days' deadline or schedule"
