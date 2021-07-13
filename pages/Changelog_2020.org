@@ -1,37 +1,37 @@
 #+TITLE: Changelog 2020
 
-** [[Dec 29th, 2020]] 
+** [[Dec 29th, 2020]]
 :PROPERTIES:
 :created_at: 1609250283049
-:last_modified_at: 1609250283049
+:updated-at: 1609250283049
 :END:
 This is our last release for 2020,  it is a challenging year for everyone, stay safe and healthy!
 *Version 0.0.4.9*
-*** [[Announcement]] 
+*** [[Announcement]]
 :PROPERTIES:
 :created_at: 1609250309399
-:last_modified_at: 1609250719690
+:updated-at: 1609250719690
 :END:
 🥳 [[Local file storage]] is stable now! Many people have been using it for weeks and there's no need to worry about data loss anymore!
 *** [[Fixed issues]]
 :PROPERTIES:
 :created_at: 1609250757697
-:last_modified_at: 1609250757697
+:updated-at: 1609250757697
 :END:
 **** I will not attempt to list them all here, tons of issues are fixed, especially for both Github Sync and using on mobile.
 :PROPERTIES:
 :created_at: 1609250758098
-:last_modified_at: 1609251021197
+:updated-at: 1609251021197
 :END:
 *** [[Features]]
 :PROPERTIES:
 :created_at: 1609249850194
-:last_modified_at: 1609249850194
+:updated-at: 1609249850194
 :END:
 **** Simple [[Queries]] support #experiment
 :PROPERTIES:
 :created_at: 1609249966260
-:last_modified_at: 1609251607921
+:updated-at: 1609251607921
 :END:
 For example:
 {{query (and (todo now later done) [[tag1]])}}
@@ -39,31 +39,31 @@ For example:
 **** [[Block Timestamps]] support #experiment
 :PROPERTIES:
 :created_at: 1609251098164
-:last_modified_at: 1609251374853
+:updated-at: 1609251374853
 :END:
-Each block will have both a ~created_at~ property and a ~last_modified_at~ property. You can write some simple queries to use both properties.
-***** How to enable it? 
+Each block will have both a ~created_at~ property and a ~updated-at~ property. You can write some simple queries to use both properties.
+***** How to enable it?
 :PROPERTIES:
 :created_at: 1609251099027
-:last_modified_at: 1609251243271
+:updated-at: 1609251243271
 :END:
-Go to ~Settings~ and toggle this button: 
+Go to ~Settings~ and toggle this button:
 [[https://cdn.logseq.com/%2F5ff0a01d-47d4-487d-b346-4a43ded21ad02020_12_29_Screenshot%202020-12-29%2022-11-59%20%2B0800.png?Expires=4762851199&Signature=GMZt7WsfluDKWPeM1mNeg0ITna9S8ZCf4VYqKLKuVrrsYNHXggkMclB8af6hTaozDpNSBIxh-55d~edmfi3vquCKvXKPAccwkpLj2Uy-OIEy13h~vUzsWN0M59u17qnhgLWdfLxH9yOgasjoE8rv-oDNoI~TCl7Z6~aKRq~peGre2ikgJ6E6pPXTelwEW9NqnWKjho3R~aE9XcA3~aUSYjzTjxPG7z4SDVMrLm1ZQH~xqmoDEAe3TwHbSnrfrswElRMtYVaiGTancvSmRoxw-tsR6M7kFItwJmc8sGeiRPBG2lga9zP~2PH5Itws2TazQGNBqor8qWOhgdb5X4rF2A__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_12_29_Screenshot 2020-12-29 22-11-59 +0800.png]]
 **** [[term/alias][Page alias]] redirection support
 **** Fuzzy searching for both page title and block content
 :PROPERTIES:
 :created_at: 1609249946465
-:last_modified_at: 1609250515882
+:updated-at: 1609250515882
 :END:
 **** Login with Google
 :PROPERTIES:
 :created_at: 1609250028827
-:last_modified_at: 1609250028827
+:updated-at: 1609250028827
 :END:
 **** Toggle displaying the brackets (in the settings page)
 :PROPERTIES:
 :created_at: 1609250139351
-:last_modified_at: 1609250212163
+:updated-at: 1609250212163
 :END:
 ** [[Dec 6th, 2020]]
 *Version 0.0.4.8*
@@ -80,7 +80,7 @@ Go to ~Settings~ and toggle this button:
 *** [[Features]]
 :PROPERTIES:
 :created_at: 1609250411844
-:last_modified_at: 1609250585182
+:updated-at: 1609250585182
 :END:
 [[Local file storage]] *support*
 **** How to import notes from local directories?
@@ -200,11 +200,11 @@ Add French language support by [[Kramer]]
 **** Global css variables support! 🎉🎉🎉
 Thank you [[lachyc]]!
 *** [[Features]]
-**** 1. Add ~Deadline~ and ~Scheduled~ support! 
+**** 1. Add ~Deadline~ and ~Scheduled~ support!
 :PROPERTIES:
 :id: 60531c23-238e-4748-9b19-27088f9c3771
 :END:
-*How to use it?* 
+*How to use it?*
 1. Type ~/deadline~ or ~/scheduled~ in the block editor.
 2. Pick a date, time (optional), and a repeater (optional, see below).
 3. Click the ~Submit~ button.

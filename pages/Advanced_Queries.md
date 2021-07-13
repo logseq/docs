@@ -1,20 +1,16 @@
----
-title: Advanced Queries
----
-
 - The database that Logseq used is [[https://github.com/tonsky/datascript][Datascript]], which is an immutable in-memory database and [Datalog](https://en.wikipedia.org/wiki/Datalog) query engine in Clojure and ClojureScript.
 - Logseq's database schema:
   https://github.com/logseq/logseq/blob/master/src/main/frontend/db_schema.cljs
 - Please check _Learn Datalog Today_ [^1] and _Datomic query syntax_ [^2] first if you're not familiar with Datalog.
 - **Some tips**
   created_at:: 1609244703085
-  last_modified_at:: 1609244703085
+  updated-at:: 1609244703085
   #+BEGIN_TIP
   1. Page names are stored as lower case in the database.
   #+END_TIP
 - The query format is something like this:
   created_at:: 1609244764756
-  last_modified_at:: 1609246099894
+  updated-at:: 1609246099894
   #+BEGIN_EXAMPLE
   {:title  [:h2 "Your query title"]
    :query  [:find (pull ?b [*])
@@ -36,7 +32,7 @@ title: Advanced Queries
 - **Examples**
     - 1. Get all tasks
       created_at:: 1609232063516
-      last_modified_at:: 1609245970090
+      updated-at:: 1609245970090
 
       #+BEGIN_SRC clojure
       #+BEGIN_QUERY
