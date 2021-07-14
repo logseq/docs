@@ -1,7 +1,6 @@
 - [[Jul 14th, 2021]]
-  id:: 60eef6a9-ad06-4a3e-99eb-7b093336ae68
-  **Beta 0.2.4**
-  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.2.4
+  **Beta 0.2.5**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.2.5
 	- [[Thanks]]
 		- [[Devon Zuegel]]
 			- WYSIWYG headers + CSS cleanup
@@ -10,6 +9,8 @@
 		- [[Michael Schmidt-Korth]]
 			- Updates to keyboard shortcut wording
 	- [[Fixed issues]]
+		- Pages or even the whole graph can be deleted when re-index
+			- Introduced by the release `0.2.4` which was deleted to avoid more data loss
 		- Block reference gets lost on alt-dragged blocks after re-index
 		- Bring block timestamps back, you can enable it in the settings page
 			- It'll add both `created-at` and `updated-at` properties.
