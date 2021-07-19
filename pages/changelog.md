@@ -1,3 +1,60 @@
+- [[Jul 19th, 2021]]
+  id:: 60f57103-7fe8-4b83-b497-f3576672d30b
+  **Beta 0.2.6**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.2.6
+	- [[Demo]] on query tables
+	  #+BEGIN_TIP
+	  You can press `t w` to adjust the width so that it's easy to see the Gif as below.
+	  #+END_TIP
+		- ![2021-07-19 21.19.52.gif](../assets/2021-07-19_21.19.52_1626701017883_0.gif)
+	- [[Thanks]]
+		- [[Sebastian Bensusan]]
+			- [[Calculator]] supports negative numbers 🪄
+	- [[Fixed issues]]
+		- Can't drag the desktop app when scrolling down a bit
+		- Can't go back to global search after searching in a specific page
+		- Catch error when rendering image with wrong metadata
+		- Don't show properties in block references
+		- Don't show built-in properties in search results
+		- Autocomplete shortcut config
+		- Block timestamps in the code block
+	- [[Features]]
+		- [[Query/table/function]] ✨✨✨
+			- How to create a function below the query table? #card
+				- Firstly, you have a query like this: 
+				  query-table:: true
+				  query-properties:: [:block :author :publication-date :price :qty :updated-at]
+				  {{query (property type book)}} 
+				  Then, you can create functions (by trigger `/function`) as this query block's children.
+				  
+				  For example:
+					- How many books? `{{function (sum :qty)}}`
+						- Answer: {{function (sum :qty)}}
+					- What's the average price? `{{function (average :price)}}`
+						- Answer: {{function (average :price)}}
+					- How much does it cost to buy all of them? `{{function (sum (map (fn [x] (* (:price x) (:qty x))) result))}}`
+						- Answer: {{function (sum (map (fn [x] (* (:price x) (:qty x))) result))}}
+			- What features does it support?
+				-
+				  #+BEGIN_NOTE
+				  The property to be used in the function must be a keyword, a keyword has a `:` at the beginning.
+				  For example, `:price` is a keyword while `price` is not.
+				  #+END_NOTE
+				- Aggregations including sum/average/min/max/total
+					- `{{function (sum :property)}}`
+					- `{{function (average :property)}}`
+					- `{{function (min :property)}}`
+					- `{{function (max :property)}}`
+					- `{{function (total :property)}}`
+				- [[Clojure]] function!
+				  The function takes the query result and bind it to the symbol `result` for usage.
+					- `{{function (sum (map (fn [x] (* (:price x) (:qty x))) result))}}`
+	- [[Enhancement]]
+		- [[Queries/table]]
+			- Click to open a block in the right sidebar
+			- Human-readable block timestamps
+			- Add sorts by any property
+			- Add custom properties support
 - [[Jul 14th, 2021]]
   **Beta 0.2.5**
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.2.5
@@ -23,7 +80,7 @@
 		- Hide :collapsed property when editing
 		- Org mode image rendering
 	- [[Features]]
-		- Finally, we can render queries as tables! 🎉
+		- Finally, we can render queries as tables! 🎉 [[Queries/table]]
 			- {{query (property type book)}}
 			  query-table:: true
 			- {{query (page-property tags)}}
