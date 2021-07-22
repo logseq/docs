@@ -1,5 +1,13 @@
 - Logseq support most [[Markdown]] syntaxes, and includes some extended syntaxes.
 ### **Standard** syntax
+	- what's logseq? #card
+	  card-last-interval:: 4
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2021-07-26T14:29:00.920Z
+	  card-last-reviewed:: 2021-07-22T14:29:00.920Z
+	  card-last-score:: 5
+		- knowledge base
 	- `**Bold**`   -> **Bold**
 	- `_Italics_ ` -> _Italics_
 	- `~~Strikethrough~~` -> ~~Strikethrough~~

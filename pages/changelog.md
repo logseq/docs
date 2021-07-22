@@ -1,3 +1,28 @@
+- [[Jul 22nd, 2021]]
+  id:: 2397b650-2828-48f9-b51e-320565c847fb
+  **Beta 0.2.7**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.2.7
+	- [[Features]]
+		- **Cards**  🎉 🎉
+			- [[Demo]]
+				- ![2021-07-22 22.28.02.gif](../assets/2021-07-22_22.28.02_1626964258528_0.gif)
+				- You can use `/cards` to create specific collections instead of all of the cards
+					- ![2021-07-22 22.36.17.gif](../assets/2021-07-22_22.36.17_1626964656345_0.gif)
+			- {{embed [[Cards]]}}
+	- [[Thanks]]
+		- [[Peng Xiao]]
+			- Fix cursor state sometimes not cleared correctly
+		- [[Michael Schmidt-Korth]]
+			- Add additional date formats (Europe/India)
+	- [[Fixed issues]]
+		- Org mode title not parsed if file-level property block exist in file
+		- Deleted page shall not show up in search
+		- Query: sum supports float string
+		- Click outside doesn't clear selections
+		- Can't select Up using shortcut
+	- [[Enhancement]]
+		- Hide bullets when the block is empty (non-editing mode)
+		- Copy includes block references and embeds
 - [[Jul 19th, 2021]]
   id:: 60f57103-7fe8-4b83-b497-f3576672d30b
   **Beta 0.2.6**
@@ -19,12 +44,18 @@
 		- Autocomplete shortcut config
 		- Block timestamps in the code block
 	- [[Features]]
-		- [[Query/table/function]] ✨✨✨
+		- [[Query/table/function]]
 			- How to create a function below the query table? #card
-				- Firstly, you have a query like this: 
+			  card-last-interval:: 4
+			  card-repeats:: 1
+			  card-ease-factor:: 2.6
+			  card-next-schedule:: 2021-07-26T14:25:55.552Z
+			  card-last-reviewed:: 2021-07-22T14:25:55.553Z
+			  card-last-score:: 5
+				- Firstly, you have a query like this:
 				  query-table:: true
 				  query-properties:: [:block :author :publication-date :price :qty :updated-at]
-				  {{query (property type book)}} 
+				  {{query (property type book)}}
 				  Then, you can create functions (by trigger `/function`) as this query block's children.
 				  
 				  For example:
