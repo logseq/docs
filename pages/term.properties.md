@@ -83,3 +83,16 @@ click:: click me to edit
 		  title: Mathematics and Plausible Reasoning
 		  published: 2009
 		  ```
+- **Special Properties**
+	- There are special properties that control Logseq functionality (the number in brackets indicates how many values you may define):
+	- `tags` (N) get listed in their own section "Pages tagged with X" below a page.
+	- `template` (1) designates a page as a template.
+	- `template-including-parent` (1) (in previous versions `include-parent`) specifies whether the parent level content of the selected block should be included when using a template
+	- `collapsed` (1) specifies whether a block is collapsed.
+	- `alias` (N) define synonyms for a page.
+	- `id` (1) specifies an Id for org mode
+	- `title` (1) overrides the title of a page to be different from the file name
+	- `created-at` (1) and `updated-at` (in previous versions `last-modified-at`) (1) define the date/time stamps in [Unix time](https://en.wikipedia.org/wiki/Unix_time); block-level only
+	- `parent` (1) references the parent block (could be a page).
+	- `query-table` (1) will mark a query to be shown as the table view.
+	- `query-properties` (N) stores a user's custom properties to be shown for a query table.
