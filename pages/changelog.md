@@ -1,3 +1,15 @@
+- [[Jul 23rd, 2021]]
+  id:: 48e76d46-3419-455c-84a0-349b80e369b8
+  **Beta 0.2.8**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.2.8
+	- [[Fixed issues]]
+		- Query table properties are not displayed
+		- Can't edit code block
+		- App frozen when export a block to either Markdown or OPML
+		- Wrong blocks order in presentation mode
+		- App crashes for some pages due to wrong parsing
+	- [[Enhancement]]
+		- Don't hide both the first and the last empty bullets
 - [[Jul 22nd, 2021]]
   id:: 2397b650-2828-48f9-b51e-320565c847fb
   **Beta 0.2.7**
