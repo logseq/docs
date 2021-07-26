@@ -1,3 +1,28 @@
+- [[Jul 26th, 2021]]
+  id:: 4d0c3c40-a21d-41f2-8c89-091aec2a416a
+  **Beta 0.2.9**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.2.9
+	- [[Features]]
+		- Block level html export
+			- You can right click the left bullet, click `Export` and select `HTML`
+				- ![CleanShot 2021-07-26 at 23.20.16.png](../assets/CleanShot_202021-07-26_20at_2023.20.16_1627312832871_0.png){:height 522, :width 401}
+	- [[Thanks]]
+		- [[Sebastian Bensusan]]
+			- fix(calc): don't show errors for empty lines
+		- [[ruffnex]]
+			- add mhchem plugin #latex
+	- [[Fixed issues]]
+		- App crashing when auto-complete some page references
+		- Display an error when the file or graph directory was deleted
+		- `.recycle` pages should be ignored
+		- Copy && paste not working well on Windows
+		- Org-mode id links
+	- [[Enhancement]]
+		- Long pages should be loading faster
+		- Query results support both nested children and breadcrumbs
+		- File watcher is more efficient, it also reduces CPU usage
+		- Both `^^` and `__` can be autopaired when there's selected text
+		- Jump to the end of `[[page reference]]` if chose to not show double brackets
 - [[Jul 23rd, 2021]]
   id:: 48e76d46-3419-455c-84a0-349b80e369b8
   **Beta 0.2.8**
