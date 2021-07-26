@@ -1,7 +1,7 @@
 - [[Jul 26th, 2021]]
   id:: 4d0c3c40-a21d-41f2-8c89-091aec2a416a
-  **Beta 0.2.9**
-  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.2.9
+  **Beta 0.2.10**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.2.10
 	- [[Features]]
 		- Block level html export
 			- You can right click the left bullet, click `Export` and select `HTML`
