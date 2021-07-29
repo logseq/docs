@@ -25,8 +25,8 @@
 	  ![zotero-add-all.gif](../assets/zotero-add-all_1627558378327_0.gif)
 	- If you add same item twice, Logseq will append data to same page instead of overwrite existing meta data. If you know what you're doing, delete that page first and re-import.
 - Other Zotero settings:
-	- Whether to include children items of attachment links and note
-	- You can customize your Zotero imported page's prefix, default is `@`, that is all Zotero paged added will begin with `@` and easy for search. If you'd like some hierarchy, for example you can set it to a namespace prefix like `zotero/`
+	- Whether to include children items of attachment links and notes
+	- You can customize your Zotero imported page's prefix, default is `@`, that is all Zotero pages added will begin with `@` for easy of searching. If you'd like some hierarchy, for example you can set it to a namespace prefix like `zotero/`
 - [[Thanks]]
 	- This plugin took the idea and inspiration from the great [zotero-roam](https://alix-lahuec.gitbook.io/zotero-roam/) made by [[@Alix Lahuec ]]. Special thanks to [[@Alix Lahuec]] for providing all kinds of ideas and useful suggestions!
 	-
