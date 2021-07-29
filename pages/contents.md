@@ -25,6 +25,7 @@
 	- [[Draw]]
 	- [[Slide]]
 	- [[Custom theme]]
+	- [[Zotero]]
 - [[Logseq School]]
 	- {{embed [[Plugins 101]] }}
 - [[Document syntax]]
