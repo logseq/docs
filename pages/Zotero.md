@@ -1,10 +1,12 @@
 - [Zotero](https://www.zotero.org/) is a free, easy-to-use tool to help you collect, organize, cite, and share research. Logseq has built in Zotero integration that can help you to import your Zotero items as Logseq pages seamlessly.
-- Currently it only works for users who have enabled Zotero [Syncing](https://www.zotero.org/support/sync)
-- If you don't have Zotero Syncing enabled, you might want to checkout [this](https://github.com/aljedaxi/logseq-zotero/) third-party plugin. Or [zotero-mdnotes](https://argentinaos.com/zotero-mdnotes/), a Zotero plugin to export item metadata and notes as markdown files.
+	- Currently it only works for users who have enabled Zotero [Syncing](https://www.zotero.org/support/sync)
+	- If you don't have Zotero Syncing enabled, you might want to checkout [this](https://github.com/aljedaxi/logseq-zotero/) third-party plugin. Or [zotero-mdnotes](https://argentinaos.com/zotero-mdnotes/), a Zotero plugin to export item metadata and notes as markdown files.
 - Prerequisites:
 	- Create a Zotero account and enable [Syncing](https://www.zotero.org/support/sync)
 	- Create a new API key [here](https://www.zotero.org/settings/keys), also note down your userID from that same page
 	  id:: 61024cd6-1951-47cc-8050-25f68960d729
+	  At least `Allow library access` permission is required
+	  If you want to include notes, make sure `Allow notes access` permission is selected
 	- Optional: 
 	  If you've got [BETTER BIBTEX FOR ZOTERO](https://retorque.re/zotero-better-bibtex/installation) installed, Logseq will use citation key as your page name, otherwise, it'll just use default item title as your page name.
 	  Make sure to check [here](https://alix-lahuec.gitbook.io/zotero-roam/getting-started/prereqs) and follow the setup checklist to enable autoPinDelay and pin your existing citekeys.
