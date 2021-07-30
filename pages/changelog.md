@@ -1,3 +1,45 @@
+- [[Jul 30th, 2021]]
+  id:: f65e2408-643d-43af-9320-57f1076847d5
+  **Beta 0.3.0**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.3.0
+	- [[Features]]
+		- [[Zotero]] integration! 🎉 🎉 #Academic
+			- By [[Weihua]] and [[Junyu]]
+			- {{embed ((6103e488-22d4-4751-b27a-69b278067c26))}}
+		- Support `==` for highlight in Markdown
+	- [[Thanks]]
+		- [[Peng Xiao]]
+			- `/Embed Twitter` support!
+				- E.g. `{{tweet https://twitter.com/logseq/status/1420968129987969026}} ` will displayed as:
+					- {{tweet https://twitter.com/logseq/status/1420968129987969026}}
+		- [[Julio Navarro]]
+			- fix: after renaming a page, going back should not goto the original page
+	- [[Fixed issues]]
+		- Broken block references after refreshing
+		- Page references not working as linked ref in page's properties
+		- Backspace will remove the whole block when block timestamps was enabled
+		- Can't load files named with `x.y.z.md` as namespace pages
+			- This bug can result in page corruption! You're encouraged to upgrade to the latest release or use any releases before `0.2.8`
+		- Some javascript files can't be loaded for subpath publishing
+		- Block reference count doesn't work properly when zoom-in
+		- Can't copy && paste multiple blocks
+		- URL in page metadata should not be treated as page reference
+		- Alias can't be redirected after deleting the page
+		- Images support `webp` format
+		- Right Click 'Make a Card' on Windows App does not work
+		- Home page blank with some custom date formats
+		- Block references no longer show the references element
+		- Redirect to the new page when page property title changed
+	- [[Enhancement]]
+		- Group blocks query result by same path
+		- [[Query/table]] persists sort options (sort-by, desc/asc)
+		- "Copy as" support both `remove [[]]` and `remove emphasis`
+		- Don't parse quoted string as page references for properties
+		- Property value wrapped by `""` will not be treated as page references
+		- Add a `:breadcrumb-show?` option for custom queries to hide breadcrumbs. #option
+			- The value should be `false`
+	- [[Deprecated]]
+		- Block timestamps was deleted to avoid countless rare cases
 - [[Jul 26th, 2021]]
   id:: 4d0c3c40-a21d-41f2-8c89-091aec2a416a
   **Beta 0.2.10**
@@ -40,7 +82,8 @@
   **Beta 0.2.7**
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.2.7
 	- [[Features]]
-		- **Cards**  🎉 🎉
+		- **Cards**  🎉 🎉  #Academic
+			- By [[Zhiyuan]]
 			- [[Demo]]
 				- ![2021-07-22 22.28.02.gif](../assets/2021-07-22_22.28.02_1626964258528_0.gif)
 				- You can use `/cards` to create specific collections instead of all of the cards

@@ -20,6 +20,7 @@
 	- The same for group usage, your just put your group id, api key and choose group.
 - Usage:
 	- You can either type `/Zotero` command, search individual zotero item (title, author, text, anything), select and add as a Logseq page.
+	  id:: 6103e488-22d4-4751-b27a-69b278067c26
 	  ![zotero-search.gif](../assets/zotero-search_1627554650388_0.gif)
 	- Or if you wish to import and create all pages at once, goto `Zotero settings`, and click `Add all` to import all Zotero items and add them as Logseq pages
 	  ![zotero-add-all.gif](../assets/zotero-add-all_1627558378327_0.gif)
