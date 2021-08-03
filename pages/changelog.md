@@ -2,6 +2,10 @@
   id:: 5522d7d5-2c1a-4d97-9c0d-5d4a74d29bd4
   **Beta 0.3.1**
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.3.1
+	- The existing backend code is open sourced on GitHub, it's mostly for people who'd like to host the GitHub integration themselves.
+	  collapsed:: true
+	  https://github.com/logseq/deprecated-github-backend
+		- Notice that we have no plan to open source the future backend for both data safety and business considerations.
 	- [[Configuration]]
 		- `default-templates` support named template for new journal pages
 			- For example, you can create a template named `my-template`, and change the `default-template` part in`config.edn` to:
