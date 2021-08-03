@@ -1,3 +1,44 @@
+- [[Aug 3rd, 2021]]
+  id:: 5522d7d5-2c1a-4d97-9c0d-5d4a74d29bd4
+  **Beta 0.3.1**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.3.1
+	- [[Configuration]]
+		- `default-templates` support named template for new journal pages
+			- For example, you can create a template named `my-template`, and change the `default-template` part in`config.edn` to:
+			  collapsed:: true
+			  `:default-templates {:journals "my-template"}`
+			- [[Breaking Changes]]
+				-
+				  #+BEGIN_WARNING
+				  The jounnals `default-templates` only supports the template name now. 
+				  #+END_WARNING
+		- `:ui/show-empty-bullets?`
+		  collapsed:: true
+			- If you want to show the empty bullets in the default mode (instead of document mode), add this to `config.edn`:
+			  `:ui/show-empty-bullets? true`
+	- [[Thanks]]
+		- [[Michael Schmidt-Korth]]
+			- Incredible unofficial Logseq documentation https://mschmidtkorth.github.io/logseq-msk-docs/
+			  collapsed:: true
+				- ![CleanShot 2021-08-03 at 22.29.27.png](../assets/CleanShot_202021-08-03_20at_2022.29.27_1628000972724_0.png)
+	- [[Fixed issues]]
+		- Block gets removed on new line when preview (only for the new generated journal page)
+		- Page blank when clicking page name in the query result
+		- Add page title property when renaming a page that include Windows reserved chars
+		- [[Zotero]]
+			- Remove key from page title
+			- PDF attachment link not working
+		- [[Query/table]]
+			- Click shouldn't open the page in the right sidebar (shift need to be pressed too)
+		- [[Parser]]
+			- Some files might have wrong indentation at the beginning
+		- [[Publishing]]
+			- Static export fails silently if asset is missing
+	- [[Enhancement]]
+		- Performance should be much better when editing long pages
+		- Jump to alias's source page when searching
+		- [[Zotero]]
+			- Separate abstract note into another block
 - [[Jul 30th, 2021]]
   id:: f65e2408-643d-43af-9320-57f1076847d5
   **Beta 0.3.0**
