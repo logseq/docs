@@ -1,3 +1,33 @@
+- [[Aug 6th, 2021]]
+  id:: f3b8092e-ab5c-42c9-883c-81ae055b051d
+  **Beta 0.3.2**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.3.2
+	- [[Features]]
+		- 📚 [[PDF highlights]]
+			- Brought to you by [[Charlie]]!
+			- Demo GIF
+				- ![2021-08-06 21.46.20.gif](../assets/2021-08-06_21.46.20_1628257857150_0.gif)
+			- {{embed [[PDF highlights]] }}
+	- [[Thanks]]
+		- [gombiuda](https://github.com/gombiuda)
+			- Hide specific block properties [[Configuration]]
+				- **How to use it?**
+					- Add something like `:block-hidden-properties #{:created-at :updated-at}` to your config.edn.
+		- [[Peng Xiao]]
+			- Hide the bullet when the block content is hr (default mode)
+	- [[Fixed issues]]
+		- Templates nesting not working
+		- Date format crashes when reindex
+		- Markdown produced even when set to org-mode
+		- Don't treat hex colors as pages
+		- Alias parsing
+		- Markdown image link
+		- Daily Notes Loading & Scrolling Issue with New Blank Daily Note
+		- block ref style issue
+	- [[Enhancement]]
+		- [[Zotero]]
+			- Add always use citekey as page title option
+			- Allow extra tags for imported pages
 - [[Aug 3rd, 2021]]
   id:: 5522d7d5-2c1a-4d97-9c0d-5d4a74d29bd4
   **Beta 0.3.1**

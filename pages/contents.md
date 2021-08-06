@@ -22,10 +22,12 @@
 	- [Page alias]([[term/alias]])
 	- [Block properties]([[term/properties]])
 	- [[Publishing (Desktop App Only)]]
+	- [[PDF highlights]]
+	- SRS [[Cards]]
 	- [[Draw]]
 	- [[Slide]]
 	- [[Custom theme]]
-	- [[Zotero]]
+	- [[Zotero]] integration
 - [[Logseq School]]
 	- {{embed [[Plugins 101]] }}
 - [[Document syntax]]
