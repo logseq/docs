@@ -1,5 +1,5 @@
 * *Is logseq free? Do you plan to charge for the Logseq app (desktop/web/mobile)?*
-** *TLDR: Logseq is free but Logseq Pro is not.*
+** *TLDR: Logseq is free but Logseq Pro (coming soon) is not.*
 ** *What features does Logseq Pro have?*
 *** Syncing with our own storage
 *** Real-time collaboration
@@ -8,7 +8,7 @@
 *** The reason is that we believe tools should be built in a [[https://www.inkandswitch.com/local-first.html][local-first]] way to protect privacy and be performant, which means we're trying to do most things locally, and only use the servers when we have to. But the truth is that almost all the features (except sync, collaboration) can be built without the servers. If all the local features in the future are free, it'll be very hard for us to keep developing the best features.
 ** We don't want to lock the new features in ~Logseq Pro~. Each user has a three-month trial period with all the features in ~Logseq Pro~.
 * *Do you commit to open source the Logseq app forever?*
-** Yes. The whole app including those features in ~Logseq PRO~ will be open-sourced forever. The mobile app might start with a simple API for quick capture but eventually, it'll have local files support.
+** Yes. The whole app including those features in ~Logseq Pro~ will be open-sourced forever. The mobile app might start with a simple API for quick capture but eventually, it'll have local files support.
 ** You're encouraged to build the latest app from the source code and use it for your own daily job, let us know if you find any issues or have feedback. Please consider sponsoring our contributors [[https://opencollective.com/logseq][here]] if Logseq does make your life easier. Our contributors are helping us with everything, including the community, documentation, design, plugins and bug fixes.
 *** For Open Collective donations, you can see all the expenses [[https://opencollective.com/logseq/expenses][here]].
 * *Are you going to open-source the server-side services behind Logseq Pro?*
