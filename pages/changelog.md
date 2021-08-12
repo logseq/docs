@@ -1,3 +1,47 @@
+- [[Aug 11th, 2021]]
+  id:: 5473b972-e358-46eb-ae13-fa2ae1dd41bb
+	- [[Thanks]]
+		- [[ingepettersen]]
+			- Add Norwegian (bokmål) translation
+		- [[Michael Schmidt-Korth]]
+			- CSS-changeable max-width in wide mode
+		- [[Peng Xiao]]
+			- Fixed several UI issues
+	- [[Fixed issues]]
+		- Serious bug in naming the journal md files
+		- Page auto-complete search can clear the editing block
+		- Inconsistent timestamps on pages
+		- Failed to drag or paste images
+		- Page blank with invalid block ids
+		- PDF links can't be opened
+		- Can't jump to highlights when enlarging the pdf viewer
+		- `<Center` command
+		  collapsed:: true
+			-
+			  #+BEGIN_CENTER
+			  Center text
+			  #+END_CENTER
+		- Widen mode width is too large
+		- Blank white screen after updating to 0.3.2
+		- Resize image
+		- Simple queries not working in config.edn
+		- Rename page case only
+	- [[Enhancement]]
+		- Copy selected blocks as text/HTML/OPML
+			- ![CleanShot 2021-08-12 at 20.35.13.png](../assets/CleanShot_202021-08-12_20at_2020.35.13_1628771729434_0.png)
+		- Add spellcheck toggle in Settings/editor
+		- [[PDF highlights]] (works only on the desktop app at the moment)
+			- Linked references for highlights
+				- ![2021-08-12 20.38.29.gif](../assets/2021-08-12_20.38.29_1628771939188_0.gif)
+			- Direct Zotero(including zotfile) attachments support! No need to copy the PDFs into Logseq
+				- ![2021-08-12 20.37.27.gif](../assets/2021-08-12_20.37.27_1628771876729_0.gif)
+			- Support external PDFs outside `/assets`
+			- Support external PDFs with http links
+				- For example, `![PDF name](http://www.africau.edu/images/default/sample.pdf)`
+				- ![2021-08-12 20.41.20.gif](../assets/2021-08-12_20.41.20_1628772138272_0.gif)
+		- A `+` button at the end of the page to quick insert a block
+		- Settings options are separated into groups
+			- ![CleanShot 2021-08-12 at 20.42.41.png](../assets/CleanShot_202021-08-12_20at_2020.42.41_1628772170222_0.png)
 - [[Aug 6th, 2021]]
   id:: f3b8092e-ab5c-42c9-883c-81ae055b051d
   **Beta 0.3.2**
