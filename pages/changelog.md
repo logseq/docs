@@ -20,6 +20,7 @@
 		- Markdown links without extension does not work
 	- [[Enhancement]]
 		- Parsing speed up by leveraging web workers. Adding or reindexing large graph is now much faster!
+		- Ability to edit SRS cards during the review
 		- Add disable spellcheck option setting for desktop app.
 		- Make local pdf asset file as relative path in pdf hls annotation file
 		- Add [[Zotero]] `Linked Attachment Base Directory` setting for users with Zotfile workflow and using relative attachment links
