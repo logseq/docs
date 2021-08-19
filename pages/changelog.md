@@ -1,5 +1,36 @@
+- [[Aug 19th, 2021]]
+  **Beta 0.3.4**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.3.4
+	- [[Thanks]]
+		- [[Peng Xiao]]
+			- Several UI issues
+			- Make new block button more easily clickable
+		- [[Michael Schmidt-Korth]]
+			- Improve UI and make button & toggle interactivity on hover
+			- UI fix for setting windows
+		- [[Tiago Devezas]]
+			- Add Portuguese translation
+	- [[Fixed Issues]]
+		- Export textarea background for dark theme
+		- Zotero export format issues
+		- Several pdf UX issues
+		- Disabling journals in setting not working
+		- Fail to load when refreshing with invalid block refs
+		- Block id loss for references by file altering
+		- Markdown links without extension does not work
+	- [[Enhancement]]
+		- Parsing speed up by leveraging web workers. Adding or reindexing large graph is now much faster!
+		- Add disable spellcheck option setting for desktop app.
+		- Make local pdf asset file as relative path in pdf hls annotation file
+		- Add [[Zotero]] `Linked Attachment Base Directory` setting for users with Zotfile workflow and using relative attachment links
+		- Improved `open` button to open [[Zotero]] attachment file using relative link instead of absolute link. This needs user to setup `Zotero data directory` for imported attachment or `Linked Attachment Base Directory` for linked attachment and re-import the [[Zotero]] item.
+	- [[Features]]
+		- Support markdown url link format `[Link caption](<url>)`. Note in this format, url can contain white spaces without the need of encoding
+		- [[Zotero]] setting profile support. In a multi-device or multi-user scenario, user can add different [[Zotero]] setting profile for each without overriding existing [[Zotero]] settings.
 - [[Aug 11th, 2021]]
   id:: 5473b972-e358-46eb-ae13-fa2ae1dd41bb
+  **Beta 0.3.3**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.3.3
 	- [[Thanks]]
 		- [[ingepettersen]]
 			- Add Norwegian (bokmål) translation
