@@ -4,6 +4,8 @@
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.3.6
 	- [[Features]]
 		- Page version history support, your notes are much safer now!
+			-
+			  <div style="position: relative; padding-bottom: 99.52830188679246%; height: 0;"><iframe src="https://www.loom.com/embed/62fe1f6026ce4966bc88b3f3663e1649" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 			- Automatic backup with Git
 				- You can disable the auto git commit on the settings page
 				- Type `c` to commit with your custom message
