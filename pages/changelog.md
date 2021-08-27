@@ -1,3 +1,59 @@
+- [[Aug 27th, 2021]]
+  id:: fd6a5fdc-3e47-4399-aaeb-6297be9f2285
+  **Beta 0.3.6**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.3.6
+	- [[Features]]
+		- Page version history support, your notes are much safer now!
+			- Automatic backup with Git
+				- You can disable the auto git commit on the settings page
+				- Type `c` to commit with your custom message
+			- Ability to run any raw Git commands like `git push`
+				- The shortcut is `Cmd+!` or `Alt+!`
+		- Replace block reference with either text or block embed
+		- `Cmd+c Cmd+c` to clear the right sidebar
+		- `Alt+shift+j` to open today in sidebar
+		- `g h` to go to home
+	- [[Thanks]]
+		- [[llcc]]
+			- Drawers support
+				- Document: https://orgmode.org/manual/Drawers.html
+				- ![130644716-e60cd222-e506-4087-a431-0312fcaa59d9-1.gif](../assets/130644716-e60cd222-e506-4087-a431-0312fcaa59d9-1_1630062791302_0.gif)
+			- Remove extra line between title and body
+			- Remove extra line when deadline or scheduled added
+		- [[AlexRoar]]
+			- Graph antialiasing and labels dark style
+		- [[Peng Xiao]]
+			- [[Codemirror]] add `protobuf` mode
+		- [[raphaelporsche]]
+			- Remove extra whitespace in src-block-command
+	- [[Fixed issues]]
+		- File changes from the disk are not refreshed immediately in logseq
+		  id:: 6128c366-714f-4be9-90b5-e959b35c136f
+		- Avoid false alert of "the file has been modified from the disk..."
+		- Cards preview crash
+		- Advanced query went error after editing with block properties
+		- Block being referenced has no indication of it being a block ref
+		- /scheduled doesn't work well if the content has extra spaces
+		- [[Parser]]
+			- Fix markdown link label
+				- ![CleanShot 2021-08-27 at 18.52.03.png](../assets/CleanShot_202021-08-27_20at_2018.52.03_1630061543729_0.png)
+			- Fix org mode `:tag:` issue
+		- [[PDF]]
+			- Incorrect url of pdf asset
+		- [[Zotero]]
+			- Imported url attachment open link
+	- [[Enhancement]]
+		- Add breadcrumbs for srs cards
+			- ![CleanShot 2021-08-27 at 18.57.58.png](../assets/CleanShot_202021-08-27_20at_2018.57.58_1630061886121_0.png)
+		- Persistent "Copy As" options
+		- Display a warning for the demo graph
+- [[Aug 20th, 2021]]
+  **Beta 0.3.5**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.3.5
+	- [[Fixed issues]]
+		- Fix app crashes on Mac
+	- [[Features]]
+		- Codemirror support both sparql and turtle modes
 - [[Aug 19th, 2021]]
   id:: 611e698b-c30b-4b51-be56-703524d963a6
   **Beta 0.3.4**

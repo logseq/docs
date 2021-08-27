@@ -3,11 +3,11 @@
 		- For example, this block is a card:
 			- What does "Logseq" mean? #card #logseq
 			  card-last-interval:: 4
-			  card-repeats:: 1
-			  card-ease-factor:: 2.6
-			  card-next-schedule:: 2021-07-26T14:29:07.095Z
-			  card-last-reviewed:: 2021-07-22T14:29:07.096Z
-			  card-last-score:: 5
+			  card-repeats:: 2
+			  card-ease-factor:: 2.46
+			  card-next-schedule:: 2021-08-31T10:57:12.044Z
+			  card-last-reviewed:: 2021-08-27T10:57:12.045Z
+			  card-last-score:: 3
 				- You can read it as "Log sequence" or "Logical sequence" (thank you [[Ed]]).
 			- If you right click the bullet and select "Preview Card", you'll see something like this:
 				- ![CleanShot 2021-07-22 at 21.46.52.png](../assets/CleanShot_202021-07-22_20at_2021.46.52_1626961624975_0.png)

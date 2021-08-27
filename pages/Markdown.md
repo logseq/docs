@@ -2,11 +2,11 @@
 ### **Standard** syntax
 	- what's logseq? #card
 	  card-last-interval:: 4
-	  card-repeats:: 1
-	  card-ease-factor:: 2.6
-	  card-next-schedule:: 2021-07-26T14:29:00.920Z
-	  card-last-reviewed:: 2021-07-22T14:29:00.920Z
-	  card-last-score:: 5
+	  card-repeats:: 2
+	  card-ease-factor:: 2.46
+	  card-next-schedule:: 2021-08-31T10:57:21.972Z
+	  card-last-reviewed:: 2021-08-27T10:57:21.973Z
+	  card-last-score:: 3
 		- knowledge base
 	- `**Bold**`   -> **Bold**
 	- `_Italics_ ` -> _Italics_
