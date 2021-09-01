@@ -1,3 +1,35 @@
+- [[Sep 1st, 2021]]
+  **Beta 0.3.7**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.3.7
+	- [[Features]]
+		- `cmd(ctrl)+shift+p` for command palette
+		  ![command-palette-demo.gif](../assets/command-palette-demo_1630478135142_0.gif)
+		- Better workflow to resolve "The file has been modified on your local disk" alert.
+		  When Logseq detects filed modified on your disk and diverged from your actual Logseq page content, it'll prompt you to choose which one would you like to keep.
+		  ![diff-demo.gif](../assets/diff-demo_1630479484172_0.gif)
+		- Better task management & timetracking with logbook [[Clocking]] support for both org-mode and markdown [[Thanks]] to [[llcc]]
+			- Automatic clock in when you switch task status to [[NOW]] or [[DOING]]
+			- Automatic clock out when tasked is marked as [[DONE]] or [[LATER]]
+			- Minimal interval for clocking is one minute
+			- ![image.png](../assets/image_1630480711363_0.png)
+			- DONE demo task 1
+			  :LOGBOOK:
+			  CLOCK: [2021-09-01 Wed 15:15]--[2021-09-01 Wed 15:15] =>  00:00
+			  CLOCK: [2021-09-01 Wed 15:16]--[2021-09-01 Wed 15:17] =>  00:01
+			  CLOCK: [2021-09-01 Wed 15:35]--[2021-09-01 Wed 15:36] =>  00:01
+			  :END:
+		- [[Zotero]] adds overwrite mode which will **delete** and recreate existing Zotero page instead of append duplicate item to same page. Do **backup** first! Make sure it's OK to delete and recreate the page!
+	- [[Enhancement]]
+		- Drawer logbook display & ui, hide logbook by default
+		- Better time tracking with logbook history
+		- Display loading when invoking commands like git push
+		- Display orphan pages by default
+	- [[Fixed Issues]]
+		- Tag with brackets but without spaces creates an extra page
+		- Base64 image link not displayed
+		- [[Zotero]] page with attachment filename with comma caused blank screen
+		- Up/down key jump cursor incorrectly from sidebar to main panel
+		- Setting panel not closed properly and reopen after other commands
 - [[Aug 27th, 2021]]
   id:: fd6a5fdc-3e47-4399-aaeb-6297be9f2285
   **Beta 0.3.6**
