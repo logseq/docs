@@ -4,6 +4,7 @@
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.3.8
 	- [[Features]]
 		- Page history support reverting back
+			- ![CleanShot 2021-09-11 at 22.33.41.png](../assets/CleanShot_202021-09-11_20at_2022.33.41_1631370830993_0.png)
 	- [[Thanks]]
 		- [[llcc]]
 			- more consistent with orgmode style
