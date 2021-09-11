@@ -1,3 +1,49 @@
+- [[Sep 11th, 2021]]
+  id:: cd5be27c-e2d6-4145-8c06-ed6ace8171df
+  **Beta 0.3.8**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.3.8
+	- [[Features]]
+		- Page history support reverting back
+	- [[Thanks]]
+		- [[llcc]]
+			- more consistent with orgmode style
+			- support recording in repeated block // cleanup unused namespaces
+			- remove empty properties drawer
+			- fix(clock): duplicate clock-in log twice
+			- fix(timestamp): remove old SCHEDULED/DEADLINE timestamp
+			- fix: org-styled link embedded-page rendering
+			- fix: src block with header arguments
+			- enhance: jump out of the ending curly brackets when embedding page or block
+		- [[Sebastian Bensusan]]
+			- calc: understand percentages
+				-
+				  ```calc
+				  100 * 20%
+				  ```
+		- [[Jiang Hailong]]
+			- Linked reference is not refresh after file altering
+		- [[Tiago Devezas]]
+			- Translated both shortcuts and settings to pt-PT
+		- [[DarshanSudhakar]]
+			- Fixing typo  for the tooltip 'Block reference'
+	- [[Fixed issues]]
+		- dragging blocks to update notes does not synchronize updates to the notes file in real time
+		- disable cut selections for blocks in the query result
+		- data-refs / data-refs-self regression
+		- local asset image can't be rendered with web nfs
+		- wrong signature for Mac M1
+		- git config core.safecrlf false on windows
+		- add ignore-files to avoid repeated notifications
+		- spent hours for logbook
+		- display logbook for scheduled tasks
+		- disable page/block auto-complete once the cursor went outside
+		- commands panel aren't accessible sometimes
+		- failed to remove invalid .git file
+		- don't add new space when embedding a page or a block
+		- click the edit icon should open the block which has the embeded block or page
+	- [[Enhancement]]
+		- detect file changes when starting the desktop app
+		- add alerts before both refresh and re-index
 - [[Sep 1st, 2021]]
   **Beta 0.3.7**
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.3.7
