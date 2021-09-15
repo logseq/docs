@@ -1,3 +1,37 @@
+- [[Sep 15th, 2021]]
+  id:: c66501ed-6d79-4a12-83d2-040da508697b
+  **Beta 0.3.9**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.3.9
+	- [[Features]]
+		- [[Plugins]] Marketplace for testing!
+			-
+			  <div style="position: relative; padding-bottom: 80.35714285714286%; height: 0;"><iframe src="https://www.loom.com/embed/995d6755b29c48c6b610646736aa5049" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+			-
+			- Notice it's only enabled in developer mode.
+			- ![CleanShot 2021-09-15 at 22.36.18.png](../assets/CleanShot_202021-09-15_20at_2022.36.18_1631716586756_0.png)
+		- [[Youtube timestamp]] support
+		- [[Queries]] add `namespace` support
+			- {{query (namespace [[term]])}}
+	- [[Thanks]]
+		- [[Gustavo Santos]]
+			- Set aria-checked to "true" if toggle is on
+	- [[Debugging]]
+		- Add instruments for changes that can't be saved to disk
+	- [[Fixed issues]]
+		- Code block not saved
+		- Commands palette not work
+		- Can't change the case of a page name
+		- Edit icon should open the current block instead of the embeded block
+		- Don't add new space when embedding a page or a block
+		- Latex export block command shortcut gives error because of missing space
+		- Git not included on Windows
+		- Link title not working when copy as html
+		- Don't overwrite today's journal page if synced file is empty or its content equals to the default journal template
+			- To avoid file overwritten.
+	- [[Enhancement]]
+		- Auto focus the input box after typing /link
+		- Remove the plus icon for switching graphs
+		- Add both Cmd+! and Cmd+Shift+p to configurable shortcuts
 - [[Sep 11th, 2021]]
   id:: cd5be27c-e2d6-4145-8c06-ed6ace8171df
   **Beta 0.3.8**
