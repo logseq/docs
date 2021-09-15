@@ -4,6 +4,7 @@
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.3.8
 	- [[Features]]
 		- Page history support reverting back
+		  collapsed:: true
 			-
 			  <div style="position: relative; padding-bottom: 109.11016949152543%; height: 0;"><iframe src="https://www.loom.com/embed/5c21a8a3470c4fd7bb9190a188d88b71" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 			-
