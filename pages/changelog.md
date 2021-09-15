@@ -10,6 +10,20 @@
 			- Notice it's only enabled in developer mode.
 			- ![CleanShot 2021-09-15 at 22.36.18.png](../assets/CleanShot_202021-09-15_20at_2022.36.18_1631716586756_0.png)
 		- [[Youtube timestamp]] support
+			- https://user-images.githubusercontent.com/9002575/133096658-67e3d6da-4444-4c06-b904-823e2206fd71.gif
+			- How to use it?
+			-
+			  1. Embed a youtube video using `/Embed Youtube Video`
+				- E.g. {{youtube https://www.youtube.com/watch?v=Ja78yU_xSkk&ab_channel=ShuOmi}}
+			-
+			  2. Watch the video and type `/Embed Youtube Timestamp`.
+				- e.g. You can click the timestamp to jump to the corresponding position in the video.
+					- Youtube timestamp:
+					  #+BEGIN_EXAMPLE
+					  {{youtube-timestamp 113}} Alias
+					  #+END_EXAMPLE
+					- {{youtube-timestamp 113}} Alias
+					- {{youtube-timestamp 173}} PDF highlights
 		- [[Queries]] add `namespace` support
 			- {{query (namespace [[term]])}}
 	- [[Thanks]]
