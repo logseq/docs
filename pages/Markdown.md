@@ -58,7 +58,7 @@ id:: 60a78b6b-a0ff-49fe-822f-87216fbf79ff
 				-
 				  [:code "template:: template-name"]
 				-
-				  [:code "including-parent:: false"]
+				  [:code "template-including-parent:: false"]
 				- {{embed ((60a790f8-d187-499a-b2e2-73bf137356dd))}}
 		- see also: [[Block properties]]
 	- [[term/page link with label]]
