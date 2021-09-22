@@ -23,6 +23,7 @@
 		- Clear text selection when blocks are selected
 		- Wrong GitHub release url for some plugins
 	- [[Enhancement]]
+		- Search panel
 		- Performance improvement for pages with a lot of linked references.
 		  A new option `:ref/linked-references-collapsed-threshold` was added to control when to collapse all the linked references. The default value is `50`.
 		- Save database cached files to a new directory called `logseq/bak` when logseq detect file modifications from the disk
