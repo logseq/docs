@@ -2,8 +2,8 @@
   **Beta 0.4.0**
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.4.0
 	- [[Features]]
-		- Fullscreen image
-			-
+		- Fullscreen image support
+			- ![CleanShot 2021-09-22 at 21.47.58.png](../assets/CleanShot_202021-09-22_20at_2021.47.58_1632318493346_0.png)
 	- [[Thanks]]
 		- [[Devon Zuegel]]
 			- A bunch of tiny tweaks like making capitalization consistent, making a dropdown slightly more readable, and refactoring the code that adds the Help links to the sidebar.
