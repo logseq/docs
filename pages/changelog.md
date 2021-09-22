@@ -8,7 +8,7 @@
 	- [[Fixed issues]]
 		-
 	- [[Enhancement]]
-		-
+		- add ``:ref/linked-references-collapsed-threshold option
 - [[Sep 15th, 2021]]
   id:: c66501ed-6d79-4a12-83d2-040da508697b
   **Beta 0.3.9**
