@@ -5,7 +5,10 @@
 		-
 	- [[Thanks]]
 		- [[Devon Zuegel]]
-			-
+			- A bunch of tiny tweaks like making capitalization consistent, making a dropdown slightly more readable, and refactoring the code that adds the Help links to the sidebar.
+			- Button styles for spaced repetition cards
+		- [[ranfdev]]
+			- Animate editor modals
 	- [[Fixed issues]]
 		-
 	- [[Enhancement]]
