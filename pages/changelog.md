@@ -9,6 +9,9 @@
 			- Button styles for spaced repetition cards
 		- [[ranfdev]]
 			- Animate editor modals
+		- [[Alex]]
+			- Document mod-c/copy current block ref
+		-
 	- [[Fixed issues]]
 		-
 	- [[Enhancement]]
