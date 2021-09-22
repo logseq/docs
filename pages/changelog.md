@@ -16,11 +16,14 @@
 			- Document mod-c/copy current block ref
 	- [[Fixed issues]]
 		- Can't parse encrypted graphs
+		- Open the last block when inserting template blocks
+		- Open the previous block when deleting selected blocks
 		-
 	- [[Enhancement]]
 		- Performance improvement for pages with a lot of linked references.
 		  A new option `:ref/linked-references-collapsed-threshold` was added to control when to collapse all the linked references. The default value is `50`.
 		- Save database cached files to a new directory called `logseq/bak` when logseq detect file modifications from the disk
+			- This fixed some issues when using Logseq with other editors like Emacs, Obsidian, etc.
 		- Disable git auto commit by default
 		  `Git` caused some trouble when using with some sync services like iCloud/OneDrive/Dropbox, if you encountered any issues related to Git, you're encouraged to disable the git auto commit on `Settings > Version Control`.
 			- ![CleanShot 2021-09-22 at 21.41.41.png](../assets/CleanShot_202021-09-22_20at_2021.41.41_1632318112920_0.png)
