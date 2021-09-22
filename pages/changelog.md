@@ -24,6 +24,7 @@
 					  #+END_EXAMPLE
 					- {{youtube-timestamp 113}} Alias
 					- {{youtube-timestamp 173}} PDF highlights
+					- {{youtube-timestamp 206}} SRS cards
 		- [[Queries]] add `namespace` support
 			- {{query (namespace [[term]])}}
 	- [[Thanks]]
