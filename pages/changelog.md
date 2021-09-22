@@ -2,7 +2,8 @@
   **Beta 0.4.0**
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.4.0
 	- [[Features]]
-		-
+		- Fullscreen image
+			-
 	- [[Thanks]]
 		- [[Devon Zuegel]]
 			- A bunch of tiny tweaks like making capitalization consistent, making a dropdown slightly more readable, and refactoring the code that adds the Help links to the sidebar.
@@ -30,6 +31,7 @@
 		  `Git` caused some trouble when using with some sync services like iCloud/OneDrive/Dropbox, if you encountered any issues related to Git, you're encouraged to disable the git auto commit on `Settings > Version Control`.
 			- ![CleanShot 2021-09-22 at 21.41.41.png](../assets/CleanShot_202021-09-22_20at_2021.41.41_1632318112920_0.png)
 		- Support hh:mm:ss youtube timestamp format
+		- Use `Ctrl(Cmd)+k` for searching and `Ctrl(Cmd)+l` for inserting a link
 		-
 - [[Sep 15th, 2021]]
   id:: c66501ed-6d79-4a12-83d2-040da508697b
