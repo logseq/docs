@@ -21,7 +21,7 @@
 		- Open the previous block when deleting selected blocks
 		- App crashes with segment fault
 		- Clear text selection when blocks are selected
-		-
+		- Wrong GitHub release url for some plugins
 	- [[Enhancement]]
 		- Performance improvement for pages with a lot of linked references.
 		  A new option `:ref/linked-references-collapsed-threshold` was added to control when to collapse all the linked references. The default value is `50`.
