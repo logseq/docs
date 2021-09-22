@@ -25,6 +25,8 @@
 	- [[Enhancement]]
 		- Search UX improvement
 			-
+			  <div style="position: relative; padding-bottom: 89.33002481389578%; height: 0;"><iframe src="https://www.loom.com/embed/b7c234535aa8439398a97c595f46f46c" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+			-
 		- Performance improvement for pages with a lot of linked references.
 		  A new option `:ref/linked-references-collapsed-threshold` was added to control when to collapse all the linked references. The default value is `50`.
 		- Save database cached files to a new directory called `logseq/bak` when logseq detect file modifications from the disk
