@@ -21,7 +21,7 @@
 		- Performance improvement for pages with a lot of linked references.
 		  A new option `:ref/linked-references-collapsed-threshold` was added to control when to collapse all the linked references. The default value is `50`.
 		- Disable git auto commit by default
-		  `Git` can be
+		  `Git` caused some trouble when using with some sync services like iCloud/OneDrive/Dropbox, if you encountered any issues related to Git, you're encouraged to disable the git auto commit on Settings > Version Control
 - [[Sep 15th, 2021]]
   id:: c66501ed-6d79-4a12-83d2-040da508697b
   **Beta 0.3.9**
