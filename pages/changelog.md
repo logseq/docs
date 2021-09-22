@@ -18,6 +18,8 @@
 		- Can't parse encrypted graphs
 		- Open the last block when inserting template blocks
 		- Open the previous block when deleting selected blocks
+		- App crashes with segment fault
+		- Clear text selection when blocks are selected
 		-
 	- [[Enhancement]]
 		- Performance improvement for pages with a lot of linked references.
