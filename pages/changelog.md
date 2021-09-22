@@ -4,7 +4,8 @@
 	- [[Features]]
 		-
 	- [[Thanks]]
-		-
+		- [[Devon Zuegel]]
+			-
 	- [[Fixed issues]]
 		-
 	- [[Enhancement]]
