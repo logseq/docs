@@ -11,7 +11,9 @@
 			- Animate editor modals
 		- [[Alex]]
 			- Document mod-c/copy current block ref
-		-
+		- [[woodwm]]
+			- Update the version of KaTex from `0.11.1` to `0.13.8`
+				- Which fixed
 	- [[Fixed issues]]
 		-
 	- [[Enhancement]]
