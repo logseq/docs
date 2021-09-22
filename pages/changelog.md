@@ -1,4 +1,6 @@
 - [[Sep 22nd, 2021]]
+  **Beta 0.4.0**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.4.0
 	- [[Features]]
 		-
 	- [[Thanks]]
