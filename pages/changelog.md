@@ -1,3 +1,27 @@
+- [[Sep 23rd, 2021]]
+  **Beta 0.4.1**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.4.1
+	- [[Thanks]]
+		- [[llcc]]
+			- fix(logbook): Adjust orders of timestamps and logbook
+			- enhance: start a newline to insert src, properties, etc.
+			- fix: extra empty line if SCHEDULED and DEADLINE exist
+		- [[angusiguess]]
+			- Emit image links as image embeds rather than as html links
+	- [[Fixed issues]]
+		- Can't edit code block #Codemirror
+		- Review cards button not working
+		- Search not working when publishing
+		- Smooth auto-complete for `/` commands
+		- Cards command not working in commands palette
+		- `Ctrl/Cmd+l` (insert link) doesn't work on Web
+		- block reference with a deadline has a redundant new line
+	- [[Enhancement]]
+		- Display query examples when invoking /query
+		- Don't group by pages if there's `:result-transform`
+	- New [[Configuration]] option `:shortcut/doc-mode-enter-for-new-block?`
+		- By default, pressing `Enter` in the document mode will create a new line.
+		  Set this to `true` so that it's the same behaviour as the usual outliner mode.
 - [[Sep 22nd, 2021]]
   id:: 614b36ce-adeb-423d-8b04-3aaac9086268
   **Beta 0.4.0**
