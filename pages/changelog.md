@@ -1,5 +1,7 @@
 - [[Sep 29th, 2021]]
   id:: 3c12d46c-cd46-4225-83d8-9f660d525216
+  **Beta 0.4.2**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.4.2
 	- [[Features]]
 		- Add a shortcut `Cmd+Shift+y` to insert youtube timestamp
 		- Add `(sample n)` to pick random query results
