@@ -1,3 +1,29 @@
+- [[Sep 29th, 2021]]
+  id:: 3c12d46c-cd46-4225-83d8-9f660d525216
+	- [[Features]]
+		- Add a shortcut `Cmd+Shift+y` to insert youtube timestamp
+		- Add `(sample n)` to pick random query results
+			- For example:
+			  query-table:: false
+			  {{query (and [[card]] (sample 2))}}
+	- [[Thanks]]
+		- [[Alexander Wang]]
+			- Some YouTube videos cannot be played without referer
+		- [[clark-cui]]
+			- Javascript code enhancement
+	- [[Fixed issues]]
+		- Broken advanced commands triggered by `<`
+		- Can't edit embed blocks
+		- Remove `:` from bak file names (windows reserved chars)
+		- Highlight not working in org mode
+		- Don't trigger commands auto-complete when paste
+		- Two of the same query with mixed syntax causes hanging
+		- Correct position of query command hint
+		- Cloze not shown
+	- [[Enhancement]]
+		- Smooth transition for the right sidebar
+		- Unify both block and page export
+		- Better bottom actions on Web mobile
 - [[Sep 23rd, 2021]]
   id:: 3f1db344-81af-4f15-8fe2-36e03e0cf279
   **Beta 0.4.1**
