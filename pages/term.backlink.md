@@ -8,8 +8,8 @@
 	- this is a backlink to [[Glossary]]
 -
   #+BEGIN_TIP 
-  - Clicking a backlink will open the linked page in the main window
-  - Shift + clicking a backlink will open the linked page in the sidebar
-  - Opening a backlink to a page which does not currently exist will create a new page with the backlink text as its title
-  - The [[Unlinked References]] list located below [[Linked References]] on a page displays potential backlinks, files which refer to the page but do not have a relevant backlink present.
+  * Clicking a backlink will open the linked page in the main window
+  * Shift + clicking a backlink will open the linked page in the sidebar
+  * Opening a backlink to a page which does not currently exist will create a new page with the backlink text as its title
+  * The [[Unlinked References]] list located below [[Linked References]] on a page displays potential backlinks, files which refer to the page but do not have a relevant backlink present.
    #+END_TIP
