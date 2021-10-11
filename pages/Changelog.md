@@ -30,7 +30,7 @@
 		- Support raw path under win32 that includes backslash for local pdf files
 		- Goto pdf highlights not working sometimes
 		- Markdown footnote definition not working when re-index or refresh
-		-
+		- preferredThemeMode doesn't work (plugins API)
 	- [[Enhancement]]
 		- Click title to rename a page
 		- Open the first block when opening a new page by Mod+o
