@@ -22,11 +22,11 @@
 		- [[Tomas Vik]]
 			- Enhance: pretty print pages-metadata.edn
 	- [[Fixed issues]]
+		- Data loss when dragging blocks to empty pages
 		- Create today's journal when the corresponding file doesn't exist yet
 		- Broken block references
 			- Remove blank line for some blocks when outputting to md/org
 		- Importing from Roam has issues with illegal filenames (Windows)
-		- Drag Drop can lo
 		- Flashcards wrong number during the review
 		- Page rename doesn't work for case-sensitive pages
 		- Respect the original page's name in the block content
