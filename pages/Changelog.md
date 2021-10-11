@@ -33,6 +33,7 @@
 		- Flashcards wrong number during the review
 		- Page rename doesn't work for case-sensitive pages
 		- Respect the original page's name in the block content
+		- Flashcards don't work when publishing
 		- A block can be collapsed only when it has children or its body is not empty
 		- Display the edit icon only for the embedded parent block
 		- Sanitize html for security (plugins)

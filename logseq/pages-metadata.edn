@@ -32,8 +32,8 @@
   :block/created-at 1604707200000,
   :block/updated-at 1604707200000}
  {:block/name "hyrijk",
-  :block/created-at 1633955124233,
-  :block/updated-at 1633955124233}
+  :block/created-at 1633956068774,
+  :block/updated-at 1633956068774}
  {:block/name "a",
   :block/created-at 1626196353407,
   :block/updated-at 1626196353407}
@@ -395,8 +395,8 @@
   :block/created-at 1626196353429,
   :block/updated-at 1626196353429}
  {:block/name "tomas vik",
-  :block/created-at 1633955124234,
-  :block/updated-at 1633955124234}
+  :block/created-at 1633956068775,
+  :block/updated-at 1633956068775}
  {:block/name "testimonials",
   :block/created-at 1626196353417,
   :block/updated-at 1626196353417}
@@ -659,8 +659,8 @@
   :block/created-at 1630454400000,
   :block/updated-at 1630454400000}
  {:block/name "mispille",
-  :block/created-at 1633955124234,
-  :block/updated-at 1633955124234}
+  :block/created-at 1633956068776,
+  :block/updated-at 1633956068776}
  {:block/name "privacy policy",
   :block/created-at 1626196353406,
   :block/updated-at 1626196353406}
