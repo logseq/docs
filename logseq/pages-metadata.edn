@@ -32,8 +32,8 @@
   :block/created-at 1604707200000,
   :block/updated-at 1604707200000}
  {:block/name "hyrijk",
-  :block/created-at 1633954365491,
-  :block/updated-at 1633954365491}
+  :block/created-at 1633955124233,
+  :block/updated-at 1633955124233}
  {:block/name "a",
   :block/created-at 1626196353407,
   :block/updated-at 1626196353407}
@@ -99,7 +99,7 @@
   :block/updated-at 1633910400000}
  {:block/name "tips and tricks",
   :block/created-at 1626196353427,
-  :block/updated-at 1626196353427}
+  :block/updated-at 1633954878199}
  {:block/name "jul 23rd, 2021",
   :block/created-at 1626998400000,
   :block/updated-at 1626998400000}
@@ -395,8 +395,8 @@
   :block/created-at 1626196353429,
   :block/updated-at 1626196353429}
  {:block/name "tomas vik",
-  :block/created-at 1633954365492,
-  :block/updated-at 1633954365492}
+  :block/created-at 1633955124234,
+  :block/updated-at 1633955124234}
  {:block/name "testimonials",
   :block/created-at 1626196353417,
   :block/updated-at 1626196353417}
@@ -659,8 +659,8 @@
   :block/created-at 1630454400000,
   :block/updated-at 1630454400000}
  {:block/name "mispille",
-  :block/created-at 1633954365492,
-  :block/updated-at 1633954365492}
+  :block/created-at 1633955124234,
+  :block/updated-at 1633955124234}
  {:block/name "privacy policy",
   :block/created-at 1626196353406,
   :block/updated-at 1626196353406}
@@ -798,7 +798,7 @@
   :block/updated-at 1618012800000}
  {:block/name "markdown",
   :block/created-at 1626196353420,
-  :block/updated-at 1630061842000}
+  :block/updated-at 1633954709392}
  {:block/name "river",
   :block/created-at 1626196353421,
   :block/updated-at 1626196353421}
@@ -813,7 +813,7 @@
   :block/updated-at 1626196353430}
  {:block/name "changelog",
   :block/created-at 1633949831818,
-  :block/updated-at 1633953122277}
+  :block/updated-at 1633955084426}
  {:block/name "aug 27th, 2021",
   :block/created-at 1630022400000,
   :block/updated-at 1630022400000}
@@ -1149,7 +1149,7 @@
   :block/updated-at 1626196353412}
  {:block/name "changelog_07_09",
   :block/created-at 1626196353427,
-  :block/updated-at 1633949778922}
+  :block/updated-at 1633954770734}
  {:block/name "term/embedded page",
   :block/created-at 1626196353416,
   :block/updated-at 1626196353416}
