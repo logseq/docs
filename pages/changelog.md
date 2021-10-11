@@ -19,6 +19,7 @@
 		- Create today's journal when the corresponding file doesn't exist yet
 		- Broken block references
 			- Remove blank line for some blocks when outputting to md/org
+		- Importing from Roam has issues with illegal filenames (Windows)
 		- Flashcards wrong number during the review
 		- Page rename doesn't work for case-sensitive pages
 		- Respect the original page's name in the block content
