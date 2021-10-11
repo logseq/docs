@@ -17,9 +17,12 @@
 		-
 	- [[Fixed issues]]
 		- Create today's journal when the corresponding file doesn't exist yet
+		- Broken block references
+			- Remove blank line for some blocks when outputting to md/org
 		- Flashcards wrong number during the review
 		- Page rename doesn't work for case-sensitive pages
 		- Respect the original page's name in the block content
+		- A block can be collapsed only when it has children or its body is not empty
 		- Display the edit icon only for the embedded parent block
 		- Support raw path under win32 that includes backslash for local pdf files
 		- Sanitize html for security (plugins)
