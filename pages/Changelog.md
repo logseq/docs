@@ -4,12 +4,15 @@
 	- [[Features]]
 		- Left sidebar
 		- Select multiple blocks to `copy block refs` and `cycle todos`
-		- DWIM (do what I mean) for `Enter` key when editing. Contributed by [[llcc]] 
-		  Context-awareness of `Enter` key makes editing more easily.
 	- [[Thanks]]
+		- [[llcc]]
+			- DWIM (do what I mean) for `Enter` key when editing.  
+			  Context-awareness of `Enter` key makes editing more easily.
 		-
 	- [[Fixed issues]]
-		-
+		- Flashcards wrong number during the review
+		- Page rename doesn't work for case-sensitive pages
+		- Respect the original page's name in the block content
 	- [[Enhancement]]
 		- Click title to rename a page
 		- Open the first block when opening a new page by Mod+o
