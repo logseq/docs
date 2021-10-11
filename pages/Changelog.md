@@ -9,7 +9,8 @@
 			- The beautiful https://logseqweekly.com/! Don't forget to subscribe!
 				- > With the rapid development of the app and new features/improvements, I created this Weekly Summary to help community members keep up with everything being thought of, created and shared by other fellow Logseq users.
 		- [[Mispille]]
-			- Awesome proposal
+			- Awesome proposal to tagging Logseq's issues on GitHub!
+				- This proposal is at https://docs.google.com/spreadsheets/d/10-LplNuMo2MUy67lt-WX1z1x50L1pY4bSLPIob1eHRQ/edit?usp=sharing!
 		- [[llcc]]
 			- DWIM (do what I mean) for `Enter` key when editing.  
 			  Context-awareness of `Enter` key makes editing more easily.
@@ -38,6 +39,7 @@
 	- [[Enhancement]]
 		- Click title to rename a page
 		- Open the first block when opening a new page by Mod+o
+		- Many UX enhancements
 - [[Changelog_07_09]]
 - [[Changelog_06]]
 - [[Changelog 2020]]
