@@ -6,7 +6,8 @@
 		- Select multiple blocks to `copy block refs` and `cycle todos`
 	- [[Thanks]]
 		- [[Ed]]
-			- The beautiful https://logseqweekly.com/!
+			- The beautiful https://logseqweekly.com/! Don't forget to subscribe!
+				- > With the rapid development of the app and new features/improvements, I created this Weekly Summary to help community members keep up with everything being thought of, created and shared by other fellow Logseq users.
 		- [[llcc]]
 			- DWIM (do what I mean) for `Enter` key when editing.  
 			  Context-awareness of `Enter` key makes editing more easily.
