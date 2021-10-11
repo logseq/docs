@@ -24,9 +24,12 @@
 		- Respect the original page's name in the block content
 		- A block can be collapsed only when it has children or its body is not empty
 		- Display the edit icon only for the embedded parent block
-		- Support raw path under win32 that includes backslash for local pdf files
 		- Sanitize html for security (plugins)
 		- Disable nested queries (page crash)
+		- Support raw path under win32 that includes backslash for local pdf files
+		- Goto pdf highlights not working sometimes
+		- Markdown footnote definition not working when re-index or refresh
+		-
 	- [[Enhancement]]
 		- Click title to rename a page
 		- Open the first block when opening a new page by Mod+o
