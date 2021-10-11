@@ -54,4 +54,4 @@
  :ui/show-brackets? true
  :feature/enable-encryption? false
  :markdown/version 2
- :favorites ["Changelog_07_09"]}
+ :favorites ["Getting started" "Changelog"]}
