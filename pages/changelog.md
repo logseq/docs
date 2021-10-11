@@ -162,8 +162,7 @@
 			- enhance: jump out of the ending curly brackets when embedding page or block
 		- [[Sebastian Bensusan]]
 			- calc: understand percentages
-				-
-				  ```calc
+				- ```calc
 				  100 * 20%
 				  ```
 		- [[Jiang Hailong]]
@@ -333,8 +332,7 @@
 		- Can't jump to highlights when enlarging the pdf viewer
 		- `<Center` command
 		  collapsed:: true
-			-
-			  #+BEGIN_CENTER
+			- #+BEGIN_CENTER
 			  Center text
 			  #+END_CENTER
 		- Widen mode width is too large
@@ -402,8 +400,7 @@
 			  collapsed:: true
 			  `:default-templates {:journals "my-template"}`
 			- [[Breaking Changes]]
-				-
-				  #+BEGIN_WARNING
+				- #+BEGIN_WARNING
 				  The jounnals `default-templates` only supports the template name now. 
 				  #+END_WARNING
 		- `:ui/show-empty-bullets?`
@@ -581,8 +578,7 @@
 					- How much does it cost to buy all of them? `{{function (sum (map (fn [x] (* (:price x) (:qty x))) result))}}`
 						- Answer: {{function (sum (map (fn [x] (* (:price x) (:qty x))) result))}}
 			- What features does it support?
-				-
-				  #+BEGIN_NOTE
+				- #+BEGIN_NOTE
 				  The property to be used in the function must be a keyword, a keyword has a `:` at the beginning.
 				  For example, `:price` is a keyword while `price` is not.
 				  #+END_NOTE
