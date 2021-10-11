@@ -5,6 +5,8 @@
 		- Left sidebar
 		- Select multiple blocks to `copy block refs` and `cycle todos`
 	- [[Thanks]]
+		- [[Ed]]
+			-
 		- [[llcc]]
 			- DWIM (do what I mean) for `Enter` key when editing.  
 			  Context-awareness of `Enter` key makes editing more easily.
@@ -14,7 +16,6 @@
 			- Fix: plugin api moveBlock not working
 		- [[Tomas Vik]]
 			- Enhance: pretty print pages-metadata.edn
-		-
 	- [[Fixed issues]]
 		- Create today's journal when the corresponding file doesn't exist yet
 		- Broken block references
