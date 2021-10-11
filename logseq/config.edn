@@ -53,4 +53,5 @@
  :feature/enable-journals? true
  :ui/show-brackets? true
  :feature/enable-encryption? false
- :markdown/version 2}
+ :markdown/version 2
+ :favorites ["Changelog_07_09"]}
