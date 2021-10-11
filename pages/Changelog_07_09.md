@@ -558,11 +558,11 @@
 	- [[Features]]
 		- [[Query/table/function]]
 			- How to create a function below the query table? #card
-			  card-last-interval:: 4
-			  card-repeats:: 2
-			  card-ease-factor:: 2.7
-			  card-next-schedule:: 2021-10-03T15:35:01.384Z
-			  card-last-reviewed:: 2021-09-29T15:35:01.385Z
+			  card-last-interval:: 11.2
+			  card-repeats:: 3
+			  card-ease-factor:: 2.8
+			  card-next-schedule:: 2021-10-22T16:19:30.719Z
+			  card-last-reviewed:: 2021-10-11T12:19:30.719Z
 			  card-last-score:: 5
 				- Firstly, you have a query like this:
 				  query-table:: true
