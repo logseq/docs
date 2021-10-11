@@ -8,6 +8,8 @@
 		- [[llcc]]
 			- DWIM (do what I mean) for `Enter` key when editing.  
 			  Context-awareness of `Enter` key makes editing more easily.
+		- [[Devon Zuegel]]
+			- Consolidate shortcut docs
 		- [[hyrijk]]
 			- Fix: plugin api moveBlock not working
 			-
