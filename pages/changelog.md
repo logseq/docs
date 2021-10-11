@@ -6,7 +6,7 @@
 		- Select multiple blocks to `copy block refs` and `cycle todos`
 	- [[Thanks]]
 		- [[Ed]]
-			-
+			- The beautiful https://logseqweekly.com/!
 		- [[llcc]]
 			- DWIM (do what I mean) for `Enter` key when editing.  
 			  Context-awareness of `Enter` key makes editing more easily.
