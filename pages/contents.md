@@ -42,7 +42,6 @@
 	- [[Hiccup]]
 	- [[Custom views]]
 	- [Self Hosting Logseq](https://github.com/dustinlacewell/logseq-guide)
-- [[Changelog 2020]]
 - [[Contribute]]
 	- Make a [Feature Request](https://discuss.logseq.com/)
 	- [Check us out on Github](https://github.com/logseq/logseq)
