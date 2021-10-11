@@ -16,12 +16,14 @@
 			- Enhance: pretty print pages-metadata.edn
 		-
 	- [[Fixed issues]]
+		- Create today's journal when the corresponding file is missing
 		- Flashcards wrong number during the review
 		- Page rename doesn't work for case-sensitive pages
 		- Respect the original page's name in the block content
 		- Display the edit icon only for the embedded parent block
 		- Support raw path under win32 that includes backslash for local pdf files
 		- Sanitize html for security (plugins)
+		-
 	- [[Enhancement]]
 		- Click title to rename a page
 		- Open the first block when opening a new page by Mod+o
