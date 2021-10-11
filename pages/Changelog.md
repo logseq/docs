@@ -18,7 +18,7 @@
 		- Page rename doesn't work for case-sensitive pages
 		- Respect the original page's name in the block content
 		- Display the edit icon only for the embedded parent block
-		-
+		- Support raw path under win32 that includes backslash for local pdf files
 	- [[Enhancement]]
 		- Click title to rename a page
 		- Open the first block when opening a new page by Mod+o
