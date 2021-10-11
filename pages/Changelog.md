@@ -3,7 +3,10 @@
   **Beta 0.4.3**
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.4.3
 	- [[Features]]
-		- Left sidebar
+		- Left sidebar!
+			-
+			  <div style="position: relative; padding-bottom: 93.02325581395348%; height: 0;"><iframe src="https://www.loom.com/embed/5fd05d33377c4254b4ee4b6aae5b193d" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+			-
 		- Select multiple blocks to `copy block refs` and `cycle todos`
 	- [[Thanks]]
 		- [[Ed]]
