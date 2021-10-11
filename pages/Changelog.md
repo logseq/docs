@@ -8,7 +8,9 @@
 		- [[llcc]]
 			- DWIM (do what I mean) for `Enter` key when editing.  
 			  Context-awareness of `Enter` key makes editing more easily.
-		-
+		- [[hyrijk]]
+			- Fix: plugin api moveBlock not working
+			-
 	- [[Fixed issues]]
 		- Flashcards wrong number during the review
 		- Page rename doesn't work for case-sensitive pages
