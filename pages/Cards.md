@@ -2,11 +2,11 @@
 	- A card is intended to be used as an aid in memorization. In logseq, it's just a block with either `#card` or `[[card]]`. It can have some [[Clozes]] too.
 		- For example, this block is a card:
 			- What does "Logseq" mean? #card #logseq
-			  card-last-interval:: 10.24
-			  card-repeats:: 3
-			  card-ease-factor:: 2.56
-			  card-next-schedule:: 2021-10-09T20:34:57.329Z
-			  card-last-reviewed:: 2021-09-29T15:34:57.330Z
+			  card-last-interval:: 28.3
+			  card-repeats:: 4
+			  card-ease-factor:: 2.66
+			  card-next-schedule:: 2021-11-08T17:59:40.382Z
+			  card-last-reviewed:: 2021-10-11T10:59:40.382Z
 			  card-last-score:: 5
 				- You can read it as "Log sequence" or "Logical sequence" (thank you [[Ed]]).
 			- If you right click the bullet and select "Preview Card", you'll see something like this:
