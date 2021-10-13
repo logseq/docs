@@ -31,6 +31,9 @@
 	- `{{cards [[Logseq]]}}` will be displayed as:
 	  
 	  {{cards [[Logseq]]}}
+	- You can also show all cards _except_ those tagged with a certain page. `{{cards (not [[Logseq]])}}` will be displayed as:
+	  
+	  {{cards (not [[Logseq]]) }}
 ## TIPs
 	- Press `t c` (toggle cards) to review all of your cards
 	- You can add your "cards" queries to the "Favorites" page in the right sidebar for quick access.
