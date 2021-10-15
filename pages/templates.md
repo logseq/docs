@@ -50,7 +50,7 @@
 			  - 2014-11-30T08:15:30-05:30
 			  #+END_QUOTE
 			  Examples from https://github.com/wanasit/chrono
-- [:code "including-parent:: false"] is a template property to indicate whether to include the top level content of selected block template
+- [:code "template-including-parent:: false"] is a template property to indicate whether to include the top level content of selected block template
 	- example:
 	  id:: 60a790f8-d187-499a-b2e2-73bf137356dd
 		- i'm included by default in template-example-1
@@ -60,6 +60,6 @@
 				- line2
 		- i'm not included because of including-parent setting
 		  template:: template-example-2
-		  including-parent:: false
+		  template-including-parent:: false
 			- line1
 				- line2
