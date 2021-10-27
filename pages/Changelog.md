@@ -8,6 +8,10 @@
 		- Persist right sidebar state
 		- `custom.js` support
 			- See more at https://github.com/logseq/logseq/pull/2943
+	- [[Thanks]]
+		- [[Andelf]]
+			- Wrong delta pos when change to empty marker
+		- [[setting/show brackets]]
 	- [[Fixed issues]]
 		- Both `Copy as` and `Export page` should be fast now
 		- Marking task from "Now" to "Done" lost tracking time duration data
