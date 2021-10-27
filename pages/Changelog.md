@@ -21,7 +21,9 @@
 		- Timetracking for now->later on repeated task
 		- Timetracking support seconds now
 		- Logbook related issues
-		-
+		- Files not saved when onboarding if canceled the file picker
+		- Encrypted page for revert history version by git
+		- Decrypt file content when diff
 	- [[Enhancement]]
 		- Smooth transition for left sidebar
 		- Make [[DWIM]] optional
