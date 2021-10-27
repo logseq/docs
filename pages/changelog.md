@@ -11,13 +11,17 @@
 	- [[Thanks]]
 		- [[Andelf]]
 			- Wrong delta pos when change to empty marker
-		- [[setting/show brackets]]
+		- [[Seth]]
+			- Update readme to include platform specific docker instructions
+		- [[GoldinGuy]]
+			- Add time wrapper for scheduled/deadline
 	- [[Fixed issues]]
 		- Both `Copy as` and `Export page` should be fast now
 		- Marking task from "Now" to "Done" lost tracking time duration data
 		- Timetracking for now->later on repeated task
 		- Timetracking support seconds now
 		- Logbook related issues
+		-
 	- [[Enhancement]]
 		- Smooth transition for left sidebar
 		- Make [[DWIM]] optional
