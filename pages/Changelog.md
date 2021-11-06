@@ -36,7 +36,6 @@
 		- Failed to import roam research's json
 		- Both `Copy as` and `Export page` should be fast now
 		- Display the below plus button when zoom in
-		- Failed to import roam's json
 		- Several issues when renaming namespace pages
 		- Marking task from "Now" to "Done" lost tracking time duration data
 		- Timetracking for now->later on repeated task
