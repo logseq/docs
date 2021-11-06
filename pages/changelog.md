@@ -3,20 +3,41 @@
   **Beta 0.4.5**
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.4.5
 	- [[Features]]
+		- Move selected blocks up/down (Ctrl/Cmd + Shift + UP/DOWN)
 		- `All pages` support batch delete, search, journals filter and remove orphaned pages
+		  collapsed:: true
 			- ![CleanShot 2021-10-23 at 00.06.33.png](../assets/CleanShot_2021-10-23_at_00.06.33_1634918821593_0.png)
 		- Persist right sidebar state
+		- [[Shortcuts]]
+			- `g t` to go to tomorrow's page
+			- `g p` to go to the previous journal
+			- `g n` to go to the next journal
 		- `custom.js` support
 			- See more at https://github.com/logseq/logseq/pull/2943
 	- [[Thanks]]
+		- [[Devon Zuegel]]
+			- Enhance: add hotkeys for open file in directory (`o d`) / default app (`o f`)
+			- Emoji page identifiers + sidebar tweaks
+			- Custom editor command trigger
+				- New configuration option `:editor/command-trigger`
+					- e.g. To use `\` instead of `/` for commands trigger, add `:editor/command-trigger "\\"` to `config.edn`.
 		- [[Andelf]]
 			- Wrong delta pos when change to empty marker
+			- fix: pos and space when cycling marker in header
 		- [[Seth]]
 			- Update readme to include platform specific docker instructions
 		- [[GoldinGuy]]
 			- Add time wrapper for scheduled/deadline
+		- [[Yongqinchuan Du]]
+			- Fix code block wide mode toggle
+		- [[Peng Xiao]]
+			- Fix: notification wrapper blocks user from interacting with the main area
 	- [[Fixed issues]]
+		- Failed to import roam research's json
 		- Both `Copy as` and `Export page` should be fast now
+		- Display the below plus button when zoom in
+		- Failed to import roam's json
+		- Several issues when renaming namespace pages
 		- Marking task from "Now" to "Done" lost tracking time duration data
 		- Timetracking for now->later on repeated task
 		- Timetracking support seconds now
@@ -24,10 +45,23 @@
 		- Files not saved when onboarding if canceled the file picker
 		- Encrypted page for revert history version by git
 		- Decrypt file content when diff
+		- Broken image preview in the right sidebar
+		- Fix slash command clashes with Org-mode italics
+		- Org page reference allows different page-name and label
+		- Blank screen on preview card with empty card
+		- Clear block content when auto-complete page references
+		- Insert page attributes instead of block property when creating and renaming a page
+		- Latex can't be displayed in both block and page preview
+		- Unexpected behavior of Ctrl + b
+		- Black screen when closing window in fullscreen mode on MacOS
 	- [[Enhancement]]
+		- Click to edit should jump to the end of inline emphasis and links
 		- Smooth transition for left sidebar
 		- Make [[DWIM]] optional
 			- See more at https://github.com/logseq/logseq/issues/2958#issuecomment-945761631
+		- Page suggestion will not allow you to deny the suggestion
+		- Enable Enter key to rename page
+		- Reload commands when toggle plugins (no need to restart the app)
 - [[Oct 12th, 2021]]
   id:: 14cbc67d-695a-48b3-8d33-ddf936977d43
   **Beta 0.4.4**
