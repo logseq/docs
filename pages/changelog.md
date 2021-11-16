@@ -1,4 +1,45 @@
-- [[Oct 23rd, 2021]]
+- [[Nov 16th, 2021]]
+  **Beta 0.4.6**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.4.6
+	- [[Thanks]]
+		- [[Devon Zuegel]]
+			- Add more content-aware classes to textarea for a more WYSIWYG experience
+			- Show default home instead of journals in side bar
+			- Polish cards
+			- Rename "page emoji" to "page icons"
+				- This PR renames the page property `emoji` to `icon``emoji:`, which is a more typical and more flexible name.
+		- [[Peng Xiao]]
+			- Add page & block ref to search item
+			- Add back haschild attribute
+	- [[Fixed issues]]
+		- Navigating to a page through search caused Logseq to crash to a blank screen
+		- Rename page should delete the old page name from search
+		- Graphs disappeared (not data-loss) after restarting the app
+		- Backspace can't move to previous block if it's a embed block
+		- Cycle todos will not deselect the blocks
+		- Git still commits even if it's toggled off on settings
+		- Pages with "." in the title do not show Hierarchy at the bottom
+		- Line starting with - will be disappear after exit editing
+		- Cannot edit deadline/schedule using date picking panel
+		- Ordered list can't be shown in reference list
+		- Drag and Drop inconsistently not working
+		- Alt-dragging a bullet to an indented position will create multiple empty bullet
+		- Import JSON from Roam has trouble with certain code block syntax
+		- No more auto-complete if the cursor moves back to [[]]
+		- Empty path when importing roam's json
+		- Renaming namespace page will update all its children's links
+		- Page-ref replacement if non-slash in path
+	- [[Enhancement]]
+		- Merging pages when renaming one page to the name of another page
+		- Add copy block embed(s)
+		- Delay query for linked references
+			- Editing the main page should be fast no matter how many linked references it has
+		- Cycle todos support cmd+enter
+		- Display a warning if config.edn is invalid
+		- Don't add another set of (()) when copy block ref to embed
+		- Remove built-in properties from search result
+		- When depth level > 3, the breadcrumb displays an ellipsis
+- [[Nov 10th, 2021]]
   id:: 45fc2d43-4154-4f20-ad60-c3039e35256d
   **Beta 0.4.5**
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.4.5
