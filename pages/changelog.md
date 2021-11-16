@@ -8,7 +8,7 @@
 			- Show default home instead of journals in side bar
 			- Polish cards
 			- Rename "page emoji" to "page icons"
-				- This PR renames the page property `emoji` to `icon``emoji:`, which is a more typical and more flexible name.
+				- This PR renames the page property `emoji` to `icon`, which is a more typical and more flexible name.
 		- [[Peng Xiao]]
 			- Add page & block ref to search item
 			- Add back haschild attribute
