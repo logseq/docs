@@ -11,6 +11,7 @@
 		- Block id not persisted when copy block embed
 		- Linked references missing in the right sidebar
 		- Make sure blocks have the same format when dragging to another page
+		- Check for update
 	- [[Enhancement]]
 		- Toggle displaying shortcut tooltips on settings
 			- ![CleanShot 2021-11-18 at 10.33.24.png](../assets/CleanShot_2021-11-18_at_10.33.24_1637202815754_0.png)
