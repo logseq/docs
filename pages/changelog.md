@@ -1,3 +1,22 @@
+- [[Nov 18th, 2021]]
+  id:: 8590ee9b-3f85-40cc-954d-857715503802
+  **Beta 0.4.7**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.4.7
+	- [[Thanks]]
+		- [[Devon Zuegel]]
+			- Enhance shortcut tooltips
+	- [[Fixed issues]]
+		- Rename page references when merging pages
+		- Code block indentation
+		- Block id not persisted when copy block embed
+		- Linked references missing in the right sidebar
+		- Make sure blocks have the same format when dragging to another page
+	- [[Enhancement]]
+		- Toggle displaying shortcut tooltips on settings
+			- ![CleanShot 2021-11-18 at 10.33.24.png](../assets/CleanShot_2021-11-18_at_10.33.24_1637202815754_0.png)
+		- Display a warning if a block's content include multiple lists or headings
+	- [[Breaking Changes]]
+		- Deprecate both Ctrl/Cmd+u for searching and  `Ctrl/Cmd+Shift+u` for search in page, use `Ctrl/Cmd+k` and `Ctrl/Cmd+Shift+k` instead.
 - [[Nov 16th, 2021]]
   id:: 38a7f160-5dbb-4ab0-8556-5e45cd15144a
   **Beta 0.4.6**
