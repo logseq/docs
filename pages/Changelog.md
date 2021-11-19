@@ -1,3 +1,9 @@
+- [[Nov 19th, 2021]]
+  **Beta 0.4.9**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.4.9
+	- [[Fixed issues]]
+		- Empty graph view
+		- Shortcuts can be repeated sometimes
 - [[Nov 18th, 2021]]
   id:: 8590ee9b-3f85-40cc-954d-857715503802
   **Beta 0.4.7**
