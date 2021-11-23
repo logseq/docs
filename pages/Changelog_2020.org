@@ -309,7 +309,7 @@ Check out the [[https://logseq.github.io/page/publishing][docs]].
 *Version 0.0.3.5*
 *** [[Fixed issues]]
 **** 1. Links support emphasis now, e.g. ~**[[Learn the shortcuts]]**~ (for markdown) will be rendered as *[[Learn the shortcuts]]*.
-**** 2. Fixed embeded blocks not changing when the original block changed.
+**** 2. Fixed embedded blocks not changing when the original block changed.
 **** 3. Journal pages can be embedded now
 *** [[Enhancement]]
 **** 1. Support fullscreen on mobile now (Thanks @denvey)

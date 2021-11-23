@@ -129,7 +129,7 @@
 		- Code block not saved
 		- Commands palette not work
 		- Can't change the case of a page name
-		- Edit icon should open the current block instead of the embeded block
+		- Edit icon should open the current block instead of the embedded block
 		- Don't add new space when embedding a page or a block
 		- Latex export block command shortcut gives error because of missing space
 		- Git not included on Windows
@@ -185,7 +185,7 @@
 		- commands panel aren't accessible sometimes
 		- failed to remove invalid .git file
 		- don't add new space when embedding a page or a block
-		- click the edit icon should open the block which has the embeded block or page
+		- click the edit icon should open the block which has the embedded block or page
 	- [[Enhancement]]
 		- detect file changes when starting the desktop app
 		- add alerts before both refresh and re-index
