@@ -79,9 +79,9 @@ title: The Refactoring Of Logseq
           The outliner is very simple, so we should find a way to enhance the ability of Logseq to meet various demands. Hook is our final choice. Hooks can plug in the whole lifecycle of outliner operations. For example, we have provided a hook point for reading the block data when a new block inserts or block changes and a hook point to save block when it receives valid block data. These two hooks could provide the ability to connect arbitrary persistent storage,  which including but not limited to Markdown, Org-mode, SQLite, Elasticsearch, and so on.  Another example is, we have provided a hook that is invoked when the Logseq on load. The Logseq plugin authors can utilize the hook to design widgets, custom the themes, or whatever the user has been privileged. 
           
           The hook is a middle layer between outliner and plugins. There will be many hooks,  I hope they will make Logseq more powerful.
-    - Build Logseq Plugin Core and Offical Plugins
+    - Build Logseq Plugin Core and Official Plugins
       
-      I think Offical Plugins and Developer Plugins almost have the same ability. Only under these two conditions, Logseq team might provide the plugin: 
+      I think Official Plugins and Developer Plugins almost have the same ability. Only under these two conditions, Logseq team might provide the plugin: 
       
        * The plugin might be related to user data security. 
        * The plugin could provide a more complete user experience out of the box. For example, we provide the Markdown, org-mode storage plugin.

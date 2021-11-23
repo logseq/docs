@@ -49,7 +49,7 @@
 	  ```
 	- The code should be self-explanatory: It registers a callback function to show a message when the Logseq app is ready.
 ## Run the Plugin
-	- In the plugin list page, click `Load unpacked plugin` and choose the `logseq-hello-world` folder. A "Hello World Logseq!" message will show immediately and every time the app lanuches. Congratulations on writing your first Logseq plugin!
+	- In the plugin list page, click `Load unpacked plugin` and choose the `logseq-hello-world` folder. A "Hello World Logseq!" message will show immediately and every time the app launches. Congratulations on writing your first Logseq plugin!
 ## Next Steps
 	- Learn from many plugin samples:
 	  https://github.com/logseq/logseq-plugin-samples
