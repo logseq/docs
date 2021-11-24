@@ -17,6 +17,7 @@
 		- Can't open external links like Zotero and mail clients
 		- Don't create empty pages for alias and tags page properties
 		- Auto-complete doesn't valish after /current time
+		- Slow parsing on base64 image link
 		- Query filters like `and`, `or` are case sensitive
 		- Can't rename pages with nested titles
 		- Remove space when showing template popup
