@@ -17,7 +17,7 @@
 		- Git Autocommit not working
 		- Can't open external links like Zotero and mail clients
 		- Don't create empty pages for alias and tags page properties
-		- Auto-complete doesn't valish after /current time
+		- Auto-complete doesn't vanish after /current time
 		- Slow parsing on base64 image link
 		- Query filters like `and`, `or` are case sensitive
 		- Can't rename pages with nested titles
@@ -26,7 +26,7 @@
 		- Sometimes shortcuts stopped working
 		- `[[` doesn't trigger auto-complete for non-english input methods
 	- [[Enhancement]]
-		- Convert highlighted word to a link when pasting a url
+		- Convert highlighted word to a link when pasting a URL
 		- Save a backup file to `logseq/bak` if writes failed (EBUSY lock)
 		- Separate plugins and themes in the marketplace
 		- Create today's page when redirect to the home or scrolling to the top of journals
