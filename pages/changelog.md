@@ -1,3 +1,35 @@
+- [[Nov 24th, 2021]]
+  **Beta 0.5.0**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.5.0
+	- [[Thanks]]
+		- [[Gabriel Horner]]
+			- Add datalog console extension in dev
+			- Fix GitHub CI
+		- [[David Whittington]]
+			- Support #Arweave URLs for links and images
+		- [[Peng Xiao]]
+			- Custom macro click issue
+	- [[Fixed issues]]
+		- [[Windows]] desktop app is finally signed
+		- Clean block's referenced old orphaned pages when saving it
+		- Can't open a new graph on Linux
+		- Git Autocommit not working
+		- Can't open external links like Zotero and mail clients
+		- Don't create empty pages for alias and tags page properties
+		- Auto-complete doesn't valish after /current time
+		- Query filters like `and`, `or` are case sensitive
+		- Can't rename pages with nested titles
+		- Remove space when showing template popup
+		- All Pages view lists all of the images
+		- Sometimes shortcuts stopped working
+		- `[[` doesn't trigger auto-complete for non-english input methods
+	- [[Enhancement]]
+		- Convert highlighted word to a link when pasting a url
+		- Save a backup file to `logseq/bak` if writes failed (EBUSY lock)
+		- Separate plugins and themes in the marketplace
+		- Create today's page when redirect to the home or scrolling to the top of journals
+		- Jump to the end of page ref after pressing Enter
+		- Avoid press enter at empty page-ref
 - [[Nov 19th, 2021]]
   **Beta 0.4.9**
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.4.9
