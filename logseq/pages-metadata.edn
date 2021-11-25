@@ -382,8 +382,8 @@
   :block/created-at 1626196353423,
   :block/updated-at 1626196353423}
  {:block/name "arweave",
-  :block/created-at 1637768710671,
-  :block/updated-at 1637768710671}
+  :block/created-at 1637810552832,
+  :block/updated-at 1637810552832}
  {:block/name
   "https://docs.datomic.com/query.html][datomic query documentation",
   :block/created-at 1637566662175,
@@ -649,8 +649,8 @@
   :block/created-at 1614556800000,
   :block/updated-at 1614556800000}
  {:block/name "david whittington",
-  :block/created-at 1637768710671,
-  :block/updated-at 1637768710671}
+  :block/created-at 1637810552832,
+  :block/updated-at 1637810552832}
  {:block/name "org mode",
   :block/created-at 1626196353408,
   :block/updated-at 1626196353408}
@@ -671,8 +671,8 @@
   :block/created-at 1601251200000,
   :block/updated-at 1601251200000}
  {:block/name "windows",
-  :block/created-at 1637768710671,
-  :block/updated-at 1637768710671}
+  :block/created-at 1637810552832,
+  :block/updated-at 1637810552832}
  {:block/name "60acdebb-9142-431f-907c-3ad0e6fc0148",
   :block/created-at 1637561033147,
   :block/updated-at 1637561033147}
@@ -970,7 +970,7 @@
   :block/updated-at 1626196353416}
  {:block/name "changelog",
   :block/created-at 1633949831818,
-  :block/updated-at 1637766759097}
+  :block/updated-at 1637770180139}
  {:block/name "term/network of connected ideas",
   :block/created-at 1626196353432,
   :block/updated-at 1626196353432}
@@ -1397,8 +1397,8 @@
   :block/created-at 1637561033147,
   :block/updated-at 1637561033147}
  {:block/name "gabriel horner",
-  :block/created-at 1637768710671,
-  :block/updated-at 1637768710671}
+  :block/created-at 1637810552833,
+  :block/updated-at 1637810552833}
  {:block/name "templates",
   :block/created-at 1626196353416,
   :block/updated-at 1626196353416}

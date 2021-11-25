@@ -1,3 +1,11 @@
+- [[Nov 25th, 2021]]
+  **Beta 0.5.1**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.5.1
+	- [[Fixed issues]]
+		- Changes are not saved to files when using Logseq and OneDrive on multiple computers
+			- **We strongly encouraged you to upgrade to the latest version to avoid any data loss.**
+		- Markdown blockquote syntax parsing not backwards compatible
+		- `Contents` is not considered a "Built-in page" for Graph view
 - [[Nov 24th, 2021]]
   id:: 619e5440-72c1-4d04-bf4b-dd911f1c69b3
   **Beta 0.5.0**
