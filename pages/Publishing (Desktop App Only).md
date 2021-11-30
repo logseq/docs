@@ -5,8 +5,7 @@ title: Publishing (Desktop App Only)
 - To provide the best publishing experience, Logseq at this moment only supports publishing on the desktop app.
 - How to publish?
 	- 1. Click the page titles that you wish to publish, select "Make it public for publishing" in the right pop-up menu. You can also choose to make all the pages public by adding `:all-pages-public? true` to `logseq/config.edn`.
-		- ![](../assets/pages_Publishing_1615917396171_1.png){:height 440, :width 396}
-	-
+		- ![](../assets/pages_Publishing_1615917396171_1.png)
 	  2. Click the top-right three-dots and select `Export graph`. Then select a folder, and Logseq will export all the files needed for publishing there.
 		- ![](../assets/pages_Publishing_1615917396171_0.png)
 		-
