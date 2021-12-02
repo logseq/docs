@@ -17,4 +17,4 @@ title: Publishing (Desktop App Only)
 		- {{youtube https://www.youtube.com/watch?v=nf9MyWRratI}}
 	- Here're some links might be useful:
 		- 1. [Creating a GitHub Pages site](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site)
-		- 2. [Introduction to Verce](https://vercel.com/docs)
+		- 2. [Introduction to Vercel](https://vercel.com/docs)
