@@ -16,5 +16,5 @@ title: Publishing (Desktop App Only)
 	- 4. Of course publishing your beautiful graph on localhost only is not that fun. Since we have all the assets now, publish them on platforms like [Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) and [Vercel](https://vercel.com/docs) is straightforward. Below is a video tutorial on how to publish Logseq pages to Github Pages.
 		- {{youtube https://www.youtube.com/watch?v=nf9MyWRratI}}
 	- Here're some links might be useful:
-		- 1. https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site
-		- 2. https://vercel.com/docs
+		- 1. [Creating a GitHub Pages site](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site)
+		- 2. [Introduction to Verce](https://vercel.com/docs)
