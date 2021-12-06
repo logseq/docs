@@ -2,7 +2,7 @@
 title: slide
 ---
 
-- Logseq's slide feature is powered by the awesome [[https://revealjs.com/][Reveal.js]].
+- Logseq's slide feature is powered by the awesome [Reveal.js](https://revealjs.com/).
   background-image:: https://images.unsplash.com/photo-1498855926480-d98e83099315
 - **How to use it?**
     - 1. Go to a specific non-journal page, click the slide icon right next to the file link.
