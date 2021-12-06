@@ -28,6 +28,7 @@
 	- [[Slide]]
 	- [[Custom theme]]
 	- [[Zotero]] integration
+	- [[Embed Media - Audio, Photos, Videos]]
 - [[Logseq School]]
 	- {{embed [[Plugins 101]] }}
 - [[Document syntax]]
