@@ -1,4 +1,5 @@
-# How to Embed Audio, Photos, and Videos
+- How to Embed Audio, Photos, and Videos
+- 
 # Audio
 - Using [[Hiccup]], it is possible to embed audio to your page and play it back.
 -
@@ -21,14 +22,14 @@
 -
 ## Embedding photos from your computer's filesystem (Windows)
 - To preview an image saved on your computer in Logseq, type or copy-paste the following, replacing the filepath in (parenthesis) with the appropriate one:
-- `![optional: add a name](C://Users/USERNAME/Folder/image.gif){:height 418, :width 699}`
+- `![title - optional](C://Users/USERNAME/Folder/image.gif)`
 - Make sure to include the `!` at the start.
 -
 - OPTIONAL: You can also add some sizing using {:height --, :width --}.
 	- For example: `![image.png](C://Users/USERNAME/Folder/image.gif){:height 418, :width 699}`
 -
 ## Embedding images from an online URL
-- To preview am image from the internet, copy its link (with the file name and filepath) and paste it into Logseq. The image should automatically appear when you hit Enter.
+- To preview an image from the internet, copy its link (with the file name and filepath) and paste it into Logseq. The image should automatically appear when you hit Enter.
 	- For example: `https://logseq.github.io/screenshots/1.png`
 	- ↓
 	- https://logseq.github.io/screenshots/1.png
@@ -46,7 +47,7 @@
 	- `[:video {:controls true :src "https://www.website.com/video-file.webm"}]`
 		- For example: `[:video {:controls true :src "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"}]`
 		- ↓
-		- [:audio {:controls true :src "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"}]
+		- [:video {:controls true :src "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"}]
 -
 ## Embedding videos from YouTube
 - Type the slash `/` command and type `Embed YouTube Video`
