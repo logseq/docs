@@ -1,3 +1,63 @@
+- [[Dec 10th, 2021]]
+  id:: 14067234-cd43-40d8-9e25-26d2ba75a0a9
+  **Beta 0.5.2**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.5.2
+	- [[Thanks]]
+		- [[Junyi Du]]
+			- Enhance WYSIWYG experience of multiline heading
+			- fix: DWIM isn't activated at one-line block
+			- enhance: only apply DWIM to list item when cursor at EOL
+		- [[Devon Zuegel]]
+			- Improvements to Settings
+			- enhance: improve alert for "a new version has been downloaded"
+			- refactor: hard-coded colors -> CSS variables for header tips
+			- enhance: tidy up repo dropdown in sidebar
+			- fix: handle windows path in shorten-repo-name
+			- fix: make Continue? modals more consistent
+			- feat: add "add to / remove from favorites" to command palette
+				- Shortcut: `Cmd+Shift+F`
+			- enhance: color code SRS buttons & extract shortcut to tippy
+		- [[Bad3r]]
+			- Updated README E2E Testing Instructions
+			- Enhance: add waring for clear cache
+			- Helping a lot in the community!
+		- [[ahonn]]
+			- feat: keep indent after copy block refs
+		- [[Peng Xiao]]
+			- fix: queryElementById type
+		- [[Vladimir Sorokin]]
+			- Added Russian translation
+		- [[Moritz Ulrich]]
+			- follow-link-under-cursor!: Add page to 'Recent' list
+			- Always add target of `redirect-to-page!` to 'Recent' list.
+	- [[Fixed issues]]
+		- Code block are not saved
+		- Empty block not deleted when there's new file detected from #data-safety
+		- Wrong indentation for both templates and copied selections
+		- Avoid cyclical refs and deep refs
+		- Cut a block doesn't copy its nested children blocks
+		- Switching between code block to text editing will cause leading spaces not rendered
+		- #tag query doesn't work
+		- Handle encryption errors
+		- Local graph should popup encryption dialog when re-index
+		- Wrong link href for file links #[[Org Mode]]
+		- Add .svg to image ext
+		- Display user-defined drawer
+		- Automatic jump back when click 'prev' in a long page
+		- Problem keeping separate graphs separated
+		- Logbook disappears when block got embedded
+	- [[Enhancement]]
+		- Reduce start time from minutes to seconds for large graphs (tested on 10k Markdown files)
+		- Type ``` and press Enter to switch to codemirror mode
+		- New [[Shortcuts]]
+			- `g a` to all pages
+			- `g g` to graph view
+			- `g f` to open flashcards
+		- Move editing into the center of viewport when out of viewport
+		- Disable spell check on electron by default
+	- [[Breaking Changes]]
+		- `:block/title`, `:block/body` and `:block/unordered` are removed from the database schema to reduce both memory usage and start time
+			- Re-index is needed!
 - [[Nov 25th, 2021]]
   id:: a7a7603c-f4f2-49ab-a9c5-ca78c41b07db
   **Beta 0.5.1**
