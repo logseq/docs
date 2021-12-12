@@ -1,3 +1,16 @@
+- [[Dec 12th, 2021]]
+  id:: 6f7ac89f-4a99-426d-8ba9-4a2bf5ef5763
+  **Beta 0.5.3**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.5.3
+	- [[Fixed issues]]
+		- Horizontal line `---` doesn't work
+		- Extra newline in code editor
+		- Refine saving of code editor and e2e tests
+		- Empty blocks are not hidden
+		- Can't collapse a block with body
+		- Ignore properties when displaying the block's body
+		- Search blank
+		- High cpu usage introduced by wrong Excalidraw version
 - [[Dec 10th, 2021]]
   id:: 14067234-cd43-40d8-9e25-26d2ba75a0a9
   **Beta 0.5.2**
