@@ -1,3 +1,17 @@
+- [[Dec 14th, 2021]]
+  id:: 1df7499f-f3dc-488e-b7c7-05caf07e7505
+  **Beta 0.5.4**
+  Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.5.4
+	- [[Fixed issues]]
+		- Today's journal file is not recognized by Logseq when starting
+		- Can't embed some IFrame links because of `x-frame-options`
+		- Handle code block with non-latin1 chars
+		- Modal displaying on narrow screens
+	- [[Enhancement]]
+		- Graph view forces
+			-
+			  <div style="position: relative; padding-bottom: 55.72755417956656%; height: 0;"><iframe src="https://www.loom.com/embed/7567e69efa8440cf986c871463586ed3" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+			-
 - [[Dec 12th, 2021]]
   id:: 6f7ac89f-4a99-426d-8ba9-4a2bf5ef5763
   **Beta 0.5.3**
