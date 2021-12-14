@@ -122,8 +122,8 @@
   :block/created-at 1626196353407,
   :block/updated-at 1626196353407}
  {:block/name "ahonn",
-  :block/created-at 1639301331546,
-  :block/updated-at 1639301331546}
+  :block/created-at 1639473638419,
+  :block/updated-at 1639473638419}
  {:block/name "akhater",
   :block/created-at 1626196353427,
   :block/updated-at 1626196353427}
@@ -194,8 +194,8 @@
   :block/created-at 1626196353416,
   :block/updated-at 1626196353416}
  {:block/name "bad3r",
-  :block/created-at 1639301331547,
-  :block/updated-at 1639301331547}
+  :block/created-at 1639473638419,
+  :block/updated-at 1639473638419}
  {:block/name "basic settings",
   :block/created-at 1626196353410,
   :block/updated-at 1626196353410}
@@ -255,7 +255,7 @@
   :block/updated-at 1636437740595}
  {:block/name "changelog",
   :block/created-at 1633949831818,
-  :block/updated-at 1639299957457}
+  :block/updated-at 1639466890806}
  {:block/name "changelog 2020",
   :block/created-at 1626196353411,
   :block/updated-at 1626196353411}
@@ -346,9 +346,12 @@
  {:block/name "dec 11th, 2021",
   :block/created-at 1639180800000,
   :block/updated-at 1639180800000}
- {:block/name "dec 12th, 2021",
-  :block/created-at 1639267200000,
-  :block/updated-at 1639267200000}
+ {:block/name "dec 13th, 2021",
+  :block/created-at 1639353600000,
+  :block/updated-at 1639353600000}
+ {:block/name "dec 14th, 2021",
+  :block/created-at 1639440000000,
+  :block/updated-at 1639440000000}
  {:block/name "dec 16th, 2020",
   :block/created-at 1608076800000,
   :block/updated-at 1608076800000}
@@ -419,8 +422,8 @@
   :block/created-at 1626196353408,
   :block/updated-at 1626196353408}
  {:block/name "embed media - audio, photos, videos",
-  :block/created-at 1639301331547,
-  :block/updated-at 1639301331547}
+  :block/created-at 1639473638420,
+  :block/updated-at 1639473638420}
  {:block/name "encryption",
   :block/created-at 1626196353425,
   :block/updated-at 1626196353425}
@@ -672,8 +675,8 @@
   :block/created-at 1623110400000,
   :block/updated-at 1623110400000}
  {:block/name "junyi du",
-  :block/created-at 1639301331548,
-  :block/updated-at 1639301331548}
+  :block/created-at 1639473638420,
+  :block/updated-at 1639473638420}
  {:block/name "junyu",
   :block/created-at 1627650779263,
   :block/updated-at 1627650779263}
@@ -849,8 +852,8 @@
   :block/created-at 1633956068776,
   :block/updated-at 1633956068776}
  {:block/name "moritz ulrich",
-  :block/created-at 1639301331547,
-  :block/updated-at 1639301331547}
+  :block/created-at 1639473638419,
+  :block/updated-at 1639473638419}
  {:block/name "namespace pages",
   :block/created-at 1626196353410,
   :block/updated-at 1626196353410}
@@ -863,6 +866,9 @@
  {:block/name "new to logseq?",
   :block/created-at 1627655495244,
   :block/updated-at 1627655495244}
+ {:block/name "nightly",
+  :block/created-at 1639473638419,
+  :block/updated-at 1639473638419}
  {:block/name "nikhil warke",
   :block/created-at 1626196353412,
   :block/updated-at 1626196353412}
@@ -1395,8 +1401,8 @@
   :block/created-at 1626196353421,
   :block/updated-at 1626196353421}
  {:block/name "vladimir sorokin",
-  :block/created-at 1639301331546,
-  :block/updated-at 1639301331546}
+  :block/created-at 1639473638419,
+  :block/updated-at 1639473638419}
  {:block/name "wait",
   :block/created-at 1626196353408,
   :block/updated-at 1626196353408}

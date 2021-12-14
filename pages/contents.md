@@ -49,4 +49,4 @@
 	- [Contribute to Our Docs](https://github.com/logseq/docs)
 - 💬
 	- Message us on [Discord](https://discord.gg/KpN4eHY) (We love feedback!)
-	- Tweet us [[https://twitter.com/logseq][@logseq]]
+	- Tweet us [https://twitter.com/logseq](@logseq)
