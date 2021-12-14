@@ -12,6 +12,11 @@
 			-
 			  <div style="position: relative; padding-bottom: 55.72755417956656%; height: 0;"><iframe src="https://www.loom.com/embed/7567e69efa8440cf986c871463586ed3" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 			-
+	- [[Nightly]] release!
+		- #+BEGIN_WARNING
+		  It's unstable compared to the official releases, **use it with caution**!
+		  #+END_WARNING
+		- https://github.com/logseq/logseq/releases/tag/nightly
 - [[Dec 12th, 2021]]
   id:: 6f7ac89f-4a99-426d-8ba9-4a2bf5ef5763
   **Beta 0.5.3**
