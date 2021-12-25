@@ -1,3 +1,32 @@
+- [[Dec 25th, 2021]]
+  **Beta 0.5.5**
+  Desktop app and Android apk download link: https://github.com/logseq/logseq/releases/tag/0.5.5
+	- [[Features]]
+		- Multi-window support(New shortcut: `mod+n` to open a new window)
+		- Add Android APK build to both Beta release and [Nightly](https://github.com/logseq/logseq/releases/tag/nightly) release
+	- [[Thanks]]
+		- [[Clark Cui]]
+			- Fix some CSS errors
+		- [[Bad3r]]
+			- Formatting keyboard shortcuts
+		- [[Moritz Ulrich]]
+			- More fluid Graph scaling on lower-end
+	- [[Fixed issues]]
+		- Code editor's language label interfere with first line of code
+		- Code editor won't switch content while edit config files
+		- Some IME doesn't trigger command menu, or have buggy behaviour while inputing
+		- Unexpected behaviour caused by abuse of keycode
+		- Complex regexp in property parsing
+		- Alias is not considered from shortcut / graph / press enter
+		- Should not encrypt content of specific file types
+	- [[Enhancement]]
+		- Add as many language mode to Code editor
+		- More precise language highlight in both code editor and presentation mode
+		- UI on narrow screens
+		- More fluid Graph scaling on lower-end
+		- Re-number list items when dwim in an ordered list
+		- Pugin APIs, new libs version
+		- Massive enhancement on mobile app, both iOS and Android
 - [[Dec 14th, 2021]]
   id:: 1df7499f-f3dc-488e-b7c7-05caf07e7505
   **Beta 0.5.4**
