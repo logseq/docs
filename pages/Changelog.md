@@ -1,6 +1,8 @@
 - [[Dec 25th, 2021]]
   **Beta 0.5.5**
   Desktop app and Android apk download link: https://github.com/logseq/logseq/releases/tag/0.5.5
+	- [[Known Issues]]
+		- Graph view pages are not clickable https://github.com/logseq/logseq/issues/3579 (already fixed in nightly build)
 	- [[Features]]
 		- Multi-window support(New shortcut: `mod+n` to open a new window)
 		- Add Android APK build to both Beta release and [Nightly](https://github.com/logseq/logseq/releases/tag/nightly) release
