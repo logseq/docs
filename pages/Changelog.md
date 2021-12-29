@@ -1,3 +1,24 @@
+- [[Dec 29th, 2021]]
+  **Beta 0.5.6**
+  Desktop app and Android apk download link: https://github.com/logseq/logseq/releases/tag/0.5.6
+	- [[Features]]
+		- Add `{{namespace [[page]]}}` macro which can be used as a toc [#3616](https://github.com/logseq/logseq/pull/3616)
+		- Docker image for Logseq web app and [Guide Doc](https://github.com/logseq/logseq/blob/master/docs/Docker%20Web%20App%20Guide.md) [#3604](https://github.com/logseq/logseq/pull/3604)
+	- [[Thanks]]
+		- [[shidenggui]]
+			- Enhance block toggle feature [#3559](https://github.com/logseq/logseq/pull/3559)
+		- [[Peng Xiao]]
+			- Fix empty block children is not clickable issue [#3593](https://github.com/logseq/logseq/pull/3593)
+		- [[Yuexun Jiang]]
+			- Fix drop into insert mode after using journal shortcut [#3600](https://github.com/logseq/logseq/pull/3600)
+	- [[Fixed issues]]
+		- Nodes in Graph View is unclickable, caused by wrong pixi.js version introduced in v0.5.5 [#3579](https://github.com/logseq/logseq/issues/3579)
+		- Click link and button behaviour [#3599](https://github.com/logseq/logseq/pull/3599) [#3603](https://github.com/logseq/logseq/pull/3603) [#3607](https://github.com/logseq/logseq/pull/3607)
+		- Unsynced db between multiple windows, which will cause blank search result pages  [#3640](https://github.com/logseq/logseq/pull/3640)
+	- [[Enhancement]]
+		- Block expand/collapse toggle [#3585](https://github.com/logseq/logseq/pull/3585)
+		- Transition of left sidebar when toggling [#3606](https://github.com/logseq/logseq/pull/3606)
+		- Development experience under Linux/Windows [#3575](https://github.com/logseq/logseq/pull/3575) [#3508](https://github.com/logseq/logseq/pull/3608)
 - [[Dec 25th, 2021]]
   **Beta 0.5.5**
   Desktop app and Android apk download link: https://github.com/logseq/logseq/releases/tag/0.5.5
