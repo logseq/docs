@@ -1,4 +1,4 @@
-# Logseq.com docs - [logseq.github.io](https://logseq.github.io)
+# Logseq.com docs - [docs.logseq.com](https://docs.logseq.com)
 
 ## Contributing
 
