@@ -13,15 +13,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Publish to www
-        run: |
-          rm -rvf www
-          curl https://raw.githubusercontent.com/pengx17/logseq-publish/main/Dockerfile.exec -o Dockerfile
-          docker build -t tmp .
-          container_id=$(docker create tmp)
-          docker cp $container_id:/home/logseq/graph-www www
+      - name: Logseq Publish
+        uses: pengx17/logseq-publish@0.1.0
+        with:
+          dest: www
 
-      - name: Deploy to docs.logseq.com
+      - name: Add .nojekyll file
+        run: touch www/.nojekyll
+
+      - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@4.1.9
         with:
           branch: gh-pages
@@ -29,3 +29,4 @@ jobs:
           clean: true
           clean-exclude: |
             CNAME
+            .nojekyll
