@@ -1,3 +1,33 @@
+- [[Jan 6th, 2022]]
+  Beta 0.5.8
+  Desktop app and Android apk download link: https://github.com/logseq/logseq/releases/tag/0.5.8
+	- [[Features]]
+		- Add CodeMirror options support [#3699](https://github.com/logseq/logseq/pull/3699)
+	- [[Thanks]]
+		- [[Stian Håklev]]
+			- Removing padding on mark [#3660](https://github.com/logseq/logseq/pull/3660)
+		- [[YangKeao]]
+			- Allow target attribution in provideUI for plugins [#3661](https://github.com/logseq/logseq/pull/3661)
+		- [[Peng Xiao]]
+			- Some improvements for development
+	- [[Fixed issues]]
+		- Nested and query issues and full-text search in nested queries https://github.com/logseq/logseq/pull/3664
+		- Fix some UI misplacement, calc result offset, position of new updates tip
+		- Avoid notifying destroyed electron window [#3706](https://github.com/logseq/logseq/pull/3706)
+		- Multi window check whie re-indexing
+		- Graph view hang due to duplicated  node/edge [#3758](https://github.com/logseq/logseq/pull/3758)
+		- Separate references/queries collapse state from db [#3744](https://github.com/logseq/logseq/issues/3744)
+		- Block expand/collapse not working under some scenarios
+		- Sometimes a page's name is altered into lower letters [#3691](https://github.com/logseq/logseq/issues/3691)
+		- Right sidebar not being cleared upon switching graphs
+		- Clicking raw HTML links loads target URL in the desktop app
+		- Remove orphaned Pages will delete namespace pages [#3682](https://github.com/logseq/logseq/issues/3682)
+		- Youtube timestamp not work
+	- [[Enhancement]]
+		- Apply text normalization to the whole app [#3612](https://github.com/logseq/logseq/pull/3612)
+			- **NOTE**: This is a **BREAKING CHANGE**, requires re-indexing
+		- Reload custom.css when file changed
+		- DWIM on paste in source block or admonition
 - [[Dec 29th, 2021]]
   **Beta 0.5.6**
   Desktop app and Android apk download link: https://github.com/logseq/logseq/releases/tag/0.5.6
