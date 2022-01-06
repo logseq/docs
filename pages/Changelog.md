@@ -14,7 +14,7 @@
 		- Nested and query issues and full-text search in nested queries https://github.com/logseq/logseq/pull/3664
 		- Fix some UI misplacement, calc result offset, position of new updates tip
 		- Avoid notifying destroyed electron window [#3706](https://github.com/logseq/logseq/pull/3706)
-		- Multi window check whie re-indexing
+		- Multi window check while re-indexing
 		- Graph view hang due to duplicated  node/edge [#3758](https://github.com/logseq/logseq/pull/3758)
 		- Separate references/queries collapse state from db [#3744](https://github.com/logseq/logseq/issues/3744)
 		- Block expand/collapse not working under some scenarios
