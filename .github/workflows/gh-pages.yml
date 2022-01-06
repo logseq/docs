@@ -1,0 +1,30 @@
+
+   
+name: Publish
+
+on:
+  push:
+    branches: [ master ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Publish to www
+        run: |
+          rm -rvf www
+          curl https://raw.githubusercontent.com/pengx17/logseq-publish/main/Dockerfile.exec -o Dockerfile
+          docker build -t tmp .
+          container_id=$(docker create tmp)
+          docker cp $container_id:/home/logseq/graph-www www
+          
+      - name: Deploy to docs.logseq.com
+        uses: JamesIves/github-pages-deploy-action@4.1.9
+        with:
+          branch: gh-pages
+          folder: www
