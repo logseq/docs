@@ -4,11 +4,17 @@
 	- [[How to create a Logseq graph using existing Markdown files]]
 	- [[How to sync your Logseq graph across devices]]
 	- [[Getting started with the Journals page]]
+	- [[How to create pages in Logseq]]
+	- [[Why linking matters]]
+	- [[Aliases and external links]]
+	- [[What is indentation and why does it matter?]]
+	- [[How to filter linked references]]
+	- [[How to work with the left-hand sidebar]]
+	- [[How to work with the right-hand sidebar]]
 - Miscellaneous
 	- [Roadmap](https://trello.com/b/8txSM12G/logseq-roadmap)
 	- [[Changelog]]
 	- [[Videos]]
-	- [[Desktop app]]
 	- [[FAQ]]
 	- [[Glossary]]
 	- [[Testimonials]]
