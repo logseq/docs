@@ -1,0 +1,9 @@
+- If you already have a collection of Markdown files you wish to start with instead of [creating a new graph]([[How to create a new graph]]), Logseq allows you to import those files—even if they were created with another tool.
+- To start using Logseq with your existing Markdown files, all you have to do is create a new graph and select a directory that contains Markdown files. Logseq will automatically create the following folders:
+	- `journals` (in which each day a new file is created for that day)
+	- `pages` (where new files are created when you create a new page in Logseq)
+	- `assets` (where all (media) files you upload in Logseq are stored)
+- Logseq has the ability to find files in subfolders, so it's not necessary to move all of your Markdown files to the pages folder. When you open a directory with files that were created by the Obsidian _Daily notes_ core plugin, Logseq will automatically locate them. However, Logseq will create a new file for every day onward in the `journals` folder.
+- If you want to use Logseq in combination with Obsidian (for example, to make use of Obsidian's massive plugin ecosystem), have a look at the following Twitter thread by Logseq team member Ramses. In it, he shows exactly what settings you need to change in both tools to make them play nice together.
+	- {{tweet https://twitter.com/rroudt/status/1443546448675573760?s=20}}
+-
