@@ -2,7 +2,6 @@
 	- [[Start here]]
 	- [[How to create a new graph]]
 	- [[How to create a Logseq graph using existing Markdown files]]
-	- [[How to sync your Logseq graph across devices]]
 	- [[Getting started with the Journals page]]
 	- [[How to create pages in Logseq]]
 	- [[Why linking matters]]
@@ -11,6 +10,10 @@
 	- [[How to filter linked references]]
 	- [[How to work with the left-hand sidebar]]
 	- [[How to work with the right-hand sidebar]]
+	- [[The basics of block references]]
+	- [[The difference between block embeds and block references]]
+	- [[The difference between block embeds and page embeds]]
+	- [[How to sync your Logseq graph across devices]]
 - Miscellaneous
 	- [Roadmap](https://trello.com/b/8txSM12G/logseq-roadmap)
 	- [[Changelog]]
