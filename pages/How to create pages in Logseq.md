@@ -13,7 +13,6 @@
 				- ![create-page-hashtag.gif](../assets/create-page-hashtag_1641571576887_0.gif)
 			- The difference between bracket links and hashtags is purely cosmetic as they function the same. However, many people use them in different situations; brackets are often used for inline links, whereas hashtags are often used for metadata.
 			- Hashtags can only contain one word, otherwise you need to `#[[wrap them between brackets]]`.
-	-
 - ## How to create pages with the search bar (without linking)
 	- For completeness, let's also have a look at how to create pages using the search bar, although we don't recommend it (see the next page on bidirectional linking for why).
 	- To create a page using the search bar, start typing a page name in it (use the `Cmd-k` (macOS)/`Ctrl-k` (Windows) shortcut to focus the cursor on the search bar without using your mouse). Then, select the option that starts with `New Page:` to create the page and open it:
