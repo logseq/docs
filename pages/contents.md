@@ -8,11 +8,12 @@
 	- [[Aliases and external links]]
 	- [[What is indentation and why does it matter?]]
 	- [[How to filter linked references]]
-	- [[How to work with the left-hand sidebar]]
+	- [[WIP How to work with the left-hand sidebar]]
 	- [[How to work with the right-hand sidebar]]
 	- [[The basics of block references]]
 	- [[The difference between block embeds and block references]]
 	- [[The difference between block embeds and page embeds]]
+	- [[WIP Supercharge search with queries]]
 	- [[How to sync your Logseq graph across devices]]
 - Miscellaneous
 	- [Roadmap](https://trello.com/b/8txSM12G/logseq-roadmap)

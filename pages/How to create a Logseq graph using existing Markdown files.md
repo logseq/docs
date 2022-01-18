@@ -6,4 +6,4 @@
 - Logseq has the ability to find files in subfolders, so it's not necessary to move all of your Markdown files to the pages folder. When you open a directory with files that were created by the Obsidian _Daily notes_ core plugin, Logseq will automatically locate them. However, Logseq will create a new file for every day onward in the `journals` folder.
 - If you want to use Logseq in combination with Obsidian (for example, to make use of Obsidian's massive plugin ecosystem), have a look at the following Twitter thread by Logseq team member Ramses. In it, he shows exactly what settings you need to change in both tools to make them play nice together.
 	- {{tweet https://twitter.com/rroudt/status/1443546448675573760?s=20}}
--
+- [>> Continue by getting to know the Journals page]([[Getting started with the Journals page]])

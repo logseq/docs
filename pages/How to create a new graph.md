@@ -8,4 +8,5 @@
 - If you already have Markdown files you wish to use, look at the next section titled [[How to create a Logseq graph using existing Markdown files]].
 - For now, let's assume you'll start a new graph. Select a folder where you wish to store everything you do in Logseq. Once done, Logseq will open a page with today's date; the Journals page. We'll get back to this special type of page later.
 - Keep in mind that Logseq does not synchronize your data; it'll be only stored on your local machine. In case you want an extra safeguard for your data, you can create your graph in a folder that's synced via services like Dropbox or Google Drive. You can read more about this in the section [[How to sync your Logseq graph across devices]].
-- Now you're ready for the fun part! If you've created a fresh graph, continue with the section [[Getting started with the Journals page]].
+- Now you're ready for the fun part!
+- [>> Continue by getting to know the Journals page]([[Getting started with the Journals page]])
