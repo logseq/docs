@@ -1,3 +1,43 @@
+- [[Jan 20th, 2022]]
+  Beta 0.5.9
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.5.9
+	- [[Features]]
+		- Refactored long page loading logic with lazy loading [#3855](https://github.com/logseq/logseq/pull/3855)
+	- [[Thanks]]
+		- [[Stian Håklev]]
+			- Removing nil orphans in All pages [#3809](https://github.com/logseq/logseq/pull/3809)
+		- [[Peng Xiao]]
+			- Some style enhancements to block-control [#3742](https://github.com/logseq/logseq/pull/3742)
+		- [[Clark Cui ]]
+			- UI position of plugin readme page [3904](https://github.com/logseq/logseq/pull/3904)
+	- [[Fixed issues]]
+		- Filename encoding and special chars [#3777](https://github.com/logseq/logseq/pull/3777)
+		- Missing padding in marker markup [#3776](https://github.com/logseq/logseq/pull/3776)
+		- Strategy of scrolling within left sidebar [#3651](https://github.com/logseq/logseq/pull/3651)
+		- Build deps issue introduced by corlors.js [#3831](https://github.com/logseq/logseq/pull/3831)
+		- Backspace and move for emoji char [#3822](https://github.com/logseq/logseq/pull/3822)
+		- Misused ctrl and cmd in settings [#3859](https://github.com/logseq/logseq/pull/3859)
+		- Open links of external file with default app [#3867](https://github.com/logseq/logseq/pull/3867)
+		- Only show "Add to dictionary" when misspelling [#3869](https://github.com/logseq/logseq/pull/3869)
+		- Add Uncaught exceptions handler for electron's main process
+		- App stuck with loading caused by wrong graph cache [#3889](https://github.com/logseq/logseq/pull/3889)
+		- Datascript error when file imported from fs-watcher [#3883](https://github.com/logseq/logseq/pull/3883)
+		- Not showing an open button, cannot open graph [#3934](https://github.com/logseq/logseq/pull/3934)
+		- Invalid boolean and int properties [#3945](https://github.com/logseq/logseq/pull/3945)
+		- Cursor location when clicking start of a second line
+		- Flashcards num not update while switching graphs
+		- Edge conditions of graph cache handling when App get killed
+		- Block height of a non-visible `#`
+		- Parsing of multi-value properties, now support space-separated property list
+	- [[Enhancement]]
+		- Massive enhancement of marketplace [#3686](https://github.com/logseq/logseq/pull/3686) [#3846](https://github.com/logseq/logseq/pull/3846)
+		- Notify when journals date format changes
+		- Page-name sanity, search term normalization, diacritics support
+		- Allow edit markup files with code editor [#3870](https://github.com/logseq/logseq/pull/3870)
+		- Refine search normalization
+		- Enhance full text search index
+		- Reorder auto-complete items of pop-up [#3949](https://github.com/logseq/logseq/pull/3949)
+		- Massive enhancement of development process
 - [[Jan 6th, 2022]]
   Beta 0.5.8
   Desktop app and Android apk download link: https://github.com/logseq/logseq/releases/tag/0.5.8
@@ -91,8 +131,7 @@
 		- Modal displaying on narrow screens
 	- [[Enhancement]]
 		- Graph view forces
-			-
-			  <div style="position: relative; padding-bottom: 55.72755417956656%; height: 0;"><iframe src="https://www.loom.com/embed/7567e69efa8440cf986c871463586ed3" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+			- <div style="position: relative; padding-bottom: 55.72755417956656%; height: 0;"><iframe src="https://www.loom.com/embed/7567e69efa8440cf986c871463586ed3" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 			-
 	- [[Nightly]] release!
 		- #+BEGIN_WARNING
@@ -363,8 +402,7 @@
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.4.3
 	- [[Features]]
 		- Left sidebar!  🌈  🌈
-			-
-			  <div style="position: relative; padding-bottom: 93.02325581395348%; height: 0;"><iframe src="https://www.loom.com/embed/5fd05d33377c4254b4ee4b6aae5b193d" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+			- <div style="position: relative; padding-bottom: 93.02325581395348%; height: 0;"><iframe src="https://www.loom.com/embed/5fd05d33377c4254b4ee4b6aae5b193d" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 			-
 		- Select multiple blocks to `copy block refs` and `cycle todos`
 	- [[Thanks]]
