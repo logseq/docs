@@ -9,11 +9,11 @@
 		- [[Peng Xiao]]
 			- Some style enhancements to block-control [#3742](https://github.com/logseq/logseq/pull/3742)
 		- [[Clark Cui ]]
-			- UI position of plugin readme page [3904](https://github.com/logseq/logseq/pull/3904)
+			- UI position of plugin readme page [#3904](https://github.com/logseq/logseq/pull/3904)
 	- [[Fixed issues]]
 		- Filename encoding and special chars [#3777](https://github.com/logseq/logseq/pull/3777)
 		- Missing padding in marker markup [#3776](https://github.com/logseq/logseq/pull/3776)
-		- Strategy of scrolling within left sidebar [#3651](https://github.com/logseq/logseq/pull/3651)
+		- Strategy of scrolling within the left-sidebar [#3651](https://github.com/logseq/logseq/pull/3651)
 		- Build deps issue introduced by corlors.js [#3831](https://github.com/logseq/logseq/pull/3831)
 		- Backspace and move for emoji char [#3822](https://github.com/logseq/logseq/pull/3822)
 		- Misused ctrl and cmd in settings [#3859](https://github.com/logseq/logseq/pull/3859)
