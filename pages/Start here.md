@@ -1,23 +1,38 @@
 - ## Introduction
-	- Logseq looks simple on the surface and is extremely powerful under the hood. Much like the famed Microsoft Excel, Logseq aims to be an environment for thinking. Excel's fuel are blocks of numbers, Logseq's fuel are blocks of words.
-	- It takes time to master this tool, as Logseq doesn't impose a way of working. But once you figure out how to get your desired end results, Logseq will help you become a much more effective note-taker—and even a more effective thinker.
-	- To help you get started figuring out the workflows that work for you,  we will take you through all of Logseq's core features. See them as tools in your toolbox; individually a tool will do little, but once you learn to use them in combination you can become an artist. Aim to be a knowledge artist.
+	- Logseq looks simple on the surface and is extremely powerful under the hood. Much like the famed Microsoft Excel, Logseq aims to be an environment for thinking. Excel's fuel are blocks of numbers, **Logseq's fuel are blocks of words**.
+	- It takes time to master this tool, as Logseq doesn't impose a way of working. But once you figure out how to get your desired end results, **Logseq will help you become a much more effective thinker.**
+	- To help you get started figuring out the workflows that work for you,  we will take you through all of Logseq's core features. See them as tools in your toolbox; individually a tool will do little, but once you learn to use them in combination you can become an artist. **Aim to be a knowledge artist.**
 	- Before we dive into the overview of Logseq's functionality, let's first dig a bit deeper into what makes Logseq special. As we said before; Logseq looks simple on the surface. But looks can be deceptive.
 - ## What makes Logseq special?
-	- If you went ahead and already installed Logseq, you might have noticed that you landed on a page with today's date and a single dot—or bullet. Hm... looks a lot like the beginning of an outline, doesn't it?
-	- That's right: Logseq is an outliner. And that's a crucial fact.
-	- Each bullet denotes a block, and it's the fundamental unit of information in Logseq. Everything in Logseq is about the block, and throughout this guide we'll see what are the implications and opportunities of this concept.
-	- But why is this block thing important? Isn't it enough to have pages in folders? After all, note-taking apps and word processors have had them for decades, so pages must be the fundamental unit of knowledge work. Right?
-	- Well... no.
-	- While pages are great for linear writing, the way our brains work is far from linear. When thinking of one thing, we can easily name a handful related ideas. And while our brains are great at associating ideas, it's notoriously bad at juggling more than a handful at the same time.
-	- In other words: we have fast working memory, but its capacity is limited.
-	- To expand our working memory we tend to use all types of note-taking devices, pen and paper included. But even though note-taking apps have made it much easier to take notes, organize them, and retrieve them, they're still overwhelmingly linear pieces of writing. For most of us, our brains just don't work that way.
-- ## The philosophy of Logseq
-	- Common note-taking tools like Evernote, Notion, and Apple Notes are hierarchical, meaning that your notes live within folders. Each note is always in exactly one folder.
-	- Some apps add a dimension called nesting, which happens when you indent paragraphs or notes underneath others. That way, a note can live in another note, which in turn can live in another note, _ad infinitum_.
-	- Logseq is different in that notes have no fixed location. The atomic unit of knowledge in Logseq isn’t a page; it’s a block. While under the hood Logseq will save your blocks in Markdown files (more on that later), each block is free to be used wherever. That means you can easily connect to any other block in the same database.
-	- Imagine blocks being cities, which are connected by roads (links).
+	- **Logseq is an networked outliner.** Each bullet denotes a block, which is the fundamental unit of information in Logseq. And you can link every block to any part of your notes collection. Everything in Logseq is about the block, and throughout this guide we'll see what are the implications and opportunities of this concept.
+	- Contrast a networked note-taking tool to common note-taking tools that try to emulate pages in folder. Most traditional notes tools are hierarchical, meaning that your notes live within folders.
+	- Logseq is different in that notes have no fixed location. **The atomic unit of knowledge in Logseq isn’t a page; it’s a block.** While under the hood Logseq will save your blocks in Markdown files (more on that later), each block is free to be used wherever.
 	- ![Hier-vs-Netw-thinking-lite.png](../assets/Hier-vs-Netw-thinking-lite_1642527691339_0.png)
-	- In the coming lessons we’ll dive deep into what this freedom of information enables us to do. For now it’s enough to understand that every bullet is a block and that it can connect to any other block or collection of blocks (pages) in the same database.
-	- [>> Continue by creating a new Logseq graph ]([[How to create a new graph]])
-	- [>> Continue by creating a Logseq graph using existing Markdown files]([[How to create a Logseq graph using existing Markdown files]])
+	- In the coming lessons we’ll dive deep into what this freedom of information enables us to do. For now it’s enough to understand that every bullet is a block and that it can connect to any other block or collection of blocks (pages).
+- ## Common use cases for Logseq
+	- There are many ways you can use Logseq. What confuses many newcomers is that **Logseq does not impose a way of working.** You can create your own information structures using collections of blocks and links. But you shouldn't worry too much about structure in the beginning, as **structure can _emerge_ in Logseq.**
+	- Before you move your entire personal knowledge management system to Logseq, let's see what are some use cases to get started with Logseq. We recommend you start out with just one or two use cases to try out Logseq. As you become more proficient, you'll start to see the possibilities and use Logseq for more and more.
+	- Here are three ways to get started using Logseq in a natural way:
+	- ### Note-taking
+		- Most people get started with Logseq for day-to-day note-taking on whatever they need to remember. Using the **Journals page, you have a daily scratchpad** for whatever comes to mind. And using the easy to create date links, you can easily send notes to future Journals pages.
+		- The absolute best practice to get started with Logseq is by writing everything on the daily Journals page. Not only does this take away the decision on where to store a note, you can easily go back in time to revisit your notes.
+		- Common things Logseq enthusiasts take notes on are meetings, projects, other people, and whatever content they consume. As long as you write the notes on your daily Journals page and create links out of names, projects, and concepts, you'll be able to find your notes. More on this in future lessons.
+	- ### Task management
+		- As you take more notes in Logseq, you might thing of tasks you need to do later. While you may use a dedicated tasks tool, a common next step after note-taking is to also manage tasks with Logseq.
+		- **Combining your notes and tasks is a breeze in Logseq.** Not only can you create tasks in, you can even track how much time you spend on them, and create elaborate workflows using priorities or other tags.
+		- [[Queries]] are a popular (albeit advanced) way to resurface tasks that are mixed in-between notes. But even as a beginning Logseq user can you benefit from tasks as you write on your daily Journals. To send a task to your future self, simply add a date link to quickly offload things from your mind (hint: type `/date picker` and hit `Enter` to easily add a future date to a task).
+		- Once tasks start to cluster around projects, Logseq also has you covered. With Logseq's block-based approach, creating pages for projects is as easy as stacking blocks. And when you learn to use Logseq's powerful queries, you can effortlessly create dynamic indexes or task dashboards.
+	- ### Sharing
+		- As your collection of linked notes is growing, and you have a functioning task management system going in Logseq, what is the next common use case? How about leveraging that captured knowledge and creating something with it?
+		- For many Logseq fans, their notes collection is like a second brain. Not only  do capture their experiences in journal entries or store knowledge for later reference, as a result of all the writing their notes will contain solutions to problems. And what better way to share insights than in written form?
+		- Because Logseq is an outliner first and foremost, writing outlines is a natural use case. But outlining is a lot more fun in Logseq as you can pull a block from anywhere in your notes collection.
+		- By combining queries, block references, and embeds, outlining becomes a breeze. No wonder that Logseq is popular among academics, writers, teachers, and other sharers of knowledge.
+	- After seeing how others leverage Logseq's feature, you've hopefully started thinking of some of your own use cases. We recommend you continue following the rest of this starter guide to learn the core 20% functionality that will provide you with 80% of your wanted returns.
+	- If you get stuck at any moment or if you just want to connect with fellow Logseq enthusiasts, [**join the Logseq Discord server**](https://discord.gg/sVsJdzJghp). There you'll always find someone friendly who's willing to help you better understand a Logseq feature or workflow. We look forward to getting to know you!
+	- For now, let's get started by creating a graph.
+- ## Create a graph
+	- In Logseq, a collection of notes is called a _graph_. No need to worry if you don't know what a graph is or if you're not familiar with databases in general. All you need to know is that a graph is a collection of notes that are connected, i.e. there are links pointing between the notes.
+	- As you progress through this starter guide, you'll see the power of the different ways of linking in Logseq. Through the links between your notes, you create a network. Not only does this network make finding notes easy, but the connections between different notes will provide a lot of value in themselves. More on that later.
+	- For now, decide how you want to start using Logseq:
+		- [>> Start by creating a new Logseq graph]([[How to create a new graph]])
+		- [>> Start by creating a Logseq graph using existing Markdown files]([[How to create a Logseq graph using existing Markdown files]])
