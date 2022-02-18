@@ -2,7 +2,7 @@
   Beta 0.6.0
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.6.0
 	- [[Features]]
-		- New command to switch between graphs (Cmd/Ctrl+Shift+G)
+		- New commands to switch between graphs (Cmd/Ctrl+Shift+G), add a graph, remove a graph and copy current file
 		- Shift+click to select multiple blocks
 		- Upgrade Excalidraw to 0.10.0
 	- [[Thanks]]
@@ -39,8 +39,9 @@
 		- Search cache contamination on windows causing missing sanitization
 		- Unwanted left padding when pdf viewer active
 		- Long page stall loading and collapsed state
+		- Fix querying integer properties
 	- [[Enhancement]]
-		- Performance improvement white saving files
+		- Performance improvement while saving files
 		- Performance improvement via incremental queries
 		- Performance improvement of long pages and queries
 		- Reduce memory usage
