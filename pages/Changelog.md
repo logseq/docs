@@ -1,3 +1,55 @@
+- [[Feb 18th, 2022]]
+  Beta 0.6.0
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.6.0
+	- [[Features]]
+		- New command to switch between graphs (Cmd/Ctrl+Shift+G)
+		- Shift+click to select multiple blocks
+		- Upgrade Excalidraw to 0.10.0
+	- [[Thanks]]
+		- [[Alexey Korolev]]
+			- Fix typo in Russian localization
+		- [[Clovis Fabricio Costa]]
+			- 🇧🇷  pt-BR translation
+		- [[cynial]]
+			- Update Chinese translation
+		- [[ingepettersen]]
+			- Updated Norwegian translation
+		- [[Manjusaka]]
+			- Add new friendly issue template for bug report
+		- [[sawhney17]]
+			- Fix bullet lines not fully hidden in document mode
+		- [[pedroserigatto]]
+			- Translated a few more keywords to pt-BR
+		- [[Martin Sauter]]
+			- Add missing German translations
+		- [[xxchan]]
+			- Improve issue template
+		- [[Paulo Oliva]]
+			- Updated the EU Portuguese translation
+	- [[Fixed issues]]
+		- Title property is not added when creating or renaming
+		- custom.js not works
+		- Fix block collapse state not being saved
+		- Ignore changes in bak folder
+		- Fix property page links
+		- Disable blank alias
+		- Calc result overlaps with input text when the latter is very long
+		- Srs cards shortcuts not working
+		- Fix checkbox floats above button
+		- Search cache contamination on windows causing missing sanitization
+		- Unwanted left padding when pdf viewer active
+		- Long page stall loading and collapsed state
+	- [[Enhancement]]
+		- Performance improvement white saving files
+		- Performance improvement via incremental queries
+		- Performance improvement of long pages and queries
+		- Reduce memory usage
+		- Add tag and url support for follow-link-under-cursor cmd
+		- Plugin api of `get_block` with shallow children uuid results
+		- Add default right click context menu
+		- Refine page search autocompletion
+		- Refine page title renaming dialog
+		- Enhance settings UI of plugins
 - [[Jan 20th, 2022]]
   Beta 0.5.9
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.5.9
