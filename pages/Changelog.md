@@ -14,6 +14,7 @@
 			- Add Excalidraw support
 		- [[Plugins]]
 			- Return value of `remove_block`
+		- Tags not working on org mode
 	- [[Enhancement]]
 		- `ESC` to cancel renaming page
 - [[Feb 18th, 2022]]
