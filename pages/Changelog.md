@@ -1,3 +1,21 @@
+- [[Feb 20th, 2022]]
+  Beta 0.6.1
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.6.1
+	- [[Thanks]]
+		- [[Ben Jaffe]]
+			- enhance(ui): add data-ref for items in left sidebar
+	- [[Fixed issues]]
+		- SRS cards can't be edited during preview or in /cards queries
+		- Can't sort by properties in query table
+		- Electron context menu
+		- When a page name has a word with an accent, it lost data
+		- [[Mobile]]
+			- Tweet component loading failed
+			- Add Excalidraw support
+		- [[Plugins]]
+			- Return value of `remove_block`
+	- [[Enhancement]]
+		- `ESC` to cancel renaming page
 - [[Feb 18th, 2022]]
   Beta 0.6.0
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.6.0
