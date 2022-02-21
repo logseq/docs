@@ -1,0 +1,8 @@
+- By default, the sidebar on the right is hidden. With the keyboard shortcut `t r` you open it. But, you can't write in the sidebar nor drag blocks to it in this state, so what's the use?
+- In the right-hand sidebar, you can open (branches of) blocks, pages, and references. Any internal link can be opened in the sidebar by holding the `Shift` key when clicking the link with your left mouse button (this also works to open a result from the search bar in the sidebar):
+	- ![right-sidebar-parent-a.png](../assets/right-sidebar-parent-a_1641572574836_0.png)
+- Here, I `Shift-Click`'ed  on the **Parent A** link, opening it in the sidebar. In this case, the page is empty so we only see a bullet without text. However, from the sidebar we can start typing directly on the page or drag blocks onto it from the main window.
+- Furthermore, we get the option to close the page in the sidebar (1) and to filter the linked references (2).
+- To open a _block_ in the sidebar, `Shift-Click` on a bullet. You can easily add child blocks to the opened block by placing your cursor in it and hitting `Enter`:
+	- ![right-sidebar-new-block.gif](../assets/right-sidebar-new-block_1641572640336_0.gif)
+- And those are the basics of the right-hand sidebar! In the next lesson, will expand on the usefulness of the sidebar by adding another power tool to our arsenal: _block references_.

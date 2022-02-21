@@ -1,14 +1,27 @@
 - 🌟 [[New to Logseq?]]
-	- [[Getting started]]
+	- [[Start here]]
+	- [[How to create a new graph]]
+	- [[How to create a Logseq graph using existing Markdown files]]
+	- [[Getting started with the Journals page]]
+	- [[How to create pages in Logseq]]
+	- [[Why linking matters]]
+	- [[Aliases and external links]]
+	- [[What is indentation and why does it matter?]]
+	- [[How to filter linked references]]
+	- [[The basics of block references]]
+	- [[The difference between block embeds and block references]]
+	- [[The difference between block embeds and page embeds]]
+	- [[How to work with the right-hand sidebar]]
+	- [[How to sync your Logseq graph across devices]]
+- Miscellaneous
+	- [Roadmap](https://trello.com/b/8txSM12G/logseq-roadmap)
+	- [[Changelog]]
 	- [[Videos]]
-	- [[Desktop app]]
 	- [[FAQ]]
 	- [[Glossary]]
 	- [[Testimonials]]
 		- ((6071c223-b0ed-4235-80b2-f5e44d3679b9))
-	- [Awesome Logseq](https://github.com/logseq/awesome-logseq)
-	- [Roadmap](https://trello.com/b/8txSM12G/logseq-roadmap)
-	- [[Changelog]]
+	- [Awesome Logseq](https://github.com/logseq/awesome-logseq) (community contributions)
 - [[Features]]
 	- [Backlink]([[term/backlink]])
 	- [[Knowledge Graph]]

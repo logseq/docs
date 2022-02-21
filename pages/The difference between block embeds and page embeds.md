@@ -1,0 +1,17 @@
+- In Logseq there are two ways to embed blocks:
+	- 1. By embedding a block and its children
+	  2. By embedding an entire page with all of its blocks
+- ## Block embeds
+	- The easiest way to embed a block is by calling the block embed shortcode using the trigger menu. Type `/block embed`, press the `Down` key, and hit `Enter` to select the option in the trigger menu:
+		- ![block-embed-trigger.png](../assets/block-embed-trigger_1642513294364_0.png)
+	- Now, you get the following shortcode:
+		- ![block-embed-shortcode.png](../assets/block-embed-shortcode_1642513313850_0.png)
+		- Between the `((double parentheses))`, you place the address of the block you'd like to embed. Alternatively, you can start typing words here to search for a block.
+- ## Page embeds
+	- Apart from (branches of) blocks, we can also embed entire pages. To do so, use the `/page embed` trigger to call the page embed shortcode:
+		- ![page-embed-trigger.png](../assets/page-embed-trigger_1642513364687_0.png)
+	- Now, you get the following shortcode:
+		- ![page-embed-shortcode.png](../assets/page-embed-shortcode_1642513389564_0.png)
+	- Inside the `[[double brackets]]`, type the name of the page you wish to embed. Click outside the block and the page's contents will show.
+	- Not sure if you've embedded a block or a page? Page embeds always show the page name on top of the embed (in this example the page **Parent A**):
+		- ![page-embed-parent-a.png](../assets/page-embed-parent-a_1642513430587_0.png)
