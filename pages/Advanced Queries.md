@@ -263,4 +263,4 @@
       #+END_SRC
 - **Resources**
     - [^1]: [Learn Datalog Today](http://www.learndatalogtoday.org/)  is an interactive tutorial designed to teach you the Datomic dialect of Datalog.
-    - [^2]: [[https://docs.datomic.com/query.html][Datomic query documentation]]
+    - [^2]: [Datomic query documentation](https://docs.datomic.com/query.html)
