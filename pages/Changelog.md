@@ -3,7 +3,7 @@
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.6.3
 	- [[Features]]
 		- Flashcards random mode [#4535](https://github.com/logseq/logseq/pull/4535)
-		- Open file backups directory  [#4535](https://github.com/logseq/logseq/pull/4535)
+		- Open file backups directory [#4526](https://github.com/logseq/logseq/pull/4526)
 		- Use query-dsl rules from advanced query [#4518](https://github.com/logseq/logseq/pull/4518)
 	- [[Thanks]]
 		- [[0xflotus]]
