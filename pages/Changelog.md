@@ -7,7 +7,7 @@
 		- Use query-dsl rules from advanced query [#4518](https://github.com/logseq/logseq/pull/4518)
 	- [[Thanks]]
 		- [[0xflotus]]
-			- And syntax highlighting for nginx in docs [#4499](https://github.com/logseq/logseq/pull/4499)
+			- Syntax highlighting for nginx in docs [#4499](https://github.com/logseq/logseq/pull/4499)
 	- [[Fixed issues]]
 		- `:yesterday` in query should be a date [#4525](https://github.com/logseq/logseq/pull/4525)
 		- error while cycling todos [#4524](https://github.com/logseq/logseq/pull/4524)
