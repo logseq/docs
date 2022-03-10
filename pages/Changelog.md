@@ -1,3 +1,22 @@
+- [[Mar 11th, 2022]]
+  Beta 0.6.3
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.6.3
+	- [[Features]]
+		- Flashcards random mode [#4535](https://github.com/logseq/logseq/pull/4535)
+		- Open file backups directory  [#4535](https://github.com/logseq/logseq/pull/4535)
+		- Use query-dsl rules from advanced query [#4518](https://github.com/logseq/logseq/pull/4518)
+	- [[Thanks]]
+		- [[0xflotus]]
+			- And syntax highlighting for nginx in docs [#4499](https://github.com/logseq/logseq/pull/4499)
+	- [[Fixed issues]]
+		- `:yesterday` in query should be a date [#4525](https://github.com/logseq/logseq/pull/4525)
+		- error while cycling todos [#4524](https://github.com/logseq/logseq/pull/4524)
+		- Refresh window causing file changes not synced to db [#4514](https://github.com/logseq/logseq/pull/4514)
+		- PDF toolbar covers top of scrollbar and page number bug [#4511](https://github.com/logseq/logseq/pull/4511)
+		- DSL query bugs [#4503](https://github.com/logseq/logseq/pull/4503)
+		- Return value of move block in plugin API [#4496](https://github.com/logseq/logseq/pull/4496)
+		- Only half of cards viewable [#4521](https://github.com/logseq/logseq/issues/4521)
+		- Collapse/expand in publishing [#4304](https://github.com/logseq/logseq/issues/4304)
 - [[Mar 8th, 2022]]
   Beta 0.6.2
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.6.2
