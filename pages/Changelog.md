@@ -1,3 +1,37 @@
+- [[Mar 20th, 2022]]
+  Beta 0.6.4
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.6.4
+	- [[Features]]
+		- Add a configuration option to support the previous collapse behavior, simply set `:outliner/block-title-collapse-enabled?   true` in `config.edn` [#4593](https://github.com/logseq/logseq/pull/4593)
+	- [[Thanks]]
+		- [[Yue Yang]]
+			- Fix cloze CSS selector
+			- Fix cycle marker will remove "#" unexpectedly
+			- Make `<hr/>` not be displayed if there is only one repo
+		- [[Michiel Borkent]]
+			- Update deps, sci
+		- [[Peng Xiao]]
+			- Fix replace-block-reference-with-content-at-point not working
+		- [[sawhney17]]
+			- Readability improvements in Plugin Settings
+		- [[Giuseppe D'Andrea ]]
+			- Fix broken links in docs
+	- [[Fixed issues]]
+		- Click with selection in code editor saves wrong data  [#4567](https://github.com/logseq/logseq/pull/4567)
+		- Cloze CSS selector [#4561](https://github.com/logseq/logseq/pull/4561)
+		- Fix blank screen on home page [#4575](https://github.com/logseq/logseq/pull/4575)
+		- Block disappears when dragged to another block [#4536](https://github.com/logseq/logseq/pull/4536)
+		- Nested boolean query bugs [#4540](https://github.com/logseq/logseq/pull/4540)
+		- `#+keyword` issues in org-mode [#4573](https://github.com/logseq/logseq/pull/4573)
+		- Cycle marker will remove "#" unexpectedly [#4589](https://github.com/logseq/logseq/pull/4589)
+		- Query fixes related to use of lookup refs [#4596](https://github.com/logseq/logseq/pull/4596)
+		- replace-block-reference-with-content-at-point not working [#4591](https://github.com/logseq/logseq/pull/4591)
+		- Make `<hr/>` not be displayed if there is only one repo [#4602](https://github.com/logseq/logseq/pull/4602)
+		- Rules to advanced query [#4627](https://github.com/logseq/logseq/pull/4627)
+		- Search indices are outdated when in multi-window mode [#4547](https://github.com/logseq/logseq/pull/4547)
+	- [[Enhancement]]
+		- Readability improvements in Plugin Settings [#4617](https://github.com/logseq/logseq/pull/4617)
+		- Gracefully fail references component and other small error [#4634](https://github.com/logseq/logseq/pull/4634)
 - [[Mar 11th, 2022]]
   Beta 0.6.3
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.6.3
