@@ -90,7 +90,7 @@
       :view (fn [tags]
             [:div
              (for [tag (flatten tags)]
-               [:a.tag.mr-1 {:href (str "/page/" tag)}
+               [:a.tag.mr-1 {:href (str "#/page/" tag)}
                 (str "#" tag)])])}
       #+END_QUERY
       #+END_SRC
@@ -108,7 +108,7 @@
        :view (fn [result]
              [:div.flex.flex-col
               (for [page result]
-                [:a {:href (str "/page/" page)} (clojure.string/capitalize page)])])}
+                [:a {:href (str "#/page/" page)} (clojure.string/capitalize page)])])}
       #+END_QUERY
       #+END_SRC
     - 7. Get all the blocks with the property "type" and the value "programming_lang"
