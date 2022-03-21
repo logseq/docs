@@ -1,20 +1,16 @@
 - The database that Logseq use is [Datascript](https://github.com/tonsky/datascript), which is an immutable in-memory database and [Datalog](https://en.wikipedia.org/wiki/Datalog) query engine in Clojure and ClojureScript.
-- Logseq's database schema:
-  https://github.com/logseq/logseq/blob/master/src/main/frontend/db_schema.cljs
-- Please check _Learn Datalog Today_ [^1] and _Datomic query syntax_ [^2] first if you're not familiar with Datalog.
-- **Some tips**
-  created_at:: 1609244703085
-  updated-at:: 1609244703085
-  #+BEGIN_TIP
-  1. Page names are stored as lower case in the database.
-  #+END_TIP
+- **Resources**
+    - [Learn Datalog Today](http://www.learndatalogtoday.org/) is a great first reference if you're not familiar with Datalog.
+    - [Datomic query documentation](https://docs.datomic.com/query.html) - Thorough reference for datomic dialect of Datalog. Explains most datalog concepts well.
+    - [Datascript's intro docs](https://github.com/tonsky/datascript/wiki/Getting-started)
+    - [Logseq's database schema](https://github.com/logseq/logseq/blob/master/src/main/frontend/db_schema.cljs)
 - The query format is something like this:
   created_at:: 1609244764756
   updated-at:: 1609246099894
   #+BEGIN_EXAMPLE
   {:title  [:h2 "Your query title"]
    :query  [:find (pull ?b [*])
-          :where ...]
+            :where ...]
    :inputs [...]
    :view             (fn [query-result] [:div ...])
    :result-transform (fn [query-result] ...)
@@ -24,12 +20,20 @@
   | Name             | Description                      | Default | Optional |
   |------------------|----------------------------------|---------|----------|
   | title            | query title, supports hiccup     |         | true     |
-  | query            | datascript query                 |         | false    |
+  | query            | datascript query or simple query |         | false    |
   | inputs           | query inputs                     |         | true     |
   | view             | (fn [query-result] hiccup)       |         | true     |
   | collapsed?       | Whether to collapse the result   | false   | true     |
   | result-transform | (fn [query-result] do something) |         | true     |
-- **Examples**
+- **Query Tips**
+  created_at:: 1609244703085
+  updated-at:: 1609244703085
+  #+BEGIN_TIP
+  1. `?b` and `?p` are special symbols in queries that respectively refer to blocks and pages.
+  2. Page names are stored as lower case in the database.
+  3. Most simple query operators are available as [rules](https://docs.datomic.com/on-prem/query/query.html#rules) in queries
+  #+END_TIP
+- **Query Examples**
     - 1. Get all tasks
       created_at:: 1609232063516
       updated-at:: 1609245970090
@@ -38,46 +42,40 @@
       #+BEGIN_QUERY
       {:title "All tasks"
        :query [:find (pull ?b [*])
-             :where
-             [?b :block/marker ?m]
-             [(not= ?m "nil")]]}
+               :where
+               [?b :block/marker _]]}
       #+END_QUERY
       #+END_SRC
     - 2. Get all tasks with a tag "project"
       #+BEGIN_SRC clojure
       #+BEGIN_QUERY
-      {:title "All tasks with tag project"
+      {:title "All blocks with tag project"
        :query [:find (pull ?b [*])
-             :where
-             [?p :block/name "project"]
-             [?b :block/ref-pages ?p]]}
+               :where
+               [?p :block/name "project"]
+               [?b :block/refs ?p]]}
       #+END_QUERY
       #+END_SRC
     - 3. Blocks in 7ds with a page reference of datalog
       #+BEGIN_SRC clojure
 
       #+BEGIN_QUERY
-      {:title "Blocks in 7ds with a page reference of datalog"
+      {:title "Journal blocks in last 7 days with a page reference of datalog"
        :query [:find (pull ?b [*])
-             :in $ ?start ?today ?tag
-             :where
-             [?b :block/page ?p]
-             [?p :page/journal-day ?d]
-             [(>= ?d ?start)]
-             [(<= ?d ?today)]
-             [?b :block/ref-pages ?rp]
-             [?rp :block/name ?tag]]
+               :in $ ?start ?today ?tag
+               :where
+               (between ?b ?start ?today)
+               (page-ref ?b ?tag)]
        :inputs [:7d-before :today "datalog"]}
       #+END_QUERY
       #+END_SRC
-    - 4. All TODOs
+    - 4. All TODO tasks
       #+BEGIN_SRC clojure
       #+BEGIN_QUERY
-      {:title "TODO"
+      {:title "TODO tasks"
        :query [:find (pull ?b [*])
-             :where
-             [?b :block/marker ?marker]
-             [(= "TODO" ?marker)]]}
+               :where
+               (task ?b #{"TODO"})]}
       #+END_QUERY
       #+END_SRC
     - 5. All the tags specified in the front matter (tags: tag1, tag2)
@@ -85,8 +83,8 @@
       #+BEGIN_QUERY
       {:title "All page tags"
       :query [:find ?tag-name
-            :where
-            [?tag :block/name ?tag-name]]
+              :where
+              [?tag :block/name ?tag-name]]
       :view (fn [tags]
             [:div
              (for [tag (flatten tags)]
@@ -117,14 +115,11 @@
       #+BEGIN_QUERY
       {:title [:h2 "Programming languages list"]
        :query [:find (pull ?b [*])
-             :where
-             [?b :block/properties ?p]
-             [(get ?p :type) ?t]
-             [(= "programming_lang" ?t)]]
-       }
+               :where
+               (property ?b :type "programming_lang")]}
       #+END_QUERY
       #+END_SRC
-    - 8. All tasks tagged using current page
+    - 8. TODO tasks tagged using current page
       #+BEGIN_SRC clojure
 
       #+BEGIN_QUERY
@@ -134,26 +129,21 @@
              :where
              [?p :block/name ?current-page]
              [?b :block/marker ?marker]
-             [?b :block/ref-pages ?p]
+             [?b :block/refs ?p]
              [(= "TODO" ?marker)]]
        :inputs [:current-page]}
       #+END_QUERY
       #+END_SRC
-    - 9. Tasks made active in the last 2 weeks
+    - 9. Active tasks from the last 2 weeks
       #+BEGIN_SRC clojure
 
       #+BEGIN_QUERY
       {:title "🟢 ACTIVE"
-        :query [:find (pull ?h [*])
+        :query [:find (pull ?b [*])
                 :in $ ?start ?today
                 :where
-                [?h :block/marker ?marker]
-                [?h :block/page ?p]
-                [?p :page/journal? true]
-                [?p :page/journal-day ?d]
-                [(>= ?d ?start)]
-                [(<= ?d ?today)]
-                [(contains? #{"NOW" "DOING"} ?marker)]]
+                (task ?b #{"NOW" "DOING"})
+                (between ?b ?start ?today)]
         :inputs [:14d :today]
         :result-transform (fn [result]
                             (sort-by (fn [h]
@@ -166,16 +156,11 @@
 
       #+BEGIN_QUERY
        {:title "⚠️ OVERDUE"
-        :query [:find (pull ?h [*])
+        :query [:find (pull ?b [*])
                 :in $ ?start ?today
                 :where
-                [?h :block/marker ?marker]
-                [?h :block/ref-pages ?p]
-                [?p :page/journal? true]
-                [?p :page/journal-day ?d]
-                [(>= ?d ?start)]
-                [(<= ?d ?today)]
-                [(contains? #{"NOW" "LATER" "TODO" "DOING"} ?marker)]]
+                (task ?b #{"NOW" "LATER" "TODO" "DOING"})
+                (between ?b ?start ?today)]
         :inputs [:56d :today]
         :collapsed? false}
       #+END_QUERY
@@ -185,16 +170,11 @@
 
       #+BEGIN_QUERY
           {:title "📅 NEXT"
-        :query [:find (pull ?h [*])
+        :query [:find (pull ?b [*])
                 :in $ ?start ?next
                 :where
-                [?h :block/marker ?marker]
-                [?h :block/ref-pages ?p]
-                [?p :page/journal? true]
-                [?p :page/journal-day ?d]
-                [(> ?d ?start)]
-                [(< ?d ?next)]
-                [(contains? #{"NOW" "LATER" "DOING" "TODO"} ?marker)]]
+                (task ?b #{"NOW" "LATER" "TODO" "DOING"})
+                (between ?b ?start ?next)]
         :inputs [:today :10d-after]
         :collapsed? false}
       #+END_QUERY
@@ -204,16 +184,11 @@
 
       #+BEGIN_QUERY
          {:title "🟠 SLIPPING"
-        :query [:find (pull ?h [*])
+        :query [:find (pull ?b [*])
                 :in $ ?start ?today
                 :where
-                [?h :block/marker ?marker]
-                [?h :block/page ?p]
-                [?p :page/journal? true]
-                [?p :page/journal-day ?d]
-                [(>= ?d ?start)]
-                [(<= ?d ?today)]
-                [(contains? #{"NOW" "LATER" "TODO" "DOING"} ?marker)]]
+                (task ?b #{"NOW" "LATER" "TODO" "DOING"})
+                (between ?b ?start ?today)]
         :inputs [:7d :today]
         :result-transform (fn [result]
                             (sort-by (fn [h]
@@ -229,13 +204,8 @@
         :query [:find (pull ?h [*])
                 :in $ ?start ?today
                 :where
-                [?h :block/marker ?marker]
-                [?h :block/page ?p]
-                [?p :page/journal? true]
-                [?p :page/journal-day ?d]
-                [(>= ?d ?start)]
-                [(<= ?d ?today)]
-                [(contains? #{"NOW" "LATER" "TODO" "DOING"} ?marker)]]
+                (task ?b #{"NOW" "LATER" "TODO" "DOING"})
+                (between ?b ?start ?today)]
         :inputs [:56d :8d]
         :result-transform (fn [result]
                             (sort-by (fn [h]
@@ -261,6 +231,25 @@
         :collapsed? false}
       #+END_QUERY
       #+END_SRC
-- **Resources**
-    - [^1]: [Learn Datalog Today](http://www.learndatalogtoday.org/)  is an interactive tutorial designed to teach you the Datomic dialect of Datalog.
-    - [^2]: [Datomic query documentation](https://docs.datomic.com/query.html)
+    - 15. Query with rules as input
+      #+BEGIN_SRC clojure
+      #+BEGIN_QUERY
+      {:title "Blocks containing TODO that are not tasks"
+       :query [:find (pull ?b [*])
+               :in $ ?query %
+               :where
+               (block-content ?b ?query)
+               (not-task ?b)]
+               :inputs ["TODO"
+                        [[(not-task ?b)
+                          (not [?b :block/marker _])]]]}
+      #+END_QUERY
+      #+END_SRC
+    - 16. Query that uses simple query
+      #+BEGIN_SRC clojure
+      #+BEGIN_QUERY
+      {:title "DOING tasks with priority A"
+       :query (and (todo DOING) (priority A))
+       :collapsed? true}
+      #+END_QUERY
+      #+END_SRC
