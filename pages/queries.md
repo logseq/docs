@@ -64,7 +64,7 @@
       #+END_EXAMPLE
     - **Page**
       Examples: [[questions]]
-      {{query (and (page "Page Alias"))}}
+      {{query (page "term/alias")}}
     - **property** [[Block properties]]
       created_at:: 1609237428110
       updated-at:: 1609247365218
@@ -75,7 +75,11 @@
       It's only enabled on the desktop app at the moment.
       #+END_NOTE
       Examples:
-      {{query "alias"}}
+      #+BEGIN_QUERY
+      {:title "Query: \"alias\""
+      :query "alias"
+      :collapsed? true}
+      #+END_QUERY
     - **task** (used to be `todo`)
       created_at:: 1609237429937
       updated-at:: 1609242962513
