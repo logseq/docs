@@ -46,7 +46,7 @@
     - 2. Get all tasks with a tag "project"
       #+BEGIN_SRC clojure
       #+BEGIN_QUERY
-      {:title "All todos with tag project"
+      {:title "All tasks with tag project"
        :query [:find (pull ?b [*])
              :where
              [?p :block/name "project"]
@@ -124,11 +124,11 @@
        }
       #+END_QUERY
       #+END_SRC
-    - 8. All todos tagged using current page
+    - 8. All tasks tagged using current page
       #+BEGIN_SRC clojure
 
       #+BEGIN_QUERY
-      {:title "All todos tagged using current page"
+      {:title "All tasks tagged using current page"
        :query [:find (pull ?b [*])
              :in $ ?current-page
              :where

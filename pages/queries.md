@@ -31,7 +31,7 @@
       #+END_EXAMPLE
 
       #+BEGIN_EXAMPLE
-      (and (todo now later done) [[page]])
+      (and (task now later done) [[page]])
       #+END_EXAMPLE
     - **or**
       created_at:: 1609237412110
@@ -76,13 +76,13 @@
       #+END_NOTE
       Examples:
       {{query "alias"}}
-    - **todo**
+    - **task** (used to be `todo`)
       created_at:: 1609237429937
       updated-at:: 1609242962513
       Examples:
       #+BEGIN_EXAMPLE
-      (todo now)
-      (todo now later)
+      (task now)
+      (task now later)
       #+END_EXAMPLE
     - **priority**
       created_at:: 1609237434982
@@ -114,7 +114,7 @@
       `key`: `created-at`  | `updated-at`
       `order`: `desc` or `asc`, omit means `desc`.
       #+BEGIN_EXAMPLE
-      (and (todo now later) (sort-by created-at desc))
+      (and (task now later) (sort-by created-at desc))
       #+END_EXAMPLE
 - **More query examples**
   created-at:: 1609232210837
