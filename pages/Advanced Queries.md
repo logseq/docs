@@ -100,7 +100,7 @@
              :in $ ?tag
              :where
              [?t :block/name ?tag]
-             [?p :page/tags ?t]
+             [?p :block/tags ?t]
              [?p :block/name ?name]]
        :inputs ["programming"]
        :view (fn [result]
