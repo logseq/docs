@@ -1,3 +1,25 @@
+- [[Mar 24th, 2022]]
+  Beta 0.6.5
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.6.5
+	- [[Thanks]]
+		- [[Yue Yang]]
+			- Fix cycle-marker bug
+			- Fix Backspace handling bug
+		- [[Moritz Ulrich]]
+			- Sort 'Pages tagged with' list alphabetically
+		- [[sawhney17]]
+			- Add favorite toggling shortcut to settings
+	- [[Fixed issues]]
+		- Loading on long page never finishes [#4673](https://github.com/logseq/logseq/issues/4673)
+		- Slow unlinked references [#4672](https://github.com/logseq/logseq/issues/4672)
+		- Error in cycle-marker, fix regression [#4661](https://github.com/logseq/logseq/pull/4661)
+		- Avoid actions when code editor closed [#4664](https://github.com/logseq/logseq/pull/4664)
+		- Error while toggling favorite in journals [#4667](https://github.com/logseq/logseq/pull/4667)
+		- Always trigger removing  file of separate git directory [#4656](https://github.com/logseq/logseq/pull/4656)
+		- Backspace handling in first char of a page [#4691](https://github.com/logseq/logseq/pull/4691)
+		- Add favorite toggling shortcut setting to the settings pane [#4708](https://github.com/logseq/logseq/pull/4708)
+	- [[Enhancement]]
+		- Sort 'Pages tagged with' list alphabetically [#4675](https://github.com/logseq/logseq/pull/4675)
 - [[Mar 20th, 2022]]
   Beta 0.6.4
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.6.4
