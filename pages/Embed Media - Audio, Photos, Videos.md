@@ -1,12 +1,11 @@
 - ## Audio
-  collapsed:: true
 	- Using [[Hiccup]] or HTML embedding, it's possible to embed audio to your page and play it back.
 		- [:audio {:controls true :src "https://www.kozco.com/tech/piano2-CoolEdit.mp3"}]
 	- ### Embedding an audio file on your PC (using [[Hiccup]])
 		- To preview audio saved on your computer, type or copy-paste the following Hiccup ClojureScript, replacing the source `src` in "quotation marks" with the filepath and file name:
 		  ```
 		  [:audio {:controls true :src "file:C://Users/USERNAME/Folder/audio.ogg"}]
-		  ``` 
+		  ```
 		  #+BEGIN_TIP
 		  Make sure to include the `file:` at the start and to use forward slashes `/`
 		  #+END_TIP
@@ -14,7 +13,7 @@
 		- If you are familiar with HTML markup and [prefer using `<audio>` tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio), you can leverage Logseq's HTML embed feature to preview audio saved on your computer. To do so, type or copy-paste the following line, replacing the source `src` in "quotation marks" with the filepath and file name:
 		  ```
 		  @@html: <audio controls><source src="file:C://Users/USERNAME/Folder/audio.ogg" type="audio/ogg"></audio>@@"}]
-		  ``` 
+		  ```
 		  #+BEGIN_TIP
 		  Make sure to include the `file:` at the start and to use forward slashes `/`
 		  #+END_TIP
@@ -23,7 +22,7 @@
 		  ```
 		  [:audio {:controls true :src "https://www.website.com/audio-file.wav"}]
 		  ```
-			- Example: 
+			- Example:
 			  [:audio {:controls true :src "https://www.kozco.com/tech/piano2-CoolEdit.mp3"}]
 			  ```
 			  [:audio {:controls true :src "https://www.kozco.com/tech/piano2-CoolEdit.mp3"}]
@@ -33,7 +32,7 @@
 		  ```
 		  @@html: <audio controls><source src="https://www.website.com/audio-file.wav" type="audio/wav"></audio>@@
 		  ```
-			- Example: 
+			- Example:
 			  @@html: <audio controls><source src="https://www.kozco.com/tech/piano2-CoolEdit.mp3" type="audio/mpeg"></audio>@@
 			  ```
 			  @@html: <audio controls><source src="https://www.kozco.com/tech/piano2-CoolEdit.mp3" type="audio/mpeg"></audio>@@
@@ -45,11 +44,11 @@
 	- ### Embedding Images
 		- To preview an image saved on your computer, type or copy-paste the following, replacing the filepath in (parenthesis) with the appropriate one:
 		  `![optional: add a name](C://Users/USERNAME/Folder/image.gif)`
-		  
+
 		  #+BEGIN_TIP
 		  Make sure to include the `!` at the start.
 		  #+END_TIP
-		  
+
 		  #+BEGIN_TIP
 		  	  You can specify the image size using `{:height --, :width --}` → Example:  `![label](image.gif){:height 418, :width 699}`
 		   #+END_TIP
@@ -66,10 +65,10 @@
 - ## Videos
 	- Using [[Hiccup]] and certain slash commands, it is possible to embed video to your page and play it back.
 	- ### Embedding a video file
-		- To preview a video saved on your computer, type or copy-paste the following Hiccup ClojureScript, replacing the source `src` in "quotation marks" with the filepath and file name: 
+		- To preview a video saved on your computer, type or copy-paste the following Hiccup ClojureScript, replacing the source `src` in "quotation marks" with the filepath and file name:
 		  ```
 		  [:video {:controls true :src "file:C://Users/USERNAME/Folder/video.mp4"}]
-		  ``` 
+		  ```
 		  #+BEGIN_TIP
 		  Make sure to include the `file:` at the start and to use forward slashes
 		  #+END_TIP
@@ -78,8 +77,8 @@
 			  ```
 			  [:video {:controls true :src "https://www.website.com/video-file.webm"}]
 			  ```
-			- Example: 
-			  
+			- Example:
+
 			   [:video {:controls true :src "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"}]
 			   ```
 			   [:video {:controls true :src "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"}]
@@ -87,14 +86,14 @@
 		- ### Embedding videos from YouTube
 			- Type the slash `/` command and type `Embed YouTube Video`
 			- Select the command and paste the URL inside the `{{youtube }}` command
-				- Example: 
+				- Example:
 				   ```
 				   {{youtube https://www.youtube.com/watch?v=SUOdfa3MucE}}
 				   ```
 				   {{youtube https://www.youtube.com/watch?v=SUOdfa3MucE}}
 			- To add timestamps, play the video, pause, create a new line. Type the slash `/` command and type `Embed YouTube timestamp`
 				- Here is an example (click on the timestamp to jump to this position in the video): {{youtube-timestamp 369}}
-				- See the timestamps embed in action here (skip to 0:42 seconds): 
+				- See the timestamps embed in action here (skip to 0:42 seconds):
 				   <div style="position: relative; padding-bottom: 80.35714285714286%; height: 0;"><iframe src="https://www.loom.com/embed/995d6755b29c48c6b610646736aa5049" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 		- ### Embedding videos from Vimeo
 			- Type the slash `/` command and type `Embed Vimeo video`
