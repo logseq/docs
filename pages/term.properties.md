@@ -98,3 +98,4 @@ click:: click me to edit
 	- `query-properties` (N) stores a user's custom properties to be shown for a query table.
 	- `filters` (N, object with booleans) store selected filters for linked references on page-level.
 	- `public` (boolean) defines whether a page should be included in an export.
+	- `icon` (1) define icon identifier for a page.
