@@ -32,6 +32,7 @@
   1. `?b` and `?p` are special symbols in queries that respectively refer to blocks and pages.
   2. Page names are stored as lower case in the database.
   3. Most simple query operators are available as [rules](https://docs.datomic.com/on-prem/query/query.html#rules) in queries
+  4. Titles can be be hiccups or double-quoted strings. For example, if you want to put custom macros into the query title, you can write something like `"{{poem foo,bar}}"`. 
   #+END_TIP
 - **Query Examples**
     - 1. Get all tasks
