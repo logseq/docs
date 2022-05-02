@@ -401,7 +401,7 @@
 			  `:default-templates {:journals "my-template"}`
 			- [[Breaking Changes]]
 				- #+BEGIN_WARNING
-				  The jounnals `default-templates` only supports the template name now. 
+				  The jounnals `default-templates` only supports the template name now.
 				  #+END_WARNING
 		- `:ui/show-empty-bullets?`
 		  collapsed:: true
@@ -569,7 +569,7 @@
 				  query-properties:: [:block :author :publication-date :price :qty :updated-at]
 				  {{query (property type book)}}
 				  Then, you can create functions (by trigger `/function`) as this query block's children.
-				  
+
 				  For example:
 					- How many books? `{{function (sum :qty)}}`
 						- Answer: {{function (sum :qty)}}
@@ -592,7 +592,7 @@
 				  The function takes the query result and bind it to the symbol `result` for usage.
 					- `{{function (sum (map (fn [x] (* (:price x) (:qty x))) result))}}`
 	- [[Enhancement]]
-		- [[Queries/table]]
+		- [[Query/table]]
 			- Click to open a block in the right sidebar
 			- Human-readable block timestamps
 			- Add sorts by any property
@@ -622,7 +622,7 @@
 		- Hide :collapsed property when editing
 		- Org mode image rendering
 	- [[Features]]
-		- Finally, we can render queries as tables! 🎉 [[Queries/table]]
+		- Finally, we can render queries as tables! 🎉 [[Query/table]]
 			- {{query (property type book)}}
 			  query-table:: true
 			- {{query (page-property tags)}}
