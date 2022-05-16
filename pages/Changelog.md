@@ -1,3 +1,67 @@
+- [[May 16th, 2022]]
+  Beta 0.6.9
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.6.9
+	- [[Thanks]]
+		- [[Kan-Ru Chen]]
+			- Update electron-deeplink to fix deeplink under Linux
+		- [[Shihao Yu]]
+			- Fix modals positions
+		- [[queeup]]
+			- Update Turkish translation
+		- [[Eduardo Vedes]]
+			- Preview popup's position when on-hover
+		- [[Alex L]]
+			- Improve Italian localization
+		- [[sawhney17]]
+			- Fix scrollbar appearing with code block and some latex
+	- [[Fixed issues]]
+		- App start crash under some Windows and Linux platforms [#5264](https://github.com/logseq/logseq/pull/5264)
+		- Deeplink on Linux not working [#5291](https://github.com/logseq/logseq/pull/5291)
+		- Positions of modals is wrong [#5163](https://github.com/logseq/logseq/pull/5163)
+		- Wrong position of page preview tip [#5319](https://github.com/logseq/logseq/pull/5319) [#5307](https://github.com/logseq/logseq/pull/5307)
+		- Scrollbar appearing when current block has code or latex [#5308](https://github.com/logseq/logseq/pull/5308)
+		- Undo sometimes cause duplicated contents [#5277](https://github.com/logseq/logseq/issues/5277)
+	- [[Enhancement]]
+		- Performance improvements for pages with many linked references [#5270](https://github.com/logseq/logseq/pull/5270)
+		- lazy-loading for journals and queries, with loading skeleton
+		- Add URL testing for network proxy settings [#5223](https://github.com/logseq/logseq/pull/5223)
+		- Update Turkish translation [#5314](https://github.com/logseq/logseq/pull/5314)
+		- Improve Italian localization [#5304](https://github.com/logseq/logseq/pull/5304)
+- [[May 10th, 2022]]
+  Beta 0.6.8
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.6.8
+	- [[Features]]
+		- Reimplement encryption [#5259](https://github.com/logseq/logseq/pull/5259)
+	- [[Thanks]]
+		- [[Yue Yang]]
+			- Optimize the calculation of clock-summary
+		- [[Hidekazu Kubota]]
+			- Refine Japanese translation
+		- [[Peng Xiao]]
+			- Fix the popup position
+		- [[queeup]]
+			- Turkish translation
+		- [[ntotao]]
+			- Italian translation
+		- [[KKKIIO]]
+			- Split hover and focus status in auto-completion
+	- [[Fixed issues]]
+		- Wrong popup position sometimes [#5193](https://github.com/logseq/logseq/pull/5193)
+		- Initial renderer bug of Katex extension hooks [#5220](https://github.com/logseq/logseq/pull/5220)
+		- Editing of empty last block [#5105](https://github.com/logseq/logseq/pull/5105)
+		- UI page of shortcuts crashed when parsing unsupported binding key [#5236](https://github.com/logseq/logseq/pull/5236)
+		- Missing title properties when page name contains `/` or reserved char [#5250](https://github.com/logseq/logseq/pull/5250)
+	- [[Enhancement]]
+		- Optimize the calculation of clock-summary [#5159](https://github.com/logseq/logseq/pull/5159)
+		- Patch Japanese translation [#5205](https://github.com/logseq/logseq/pull/5205)
+		- Support idiomatic shortcut `ctrl+n` for auto-complete navigation [#5202](https://github.com/logseq/logseq/pull/5202)
+		- Adds emacs keybindings to other up/down movements [#5214](https://github.com/logseq/logseq/pull/5214)
+		- Turkish language translation [#5215](https://github.com/logseq/logseq/pull/5215)
+		- Italian language translation [#5179](https://github.com/logseq/logseq/pull/5179)
+		- Migrate first namespaces for nbb compatibility [#5192](https://github.com/logseq/logseq/pull/5192)
+		- Split hover and focus status [#5211](https://github.com/logseq/logseq/pull/5211)
+		- Breadcrumb context navigation [#5249](https://github.com/logseq/logseq/pull/5249)
+		- Click block references number to toggle references below the number [#5230](https://github.com/logseq/logseq/pull/5230)
 - [[Apr 29th, 2022]]
   Beta 0.6.7
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.6.7
