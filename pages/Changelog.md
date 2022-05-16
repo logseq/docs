@@ -17,7 +17,7 @@
 	- [[Fixed issues]]
 		- App start crash under some Windows and Linux platforms [#5264](https://github.com/logseq/logseq/pull/5264)
 		- Deeplink on Linux not working [#5291](https://github.com/logseq/logseq/pull/5291)
-		- Positions of modals is wrong [#5163](https://github.com/logseq/logseq/pull/5163)
+		- Positions of modals are wrong [#5163](https://github.com/logseq/logseq/pull/5163)
 		- Wrong position of page preview tip [#5319](https://github.com/logseq/logseq/pull/5319) [#5307](https://github.com/logseq/logseq/pull/5307)
 		- Scrollbar appearing when current block has code or latex [#5308](https://github.com/logseq/logseq/pull/5308)
 		- Undo sometimes cause duplicated contents [#5277](https://github.com/logseq/logseq/issues/5277)
