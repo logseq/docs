@@ -26,7 +26,7 @@
 	- If you get stuck at any moment or if you just want to connect with fellow Logseq enthusiasts, [**join the Logseq Discord server**](https://discord.gg/sVsJdzJghp). There you'll always find someone friendly who's willing to help you better understand a Logseq feature or workflow. We look forward to getting to know you!
 	- For now, let's get started by creating a graph.
 - ## Create a graph
-	- In Logseq, a collection of notes is called a _graph_. No need to worry if you don't know what a graph is or if you're not familiar with databases in general. All you need to know is that a graph is a collection of notes that are connected, i.e. there are links pointing between the notes.
+	- In Logseq, a collection of notes is called a _graph_. That's our word for a collection of notes that are connected, i.e. there are links pointing between the notes.
 	- As you progress through this starter guide, you'll see the power of the different ways of linking in Logseq. Through the links between your notes, you create a network. Not only does this network make finding notes easy, but the connections between different notes will provide a lot of value in themselves. More on that later.
 	- For now, decide how you want to start using Logseq:
 		- [>> Start by creating a new Logseq graph]([[How to create a new graph]])
