@@ -1,3 +1,38 @@
+- [[May 31st, 2022]]
+  Beta 0.7.1
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.7.1
+	- [[Features]]
+		- Copy & Paste with rich-text formats, Use `Cmd+shift+v` or `Ctrl+shift+v` for copying/pasting without formatting [#5471](https://github.com/logseq/logseq/pull/5471)
+		- Onboarding Quick tour, more friendly UI guide [#5247](https://github.com/logseq/logseq/pull/5247)
+	- [[Thanks]]
+		- [[Yue Yang]]
+			- Fix theme switching bugs
+		- [[ntotao]]
+			- Italian tutorial and dummy notes
+		- [[sawhney17]]
+			- Calendar icon in toolbar not rearranging(for mobile devices)
+		- [[Taylor Hoffmann]]
+			- Fully translated in Portuguese (BR) and Italian
+		- [[Jonas Diemer]]
+			- Improved float numbers formatting for calculator
+		- [[Alex]]
+			- Use separate export.css instead of custom.css for export
+		- [[queeup]]
+			- Update Turkish translation
+	- [[Fixed issues]]
+		- Save mode when switching themes [#5439](https://github.com/logseq/logseq/pull/5439)
+		- Block can't be deleted if backspace at the block beginning [#5450](https://github.com/logseq/logseq/pull/5450)
+		- Page title position when in editing mode [#5507](https://github.com/logseq/logseq/pull/5507)
+		- Startup runtime error under some Windows platforms [#5508](https://github.com/logseq/logseq/pull/5508)
+	- [[Enhancement]]
+		- Fully translated in Portuguese (BR) and Italian [#5465](https://github.com/logseq/logseq/pull/5465)
+		- Added Italian tutorial and dummy notes [#5419](https://github.com/logseq/logseq/pull/5419)
+		- Slash command UX [#5475](https://github.com/logseq/logseq/pull/5475)
+		- Improved float numbers formatting for calculator [#5374](https://github.com/logseq/logseq/pull/5374)
+		- Use separate export.css instead of custom.css for export [#5303](https://github.com/logseq/logseq/pull/5303)
+		- Improve record timer implementation [#5492](https://github.com/logseq/logseq/pull/5492)
+		- Refine App menu, add About and Document menu entry [#5500](https://github.com/logseq/logseq/pull/5500)
+		- Disable left menu button when pdf view active [#5509](https://github.com/logseq/logseq/pull/5509)
 - [[May 25th, 2022]]
   Beta 0.7.0
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.7.0
