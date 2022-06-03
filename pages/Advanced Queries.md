@@ -3,7 +3,7 @@
     - [Learn Datalog Today](http://www.learndatalogtoday.org/) is a great first reference if you're not familiar with Datalog.
     - [Datomic query documentation](https://docs.datomic.com/query.html) - Thorough reference for datomic dialect of Datalog. Explains most datalog concepts well.
     - [Datascript's intro docs](https://github.com/tonsky/datascript/wiki/Getting-started)
-    - [Logseq's database schema](https://github.com/logseq/logseq/blob/master/src/main/frontend/db_schema.cljs)
+    - [Logseq's database schema](https://github.com/logseq/logseq/blob/master/deps/graph-parser/src/logseq/graph_parser/db/schema.cljs)
 - The query format is something like this:
   created_at:: 1609244764756
   updated-at:: 1609246099894
