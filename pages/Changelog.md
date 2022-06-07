@@ -1,3 +1,37 @@
+- [[Jun 7th, 2022]]
+  Beta 0.7.2
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.7.2
+	- [[Thanks]]
+		- [[ingepettersen]]
+			- Norwegian dummy-notes.md and tutorial.md
+			- Norwegian translation
+		- [[simonla]]
+			- Update mobile.md
+		- [[Sunghyun Cho]]
+			- Korean Translations
+		- [[ranfdev]]
+			- Reduce shadows on sidebar and inline cards
+		- [[Darwis]]
+			- Predefined view and transform
+		- [[sawhney17]]
+			- Add edit button to queries
+		- [[WsinGithub]]
+			- Fix missing katex.min.js in publishing
+	- [[Fixed issues]]
+		- Bugs introduced by changing of Copy & Paste logic
+		- Block lost when moving, cutting, pasting
+		- Handle graph directory change and file inode change(compatibility with some third-party file/folder syncing tool)
+		- Performance regression when re-indexing
+		- Missing page icon from left sidebar page item [#5523](https://github.com/logseq/logseq/pull/5523)
+		- Missing app menu under macOS [#5524](https://github.com/logseq/logseq/pull/5524)
+		- Highlight refs lose association with related pdf [#5554](https://github.com/logseq/logseq/pull/5554)
+		- Missing katex.min.js in publishing  [#5578](https://github.com/logseq/logseq/pull/5578)
+	- [[Enhancement]]
+		- Norwegian dummy-notes.md and tutorial.md, Norwegian translation [#5514](https://github.com/logseq/logseq/pull/5514) [#5513](https://github.com/logseq/logseq/pull/5513) [#5515](https://github.com/logseq/logseq/pull/5515)  [#5527](https://github.com/logseq/logseq/pull/5527)
+		- Update mobile.md  [#5525](https://github.com/logseq/logseq/pull/5525)
+		- Korean Translations [#5534](https://github.com/logseq/logseq/pull/5534)
+		- Predefined view and transform [#5479](https://github.com/logseq/logseq/pull/5479)
+		- Add edit button to queries [#5538](https://github.com/logseq/logseq/pull/5538)
 - [[May 31st, 2022]]
   Beta 0.7.1
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.7.1
