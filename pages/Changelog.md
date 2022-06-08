@@ -1,3 +1,23 @@
+- [[Jun 9th, 2022]]
+  Beta 0.7.3
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.7.3
+	- [[Thanks]]
+		- [[ingepettersen]]
+			- Norwegian translations
+		- [[sawhney17]]
+			- Support mod+e to copy block embed to current block
+			- Edit button showing in default queries
+	- [[Fixed issues]]
+		- Regression on Windows and Linux, accessing parent directory, causing high memory consumption [#5607](https://github.com/logseq/logseq/issues/5607)
+		- Cannot unindent multiple blocks [#5604](https://github.com/logseq/logseq/issues/5604)
+		- Unable to perform block operations in the document mode [#5615](https://github.com/logseq/logseq/issues/5615)
+		- Cannot paste plain unordered list in markdown [#5605](https://github.com/logseq/logseq/issues/5605)
+		- Missing db persistency when creating new window via file menu [#5600](https://github.com/logseq/logseq/pull/5600)
+		- Edit button should not be shown in default queries
+		- Should show bullet when hovering a block on the document mode
+	- [[Enhancement]]
+		- Support mod+e to copy block embed to current block
+		- Allow query property keys with char `_`
 - [[Jun 7th, 2022]]
   Beta 0.7.2
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.7.2
