@@ -22,7 +22,7 @@
 :id: 60acdebb-9142-431f-907c-3ad0e6fc0148
 :END:
 ** Thanks for asking! Please go to fork logseq's repo and change 
- the dicts [[https://github.com/logseq/logseq/blob/master/src/main/frontend/dicts.cljs][here]].
+ the dicts [[https://github.com/logseq/logseq/blob/master/src/main/frontend/dicts.cljc][here]].
 * *Why was Logseq written in Clojure?*
 ** Answered [[https://www.reddit.com/r/logseq/comments/j5gcyn/why_clojure/][here]].
 * *How to change the default date formatter?*

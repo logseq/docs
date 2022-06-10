@@ -3,7 +3,7 @@
     - [Learn Datalog Today](http://www.learndatalogtoday.org/) is a great first reference if you're not familiar with Datalog.
     - [Datomic query documentation](https://docs.datomic.com/query.html) - Thorough reference for datomic dialect of Datalog. Explains most datalog concepts well.
     - [Datascript's intro docs](https://github.com/tonsky/datascript/wiki/Getting-started)
-    - [Logseq's database schema](https://github.com/logseq/logseq/blob/master/deps/graph-parser/src/logseq/graph_parser/db/schema.cljs)
+    - [Logseq's database schema](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/schema.cljs)
 - The query format is something like this:
   created_at:: 1609244764756
   updated-at:: 1609246099894
@@ -32,7 +32,7 @@
   1. `?b` and `?p` are special symbols in queries that respectively refer to blocks and pages.
   2. Page names are stored as lower case in the database.
   3. Most simple query operators are available as [rules](https://docs.datomic.com/on-prem/query/query.html#rules) in queries
-  4. Titles can be be hiccups or double-quoted strings. For example, if you want to put custom macros into the query title, you can write something like `"{{poem foo,bar}}"`. 
+  4. Titles can be be hiccups or double-quoted strings. For example, if you want to put custom macros into the query title, you can write something like `"{{poem foo,bar}}"`.
   #+END_TIP
 - **Query Examples**
     - 1. Get all tasks
