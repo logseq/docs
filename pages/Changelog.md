@@ -1,3 +1,30 @@
+- [[Jun 13th, 2022]]
+  Beta 0.7.4
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.7.4
+	- [[Thanks]]
+		- [[Sunghyun Cho]]
+			- Fix typo in Korean Translation
+		- [[Hounsou Dansou]]
+			- Add missing config item to config template
+		- [[Andrew Zhurov]]
+			- Making excalidraw follow the theme of Logseq
+		- [[ranfdev]]
+			- Icon alignment + various little UI changes
+	- [[Fixed issues]]
+		- Typo in Korean Translation [#5622](https://github.com/logseq/logseq/pull/5622)
+		- Missing mod+n shortcut under macOS [#5629](https://github.com/logseq/logseq/pull/5629)
+		- Add missing config item to config template [#5679](https://github.com/logseq/logseq/pull/5679)
+		- Notify graph dir when it is gone [#5649](https://github.com/logseq/logseq/pull/5649)
+		- Wrong file name of journal files under certain condition [#5521](https://github.com/logseq/logseq/issues/5521)
+		- Slow re-index for large graphs
+	- [[Enhancement]]
+		- Force inline layout of block ref elements [#5630](https://github.com/logseq/logseq/pull/5630)
+		- Remove extra white space of code block from top [#5655](https://github.com/logseq/logseq/pull/5655)
+		- Marketplace metadata requests now use node fetch client [#5671](https://github.com/logseq/logseq/pull/5671)
+		- Making excalidraw follow the theme of Logseq [#5667](https://github.com/logseq/logseq/pull/5667)
+		- Icon alignment + various little UI changes [#5663](https://github.com/logseq/logseq/pull/5663)
+		- Hold Shift to select without entering editor mode
+		- New options to disable Flashcards(under Advanced setting tab)
 - [[Jun 9th, 2022]]
   Beta 0.7.3
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.7.3
