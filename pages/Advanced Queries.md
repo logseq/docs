@@ -14,7 +14,8 @@
    :inputs [...]
    :view (fn [query-result] [:div ...]) ;; or :keyword from config.edn
    :result-transform (fn [query-result] ...) ;; or :keyword from config.edn
-   :collapsed? true}
+   :collapsed? true
+  :rules [...]}
   #+END_EXAMPLE
   
   | Name             | Description                      | Default | Optional |
@@ -23,8 +24,9 @@
   | query            | datascript query or simple query |         | false    |
   | inputs           | query inputs                     |         | true     |
   | view             | fn or keyword      |         | true     |
-  | collapsed?       | Whether to collapse the result   | false   | true     |
+  | collapsed?       | whether to collapse the result   | false   | true     |
   | result-transform | fn or keyword |         | true     |
+  | rules                | list of rules to apply to query | | true |
 - **Query Tips**
   created_at:: 1609244703085
   updated-at:: 1609244703085
@@ -246,7 +248,19 @@
 	                      (not [?b :block/marker _])]]]}
 	  #+END_QUERY
 	  #+END_SRC
-	- 16. Query that uses simple query
+	- 16. Query with rules via :rules
+	    ``` clojure
+	  #+BEGIN_QUERY
+	  {:title "Blocks that start with an https link"
+	   :query [:find (pull ?b [*])
+	           :in $ %
+	           :where (starts-with ?b "https://")]
+	   :rules [[(starts-with ?b ?substr)
+	           [?b :block/content ?content]
+	           [(clojure.string/starts-with? ?content ?substr)]]]}
+	  #+END_QUERY
+	  ```
+	- 17. Query that uses simple query
 	  #+BEGIN_SRC clojure
 	  #+BEGIN_QUERY
 	  {:title "DOING tasks with priority A"
