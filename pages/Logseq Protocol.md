@@ -1,0 +1,8 @@
+- Logseq provides a protocol `logseq://` to allow third party applications to invoke actions within Logseq.
+- The following urls are supported:
+	- `logseq://graph/<graph-name>?<params>`
+		- Has optional params of `block-id` and `page`
+		- Examples:
+			- `logseq://graph/<graph name>` - Opens graph
+			- `logseq://graph/<graph name>?page=<page name>` - Opens graph at page
+			- `logseq://graph/<graph name>?block-id=<block uuid>` - Opens graph at block
