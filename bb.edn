@@ -1,0 +1,13 @@
+{:deps
+ {logseq/graph-parser
+  {:local/root "../logseq/deps/graph-parser"}
+  #_{:git/url "https://github.com/logseq/logseq"
+     :git/sha "b081dcccce4eb4b7046364f05213538202d9ccbf"
+     :deps/root "deps/graph-parser"}}
+
+ :tasks
+ {nbb
+  {:requires ([babashka.classpath :as classpath])
+   :doc "Run nbb-logseq with bb.edn classpath"
+   :task (apply shell {:dir "script"} "yarn nbb-logseq"
+           "-cp" (classpath/get-classpath) *command-line-args*)}}}

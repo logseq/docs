@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@logseq/db": "https://github.com/logseq/logseq#workspace=@logseq/db&head=dev/yarn-workspaces",
+    "@logseq/graph-parser": "https://github.com/logseq/logseq#workspace=@logseq/graph-parser&head=dev/yarn-workspaces",
+    "@logseq/nbb-logseq": "0.5.103"
+  },
+  "license": "MIT",
+  "packageManager": "yarn@3.2.1"
+}
