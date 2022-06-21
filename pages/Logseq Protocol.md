@@ -11,14 +11,13 @@
 		- Basic usage:
 			- Drag the following Share to Logseq" link to your Bookmark bar(cmd+shift+b to toggle bookmark bar on macOS). Then you have a "quick capture" for your Logseq App.
 				- <a href="javascript:var d=document,w=window,f='logseq://x-callback-url/quickCapture',l=d.location,e=encodeURIComponent,p='?url=%27+e(l.href)+%27&title=%27+e(d.title)+%27&content=%27+e(w.getSelection?w.getSelection().toString():d.getSelection?d.getSelection():d.selection.createRange().text)+%27&x-source=bm%27;a=function(){l.href=f+p};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else{a()}void(0)">Share to Logseq</a>
-				- (or open https://jsfiddle.net/andelf/kvm5Le6z/7/ and drag "Share to Logseq" link)
+				- (or open https://jsfiddle.net/andelf/kvm5Le6z/7/ and drag "Share to Logseq" link to bookmark bar)
 		- Parameters:
 			- `url`: page url
 			- `title`: page title
 			- `content`: (optional) highlighted text(selection)
 		- Settings (in `config.edn`):
 			- Template variables are `{time}`, `{text}` and `{url}`
-			-
 			- ```edn
 			  :quick-capture-templates {:text "[[quick capture]] **{time}** {text} {url}"}
 			  ```
