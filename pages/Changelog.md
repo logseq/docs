@@ -1,3 +1,24 @@
+- [[Jun 21st, 2022]]
+  Beta 0.7.5
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.7.5
+	- [[Features]]
+		- Add quick capture support to [[Logseq Protocol]] [#5762](https://github.com/logseq/logseq/pull/5762)
+	- [[Thanks]]
+		- [[queeup]]
+			- Update Turkish translation
+		- [[Allan Chain]]
+			- Trim spaces when sanitizing page name
+	- [[Fixed issues]]
+		- Update Turkish translation [#5692](https://github.com/logseq/logseq/pull/5692)
+		- Trim spaces when sanitizing page name [#5699](https://github.com/logseq/logseq/pull/5699)
+		- Fix header icons display when `:custom-default-page` is non-nil [#5719](https://github.com/logseq/logseq/pull/5719)
+		- Handle CRLF for Windows clipboard [#5732](https://github.com/logseq/logseq/pull/5732)
+		- Repeated registration key to plugin ui items [#5730](https://github.com/logseq/logseq/pull/5730)
+		- Fetch marketplace plugins list via system proxy if no proxy configured [#5716](https://github.com/logseq/logseq/pull/5716)
+		- Home button when journal disabled [#5749](https://github.com/logseq/logseq/issues/5749)
+		- Fix for paste state
+	- [[Enhancement]]
+		- Add request support, toolbar button pin/unpin to plugin API [#5712](https://github.com/logseq/logseq/pull/5712)
 - [[Jun 13th, 2022]]
   Beta 0.7.4
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.7.4
