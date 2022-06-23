@@ -11,14 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Set up Node
-        uses: actions/setup-node@v3
+      - name: Validate logseq graph
+        uses: logseq-cldwalker/graph-validator@with-composite
         with:
-          cache: 'yarn'
-          cache-dependency-path: script/yarn.lock
-
-      - name: Fetch yarn deps
-        run: cd script && yarn install --immutable
-
-      - name: Run nbb tests
-        run: cd script && yarn test ..
+          directory: '..'

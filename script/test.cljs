@@ -10,12 +10,11 @@
 (def all-asts (atom nil))
 
 (defn- setup-graph [dir]
-  (let [{:keys [conn asts files]} (gp-cli/parse-graph dir {:verbose false})]
+  (println "Parsing graph" dir)
+  (let [{:keys [conn asts]} (gp-cli/parse-graph dir {:verbose false})]
     (reset! db-conn conn)
     (reset! all-asts (mapcat :ast asts))
-    (prn :ALL-ASTS @all-asts)
-    (prn :FILES files)
-    (prn :COUNT (count @all-asts))))
+    (println "Ast node count:" (count @all-asts))))
 
 (defn- extract-subnodes-by-pred [pred node]
   (cond
@@ -44,7 +43,6 @@
 (deftest no-invalid-block-refs
   (let [block-refs (ast->block-refs @all-asts)]
     (println "Found" (count block-refs) "block refs")
-    (is (seq block-refs) "There must be some block-refs to test")
     (is (empty?
          (set/difference
           (set block-refs)
@@ -60,7 +58,6 @@
 (deftest no-invalid-embed-refs
   (let [embed-refs (ast->embed-refs @all-asts)]
     (println "Found" (count embed-refs) "embed block refs")
-    (is (seq embed-refs) "There must be some embed-refs to test")
     (is (empty?
          (set/difference
           (set embed-refs)
@@ -75,5 +72,5 @@
 
 ;; run this function with: nbb-logseq -m test/run-tests
 (defn run-tests [& args]
-  (setup-graph (first args))
+  (setup-graph (or (first args) "."))
   (t/run-tests 'test))
