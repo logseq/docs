@@ -5,5 +5,8 @@
     "@logseq/nbb-logseq": "0.5.103"
   },
   "license": "MIT",
-  "packageManager": "yarn@3.2.1"
+  "packageManager": "yarn@3.2.1",
+  "scripts": {
+    "test": "nbb-logseq -cp node_modules/@logseq/graph-parser/src:node_modules/@logseq/db/src -m test/run-tests"
+  }
 }
