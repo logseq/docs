@@ -1,5 +1,5 @@
 (ns test
-  (:require [clojure.test :as t :refer [deftest is use-fixtures]]
+  (:require [clojure.test :as t :refer [deftest is]]
             [datascript.core :as d]
             [logseq.graph-parser.cli :as gp-cli]
             [logseq.graph-parser.text :as gp-text]
@@ -9,13 +9,13 @@
 (def db-conn (atom nil))
 (def all-asts (atom nil))
 
-(defn- setup-graph [f]
-  (let [{:keys [conn asts]} (gp-cli/parse-graph ".." {:verbose false :ast true})]
+(defn- setup-graph [dir]
+  (let [{:keys [conn asts files]} (gp-cli/parse-graph dir {:verbose false})]
     (reset! db-conn conn)
-    (reset! all-asts (mapcat :ast asts)))
-  (f))
-
-(use-fixtures :once setup-graph)
+    (reset! all-asts (mapcat :ast asts))
+    (prn :ALL-ASTS @all-asts)
+    (prn :FILES files)
+    (prn :COUNT (count @all-asts))))
 
 (defn- extract-subnodes-by-pred [pred node]
   (cond
@@ -74,5 +74,6 @@
                set))))))
 
 ;; run this function with: nbb-logseq -m test/run-tests
-(defn run-tests []
+(defn run-tests [& args]
+  (setup-graph (first args))
   (t/run-tests 'test))

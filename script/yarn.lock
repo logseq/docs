@@ -7,17 +7,17 @@ __metadata:
 
 "@logseq/db@https://github.com/logseq/logseq#workspace=@logseq/db&head=dev/yarn-workspaces":
   version: 1.0.0
-  resolution: "@logseq/db@https://github.com/logseq/logseq.git#workspace=%40logseq%2Fdb&commit=bc43388f4d4132df869014f7a15a5e3a45e51b79"
+  resolution: "@logseq/db@https://github.com/logseq/logseq.git#workspace=%40logseq%2Fdb&commit=b98cd9db70b9622ba62ce922de3b4ac7d942297c"
   checksum: 8152e3aaa37bc38550c69cdbb991c5e8b0ce7cdbb0489b302649b9ef8dcf4285f86e344cdc5fa4495484513e9a415a894977277abe20a1efb46f0277d036b6ad
   languageName: node
   linkType: hard
 
 "@logseq/graph-parser@https://github.com/logseq/logseq#workspace=@logseq/graph-parser&head=dev/yarn-workspaces":
   version: 1.0.0
-  resolution: "@logseq/graph-parser@https://github.com/logseq/logseq.git#workspace=%40logseq%2Fgraph-parser&commit=bc43388f4d4132df869014f7a15a5e3a45e51b79"
+  resolution: "@logseq/graph-parser@https://github.com/logseq/logseq.git#workspace=%40logseq%2Fgraph-parser&commit=b98cd9db70b9622ba62ce922de3b4ac7d942297c"
   dependencies:
     mldoc: ^1.4.0
-  checksum: 9e1ed15d5a28f81cd026cc7f3603c32ca967a6fe690bf498cd8cab0340e11783b1e6eceee18c3597ec3fc268dc96e5c1b292b7cd196925281d6499a06625c3e2
+  checksum: 48a752233c54171b817be5e0989b987c872c14cb97d3d660c623aa1f7a7a456ac70410f038fb0010916327c2daa407e510d1126943ee18cf0c13eb8f14aad5ff
   languageName: node
   linkType: hard
 
