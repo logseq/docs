@@ -11,5 +11,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Validate logseq graph
-        uses: logseq-cldwalker/graph-validator@with-composite
+      - name: Run graph-validator tests
+        uses: logseq/graph-validator@main
