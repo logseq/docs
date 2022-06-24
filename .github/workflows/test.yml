@@ -13,5 +13,3 @@ jobs:
 
       - name: Validate logseq graph
         uses: logseq-cldwalker/graph-validator@with-composite
-        with:
-          directory: '..'

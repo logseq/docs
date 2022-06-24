@@ -4,6 +4,8 @@
             [logseq.graph-parser.cli :as gp-cli]
             [logseq.graph-parser.text :as gp-text]
             [logseq.db.rules :as rules]
+            [clojure.edn :as edn]
+            [clojure.pprint :as pprint]
             [clojure.set :as set]))
 
 (def db-conn (atom nil))
@@ -69,6 +71,31 @@
                (map first)
                (map (comp :id :block/properties))
                set))))))
+
+(defn- ast->queries
+  [ast]
+  (->> ast
+       (mapcat (fn [nodes]
+                 (keep
+                  (fn [subnode]
+                    (when (= ["Custom" "query"] (take 2 subnode))
+                      (get subnode 4)))
+                  nodes)))))
+
+(deftest advanced-queries-are-valid
+  (let [query-strings (ast->queries @all-asts)]
+    (println "Found" (count query-strings) "queries")
+    (is (empty? (keep #(let [query (try (edn/read-string %)
+                                     (catch :default _ nil))]
+                         (when (nil? query) %))
+                      query-strings))
+        "Queries are valid EDN")
+
+    (is (empty? (keep #(let [query (try (edn/read-string %)
+                                     (catch :default _ nil))]
+                         (when (not (contains? query :query)) %))
+                      query-strings))
+        "Queries have required :query key")))
 
 ;; run this function with: nbb-logseq -m test/run-tests
 (defn run-tests [& args]
