@@ -1,7 +1,7 @@
 - ## What are block references?
 	- Because everything is a block in Logseq, our notes become extremely versatile. Not only can we link to pages, we can also link to blocks and even show their contents directly when linking to them. How? Using block references.
 	- Block references are like windows to other parts of your graph. In Logseq, blocks are floating around freely, not bound by any folders. To link together content, every block in Logseq has an address—and this address lets us do lots of cool stuff.
-	- Just like we can reference a page by placing its name between [[double brackets]], we can reference a block by using ((double parenthesis)) and placing its address in between. The main difference between a page reference (link) and a block reference is that block references show the contents of the block directly. You can recognize a block reference the underline*:
+	- Just like we can reference a page by placing its name between [[double brackets]], we can reference a block by using `((double parenthesis))` and placing its address in between. The main difference between a page reference (link) and a block reference is that block references show the contents of the block directly. You can recognize a block reference the underline*:
 		- ![referenced-block.png](../assets/referenced-block_1642512193246_0.png)
 		  _* Depending on the Logseq theme you're using, block references may show differently._
 	- Why would you bother referencing blocks instead of copying over their contents? The reason is simple: to reduce duplicate content. Many people use block references to quickly reuse content from their graph.

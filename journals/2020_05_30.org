@@ -23,18 +23,20 @@
     2. Add a query block to any pages:
        For example:
 
-    #+BEGIN_SRC clojure
-    [[:find (pull ?h [*])
-     :where
-     [?h :heading/content ?content]
-     [?h :heading/page ?p]
-     [?p :block/name "jun 1st, 2020"]]]
+  #+BEGIN_SRC clojure
+  {:query
+   [:find (pull ?h [*])
+    :where
+    [?h :heading/content ?content]
+    [?h :heading/page ?p]
+    [?p :block/name "jun 1st, 2020"]]}
     #+END_SRC
 
-    #+BEGIN_QUERY
-    [[:find (pull ?h [*])
-     :where
-     [?h :heading/content ?content]
-     [?h :heading/page ?p]
-     [?p :block/name "jun 1st, 2020"]]]
-    #+END_QUERY
+  #+BEGIN_QUERY
+  {:query
+   [:find (pull ?h [*])
+    :where
+    [?h :heading/content ?content]
+    [?h :heading/page ?p]
+    [?p :block/name "jun 1st, 2020"]]}
+  #+END_QUERY
