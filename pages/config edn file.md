@@ -1,9 +1,8 @@
 title:: config.edn
 
-- Most of the `Settings` you've toggled in UI will be stored in `logseq/config.edn` file inside your graph folder
-- Some of the advanced or experimental setting options can also be set in this file directly.
-- A clean raw version of `config.edn` can be found [here](https://raw.githubusercontent.com/logseq/logseq/master/templates/config.edn)
-- More information about specific config keys:
+- Most of the `Settings` in the UI are stored in your graph's `logseq/config.edn` file. Configuration/setting changes can be made by directly editing this file.
+- See the [config.edn template](https://github.com/logseq/logseq/blob/master/templates/config.edn) for documentation on most config options.
+- More information about specific config options:
 	- `:editor/extra-codemirror-options` (map) - These can be any of the options [documented here](https://codemirror.net/doc/manual.html#config)
 	  collapsed:: true
 		- To customize a codemirror theme, select one [from this list](https://codemirror.net/theme/). For example, if you choose blackboard configure it with:
