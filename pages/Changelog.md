@@ -1,3 +1,41 @@
+- [[Jul 4th, 2022]]
+  Beta 0.7.6
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.7.6
+	- [[Features]]
+		- EDN / JSON import and export [#5446](https://github.com/logseq/logseq/pull/5446)
+	- [[Thanks]]
+		- [[Taylor Hoffmann]]
+			- Fully translated in "pt-BR", "pt-PT" and "it"
+		- [[sawhney17]]
+			- Fix broken links and reorganize help menu
+		- [[qiyueliuhuo]]
+			- Fix bilibili video progress bar display
+		- [[Sheldon Guo]]
+			- Update develop-logseq.md
+		- [[Phoenix Eliot]]
+			- Reduce flicker when moving between blocks with keyboard
+		- [[Scott Block]]
+			- Update getAllPages typescript for plugin API
+	- [[Fixed issues]]
+		- Unexpected deletion of files caused by fs watcher handler
+		- Unexpected file deletion on Android caused by quick deletion and creating [#5801](https://github.com/logseq/logseq/pull/5801)
+		- Inconsistent block selection state when editing
+		- Hand unknown tags when converting from HTML [#5787](https://github.com/logseq/logseq/pull/5787)
+		- Some bad cases when doing HTML conversion [#5914](https://github.com/logseq/logseq/pull/5914) [#5915](https://github.com/logseq/logseq/pull/5915)
+		- Fix broken links and reorganize help menu [#5776](https://github.com/logseq/logseq/pull/5776)
+		- Check destroyed window before accessing property [#5803](https://github.com/logseq/logseq/pull/5803)
+		- Fix for embedded Bilibili video [#5823](https://github.com/logseq/logseq/pull/5823) [#5830](https://github.com/logseq/logseq/pull/5830)
+		- Block properties order missing [#5800](https://github.com/logseq/logseq/pull/5800)
+		- Disable gesture on query table and logbook [#5784](https://github.com/logseq/logseq/pull/5784)
+		- Wrong cycle todo when heading symbol on the same line [#5838](https://github.com/logseq/logseq/pull/5838)
+		- Close modal before opening more results [#5878](https://github.com/logseq/logseq/pull/5878)
+		- Missing canceled page from built-in list [#5872](https://github.com/logseq/logseq/pull/5872)
+		- fix calc output position [#5881](https://github.com/logseq/logseq/pull/5881)
+		- Missing type annotation from getAllPages typescript API [#5908](https://github.com/logseq/logseq/pull/5908)
+	- [[Enhancement]]
+		- Fully translated in "pt-BR", "pt-PT" and "it" [#5782](https://github.com/logseq/logseq/pull/5782)
+		- Open plaintext assets in Logseq [#5840](https://github.com/logseq/logseq/pull/5840)
+		- Reduce flicker when moving between blocks with keyboard [#5839](https://github.com/logseq/logseq/pull/5839)
 - [[Jun 21st, 2022]]
   Beta 0.7.5
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.7.5
