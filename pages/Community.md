@@ -1,0 +1,3 @@
+- # Index
+	- ## Learning Sprints
+		- [[Community/Query Learning Sprint (Summer 2022)]]
