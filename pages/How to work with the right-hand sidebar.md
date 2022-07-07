@@ -5,4 +5,4 @@
 - Furthermore, we get the option to close the page in the sidebar (1) and to filter the linked references (2).
 - To open a _block_ in the sidebar, `Shift-Click` on a bullet. You can easily add child blocks to the opened block by placing your cursor in it and hitting `Enter`:
 	- ![right-sidebar-new-block.gif](../assets/right-sidebar-new-block_1641572640336_0.gif)
-- And those are the basics of the right-hand sidebar! In the next lesson, will expand on the usefulness of the sidebar by adding another power tool to our arsenal: _block references_.
+- And those are the basics of Logseq's right-hand sidebar! Many use it to have several sources of information open at once or to drag blocks between pages and branches.
