@@ -44,10 +44,9 @@
  ;; input "{{{poem(red,blue)}}}"
  ;; becomes
  ;; Rose is red, violet's blue. Life's ordered: Org assists you.
- :macros {"query-example" "#+BEGIN_EXAMPLE
-{{query $1}}
-#+END_EXAMPLE
-{{query $1}}"}
+ :macros
+ {"query-done" "{{query (and (task done) $1)}}"
+  "mark" "[:mark \"$1\"]"}
  :feature/enable-block-time? true
  :feature/enable-timetracking? true
  :feature/enable-journals? true

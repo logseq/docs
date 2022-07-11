@@ -1,6 +1,5 @@
 - The built-in calculator is opened by the command `/Calculator`.
-- The calculator supports basic operations like `+ - / *`  and a number of mathematical operations.
-- Exponentiation uses the `^` operator.
+- The calculator supports basic operations like `+ - / * ^`  and a number of mathematical operations.
 - The standard mathematical order of evaluation of operations is followed; parentheses may be used to further specify the order.
 - Comments start with `#`. The rest of the line is ignored.
   id:: 62c8421b-d22e-40ce-aead-0b7e9e2951f7
