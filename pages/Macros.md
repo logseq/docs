@@ -3,5 +3,5 @@
 - ## Usage
 	- Type the macro name as the first word wrapped in curly braces e.g. the `foo` macro is typed as `{{foo}}`
 	- Macros can have arguments with numbered dollar variables. For example, the `hello` macro defined as `"Hello $1 and $2!"` has two arguments and is invoked  with comma delimited arguments like  `{{hello foo, bar}}`. This results in `Hello foo and bar!`
-	- Macros render the html in them. HTML can be specified as [hiccup](https://github.com/weavejester/hiccup#syntax) or as raw html. For example, the `mark` macro defined as `"[:mark \"$1\"]"` or as `"<mark>$1</mark>"` renders as {{mark hi}}
-	- Macros can invoke logseq commands like [[Query]] . For example the `query-done` macro defined as `"{{query (and (task done) $1)}}"` renders as  {{query-done "changelog"}}
+	- Macros render the html in them. HTML can be specified as [hiccup](https://github.com/weavejester/hiccup#syntax) or as raw html. For example, the `mark` macro defined as `"[:mark \"$1\"]"` or as `"<mark>$1</mark>"` and invoked as `{{mark hi}}` renders as {{mark hi}}
+	- Macros can invoke logseq commands like [[Query]] . For example, the `query-done` macro defined as `"{{query (and (task done) $1)}}"` and invoked as `{{query-done "changelog"}}` renders as  {{query-done "changelog"}}
