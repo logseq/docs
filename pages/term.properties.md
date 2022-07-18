@@ -17,8 +17,7 @@ click:: click me to edit
 	  ```
 	  parts:: [[motor]], steering wheel, tyres
 	  ```
-	-
-	  #+BEGIN_TIP
+	- #+BEGIN_TIP
 	  To prevent values from being auto-linked, wrap _all_ values within quotes (`"`) - for example, `parts:: "[[motor]], steering wheel, tyres"`
 	  You cannot quote (unlink) _parts_ (items) of a list property, e.g. `parts:: [[motor]], "steering wheel, tyres"` is not going to prevent values from being linked.
 	  #+END_TIP
@@ -57,8 +56,7 @@ click:: click me to edit
 		  collapsed:: true
 		  {{query (property type book)}}
 		- Or we can use [[Advanced Queries]]:
-			-
-			  #+BEGIN_SRC clojure
+			- #+BEGIN_SRC clojure
 			   #+BEGIN_QUERY
 			   {:title [:h2 "My books"]
 			    :query [:find (pull ?b [*])
@@ -68,8 +66,7 @@ click:: click me to edit
 			   [(= "[[book]]" ?t)]]}
 			   #+END_QUERY
 			   #+END_SRC
-			-
-			  #+BEGIN_QUERY
+			- #+BEGIN_QUERY
 			  {:title [:h2 "My books"]
 			   :query [:find (pull ?b [*])
 			  :where
@@ -83,19 +80,22 @@ click:: click me to edit
 		  title: Mathematics and Plausible Reasoning
 		  published: 2009
 		  ```
-- **Special Properties**
-	- There are special properties that control Logseq functionality (the number in brackets indicates how many values you may define):
-	- `tags` (N) get listed in their own section "Pages tagged with X" below a page.
-	- `template` (1) designates a page as a template.
-	- `template-including-parent` (1) (in previous versions `include-parent`) specifies whether the parent level content of the selected block should be included when using a template.
-	- `collapsed` (1) specifies whether a block is collapsed.
-	- `alias` (N) define synonyms for a page.
-	- `id` (1) specifies an Id for org mode.
-	- `title` (1) overrides the title of a page to be different from the file name.
-	- `created-at` (1) and `updated-at` (in previous versions `last-modified-at`) (1) define the date/time stamps in [Unix time](https://en.wikipedia.org/wiki/Unix_time); block-level only.
-	- `parent` (1) references the parent block (could be a page).
-	- `query-table` (1) will mark a query to be shown as the table view.
-	- `query-properties` (N) stores a user's custom properties to be shown for a query table.
-	- `filters` (N, object with booleans) store selected filters for linked references on page-level.
-	- `public` (boolean) defines whether a page should be included in an export.
-	- `icon` (1) define icon identifier for a page.
+- **Built-in Properties**
+	- There are built-in in properties that control Logseq functionality. Most of the these properties are hidden from the user but a few are user editable. These property names are reserved for Logseq and thus _must_ not be used as a user property. The number in brackets indicates how many values you may define.
+	- Editable properties
+		- `icon` (1) define icon identifier for a page.
+		- `title` (1) overrides the title of a page to be different from the file name.
+		- `tags` (N) get listed in their own section "Pages tagged with X" below a page.
+		- `template` (1) designates a page as a template.
+		- `template-including-parent` (1) (in previous versions `include-parent`) specifies whether the parent level content of the selected block should be included when using a template.
+		- `alias` (N) define synonyms for a page.
+		- `filters` (N, object with booleans) store selected filters for linked references on page-level.
+		- `public` (boolean) defines whether a page should be included in an export.
+	- Hidden properties
+		- `collapsed` (1) specifies whether a block is collapsed.
+		- `id` (1) specifies a block id.
+		- `created-at` (1) and `updated-at` (in previous versions `last-modified-at`) (1) define the date/time stamps in [Unix time](https://en.wikipedia.org/wiki/Unix_time); block-level only.
+		- `parent` (1) references the parent block (could be a page).
+		- `query-table` (1) will mark a query to be shown as the table view.
+		- `query-properties` (N) stores a user's custom properties to be shown for a query table.
+		- See `hidden-built-in-properties` in https://github.com/logseq/logseq/blob/master/deps/graph-parser/src/logseq/graph_parser/property.cljs for the full list.
