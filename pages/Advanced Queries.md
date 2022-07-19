@@ -204,7 +204,7 @@
 	  
 	  #+BEGIN_QUERY
 	  {:title "🔴 STALLED"
-	    :query [:find (pull ?h [*])
+	    :query [:find (pull ?b [*])
 	            :in $ ?start ?today
 	            :where
 	            (task ?b #{"NOW" "LATER" "TODO" "DOING"})
