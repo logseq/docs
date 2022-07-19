@@ -91,6 +91,7 @@ click:: click me to edit
 		- `alias` (N) define synonyms for a page.
 		- `filters` (N, object with booleans) store selected filters for linked references on page-level.
 		- `public` (boolean) defines whether a page should be included in an export.
+		- `exclude-from-graph-view` (boolean) defines whether a page should be excluded in global graph view.
 	- Hidden properties
 		- `collapsed` (1) specifies whether a block is collapsed.
 		- `id` (1) specifies a block id.
