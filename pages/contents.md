@@ -38,6 +38,7 @@
 	- SRS [[Cards]]
 	- [[Draw]]
 	- [[Slide]]
+	- [[Calculator]]
 	- [[Custom theme]]
 	- [[Zotero]] integration
 	- [[Embed Media - Audio, Photos, Videos]]
