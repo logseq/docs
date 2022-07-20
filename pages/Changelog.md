@@ -1,3 +1,69 @@
+- [[Jul 20th, 2022]]
+  Beta 0.7.7
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.7.7
+	- [[Features]]
+		- Auto-complete support for both block properties and their values [#5922](https://github.com/logseq/logseq/pull/5922)
+	- [[Thanks]]
+		- [[deciia wang]]
+			- Update translation for Simplified Chinese, Traditional Chinese
+		- [[Kyle Ibrahim]]
+			- Update desktop app run instructions
+		- [[Jonas Diemer]]
+			- Adding tests for calculator rounding errors
+		- [[Phoenix Eliot]]
+			- Replace react-visibility-sensor with react-intersection-observer
+		- [[playerofgames]]
+			- Calculator bug fix and improvements
+		- [[Yuriy Piskun]]
+			- Add heading in plugin settings
+			- Add data-key to plugin settings
+		- [[SainoNamkho]]
+			- Fix math equation style bug
+		- [[Wojciech Nawrocki]]
+			- Fix formatting of copied PDF text
+		- [[queeup]]
+			- Update Turkish translation
+		- [[Peng Xiao]]
+			- Fix export as html issue
+			- Only log query when debug is enabled
+		- [[sawhney17]]
+			- Make the git commit shortcut customizable
+			- Improve reference filters
+			- Fix block references crash
+		- [[8N9KT]]
+			- Fix boolean in query table
+	- [[Fixed issues]]
+		- Rename namespace also rename substring in sub-namespace pages [#5925](https://github.com/logseq/logseq/pull/5925)
+		- Remove plugin ui items manager from page bar [#5934](https://github.com/logseq/logseq/pull/5934)
+		- Fix some query table issues [#5886](https://github.com/logseq/logseq/pull/5886)
+		- Reorder items in page search auto-complete [#5935](https://github.com/logseq/logseq/pull/5935)
+		- Bug fix for calculator  [#5918](https://github.com/logseq/logseq/pull/5918)  [#5939](https://github.com/logseq/logseq/pull/5939)
+		- Quick capture across desktops [#5960](https://github.com/logseq/logseq/pull/5960)
+		- Fix for page bouncing when lazy loading [#5973](https://github.com/logseq/logseq/pull/5973)
+		- Flashcards not working [#5990](https://github.com/logseq/logseq/pull/5990)
+		- Don't enter editing when click query table [#6000](https://github.com/logseq/logseq/pull/6000)
+		- Key duplicates caused by key case when insert page property [#5889](https://github.com/logseq/logseq/pull/5889)
+		- Fix formatting of copied PDF text [#4564](https://github.com/logseq/logseq/pull/4564)
+		- Avoid handling delete too early, compatibility with some sync disks [#6019](https://github.com/logseq/logseq/pull/6019)
+		- Click not working on cards preview mode [#6016](https://github.com/logseq/logseq/pull/6016)
+		- Bug while exporting as html [#5997](https://github.com/logseq/logseq/pull/5997)
+		- Occasional memory leak with dynamic provide UI within slot UI [#6006](https://github.com/logseq/logseq/pull/6006)
+		- Missing asset resource when file name with specific url encoded chars [#5888](https://github.com/logseq/logseq/pull/5888)
+		- Block references crash [#6061](https://github.com/logseq/logseq/pull/6061)
+		- Boolean in query table [#6063](https://github.com/logseq/logseq/pull/6063)
+		- Undo in long page, block not shown when lazy-loading [#6088](https://github.com/logseq/logseq/pull/6088)
+		- Display cards shortcut on narrow screen [#6097](https://github.com/logseq/logseq/pull/6097)
+	- [[Enhancement]]
+		- Improve reference filters [#5982](https://github.com/logseq/logseq/pull/5982)
+		- Translation enhancement to Simplified Chinese, Traditional Chinese [#5924](https://github.com/logseq/logseq/pull/5924)
+		- Replace react-visibility-sensor with react-intersection-observer [#5909](https://github.com/logseq/logseq/pull/5909)
+		- Add heading in plugin settings [#5958](https://github.com/logseq/logseq/pull/5958)
+		- Refactor inline html markup element conversion [#5954](https://github.com/logseq/logseq/pull/5954)
+		- Update Turkish translation [#6031](https://github.com/logseq/logseq/pull/6031)
+		- make the git commit shortcut customizable [#6025](https://github.com/logseq/logseq/pull/6025)
+		- Property page enhancements [#6024](https://github.com/logseq/logseq/pull/6024)
+		- Add data-key to plugin settings [#6045](https://github.com/logseq/logseq/pull/6045)
+		- Calculator improvements: new operations, display formats, constants and bases [#6056](https://github.com/logseq/logseq/pull/6056)
 - [[Jul 4th, 2022]]
   Beta 0.7.6
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.7.6
