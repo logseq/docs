@@ -1,3 +1,13 @@
+- [[Jul 21st, 2022]]
+  Beta 0.7.8
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.7.8
+	- [[Thanks]]
+		- [[8N9KT]]
+			- Add new property exclude-in-graph
+	- [[Fixed issues]]
+		- Codesign on macOS fails [#6109](https://github.com/logseq/logseq/issues/6109)
+	- [[Enhancement]]
+		- Add new property exclude-in-graph [#6062](https://github.com/logseq/logseq/pull/6062)
 - [[Jul 20th, 2022]]
   Beta 0.7.7
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.7.7
