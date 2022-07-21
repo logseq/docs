@@ -3,11 +3,11 @@
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.7.8
 	- [[Thanks]]
 		- [[8N9KT]]
-			- Add new property exclude-in-graph
+			- Add new property exclude-from-graph-view
 	- [[Fixed issues]]
 		- Codesign on macOS fails [#6109](https://github.com/logseq/logseq/issues/6109)
 	- [[Enhancement]]
-		- Add new property exclude-in-graph [#6062](https://github.com/logseq/logseq/pull/6062)
+		- Add new property exclude-from-graph-view [#6062](https://github.com/logseq/logseq/pull/6062)
 - [[Jul 20th, 2022]]
   Beta 0.7.7
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.7.7
@@ -1057,7 +1057,7 @@
 			- Awesome proposal to tagging Logseq's issues on GitHub!
 				- This proposal is at https://docs.google.com/spreadsheets/d/10-LplNuMo2MUy67lt-WX1z1x50L1pY4bSLPIob1eHRQ/edit?usp=sharing!
 		- [[llcc]]
-			- [[DWIM]] (do what I mean) for `Enter` key when editing.  
+			- [[DWIM]] (do what I mean) for `Enter` key when editing.
 			  Context-awareness of `Enter` key makes editing more easily.
 		- [[Devon Zuegel]]
 			- Consolidate shortcut docs
