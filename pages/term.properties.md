@@ -5,25 +5,25 @@ alias:: Block properties
 click:: click me to edit
 
 - **Description**
-	- Properties are key-value pairs that allow you to annotate a block or page
-	- _Page properties_ are defined by putting them into the first block of the page (_frontmatter_)
-	- _Block properties_ are defined by puttin them into any other block
-	- When a property value matches an existing page title, Logseq will automatically create a link to that page
-	- When a property contains commas (`,`), any values are going to be automatically linked:
-	  ```
-	  parts:: motor, steering wheel, tyres
-	  ```
-	- When a property contains references, (`[]`), any values are going to be automatically linked:
-	  ```
-	  parts:: [[motor]], steering wheel, tyres
-	  ```
-	- #+BEGIN_TIP
-	  To prevent values from being auto-linked, wrap _all_ values within quotes (`"`) - for example, `parts:: "[[motor]], steering wheel, tyres"`
-	  You cannot quote (unlink) _parts_ (items) of a list property, e.g. `parts:: [[motor]], "steering wheel, tyres"` is not going to prevent values from being linked.
-	  #+END_TIP
+	- Properties are key-value pairs that allow you to annotate a block or page.
+	- _Page properties_ are defined by putting them into the first block of the page (_frontmatter_).
+	- _Block properties_ are defined by putting them into any other block.
+	- Any page or block can have multiple pairs of properties.
+	- Property values are primarily used for linking to other pages in the following ways:
+	  collapsed:: true
+		- When a property value matches an existing page title, Logseq will automatically create a link to that page
+		- When a property contains commas (`,`), any values are going to be automatically linked:
+		  ```
+		  parts:: motor, steering wheel, tyres
+		  ```
+		- When a property contains references, (`[]`), any values are going to be automatically linked:
+		  ```
+		  parts:: [[motor]], steering wheel, tyres
+		  ```
+		- To prevent values from being auto-linked, wrap _all_ values within quotes (`"`) - for example, `parts:: "[[motor]], steering wheel, tyres"`
+		  You cannot quote (unlink) _parts_ (items) of a list property, e.g. `parts:: [[motor]], "steering wheel, tyres"` is not going to prevent values from being linked.
 - **Usage**
-	- A page can have many pairs of properties (the collection is a user-defined dictionary) as long as they are in first block of that page
-	- Each block can also have many pairs of properties (except for the first block, which will be served as page properties)
+	- To enter a property, type `::` to autocomplete a property name. After entering a property name, autocomplete a property value that is _specific_ to that property. To see this in action, [see this demo](https://www.loom.com/share/27804e1bcd7b4e4bbf71ec14956c42fe).
 	- Markdown:
 	  {{embed ((60ab6f5b-4bdc-4ef0-a0f8-6cad9dcad2b2))}}
 	- org-mode:
@@ -35,6 +35,7 @@ click:: click me to edit
 	  origin:: Spain
 	- this **first block** of this page serves an example for **page property**
 	- let's add two more books:
+	  collapsed:: true
 		- [[How to take smart notes]]
 		  updated-at:: 1609337624066
 		  created-at:: 1609233078964
@@ -50,8 +51,9 @@ click:: click me to edit
 		  author:: [[george polya]]
 		  price:: 20
 		  qty:: 2
-- **Properties** have two use cases
+- **Properties** have multiple use cases including:
 	- Selecting (querying) specific pages/blocks:
+	  collapsed:: true
 		- For example, let's query all the blocks with the property `type` and the value `book`: #examples #books
 		  collapsed:: true
 		  {{query (property type book)}}
@@ -74,12 +76,12 @@ click:: click me to edit
 			  [(get ?p :type) ?t]
 			  [(= "[[book]]" ?t)]]}
 			  #+END_QUERY
-		- Providing common attributes to your pages/block - for example, you could have a template `Book` and a list of attributes you want to define for each book:
-		  ```
-		  author: [[george polya]]
-		  title: Mathematics and Plausible Reasoning
-		  published: 2009
-		  ```
+	- Providing common attributes to your pages/block - for example, you could have a template `Book` and a list of attributes you want to define for each book:
+	  ```
+	  author: [[george polya]]
+	  title: Mathematics and Plausible Reasoning
+	  published: 2009
+	  ```
 - **Built-in Properties**
 	- There are built-in in properties that control Logseq functionality. Most of the these properties are hidden from the user but a few are user editable. These property names are reserved for Logseq and thus _must_ not be used as a user property. The number in brackets indicates how many values you may define.
 	- Editable properties
