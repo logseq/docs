@@ -1,3 +1,27 @@
+- [[Jul 27th, 2022]]
+  Beta 0.7.9
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.7.9
+	- [[Thanks]]
+		- [[8N9KT]]
+			- Toggle journals page in graph view
+		- [[Gavin Nelson]]
+			- Fix alignment of macOS icon
+		- [[Jon]]
+			- Wrong order of switching images in maximize mode
+		- [[maxweilun1989]]
+			- Make the title of right-sidebar item clickable
+	- [[Fixed issues]]
+		- Inline code background style [#6129](https://github.com/logseq/logseq/pull/6129)
+		- Alignment of macOS icon [#6127](https://github.com/logseq/logseq/pull/6127)
+		- Make the title of right-sidebar item clickable. #4983 [#6158](https://github.com/logseq/logseq/pull/6158)
+		- Unfriendly break line for pdf selection text [#6157](https://github.com/logseq/logseq/pull/6157)
+		- Missing cmaps resources when access PDF [#6183](https://github.com/logseq/logseq/pull/6183)
+		- Don't autocomplete tags within backticks [#6147](https://github.com/logseq/logseq/pull/6147)
+		- Unlinking file crashes Android App [#6188](https://github.com/logseq/logseq/pull/6188)
+		- Wrong order of switching images in maximize mode [#6068](https://github.com/logseq/logseq/pull/6068)
+	- [[Enhancement]]
+		- Add command to re-index graph [#6139](https://github.com/logseq/logseq/pull/6139)
+		- Toggle journals page in graph view [#6120](https://github.com/logseq/logseq/pull/6120)
 - [[Jul 21st, 2022]]
   Beta 0.7.8
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.7.8
