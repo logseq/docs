@@ -94,6 +94,8 @@ click:: click me to edit
 		- `filters` (N, object with booleans) store selected filters for linked references on page-level.
 		- `public` (boolean) defines whether a page should be included in an export.
 		- `exclude-from-graph-view` (boolean) defines whether a page should be excluded in global graph view.
+		- `filetags` - [org-mode only property](https://orgmode.org/manual/Tag-Inheritance.html) to add to a file's tags
+		- `macro` - [org-mode only property](https://orgmode.org/manual/Macro-Replacement.html) to define [[Macros]] in a file
 	- Hidden properties
 		- `collapsed` (1) specifies whether a block is collapsed.
 		- `id` (1) specifies a block id.
