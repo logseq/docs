@@ -5,5 +5,5 @@
 - ## Functionality
 	- Page search can find any page under `journals` or `pages`.
 	- Block search _only_ finds blocks within pages. It does not find blocks _anywhere_ else in the app e.g. linked references, sidebar, settings, etc.
-	- By default, search removes accents from results e.g. `räämat` -> `raamat`. This feature can be turned off by setting the `:feature/enable-search-remove-accents?` option to `false` in your `config.eden` file. After toggle this feature, please rember to run the command `Rebuild search Index`.
+	- By default, search removes accents from results e.g. `räämat` -> `raamat`. This feature can be turned off by setting the `:feature/enable-search-remove-accents?` option to `false` in [[config.edn]] . After toggling this feature, please run the command `Rebuild search index`.
 	- Search functionality is powered by a search index. If the index is ever out of date or seems buggy, run the command `Rebuild search index`.
