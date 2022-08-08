@@ -51,6 +51,9 @@ click:: click me to edit
 		  author:: [[george polya]]
 		  price:: 20
 		  qty:: 2
+- **Configuration** in [[config.edn]]
+	- Properties have their own pages by default. To disable this, `:property-pages/enabled? false`
+	- TODO Add #docs for other property related configs
 - **Properties** have multiple use cases including:
 	- Selecting (querying) specific pages/blocks:
 	  collapsed:: true
