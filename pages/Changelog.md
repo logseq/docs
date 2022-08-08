@@ -1,3 +1,52 @@
+- [[Aug 8th, 2022]]
+  Beta 0.8.0
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.0
+	- [[Features]]
+		- New setting option `:feature/enable-search-remove-accents` for better search experience [Documentation](https://docs.logseq.com/#/page/Search) [#6199](https://github.com/logseq/logseq/pull/6199)
+		- Extract macros as blocks; Add a refresh button for slow queries(Those queries will not be re-executed automatically); Query list for flashcard  [#6105](https://github.com/logseq/logseq/pull/6105)
+	- [[Thanks]]
+		- [[8N9KT]]
+			- Remove links for each level of the namespaces hierarchy pages in the global graph view
+		- [[Alex L]]
+			- Clearer examples in `config.edn`
+		- [[Yue Yang]]
+			- Cursor style of restart text
+		- [[Giuseppe D'Andrea]]
+			- Fix navigation with multiple selected blocks [#6296](https://github.com/logseq/logseq/pull/6296)
+		- [[Herman Sandoval]]
+			- Add more Spanish language strings
+		- [[Katze Prior]]
+			- Dutch translation
+		- [[lecoan]]
+			- Improve UX design: click the plugin title to open README
+		- [[maxweilun1989]]
+			- Fix recent in sidebar do not remember its state
+			- New setting options `:feature/enable-search-remove-accents`
+			- Only show property search modal when necessary
+		- [[netwjx]]
+			- More Chinese translation
+		- [[Phoenix Eliot]]
+			- Fix pasting race condition
+			- Add comments to editor keyup-handler cases
+	- [[Fixed issues]]
+		- Remove links for each level of the namespaces hierarchy pages in the global graph view [#6115](https://github.com/logseq/logseq/pull/6115)
+		- Timezone wrong when expanding template time variables [#6237](https://github.com/logseq/logseq/pull/6237)
+		- Recent in sidebar does not remember its state [#6144](https://github.com/logseq/logseq/pull/6144)
+		- Property completion for hidden properties and property ordering [#6214](https://github.com/logseq/logseq/pull/6214)
+		- Cursor style of restart text [#6141](https://github.com/logseq/logseq/pull/6141)
+		- Avoiding race conditions in pasting [#5964](https://github.com/logseq/logseq/pull/5964)
+		- Remove absolute file path from linked file path for Zotero [#5995](https://github.com/logseq/logseq/pull/5995)
+		- Bug fixes for linked references and queries; Performance enhancement for queries [#6105](https://github.com/logseq/logseq/pull/6105)
+		- Only show property search modal when necessary [#6176](https://github.com/logseq/logseq/pull/6176)
+		- Navigation with multiple selected blocks [#6296](https://github.com/logseq/logseq/pull/6296)
+		- Handle corrupted search DB, causing App crash [#6299](https://github.com/logseq/logseq/pull/6299)
+	- [[Enhancement]]
+		- Friendly linebreak for multiple language highlighted PDF text [#6212](https://github.com/logseq/logseq/pull/6212)
+		- More Spanish language strings added [#6217](https://github.com/logseq/logseq/pull/6217)
+		- Dutch translation [#6233](https://github.com/logseq/logseq/pull/6233)
+		- More Chinese translations [#6257](https://github.com/logseq/logseq/pull/6257)
+		- Click the plugin title to open README [#6286](https://github.com/logseq/logseq/pull/6286)
+		- Some plugin API enhancements [#6021](https://github.com/logseq/logseq/pull/6021)
 - [[Jul 27th, 2022]]
   Beta 0.7.9
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.7.9
@@ -13,7 +62,7 @@
 	- [[Fixed issues]]
 		- Inline code background style [#6129](https://github.com/logseq/logseq/pull/6129)
 		- Alignment of macOS icon [#6127](https://github.com/logseq/logseq/pull/6127)
-		- Make the title of right-sidebar item clickable. #4983 [#6158](https://github.com/logseq/logseq/pull/6158)
+		- Make the title of right-sidebar item clickable. [#6158](https://github.com/logseq/logseq/pull/6158)
 		- Unfriendly break line for pdf selection text [#6157](https://github.com/logseq/logseq/pull/6157)
 		- Missing cmaps resources when access PDF [#6183](https://github.com/logseq/logseq/pull/6183)
 		- Don't autocomplete tags within backticks [#6147](https://github.com/logseq/logseq/pull/6147)
