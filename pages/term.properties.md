@@ -86,7 +86,7 @@ click:: click me to edit
 	  published: 2009
 	  ```
 - **Built-in Properties**
-	- There are built-in in properties that control Logseq functionality. Most of the these properties are hidden from the user but a few are user editable. These property names are reserved for Logseq and thus _must_ not be used as a user property. The number in brackets indicates how many values you may define.
+	- There are built-in in properties that control Logseq functionality. Most of the these properties are hidden from the user but a few are user editable. These property names are reserved for Logseq and thus _must_ not be used as a user property. The number in parenthesis indicates how many values you may define i.e. (1) is one value and (N) is multiple values.
 	- Editable properties
 		- `icon` (1) define icon identifier for a page.
 		- `title` (1) overrides the title of a page to be different from the file name.
@@ -94,11 +94,11 @@ click:: click me to edit
 		- `template` (1) designates a page as a template.
 		- `template-including-parent` (1) (in previous versions `include-parent`) specifies whether the parent level content of the selected block should be included when using a template.
 		- `alias` (N) define synonyms for a page.
-		- `filters` (N, object with booleans) store selected filters for linked references on page-level.
-		- `public` (boolean) defines whether a page should be included in an export.
-		- `exclude-from-graph-view` (boolean) defines whether a page should be excluded in global graph view.
-		- `filetags` - [org-mode only property](https://orgmode.org/manual/Tag-Inheritance.html) to add to a file's tags
-		- `macro` - [org-mode only property](https://orgmode.org/manual/Macro-Replacement.html) to define [[Macros]] in a file
+		- `filters` (N) store selected filters for linked references on page-level. object with booleans
+		- `public` (1) defines whether a page should be included in an export. boolean
+		- `exclude-from-graph-view` (1) defines whether a page should be excluded in global graph view. boolean
+		- `filetags` (N) - [org-mode only property](https://orgmode.org/manual/Tag-Inheritance.html) to add to a file's tags
+		- `macro` (1) - [org-mode only property](https://orgmode.org/manual/Macro-Replacement.html) to define [[Macros]] in a file
 	- Hidden properties
 		- `collapsed` (1) specifies whether a block is collapsed.
 		- `id` (1) specifies a block id.
