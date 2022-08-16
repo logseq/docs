@@ -1,3 +1,44 @@
+- [[Aug 17th, 2022]]
+  Beta 0.8.1
+  **NOTE**: This release updates Electron to version 19. If you encounter any errors, **Clear Cache** and re-add your graphs.
+  Desktop app and Android App download link:
+	- [[Thanks]]
+		- [[AlexFullmoon]]
+			- Improved Russian translation
+		- [[Grant Moyer]]
+			- Upgrade Electron to 19
+		- [[Michał Świtoń]]
+			- Polish translation
+		- [[Giuseppe D'Andrea]]
+			- Cursor position cannot be moved when editing a page title
+		- [[maxweilun1989]]
+			- Keep the favorites item when publishing
+		- [[Phoenix Eliot]]
+			- Fix wrapped-by? utility function
+			- Press the Escape key to close action menu
+			- Fix moving cursor outside brackets when auto-complete
+			- Fix undo/redo while action menu is open
+		- [[Aryan Sawhney]]
+			- Fix incorrect feature request URL
+		- [[swk777]]
+			- Alias of a page in sidebar did not redirect to the original page
+		- [[Yuriy Piskun]]
+			- Add plugin id to buttons and panel
+	- [[Fixed issues]]
+		- Performance degradation introduced in the last release [#6347](https://github.com/logseq/logseq/pull/6347)
+		- Android App crashes when picking a graph folder for some devices [#6328](https://github.com/logseq/logseq/pull/6328) [#6315](https://github.com/logseq/logseq/pull/6315)
+		- Cursor position cannot be moved when editing a page title [#6311](https://github.com/logseq/logseq/pull/6311)
+		- Keep the favorites item when publishing [#6256](https://github.com/logseq/logseq/pull/6256)
+		- Alias of a page in sidebar did not redirect to the original page [#6085](https://github.com/logseq/logseq/pull/6085)
+		- Fix roam export error caused by a typo [#6364](https://github.com/logseq/logseq/pull/6364)
+		- Fix moving cursor outside brackets when auto-complete [#6283](https://github.com/logseq/logseq/pull/6283)
+		- Fix undo/redo while the action menu is open [#6273](https://github.com/logseq/logseq/pull/6273)
+	- [[Enhancement]]
+		- Upgrade Electron to 19 [#6032](https://github.com/logseq/logseq/pull/6032)
+		- I18N: Polish translation [#6318](https://github.com/logseq/logseq/pull/6318), Improved Russian translation [#6324](https://github.com/logseq/logseq/pull/6324)
+		- Press the Escape key to close action menu [#6270](https://github.com/logseq/logseq/pull/6270)
+		- Support import current graph assets file in `custom.css` [#6331](https://github.com/logseq/logseq/pull/6331)
+		- Add plugin id to buttons and panels in the settings menu [#6373](https://github.com/logseq/logseq/pull/6373)
 - [[Aug 8th, 2022]]
   Beta 0.8.0
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.0
