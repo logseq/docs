@@ -1,7 +1,27 @@
+- [[Aug 23rd, 2022]]
+  Beta 0.8.2
+  **Special Note for Android Users**: It is required to Clear Cache and re-add your graphs.
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.2
+	- [[Thanks]]
+		- [[Peter Stuifzand]]
+			- Fix typo in Markdown syntax
+		- [[queeup]]
+			- Update Turkish translation
+	- [[Fixed issues]]
+		- Refactor mobile path handling, fix file backup for mobile platforms [#6389](https://github.com/logseq/logseq/pull/6389)
+		- Use the correct journal title format while first opening a graph [#6425](https://github.com/logseq/logseq/pull/6425)
+		- Skip empty block when cycling multiple todos [#6433](https://github.com/logseq/logseq/pull/6433)
+		- Fix query filters and wrong page refs [#6423](https://github.com/logseq/logseq/pull/6423)
+		- Arrow up/down to close property autocomplete
+	- [[Enhancement]]
+		- New style context and dropdown menus [#6416](https://github.com/logseq/logseq/pull/6416)
+		- I18n: update Turkish translation [#6378](https://github.com/logseq/logseq/pull/6378)
+		- Plugin API enhancements [#6423](https://github.com/logseq/logseq/pull/6423)
+		- Increase the limit on search items for templates and properties
 - [[Aug 17th, 2022]]
   Beta 0.8.1
   **NOTE**: This release updates Electron to version 19. If you encounter any errors, **Clear Cache** and re-add your graphs.
-  Desktop app and Android App download link:
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.1
 	- [[Thanks]]
 		- [[AlexFullmoon]]
 			- Improved Russian translation
