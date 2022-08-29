@@ -50,11 +50,11 @@
 	- ### Embedding Images
 		- To preview an image saved on your computer, type or copy-paste the following, replacing the filepath in (parenthesis) with the appropriate one:
 		  `![optional: add a name](C://Users/USERNAME/Folder/image.gif)`
-
+		  
 		  #+BEGIN_TIP
 		  Make sure to include the `!` at the start.
 		  #+END_TIP
-
+		  
 		  #+BEGIN_TIP
 		  	  You can specify the image size using `{:height --, :width --}` → Example:  `![label](image.gif){:height 418, :width 699}`
 		   #+END_TIP
@@ -69,7 +69,7 @@
 				  You can specify the image size by formatting the image link as such: `![](https://logseq.github.io/screenshots/1.png){:height 469, :width 819}`
 				   #+END_TIP
 - ## Videos
-	- You can also easily embed and play back video files by using the `{{video }}` command, and pasting the link to the file inside the brackets after `video`:
+	- You can also easily embed and play back video files by using the `{{video }}` macro, and pasting the link to the file inside the brackets after `video`:
 		- Example: `{{video file:C://Users/USERNAME/Folder/video.mp4}}` or `{{video https://www.website.com/video-file.webm}}`
 	- You can also access `{{video }}` by typing the slash `/` command and typing `Embed Video URL`
 	- Using the above method results in videos that autoplay, and may produce black bars for videos with unusual sizing. To mitigate this and access more advanced functions for video playback, you can use `/Embed HTML` or [[Hiccup]] to embed videos. Here are the steps for Hiccup:
@@ -90,7 +90,7 @@
 			  [:video {:controls true :src "https://www.website.com/video-file.webm"}]
 			  ```
 			- Example:
-
+			  
 			   [:video {:controls true :src "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"}]
 			   ```
 			   [:video {:controls true :src "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"}]
@@ -100,7 +100,7 @@
 			   #+END_TIP
 		- ### Embedding videos from YouTube
 			- Type the slash `/` command and type `Embed YouTube Video`
-			- Select the command and paste the URL inside the `{{youtube }}` command
+			- Select the command and paste the URL inside the `{{youtube }}` macro
 				- Example:
 				   ```
 				   {{youtube https://www.youtube.com/watch?v=SUOdfa3MucE}}
@@ -112,7 +112,7 @@
 				   <div style="position: relative; padding-bottom: 80.35714285714286%; height: 0;"><iframe src="https://www.loom.com/embed/995d6755b29c48c6b610646736aa5049" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 		- ### Embedding videos from Vimeo
 			- Type the slash `/` command and type `Embed Vimeo video`
-			- Select the command and paste the URL inside the `{{vimeo }}` command.
+			- Select the command and paste the URL inside the `{{vimeo }}` macro.
 				- Example:
 				   {{vimeo https://player.vimeo.com/video/535982936}}
 				   ```
