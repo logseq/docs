@@ -9,10 +9,13 @@
 		  #+BEGIN_TIP
 		  Make sure to include the `file:` at the start and to use forward slashes `/`
 		  #+END_TIP
+		  #+BEGIN_TIP
+		  You can also access other [HTML attributes for the audio tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio) (see the markup for the `controls` attribute in the above example)
+		  #+END_TIP
 	- ### Embedding an audio file on your PC (using "/Embed HTML")
 		- If you are familiar with HTML markup and [prefer using `<audio>` tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio), you can leverage Logseq's HTML embed feature to preview audio saved on your computer. To do so, type or copy-paste the following line, replacing the source `src` in "quotation marks" with the filepath and file name:
 		  ```
-		  @@html: <audio controls><source src="file:C://Users/USERNAME/Folder/audio.ogg" type="audio/ogg"></audio>@@"}]
+		  @@html: <audio controls><source src="file:C://Users/USERNAME/Folder/audio.ogg" type="audio/ogg"></audio>@@
 		  ```
 		  #+BEGIN_TIP
 		  Make sure to include the `file:` at the start and to use forward slashes `/`
@@ -27,6 +30,9 @@
 			  ```
 			  [:audio {:controls true :src "https://www.kozco.com/tech/piano2-CoolEdit.mp3"}]
 			  ```
+			  #+BEGIN_TIP
+			  You can also access other [HTML attributes for the audio tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio) (see the markup for the `controls` attribute in the above example)
+			  #+END_TIP
 	- ### Embedding audio from a URL (using "/Embed HTML")
 		- If you are familiar with HTML markup and [prefer using `<audio>` tags](https://www.w3schools.com/html/html5_audio.asp), you can leverage Logseq's HTML embed feature to preview audio stored online. To do so, type or copy-paste the following line, replacing the source `src` in "quotation marks" with the actual URL:
 		  ```
@@ -60,10 +66,13 @@
 				  https://logseq.github.io/screenshots/1.png
 				  ```
 				  #+BEGIN_TIP
-				  	  You can specify the image size by formatting the image link as such: `![](https://logseq.github.io/screenshots/1.png){:height 469, :width 819}`
+				  You can specify the image size by formatting the image link as such: `![](https://logseq.github.io/screenshots/1.png){:height 469, :width 819}`
 				   #+END_TIP
 - ## Videos
-	- Using [[Hiccup]] and certain slash commands, it is possible to embed video to your page and play it back.
+	- You can also easily embed and play back video files by using the `{{video }}` command, and pasting the link to the file inside the brackets after `video`:
+		- Example: `{{video file:C://Users/USERNAME/Folder/video.mp4}}` or `{{video https://www.website.com/video-file.webm}}`
+	- You can also access `{{video }}` by typing the slash `/` command and typing `Embed Video URL`
+	- Using the above method results in videos that autoplay, and may produce black bars for videos with unusual sizing. To mitigate this and access more advanced functions for video playback, you can use `/Embed HTML` or [[Hiccup]] to embed videos. Here are the steps for Hiccup:
 	- ### Embedding a video file
 		- To preview a video saved on your computer, type or copy-paste the following Hiccup ClojureScript, replacing the source `src` in "quotation marks" with the filepath and file name:
 		  ```
@@ -71,6 +80,9 @@
 		  ```
 		  #+BEGIN_TIP
 		  Make sure to include the `file:` at the start and to use forward slashes
+		  #+END_TIP
+		  #+BEGIN_TIP
+		  You can also access other [HTML attributes for the video tag](https://www.w3schools.com/tags/tag_video.asp) (see the markup for the `controls attribute` in the above example)
 		  #+END_TIP
 		- ### Embedding a videos from a URL
 			- To preview videos stored online, type or copy-paste the following Hiccup ClojureScript, replacing the source `src` in "quotation marks" with the actual URL:
@@ -83,6 +95,9 @@
 			   ```
 			   [:video {:controls true :src "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"}]
 			   ```
+			   #+BEGIN_TIP
+			   You can also access other [HTML attributes for the video tag](https://www.w3schools.com/tags/tag_video.asp) (see the markup for the `controls` attribute in the above example)
+			   #+END_TIP
 		- ### Embedding videos from YouTube
 			- Type the slash `/` command and type `Embed YouTube Video`
 			- Select the command and paste the URL inside the `{{youtube }}` command
