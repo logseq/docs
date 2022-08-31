@@ -1,3 +1,46 @@
+- [[Sep 1st, 2022]]
+  Beta 0.8.3
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.3
+	- [[Features]]
+		- Config option to allow for longer, richer property values, new config option `:rich-property-values?` [#6336](https://github.com/logseq/logseq/pull/6336)
+		- Find in page on electron, use `CMD+F` or `Ctrl+F` to search term in current page [Documentation](https://docs.logseq.com/#/page/Find%20in%20page) [#6443](https://github.com/logseq/logseq/pull/6443)
+	- [[Thanks]]
+		- [[David Vargas]]
+			- Add an option to skip redirect on page rename
+		- [[Viktor Moros]]
+			- Improve backtick auto-pairing
+			- Adding E2E test for scenario with text after a soft return
+		- [[Giuseppe D'Andrea]]
+			- Fix shift-click on recently searched page
+		- [[Mike Travers]]
+			- Shift click on “Journals” opens latest in the right sidebar
+		- [[Kan-Ru Chen]]
+			- Update electron 19.0.12, fixed a bug in wayland rendering for Linux desktops
+		- [[queeup]]
+			- Update Turkish translation
+		- [[star.lit]]
+			- Add guide to speed up build process on Windows
+		- [[swk777]]
+			- Re-enabling Journals options does not work when default home page is filled out
+	- [[Fixed issues]]
+		- Shift-click on recently searched page [#6461](https://github.com/logseq/logseq/pull/6461)
+		- Electron-only commands should only show up in electron [#6469](https://github.com/logseq/logseq/pull/6469)
+		- CJK hashtag update failure [#6479](https://github.com/logseq/logseq/pull/6479)
+		- Hide icon page property [#6473](https://github.com/logseq/logseq/pull/6473)
+		- Handle delete image with no actual file [#6482](https://github.com/logseq/logseq/pull/6482)
+		- Error while importing from edn/json [#6477](https://github.com/logseq/logseq/pull/6477)
+		- Handle invalid property names [#6492](https://github.com/logseq/logseq/pull/6492)
+		- Re-enabling Journals options does not work when home page is filled out [#6498](https://github.com/logseq/logseq/pull/6498)
+		- Tabindex react dev warnings [#6520](https://github.com/logseq/logseq/pull/6520)
+		- Custom css not reload [#6510](https://github.com/logseq/logseq/pull/6510)
+		- Search or editor frozen caused by large text [#6455](https://github.com/logseq/logseq/pull/6455)
+	- [[Enhancement]]
+		- Massive accessibility enhancements [#6442](https://github.com/logseq/logseq/pull/6442)
+		- Tips of plugin loader perf [#6467](https://github.com/logseq/logseq/pull/6467)
+		- Improved backtick auto-pairing [#6496](https://github.com/logseq/logseq/pull/6496)
+		- Shift click on “Journals” opens latest in the right sidebar [#6511](https://github.com/logseq/logseq/pull/6511)
+		- I18n: update Turkish translation [#6507](https://github.com/logseq/logseq/pull/6507)
+		- Add an option to skip redirect on page rename [#6519](https://github.com/logseq/logseq/pull/6519)
 - [[Aug 23rd, 2022]]
   Beta 0.8.2
   **Special Note for Android Users**: It is required to Clear Cache and re-add your graphs.
