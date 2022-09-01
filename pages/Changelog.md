@@ -1,3 +1,13 @@
+- [[Sep 2nd, 2022]]
+  Beta 0.8.4
+  This is a minor upgrade for Android platform.
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.4
+	- [[Fixed issues]]
+		- Do not loading persist vars when nil graph [#6542](https://github.com/logseq/logseq/pull/6542)
+		- Recover open new window button [#6540](https://github.com/logseq/logseq/pull/6540)
+		- Android crash at start, accessing illegal path [#6551](https://github.com/logseq/logseq/pull/6551)
+	- [[Enhancement]]
+		- Nested scroll container for left sidebar dynamic modules [#6553](https://github.com/logseq/logseq/pull/6553)
 - [[Sep 1st, 2022]]
   Beta 0.8.3
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.3
