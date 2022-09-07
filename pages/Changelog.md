@@ -1,3 +1,20 @@
+- [[Sep 7th, 2022]]
+  Beta 0.8.5
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.5
+	- [[Thanks]]
+		- [[WsinGithub]]
+			- UI fix for dsl-query
+		- [[Emin Devrim Fidan]]
+			- Fix "Themes" typo in translation
+	- [[Enhancement]]
+		- Image overlay buttons [#6559](https://github.com/logseq/logseq/pull/6559)
+	- [[Fixed issues]]
+		- Returns of raw datascript query [#6568](https://github.com/logseq/logseq/pull/6568)
+		- Url param double decoded in Quick Capture [#6572](https://github.com/logseq/logseq/pull/6572)
+		- Some fixes related to re-index [#6571](https://github.com/logseq/logseq/pull/6571)
+		- UI fix for dsl-query [#6130](https://github.com/logseq/logseq/pull/6130)
+		- Linkable built-in properties should not display as rich properties [#6606](https://github.com/logseq/logseq/pull/6606)
+		- Windows app auto update [#6629](https://github.com/logseq/logseq/pull/6629)
 - [[Sep 2nd, 2022]]
   Beta 0.8.4
   This is a minor upgrade for Android platform.
