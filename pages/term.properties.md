@@ -22,6 +22,7 @@ click:: click me to edit
 		  ```
 		- To prevent values from being auto-linked, wrap _all_ values within quotes (`"`) - for example, `parts:: "[[motor]], steering wheel, tyres"`
 		  You cannot quote (unlink) _parts_ (items) of a list property, e.g. `parts:: [[motor]], "steering wheel, tyres"` is not going to prevent values from being linked.
+- TODO This page is too big. Split it up into multiple feature pages e.g. page properties, block properties, built-in properties #docs
 - **Usage**
 	- To enter a property, type `::` to autocomplete a property name. After entering a property name, autocomplete a property value that is _specific_ to that property. To see this in action, [see this demo](https://www.loom.com/share/27804e1bcd7b4e4bbf71ec14956c42fe).
 	- Markdown:

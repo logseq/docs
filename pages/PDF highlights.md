@@ -1,13 +1,15 @@
--
-  #+BEGIN_NOTE
+type:: [[Feature]]
+platform:: [[Desktop]]
+
+- TODO [[Ramses]] would like to rename to PDF Reader #docs
+- TODO Organize this page into a feature page #docs
+- #+BEGIN_NOTE
   This only works on the desktop app at the moment.
   #+END_NOTE
 - **How to add a PDF file?**
 	- There're two ways to add PDF files to your graph:
-		-
-		  1. Create a new block in any page, drag your PDF file to the new block.
-		-
-		  2. Type '/upload an asset' and choose your PDF file.
+		- 1. Create a new block in any page, drag your PDF file to the new block.
+		- 2. Type '/upload an asset' and choose your PDF file.
 - **How to highlight text?**
 	- Click to select some text and choose your favorite color.
 		- ![CleanShot 2021-08-06 at 20.32.52.png](../assets/CleanShot_202021-08-06_20at_2020.32.52_1628253194728_0.png)

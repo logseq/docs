@@ -1,3 +1,5 @@
+type:: [[Feature]]
+
 - You can make a block and its children as template for reuse purpose.
 - For example, let's create a meeting note template block as below for reuse:
 	- MEETING TITLE
@@ -14,15 +16,15 @@
 		- related notes of same project
 		  {{query (property project change-me-later)}}
 - There're two ways to make above block and its children as template:
-	-
-	  1. You can right click the block dot and click "Make template" to give it a name:
+	- 1. You can right click the block dot and click "Make template" to give it a name:
 	  ![template.gif](../assets/template_1621928689810_0.gif)
-	-
-	  2. Or you can add [[term/properties]] of `template` with its name directly:
+	- 2. Or you can add [[term/properties]] of `template` with its name directly:
 	  ![template2.gif](../assets/template2_1621928922947_0.gif)
 - To use the template, simply type `/Template` command and choose the name of template:
+  collapsed:: true
   ![template3.gif](../assets/template3_1621929392325_0.gif)
 - other resources to learn how to template:
+  collapsed:: true
 	- [[Cobblebot]] contributed this wonderful [tutorial from forum](https://discuss.logseq.com/t/templates-how-to-create-edit-and-insert/200)
 	- this great video from [[OneStutteringMind]] also shows how to use templates (note the property syntax in this video is no longer used, check [[term/properties]] for latest syntax)
 	  {{youtube https://www.youtube.com/watch?v=l4keRsRFnuc}}
@@ -39,8 +41,7 @@
 		- [Natural language date](https://github.com/wanasit/chrono)
 		  id:: 60312078-ae36-4395-bdfb-747304b80c03
 		  `Last Friday` => `[[Feb 12th, 2021]]`
-			-
-			  #+BEGIN_QUOTE
+			- #+BEGIN_QUOTE
 			  - Today, Tomorrow, Yesterday, Last Friday, etc
 			  - 17 August 2013 - 19 August 2013
 			  - This Friday from 13:00 - 16.00
@@ -63,3 +64,4 @@
 		  template-including-parent:: false
 			- line1
 				- line2
+- TODO Organize this page #docs

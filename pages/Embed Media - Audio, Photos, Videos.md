@@ -62,6 +62,7 @@
 			- To preview am image from the internet, copy its link (with the file name and filepath) and paste it into Logseq. The image should automatically appear when you hit Enter.
 				- For example:
 				- ![](https://logseq.github.io/screenshots/1.png){:height 469, :width 819}
+				  collapsed:: true
 				  ```
 				  https://logseq.github.io/screenshots/1.png
 				  ```
@@ -102,6 +103,7 @@
 			- Type the slash `/` command and type `Embed YouTube Video`
 			- Select the command and paste the URL inside the `{{youtube }}` macro
 				- Example:
+				  collapsed:: true
 				   ```
 				   {{youtube https://www.youtube.com/watch?v=SUOdfa3MucE}}
 				   ```
@@ -109,12 +111,15 @@
 			- To add timestamps, play the video, pause, create a new line. Type the slash `/` command and type `Embed YouTube timestamp`
 				- Here is an example (click on the timestamp to jump to this position in the video): {{youtube-timestamp 369}}
 				- See the timestamps embed in action here (skip to 0:42 seconds):
+				  collapsed:: true
 				   <div style="position: relative; padding-bottom: 80.35714285714286%; height: 0;"><iframe src="https://www.loom.com/embed/995d6755b29c48c6b610646736aa5049" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 		- ### Embedding videos from Vimeo
 			- Type the slash `/` command and type `Embed Vimeo video`
 			- Select the command and paste the URL inside the `{{vimeo }}` macro.
 				- Example:
+				  collapsed:: true
 				   {{vimeo https://player.vimeo.com/video/535982936}}
 				   ```
 				   {{vimeo https://player.vimeo.com/video/535982936}}
 				   ```
+- TODO Split this page up and/or create multiple features that refer to this page. This page is more a tutorial than a reference page #docs

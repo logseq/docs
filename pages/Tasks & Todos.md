@@ -30,3 +30,5 @@
   id:: 60af74c1-62f8-434a-827c-abc6d2a71734
 	- {{embed ((60acdeba-b3fd-4f90-ab54-3093caa4d5fa))}}
 	- you can toggle this off by [[setting/enable timetracking]]
+- TODO [[Ramses]] to rename to Tasks #docs
+- TODO Reorganize this page
