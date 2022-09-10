@@ -3,7 +3,7 @@ description:: Built in integration that helps import your Zotero items as pages 
 
 - ## Usage
 	- You can either type `/Zotero` command, search individual zotero item (title, author, text, anything), select and add as a Logseq page.
-	  collapsed:: true
+	   id:: 6103e488-22d4-4751-b27a-69b278067c26
 	  ![zotero-search.gif](../assets/zotero-search_1627554650388_0.gif)
 	- Or if you wish to import and create all pages at once, goto `Zotero settings`, and click `Add all` to import all Zotero items and add them as Logseq pages
 	  collapsed:: true
@@ -19,7 +19,7 @@ description:: Built in integration that helps import your Zotero items as pages 
 		  id:: 61024cd6-1951-47cc-8050-25f68960d729
 		  At least `Allow library access` permission is required
 		  If you want to include notes, make sure `Allow notes access` permission is selected
-		- Optional: 
+		- Optional:
 		  If you've got [BETTER BIBTEX FOR ZOTERO](https://retorque.re/zotero-better-bibtex/installation) installed, Logseq will use citation key as your page name, otherwise, it'll just use default item title as your page name.
 		  Make sure to check [here](https://alix-lahuec.gitbook.io/zotero-roam/getting-started/prereqs) and follow the setup checklist to enable autoPinDelay and pin your existing citekeys.
 	- Basic settings:
