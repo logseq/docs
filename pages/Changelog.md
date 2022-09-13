@@ -1,3 +1,26 @@
+- [[Sep 13th, 2022]]
+  Beta 0.8.6
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.6
+	- [[Features]]
+		- Support for global config file, shared across all graphs [#6531](https://github.com/logseq/logseq/pull/6531)
+	- [[Thanks]]
+		- [[Taylor Hoffmann]]
+			- Fully translated in pt-BR and pt-PT
+		- [[George Guimarães]]
+			- pt-BR enhancement
+		- [[queeup]]
+			- Update Turkish translation
+		- [[xxchan]]
+			- zh-CN translation improvement
+	- [[Fixed issues]]
+		- Mobile backup path handling [#6642](https://github.com/logseq/logseq/pull/6642)
+		- Cannot batch insert to search db [#6646](https://github.com/logseq/logseq/pull/6646)
+	- [[Enhancement]]
+		- I18N: Turkish [#6608](https://github.com/logseq/logseq/pull/6608) [#6660](https://github.com/logseq/logseq/pull/6660), Simplified Chinese translation [#6638](https://github.com/logseq/logseq/pull/6638)
+		- Fully translated in pt-BR and pt-PT [#6657](https://github.com/logseq/logseq/pull/6657)  [#6654](https://github.com/logseq/logseq/pull/6654)
+		- Performance improvement when importing graph [#6639](https://github.com/logseq/logseq/pull/6639)
+		- Massive improvements to UI/UX and accessibility [#6617](https://github.com/logseq/logseq/pull/6617)
+		- Refine electron log [#6695](https://github.com/logseq/logseq/pull/6695)
 - [[Sep 7th, 2022]]
   Beta 0.8.5
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.5
