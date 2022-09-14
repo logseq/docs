@@ -1,3 +1,14 @@
+- [[Sep 15th, 2022]]
+  Beta 0.8.7
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.7
+	- [[Thanks]]
+		- [[Peng Xiao]]
+			- Fix plugin settings not loading
+	- [[Fixed issues]]
+		- Plugin settings not loading [#6711](https://github.com/logseq/logseq/pull/6711)
+		- Date sorting is nonsensical [#6596](https://github.com/logseq/logseq/pull/6596)
+		- Minor UI issues [#6732](https://github.com/logseq/logseq/pull/6732)
+		- Remove resizing class on tab [#6733](https://github.com/logseq/logseq/pull/6733)
 - [[Sep 13th, 2022]]
   Beta 0.8.6
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.6
