@@ -30,4 +30,15 @@ description:: Local config file, `logseq/config.edn`, is the main configuration 
 				   {:pprint (fn [r] [:pre.code (pprint r)])}
 				  ```
 			- Refer to it in a query as `:view :pprint`.
-		- `:query/result-transforms` (map) - Define result transforms for use in advanced queries. Map of keywords to fns.
+		- `:query/result-transforms` (map) - Define result transforms for use with [[Advanced Queries]] . Map of keywords to fns. Example:
+		  collapsed:: true
+			- ```edn
+			  ;; Define in config.edn
+			   :query/result-transforms
+			   {:sort-by-priority
+			    (fn [result] (sort-by (fn [h] (get h :block/priority "Z")) result))}
+			  
+			  ;; In an advanced query
+			  {:query ...
+			   :result-transform :sort-by-priority}
+			  ```
