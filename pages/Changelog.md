@@ -13,7 +13,7 @@
   Beta 0.8.6
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.6
 	- [[Features]]
-		- Support for global config file, shared across all graphs [#6531](https://github.com/logseq/logseq/pull/6531)
+		- Support for global config file, shared across all graphs [#6531](https://github.com/logseq/logseq/pull/6531) [Documentation]([[Global configuration]])
 	- [[Thanks]]
 		- [[Taylor Hoffmann]]
 			- Fully translated in pt-BR and pt-PT

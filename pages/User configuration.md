@@ -1,6 +1,6 @@
 type:: [[Feature]]
 description:: Users can configure logseq with a number of files. 
-platform:: [[All Platforms]] for config files except for custom.js and global config
+platform:: [[All Platforms]] except for custom.js and global config
 
 - ## Usage
 	- Configure Logseq with either a local configuration or a global configuration.
@@ -8,5 +8,5 @@ platform:: [[All Platforms]] for config files except for custom.js and global co
 		- [[config.edn]]
 		- [[custom.css]]
 		- [[custom.js]]
-	- [[Global configuration]] resides in `~/.logseq/config`
+	- [[Global configuration]] is located in `~/.logseq/config`
 	-
