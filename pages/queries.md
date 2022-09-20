@@ -119,8 +119,8 @@
 	- **sort-by**
 	  updated-at:: 1609243222016
 	  created-at:: 1609237456009
-	  Format: `(sort-by key order)` or `(sort-by key)`
-	  `key`: `created-at`  | `updated-at`
+	  Format: `(sort-by property-name order)` or `(sort-by property-name)`
+	  `key`: Can be any user property as well as built-in properties `created-at`  and `updated-at`
 	  `order`: `desc` or `asc`, omit means `desc`.
 	  #+BEGIN_EXAMPLE
 	  (and (task now later) (sort-by created-at desc))

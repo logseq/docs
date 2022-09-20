@@ -78,8 +78,7 @@
 		- Wrong GitHub release url for some plugins
 	- [[Enhancement]]
 		- Search UX improvement
-			-
-			  <div style="position: relative; padding-bottom: 89.33002481389578%; height: 0;"><iframe src="https://www.loom.com/embed/b7c234535aa8439398a97c595f46f46c" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+			- <div style="position: relative; padding-bottom: 89.33002481389578%; height: 0;"><iframe src="https://www.loom.com/embed/b7c234535aa8439398a97c595f46f46c" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 			-
 		- Performance improvement for pages with a lot of linked references.
 		  A new option `:ref/linked-references-collapsed-threshold` was added to control when to collapse all the linked references. The default value is `50`.
@@ -97,19 +96,16 @@
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.3.9
 	- [[Features]]
 		- [[Plugins]] Marketplace for testing!
-			-
-			  <div style="position: relative; padding-bottom: 80.35714285714286%; height: 0;"><iframe src="https://www.loom.com/embed/995d6755b29c48c6b610646736aa5049" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+			- <div style="position: relative; padding-bottom: 80.35714285714286%; height: 0;"><iframe src="https://www.loom.com/embed/995d6755b29c48c6b610646736aa5049" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 			-
 			- Notice it's only enabled in developer mode.
 			- ![CleanShot 2021-09-15 at 22.36.18.png](../assets/CleanShot_202021-09-15_20at_2022.36.18_1631716586756_0.png)
 		- [[Youtube timestamp]] support
 			- https://user-images.githubusercontent.com/9002575/133096658-67e3d6da-4444-4c06-b904-823e2206fd71.gif
 			- How to use it?
-			-
-			  1. Embed a youtube video using `/Embed Youtube Video`
+			- 1. Embed a youtube video using `/Embed Youtube Video`
 				- E.g. {{youtube https://www.youtube.com/watch?v=Ja78yU_xSkk&ab_channel=ShuOmi}}
-			-
-			  2. Watch the video and type `/Embed Youtube Timestamp`.
+			- 2. Watch the video and type `/Embed Youtube Timestamp`.
 				- e.g. You can click the timestamp to jump to the corresponding position in the video.
 					- Youtube timestamp:
 					  #+BEGIN_EXAMPLE
@@ -147,8 +143,7 @@
 	- [[Features]]
 		- Page history support reverting back
 		  collapsed:: true
-			-
-			  <div style="position: relative; padding-bottom: 109.11016949152543%; height: 0;"><iframe src="https://www.loom.com/embed/5c21a8a3470c4fd7bb9190a188d88b71" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+			- <div style="position: relative; padding-bottom: 109.11016949152543%; height: 0;"><iframe src="https://www.loom.com/embed/5c21a8a3470c4fd7bb9190a188d88b71" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 			-
 	- [[Thanks]]
 		- [[llcc]]
@@ -227,8 +222,7 @@
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.3.6
 	- [[Features]]
 		- Page version history support, your notes are much safer now!
-			-
-			  <div style="position: relative; padding-bottom: 99.52830188679246%; height: 0;"><iframe src="https://www.loom.com/embed/62fe1f6026ce4966bc88b3f3663e1649" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+			- <div style="position: relative; padding-bottom: 99.52830188679246%; height: 0;"><iframe src="https://www.loom.com/embed/62fe1f6026ce4966bc88b3f3663e1649" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 			  [:div.mb-4]
 			- Automatic backup with Git
 				- You can disable the auto git commit on the settings page
@@ -419,7 +413,7 @@
 		- [[Zotero]]
 			- Remove key from page title
 			- PDF attachment link not working
-		- [[Query/table]]
+		- [[Query table]]
 			- Click shouldn't open the page in the right sidebar (shift need to be pressed too)
 		- [[Parser]]
 			- Some files might have wrong indentation at the beginning
@@ -464,7 +458,7 @@
 		- Redirect to the new page when page property title changed
 	- [[Enhancement]]
 		- Group blocks query result by same path
-		- [[Query/table]] persists sort options (sort-by, desc/asc)
+		- [[Query table]] persists sort options (sort-by, desc/asc)
 		- "Copy as" support both `remove [[]]` and `remove emphasis`
 		- Don't parse quoted string as page references for properties
 		- Property value wrapped by `""` will not be treated as page references
@@ -556,7 +550,7 @@
 		- Autocomplete shortcut config
 		- Block timestamps in the code block
 	- [[Features]]
-		- [[Query/table/function]]
+		- [[Query table/function]]
 			- How to create a function below the query table? #card
 			  card-last-interval:: 11.2
 			  card-repeats:: 3
@@ -569,7 +563,7 @@
 				  query-properties:: [:block :author :publication-date :price :qty :updated-at]
 				  {{query (property type book)}}
 				  Then, you can create functions (by trigger `/function`) as this query block's children.
-
+				  
 				  For example:
 					- How many books? `{{function (sum :qty)}}`
 						- Answer: {{function (sum :qty)}}
@@ -592,7 +586,7 @@
 				  The function takes the query result and bind it to the symbol `result` for usage.
 					- `{{function (sum (map (fn [x] (* (:price x) (:qty x))) result))}}`
 	- [[Enhancement]]
-		- [[Query/table]]
+		- [[Query table]]
 			- Click to open a block in the right sidebar
 			- Human-readable block timestamps
 			- Add sorts by any property
@@ -622,7 +616,7 @@
 		- Hide :collapsed property when editing
 		- Org mode image rendering
 	- [[Features]]
-		- Finally, we can render queries as tables! 🎉 [[Query/table]]
+		- Finally, we can render queries as tables! 🎉 [[Query table]]
 			- {{query (property type book)}}
 			  query-table:: true
 			- {{query (page-property tags)}}
