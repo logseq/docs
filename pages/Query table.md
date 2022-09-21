@@ -1,6 +1,6 @@
 title:: Query table
 type:: [[UI Element]]
-desc:: Table that displays results from [[queries]] or [[Advanced Queries]]
+description:: Table that displays results from [[queries]] or [[Advanced Queries]]
 
 - ## Functionality
 	- Results are sorted by clicking on a column header. Clicking on the column header to reverse the sort direction. Sort state is saved to the file.
