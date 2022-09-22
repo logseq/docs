@@ -3,6 +3,9 @@ description:: "Put thoughts from your knowledge base as well as new ones next to
 platform:: [[Desktop]]
 alias:: Whiteboards
 
+- #+BEGIN_NOTE
+  This feature is not available on a stable release yet as it is currently in alpha. It can only be downloaded separately by alpha testers.
+  #+END_NOTE
 - # Usage
 	- [[Whiteboards]] is a toggleable feature that can be activated in [[Settings]] under the `Features` tab.
 	  collapsed:: true
