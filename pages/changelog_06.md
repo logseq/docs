@@ -276,8 +276,7 @@
   #+END_NOTE
 	- **How to migrate to the new Markdown syntax?**
 	  id:: 60b3a414-1e93-46c3-96fc-54d3a0760f2c
-		-
-		  <div style="position: relative; padding-bottom: 53.59375000000001%; height: 0;"><iframe src="https://www.loom.com/embed/19df38ad08e04bc4978d38d4a3e251b7" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+		- <div style="position: relative; padding-bottom: 53.59375000000001%; height: 0;"><iframe src="https://www.loom.com/embed/19df38ad08e04bc4978d38d4a3e251b7" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 		  [:hr]
 	- [[Thanks]]
 		- [[Matt Furden]] for _Stop scrollbar from causing content shift_
@@ -325,12 +324,9 @@
 		- Separate page properties from block properties
 	- [[Features]]
 		- [[Page and block preview]]
-			-
-			  1. You can edit the blocks directly in the preview tooltip.
-			-
-			  2. You can disable/enable it on the settings page, it's called `Enable tooltip`
-			-
-			  3. ![2021-05-25 02.52.53.gif](../assets/2021-05-25_02.52.53_1621882676163_0.gif)
+			- 1. You can edit the blocks directly in the preview tooltip.
+			- 2. You can disable/enable it on the settings page, it's called `Enable tooltip`
+			- 3. ![2021-05-25 02.52.53.gif](../assets/2021-05-25_02.52.53_1621882676163_0.gif)
 - [[May 19th, 2021]]
   **Canary 0.0.4**
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.0.4
@@ -442,14 +438,12 @@
 		- Add to pages for TAGS and other properties inside block properties
 	- [[Features]]
 		- Initial **PDF** embed on desktop app
-			-
-			  <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/b550c995cc8b44828d13e6a159461bd4" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+			- <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/b550c995cc8b44828d13e6a159461bd4" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 			  [:hr]
 	- [[Enhancement]]
 		- You don't have to go to edit mode first to select words 😂
 		- The page graph will auto-refresh when redirecting to a new page
-			-
-			  <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/f9309fec81ff473a87ec7648a2698f96" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+			- <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/f9309fec81ff473a87ec7648a2698f96" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 			  [:hr]
 		- Rendering is much faster thanks to the hints by [[martinklepsch]]
 		- Scheduled && deadline includes tasks in the next 7 days too, we'll make the number configurable soon
@@ -622,7 +616,7 @@
 		- [[Custom keyboard shortcuts]] support
 		- [[Templates]] support [[Dynamic Variables]] now
 		  {{embed ((60311eda-b6f7-4779-8187-8830545b3a64)) }}
-		- **Smarter** [[queries]]
+		- **Smarter** [[Queries]]
 		  Previously, `(and [[Project 1]] (todo now))` will only query those blocks that have both the `Project 1` reference and a `NOW` marker. Now it works as long as if the block parents have the `Project 1` reference and the block has a `NOW` marker.
 		  #+BEGIN_NOTE
 		  Make sure to unlink your graph first and import your data to make it works!

@@ -1,25 +1,64 @@
-- **What are "Queries"?**
-  created_at:: 1609230242742
+title:: Queries
+
+- ## What are "Queries"?
   updated-at:: 1609247076654
-	- Queries are for asking questions from your knowledge base and the outside world (in the coming weeks).
+  created-at:: 1609230242742
+	- A query is just another way of saying “*request for information*.” Probably the most common type of query is the search terms you type into search engines like Google and DuckDuckGo.
 	  updated-at:: 1609231528688
-	  created_at:: 1609230243642
-	  [:div [:img {:src "https://cdn.logseq.com/%2F5ff0a01d-47d4-487d-b346-4a43ded21ad02020_12_29_photo-1444703686981-a3abbc4d4fe3.jpeg?Expires=4762830816&Signature=h~yT-Tq1VtBtEm09Z78eT5kkEbQGUVG-VBEDuGLgykW8vb~AkZNuoRNmwL-fcHgnG8HdYBhqXeJowN9q3my4UN1bxiJtAXl0dAEjmWAqpbedH9PPdyz2tZXcuPxwdk5wICFLrB~0VWMwV02LFZEKkgPYGhkUU8oakBphifgvTdYPKLQG95FTJh9kg7GhV5ZCc1Q3JrOlLGG2fuUObf1opScwbNbEdsQStO8Ou12AaTPccAmpxAJVuut-jZ9pRvdsa00X962QD9c67BEw1SfhKEcChNIbdp~44ltuRj1Bvc1Bs2ezKupQ1sWFD5BG97UEA7GuOyANjPC331ShW8aHSQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA"}]]
-	  [:div.text-sm "By " [:a {:href "https://unsplash.com/photos/oMpAz-DN-9I" :target "_blank"} "Greg Rakozy"]]
-- **How to write queries?**
-  created_at:: 1609231967174
+	  created-at:: 1609230243642
+	- Did you know that with search engines, you can search very precisely using keywords and filters? Likewise, it's possible to precisely search your graph (your collection of notes).
+	- As an example, a beginner search engine user may write a Google query like this:
+	  `highlights or notes from How to Take Smart Notes`
+	  
+	  An experienced Google user would likely write something like this:
+	  `highlights OR notes "How to Take Smart Notes"`
+	  
+	  Similarly, we can use keywords and filters in Logseq to request information from a graph. The way to write this request may be different in Logseq, but the question is exactly the same as the examples above:
+	  ```
+	  {{query (and [[How to Take Smart Notes]] (or [[highlights]] [[notes]])) }}
+	  ```
+	- This page aims to provide a complete introduction to queries. But before you can properly understand how to search a graph using queries, you first need to understand the basic structure of your notes. For a better understanding of Logseq's outline structure, read the pages on [linking]([[Why linking matters]]) and [indentation]([[What is indentation and why does it matter?]]) first.
+- ## Introduction to Boolean logic
+	- To talk with a database like Logseq, you mostly need to understand how it thinks. In other words: you need to understand the basic logic that Logseq uses to search through your notes.
+	- The type of logic that Logseq follows is called [Boolean logic](https://en.wikipedia.org/wiki/Boolean_algebra). While you may have never heard of this term, you most likely have applied it before.
+	- Have you ever filtered results on an e-commerce website? For example, to only show results within a specific price range or with a minimum rating? Then you’ve used Boolean logic before.
+	- In the world of Boolean logic, things are very black and white. Something is either **true**, or it’s **false**; those are the only answers you can get from a Boolean question. For now, remember that Logseq queries only show results that return **true** as an answer.
+- ## The three basic Boolean operators
+	- There are three basic Boolean operators: AND, OR, and NOT. But despite them being basic, their logic can be somewhat counter-intuitive.
+	- Let’s walk through each step-by-step. To make things less abstract, we'll assume you’re a fan of Shakespeare and have lots of notes about his plays (who hasn’t!?). As Shakespeare was kinda obsessed with ghosts (they appear in five of his plays), we’ll use this theme throughout.
+	- ### AND
+		- You might think, *“Oh hey, AND. That sounds like it increases my results when searching!”* But AND actually *decreases* our search/query results. Let us explain.
+		- Imagine you’re searching through your collection of notes. You want to see everything you have about ‘ghosts’, so you search the keyword  `[[Ghosts]]`  (remember we use  `[[links]]`  as search terms in queries).
+		- Let’s say you get 100 results from that. That’s a lot! You realize you actually only wanted to see results about ghosts in *Shakespeare* plays. You want to decrease your results, so you search for  `[[Ghosts]] AND [[Shakespeare]]` . Now you only get 20 results.
+		- AND means that all the results in our example must contain **both** the keywords  `[[Ghosts]]`  and  `[[Shakespeare]]` . If we have a Venn diagram of items that contain *Ghosts* in one circle and items that contain *Shakespeare* in the other, our search for  `[[ghosts]] AND [[Shakespeare]]`  would give us results that are where those two circles overlap (the orange part in the middle).
+		- ![image.png](../assets/image_1664369628389_0.png){:height 200, :width 400}
+	- ### OR
+		- OR *increases* the number of search results.
+		- In a Venn diagram, OR brings us the entirety of both circles and where they overlap. This OR is not exclusionary, meaning results can contain both or either.
+		- You’ll get the 100 results from just searching *Ghosts* (including the overlaps with *Shakespeare*), plus any results about *Shakespeare* and not *Ghosts*. In our AND search, you wouldn’t have been able to see results about Romeo and Juliet, for example.
+		- ![image.png](../assets/image_1664369690786_0.png){:height 200, :width 400}
+	- ### NOT
+		- Let’s reason about how NOT functions, step-by-step:
+			- If our original search for *Ghosts* was 100 results;
+			- and if our search for  `[[Ghosts]] AND [[Shakespeare]]`  was only 20 notes;
+			- then, the number of notes about *Ghosts* but not about *Shakespeare* is 80.
+		- In a Venn diagram, this query would be only the part of the Ghost circle that didn’t overlap with the Shakespeare circle (the orange part on the left).
+		- ![X not Y.png](../assets/X_not_Y_1664369952948_0.png){:height 200, :width 400}
+- ## How to write queries
   updated-at:: 1609251558592
   id:: 5feb30e3-fedc-4c2a-aa03-b44020c21c68
+  created-at:: 1609231967174
 	- There're two kinds of queries:
-	  created_at:: 1609237373442
 	  updated-at:: 1609244684831
+	  created-at:: 1609237373442
 	  1. Simple queries by using `{{query }}`, the format is something like this:
 	   #+BEGIN_EXAMPLE
 	   {{query Something you're looking for}}
 	   #+END_EXAMPLE
 	   You can type `/query` to create a simple query.
 	  2. [[Advanced Queries]]
-- **Query Operators **
+	- *On this page we focus on simple queries (using the `{{query }} syntax`).*
+- ## Query Operators
   These three operators can be applied around any query filters.
 	- **and**
 	  created_at:: 1609237410438
@@ -46,7 +85,7 @@
 	  #+BEGIN_EXAMPLE
 	  (not [[page 1]] [[page 2]])
 	  #+END_EXAMPLE
-- **Query filters**
+- ## Query filters
   updated-at:: 1609237391135
   id:: 62967225-37d9-46b7-859f-92e0311ab4be
   created-at:: 1609237391135
