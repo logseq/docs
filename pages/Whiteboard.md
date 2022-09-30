@@ -1,5 +1,5 @@
 type:: [[Feature]]
-description:: "Put thoughts from your knowledge base as well as new ones next to each other on a spatial canvas together with shapes, drawings, website embeds and connectors"
+description:: Put thoughts from your knowledge base as well as new ones next to each other on a spatial canvas together with shapes, drawings, website embeds and connectors
 platform:: [[Desktop]]
 alias:: Whiteboards
 
