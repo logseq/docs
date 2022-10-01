@@ -1,3 +1,35 @@
+- [[Sep 30th, 2022]]
+  Beta 0.8.8
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.8
+	- [[Thanks]]
+		- [[Rafal]]
+			- Fix & refine Polish translations
+		- [[ingepettersen]]
+			- Update Norwegian translation
+		- [[japaul527]]
+			- Fix a message typo
+		- [[Kan-Ru Chen]]
+			- Update rage-wasm to 0.3.0
+		- [[lord63]]
+			- Guide developer to use `logseq.UI.showMsg`
+		- [[Spyros Seimenis]]
+			- Fix total clock-time calculation in query table
+		- [[Moritz Ulrich]]
+			- Don't show 'Make a flashcard' menu item with flashcards disabled
+	- [[Fixed issues]]
+		- Make right sidebar resizer draggable on desktop only, fix resizer position [#6749](https://github.com/logseq/logseq/pull/6749) [#6772](https://github.com/logseq/logseq/pull/6772)
+		- Sort-by filter for simple queries [#6765](https://github.com/logseq/logseq/pull/6765)
+		- Persist zoom level on app close [#6750](https://github.com/logseq/logseq/pull/6750)
+		- Polish alignments of SVG icons [#6832](https://github.com/logseq/logseq/pull/6832)
+		- Startup with an empty page sometimes [#6835](https://github.com/logseq/logseq/pull/6835)
+		- Don't show 'Make a flashcard' menu item with flashcards disabled [#6831](https://github.com/logseq/logseq/pull/6831)
+		- Container scrolling on sidebar editing [#6837](https://github.com/logseq/logseq/pull/6837)
+		- Total clock-time calculation in query table [#6845](https://github.com/logseq/logseq/pull/6845)
+	- [[Enhancement]]
+		- I18n: Refine Polish translations [#6766](https://github.com/logseq/logseq/pull/6766), Norwegian translation [#6797](https://github.com/logseq/logseq/pull/6797) [#6798](https://github.com/logseq/logseq/pull/6798),
+		- Update built-in icon mode [#6799](https://github.com/logseq/logseq/pull/6799)
+		- Extract references from property values [#6529](https://github.com/logseq/logseq/pull/6529)
+		- Unify heading UX for both markdown and org-mode [#6809](https://github.com/logseq/logseq/pull/6809)
 - [[Sep 15th, 2022]]
   Beta 0.8.7
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.7
