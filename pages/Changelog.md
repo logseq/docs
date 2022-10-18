@@ -1,3 +1,93 @@
+- [[Oct 19th, 2022]]
+  id:: 634eec80-b852-4da9-8c7c-8e4c9dd8e1c7
+  Beta 0.8.9
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.9
+	- [[Features]]
+		- **PDF enhancements**
+		  id:: 634ef719-e21e-4b10-96bf-d42b6d5a118b
+			- Full-text search 🎉
+			- Highlights list and colored label from the toolbar
+			- Demo
+				- <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/fa7ad4bb1dcd4d21b8f76e3e03c19d7f" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+				-
+		- **Reproducible plugin configuration**
+		  id:: 2a18f16b-d60e-4316-9ed3-451707d332cf
+			- This introduces a config file, `plugins.edn`, which is automatically updated with your installed plugins, this makes it easy to share your plugins set and try others as well.
+			- **How to use it?**
+				- 1. Reload (or restart) the app to have a `plugins.edn` created for you
+				- 2. Installing, updating or removing a plugin updates plugins.edn
+				- 3. Try someone else's plugins a.k.a. install from `plugins.edn`
+					- a. Back up your plugins. If you have plugins.edn, save a copy of that file. If you don't have a plugins.edn, move ~/.logseq/plugins to ~/.logseq/plugins.bak
+					- b. If you want to back up your plugin preferences: move ~/.logseq/settings to ~/.logseq/settings.bak
+					- c. Choose a plugins.edn you want to try - check examples below.
+					- d. Run the command  `Install plugins from plugins.edn`  or choose the 3 dot menu in the plugins dashboard. Click `Install`.
+				- Demo
+					- <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/200a0abb096444d1a9e56e826fa06fb0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+					-
+			- Some examples:
+				- ```clojure
+				  {:logseq-tags {:version "v0.1.2", :repo "gidongkwon/logseq-plugin-tags", :effect false, :theme false}
+				  :logseq-bionic-speedreader {:version "1.0.1", :repo "sawhney17/logseq-bionic-speedreader", :effect true, :theme false}
+				  :logseq-heatmap {:version "v2.4.2", :repo "pengx17/logseq-plugin-heatmap", :effect true, :theme false}
+				  :logseq-readwise-official-plugin {:version "v1.3.8", :repo "readwiseio/logseq-readwise-official-plugin", :effect true, :theme false}
+				  :logseq-my-highlights {:version "v1.16.7", :repo "theBenForce/logseq-plugin-my-highlights", :effect false, :theme false}
+				  :logseq-graph-analysis {:version "0.7.0", :repo "trashhalo/logseq-graph-analysis", :effect false, :theme false}
+				  :logseq-journals-calendar {:version "0.10.5", :repo "xyhp915/logseq-journals-calendar", :effect false, :theme false}}
+				  ```
+				- ```clojure
+				  {:logseq-power-plugin {:version "v1.0.0", :repo "hkgnp/logseq-power-plugin", :effect true, :theme false}
+				   :logtools {:version "0.0.5", :repo "cannibalox/logtools", :effect false, :theme false}
+				   :logseq-swapblocks-plugin {:version "v1.3.0", :repo "hkgnp/logseq-swapblocks-plugin", :effect false, :theme false}
+				   :logseq-luma {:version "0.3.1", :repo "gavinmn/logseq-luma", :effect false, :theme true}
+				   :logseq-tablerender-plugin {:version "v1.9.0", :repo "hkgnp/logseq-tablerender-plugin", :effect false, :theme false}
+				   :logseq-heatmap {:version "v2.4.2", :repo "pengx17/logseq-plugin-heatmap", :effect true, :theme false}
+				   :logseq-bullet-threading {:version "v1.1.0", :repo "pengx17/logseq-plugin-bullet-threading", :effect false, :theme false}
+				   :logseq-osmmaps-plugin {:version "v1.5", :repo "hkgnp/logseq-osmmaps-plugin", :effect true, :theme false}
+				   :logseq-vim-shortcuts {:version "v0.1.15", :repo "vipzhicheng/logseq-plugin-vim-shortcuts", :effect true, :theme false}
+				   :logseq-plugin-gpt3-openai {:version "v1.0.1", :repo "briansunter/logseq-plugin-gpt3-openai", :effect true, :theme false}
+				   :logseq-fenced-code-plus {:version "0.0.4", :repo "xyhp915/logseq-fenced-code-plus", :effect true, :theme false}}
+				  ```
+					- https://github.com/cldwalker/logseq-config/blob/main/config/plugins.edn
+	- [[Thanks]]
+		- [[Ilya Gusev]]
+			- Improve Russian (ru) translations
+		- [[situ2001]]
+			- Modal not respond to the enter keydown event
+			- Grid mode status not correctly shown
+			- zh_CN translate on graph
+		- [[yoyurec]]
+			- Add `page-property-value` class
+		- [[Patrick Moriarty]]
+			- iOS: Continue recording audio while phone sleep
+	- [[Fixed issues]]
+		- Create local versions on mobile if there's any conflict
+		- Excalidraw cursor offset
+		- Don't create journal file when it was initialized by a template
+		- Failed to import OPML
+		- Re-index stuck when there're multiple whiteboards that have the same UUID
+		- Up/down arrow navigation
+		- Remove # doesn't remove the heading property
+		- Sanitize HTML to ensure security
+		- A lot of issues on PDF
+		- Logseq can't be started on Windows 7
+	- [[Enhancement]]
+		- **New file name rules**
+		  id:: 634ef576-c138-495c-999b-1083e3d05e07
+			- *Motivations*
+				- `%2F`  for namespace separator is ugly
+				- Previous rule of parsing  `.`  into  `/`  breaks file naming conventions (e.g.  `1.xxx.md` ,  `2.xxx.md` )
+			- *How to use it?*
+				- Settings -> Advanced -> File name format, click the `Edit` button, and follow the instructions in the popup window.
+			- Demo: 
+			  <div style="position: relative; padding-bottom: 89.33002481389578%; height: 0;"><iframe src="https://www.loom.com/embed/80286e88c1d345e4abbe2723e1a01c6e" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+			-
+		- A new theme based highlighting system and a lot of enhancements to colors
+		  collapsed:: true
+			- ![colors.png](../assets/colors_1666120220687_0.png)
+			- Demo:
+			  ![192252746-f86ac736-3996-4711-b3b9-449c648eb445.webm](../assets/192252746-f86ac736-3996-4711-b3b9-449c648eb445_1666117451901_0.webm)
+		- UI enhancements including opacity, icons, etc.
+		- Bump Excalidraw to `0.12.0`
 - [[Sep 30th, 2022]]
   Beta 0.8.8
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.8
