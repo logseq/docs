@@ -58,17 +58,17 @@
 		- [[yoyurec]]
 			- Add `page-property-value` class
 		- [[Patrick Moriarty]]
-			- iOS: Continue recording audio while phone sleep
+			- iOS: Continue recording audio while the phone sleep
 	- [[Fixed issues]]
 		- Create local versions on mobile if there's any conflict
 		- Excalidraw cursor offset
-		- Don't create journal file when it was initialized by a template
+		- Don't create a journal file when it was initialized by a template
 		- Failed to import OPML
 		- Re-index stuck when there're multiple whiteboards that have the same UUID
 		- Up/down arrow navigation
 		- Remove # doesn't remove the heading property
 		- Sanitize HTML to ensure security
-		- A lot of issues on PDF
+		- A lot of issues with PDF
 		- Logseq can't be started on Windows 7
 	- [[Enhancement]]
 		- **New file name rules**
@@ -81,7 +81,7 @@
 			- Demo: 
 			  <div style="position: relative; padding-bottom: 89.33002481389578%; height: 0;"><iframe src="https://www.loom.com/embed/80286e88c1d345e4abbe2723e1a01c6e" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 			-
-		- A new theme based highlighting system and a lot of enhancements to colors
+		- A new theme-based highlighting system and a lot of enhancements to colors
 		  collapsed:: true
 			- ![colors.png](../assets/colors_1666120220687_0.png)
 			- Demo:
