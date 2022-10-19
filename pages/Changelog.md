@@ -78,6 +78,7 @@
 				- Previous rule of parsing  `.`  into  `/`  breaks file naming conventions (e.g.  `1.xxx.md` ,  `2.xxx.md` )
 			- *How to use it?*
 				- Settings -> Advanced -> File name format, click the `Edit` button, and follow the instructions in the popup window.
+				- [Document]([[Filename format]])
 			- Demo: 
 			  <div style="position: relative; padding-bottom: 89.33002481389578%; height: 0;"><iframe src="https://www.loom.com/embed/80286e88c1d345e4abbe2723e1a01c6e" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 			-
