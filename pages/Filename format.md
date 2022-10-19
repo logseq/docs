@@ -90,7 +90,7 @@ initial-version:: 0.8.9
 			- **Example:** Under an earlier version of Logseq, page `Logseq/Features` is stored in a file with the name `Logseq.Features.md`, and has no `title::` property provided for some reason. Rename is required to keep the page title as `Logseq/Features`. Otherwise the page title will become `Logseq.Feature` under the `:triple-lowbar` format.
 		- 🔴 means breaking change happens without available renaming
 			- This is an uncommon case for updating filename format (from `:legacy` to `:triple-lowbar`)
-- ## FQA
+- ## FAQ
 	- **Is the filename conversion mandated?**
 		- No. You can keep using the old `:legacy` format. But the new `:triple-lowbar` format provides you:
 			- More readable filenames (especially, no more `%2F` in the filename for namespace pages).
