@@ -13,7 +13,7 @@ initial-version:: 0.8.9
 	- You may find the `Filename format` setting since Logseq `0.8.9`
 		- ![image.png](../assets/image_1666165908432_0.png)
 	- This setting configures how a page **in the current graph** is stored to a file
-		- Only upgrade to the latest format is available unless [[Developer mode]] is enabled (downgrade is not encouraged).
+		- Only upgrade to the latest format is available.
 	- To change the config, click the `Edit` button and follow the instructions in the pop-up `Filename format` panel to convert your files.
 		- #+BEGIN_WARNING
 		  **Backup** all your notes somewhere else **first** before continue 
@@ -47,27 +47,26 @@ initial-version:: 0.8.9
 			- No more `title::` property required (you can still use `title::` property manually
 	- **Where is the `Filename format` config stored?**
 	  id:: 634fb3ee-cef0-4081-9085-c002d3be4e75
-		- `Filename format` is a per-graph setting. It is stored in [[config.edn]], with key `:file/name-format`, for example:
-			- ```clojure
-			  :file/name-format :triple-lowbar
-			  ```
-			  #+BEGIN_WARNING
-			  Changing the filename format option of an existing graph from `config.edn` is not recommended. Should access the setting `Filename format` and follow the instructions 
-			  #+END_WARNING
+		- #+BEGIN_WARNING
+		  Changing the filename format option of an existing graph from `config.edn` is not recommended. Should access the setting `Filename format` and follow the instructions 
+		  #+END_WARNING
+		  `Filename format` is a per-graph setting. It is stored in [[config.edn]], with key `:file/name-format`, for example:
+		  ```clojure
+		  :file/name-format :triple-lowbar
+		  ```
 		- There are two available values, `:legacy` and `:triple-lowbar`
 			- The default value for new graphs created since `0.8.9` is `:triple-lowbar`
 			- If your `config.edn` has no such key provided (e.g., comes from an earlier version of Logseq), the default value will be `:legacy`
 		- If you want to make an empty new graph compatible with earlier versions of Logseq:
 		  id:: 63503015-99b5-4186-9c42-d3ab9c82482b
-		  collapsed:: true
-		  #+BEGIN_WARNING
-		  Only do this when the graph is newly created!
-		  #+END_WARNING
-			- Edit the value of key `:file/name-format` in [[config.edn]] to `:legacy`
+			- #+BEGIN_WARNING
+			  Only do this when the graph is newly created!
+			  #+END_WARNING
+			  Edit the value of key `:file/name-format` in [[config.edn]] to `:legacy`
 			  ```clojure
 			  :file/name-format :legacy
 			  ```
-			- [Re-index Logseq](((63500411-87b0-4d62-a9ac-5b5418bc3201))) to make the option apply
+			- [Re-index Logseq](((63500411-87b0-4d62-a9ac-5b5418bc3201))) to make the change apply
 	- **How does the conversion work?**
 	  id:: 634fb104-f332-4743-904a-4827ee754bfc
 		- Basically it's to update the `filename format` of your graph from the [`:legacy` filename format](((634fb9a8-cab9-441e-b476-41fa828010ea))) to the beautiful new [`:triple-lowbar` filename format](((634fb9b1-7a77-4666-9235-bc5cf27c8fd4)))
