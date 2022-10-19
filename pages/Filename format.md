@@ -7,7 +7,7 @@ initial-version:: 0.8.9
   id:: 634fae2e-edab-42e0-8385-59df3fc3da0e
 	- You may find the `Filename format` setting since Logseq `0.8.9`
 		- ![image.png](../assets/image_1666165908432_0.png)
-	- This setting configures how a page is stored to a file
+	- This setting configures how a page **in the current graph** is stored to a file
 		- Only upgrade to the latest format is available unless [[Developer mode]] is enabled (downgrade is not encouraged).
 	- To change the config, click the `Edit` button and follow the instructions in the pop-up `Filename format` panel to convert your files.
 		- #+BEGIN_WARNING
@@ -18,11 +18,16 @@ initial-version:: 0.8.9
 		  #+END_IMPORTANT
 		- ![image.png](../assets/image_1666170051566_0.png)
 		- Also refer: ((634fb104-f332-4743-904a-4827ee754bfc))
+	- #+BEGIN_IMPORTANT
+	  Remember to re-index the graph on **ALL clients** once all the files are renamed and synced!
+	  ((63500411-87b0-4d62-a9ac-5b5418bc3201))
+	  #+END_IMPORTANT
 ## Functionality
 	- **What is a `Filename format`?**
 		- In Logseq, every page is stored as an individual file on your computer, which uses the page title as the filename.
 		- However, while some special characters like `/` and `?` are frequently used in page titles, they are invalid for filename on some operating systems. Hence, we need a way to encode these special characters into filenames and decode them back to page titles, what we call `filename format`.
 		- The previous `filename format` Logseq used to treat page titles is `:legacy`. Since `0.8.9`, Logseq introduces `:triple-lowbar` as the new `filename format` with better readability, compatibility, and less ambiguity.
+		- `Filename format` is a per-graph setting, and would be synced to the same graph on other clients if you have sync service setup
 	- **FIlename format explain**
 		- `:legacy`
 		  id:: 634fb9a8-cab9-441e-b476-41fa828010ea
@@ -63,6 +68,10 @@ initial-version:: 0.8.9
 			- ![image.png](../assets/image_1666185618308_0.png)
 			- May rename all the listed files via the `Apply all Actions!` button or rename files individually via clicking the `Rename` buttons on the right-hand side.
 			- For the meaning of the 🟢 🟡 🔴 indicators of the listed files, please refer ((634fe449-cecc-4b82-9cb5-3bbb01fd7d98))
+		- #+BEGIN_IMPORTANT
+		  Remember to re-index the graph on **ALL clients** once all the files are renamed and synced!
+		  ((63500411-87b0-4d62-a9ac-5b5418bc3201))
+		  #+END_IMPORTANT
 	- **Rename Indicators Explain**
 	  id:: 634fe449-cecc-4b82-9cb5-3bbb01fd7d98
 		- 🟢 means the renaming is **optional**
@@ -95,3 +104,8 @@ initial-version:: 0.8.9
 	- **Why some non-expected renaming actions listed**
 		- Very likely the listed pages belongs to [this case](((634fd550-3ce9-4c5c-88e0-37d45007d6c8))). The rename actions are inferred based on the `:legacy` filename format, which might come to an unwanted result if no `title::` property is provided.
 		- May skip these renamings when happens.
+	- **How to re-index a graph?**
+	  id:: 63500411-87b0-4d62-a9ac-5b5418bc3201
+		- The entrance is on the [[Left sidebar]], in the graph dropdown menu by clicking the button `<Your graph name>`
+		- ![image.png](../assets/image_1666188586117_0.png){:height 167, :width 312}
+		- ![image.png](../assets/image_1666188369625_0.png){:height 420, :width 285}
