@@ -1,21 +1,14 @@
--
-  #+BEGIN_WARNING
+- #+BEGIN_WARNING
   **BACKUP** all your notes somewhere **first** before continue
   #+END_WARNING
-- This migration guide is mainly targeted for Logseq users of pre-beta version with Markdown notes
+- This migration guide is mainly targeted for Logseq users of **pre-beta version** with Markdown notes
 - **Backup(make an extra copy)** of all your old notes first, then:
-	-
-	  1. Download the release https://github.com/logseq/logseq/releases/tag/0.1.2
-	-
-	  2. Load and open your old graph folder in this new Beta app
-	-
-	  3. Click the right three dots menu, go to `Export` and select `Convert Markdown headings to unordered lists (# -> -)`
-	-
-	  4. Above will create a zip file of all your converted new notes under `/journals` and `/pages` folder, extract the zip to your desired location.
-	-
-	  5. Copy and replace all pages under `/journals` and `/pages` folder back to that same graph folder
-	-
-	  6. Finally, click the right three dots menu, go to `All graphs` and unlink the graph and open it again to reload the graph
+	- 1. Download the release https://github.com/logseq/logseq/releases/tag/0.1.2
+	- 2. Load and open your old graph folder in this new Beta app
+	- 3. Click the right three dots menu, go to `Export` and select `Convert Markdown headings to unordered lists (# -> -)`
+	- 4. Above will create a zip file of all your converted new notes under `/journals` and `/pages` folder, extract the zip to your desired location.
+	- 5. Copy and replace all pages under `/journals` and `/pages` folder back to that same graph folder
+	- 6. Finally, click the right three dots menu, go to `All graphs` and unlink the graph and open it again to reload the graph
 - Tutorial:
   ![migrate.gif](../assets/migrate_1621935713657_0.gif)
 - Why & underneath the hood:
