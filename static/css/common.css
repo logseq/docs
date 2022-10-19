@@ -72,6 +72,7 @@ html[data-theme='dark'] {
   --ls-block-bullet-color: #608e91;
   --ls-block-highlight-color: #0a3d4b;
   --ls-selection-background-color: #338fff;
+  --ls-selection-text-color: #fff;
   --ls-page-checkbox-color: #6093a0;
   --ls-page-checkbox-border-color: var(--ls-primary-background-color);
   --ls-page-blockquote-color: var(--ls-primary-text-color);
@@ -101,6 +102,8 @@ html[data-theme='dark'] {
   --ls-error-background-color: var(--color-red-900);
   --ls-warning-text-color: var(--color-yellow-100);
   --ls-warning-background-color: var(--color-yellow-900);
+  --ls-focus-ring-color: rgba(18, 98, 119, 0.5);
+  --ls-header-button-background: #dee4ea;
   --color-level-1: var(--ls-secondary-background-color);
   --color-level-2: var(--ls-tertiary-background-color);
   --color-level-3: var(--ls-quaternary-background-color);
@@ -133,7 +136,7 @@ html[data-theme='light'] {
   --ls-menu-hover-color: var(--ls-a-chosen-bg);
   --ls-primary-text-color: #433f38;
   --ls-secondary-text-color: #161e2e;
-  --ls-title-text-color: var(--ls-primary-text-color);
+  --ls-title-text-color: var(--ls-header-button-background);
   --ls-link-text-color: #106ba3;
   --ls-link-text-hover-color: #1a537c;
   --ls-link-ref-text-color: #106ba3;
@@ -174,6 +177,8 @@ html[data-theme='light'] {
   --ls-error-background-color: var(--color-red-100);
   --ls-warning-text-color: var(--color-yellow-800);
   --ls-warning-background-color: var(--color-yellow-100);
+  --ls-focus-ring-color: rgba(66, 133, 244, 0.5);
+  --ls-header-button-background: rgba(15, 20, 25, 1);
   --color-level-1: var(--ls-secondary-background-color);
   --color-level-2: var(--ls-tertiary-background-color);
   --color-level-3: var(--ls-quaternary-background-color);
@@ -192,7 +197,6 @@ html:not(.is-native-android) {
 html {
   /* FIXME: rewrite revealjs.css ? */
   height: unset !important;
-  overflow: auto !important;
 }
 
 body {
@@ -299,9 +303,10 @@ blockquote {
   font-size: 1rem;
 }
 
-input {
+input[type=text], input[type=password] {
   color: var(--ls-primary-text-color);
   background: transparent;
+  font-size: inherit;
 }
 
 summary {
@@ -506,7 +511,7 @@ i.ti {
 }
 
 .to-heading-button {
-  @apply px-1 !important;
+  @apply px-1 text-lg !important;
 }
 
 /** endregion **/
@@ -515,8 +520,9 @@ i.ti {
 h1.title {
   margin-bottom: 1.5rem;
   color: var(--ls-title-text-color, #222);
+  font-family: -apple-system, system-ui, var(--ls-font-family), sans-serif;
   font-size: var(--ls-page-title-size, 36px);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .title .page-icon {
@@ -587,6 +593,8 @@ button.menu:focus {
   @apply my-1;
 
   opacity: .5;
+  border-top-width: 1px;
+  border-color: var(--ls-border-color, #ccc);
 }
 
 a.login {
