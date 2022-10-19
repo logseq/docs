@@ -2,6 +2,12 @@
   id:: 634eec80-b852-4da9-8c7c-8e4c9dd8e1c7
   Beta 0.8.9
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.9
+	- [[Breaking Changes]]
+	  #+BEGIN_IMPORTANT
+	  Newly created graphs on Logseq `0.8.9` or above are using the new filename format by default. May [restore the legacy format](((63503015-99b5-4186-9c42-d3ab9c82482b))) to keep compatible with old Logseq versions.
+	  Opening graphs in new filename format with earlier versions of Logseq will wrongly display some page titles and break some page references. AVOID creating or renaming pages on these graphs with old versions of Logseq (e.g. Logseq `0.8.2` on iOS until the upgrade is released)
+	  #+END_IMPORTANT
+	  For more details, see [[Filename format]]
 	- [[Features]]
 		- **PDF enhancements**
 		  id:: 634ef719-e21e-4b10-96bf-d42b6d5a118b
