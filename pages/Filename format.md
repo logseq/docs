@@ -57,10 +57,10 @@ initial-version:: 0.8.9
 		  There's a **point of no-return** by clicking the button `Update format`. Preview the required changes towards the existing filenames beforehand
 		  #+END_IMPORTANT
 		- By clicking into the `Filename format` panel from settings, you may find the `Update format` button and preview the required renaming actions on switching to the new format.
-			- Once you click the button, the `Filename format` setting of the current graph will be updated. Logseq will treat the graph with the new `filename format` after you leave the panel. So this is a **point of no return**
+			- Once you click the `Update format` button, the `Filename format` setting of the current graph will be updated. Logseq will treat the graph with the new `filename format` after you leave the panel. So this is a **point of no return**
 			- Also refer ((634fb3ee-cef0-4081-9085-c002d3be4e75))
 		- After you click the `Update format`, the previously previewed renaming actions will be available.
-			- ![image.png](../assets/image_1666173370272_0.png)
+			- ![image.png](../assets/image_1666185618308_0.png)
 			- May rename all the listed files via the `Apply all Actions!` button or rename files individually via clicking the `Rename` buttons on the right-hand side.
 			- For the meaning of the 🟢 🟡 🔴 indicators of the listed files, please refer ((634fe449-cecc-4b82-9cb5-3bbb01fd7d98))
 	- **Rename Indicators Explain**
@@ -69,11 +69,16 @@ initial-version:: 0.8.9
 			- The page name **won't be changed** in the new format without operation, but renaming the file to follow the new format is suggested.
 			- Mostly happens when the page contains a `title::` property that created under the [`:legacy` filename format](((634fb9a8-cab9-441e-b476-41fa828010ea))), renaming will improve the readability of the filename
 			- Pages with manually edited `title::` property ([[custom page title]]) **will not be listed**.
+			- **Example:** Under `:legacy` format, page `Logseq/Features` contains
+			  > title:: Logseq/Features
+			  
+			  with filename `Logseq%2FFeatures.md`. It will show up as an optional rename action to rename the file to `Logseq__Features.md`
 		- 🟡 means the renaming is **required**
 		  id:: 634fd550-3ce9-4c5c-88e0-37d45007d6c8
 			- The page name **will be changed** in the new format without operation unless you rename the file according to the new filename format.
 			- Mostly happens when the filename contains characters like `/`, `?`, `!`, `_`, `.` under the [`:legacy` filename format](((634fb9a8-cab9-441e-b476-41fa828010ea))), and no `title::` property provided in the corresponding page
 				- maybe caused by manual deletion, or the file is imported externally
+			- **Example:** Under an earlier version of Logseq, page `Logseq/Features` is stored in a file with the name `Logseq.Features.md`, and has no `title::` property provided for some reason. Rename is required to keep the page title as `Logseq/Features`. Otherwise the page title will become `Logseq.Feature` under the `:triple-lowbar` format.
 		- 🔴 means breaking change happens without available renaming
 			- This is an uncommon case for updating filename format (from `:legacy` to `:triple-lowbar`)
 - ## FQA
