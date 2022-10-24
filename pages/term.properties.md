@@ -7,8 +7,7 @@ description:: Annotate any block or page with multiple pairs of values e.g. `rat
 - ## Usage
 	- Property naming rules:
 	  collapsed:: true
-		- collapsed:: true
-		  1. Properties are valid for alphanumeric characters and some special characters. When a property is invalid, it is not saved as a valid property and an error message explains what is a valid property name:
+		- 1. Properties are valid for alphanumeric characters and some special characters. When a property is invalid, it is not saved as a valid property and an error message explains what is a valid property name:
 			- `Property name begins with a non-numeric character and can contain alphanumeric characters and . * + ! - _ ? $ % & = < >. If -, + or . are the first character, the second character (if any) must be non-numeric.`
 		- 2. Properties are case insensitive and lower cased. For example, property names `platform`, `Platform` or `PLATFORM` are all the same as `platform`.
 		- 3. Properties with a  `_`  character are renamed to  `-` e.g. `done_at` is renamed to `done-at`. This rename is done so that users don't have to think about the difference between `_` and `-`.
@@ -21,24 +20,32 @@ description:: Annotate any block or page with multiple pairs of values e.g. `rat
 	- _Page properties_ are defined by putting them into the first block of the page (_frontmatter_).
 	- _Block properties_ are defined by putting them into any other block.
 	- Any page or block can have multiple pairs of properties.
-	- Property values are primarily used for linking to other pages in the following ways:
-	  collapsed:: true
-		- TODO Update this section for 0.8.8 #docs
-		- When a property value matches an existing page title, Logseq will automatically create a link to that page
-		- When a property contains commas (`,`), any values are going to be automatically linked:
+	- ### Property values
+	  id:: 6356e902-3b7b-4cb2-8c3e-6a904c813c40
+		- Property values can be a mix of almost any text, links, page links and tags. This means you can write like anywhere else in Logseq:
+		  collapsed:: true
 		  ```
-		  parts:: motor, steering wheel, tyres
+		  description:: [[Logseq]] is the fastest #triples #[[text editor]]
 		  ```
-		- When a property contains references, (`[]`), any values are going to be automatically linked:
+		  
+		  The pages `Logseq,`, `triples` and `text editor` are all linked property values through the `description` property.
+			- The exception to "any text" is that properties are currently embedded in their block and delimited by newlines. Since their delimiter is a newline, a property value can't have newlines.
+		- Built-in properties `alias` and `tags` also have an additional way of recognizing pages through comma separation:
+		  collapsed:: true
 		  ```
-		  parts:: [[motor]], steering wheel, tyres
+		  tags:: motor, steering wheel
 		  ```
-		- To prevent values from being auto-linked, wrap _all_ values within quotes (`"`) - for example, `parts:: "[[motor]], steering wheel, tyres"`
-		  You cannot quote (unlink) _parts_ (items) of a list property, e.g. `parts:: [[motor]], "steering wheel, tyres"` is not going to prevent values from being linked.
-	- **Configuration** in [[config.edn]]
-		- Properties have their own pages by default. To disable this, `:property-pages/enabled? false`
-		- Property values identify page references with the standard `[[]]` and `#` characters. To have certain properties identify page references by comma separation, use `:property/separated-by-commas`.
-		- TODO Add #docs for other property related configs
+		  Pages `motor` and `tires` are linked property values through the `tags` property. See the configuration section below to enable this behavior for specific properties.
+		- To prevent a property value from having any links, wrap it within quotes (`"`):
+		  collapsed:: true
+		  ```
+		  description:: "[[Logseq]] is the fastest #triples #[[text editor]]"
+		  ```
+	- ### Configuration in [[config.edn]]
+		- `:property-pages/enabled?` - Boolean which determines if properties have their own pages. This is enabled by default
+		- `:property-pages/exclude-list` - Specific properties to exclude from having property pages
+		- `:property/separated-by-commas` - Properties that also identify page references with comma separated values like `:tags` e.g. `tags:: foo, bar`
+		- `:ignored-page-references-keywords` - Properties that do not allow page referencing. Avoids the need to have to quote the property values with `""` every time
 - ## Background
 	- **Examples**
 		- I'm an apple block with below custom properties
