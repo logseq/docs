@@ -3,7 +3,7 @@ platform:: [[Desktop]]
 description:: Graphs can be published as a read-only single page web application. This application is referred to as a [[Publish Web]] app.
 
 - ## Usage
-	- [[Publishing (Desktop App Only)]] is a helpful tutorial to publishing your first graph.
+	- [[Publishing (Desktop App Only)]] is a tutorial to publish your first graph.
 	- An alternative to publishing from the menu is running the command `Export public graph pages as html`.
 - ## Functionality
 	- Publishing permissions are per page, depending on whether the page is "public".
