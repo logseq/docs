@@ -7,8 +7,8 @@ description:: Graphs can be published as a read-only single page web application
 	- An alternative to publishing from the menu is running the command `Export public graph pages as html`.
 - ## Functionality
 	- Publishing permissions are per page, depending on whether the page is "public".
-		- By default no pages are public. In [[Settings]], this can be toggled to have all pages public.
-		- Alternatively, individual pages can be marked as public with the property `publish:: true`.
+		- By default no pages are public. Individual pages can be marked as public with the property `publish:: true`.
+		- Alternatively, in [[Settings]] all pages can be made public by default and then the property `publish:: false` can be used to make specific pages private.
 	- All published pages are displayed in a read-only mode.
 	- Published apps should read user configuration in [[config.edn]] and [[custom.css]].
 	- Most features in a [[Publish Web]] app should work e.g. page [[Search]], block links and page links.
