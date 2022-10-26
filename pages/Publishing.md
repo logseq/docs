@@ -1,6 +1,6 @@
 type:: [[Feature]]
 platform:: [[Desktop]]
-description:: Graphs can be published as a read-only single page web application. This application is referred to as a [[Publish Web]] app.
+description:: This feature publishes a graph as a [[Publish Web]], single page application.
 
 - ## Usage
 	- [[Publishing (Desktop App Only)]] is a tutorial to publish your first graph.
@@ -11,11 +11,27 @@ description:: Graphs can be published as a read-only single page web application
 		- Alternatively, in [[Settings]] all pages can be made public by default and then the property `publish:: false` can be used to make specific pages private.
 	- All published pages are displayed in a read-only mode.
 	- Published apps should read user configuration in [[config.edn]] and [[custom.css]].
-	- Most features in a [[Publish Web]] app should work e.g. page [[Search]], block links and page links.
-		- If you're unsure if a [[Feature]] supports [[Publish Web]] , check what platform value it has.
-		- For example, [[Custom theme]] on a published app is common request. Since themes are plugins, they do not just work as plugins are [[Desktop]] only. You can workaround this with this example custom.css
+	- ### Available Features
+	  id:: 63595c2e-2383-42d4-ad20-5647758a7337
+		- Most features in a [[Publish Web]] app should work e.g. page [[Search]], block links and page links. Anything that involves editing won't work of course since the app is read-only.
+		- query-table:: true
+		  query-properties:: [:page :platform :initial-version]
+		  #+BEGIN_QUERY
+		  {:title "These features are not available in a Publish Web App"
+		   :query [:find (pull ?p [*])
+		                :where
+		                (page-property ?p :type "Feature")
+		                (or
+		                     ;; Hardcode not Publish Web values for now as not didn't work here
+		                     (page-property ?p :platform "Desktop")
+		                     ;; All mentions of both of these in platform is to mention it as an exception
+		                     ;; Can create a different property value if this becomes too cumbersome
+		                     (and (page-property ?p :platform "All Platforms")
+		                              (page-property ?p :platform "Publish Web")))]}
+		  #+END_QUERY
+		- Some features that aren't available do have workarounds. For example, applying a [[Custom theme]] is a common request. Since themes are plugins, they do not just work as plugins are [[Desktop]] only. You can workaround this with this example custom.css
 		  ```css
-		  // This uses the logse-dev-theme but the url can be changed to any theme's github url
+		  // This uses the logseq-dev-theme but the url can be changed to any theme's github url
 		  @import url("https://cdn.jsdelivr.net/gh/pengx17/logseq-dev-theme@main/custom.css");
 		  ```
 - ## Additional Links

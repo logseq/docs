@@ -1,6 +1,7 @@
 type:: [[Feature]]
 alias:: Graph view
 description:: Graph view of your whole graph
+platform:: [[All Platforms]]
 
 - ## Usage
 	- Watch your knowledge graph grow by going to your main menu (click your profile picture) -> select "Graph"

@@ -1,4 +1,5 @@
 type:: [[Feature]]
+platform:: [[All Platforms]]
 
 - ## Usage
 	- Search for pages and full text search for blocks is available by clicking on the search bar at the top or press `Cmd-k`.

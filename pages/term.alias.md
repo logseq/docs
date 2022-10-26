@@ -1,6 +1,7 @@
 alias:: page alias
 example:: above is markdown example
 type:: [[Feature]]
+platform:: [[All Platforms]]
 
 - description:
 	- an alternate page ID or page title

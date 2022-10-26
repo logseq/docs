@@ -1,4 +1,5 @@
 type:: [[Feature]]
+platform:: [[All Platforms]] except [[Publish Web]]
 
 - ## Usage
 	- Type `<` to kick off #autocompletion and list of advanced commands.
