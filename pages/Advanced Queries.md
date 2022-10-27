@@ -28,10 +28,10 @@
   | result-transform | fn or keyword |         | true     |
   | rules                | list of rules to apply to query | | true |
 - **Query Tips**
-  created_at:: 1609244703085
   updated-at:: 1609244703085
+  created-at:: 1609244703085
   #+BEGIN_TIP
-  1. `?b` and `?p` are special symbols in queries that respectively refer to blocks and pages.
+  1. `?b` and `?p` are special symbols in queries that must be used with blocks and pages.
   2. Page names are stored as lower case in the database.
   3. Most simple query operators are available as [rules](https://docs.datomic.com/on-prem/query/query.html#rules) in queries
   4. Titles can be be hiccups or double-quoted strings. For example, if you want to put custom macros into the query title, you can write something like `"{{poem foo,bar}}"`.
@@ -268,3 +268,6 @@
 	   :collapsed? true}
 	  #+END_QUERY
 	  #+END_SRC
+- ## Additional Links
+	- https://bgrolleman.gitlab.io/logseq_publish_toolsontech/#/page/logseq%2Fadvanced%20queries - Some useful tips
+	- https://mschmidtkorth.github.io/logseq-msk-docs/#/page/queries%2Fadvanced%20queries - More useful tips

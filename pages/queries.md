@@ -71,10 +71,12 @@
 	  Examples: [[questions]]
 	  {{query (page "term/alias")}}
 	- **property** [[Block properties]]
-	  created_at:: 1609237428110
 	  updated-at:: 1609247365218
-	  Examples:
-	  {{query (property type book)}}
+	  created-at:: 1609237428110
+	  id:: 634f6c68-28b3-46c4-85a3-4d1e951194d8
+		- This filter matches against any pages or tags in a property value. For the example `type:: [[book]]`, `(property type book)` would match. For the example `description:: I liked this #book and #movie`, `(property description book)` or `(property description movie)` would match. However, `(property description liked)` would not match as "liked" is not a page or tag.
+		- Example:
+			- {{query (property type book)}}
 	- **Full-text query**
 	  #+BEGIN_NOTE
 	  It's only enabled on the desktop app at the moment.

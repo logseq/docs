@@ -48,56 +48,29 @@ description:: Annotate any block or page with multiple pairs of values e.g. `rat
 		- `:property/separated-by-commas` - Properties that also identify page references with comma separated values like `:tags` e.g. `tags:: foo, bar`
 		- `:ignored-page-references-keywords` - Properties that do not allow page referencing. Avoids the need to have to quote the property values with `""` every time
 - ## Background
-	- **Examples**
-		- I'm an apple block with below custom properties
-		  id:: 60a78e9e-59dc-40ab-9a01-5317dc09365f
-		  color:: red
-		  origin:: Spain
-		- this **first block** of this page serves an example for **page property**
-		- let's add two more books:
-			- [[How to take smart notes]]
-			  updated-at:: 1609337624066
-			  created-at:: 1609233078964
-			  type:: [[book]]
-			  author:: [[sönke ahrens]]
-			  publication_date:: [[february 21, 2017]]
-			  price:: 10
-			  qty:: 1
-			- [[How to solve it]]
-			  updated-at:: 1609337985298
-			  created-at:: 1609233053383
-			  type:: [[book]]
-			  author:: [[george polya]]
-			  price:: 20
-			  qty:: 2
+	- Example data for this section
+	  collapsed:: true
+		- [[How to take smart notes]]
+		  updated-at:: 1609337624066
+		  created-at:: 1609233078964
+		  type:: [[book]]
+		  author:: [[sönke ahrens]]
+		  publication_date:: [[february 21, 2017]]
+		  price:: 10
+		  qty:: 1
+		- [[How to solve it]]
+		  updated-at:: 1609337985298
+		  created-at:: 1609233053383
+		  type:: [[book]]
+		  author:: [[george polya]]
+		  price:: 20
+		  qty:: 2
+		- This example data is also used elsewhere.
 	- **Properties** have multiple use cases including:
 		- Selecting (querying) specific pages/blocks:
+		  collapsed:: true
 			- For example, let's query all the blocks with the property `type` and the value `book`: #examples #books
-			  collapsed:: true
 			  {{query (property type book)}}
-			- Or we can use [[Advanced Queries]]:
-			  collapsed:: true
-				- #+BEGIN_SRC clojure
-				   #+BEGIN_QUERY
-				   {:title [:h2 "My books"]
-				    :query [:find (pull ?b [*])
-				   :where
-				   [?b :block/properties ?p]
-				   [(get ?p :type) ?t]
-				   [(= "[[book]]" ?t)]]}
-				   #+END_QUERY
-				   #+END_SRC
-				- #+BEGIN_QUERY
-				  {:title [:h2 "My books"]
-				   :query [:find (pull ?b [*])
-				  :where
-				  [?b :block/properties ?p]
-				  [(get ?p :type) ?t]
-				  [(= "[[book]]" ?t)]]}
-				  #+END_QUERY
-		- author: [[george polya]]
-		  title: Mathematics and Plausible Reasoning
-		  published: 2009
-		- TODO Finish explaining this section #docs
+		- TODO Finish explaining use cases #docs
 - ## Additional Links
 	- [[Built-in Properties]]
