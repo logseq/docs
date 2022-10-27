@@ -20,6 +20,7 @@ description:: Annotate any block or page with multiple pairs of values e.g. `rat
 	- _Page properties_ are defined by putting them into the first block of the page (_frontmatter_).
 	- _Block properties_ are defined by putting them into any other block.
 	- Any page or block can have multiple pairs of properties.
+	- Properties with no value are not visible or queryable e.g. `property:: `
 	- ### Property values
 	  id:: 6356e902-3b7b-4cb2-8c3e-6a904c813c40
 		- Property values can be a mix of almost any text, links, page links and tags. This means you can write like anywhere else in Logseq:
@@ -27,7 +28,7 @@ description:: Annotate any block or page with multiple pairs of values e.g. `rat
 		  ```
 		  description:: [[Logseq]] is the fastest #triples #[[text editor]]
 		  ```
-
+		  
 		  The pages `Logseq,`, `triples` and `text editor` are all linked property values through the `description` property.
 			- The exception to "any text" is that properties are currently embedded in their block and delimited by newlines. Since their delimiter is a newline, a property value can't have newlines.
 		- Built-in properties `alias` and `tags` also have an additional way of recognizing pages through comma separation:
