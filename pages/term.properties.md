@@ -32,11 +32,10 @@ description:: Annotate any block or page with multiple pairs of values e.g. `rat
 		  The pages `Logseq,`, `triples` and `text editor` are all linked property values through the `description` property.
 			- The exception to "any text" is that properties are currently embedded in their block and delimited by newlines. Since their delimiter is a newline, a property value can't have newlines.
 		- Built-in properties `alias` and `tags` also have an additional way of recognizing pages through comma separation:
-		  collapsed:: true
 		  ```
 		  tags:: motor, steering wheel
 		  ```
-		  Pages `motor` and `steering wheel` are linked property values through the `tags` property. See the configuration section below to enable this behavior for specific properties.
+		  `motor` and `steering wheel` are automatically treated as page references. If there is no comma, the single value is also treated as a page ref. See the configuration section below to enable this behavior for specific properties.
 		- To prevent a property value from having any links, wrap it within quotes (`"`):
 		  collapsed:: true
 		  ```
