@@ -1,0 +1,13 @@
+{:deps
+ {logseq/graph-parser
+  {:git/url "https://github.com/logseq/logseq"
+   :git/sha "e18905071f8d844eee8c912dfda915fa82bf5578"
+   :deps/root "deps/graph-parser"}
+  #_{:local/root "../../logseq/deps/graph-parser"}
+
+  logseq/bb-tasks
+  {:local/root "../../bb-tasks"}
+  #_{:git/url "https://github.com/logseq/bb-tasks"
+     :git/sha "95e4fbdb7bbf1c720c6f8b58e3b3b96b3b487526"}
+
+  org.babashka/cli {:mvn/version "0.5.40"}}}

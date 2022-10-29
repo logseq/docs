@@ -1,0 +1,18 @@
+{:deps
+ {logseq/bb-tasks
+  #_{:local/root "../bb-tasks"}
+  {:git/url "https://github.com/logseq/bb-tasks"
+   :git/sha "349f1939bcb2205ce01fa5e5b33055d568000c79"}}
+
+ :tasks
+ {nbb
+  {:doc "Run any nbb-logseq command"
+   :task (apply shell {:dir "script"} "yarn -s nbb-logseq" *command-line-args*)}
+
+  stats
+  {:doc "Print basic stats"
+   :depends [-ensure-latest-cached-db]
+   :task (apply shell {:dir "script"} "yarn -s nbb-logseq stats.cljs" *command-line-args*)}
+
+  -ensure-latest-cached-db
+  logseq.bb-tasks.nbb.cached-db/ensure-latest-cached-db}}
