@@ -9,10 +9,10 @@
   {:doc "Run any nbb-logseq command"
    :task (apply shell {:dir "script"} "yarn -s nbb-logseq" *command-line-args*)}
 
-  stats
-  {:doc "Print basic stats"
+  query
+  {:doc "Run a pre-defined query"
    :depends [-ensure-latest-cached-db]
-   :task (apply shell {:dir "script"} "yarn -s nbb-logseq stats.cljs" *command-line-args*)}
+   :task (apply shell {:dir "script"} "yarn -s nbb-logseq query.cljs" *command-line-args*)}
 
   -ensure-latest-cached-db
   logseq.bb-tasks.nbb.cached-db/ensure-latest-cached-db}}
