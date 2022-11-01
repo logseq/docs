@@ -6,6 +6,7 @@
 		-
 	- [[Thanks]]
 		- [[situ2001]]
+			- fix: page title height changes when the title is empty
 			- zh-CN translation
 		- [[sallto]]
 			- fix: Sorting of Pagelinks in Query tables
@@ -19,8 +20,10 @@
 		- Unexpected up/down navigation behavior after indenting in navigation mode
 		- Don't scroll center to a selected block if it's visible
 		- Disallow tags as property names
+		-
 		- Open local URL
 		- Can't click the block reference number in published HTML
+		- Main content container overflow when page title too long
 	- [[Enhancement]]
 		-
 - [[Oct 19th, 2022]]
