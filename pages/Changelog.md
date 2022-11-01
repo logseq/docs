@@ -5,8 +5,13 @@
 	- [[Features]]
 		-
 	- [[Thanks]]
+		- [[situ2001]]
+			- zh-CN translation
+		- [[sallto]]
+			- fix: Sorting of Pagelinks in Query tables
 		-
 	- [[Fixed issues]]
+		- #windows
 		- Disallow tags as property names
 		- Open local URL
 		- Can't click the block reference number in published HTML
