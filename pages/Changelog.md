@@ -9,9 +9,10 @@
 			- zh-CN translation
 		- [[sallto]]
 			- fix: Sorting of Pagelinks in Query tables
-		-
+		- [[Seth Yuan]]
+			- feat: support locale sensitive string comparisons for table sorting
 	- [[Fixed issues]]
-		- #windows
+		- Assets not loading on #windows
 		- Disallow tags as property names
 		- Open local URL
 		- Can't click the block reference number in published HTML
