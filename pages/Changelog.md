@@ -11,8 +11,12 @@
 			- fix: Sorting of Pagelinks in Query tables
 		- [[Seth Yuan]]
 			- feat: support locale sensitive string comparisons for table sorting
+		- [[Kenneth C. Arnold]]
+			- fix minor grammar issues
+		-
 	- [[Fixed issues]]
 		- Assets not loading on #windows
+		- Unexpected up/down navigation behavior after indenting in navigation mode
 		- Disallow tags as property names
 		- Open local URL
 		- Can't click the block reference number in published HTML
