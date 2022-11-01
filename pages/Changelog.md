@@ -1,6 +1,7 @@
 - [[Nov 1st, 2022]]
+  id:: 63610d7b-e12d-4266-bc74-8f9f1fab6e74
   Beta 0.8.10
-  Desktop app and Android App download link:
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.10
 	- [[Features]]
 		-
 	- [[Thanks]]
