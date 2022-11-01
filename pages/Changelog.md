@@ -7,9 +7,9 @@
 	- [[Thanks]]
 		-
 	- [[Fixed issues]]
-		-
-		- Open local url
-		- HTML publish error
+		- Disallow tags as property names
+		- Open local URL
+		- Can't click the block reference number in published HTML
 	- [[Enhancement]]
 		-
 - [[Oct 19th, 2022]]
