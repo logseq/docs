@@ -17,6 +17,7 @@
 	- [[Fixed issues]]
 		- Assets not loading on #windows
 		- Unexpected up/down navigation behavior after indenting in navigation mode
+		- Don't scroll center to a selected block if it's visible
 		- Disallow tags as property names
 		- Open local URL
 		- Can't click the block reference number in published HTML
