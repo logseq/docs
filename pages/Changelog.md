@@ -16,11 +16,12 @@
 			- fix minor grammar issues
 		-
 	- [[Fixed issues]]
+		- Audio recording not work on #iOS
 		- Assets not loading on #windows
 		- Unexpected up/down navigation behavior after indenting in navigation mode
 		- Don't scroll center to a selected block if it's visible
+		- Fix file links creating garbage pages
 		- Disallow tags as property names
-		-
 		- Open local URL
 		- Can't click the block reference number in published HTML
 		- Main content container overflow when page title too long
