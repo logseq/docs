@@ -20,7 +20,6 @@
 	- [[FAQ]]
 	- [[Glossary]]
 	- [[Testimonials]]
-		- ((6071c223-b0ed-4235-80b2-f5e44d3679b9))
 	- [Awesome Logseq](https://github.com/logseq/awesome-logseq) (community contributions)
 - [[Features]]
 	- [Backlink]([[term/backlink]])
