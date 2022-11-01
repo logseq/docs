@@ -8,6 +8,8 @@
 		-
 	- [[Fixed issues]]
 		-
+		- Open local url
+		- HTML publish error
 	- [[Enhancement]]
 		-
 - [[Oct 19th, 2022]]
