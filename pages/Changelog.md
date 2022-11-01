@@ -25,6 +25,9 @@
 		- Assets not loading on #windows
 		- Unexpected up/down navigation behavior after indenting in navigation mode
 		- Presentation bugs
+			- Now it's possible to see all the blocks in the presentation:
+				- <div style="position: relative; padding-bottom: 71.05263157894737%; height: 0;"><iframe src="https://www.loom.com/embed/32de7382f40c44b48a134054f4aa3690" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+			-
 		- Fix file links creating garbage pages
 		- Disallow tags as property names
 		- Don't fail publish action if they don't exist for #7067
