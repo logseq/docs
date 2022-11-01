@@ -14,7 +14,8 @@
 			- feat: support locale sensitive string comparisons for table sorting
 		- [[Kenneth C. Arnold]]
 			- fix minor grammar issues
-		-
+		- [[Candide U]]
+			- Enhancement: Logseq Publish uses custom.css and export.css
 	- [[Fixed issues]]
 		- Audio recording not work on #iOS
 		- Assets not loading on #windows
