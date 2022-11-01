@@ -2,8 +2,6 @@
   id:: 63610d7b-e12d-4266-bc74-8f9f1fab6e74
   Beta 0.8.10
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.10
-	- [[Features]]
-		-
 	- [[Thanks]]
 		- [[situ2001]]
 			- fix: page title height changes when the title is empty
@@ -19,13 +17,14 @@
 		- [[Sergey Kolesnik]]
 			- Update common.css
 		- [[Loïc Gerbaud]]
-			-
+			- French translation
+		- [[yoyurec]]
+			- Page bottom refs blocks
 	- [[Fixed issues]]
 		- Audio recording not work on #iOS
 		- Assets not loading on #windows
 		- Unexpected up/down navigation behavior after indenting in navigation mode
 		- Presentation bugs
-		- Don't scroll center to a selected block if it's visible
 		- Fix file links creating garbage pages
 		- Disallow tags as property names
 		- Don't fail publish action if they don't exist for #7067
@@ -33,7 +32,7 @@
 		- Can't click the block reference number in published HTML
 		- Main content container overflow when page title too long
 	- [[Enhancement]]
-		-
+		- Don't scroll center to a selected block if it's visible
 - [[Oct 19th, 2022]]
   id:: 634eec80-b852-4da9-8c7c-8e4c9dd8e1c7
   Beta 0.8.9
