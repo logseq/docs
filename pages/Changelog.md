@@ -1,4 +1,14 @@
--
+- [[Nov 1st, 2022]]
+  Beta 0.8.10
+  Desktop app and Android App download link:
+	- [[Features]]
+		-
+	- [[Thanks]]
+		-
+	- [[Fixed issues]]
+		-
+	- [[Enhancement]]
+		-
 - [[Oct 19th, 2022]]
   id:: 634eec80-b852-4da9-8c7c-8e4c9dd8e1c7
   Beta 0.8.9
