@@ -14,7 +14,7 @@ description:: Provides encrypted synchronization of graphs between devices.
 	- Sync automatically happens in the background. Click on the cloud icon to force a sync.
 - ## FAQ
 	- **Question**: Can I use Sync with git?
-		- This isn't recommend unless you are pretty familiar with git. If you have auto-commit enabled you are likely to run into issues. `logseq/graphs-txid.edn` should not checked into git.
+		- This isn't recommend unless you are pretty familiar with git. If you have auto-commit enabled you are likely to run into issues. `logseq/graphs-txid.edn` should not be checked into git.
 	- **Question:** Can I use Sync with other users?
 		- This isn't supported yet.
 	-
