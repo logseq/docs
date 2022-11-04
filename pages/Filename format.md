@@ -6,7 +6,6 @@ initial-version:: 0.8.9
 - #+BEGIN_IMPORTANT
   Make sure all Logseq clients on your devices are upgraded to `0.8.9` or above when you are going to apply the new filename format (`:triple-lowbar`). 
   Newly created graphs on Logseq `0.8.9` or above are also using the new filename format by default. May [restore the legacy format](((63503015-99b5-4186-9c42-d3ab9c82482b))) to keep compatible with old Logseq versions.
-  Opening graphs in new filename format with earlier versions of Logseq will wrongly display some page titles and break some page references. AVOID creating or renaming pages on these graphs with old versions of Logseq (e.g. Logseq `0.8.2` on iOS until the upgrade is released)
   #+END_IMPORTANT
 - ## Usage
   id:: 634fae2e-edab-42e0-8385-59df3fc3da0e
