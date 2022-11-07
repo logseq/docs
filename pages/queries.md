@@ -121,8 +121,10 @@
 	- **sort-by**
 	  updated-at:: 1609243222016
 	  created-at:: 1609237456009
+	  This filter provides a default sort for a block or page. Note that `created-at` and `updated-at` only work for pages.
+	  
 	  Format: `(sort-by property-name order)` or `(sort-by property-name)`
-	  `key`: Can be any user property as well as built-in properties `created-at`  and `updated-at`
+	  `key`: Can be any user property as well as built-in properties `created-at`  and `updated-at`.
 	  `order`: `desc` or `asc`, omit means `desc`.
 	  #+BEGIN_EXAMPLE
 	  (and (task now later) (sort-by created-at desc))
@@ -159,9 +161,3 @@
 	  created-at:: 1609242222695
 	  updated-at:: 1609242323029
 	  {{query (between [[Dec 5th, 2020]] [[Dec 7th, 2020]] )}}
-	- 6. Find all the blocks created today (you need to enable [[block timestamps]] before using this query)
-	  created-at:: 1609235122723
-	  updated-at:: 1609249085047
-	  #+BEGIN_EXAMPLE
-	  {{query (between created-at today tomorrow)}}
-	  #+END_EXAMPLE
