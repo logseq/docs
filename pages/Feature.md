@@ -1,4 +1,4 @@
-type:: [[Type]]
+type:: [[Class]]
 description:: A user-facing piece of functionality. This can be a small piece or it can be a big one that consists of subfeatures
 
 - ## Conventions

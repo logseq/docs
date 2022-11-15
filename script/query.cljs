@@ -4,8 +4,11 @@
             [datascript.core :as d]
             [nbb.core :as nbb]
             [clojure.pprint :as pprint]
+            [clojure.set :as set]
+            [clojure.string :as string]
             [babashka.cli :as cli]
             [goog.string :as gstring]
+            [logseq.graph-parser.property :as gp-property]
             [logseq.bb-tasks.nbb.cached-db :as cached-db]))
 
 (defn- run-data-query [db {:keys [query result-transform]}]
@@ -37,9 +40,26 @@
    :types
    {:query '[:find (pull ?b [*])
              :where
-             (page-property ?b :type "Type")]
+             (page-property ?b :type "Class")]
     :columns [:name]
     :result-transform propertify}
+   :properties
+   {:query '[:find ?p
+             :where
+             [_ :block/properties ?p]]
+    :result-transform (fn [res]
+                        (->> (map keys res)
+                             (apply concat)
+                             set
+                             ((fn [x]
+                                (set/difference
+                                 x
+                                 (gp-property/hidden-built-in-properties)
+                                 (gp-property/editable-built-in-properties))))
+                             ;; remove extended proeprties that can't be accessed in scripts
+                             (remove #(string/starts-with? (name %) "card-"))
+                             sort
+                             (map #(hash-map :name %))))}
    :tasks
    {:query '[:find (pull ?b [* {:block/page [:block/original-name]}])
              :where
