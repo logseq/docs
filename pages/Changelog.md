@@ -3,7 +3,7 @@
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.11
 	- [[Breaking Changes]]
 		- [On-disk encryption is removed](https://discuss.logseq.com/t/deprecation-of-on-disk-encryption/12334) [#7221](https://github.com/logseq/logseq/pull/7221). You should follow the instructions to decrypt your graph files.
-		- `logseq/page-metadata.edn` is deprecated. Now it can be safely deleted.
+		- `logseq/pages-metadata.edn` is deprecated. Now it can be safely deleted.
 	- [[Thanks]]
 		- [[Loïc Gerbaud]]
 			- Update French translation
@@ -184,7 +184,7 @@
 			- *How to use it?*
 				- Settings -> Advanced -> File name format, click the `Edit` button, and follow the instructions in the popup window.
 				- [Document]([[Filename format]])
-			- Demo: 
+			- Demo:
 			  <div style="position: relative; padding-bottom: 89.33002481389578%; height: 0;"><iframe src="https://www.loom.com/embed/80286e88c1d345e4abbe2723e1a01c6e" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 			-
 		- A new theme-based highlighting system and a lot of enhancements to colors
