@@ -11,12 +11,14 @@
             [logseq.graph-parser.property :as gp-property]
             [logseq.bb-tasks.nbb.cached-db :as cached-db]))
 
-(defn- run-data-query [db {:keys [query result-transform]}]
+(defn- run-data-query [db {:keys [query result-transform] :as options}]
   (let [post-transduce (map first)
         res (d/q (into query [:in '$ '%]) db (vals rules/query-dsl-rules))]
-    (cond-> (into [] post-transduce res)
-            result-transform
-            ((fn [x] (eval (list result-transform x)))))))
+    (cond->> (into [] post-transduce res)
+             result-transform
+             ((fn [x] (eval (list result-transform x))))
+             (:sort-by options)
+             (sort-by (:sort-by options)))))
 
 (defn- propertify
   [result]
@@ -36,6 +38,7 @@
              :where
              (page-property ?b :type "Feature")]
     :columns [:name :platform]
+    :sort-by :name
     :result-transform propertify}
    :types
    {:query '[:find (pull ?b [*])
@@ -65,9 +68,10 @@
              :where
              (task ?b #{"TODO" "DOING"})
              (page-ref ?b "docs")]
+    :sort-by :page
     :result-transform (fn [res]
-                        (map #(hash-map :content (:block/content %)
-                                        :name (get-in % [:block/page :block/original-name])) res))}})
+                        (map #(hash-map :task (:block/content %)
+                                        :page (get-in % [:block/page :block/original-name])) res))}})
 
 (defn -main
   [args]
@@ -75,8 +79,9 @@
         db (cached-db/read-db)
         {:keys [columns] :as query-map}
         (or (get queries (keyword (first args)))
-            (throw (ex-info (gstring/format "No query '%s' found" (first args))
-                            {:babashka/exit 1})))
+            (throw (ex-info (gstring/format "No query '%s' found. Valid queries are %s"
+                                            (first args) (vec (keys queries)))
+                            {})))
         res (run-data-query db query-map)]
     (if (:expand options)
       (pprint/pprint res)
