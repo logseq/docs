@@ -3,10 +3,10 @@ platform:: [[All Platforms]] except [[Publish Web]]
 description:: Run ClojureScript in a block using [sci](https://github.com/babashka/sci)
 
 - ## Usage
-	- Type `<Src`, add `clj :results` and then evaluate any amount of ClojureScript code in that block.
+	- Type `<Src`, add `cljs :results` and then evaluate any amount of ClojureScript code in that block.
 	- For example, in Markdown this looks like
 	  #+BEGIN_EXAMPLE
-	  ```clj :results
+	  ```cljs :results
 	  (inc 1)
 	   ```
 	  #+END_EXAMPLE
@@ -17,7 +17,7 @@ description:: Run ClojureScript in a block using [sci](https://github.com/babash
 	- If the result of the block has the `^:hiccup` metadata flag, the result renders as [[Hiccup]] html. This can be used to build a bare bones UI in the results.
 		- For example,
 		  #+BEGIN_EXAMPLE
-		  ```clj :results
+		  ```cljs :results
 		  ^:hiccup [:div {:style {:color "blue"}} "Woot"]
 		  ```
 		  #+END_EXAMPLE
