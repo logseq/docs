@@ -83,8 +83,8 @@ alias:: Whiteboards
 	  :LOGBOOK:
 	  CLOCK: [2022-11-25 Fri 12:40:46]
 	  :END:
-	- [[Whiteboard/Object Action Bar]]
-	- [[Whiteboard Element]]
+	- DONE [[Whiteboard/Object/Action Bar]]
+	- [[Whiteboard/Object]]
 	- DONE [[Title]]
 	  :LOGBOOK:
 	  CLOCK: [2022-11-25 Fri 12:40:53]--[2022-11-25 Fri 12:57:46] =>  00:16:53

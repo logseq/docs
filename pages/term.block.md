@@ -1,4 +1,4 @@
-alias:: Block
+alias:: Block, [[Blocks]]
 
 - description:
 	- the smallest unit of content in Logseq that you can link to
