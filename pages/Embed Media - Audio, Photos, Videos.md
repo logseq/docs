@@ -72,6 +72,10 @@
 - ## Videos
 	- You can also easily embed and play back video files by using the `{{video }}` macro, and pasting the link to the file inside the brackets after `video`:
 		- Example: `{{video file:C://Users/USERNAME/Folder/video.mp4}}` or `{{video https://www.website.com/video-file.webm}}`
+		- Example with relative video path:
+		- ```
+		  ![](../assets/video.mp4)
+		  ```
 	- You can also access `{{video }}` by typing the slash `/` command and typing `Embed Video URL`
 	- Using the above method results in videos that autoplay, and may produce black bars for videos with unusual sizing. To mitigate this and access more advanced functions for video playback, you can use `/Embed HTML` or [[Hiccup]] to embed videos. Here are the steps for Hiccup:
 	- ### Embedding a video file
@@ -85,41 +89,39 @@
 		  #+BEGIN_TIP
 		  You can also access other [HTML attributes for the video tag](https://www.w3schools.com/tags/tag_video.asp) (see the markup for the `controls attribute` in the above example)
 		  #+END_TIP
-		- ### Embedding a videos from a URL
-			- To preview videos stored online, type or copy-paste the following Hiccup ClojureScript, replacing the source `src` in "quotation marks" with the actual URL:
-			  ```
-			  [:video {:controls true :src "https://www.website.com/video-file.webm"}]
-			  ```
+	- ### Embedding a videos from a URL
+		- To preview videos stored online, type or copy-paste the following Hiccup ClojureScript, replacing the source `src` in "quotation marks" with the actual URL:
+		  ```
+		  [:video {:controls true :src "https://www.website.com/video-file.webm"}]
+		  ```
+		- Example:
+		  
+		   [:video {:controls true :src "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"}]
+		   ```
+		   [:video {:controls true :src "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"}]
+		   ```
+		   #+BEGIN_TIP
+		   You can also access other [HTML attributes for the video tag](https://www.w3schools.com/tags/tag_video.asp) (see the markup for the `controls` attribute in the above example)
+		   #+END_TIP
+	- ### Embedding videos from YouTube, Vimeo, etc
+		- Type the slash `/` command and type `Embed Video URL`
+		- Select the command and paste the URL inside the `{{video }}` macro
 			- Example:
-			  
-			   [:video {:controls true :src "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"}]
 			   ```
-			   [:video {:controls true :src "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"}]
-			   ```
-			   #+BEGIN_TIP
-			   You can also access other [HTML attributes for the video tag](https://www.w3schools.com/tags/tag_video.asp) (see the markup for the `controls` attribute in the above example)
-			   #+END_TIP
-		- ### Embedding videos from YouTube
-			- Type the slash `/` command and type `Embed YouTube Video`
-			- Select the command and paste the URL inside the `{{youtube }}` macro
-				- Example:
-				  collapsed:: true
-				   ```
-				   {{youtube https://www.youtube.com/watch?v=SUOdfa3MucE}}
-				   ```
-				   {{youtube https://www.youtube.com/watch?v=SUOdfa3MucE}}
-			- To add timestamps, play the video, pause, create a new line. Type the slash `/` command and type `Embed YouTube timestamp`
-				- Here is an example (click on the timestamp to jump to this position in the video): {{youtube-timestamp 369}}
-				- See the timestamps embed in action here (skip to 0:42 seconds):
-				  collapsed:: true
-				   <div style="position: relative; padding-bottom: 80.35714285714286%; height: 0;"><iframe src="https://www.loom.com/embed/995d6755b29c48c6b610646736aa5049" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-		- ### Embedding videos from Vimeo
-			- Type the slash `/` command and type `Embed Vimeo video`
-			- Select the command and paste the URL inside the `{{vimeo }}` macro.
-				- Example:
-				  collapsed:: true
-				   {{vimeo https://player.vimeo.com/video/535982936}}
-				   ```
-				   {{vimeo https://player.vimeo.com/video/535982936}}
-				   ```
+			   {{video https://www.youtube.com/watch?v=SUOdfa3MucE}}
+			  ```
+			   {{video https://www.youtube.com/watch?v=SUOdfa3MucE}}
+		- To add timestamps, play the video, pause, create a new line. Type the slash `/` command and type `Embed YouTube timestamp`
+			- Select the command and paste the timestamp inside the `{{youtube-timestamp }}` macro
+			- #+BEGIN_CAUTION
+			  "youtube-timestamp" macro works only when there is an embedded youtube video on the page
+			  #+END_CAUTION
+			- Example:
+			- ```
+			   {{youtube-timestamp 369}}
+			  ```
+			- Here is an example (click on the timestamp to jump to this position in the video): {{youtube-timestamp 369}}
+			- See the timestamps embed in action here (skip to 0:42 seconds):
+			   <div style="position: relative; padding-bottom: 80.35714285714286%; height: 0;"><iframe src="https://www.loom.com/embed/995d6755b29c48c6b610646736aa5049" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+		-
 - TODO Split this page up and/or create multiple features that refer to this page. This page is more a tutorial than a reference page #docs

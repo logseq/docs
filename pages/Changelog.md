@@ -1,3 +1,102 @@
+- [[Nov 16th, 2022]]
+  Beta 0.8.11
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.11
+	- [[Breaking Changes]]
+		- [On-disk encryption is removed](https://discuss.logseq.com/t/deprecation-of-on-disk-encryption/12334) [#7221](https://github.com/logseq/logseq/pull/7221). You should follow the instructions to decrypt your graph files.
+		- `logseq/pages-metadata.edn` is deprecated. Now it can be safely deleted.
+	- [[Thanks]]
+		- [[Loïc Gerbaud]]
+			- Update French translation
+		- [[David Vargas]]
+			- Always render the invalid block ref regardless of contents
+		- [[Zhizhen He]]
+			- Update Chinese translation
+		- [[kv-gits]]
+			- Update develop-logseq-on-windows.md
+		- [[Matthew Lilley]]
+			- Small fix in documentation for browser development
+		- [[Nate McIntosh]]
+			- Fix total clock-time not properly calculated
+		- [[Phoenix Eliot]]
+			- Fix cmd-down erasing just-typed text
+		- [[queeup]]
+			- Update Turkish translation
+		- [[sallto]]
+			- Fix renaming the homepage makes it no longer the homepage
+			- Fix scheduled date picker always points to today, regardless of a previous date
+		- [[situ2001]]
+			- Toggling between pasting text or file when they both exist
+		- [[Sergey Kolesnik]]
+			- Small style fixes
+		- [[Timothy Pratley]]
+			- Replace whiteboard printing with ugly print
+		- [[Yuriy Piskun]]
+			- Add missing mark css vars
+	- [[Fixed issues]]
+		- Always render the invalid block ref regardless of contents [#7178](https://github.com/logseq/logseq/pull/7178)
+		- File sync bug fixes [#7267](https://github.com/logseq/logseq/pull/7267) [#7215](https://github.com/logseq/logseq/pull/7215)
+		- Cmd-down erasing just-typed text [#7316](https://github.com/logseq/logseq/pull/7316)
+		- Sync stops when there're filenames with reserved chars [#7237](https://github.com/logseq/logseq/pull/7237)
+		- Total clock-time not properly calculated [#7238](https://github.com/logseq/logseq/pull/7238)
+		- Add missed mark css vars [#7200](https://github.com/logseq/logseq/pull/7200)
+		- Allow custom URL protocols [#7207](https://github.com/logseq/logseq/pull/7207)
+		- Missing fields in Appimage desktop file  [#7219](https://github.com/logseq/logseq/pull/7219)
+		- Some asset path is not loaded on Electron [#7281](https://github.com/logseq/logseq/pull/7281)
+		- Make header component reactive on user/info state [#7225](https://github.com/logseq/logseq/pull/7225)
+		- Page names should be URIencoded on Android pad / iPad devices [#7217](https://github.com/logseq/logseq/pull/7217)
+		- Better quick search icons and actions [#7328](https://github.com/logseq/logseq/pull/7328)
+		- Race condition on creating zotero profile [#7243](https://github.com/logseq/logseq/pull/7243)
+		- Renaming the homepage makes it no longer the homepage [#7236](https://github.com/logseq/logseq/pull/7236)
+		- Scheduled date picker always points to today, regardless of a previous date [#7329](https://github.com/logseq/logseq/pull/7329)
+		- File sync crashes [#7227](https://github.com/logseq/logseq/pull/7227)
+		- Date format related issues [#7059](https://github.com/logseq/logseq/pull/7059)
+		- Unlinking wrong graphs [#7253](https://github.com/logseq/logseq/pull/7253)
+		- Missing trailing content when pasting inline code [#7288](https://github.com/logseq/logseq/pull/7288)
+		- Should not show url-decoded filenames when re-indexing [#7279](https://github.com/logseq/logseq/pull/7279)
+	- [[Enhancement]]
+		- I18n Changes: Update French translation [#7193](https://github.com/logseq/logseq/pull/7193) [#7327](https://github.com/logseq/logseq/pull/7327), update Chinese translation [#7186](https://github.com/logseq/logseq/pull/7186), update Turkish translation [#7256](https://github.com/logseq/logseq/pull/7256)
+		- Toggle between pasting text or file when they both exist [#7198](https://github.com/logseq/logseq/pull/7198)
+		- Graph select and create on iOS [#7184](https://github.com/logseq/logseq/pull/7184)
+		- Improve plugin marketplace [#6978](https://github.com/logseq/logseq/pull/6978)
+		- Upload files when the iOS app switches to background [#7292](https://github.com/logseq/logseq/pull/7292)
+- [[Nov 1st, 2022]]
+  id:: 63610d7b-e12d-4266-bc74-8f9f1fab6e74
+  Beta 0.8.10
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.10
+	- [[Thanks]]
+		- [[situ2001]]
+			- fix: page title height changes when the title is empty
+			- zh-CN translation
+		- [[sallto]]
+			- fix: Sorting of Pagelinks in Query tables
+		- [[Seth Yuan]]
+			- feat: support locale sensitive string comparisons for table sorting
+		- [[Kenneth C. Arnold]]
+			- fix minor grammar issues
+		- [[Candide U]]
+			- Enhancement: Logseq Publish uses custom.css and export.css
+		- [[Sergey Kolesnik]]
+			- Update common.css
+		- [[Loïc Gerbaud]]
+			- French translation
+		- [[yoyurec]]
+			- Page bottom refs blocks
+	- [[Fixed issues]]
+		- Audio recording not work on #iOS
+		- Assets not loading on #windows
+		- Unexpected up/down navigation behavior after indenting in navigation mode
+		- Presentation bugs
+			- Now it's possible to see all the blocks in the presentation:
+				- <div style="position: relative; padding-bottom: 71.05263157894737%; height: 0;"><iframe src="https://www.loom.com/embed/32de7382f40c44b48a134054f4aa3690" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+			-
+		- Fix file links creating garbage pages
+		- Disallow tags as property names
+		- Don't fail publish action if they don't exist for #7067
+		- Open local URL
+		- Can't click the block reference number in published HTML
+		- Main content container overflow when page title too long
+	- [[Enhancement]]
+		- Don't scroll center to a selected block if it's visible
 - [[Oct 19th, 2022]]
   id:: 634eec80-b852-4da9-8c7c-8e4c9dd8e1c7
   Beta 0.8.9
@@ -85,7 +184,7 @@
 			- *How to use it?*
 				- Settings -> Advanced -> File name format, click the `Edit` button, and follow the instructions in the popup window.
 				- [Document]([[Filename format]])
-			- Demo: 
+			- Demo:
 			  <div style="position: relative; padding-bottom: 89.33002481389578%; height: 0;"><iframe src="https://www.loom.com/embed/80286e88c1d345e4abbe2723e1a01c6e" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 			-
 		- A new theme-based highlighting system and a lot of enhancements to colors
