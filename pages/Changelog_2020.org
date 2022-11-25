@@ -224,8 +224,7 @@ It'll repeat from the last time you marked the block done.
 It'll keep it on the same day of the week.
 ****** 3. ~+~
 It'll repeat in X y/m/w/d/h from when you originally scheduled it.
-****
-:PROPERTIES:
+**** :PROPERTIES:
 :id: 60acdeba-b3fd-4f90-ab54-3093caa4d5fa
 :END:
 3. ⏱️ Time tracker
@@ -336,8 +335,7 @@ $$
 \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}}
 {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
 $$
-****
-2. [[Templates]]  support
+**** 2. [[Templates]]  support
 :PROPERTIES:
 :id: 60311d25-f0c8-45af-a54f-e5e7d11bdf8d
 :END:

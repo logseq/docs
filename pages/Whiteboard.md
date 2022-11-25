@@ -9,18 +9,18 @@ alias:: Whiteboards
 - # Usage
 	- [[Whiteboards]] is a toggleable feature that can be activated in [[Settings]] under the `Features` tab.
 	  collapsed:: true
-		- ![Settings-Feature-Modal.png](../assets/Settings-Feature-Modal_1663842891996_0.png)
+		- ![CleanShot 2022-11-25 at 12.34.56@2x.png](../assets/CleanShot_2022-11-25_at_12.34.56@2x_1669376306119_0.png)
 	- Once activated the [[Whiteboard]] feature can primarily be reached via the [[Left sidebar]] with a new menu item called `Whiteboards`.
 	  collapsed:: true
 		- ![CleanShot 2022-09-22 at 13.47.20@2x.png](../assets/CleanShot_2022-09-22_at_13.47.20@2x_1663847562670_0.png){:height 402, :width 326}
 	- New whiteboards can currently be created in 3 different ways:
-	  collapsed:: true
 		- [[Whiteboard/Dashboard]]
 			- The tile in the top left of the dashboard grid always allows you to create a new whiteboard.
 				- ![CleanShot 2022-09-22 at 13.55.14.gif](../assets/CleanShot_2022-09-22_at_13.55.14_1663847729617_0.gif)
 		- [[Create]] Button
 			- After clicking the button labeled `Create` you can choose between creating `New page` or ^^New whiteboard^^. Choosing the latter will open a new whiteboard canvas. This should also be possible with a keyboard shortcut like `n``w`.
 				- ![CleanShot 2022-09-22 at 13.56.54.gif](../assets/CleanShot_2022-09-22_at_13.56.54_1663847880854_0.gif)
+				  id:: 6380a818-1a69-46f1-85f0-2b86fcba9b70
 		- [[Search]]
 			- After triggering the Search window with `Cmd``K` you can start typing a whiteboard name and select the second entry from the top: `New whiteboard: …`. This will create a new whiteboard canvas with the typed input as the title.
 				- ![CleanShot 2022-09-22 at 14.03.19.gif](../assets/CleanShot_2022-09-22_at_14.03.19_1663848305202_0.gif)
@@ -28,6 +28,7 @@ alias:: Whiteboards
 	  collapsed:: true
 		- You can give your Whiteboard a [[Title]] by clicking in the input field in the top left corner.
 			- ![CleanShot 2022-09-22 at 14.24.18.gif](../assets/CleanShot_2022-09-22_at_14.24.18_1663849476516_0.gif)
+			  id:: 6380a818-a9dc-45ac-934b-fc3064509304
 		- You can use the [[Toolbar]] to interact with the canvas and add things to it. Currently the following things are possible:
 			- [[Toolbar/Select]]
 				- Select things on the canvas
@@ -64,10 +65,12 @@ alias:: Whiteboards
 						- ![CleanShot 2022-09-22 at 17.13.54.gif](../assets/CleanShot_2022-09-22_at_17.13.54_1663859660700_0.gif)
 - # Functionality
 	- Logseq [[Whiteboards]] are local-first like the rest of the software.
+	  collapsed:: true
 		- Once you create your first Whiteboard, you will find a new folder in your graphs folder structure called `whiteboards`. All the whiteboards you create will be saved there as `.edn` files. While there is other ways of [[Whiteboard/Deletion]] you can also always delete them through your file system, by removing the respective `.edn` files.
 			- ![CleanShot 2022-09-22 at 17.30.29@2x.png](../assets/CleanShot_2022-09-22_at_17.30.29@2x_1663860644176_0.png)
 		- Whiteboards can be understood as a special type of pages. You can find them in-app in the [[Whiteboard/Dashboard]] as well as [[All pages]].
 	- Currently [[Whiteboard embeds]] only work in rudimentary fashion. We plan to expand this functionality in later versions of [[Whiteboards]].
+	  collapsed:: true
 		- When referencing a [[Whiteboard]] in the outliner by it's [[Title]] you will see Whiteboard icon show up at the front of the link. Hovering that link shows you an abstracted preview of the whiteboard.
 			- ![CleanShot 2022-09-22 at 17.44.08.gif](../assets/CleanShot_2022-09-22_at_17.44.08_1663861685052_0.gif)
 		- Once you do a [[Page embed]] of a [[Whiteboard]] you will see the abstracted preview of the whiteboard canvas immediately in the block.
@@ -76,10 +79,16 @@ alias:: Whiteboards
 	- What makes Logseq's [[Whiteboards]] unique is the combination of the Outliner with a spatial canvas. Thanks to [[Logseq Portal]]s you will be able to visually group and link different blocks and pages from your knowledge base as well as external media types (YouTube, Images, Websites) and simple shapes. This allows visual thinkers to compose, remix, annotate and relate contents from their knowledge base as well as emerging thoughts in a new way.
 - # Additional Links
 - TODO [[Jakob]] to fill out this page #docs
-	- [[Toolbar]]
+	- NOW [[Toolbar]]
+	  :LOGBOOK:
+	  CLOCK: [2022-11-25 Fri 12:40:46]
+	  :END:
 	- [[Whiteboard/Object Action Bar]]
 	- [[Whiteboard Element]]
-	- [[Title]]
+	- DONE [[Title]]
+	  :LOGBOOK:
+	  CLOCK: [2022-11-25 Fri 12:40:53]--[2022-11-25 Fri 12:57:46] =>  00:16:53
+	  :END:
 	- [[Whiteboard/Quick Add]]
 	- [[Whiteboard/Canvas]]
 	- [[Whiteboard/Canvas/View]]
