@@ -84,14 +84,21 @@ alias:: Whiteboards
 	  CLOCK: [2022-11-25 Fri 12:40:46]
 	  :END:
 	- DONE [[Whiteboard/Object/Action Bar]]
-	- [[Whiteboard/Object]]
+	- DONE [[Whiteboard/Object]]
+	  :LOGBOOK:
+	  CLOCK: [2022-11-25 Fri 17:12:12]--[2022-11-25 Fri 17:12:13] =>  00:00:01
+	  :END:
 	- DONE [[Title]]
 	  :LOGBOOK:
 	  CLOCK: [2022-11-25 Fri 12:40:53]--[2022-11-25 Fri 12:57:46] =>  00:16:53
 	  :END:
-	- [[Whiteboard/Quick Add]]
+	- NOW [[Whiteboard/Quick Add]]
+	  :LOGBOOK:
+	  CLOCK: [2022-11-25 Fri 17:13:07]
+	  :END:
 	- [[Whiteboard/Canvas]]
 	- [[Whiteboard/Canvas/View]]
 	- [[Whiteboard/Dashboard]]
 	- [[Context Menu]]
 	- [[Whiteboard/Embeds]]
+	- [[Whiteboards/Object/Links]]

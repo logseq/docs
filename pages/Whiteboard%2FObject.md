@@ -47,7 +47,7 @@
 				- ((6380d395-1714-43d8-8f14-fcced8e6fa42))
 				- ((6380d3d9-1725-4968-a19a-2f28eae7f16e))
 				- ((6380d3d2-ce11-4dbd-9765-b302a07932c2))
-		- Logseq Portal ([[Block]] / [[Page]] / [[Whiteboard]] )
+		- [[Logseq Portal]] ([[Block]] / [[Page]] / [[Whiteboard]] )
 		  collapsed:: true
 			- supports:
 				- ((6380d38c-2dda-486a-a1f7-d99bf0b1d7a1))
