@@ -30,6 +30,7 @@ alias:: Whiteboards
 			- ![CleanShot 2022-09-22 at 14.24.18.gif](../assets/CleanShot_2022-09-22_at_14.24.18_1663849476516_0.gif)
 			  id:: 6380a818-a9dc-45ac-934b-fc3064509304
 		- You can use the [[Toolbar]] to interact with the canvas and add things to it. Currently the following things are possible:
+		  id:: 6380b0a1-0bce-4ecc-b373-fee87e6e9519
 			- [[Toolbar/Select]]
 				- Select things on the canvas
 					- ![CleanShot 2022-09-22 at 16.21.46.gif](../assets/CleanShot_2022-09-22_at_16.21.46_1663856548758_0.gif)
@@ -79,9 +80,9 @@ alias:: Whiteboards
 	- What makes Logseq's [[Whiteboards]] unique is the combination of the Outliner with a spatial canvas. Thanks to [[Logseq Portal]]s you will be able to visually group and link different blocks and pages from your knowledge base as well as external media types (YouTube, Images, Websites) and simple shapes. This allows visual thinkers to compose, remix, annotate and relate contents from their knowledge base as well as emerging thoughts in a new way.
 - # Additional Links
 - TODO [[Jakob]] to fill out this page #docs
-	- NOW [[Toolbar]]
+	- DONE [[Toolbar]]
 	  :LOGBOOK:
-	  CLOCK: [2022-11-25 Fri 12:40:46]
+	  CLOCK: [2022-11-25 Fri 12:40:46]--[2022-11-25 Fri 17:52:48] =>  05:12:02
 	  :END:
 	- DONE [[Whiteboard/Object/Action Bar]]
 	- DONE [[Whiteboard/Object]]
@@ -92,13 +93,13 @@ alias:: Whiteboards
 	  :LOGBOOK:
 	  CLOCK: [2022-11-25 Fri 12:40:53]--[2022-11-25 Fri 12:57:46] =>  00:16:53
 	  :END:
-	- NOW [[Whiteboard/Quick Add]]
+	- DONE [[Whiteboard/Quick Add]]
 	  :LOGBOOK:
-	  CLOCK: [2022-11-25 Fri 17:13:07]
+	  CLOCK: [2022-11-25 Fri 17:13:07]--[2022-11-25 Fri 17:51:50] =>  00:38:43
 	  :END:
 	- [[Whiteboard/Canvas]]
 	- [[Whiteboard/Canvas/View]]
 	- [[Whiteboard/Dashboard]]
 	- [[Context Menu]]
 	- [[Whiteboard/Embeds]]
-	- [[Whiteboards/Object/Links]]
+	- [[Whiteboard/Object/Links]]
