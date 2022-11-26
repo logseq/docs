@@ -2,7 +2,7 @@
  {logseq/bb-tasks
   #_{:local/root "../bb-tasks"}
   {:git/url "https://github.com/logseq/bb-tasks"
-   :git/sha "349f1939bcb2205ce01fa5e5b33055d568000c79"}}
+   :git/sha "1d064cac01b26ae38c98ca140dcb257596d1e290"}}
 
  :tasks
  {nbb
