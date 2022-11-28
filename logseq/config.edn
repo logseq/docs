@@ -53,4 +53,5 @@
  :ui/show-brackets? true
  :feature/enable-encryption? false
  :markdown/version 2
- :favorites ["Getting started" "Changelog" "Videos"]}
+ :favorites ["Getting started" "Changelog" "Videos"]
+ :file/name-format :triple-lowbar}
