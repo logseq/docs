@@ -1,3 +1,5 @@
+type:: [[UI Element]]
+
 - description:
 	- an element that can be placed on the [[Whiteboard/Canvas]]
 	- just like [[Blocks]] or [[Pages]], objects can be referenced anywhere in your [[Graph]]

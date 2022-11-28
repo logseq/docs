@@ -14,6 +14,7 @@ alias:: Whiteboards
 	  collapsed:: true
 		- ![CleanShot 2022-09-22 at 13.47.20@2x.png](../assets/CleanShot_2022-09-22_at_13.47.20@2x_1663847562670_0.png){:height 402, :width 326}
 	- New whiteboards can currently be created in 3 different ways:
+	  collapsed:: true
 		- [[Whiteboard/Dashboard]]
 			- The tile in the top left of the dashboard grid always allows you to create a new whiteboard.
 				- ![CleanShot 2022-09-22 at 13.55.14.gif](../assets/CleanShot_2022-09-22_at_13.55.14_1663847729617_0.gif)
