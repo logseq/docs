@@ -40,7 +40,14 @@
     :columns [:name :platform]
     :sort-by :name
     :result-transform propertify}
-   :types
+   :ui-elements
+   {:query '[:find (pull ?b [*])
+             :where
+             (page-property ?b :type "UI Element")]
+    :columns [:name]
+    :sort-by :name
+    :result-transform propertify}
+   :classes
    {:query '[:find (pull ?b [*])
              :where
              (page-property ?b :type "Class")]
