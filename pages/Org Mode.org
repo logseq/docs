@@ -1,11 +1,11 @@
-* Logseq support [[Org Mode]] syntaxes, includes some extended syntaxes.
+* description:: Org mode is a markup language popularized by the Emacs editor. Our implementation is parsed by https://github.com/logseq/mldoc. See https://orgmode.org/quickstart.html to learn more about this format.
+* Org mode is one of the formats that Logseq supports. Logseq supports standard and some extended syntaxes.
 * *Standard* syntax
 ** ~*Bold*~ -> *Bold*
 ** ~/Italics/~ -> /Italics/
 ** ~+Strikethrough+~ -> +Strikethrough+
 ** ~^^Highlight^^~ -> ^^Highlight^^
-**
-[:div [:code "~Code~"] " -> " [:code "Code"]]
+** [:div [:code "~Code~"] " -> " [:code "Code"]]
 ** ~[[https://www.example.com][label]]~ -> [[https://www.example.com][label]]
 :PROPERTIES:
 :id: 60ab7486-1318-48cc-85bc-02561429e331

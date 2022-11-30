@@ -1,4 +1,6 @@
-- Logseq support most [[Markdown]] syntaxes, and includes some extended syntaxes.
+description:: Markdown is a popular markup language with many flavors. Our implementation is parsed by https://github.com/logseq/mldoc.
+
+- Markdown is the most popular format that Logseq supports. Logseq supports most syntaxes including some extended ones.
 ### **Standard** syntax
 	- what's logseq? #card
 	  card-last-interval:: 28.3
@@ -12,8 +14,7 @@
 	- `_Italics_ ` -> _Italics_
 	- `~~Strikethrough~~` -> ~~Strikethrough~~
 	- `^^Highlight^^` -> ^^Highlight^^
-	-
-	  [:div [:code  "`Code`"]  "-> " [:code "Code"]]
+	- [:div [:code  "`Code`"]  "-> " [:code "Code"]]
 	- `[label](https://example.com)` -> [label](https://example.com)
 	  id:: 60ab7486-8119-4c9a-888c-1e6213fd28e0
 	- `![image](https://asset.logseq.com/static/img/logo.png)` -> ![image](https://asset.logseq.com/static/img/logo.png){:height 53, :width 42}
@@ -55,10 +56,8 @@ id:: 60a78b6b-a0ff-49fe-822f-87216fbf79ff
 		- some examples
 			- [[Templates]] related properties
 			  id:: 60aca587-77bd-4d4e-afcd-c475b52cb754
-				-
-				  [:code "template:: template-name"]
-				-
-				  [:code "template-including-parent:: false"]
+				- [:code "template:: template-name"]
+				- [:code "template-including-parent:: false"]
 				- {{embed ((60a790f8-d187-499a-b2e2-73bf137356dd))}}
 		- see also: [[Block properties]]
 	- [[term/page link with label]]
