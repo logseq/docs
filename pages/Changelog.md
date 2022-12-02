@@ -1,3 +1,78 @@
+- [[Dec 2nd, 2022]]
+  Beta 0.8.12
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.12
+	- [[Features]]
+		- Add `page` and `append` parameters to quickCapture URL, add corresponding config in `config.edn` [Documentation: Logseq Protocol](https://docs.logseq.com/#/page/Logseq%20Protocol)
+	- [[Thanks]]
+		- [[Axel CÉARD]]
+			- I18n updates for French
+		- [[Darwis]]
+			- Enhance sci eval-string and Clojure code eval-result
+			- Fix render custom HTML element as hiccup not working
+		- [[Yue Yang]]
+			- Fix: use name to detect default theme
+		- [[Gabriele Lippi]]
+			- Add a document section on how to contribute by opening a PR
+		- [[Rui Sun]]
+			- I18n updates for Chinese
+		- [[Soumik]]
+			- Add show theme plugin settings under "Plugin Settings"
+		- [[Zhizhen He]]
+			- I18n updates for Chinese
+		- [[hkgnp]]
+			- Add support for quick-capturing youtube links as embedded video
+			- Add settings support for quick-capturing target page and redirection
+		- [[Jon]]
+			- I18n updates for Spanish
+			- Fix auto pair parenthesis
+		- [[Matthew Lilley]]
+			- Fix shift+click on "all pages" launching a new browser window
+			- Fix Retain block references on file reload
+		- [[queeup]]
+			- I18n updates for Turkish
+		- [[Siddharth Yadav]]
+			- Fix cannot upload assets with certain formats
+		- [[Sergey Kolesnik]]
+			- Fix some CSS variables
+		- [[Manuel]]
+			- Add option to insert block without focusing it afterward
+			- Fix customUUID not converted to UUID type
+		- [[Vitali Haravy]]
+			- Fix: correct wording of a comment in `config.edn`
+		- [[WesleyCh3n]]
+			- Fix a typo in README
+	- [[Fixed issues]]
+		- Massive bug fixes for Logseq Sync
+		- Enhancements to PDF viewer [#7369](https://github.com/logseq/logseq/pull/7369)
+		- Enhance sci eval-string and Clojure code eval-result [#7287](https://github.com/logseq/logseq/pull/7287)
+		- Custom UUID not converted to UUID type [#7375](https://github.com/logseq/logseq/pull/7375)
+		- Code block markup disappear [#7411](https://github.com/logseq/logseq/pull/7411)
+		- Can't paste nested blocks into an empty block [#7504](https://github.com/logseq/logseq/pull/7504)
+		- Cannot upload assets with certain formats. [#7452](https://github.com/logseq/logseq/pull/7452)
+		- Error while handling global config [#7373](https://github.com/logseq/logseq/pull/7373) [#7394](https://github.com/logseq/logseq/pull/7394) [#7552](https://github.com/logseq/logseq/pull/7552)
+		- Filename format revert manual title check [#7449](https://github.com/logseq/logseq/pull/7449)
+		- Render custom HTML element as hiccup not working [#7370](https://github.com/logseq/logseq/pull/7370)
+		- Notify users if page name already exists when parsing files [#7433](https://github.com/logseq/logseq/pull/7433)
+		- Retain block references on file reload [#7363](https://github.com/logseq/logseq/pull/7363)
+		- Show hierarchy for page alias [#7368](https://github.com/logseq/logseq/pull/7368)
+		- Use default font family for headings [#7490](https://github.com/logseq/logseq/pull/7490)
+		- Make dynamic width of absolute modal container fit for widen screen. [#7320](https://github.com/logseq/logseq/pull/7320)
+		- Auto pair parenthesis [#7379](https://github.com/logseq/logseq/pull/7379)
+	- [[Enhancement]]
+		- Plugin API enhancements [#6945](https://github.com/logseq/logseq/pull/6945)
+		- Adaptive font size for tags [#7543](https://github.com/logseq/logseq/pull/7543)
+		- Add bug report to menu [#7531](https://github.com/logseq/logseq/pull/7531)
+		- Show theme plugin settings under "Plugin Settings" [#7274](https://github.com/logseq/logseq/pull/7274)
+		- Page content search fine-tuning [#7532](https://github.com/logseq/logseq/pull/7532)
+		- I18n: Chinese [#7413](https://github.com/logseq/logseq/pull/7413) [#7357](https://github.com/logseq/logseq/pull/7357), French [#7441](https://github.com/logseq/logseq/pull/7441) [#7442](https://github.com/logseq/logseq/pull/7442) [#7443](https://github.com/logseq/logseq/pull/7443), Turkish [#7381](https://github.com/logseq/logseq/pull/7381), Spanish [#7422](https://github.com/logseq/logseq/pull/7422)
+	- [[Alpha Features]]
+		- Whiteboards: Add main color panel and rearrange tools [#7358](https://github.com/logseq/logseq/pull/7358)
+		- Whiteboards: Shape links [#7395](https://github.com/logseq/logseq/pull/7395)
+	- [[Mobile Specific]]
+		- Sync Android nav bar and status bar color [#7385](https://github.com/logseq/logseq/pull/7385)
+		- Fix iPad toolbar position when hiding keyboard [#7472](https://github.com/logseq/logseq/pull/7472)
+		- Missing URL encode when sharing asset URL [#7466](https://github.com/logseq/logseq/pull/7466)
+		- Fix Android content disappears when deleting or inserting blocks quickly [#7501](https://github.com/logseq/logseq/pull/7501)
 - [[Nov 16th, 2022]]
   Beta 0.8.11
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.11

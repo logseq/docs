@@ -16,8 +16,15 @@
 			- `url`: page url
 			- `title`: page title
 			- `content`: (optional) highlighted text(selection)
+			- `append`: (optional, boolean) Append to the end of the page, default to `false`(current editing position)
+			- `page`:    (optional) Page name to insert to, use "TODAY" to insert to today page
 		- Settings (in `config.edn`):
 			- Template variables are `{time}`, `{text}` and `{url}`
 			- ```edn
 			  :quick-capture-templates {:text "[[quick capture]] **{time}** {text} {url}"}
+			  
+			  :quick-capture-options {
+			                          :insert-today? false
+			                          :redirect-page? true
+			                          }
 			  ```
