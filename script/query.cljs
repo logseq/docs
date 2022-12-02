@@ -1,4 +1,4 @@
-(ns stats
+(ns query
   "Some docs specific queries"
   (:require [logseq.db.rules :as rules]
             [datascript.core :as d]

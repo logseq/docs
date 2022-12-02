@@ -44,7 +44,7 @@
 	- [[Fixed issues]]
 		- Massive bug fixes for Logseq Sync
 		- Enhancements to PDF viewer [#7369](https://github.com/logseq/logseq/pull/7369)
-		- Enhance sci eval-string and Clojure code eval-result [#7287](https://github.com/logseq/logseq/pull/7287)
+		- Enhance sci eval-string and Clojure code eval-result [#7287](https://github.com/logseq/logseq/pull/7287) - [Documentation](https://docs.logseq.com/#/page/ClojureScript%20Eval%20in%20a%20Block)
 		- Custom UUID not converted to UUID type [#7375](https://github.com/logseq/logseq/pull/7375)
 		- Code block markup disappear [#7411](https://github.com/logseq/logseq/pull/7411)
 		- Can't paste nested blocks into an empty block [#7504](https://github.com/logseq/logseq/pull/7504)
