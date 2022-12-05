@@ -14,7 +14,7 @@ description:: Local config file, `logseq/config.edn`, is the main configuration 
 	- ### Specific config options:
 		- `:editor/extra-codemirror-options` (map) - These can be any of the options [documented here](https://codemirror.net/doc/manual.html#config)
 		  collapsed:: true
-			- To customize a codemirror theme, select one [from this list](https://codemirror.net/theme/). For example, if you choose blackboard configure it with:
+			- To customize a codemirror theme, select one [from this list](https://codemirror.net/5/demo/theme.html). For example, if you choose blackboard configure it with:
 			  ```clojure
 			   :editor/extra-codemirror-options   {:theme "blackboard"}
 			  ```
@@ -37,7 +37,7 @@ description:: Local config file, `logseq/config.edn`, is the main configuration 
 			   :query/result-transforms
 			   {:sort-by-priority
 			    (fn [result] (sort-by (fn [h] (get h :block/priority "Z")) result))}
-			  
+
 			  ;; In an advanced query
 			  {:query ...
 			   :result-transform :sort-by-priority}
