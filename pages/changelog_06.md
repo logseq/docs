@@ -614,7 +614,7 @@
   **Version 0.0.9**
 	- [[Features]]
 		- Add the ability to delete your account on the settings page
-		- [[Custom keyboard shortcuts]] support
+		- Custom [[Keyboard shortcuts]] support
 		- [[Templates]] support [[Dynamic Variables]] now
 		  {{embed ((60311eda-b6f7-4779-8187-8830545b3a64)) }}
 		- **Smarter** [[queries]]

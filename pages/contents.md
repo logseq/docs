@@ -49,7 +49,7 @@
 - 👤 [[Settings]]
 - ✨ [[Tips and Tricks]]
 - [[Advanced Logseq]]
-	- [[Custom keyboard shortcuts]]
+	- [[Keyboard shortcuts]]
 	- [[Queries]]
 	- [[Advanced Queries]]
 	- [[Hiccup]]
