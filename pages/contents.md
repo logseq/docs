@@ -63,4 +63,5 @@
 	- [Contribute to Our Docs](https://github.com/logseq/docs)
 - 💬
 	- Message us on [Discord](https://discord.gg/KpN4eHY) (We love feedback!)
-	- Tweet us [https://twitter.com/logseq](@logseq)
+	- Ask questions in the [forum](https://discuss.logseq.com)
+	- Tweet us [@logseq](https://twitter.com/logseq)
