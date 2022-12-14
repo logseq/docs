@@ -54,5 +54,4 @@
  :feature/enable-encryption? false
  :markdown/version 2
  :favorites ["Getting started" "Changelog" "Videos"]
- :file/name-format :triple-lowbar
- :shortcuts {:editor/collapse-block-children ["mod+up" "mod+p"], :editor/expand-block-children ["mod+down" "mod+n"], :editor/open-file-in-default-app "ctrl+shift+a", :editor/move-block-up ["mod+shift+up" "mod+shift+m"], :editor/copy-current-file "ctrl+shift+y", :editor/move-block-down ["mod+shift+down" "mod+shift+n"], :graph/open ["alt+shift+g" "mod+shift+o"], :ui/toggle-brackets "t b", :editor/up "up | ctrl+p", :ui/toggle-theme "t z"}}
+ :file/name-format :triple-lowbar}
