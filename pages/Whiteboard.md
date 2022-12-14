@@ -16,15 +16,18 @@ alias:: Whiteboards
 	- New whiteboards can currently be created in 3 different ways:
 	  collapsed:: true
 		- [[Whiteboard/Dashboard]]
+		  collapsed:: true
 			- The tile in the top left of the dashboard grid always allows you to create a new whiteboard.
 			  collapsed:: true
 				- ![CleanShot 2022-09-22 at 13.55.14.gif](../assets/CleanShot_2022-09-22_at_13.55.14_1663847729617_0.gif)
 		- [[Create]] Button
+		  collapsed:: true
 			- After clicking the button labeled `Create` you can choose between creating `New page` or ==`New whiteboard`==. Choosing the latter will open a new whiteboard canvas. You can also create a new whiteboard with the keyboard shortcut `n w`.
 			  collapsed:: true
 				- ![CleanShot 2022-09-22 at 13.56.54.gif](../assets/CleanShot_2022-09-22_at_13.56.54_1663847880854_0.gif)
 				  id:: 6380a818-1a69-46f1-85f0-2b86fcba9b70
 		- [[Search]]
+		  collapsed:: true
 			- After triggering the Search window with `Cmd + k`, you can start typing a whiteboard name. Next, select the second entry from the top starting with `New whiteboard: `. This creates a new whiteboard canvas with the typed input as the title.
 			  collapsed:: true
 				- ![CleanShot 2022-09-22 at 14.03.19.gif](../assets/CleanShot_2022-09-22_at_14.03.19_1663848305202_0.gif)
@@ -46,8 +49,7 @@ alias:: Whiteboards
 				  collapsed:: true
 					- ![CleanShot 2022-09-22 at 16.23.32.gif](../assets/CleanShot_2022-09-22_at_16.23.32_1663856665325_0.gif)
 			- [[Toolbar/Draw]]
-			  collapsed:: true
-				- Do freeform pencil drawings on the canvas
+				- Freeform pencil drawings on the canvas
 				  collapsed:: true
 					- ![CleanShot 2022-09-22 at 16.27.51.gif](../assets/CleanShot_2022-09-22_at_16.27.51_1663856897270_0.gif)
 			- [[Toolbar/Highlight]]
