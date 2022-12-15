@@ -32,7 +32,7 @@
 	- [[Templates]]
 	- [Page alias]([[term/alias]])
 	- [Block properties]([[term/properties]])
-	- [[Publishing (Desktop App Only)]]
+	- [[Publishing]]
 	- [[PDF highlights]]
 	- SRS [[Cards]]
 	- [[Draw]]

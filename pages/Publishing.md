@@ -13,6 +13,7 @@ description:: This feature publishes a graph as a [[Publish Web]], single page a
 	- Published apps can read user configuration from [[config.edn]], [[custom.css]] and [[export.css]]. [[custom.css]] and [[export.css]] are optional.
 	- ### Available Features
 	  id:: 63595c2e-2383-42d4-ad20-5647758a7337
+	  collapsed:: true
 		- Most features in a [[Publish Web]] app should work e.g. page [[Search]], block links and page links. Anything that involves editing won't work of course since the app is read-only.
 		- query-table:: true
 		  query-properties:: [:page :platform :initial-version]
@@ -34,6 +35,16 @@ description:: This feature publishes a graph as a [[Publish Web]], single page a
 		  // This uses the logseq-dev-theme but the url can be changed to any theme's github url
 		  @import url("https://cdn.jsdelivr.net/gh/pengx17/logseq-dev-theme@main/custom.css");
 		  ```
+	- ### Urls and Routing
+		- A [[Publish Web]] app has routes that start with `/#/`. The most common routes are:
+			- For pages - `/#/page/:NAME` e.g. https://docs.logseq.com/#/page/Contents
+			- TODO [[Gabriel Horner]] Finish this with example when this is live #docs
+				- For heading blocks in a page - `/#/page/:NAME/block/:HEADING-CONTENT`
+					- This allows for linking to headings in a page.
+					- This behaves similarly to anchors to headings in a github markdown page e.g. https://github.com/logseq/logseq/blob/master/README.md#credits
+			- For referenced blocks - `#/page/:BLOCK-ID` e.g. https://docs.logseq.com/#/page/60ab6f5b-4bdc-4ef0-a0f8-6cad9dcad2b2.
+				- **Note**: This only works for _referenced_ blocks. If a block is not referenced elsewhere than its id is temporary and will change on a subsequent publish.
+		- See [routes.cljs](https://github.com/logseq/logseq/blob/master/src/main/frontend/routes.cljs) for other possible routes.
 - ## Additional Links
 	- https://github.com/pengx17/logseq-publish - Popular approach to publishing graphs on github
 	- https://github.com/sawhney17/logseq-schrodinger - Plugin to export Logseq pages to Hugo
