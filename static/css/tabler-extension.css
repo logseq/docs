@@ -28,114 +28,82 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.tie-add-link::before {
+.tie-app-feature::before {
   content: "\ea01";
 }
 
-.tie-app-feature::before {
+.tie-block::before {
   content: "\ea02";
 }
 
-.tie-block::before {
+.tie-block-search::before {
   content: "\ea03";
 }
 
-.tie-block-search::before {
+.tie-connector::before {
   content: "\ea04";
 }
 
-.tie-connector::before {
+.tie-h-auto::before {
   content: "\ea05";
 }
 
-.tie-h-auto::before {
+.tie-heading-off::before {
   content: "\ea06";
 }
 
-.tie-heading-off::before {
+.tie-new-block::before {
   content: "\ea07";
 }
 
-.tie-internal-link::before {
+.tie-new-page::before {
   content: "\ea08";
 }
 
-.tie-link-to-block::before {
+.tie-new-whiteboard::before {
   content: "\ea09";
 }
 
-.tie-link-to-page::before {
+.tie-new-whiteboard-element::before {
   content: "\ea0a";
 }
 
-.tie-link-to-whiteboard::before {
+.tie-object-compact::before {
   content: "\ea0b";
 }
 
-.tie-move-to-sidebar-right::before {
+.tie-object-expanded::before {
   content: "\ea0c";
 }
 
-.tie-new-block::before {
+.tie-page::before {
   content: "\ea0d";
 }
 
-.tie-new-page::before {
+.tie-page-search::before {
   content: "\ea0e";
 }
 
-.tie-new-whiteboard::before {
+.tie-references-hide::before {
   content: "\ea0f";
 }
 
-.tie-new-whiteboard-element::before {
+.tie-references-show::before {
   content: "\ea10";
 }
 
-.tie-object-compact::before {
+.tie-select-cursor::before {
   content: "\ea11";
 }
 
-.tie-object-expanded::before {
+.tie-text::before {
   content: "\ea12";
 }
 
-.tie-open-as-page::before {
+.tie-whiteboard::before {
   content: "\ea13";
 }
 
-.tie-page::before {
-  content: "\ea14";
-}
-
-.tie-page-search::before {
-  content: "\ea15";
-}
-
-.tie-references-hide::before {
-  content: "\ea16";
-}
-
-.tie-references-show::before {
-  content: "\ea17";
-}
-
-.tie-select-cursor::before {
-  content: "\ea18";
-}
-
-.tie-text::before {
-  content: "\ea19";
-}
-
-.tie-whiteboard::before {
-  content: "\ea1a";
-}
-
 .tie-whiteboard-element::before {
-  content: "\ea1b";
-}
-
-.tie-whiteboard-search::before {
-  content: "\ea1c";
+  content: "\ea14";
 }
