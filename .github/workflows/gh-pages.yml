@@ -17,6 +17,8 @@ jobs:
         uses: pengx17/logseq-publish@0.1.7
         with:
           dest: www
+          # Temporary until master gets heading block urls
+          version: nightly@sha256:6f2916ba2302f202faef5daa462219f4dab0076b70aa831ef5df397b4816f245
 
       - name: Add .nojekyll file
         run: touch www/.nojekyll
