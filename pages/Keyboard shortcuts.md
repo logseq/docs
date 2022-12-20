@@ -13,10 +13,11 @@ description:: Provides keyboards shortcuts for running core commands and actions
 - ## Functionality
 	- **Which shortcuts can be customized?**
 	  Type `g s` to see the full list of shortcuts by categories. The default shortcuts are [here](https://github.com/logseq/logseq/blob/master/src/main/frontend/modules/shortcut/config.cljs).
-	- When the editor is not focused, Logseq recognizes key combos which are multiple letters pressed sequentially. The three letters used for key combos are:
+	- When the editor is not focused, Logseq recognizes key combos which are multiple letters pressed sequentially. The four letters used for key combos are:
 		- `g` for Go e.g. `g s` goes to the
 		- `t` for Toggle e.g. `t r` toggles the right sidebar
 		- `n` for New e.g. `n w` creates a new whiteboard
+		- `c` for Close e.g. `c t` closes top item in sidebar
 	- Use this syntax when configuring shortcuts by hand:
 		- `+` means keys pressing simultaneously eg: `ctrl+shift+a`
 		- ` ` empty space between keys means key chords
