@@ -1,3 +1,9 @@
+- [[Dec 20th, 2022]]
+  Beta 0.8.14
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.14
+	- [[Fixed issues]]
+		- Raw file editor content cleared when on-blur [#7787](https://github.com/logseq/logseq/pull/7787)
+		- Linked references filter is empty [#7793](https://github.com/logseq/logseq/pull/7793)
 - [[Dec 19th, 2022]]
   Beta 0.8.13
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.13
