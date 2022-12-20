@@ -15,6 +15,7 @@
 		- Improve query performance [#7708](https://github.com/logseq/logseq/pull/7708)
 		- Plugin API enhancements [#7555](https://github.com/logseq/logseq/pull/7555) [#7549](https://github.com/logseq/logseq/pull/7549) [#7716](https://github.com/logseq/logseq/pull/7716)
 		- Added shortcut for closing the right sidebar top item [#7622](https://github.com/logseq/logseq/pull/7622)
+		- Added support for urls to heading blocks in web and published apps [#7668](https://github.com/logseq/logseq/pull/7668) - [See Documentation](https://docs.logseq.com/#/page/publishing/block/available%20urls)
 	- [[Breaking Changes]]
 		- Change "Git commit" shortcut from a single `c` to `mod+g c` [#7609](https://github.com/logseq/logseq/pull/7609)
 		- Introduce a new config property `:logseq.query/nlp-date`. Default to `false`. Query without `logseq.query/nlp-date:: true` would disable date normalization [#7708](https://github.com/logseq/logseq/pull/7708)
