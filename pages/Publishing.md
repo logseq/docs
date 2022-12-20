@@ -38,10 +38,9 @@ description:: This feature publishes a graph as a [[Publish Web]], single page a
 	- ### Available Urls
 		- A [[Publish Web]] app's routes (urls) start with `/#/`. The most common routes are:
 			- For pages - `/#/page/:NAME` e.g. https://docs.logseq.com/#/page/Contents
-			- For heading blocks in a page - `/#/page/:NAME/block/:HEADING-CONTENT`
+			- For heading blocks in a page - `/#/page/:NAME/block/:HEADING-CONTENT` e.g. https://docs.logseq.com/#/page/publishing/block/available%20urls
 				- This allows for linking to headings in a page. The link is a case insensitive version of the first line of the heading content. For example, the heading title `## FAQ` is translated to `#/page/:NAME/block/faq`.
 				- This behaves similarly to headings in a github markdown page e.g. https://github.com/logseq/logseq/blob/master/README.md#credits
-				- TODO [[Gabriel Horner]] Add example when this is live #docs
 			- For referenced blocks - `#/page/:BLOCK-ID` e.g. https://docs.logseq.com/#/page/60ab6f5b-4bdc-4ef0-a0f8-6cad9dcad2b2.
 				- **Note**: This only works for _referenced_ blocks. If a block is not referenced elsewhere than its id is temporary and will change on a subsequent publish.
 		- See [routes.cljs](https://github.com/logseq/logseq/blob/master/src/main/frontend/routes.cljs) for other possible routes.
