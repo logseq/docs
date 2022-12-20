@@ -1,3 +1,62 @@
+- [[Dec 19th, 2022]]
+  Beta 0.8.13
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.13
+	- [[Feature]]
+		- Logseq Whiteboards now become a Beta Feature
+	- [[Enhancement]]
+		- Open the keyboard shortcuts helping page on the right side panel [#7550](https://github.com/logseq/logseq/pull/7550)
+		- Refine Network proxy support, add proxy support to Logseq Sync [#7711](https://github.com/logseq/logseq/pull/7711)
+		- Improve query performance [#7708](https://github.com/logseq/logseq/pull/7708)
+		- Plugin API enhancements [#7555](https://github.com/logseq/logseq/pull/7555) [#7549](https://github.com/logseq/logseq/pull/7549) [#7716](https://github.com/logseq/logseq/pull/7716)
+		- Added shortcut for closing the right sidebar top item [#7622](https://github.com/logseq/logseq/pull/7622)
+	- [[Breaking Changes]]
+		- Change "Git commit" shortcut from a single `c` to `mod+g c` [#7609](https://github.com/logseq/logseq/pull/7609)
+		- Introduce a new config property `:logseq.query/nlp-date`. Default to `false`. Query without `logseq.query/nlp-date:: true` would disable date normalization [#7708](https://github.com/logseq/logseq/pull/7708)
+	- [[Thanks]]
+		- [[Bad3r]]
+			- Enhance(dev): add `cljs:dev-release-electron`
+			- Do not use posthog when dev
+			- Minor fixes in README.md
+		- [[Sebastian Sosa]]
+			- Added shortcut for closing the right sidebar top item
+		- [[queeup]]
+			- Update Turkish translation
+		- [[sallto]]
+			- Fix link can't be pasted on selected text in block content
+			- Fix overflow of installed plugin settings dialog
+			- Fix: prevent 2 Datepickers from being open at the same time
+		- [[Siddharth Yadav]]
+			- Fix: update code edit state for the code blocks that are opened in main area and sidebar, as embeds
+		- [[situ2001]]
+			- Provide i18n for settings-page
+			- Fixes for PDF context menu
+		- [[Sergey Kolesnik]]
+			- Fix a bunch of sanity in search palette CSS
+		- [[SteOtt]]
+			- Update README.md
+		- [[Manuel]]
+			- Add keepUUID option to insertBatchBlock plugin API
+		- [[usoon]]
+			- Fix: group linked references by parent
+		- [[xxchan]]
+			- Dev update: link to forum directly for feature requests & questions
+	- [[Fixed issues]]
+		- Validates global config [#7620](https://github.com/logseq/logseq/pull/7620) [#7651](https://github.com/logseq/logseq/pull/7651)
+		- Block reference only returns the first level of data [#7776](https://github.com/logseq/logseq/pull/7776)
+		- Copy block-ref instantly after input text lost block content [#7732](https://github.com/logseq/logseq/pull/7732)
+		- Group linked references by parent [#7613](https://github.com/logseq/logseq/pull/7613)
+		- Highlight text color on light themes [#7599](https://github.com/logseq/logseq/pull/7599)
+		- Link can't be pasted on selected text in block content [#7618](https://github.com/logseq/logseq/pull/7618)
+		- Missing children in linked references [#7626](https://github.com/logseq/logseq/pull/7626)
+		- Open inline block refs by default when zooming in a block [#7650](https://github.com/logseq/logseq/pull/7650)
+		- Remove spaces around CJK characters when auto-complete pages [#7631](https://github.com/logseq/logseq/pull/7631)
+		- Remove orphaned files/blocks from DB when comparing DB and disk [#7686](https://github.com/logseq/logseq/pull/7686)
+		- Some PDF context menu fix [#7690](https://github.com/logseq/logseq/pull/7690)
+		- Update code edit state for the code blocks that are opened in main area and sidebar, as embeds [#7639](https://github.com/logseq/logseq/pull/7639)
+		- Bug fixes for Logseq Sync, in handling file deletion and renaming
+	- [[Mobile Specific]]
+		- Always show hamburger button [#7512](https://github.com/logseq/logseq/pull/7512)
+		- Mobile UX enhancements [#7492](https://github.com/logseq/logseq/pull/7492)
 - [[Dec 2nd, 2022]]
   Beta 0.8.12
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.12
