@@ -54,4 +54,5 @@
  :feature/enable-encryption? false
  :markdown/version 2
  :favorites ["Getting started" "Changelog" "Videos"]
- :file/name-format :triple-lowbar}
+ :file/name-format :triple-lowbar
+ :feature/enable-whiteboards? true}

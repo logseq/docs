@@ -1,3 +1,36 @@
+- [[Dec 29th, 2022]]
+  Beta 0.8.15
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.15
+	- [[Features]]
+		- Use shortcut `mod+a` to select parent blocks up to the whole page [#7803](https://github.com/logseq/logseq/pull/7803)
+		- In-App HTTP server for API invoke [#7699](https://github.com/logseq/logseq/pull/7699)
+	- [[Thanks]]
+		- [[Bad3r]]
+			- Wording enhancements of App UI
+		- [[Gabriele Lippi]]
+			- Fix format property reference when in org-mode
+		- [[gut4]]
+			- Enable iOS file sharing for transfer files with the Finder or iTunes
+		- [[Guy Pursey]]
+			- Fix query table sorting
+		- [[queeup]]
+			- Update Turkish translation
+		- [[situ2001]]
+			- Display full search results in the web app
+		- [[Hidekazu Kubota]]
+			- Add several missing i18n items to the right-click menu
+			- Add Japanese translations for new shortcuts and menus
+	- [[Fixed issues]]
+		- Format property reference when org mode [#7389](https://github.com/logseq/logseq/pull/7389)
+		- Cannot switch between modals by shortcuts [#7805](https://github.com/logseq/logseq/pull/7805)
+		- Provide consistent page links for web and publishing [#7801](https://github.com/logseq/logseq/pull/7801)
+		- Query table sorting [#7751](https://github.com/logseq/logseq/pull/7751)
+		- Handle nonstandard path-naming, apply unicode normalization [#8146](https://github.com/logseq/logseq/pull/8146) [#8147](https://github.com/logseq/logseq/pull/8147)
+	- [[Enhancement]]
+		- Display full search results in the web app [#8132](https://github.com/logseq/logseq/pull/8132)
+		- Enable iOS file sharing for transfer files with the Finder or iTunes [#7774](https://github.com/logseq/logseq/pull/7774)
+		- I18n: Missing translation fields [#8139](https://github.com/logseq/logseq/pull/8139), Japanese [#7984](https://github.com/logseq/logseq/pull/7984), Turkish [#7800](https://github.com/logseq/logseq/pull/7800)
+		- UI enhancements: mobile [#8141](https://github.com/logseq/logseq/pull/8141), responsive right-sidebar [#8126](https://github.com/logseq/logseq/pull/8126)
 - [[Dec 20th, 2022]]
   Beta 0.8.14
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.14
