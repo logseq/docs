@@ -1,6 +1,7 @@
 - [[Dec 29th, 2022]]
   Beta 0.8.15
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.15
+  This version fixes empty pages caused by nonstandard path-naming, by applying Unicode normalization to all paths. We recommend you update as soon as possible.
 	- [[Features]]
 		- Use shortcut `mod+a` to select parent blocks up to the whole page [#7803](https://github.com/logseq/logseq/pull/7803)
 		- In-App HTTP server for API invoke [#7699](https://github.com/logseq/logseq/pull/7699)
@@ -21,11 +22,11 @@
 			- Add several missing i18n items to the right-click menu
 			- Add Japanese translations for new shortcuts and menus
 	- [[Fixed issues]]
+		- Fix empty pages caused by nonstandard path-naming, apply unicode normalization to all paths [#8146](https://github.com/logseq/logseq/pull/8146) [#8147](https://github.com/logseq/logseq/pull/8147)
 		- Format property reference when org mode [#7389](https://github.com/logseq/logseq/pull/7389)
 		- Cannot switch between modals by shortcuts [#7805](https://github.com/logseq/logseq/pull/7805)
 		- Provide consistent page links for web and publishing [#7801](https://github.com/logseq/logseq/pull/7801)
 		- Query table sorting [#7751](https://github.com/logseq/logseq/pull/7751)
-		- Handle nonstandard path-naming, apply unicode normalization [#8146](https://github.com/logseq/logseq/pull/8146) [#8147](https://github.com/logseq/logseq/pull/8147)
 	- [[Enhancement]]
 		- Display full search results in the web app [#8132](https://github.com/logseq/logseq/pull/8132)
 		- Enable iOS file sharing for transfer files with the Finder or iTunes [#7774](https://github.com/logseq/logseq/pull/7774)
