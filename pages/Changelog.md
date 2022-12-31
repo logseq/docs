@@ -4,7 +4,7 @@
   This version fixes empty pages caused by nonstandard path-naming, by applying Unicode normalization to all paths. We recommend you update as soon as possible.
 	- [[Features]]
 		- Use shortcut `mod+a` to select parent blocks up to the whole page [#7803](https://github.com/logseq/logseq/pull/7803)
-		- In-App HTTP server for API invoke [#7699](https://github.com/logseq/logseq/pull/7699)
+		- [[Local Http server]] for API invoke [#7699](https://github.com/logseq/logseq/pull/7699)
 	- [[Thanks]]
 		- [[Bad3r]]
 			- Wording enhancements of App UI

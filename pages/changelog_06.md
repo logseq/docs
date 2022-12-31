@@ -617,7 +617,7 @@
 		- Custom [[Keyboard shortcuts]] support
 		- [[Templates]] support [[Dynamic Variables]] now
 		  {{embed ((60311eda-b6f7-4779-8187-8830545b3a64)) }}
-		- **Smarter** [[queries]]
+		- **Smarter** [[Queries]]
 		  Previously, `(and [[Project 1]] (todo now))` will only query those blocks that have both the `Project 1` reference and a `NOW` marker. Now it works as long as if the block parents have the `Project 1` reference and the block has a `NOW` marker.
 		  #+BEGIN_NOTE
 		  Make sure to unlink your graph first and import your data to make it works!
