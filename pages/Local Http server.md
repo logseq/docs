@@ -18,6 +18,7 @@ title:: Local Http server
 	- 5. Start the HTTP server
 		- ![CleanShot 2022-12-31 at 15.29.17.png](../assets/CleanShot_2022-12-31_at_15.29.17_1672471786950_0.png)
 	- 6. Okay! Let's give it a try!
+		- You can visit http://127.0.0.1:12315/ for the api documentation.
 		- Examples:
 			- Insert a new block to the page `Test page` (you need to create the page in Logseq if it doesn't exist yet):
 				- ```
