@@ -18,7 +18,7 @@ jobs:
         with:
           dest: www
           # Temporary until master gets heading block urls
-          version: nightly@sha256:6f2916ba2302f202faef5daa462219f4dab0076b70aa831ef5df397b4816f245
+          version: nightly@sha256:89e32c07eee2fac2506ddbdee4d3fbcd35d2c1ea1020fccc6b7464f4f146c35f
 
       - name: Add .nojekyll file
         run: touch www/.nojekyll
