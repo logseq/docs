@@ -12,7 +12,7 @@ title:: Local Http server
 	- 2. Enable HTTP APIs server in `Features > HTTP APIs server`
 		- ![CleanShot 2022-12-31 at 15.24.46.png](../assets/CleanShot_2022-12-31_at_15.24.46_1672471509431_0.png)
 	- 3. Restart Logseq
-	- 4. Add a token to safe your API access
+	- 4. Add an authorization access your API. Only the `your-token-value-here` is used in an API request.
 		- ![CleanShot 2022-12-31 at 15.27.17.png](../assets/CleanShot_2022-12-31_at_15.27.17_1672471678089_0.png)
 		- ![CleanShot 2022-12-31 at 15.28.41.png](../assets/CleanShot_2022-12-31_at_15.28.41_1672471733830_0.png)
 	- 5. Start the HTTP server
