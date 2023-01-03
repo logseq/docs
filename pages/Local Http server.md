@@ -18,12 +18,12 @@ title:: Local Http server
 	- 5. Start the HTTP server
 		- ![CleanShot 2022-12-31 at 15.29.17.png](../assets/CleanShot_2022-12-31_at_15.29.17_1672471786950_0.png)
 	- 6. Okay! Let's give it a try!
-		- You can visit http://127.0.0.1:12315/ for the api documentation.
+		- By default, api documentation is available at http://127.0.0.1:12315/.
 		- Examples:
 			- Insert a new block to the page `Test page` (you need to create the page in Logseq if it doesn't exist yet):
 				- ```
 				  curl -X POST http://127.0.0.1:12315/api \
-				  -H "Authorization: Bearer {replace-with-your-token-here}" \
+				  -H "Authorization: Bearer {replace with your-token-value-here}" \
 				  -H "Content-Type: application/json" \
 				  -d '{"method": "logseq.Editor.insertBlock", "args": ["Test page", "This is a new block", {"isPageBlock": true}]}'
 				  ```
@@ -35,7 +35,7 @@ title:: Local Http server
 			- Query `TODO`s
 				- ``` 
 				  curl -X POST http://127.0.0.1:12315/api \
-				  -H "Authorization: Bearer {replace-with-your-token-here}" \
+				  -H "Authorization: Bearer {replace with your-token-value-here}" \
 				  -H "Content-Type: application/json" \
 				  -d '{"method": "logseq.db.q", "args": ["(task TODO)"]}'
 				  ```
