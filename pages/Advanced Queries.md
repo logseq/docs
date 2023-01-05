@@ -1,43 +1,47 @@
-- The database that Logseq use is [Datascript](https://github.com/tonsky/datascript), which is an immutable in-memory database and [Datalog](https://en.wikipedia.org/wiki/Datalog) query engine in Clojure and ClojureScript.
-- **Resources**
-	- [[Learn Datalog Today]] is a great first reference if you're not familiar with Datalog.
-	- https://max-datom.com/ and https://nextjournal.com/try/learn-xtdb-datalog-today/learn-xtdb-datalog-today are two interactive tutorials.
-	- [Datomic query documentation](https://docs.datomic.com/query.html) - Thorough reference for datomic dialect of Datalog. Explains most datalog concepts well.
-	- [Datascript's intro docs](https://github.com/tonsky/datascript/wiki/Getting-started)
-	- [Logseq's database schema](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/schema.cljs)
-- An advanced query looks like this:
-  updated-at:: 1609246099894
-  created-at:: 1609244764756
-  #+BEGIN_EXAMPLE
-  {:title  [:h2 "Your query title"]
-   :query  [:find (pull ?b [*])
-            :where ...]
-   :inputs [...]
-   :view (fn [query-result] [:div ...]) ;; or :keyword from config.edn
-   :result-transform (fn [query-result] ...) ;; or :keyword from config.edn
-   :collapsed? true
-  :rules [...]}
-  #+END_EXAMPLE
-  
-  | Name             | Description                      | Default | Optional |
-  |------------------|----------------------------------|---------|----------|
-  | title            | query title, supports hiccup     |         | true     |
-  | query            | datascript query or simple query |         | false    |
-  | inputs           | query inputs                     |         | true     |
-  | view             | fn or keyword      |         | true     |
-  | collapsed?       | whether to collapse the result   | false   | true     |
-  | result-transform | fn or keyword |         | true     |
-  | rules                | list of rules to apply to query | | true |
-- **Query Tips**
-  updated-at:: 1609244703085
-  created-at:: 1609244703085
-  #+BEGIN_TIP
-  1. `?b` and `?p` are special symbols in queries that must be used with blocks and pages.
-  2. Page names are stored as lower case in the database.
-  3. Most simple query operators are available as [rules](https://docs.datomic.com/on-prem/query/query.html#rules) in queries
-  4. Titles can be be hiccups or double-quoted strings. For example, if you want to put custom macros into the query title, you can write something like `"{{poem foo,bar}}"`.
-  #+END_TIP
-- **Query Examples**
+description:: Advanced queries are written with [Datalog](https://en.wikipedia.org/wiki/Datalog) and query the [Datascript](https://github.com/tonsky/datascript) database. [[Learn Datalog Today]] is a great first reference if you're not familiar with Datalog.
+
+- ## Advanced Query Shape
+	- An advanced query looks like this:
+	  updated-at:: 1609246099894
+	  created-at:: 1609244764756
+	  #+BEGIN_EXAMPLE
+	  {:title  [:h2 "Your query title"]
+	   :query  [:find (pull ?b [*])
+	            :where ...]
+	   :inputs [...]
+	   :view (fn [query-result] [:div ...]) ;; or :keyword from config.edn
+	   :result-transform (fn [query-result] ...) ;; or :keyword from config.edn
+	   :collapsed? true
+	  :rules [...]}
+	  #+END_EXAMPLE
+	  
+	  | Name             | Description                      | Default | Optional |
+	  |------------------|----------------------------------|---------|----------|
+	  | title            | query title, supports hiccup     |         | true     |
+	  | query            | datascript query or simple query |         | false    |
+	  | inputs           | query inputs, can be multiple values                     |         | true     |
+	  | view             | fn or keyword      |         | true     |
+	  | collapsed?       | whether to collapse the result   | false   | true     |
+	  | result-transform | fn or keyword |         | true     |
+	  | rules                | list of rules to apply to query | | true |
+	- **Query Tips**
+	  updated-at:: 1609244703085
+	  created-at:: 1609244703085
+	  #+BEGIN_TIP
+	  1. `?b` and `?p` are special symbols in queries that must be used with blocks and pages.
+	  2. Page names are stored as lower case in the database.
+	  3. Most simple query operators are available as [rules](https://docs.datomic.com/on-prem/query/query.html#rules) in queries
+	  4. Titles can be be hiccups or double-quoted strings. For example, if you want to put custom macros into the query title, you can write something like `"{{poem foo,bar}}"`.
+	  #+END_TIP
+	- ### Query Inputs
+	  These are special values for a query's `:inputs` key above
+		- `:today` - today's date for use with rules like `between`. See [example below](((63b70dc8-1d59-4348-9737-e62b17fdabca)))
+		- `:yesterday` - yesterday's date
+		- `:tomorrow` - tomorrow's date
+		- `:Xd-before` - Date for X number of days before today. See [example below](((63b70dc8-1d59-4348-9737-e62b17fdabca)))
+		- `:Xd-after` - Date for X number of days after today.
+		- `:current-page` - Reference to current page block. See [example below](((63b70dc8-58a5-4a43-ae19-28143edb7752)))
+- ## Query Examples
 	- 1. Get all tasks
 	  created_at:: 1609232063516
 	  updated-at:: 1609245970090
@@ -60,7 +64,8 @@
 	           [?b :block/refs ?p]]}
 	  #+END_QUERY
 	  #+END_SRC
-	- 3. Blocks in 7ds with a page reference of datalog
+	- id:: 63b70dc8-1d59-4348-9737-e62b17fdabca
+	  3. Blocks in 7ds with a page reference of datalog
 	  #+BEGIN_SRC clojure
 	  
 	  #+BEGIN_QUERY
@@ -123,7 +128,8 @@
 	           (property ?b :type "programming_lang")]}
 	  #+END_QUERY
 	  #+END_SRC
-	- 8. TODO tasks tagged using current page
+	- id:: 63b70dc8-58a5-4a43-ae19-28143edb7752
+	  8. TODO tasks tagged using current page
 	  #+BEGIN_SRC clojure
 	  
 	  #+BEGIN_QUERY
@@ -132,9 +138,8 @@
 	         :in $ ?current-page
 	         :where
 	         [?p :block/name ?current-page]
-	         [?b :block/marker ?marker]
 	         [?b :block/refs ?p]
-	         [(= "TODO" ?marker)]]
+	         (task ?b #{"TODO"})]
 	   :inputs [:current-page]}
 	  #+END_QUERY
 	  #+END_SRC
@@ -270,5 +275,9 @@
 	  #+END_QUERY
 	  #+END_SRC
 - ## Additional Links
+	- https://max-datom.com/ and https://nextjournal.com/try/learn-xtdb-datalog-today/learn-xtdb-datalog-today are two interactive tutorials.
+	- [Datomic query documentation](https://docs.datomic.com/query.html) - Thorough reference for datomic dialect of Datalog. Explains most datalog concepts well.
+	- [Datascript's intro docs](https://github.com/tonsky/datascript/wiki/Getting-started)
+	- [Logseq's database schema](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/schema.cljs)
 	- https://bgrolleman.gitlab.io/logseq_publish_toolsontech/#/page/logseq%2Fadvanced%20queries - Some useful tips
 	- https://mschmidtkorth.github.io/logseq-msk-docs/#/page/queries%2Fadvanced%20queries - More useful tips
