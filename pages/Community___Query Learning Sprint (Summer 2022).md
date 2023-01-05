@@ -50,7 +50,7 @@ title:: Community/Query Learning Sprint (Summer 2022)
 		- [Official documentation on advanced queries](https://docs.logseq.com/#/page/advanced%20queries)
 		- [LogSeq Advanced Query - Basics & Tips in less than 10 minutes](https://www.youtube.com/watch?v=Iuy5A9LJiVE)
 		- [Logseq's database schema](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/schema.cljs)
-		- [Learn Datalog Today!](http://www.learndatalogtoday.org/)
+		- [[Learn Datalog Today]]
 		- [Intro to Datomic](https://www.youtube.com/watch?v=RKcqYZZ9RDY)
 		  collapsed:: true
 			- {{video https://www.youtube.com/watch?v=RKcqYZZ9RDY}}
