@@ -8,12 +8,19 @@
             [clojure.string :as string]
             [babashka.cli :as cli]
             [goog.string :as gstring]
+            [logseq.graph-parser.util.db :as db-util]
             [logseq.graph-parser.property :as gp-property]
             [logseq.bb-tasks.nbb.cached-db :as cached-db]))
 
-(defn- run-data-query [db {:keys [query result-transform] :as options}]
+(defn- run-data-query [db {:keys [query result-transform inputs] :as options}]
   (let [post-transduce (map first)
-        res (d/q (into query [:in '$ '%]) db (vals rules/query-dsl-rules))]
+        has-inputs? (and (contains? (set query) :in) inputs)
+        res (apply d/q
+              (if has-inputs? query (into query [:in '$ '%]))
+              db
+              (cond-> [(vals rules/query-dsl-rules)]
+                      has-inputs?
+                      (into (map #(db-util/resolve-input db % {}) inputs))))]
     (cond->> (into [] post-transduce res)
              result-transform
              ((fn [x] (eval (list result-transform x))))
@@ -70,6 +77,15 @@
                              (remove #(string/starts-with? (name %) "card-"))
                              sort
                              (map #(hash-map :name %))))}
+   :recent-pages
+   {:query '[:find (pull ?b [*])
+             :in $ % ?start ?end
+             :where
+             [?b :block/name]
+             [?b :block/updated-at ?timestamp]
+             [(>= ?timestamp ?start)]
+             [(<= ?timestamp ?end)]]
+    :inputs [:3d-before-ms :end-of-today-ms]}
    :tasks
    {:query '[:find (pull ?b [* {:block/page [:block/original-name]}])
              :where

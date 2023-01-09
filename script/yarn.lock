@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@logseq/nbb-logseq@^0.7.135":
-  version "0.7.135"
-  resolved "https://registry.yarnpkg.com/@logseq/nbb-logseq/-/nbb-logseq-0.7.135.tgz#6a4ad46b09c26f5f2732926195959902a4beadb1"
-  integrity sha512-5rhBI5BrQfcCEwnputM/IwbhAJktiyJhk88xntpJBOvjNwqKQUoRRxpd5RYk3bIroWmblh8/pgRYZCAPrZkb6g==
+"@logseq/nbb-logseq@^1.1.157":
+  version "1.1.157"
+  resolved "https://registry.yarnpkg.com/@logseq/nbb-logseq/-/nbb-logseq-1.1.157.tgz#337be95156e5b22caf5533663ae8a5a79cc43fbd"
+  integrity sha512-cuutsKZDdg850qa6HquOTKKZ9WpWUjSozRdrfvI/2WIbAv2MVQKPQYtB03K55OW9i3D1K0jAwDM0xzGI2lWyFQ==
   dependencies:
     import-meta-resolve "^2.1.0"
 

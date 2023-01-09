@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@logseq/nbb-logseq": "^0.7.135",
+    "@logseq/nbb-logseq": "^1.1.157",
     "mldoc": "^1.5.0"
   },
   "license": "MIT"
