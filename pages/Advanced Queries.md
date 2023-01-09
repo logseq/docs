@@ -1,5 +1,9 @@
 description:: Advanced queries are written with [Datalog](https://en.wikipedia.org/wiki/Datalog) and query the [Datascript](https://github.com/tonsky/datascript) database. [[Learn Datalog Today]] is a great first reference if you're not familiar with Datalog.
 
+- ## Intro
+	- #+BEGIN_NOTE
+	   If this is your first time looking at an advanced query, first skim our [beginner user resources](((63bc6201-53b1-47a4-834f-83934b69ad49))). Several resources are listed so look ones for that fit your learning style.
+	  #+END_NOTE
 - ## Advanced Query Shape
 	- An advanced query looks like this:
 	  updated-at:: 1609246099894
@@ -296,9 +300,16 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	  #+END_QUERY
 	  #+END_SRC
 - ## Additional Links
-	- https://max-datom.com/ and https://nextjournal.com/try/learn-xtdb-datalog-today/learn-xtdb-datalog-today are two interactive tutorials.
-	- [Datomic query documentation](https://docs.datomic.com/query.html) - Thorough reference for datomic dialect of Datalog. Explains most datalog concepts well.
-	- [Datascript's intro docs](https://github.com/tonsky/datascript/wiki/Getting-started)
-	- [Logseq's database schema](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/schema.cljs)
-	- https://bgrolleman.gitlab.io/logseq_publish_toolsontech/#/page/logseq%2Fadvanced%20queries - Some useful tips
-	- https://mschmidtkorth.github.io/logseq-msk-docs/#/page/queries%2Fadvanced%20queries - More useful tips
+	- For beginner users
+	  id:: 63bc6201-53b1-47a4-834f-83934b69ad49
+		- https://qwxlea.github.io/#/page/datalog%2Fintro%20to%20datalog - Beginner friendly intro to datalog
+		- [[Learn Datalog Today]] - User-friendly, interactive datalog tutorial
+		- https://mschmidtkorth.github.io/logseq-msk-docs/#/page/queries%2Fadvanced%20queries%2Ftutorial - Advanced query line by line explanations
+		- https://max-datom.com/ - fun, interactive datalog tutorial
+		- https://bgrolleman.gitlab.io/logseq_publish_toolsontech/#/page/logseq%2Fadvanced%20queries - Some useful tips on advanced queries
+		- https://mschmidtkorth.github.io/logseq-msk-docs/#/page/queries%2Fadvanced%20queries - More useful tips on advanced queries
+	- For advanced users a.k.a. engineers
+		- [Datomic query documentation](https://docs.datomic.com/query.html) - Thorough reference for datomic dialect of Datalog. Explains most datalog concepts well
+		- https://nextjournal.com/try/learn-xtdb-datalog-today/learn-xtdb-datalog-today - Interactive datalog tutorial for engineers
+		- [Datascript's intro docs](https://github.com/tonsky/datascript/wiki/Getting-started)
+		- [Logseq's database schema](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/schema.cljs)

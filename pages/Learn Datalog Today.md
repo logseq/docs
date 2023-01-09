@@ -1,4 +1,5 @@
-description:: This page is a static version of http://www.learndatalogtoday.org/ which used to be an online, interactive tutorial.
+url:: https://www.learndatalogtoday.org/
+description:: This page is a static version of https://www.learndatalogtoday.org/ in case this site goes down again.
 
 - ## Intro
 	- #+BEGIN_QUOTE
