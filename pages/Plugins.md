@@ -12,4 +12,4 @@ platform:: [[Desktop]]
 - ## Additional Links
 	- https://plugins-doc.logseq.com/ - Plugin developers homepage
 	- [[Plugins 101]] - Intro tutorials for plugin developers
-	- https://logseqweekly.com/plugins/ - Unofficial list of plugins
+	- https://xyhp915.github.io/logseq-marketplace-table/ - Full list of plugins and themes
