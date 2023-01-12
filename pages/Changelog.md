@@ -1,3 +1,55 @@
+- ## Beta 0.8.16 [[Jan 12th, 2023]]
+  id:: 63c01211-e5cd-4bb5-80dd-a33cae5730f3
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.16
+	- [[Features]]
+		- PDF highlight drag & drop [#8103](https://github.com/logseq/logseq/pull/8103)
+	- [[Thanks]]
+		- [[Darwis]]
+			- New query inputs for advanced query
+		- [[Yue Yang]]
+			- Center content in search items
+		- [[Giuseppe D'Andrea]]
+			- Fix Header navigation of namespace pages in page preview popup
+		- [[ksqsf]]
+			- Prevent Ctrl+A from selecting the whole document
+		- [[Sergio Miguéns]]
+			- Add a new option to show full blocks in references
+		- [[Phoenix Eliot]]
+			- Refine undo/redo button icons
+			- Add note about auto-formatting in `dev-practices.md`
+		- [[sallto]]
+			- Remove non-clickable space between links in sidebar
+		- [[situ2001]]
+			- Document components related to hide page-preview itself when hovered hierarchy ref in the preview
+			- Add a new bug report page
+			- Fix: should update `:block/namespace` while renaming pages
+			- Fix e2e test cases
+		- [[Taylor Hoffmann]]
+	- [[Fixed issues]]
+		- Capture open-url failure [#8219](https://github.com/logseq/logseq/pull/8219)
+		- Query table not showing full property values and publishing failing on query tables [#8301](https://github.com/logseq/logseq/pull/8301)
+		- Save code block shouldn't reset cursor position [#8177](https://github.com/logseq/logseq/pull/8177)
+		- Graph name with period didn't parse correctly, causing wrong block URLs [#8294](https://github.com/logseq/logseq/pull/8294)
+		- Should update `:block/namespace` while renaming page [#8266](https://github.com/logseq/logseq/pull/8266)
+		- Wrong behavior when backspace with line-head text selection [#8197](https://github.com/logseq/logseq/pull/8197)
+		- File deletion handling in Logseq Sync; Should trigger remote->local sync when idle [#8277](https://github.com/logseq/logseq/pull/8277) [#8241](https://github.com/logseq/logseq/pull/8241)
+		- Should not stop syncing when Android App entering background [#8246](https://github.com/logseq/logseq/pull/8246)
+		- Header navigation of namespace pages in page preview popup [#6405](https://github.com/logseq/logseq/pull/6405)
+		- Remove non clickable space between links in sidebar [#8268](https://github.com/logseq/logseq/pull/8268)
+	- [[Enhancement]]
+		- Bug report page, adding clipboard data inspector [#8317](https://github.com/logseq/logseq/pull/8317)
+		- Check app awake from sleep [#8291](https://github.com/logseq/logseq/pull/8291)
+		- New query inputs for advanced query [#5674](https://github.com/logseq/logseq/pull/5674)
+		- Add a new option `:ui/show-full-blocks?` to show full blocks in references [#8124](https://github.com/logseq/logseq/pull/8124)
+		- Prevent Ctrl+A from selecting the whole document [#7177](https://github.com/logseq/logseq/pull/7177)
+		- Refine undo/redo button icons [#8201](https://github.com/logseq/logseq/pull/8201)
+		- Make the weblink PDF filename to be human-readable for the annotations page [#8240](https://github.com/logseq/logseq/pull/8240)
+		- Plugin API: filter hooks of DB block changes for performance [#8234](https://github.com/logseq/logseq/pull/8234)
+		- No need to pass `isPageBlock` for api/insert_block API [#8176](https://github.com/logseq/logseq/pull/8176)
+		- Remove warning of macro renderer slot for mobile [#8220](https://github.com/logseq/logseq/pull/8220)
+		- Add delete option for blocks context menu [#8204](https://github.com/logseq/logseq/pull/8204)
+		- Center content in search items [#8179](https://github.com/logseq/logseq/pull/8179)
+		- I18n: pt-BR, pt-PT, fr and tr [#8247](https://github.com/logseq/logseq/pull/8247)
 - [[Dec 29th, 2022]]
   Beta 0.8.15
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.15
