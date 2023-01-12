@@ -39,7 +39,7 @@
 	- [[Enhancement]]
 		- Bug report page, adding clipboard data inspector [#8317](https://github.com/logseq/logseq/pull/8317)
 		- Check app awake from sleep [#8291](https://github.com/logseq/logseq/pull/8291)
-		- New query inputs for advanced query [#5674](https://github.com/logseq/logseq/pull/5674)
+		- New query inputs for advanced query [#5674](https://github.com/logseq/logseq/pull/5674) [Document: Query Inputs](https://docs.logseq.com/#/page/advanced%20queries/block/query%20inputs)
 		- Add a new option `:ui/show-full-blocks?` to show full blocks in references [#8124](https://github.com/logseq/logseq/pull/8124)
 		- Prevent Ctrl+A from selecting the whole document [#7177](https://github.com/logseq/logseq/pull/7177)
 		- Refine undo/redo button icons [#8201](https://github.com/logseq/logseq/pull/8201)
