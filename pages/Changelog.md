@@ -25,6 +25,7 @@
 			- Fix: should update `:block/namespace` while renaming pages
 			- Fix e2e test cases
 		- [[Taylor Hoffmann]]
+			- I18n updates
 	- [[Fixed issues]]
 		- Capture open-url failure [#8219](https://github.com/logseq/logseq/pull/8219)
 		- Query table not showing full property values and publishing failing on query tables [#8301](https://github.com/logseq/logseq/pull/8301)
