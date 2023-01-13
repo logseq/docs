@@ -56,4 +56,4 @@
 	- Ask questions and discuss on Discord: https://discord.com/channels/725182569297215569/752845167030960141
 	- The plugin architecture:
 	  https://whimsical.com/logseq-plugins-draft-wip-B2iSbFBuWx1S4E4CkJed9y
-	- Read the Plugin API documentation: TODO
+	- Read the Plugin API documentation: https://plugins-doc.logseq.com/
