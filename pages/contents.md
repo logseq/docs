@@ -41,6 +41,7 @@
 	- [[Custom theme]]
 	- [[Zotero]] integration
 	- [[Embed Media - Audio, Photos, Videos]]
+	- [[Plugins]]
 - [[Logseq School]]
 	- {{embed [[Plugins 101]] }}
 - [[Document syntax]]
@@ -61,6 +62,7 @@
 	- Make a [Feature Request](https://discuss.logseq.com/)
 	- [Check us out on Github](https://github.com/logseq/logseq)
 	- [Contribute to Our Docs](https://github.com/logseq/docs)
+	- Create a plugin - [[Plugins 101]]
 - 💬
 	- Message us on [Discord](https://discord.gg/KpN4eHY) (We love feedback!)
 	- Ask questions in the [forum](https://discuss.logseq.com)
