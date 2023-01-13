@@ -1,4 +1,4 @@
-- If a block reference is a window to another part of your database, a block embed is a portal. Embeds allow you to edit the source directly, which comes in handy when building dashboards and pulling difference parts of your graph together.
+- If a block reference is a window to another part of your database, a block embed is a portal. Embeds allow you to edit the source directly, which comes in handy when building dashboards and pulling different parts of your graph together.
 - When [referencing a block]([[The basics of block references]]), you always reference a single block:
 	- ![block-ref-parent-a.png](../assets/block-ref-parent-a_1642513020954_0.png)
 - Embeds always show the complete context; the child blocks of the embedded block, and all of _their_ child blocks:
