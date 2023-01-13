@@ -3,6 +3,8 @@ Official documentation for the note-taking app [Logseq](https://logseq.com/#/).
 
 ## Contributing
 
+Thank you! Looking for something to contribute on documents? There's a [Project Board](https://github.com/orgs/logseq/projects/5/views/1?filterQuery=label%3Adocumentation)
+
 To contribute you will want to see how your changes look locally. In order to do this you should:
 
 1. Ensure you have [git](https://git-scm.com/downloads) installed.
