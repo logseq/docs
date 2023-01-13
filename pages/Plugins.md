@@ -10,6 +10,5 @@ platform:: [[Desktop]]
 	- Each plugin has its own settings which are accessible from the gear icon.
 	- Themes are distributed as plugins and are a type of plugin.
 - ## Additional Links
-	- https://plugins-doc.logseq.com/ - Plugin developers homepage
-	- [[Plugins 101]] - Intro tutorials for plugin developers
+	- [[Plugins 101]] - Resources for plugin developers
 	- https://xyhp915.github.io/logseq-marketplace-table/ - Full list of plugins and themes
