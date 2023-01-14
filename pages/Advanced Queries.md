@@ -294,9 +294,21 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	  #+BEGIN_QUERY
 	  {:title "Get children blocks of current query block"
 	   :inputs [:current-block]
-	   :query '[:find (pull ?b [*])
+	   :query  [:find (pull ?b [*])
 	            :in $ ?current-block
 	            :where [?b :block/parent ?current-block]]}
+	  #+END_QUERY
+	  #+END_SRC
+	- 19. Aggregate query
+	  #+BEGIN_SRC clojure
+	  #+BEGIN_QUERY
+	  {:title "Count number of blocks in the current page"
+	   :query [:find (count ?b)
+	           :in $ ?current-page
+	           :where
+	           [?p :block/name ?current-page]
+	           [?b :block/page ?p]]
+	   :inputs [:current-page]}
 	  #+END_QUERY
 	  #+END_SRC
 - ## Additional Links
