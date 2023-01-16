@@ -1,14 +1,17 @@
 type:: [[Feature]]
-platform:: [[All Platforms]] except [[Web]]
-description:: Provides encrypted synchronization of graphs between devices.
+platform:: [[All Platforms]] except [[Web]] and [[Publish Web]] 
+description:: Paid feature that provides encrypted synchronization of graphs between devices.
 
 - #+BEGIN_NOTE
   This feature is in BETA.
   #+END_NOTE
 - ## Usage
 	- See [this tutorial](https://blog.logseq.com/how-to-setup-and-use-logseq-sync/) for setting up and using sync.
+	- It's currently available for all *active* Open Collective contributors ($5 or $15 per month).
 	- **Do not** use this feature with any other third party sync service like iCloud, Syncthing, or Dropbox.
+	- If you experience issues, check [This FAQ](https://discuss.logseq.com/t/im-using-logseq-sync-what-should-i-do-if-i-am-experiencing-sync-issues/13599). If the FAQ doesn't help, feel free to ping the team for attention on the [`beta-sync` channel](https://discord.com/channels/725182569297215569/1013467386130747522) of [Discord](https://discord.gg/KpN4eHY).
 - ## Functionality
+	- Syncs up to 10 graphs between Logseq Desktop, Android, and iOS.
 	- Syncing is a choice that is made per graph and thus allows for some graphs to be local only.
 	- Each graph is encrypted with a password.
 	- Sync automatically happens in the background. Click on the cloud icon and the `Sync now` button to force a sync.
