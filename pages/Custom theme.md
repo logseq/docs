@@ -6,7 +6,7 @@ platform:: [[All Platforms]] but some ways are not supported for [[Publish Web]]
 		- 1. Load a theme from the [[Marketplace]].
 			- Click on top-right dot menu dropdown
 			- Open Plugins tab
-			- Click on [[Marketplace]] and the [[theme]]s tab 
+			- Click on the `Marketplace` tab and the `Themes` sub-tab
 			- Install one
 			- Themes rely on [[Plugins]] and thus will not work anywhere except where they are supported.
 		- 2. Edit the [[custom.css]] file (aka. make your own theme)
