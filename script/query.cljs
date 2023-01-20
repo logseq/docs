@@ -85,7 +85,7 @@
              [?b :block/updated-at ?timestamp]
              [(>= ?timestamp ?start)]
              [(<= ?timestamp ?end)]]
-    :inputs [:3d-before-ms :end-of-today-ms]}
+    :inputs [:-1w-ms :end-of-today-ms]}
    :tasks
    {:query '[:find (pull ?b [* {:block/page [:block/original-name]}])
              :where
