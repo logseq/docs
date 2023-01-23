@@ -69,7 +69,7 @@
 - |Name|Value|Description|
   |--|--|--|
   |`PI`|3.14159265358979323846|the ratio of a circle's circumference to its diameter|
-  |`E`|2.71828182845904523536|the base of the natural logarithm `ln` (sometimes calle *Euler's number*)|
+  |`E`|2.71828182845904523536|the base of the natural logarithm `ln` (sometimes call *Euler's number*)|
 - ## Number bases
 - Numbers may be entered in different number bases by prefixing the number as follows.
 - |Base|Prefix|Example|

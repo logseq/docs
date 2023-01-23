@@ -17,7 +17,7 @@
 - Further steps you may need:
 	- Since Logseq is using `-` unordered list for bullets, `-` will not work as a list item anymore, replace `-` with `*` or `+` if you need it. The converter doesn't convert it automatically because it might break your contents.
 - Other noticeable changes:
-	- Old syntax of adding property for Markdown is no longer recommanded
+	- Old syntax of adding property for Markdown is no longer recommended
 	  ``` Markdown
 	  ---
 	  key: value
