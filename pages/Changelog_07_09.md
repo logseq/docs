@@ -514,7 +514,7 @@
 				- ![2021-07-22 22.28.02.gif](../assets/2021-07-22_22.28.02_1626964258528_0.gif)
 				- You can use `/cards` to create specific collections instead of all of the cards
 					- ![2021-07-22 22.36.17.gif](../assets/2021-07-22_22.36.17_1626964656345_0.gif)
-			- {{embed [[Cards]]}}
+			- {{embed [[Flashcards]]}}
 	- [[Thanks]]
 		- [[Peng Xiao]]
 			- Fix cursor state sometimes not cleared correctly

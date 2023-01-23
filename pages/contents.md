@@ -34,7 +34,7 @@
 	- [Block properties]([[term/properties]])
 	- [[Publishing]]
 	- [[PDF highlights]]
-	- SRS [[Cards]]
+	- [[Flashcards]]
 	- [[Draw]]
 	- [[Slide]]
 	- [[Calculator]]

@@ -1,6 +1,5 @@
 type:: [[Feature]]
 platform:: [[All Platforms]]
-alias: flashcards, flashcard, card
 
 ## What's "card"?
 collapsed:: true
@@ -31,7 +30,7 @@ collapsed:: true
 		- ![2021-07-22 21.53.38.gif](../assets/2021-07-22_21.53.38_1626962063719_0.gif){:height 538, :width 485}
 ## I've created several cards, how can I review all of my cards?
 collapsed:: true
-	- Click the "Flashcards" tab on the left.
+	- Click the "Flashcards" tab on the [[Left sidebar]].
 ## Can I review parts of my cards instead of all of them? For example, only those cards related to Logseq?
 collapsed:: true
 	- Yes, you can use `/cards` and [[Queries]].
@@ -48,6 +47,6 @@ collapsed:: true
 - [[Resources]]
 	- [Augmenting Long-term Memory](http://augmentingcognition.com/ltm.html)
 	- [SM5](https://www.supermemo.com/en/archives1990-2015/english/ol/sm5) by supermemo
-- TODO 
-	- Organize this page. Maybe split out tutorial. Add Tienson's latest functionality #docs
+- TODO Organize this page #docs
+	- Maybe split out tutorial. Add Tienson's latest functionality
 	- srs.edn

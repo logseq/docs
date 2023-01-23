@@ -11,7 +11,7 @@ title: Tips and Tricks
   card-last-reviewed:: 2021-10-11T12:21:18.188Z
   card-last-score:: 5
 	- `snake_case_text` will be displayed as snake_case_text by default, to display it as `snake_case_text`, you can escape some string using `\`, for example `snake\_case\_text` will be displayed as snake\_case\_text.
-- **How to review a page instead of a block using SRS [[Cards]] ?** #card
+- **How to review a page instead of a block using SRS [[Flashcards]] ?** #card
   card-last-interval:: 4.14
   card-repeats:: 1
   card-ease-factor:: 2.6
