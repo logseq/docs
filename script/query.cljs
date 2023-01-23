@@ -73,7 +73,7 @@
                                  x
                                  (gp-property/hidden-built-in-properties)
                                  (gp-property/editable-built-in-properties))))
-                             ;; remove extended proeprties that can't be accessed in scripts
+                             ;; remove extended properties that can't be accessed in scripts
                              (remove #(string/starts-with? (name %) "card-"))
                              sort
                              (map #(hash-map :name %))))}

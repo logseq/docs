@@ -8,7 +8,7 @@
 	- Afrikaans
 	- Spanish
 	- Norwegian
-	- Portugese
+	- Portuguese
 	- Russian
 - Related:
 	- [[Internationalization]]
