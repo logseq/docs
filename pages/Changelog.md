@@ -94,7 +94,7 @@
 - [[Dec 19th, 2022]]
   Beta 0.8.13
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.13
-	- [[Feature]]
+	- [[Features]]
 		- Logseq Whiteboards now become a Beta Feature
 	- [[Enhancement]]
 		- Open the keyboard shortcuts helping page on the right side panel [#7550](https://github.com/logseq/logseq/pull/7550)

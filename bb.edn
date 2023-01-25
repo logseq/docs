@@ -14,5 +14,10 @@
    :depends [-ensure-latest-cached-db]
    :task (apply shell {:dir "script"} "yarn -s nbb-logseq query.cljs" *command-line-args*)}
 
+  write-rdf
+  {:doc "Run a pre-defined query"
+   :depends [-ensure-latest-cached-db]
+   :task (apply shell {:dir "script"} "yarn -s nbb-logseq write_rdf.cljs" *command-line-args*)}
+
   -ensure-latest-cached-db
   logseq.bb-tasks.nbb.cached-db/ensure-latest-cached-db}}
