@@ -6,7 +6,7 @@ the subset of a graph that is exported to rdf are:
 - class pages with properties 'type:: [[Class]]'
 - property pages with properties 'type:: [[Property]]'
 - class instance pages with properties 'type:: [[X]]' where X are pages with
-  'type:: [[Property]]'
+  'type:: [[Class]]'
 
 All of the above pages can be customized with query config options."
   (:require ["n3" :refer [DataFactory Writer]]
@@ -56,7 +56,7 @@ All of the above pages can be customized with query config options."
      (page-property ?b :type "Property")]
    ;; Optional:: Query to fetch all pages that are instances of classes.
    ;; Defaults to pages with "type:: [[X]]" where X are pages with
-   ;; "type:: [[Property]]"
+   ;; "type:: [[Class]]"
    :class-instances-query
    '[:find (pull ?b2 [*])
      :in $ %
