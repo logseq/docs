@@ -67,12 +67,14 @@ All of the above pages can be customized with query config options."
 
 (defn- propertify
   [result]
-  (map #(assoc (:block/properties %)
-               :block/original-name (:block/original-name %))
+  (map #(-> (:block/properties %)
+            (dissoc :title)
+            (assoc :block/original-name
+                   (or (get-in % [:block/properties :title]) (:block/original-name %))))
        result))
 
 (defn- page-url [page-name config]
-  (str (:base-url config) (js/encodeURI page-name)))
+  (str (:base-url config) (js/encodeURIComponent page-name)))
 
 (defn- triplify
   "Turns an entity map into a coll of triples"
@@ -86,8 +88,7 @@ All of the above pages can be customized with query config options."
           (let [v (m prop)]
             ;; If a collection, they are refs/pages
             (if (coll? v) (map #(page-url % config) v) [v]))))
-   ;; Consider mapping alias and title map to rdf properties sometime
-   (keys (dissoc m :block/original-name :alias :title))))
+   (keys m)))
 
 (defn- add-classes [db config property-map]
   (->> (d/q (:class-query config)
@@ -128,8 +129,11 @@ All of the above pages can be customized with query config options."
                              (vals rules/query-dsl-rules))
                         (map first)
                         propertify)
-        property-map (into {} (map (juxt (comp keyword :block/original-name) identity)
-                                   properties))]
+        built-in-properties {:block/original-name {:url "https://schema.org/name"}
+                             :alias {:url "https://schema.org/sameAs"}}
+        property-map (into built-in-properties
+                           (map (juxt (comp keyword :block/original-name) identity)
+                                properties))]
 
     (concat
      (add-additional-pages db config property-map)
