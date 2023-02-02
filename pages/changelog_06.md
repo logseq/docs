@@ -739,7 +739,7 @@
 		- 2. Added `page` query.
 		  For example: (page "Page Alias"):
 		  {{query (page "Page Alias")}}
-		- [main.js](/assets/pages_changelog_1611805815460_0.js)
+		- main.js
 		-
 	- [[Enhancement]]
 		- 1. **Much stable Undo && Redo**
