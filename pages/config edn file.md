@@ -11,6 +11,7 @@ description:: Local config file, `logseq/config.edn`, is the main configuration 
 	- See the [config.edn template](https://github.com/logseq/logseq/blob/master/templates/config.edn) for documentation on all config options.
 	- See [[Basic settings]] for config options that have a UI.
 	- This file can be edited outside Logseq and the effects will take place in a few seconds.
+	- Config options are validated when a user saves the file. Errors are displayed for invalid config options.
 	- ### Specific config options:
 		- `:editor/extra-codemirror-options` (map) - These can be any of the options [documented here](https://codemirror.net/doc/manual.html#config)
 		  collapsed:: true
@@ -37,7 +38,7 @@ description:: Local config file, `logseq/config.edn`, is the main configuration 
 			   :query/result-transforms
 			   {:sort-by-priority
 			    (fn [result] (sort-by (fn [h] (get h :block/priority "Z")) result))}
-
+			  
 			  ;; In an advanced query
 			  {:query ...
 			   :result-transform :sort-by-priority}
