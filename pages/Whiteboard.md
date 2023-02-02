@@ -31,8 +31,7 @@ alias:: Whiteboards
 			- After triggering the Search window with `Cmd + k`, you can start typing a whiteboard name. Next, select the second entry from the top starting with `New whiteboard: `. This creates a new whiteboard canvas with the typed input as the title.
 			  collapsed:: true
 				- ![CleanShot 2022-09-22 at 14.03.19.gif](../assets/CleanShot_2022-09-22_at_14.03.19_1663848305202_0.gif)
-	- Once you've created a whiteboard, you get an empty canvas. These are some of the things you can do:
-	  collapsed:: true
+	- Once you've created a whiteboard, you get an empty [[Whiteboard/Canvas]]. These are some of the things you can do:
 		- You can give your Whiteboard a [[Title]] by clicking in the input field in the top left corner.
 		  collapsed:: true
 			- ![CleanShot 2022-09-22 at 14.24.18.gif](../assets/CleanShot_2022-09-22_at_14.24.18_1663849476516_0.gif)
@@ -96,11 +95,13 @@ alias:: Whiteboards
 		- When you create your first Whiteboard, a new folder titled `whiteboards` is added to your graph folder. All the whiteboards you create are saved in the `whiteboards` folder as `.edn` files. While there are other ways to [delete whiteboards]([[Whiteboard/Deletion]]), you can also directly delete them from your file system by removing the respective `.edn` files.
 			- ![CleanShot 2022-09-22 at 17.30.29@2x.png](../assets/CleanShot_2022-09-22_at_17.30.29@2x_1663860644176_0.png)
 		- Whiteboards are a special type of page. You can find them in-app in the [Whiteboards dashboard]([[Whiteboard/Dashboard]]) and [[All pages]] overview.
+	- A Whiteboard has a [[Whiteboard/Canvas]]. On that canvas, you can create any of the objects (shapes) in [[Whiteboard/Object]].
 	- Currently, there's limited support for [[Whiteboard embeds]]. We plan to expand this functionality in later versions of [[Whiteboards]].
 	  collapsed:: true
 		- When referencing a [[Whiteboard]] in the outliner by its [[Title]], you will see a Whiteboard icon show up at the front of the link. Hovering that link shows you an abstracted preview of the whiteboard.
 			- ![CleanShot 2022-09-22 at 17.44.08.gif](../assets/CleanShot_2022-09-22_at_17.44.08_1663861685052_0.gif)
 		- Once you do a [[Page embed]] of a [[Whiteboard]], you will see the abstracted preview of the whiteboard canvas directly in the block.
 			- ![CleanShot 2022-09-22 at 17.49.27.gif](../assets/CleanShot_2022-09-22_at_17.49.27_1663861815781_0.gif)
+	-
 - # Background
 	- What makes Logseq's [[Whiteboards]] unique is the combination of the Outliner with a spatial canvas. Thanks to [[Logseq Portals]], you will be able to visually group and link different blocks and pages from your knowledge base as well as external media types (YouTube, Images, Websites) and simple shapes. This allows visual thinkers to compose, remix, annotate and relate contents from their knowledge base as well as emerging thoughts in a new way.
