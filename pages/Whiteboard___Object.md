@@ -1,3 +1,4 @@
+alias:: Whiteboard object
 type:: [[UI Element]]
 
 - description:
@@ -66,13 +67,13 @@ type:: [[UI Element]]
 			- supports:
 				- ((6380d3d9-1725-4968-a19a-2f28eae7f16e))
 				- ((6380d3d2-ce11-4dbd-9765-b302a07932c2))
-		- YouTube
+		- [[YouTube]]
 		  collapsed:: true
 			- supports:
 				- ((6380d3b8-4f9b-46ba-8066-74aae563e3e6))
 				- ((6380d3d9-1725-4968-a19a-2f28eae7f16e))
 				- ((6380d3d2-ce11-4dbd-9765-b302a07932c2))
-		- Tweet
+		- [[Tweet]]
 		  collapsed:: true
 			- supports:
 				- ((6380d3b8-4f9b-46ba-8066-74aae563e3e6))

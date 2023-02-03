@@ -9,7 +9,7 @@ description:: Quickly add a [[Logseq Portal]] to the [[Canvas]]. It allows you t
 ## Functionality
 	- You can filter the search only by [[Blocks]] or [[Pages]]:
 		- ![Quick Add-3.mp4](../assets/Quick_Add-3_1669395068514_0.mp4)
-	- If you like to take it a little slower you can open the [[Quick Add]] popover by selecting it via [[Toolbar/Logseq Portal]]:
+	- If you like to take it a little slower you can open the [[Quick Add]] popover by selecting it via [[Whiteboard/Tool/Portal]]:
 		- ![Quick Add-2.mp4](../assets/Quick_Add-2_1669394848543_0.mp4)
 ## Additional Links
 	- [[Logseq Portal]]
