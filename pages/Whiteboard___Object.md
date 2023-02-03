@@ -1,5 +1,5 @@
 alias:: Whiteboard object
-type:: [[UI Element]]
+type:: [[Class]]
 
 - description:
 	- an element that can be placed on the [[Whiteboard/Canvas]]
