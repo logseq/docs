@@ -2,9 +2,9 @@
   created_at:: 1609230242742
   updated-at:: 1609247076654
   title:: Queries
-	- Queries are for asking questions from your knowledge base and the outside world (in the coming weeks).
+	- Queries are for asking questions from your knowledge base and the outside world (in the future).
 	  updated-at:: 1609231528688
-	  created_at:: 1609230243642
+	  created-at:: 1609230243642
 	  [:div [:img {:src "https://cdn.logseq.com/%2F5ff0a01d-47d4-487d-b346-4a43ded21ad02020_12_29_photo-1444703686981-a3abbc4d4fe3.jpeg?Expires=4762830816&Signature=h~yT-Tq1VtBtEm09Z78eT5kkEbQGUVG-VBEDuGLgykW8vb~AkZNuoRNmwL-fcHgnG8HdYBhqXeJowN9q3my4UN1bxiJtAXl0dAEjmWAqpbedH9PPdyz2tZXcuPxwdk5wICFLrB~0VWMwV02LFZEKkgPYGhkUU8oakBphifgvTdYPKLQG95FTJh9kg7GhV5ZCc1Q3JrOlLGG2fuUObf1opScwbNbEdsQStO8Ou12AaTPccAmpxAJVuut-jZ9pRvdsa00X962QD9c67BEw1SfhKEcChNIbdp~44ltuRj1Bvc1Bs2ezKupQ1sWFD5BG97UEA7GuOyANjPC331ShW8aHSQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA"}]]
 	  [:div.text-sm "By " [:a {:href "https://unsplash.com/photos/oMpAz-DN-9I" :target "_blank"} "Greg Rakozy"]]
 - **How to write queries?**
@@ -71,10 +71,10 @@
 	- **Page**
 	  Examples: [[questions]]
 	  {{query (page "term/alias")}}
-	- **property** [[Block properties]]
+	- **property** [[Properties]]
 	  updated-at:: 1609247365218
-	  created-at:: 1609237428110
 	  id:: 634f6c68-28b3-46c4-85a3-4d1e951194d8
+	  created-at:: 1609237428110
 		- This filter matches against any pages or tags in a property value. For the example `type:: [[book]]`, `(property type book)` would match. For the example `description:: I liked this #book and #movie`, `(property description book)` or `(property description movie)` would match. However, `(property description liked)` would not match as "liked" is not a page or tag.
 		- Example:
 			- {{query (property type book)}}

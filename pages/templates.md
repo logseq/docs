@@ -19,7 +19,7 @@ platform:: [[All Platforms]] except [[Publish Web]]
 - There're two ways to make above block and its children as template:
 	- 1. You can right click the block dot and click "Make template" to give it a name:
 	  ![template.gif](../assets/template_1621928689810_0.gif)
-	- 2. Or you can add [[term/properties]] of `template` with its name directly:
+	- 2. Or you can add [[Properties]] of `template` with its name directly:
 	  ![template2.gif](../assets/template2_1621928922947_0.gif)
 - To use the template, simply type `/Template` command and choose the name of template:
   collapsed:: true
@@ -27,7 +27,7 @@ platform:: [[All Platforms]] except [[Publish Web]]
 - other resources to learn how to template:
   collapsed:: true
 	- [[Cobblebot]] contributed this wonderful [tutorial from forum](https://discuss.logseq.com/t/templates-how-to-create-edit-and-insert/200)
-	- this great video from [[OneStutteringMind]] also shows how to use templates (note the property syntax in this video is no longer used, check [[term/properties]] for latest syntax)
+	- this great video from [[OneStutteringMind]] also shows how to use templates (note the property syntax in this video is no longer used, check [[Properties]] for latest syntax)
 	  {{youtube https://www.youtube.com/watch?v=l4keRsRFnuc}}
 - [[Dynamic Variables]] support
   id:: 60311eda-b6f7-4779-8187-8830545b3a64

@@ -31,7 +31,7 @@
 	- [[Advanced commands]]
 	- [[Templates]]
 	- [Page alias]([[term/alias]])
-	- [Block properties]([[term/properties]])
+	- [[Properties]]
 	- [[Publishing]]
 	- [[PDF highlights]]
 	- [[Flashcards]]

@@ -2,7 +2,7 @@ type:: [[Feature]]
 platform:: [[All Platforms]]
 
 - ## Usage
-	- Search for pages and full text search for blocks is available by clicking on the search bar at the top or press `Cmd-k`.
+	- Search pages and full text search blocks by clicking on the search bar at the top or press `Cmd-k`.
 	- To search blocks within a page, run the command `Search in the current page` or press `Cmd-shift-k`.
 	- Pages can also be created from search by typing a new unique string and pressing `Enter`.
 - ## Functionality

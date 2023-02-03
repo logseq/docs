@@ -50,7 +50,7 @@ id:: 60a78b6b-a0ff-49fe-822f-87216fbf79ff
 		- syntax: `{{embed ((block-uuid))}}`
 		- It will embed whole block content into current editing block.
 		  id:: 60a78b6b-70c6-4209-bb26-045395458a04
-	- [[term/properties]]
+	- [[Properties]]
 		- syntax: `property:: value`
 		  id:: 60ab6f5b-4bdc-4ef0-a0f8-6cad9dcad2b2
 		- some examples
@@ -59,7 +59,7 @@ id:: 60a78b6b-a0ff-49fe-822f-87216fbf79ff
 				- [:code "template:: template-name"]
 				- [:code "template-including-parent:: false"]
 				- {{embed ((60a790f8-d187-499a-b2e2-73bf137356dd))}}
-		- see also: [[Block properties]]
+		- see also: [[Properties]]
 	- [[term/page link with label]]
 		- syntax: `[display text]([[page name]])`
 		  id:: 60ab6d72-e70c-4eb4-a60a-3802f12874c4

@@ -1,10 +1,11 @@
 type:: [[Feature]]
 description:: Built in integration that helps import your Zotero items as pages seamlessly. [Zotero](https://www.zotero.org/) is a free, easy-to-use tool to help you collect, organize, cite, and share research.
+platform:: [[All Platforms]] except [[Publish Web]]
 
-- TODO Fill in platform for this feature #docs
 - ## Usage
 	- You can either type `/Zotero` command, search individual zotero item (title, author, text, anything), select and add as a Logseq page.
 	   id:: 6103e488-22d4-4751-b27a-69b278067c26
+	  collapsed:: true
 	  ![zotero-search.gif](../assets/zotero-search_1627554650388_0.gif)
 	- Or if you wish to import and create all pages at once, goto `Zotero settings`, and click `Add all` to import all Zotero items and add them as Logseq pages
 	  collapsed:: true

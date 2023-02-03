@@ -1,5 +1,4 @@
--
-  #+BEGIN_NOTE
+- #+BEGIN_NOTE
   Credits and special thanks to [[Cobblebot]] for this!
   Original source: [forum](https://discuss.logseq.com/t/glossary-draft-work-in-progress/196)
   #+END_NOTE
@@ -25,7 +24,7 @@
 	- [[term/file link]]
 	- [[term/backlink]]
 ## Concepts and Modes
-	- [[term/properties]]
+	- [[Properties]]
 	- [[term/block rendering]]
 	- [[term/editing mode]]
 	- [[term/network of connected ideas]]

@@ -25,7 +25,7 @@
 :PROPERTIES:
 :id: 60ab6d72-9ad0-429f-8673-d13e81a93f23
 :END:
-** [[term/properties]]
+** [[Properties]]
 *** syntax: ~#+PROPERTY: value~
 :PROPERTIES:
 :id: 60ab7357-2744-42bc-a8fd-a9c8db3051df

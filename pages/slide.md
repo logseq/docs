@@ -12,7 +12,7 @@ platform:: [[All Platforms]]
 	- TODO Update usage as this seems out of date #docs
 - **Questions**
 	- 1. How to add a background image for a block?
-		- Add a `background-image` property #[[Block properties]] 
+		- Add a `background-image` property
 		  #+BEGIN_EXAMPLE
 		  background-image:: https://images.unsplash.com/photo-1498855926480-d98e83099315
 		  #+END_EXAMPLE
