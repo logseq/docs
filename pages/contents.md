@@ -26,7 +26,7 @@
 	- [[Knowledge Graph]]
 	- [[Page and block references]]
 	- [[Page and block embeds]]
-	- [[Tasks & Todos]]
+	- [[Tasks]]
 	- [[Commands]]
 	- [[Advanced commands]]
 	- [[Templates]]

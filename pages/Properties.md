@@ -1,8 +1,7 @@
 id:: 60a78c12-4e12-4d81-a33f-9f63695aaf32
 type:: [[Feature]]
-alias:: Block properties
 platform:: [[All Platforms]]
-description:: Annotate any block or page with multiple pairs of values e.g. `rating:: 8` or `name:: foo`.
+description:: Annotates any block or page with multiple pairs of values e.g. `rating:: 8` or `name:: foo`. Building block for organizing graphs
 
 - ## Usage
 	- Property naming rules:

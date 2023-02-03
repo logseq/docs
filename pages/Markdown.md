@@ -66,7 +66,7 @@ id:: 60a78b6b-a0ff-49fe-822f-87216fbf79ff
 	- [[term/block link with label]]
 		- syntax: `[display text](((block-uuid)))`
 		  id:: 60ab6f5b-a01f-44eb-8d4a-fb8ca1893dcf
-	- [[Tasks & Todos]] marker
+	- [[Tasks]] marker
 		- syntax: `TODO` `DOING` `DONE` `LATER` `NOW`
 		- These markers can be set with commands(`/TODO`) 
 		  or shortcut(default `ctrl/cmd+enter`)
