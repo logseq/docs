@@ -3,7 +3,7 @@
 	  :LOGBOOK:
 	  CLOCK: [2022-11-25 Fri 12:40:46]--[2022-11-25 Fri 17:52:48] =>  05:12:02
 	  :END:
-	- DONE [[Whiteboard/Object/Action Bar]]
+	- DONE [[Whiteboard/Action Bar]]
 	- DONE [[Whiteboard/Object]]
 	  :LOGBOOK:
 	  CLOCK: [2022-11-25 Fri 17:12:12]--[2022-11-25 Fri 17:12:13] =>  00:00:01

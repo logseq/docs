@@ -1,10 +1,10 @@
-title:: Whiteboard/Object/Action Bar
+title:: Whiteboard/Action Bar
 alias:: Object Action Bar
 type:: [[UI Element]]
 description:: Selected objects (eg. drawing, shapes, blocks, pages) all have an Object Action Bar that allows the user to change it's appearance (eg. color, text size and style) or interact with it (link, open in right sidebar).
 
 ## Usage
-	- The object action bar can be activated by using [[Toolbar/Select]] tool to select any amount of objects on the canvas.
+	- The object action bar can be activated by using [[Select]] tool to select any amount of objects on the canvas.
 		- If you select one object it shows you all properties of it that you can manipulate:
 			- ![SingleObject.mp4](../assets/SingleObject_1669387043865_0.mp4)
 		- If you select multiple objects it shows you their common properties that you can manipulate:

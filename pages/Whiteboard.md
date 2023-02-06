@@ -36,59 +36,29 @@ alias:: Whiteboards
 		  collapsed:: true
 			- ![CleanShot 2022-09-22 at 14.24.18.gif](../assets/CleanShot_2022-09-22_at_14.24.18_1663849476516_0.gif)
 			  id:: 6380a818-a9dc-45ac-934b-fc3064509304
-		- You can use the [[Toolbar]] to interact with the canvas and add elements like blocks, pages, and images to it. You can also directly draw on the canvas. These are the current toolbar options:
+		- You can use the [[Toolbar]] to interact with the canvas and add elements like blocks, pages, and images to it. You can also directly draw on the canvas. These are the current [[Tools]] :
 		  id:: 6380b0a1-0bce-4ecc-b373-fee87e6e9519
-			- [[Toolbar/Select]]
+			- [[Select]]
 			  collapsed:: true
 				- Select elements on the canvas
 					- ![CleanShot 2022-09-22 at 16.21.46.gif](../assets/CleanShot_2022-09-22_at_16.21.46_1663856548758_0.gif)
-			- [[Toolbar/Move]]
+			- [[Move]]
 			  collapsed:: true
 				- Move around the canvas
 				  collapsed:: true
 					- ![CleanShot 2022-09-22 at 16.23.32.gif](../assets/CleanShot_2022-09-22_at_16.23.32_1663856665325_0.gif)
-			- [[Toolbar/Draw]]
-				- Freeform pencil drawings on the canvas
-				  collapsed:: true
-					- ![CleanShot 2022-09-22 at 16.27.51.gif](../assets/CleanShot_2022-09-22_at_16.27.51_1663856897270_0.gif)
-			- [[Toolbar/Highlight]]
-			  collapsed:: true
-				- Do freeform highlighting on the canvas
-				  collapsed:: true
-					- ![CleanShot 2022-09-22 at 16.30.21.gif](../assets/CleanShot_2022-09-22_at_16.30.21_1663857055477_0.gif)
-			- [[Toolbar/Eraser]]
-			  collapsed:: true
-				- Erase any element on the canvas
-				  collapsed:: true
-					- ![CleanShot 2022-09-22 at 16.28.33.gif](../assets/CleanShot_2022-09-22_at_16.28.33_1663856927171_0.gif)
-			- [[Toolbar/Connector]]
-			  collapsed:: true
-				- Connect any element on the canvas with a line. Add arrows to signal a direction. Add text on the connector. Can also be used to draw lines that are not connected to anything.
-				  collapsed:: true
-					- ![CleanShot 2022-09-22 at 16.25.12.gif](../assets/CleanShot_2022-09-22_at_16.25.12_1663856800902_0.gif)
-			- [[Toolbar/Text]]
-			  collapsed:: true
-				- ![CleanShot 2022-09-22 at 16.31.57.gif](../assets/CleanShot_2022-09-22_at_16.31.57_1663857213717_0.gif)
-			- [[Toolbar/Shapes]]
-			  collapsed:: true
-				- Create rectangle, circle and triangle shapes on the canvas
-				  collapsed:: true
-					- ![CleanShot 2022-09-22 at 17.03.28.gif](../assets/CleanShot_2022-09-22_at_17.03.28_1663859040066_0.gif)
-			- [[Toolbar/Logseq Portal]]
-			  collapsed:: true
-				- Find existing or create new blocks/pages and place on the canvas
-					- Create a new Whiteboard block
-					  collapsed:: true
-						- ![CleanShot 2022-09-22 at 17.07.13.gif](../assets/CleanShot_2022-09-22_at_17.07.13_1663859261512_0.gif)
-					- Create a new page
-					  collapsed:: true
-						- ![CleanShot 2022-09-22 at 17.10.29.gif](../assets/CleanShot_2022-09-22_at_17.10.29_1663859469273_0.gif)
-					- Find an existing block
-					  collapsed:: true
-						- ![CleanShot 2022-09-22 at 17.11.40.gif](../assets/CleanShot_2022-09-22_at_17.11.40_1663859531156_0.gif)
-					- Find an existing page
-					  collapsed:: true
-						- ![CleanShot 2022-09-22 at 17.13.54.gif](../assets/CleanShot_2022-09-22_at_17.13.54_1663859660700_0.gif)
+			- [[Portal]]
+			- [[Pencil]]
+			- [[Highlight]]
+			- [[Eraser]]
+			- [[Connector]]
+			- [[Text]]
+			- [[Shapes]]
+				- [[Circle]]
+				- [[Rectangle]]
+				- [[Triangle]]
+		- You can drag and drop [[Pages]] and [[Blocks]] from both sidebars to the canvas to create [[Page and block embeds]] . Dropping images from your local filesystem is also supported. You can also select a particular block of text, and then drag it to the canvas to create a new block.
+		- Embeds can also be created by copy pasting block references, images and urls. Depending on the domain and the structure of the url, a special [[Whiteboard/Object]] might be created. [[Whiteboards]] currently support [[Youtube videos]] and [[Tweets]]. The rest will be embedded as an iFrame object.
 - # Functionality
 	- Logseq [[Whiteboards]] are local-first like the rest of the software.
 	  collapsed:: true
