@@ -8,9 +8,9 @@ platform:: [[All Platforms]]
 	- Pages and blocks #autocompletion occurs after trigger characters are typed.
 	- Click on a ref or `Ctrl-o` while cursor is on it takes you to the ref. Shift-click to open it in the [[Right sidebar]].
 	- Hover over ref to see a preview modal of it.
-	- References can have custom display labels. See [[term/page link with label]] or [[term/block link with label]] for more.
+	- References can have custom display labels. See [[term/page reference with label]] or [[term/block reference with label]] for more.
 	- Related terms:
-		- {{embed [[term/page link]]}}
-		- {{embed [[term/block link]] }}
-		- {{embed [[term/page link with label]] }}
-		- {{embed [[term/block link with label]] }}
+		- {{embed [[term/page reference]]}}
+		- {{embed [[term/block reference]] }}
+		- {{embed [[term/page reference with label]] }}
+		- {{embed [[term/block reference with label]] }}

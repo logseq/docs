@@ -11,15 +11,11 @@
 	- [[term/bullet]]
 	- [[term/internal line break]]
 	- [[term/alias]]
-## References + IDs
-	- [[term/page reference]] (equivalent to page title)
-	- [[term/block reference]]
-	- [[term/block ID or page ID]]
 ## Links
-	- [[term/page link]]
-	- [[term/block link]]
-	- [[term/page link with label]]
-	- [[term/block link with label]]
+	- [[term/page reference]]
+	- [[term/block reference]]
+	- [[term/page reference with label]]
+	- [[term/block reference with label]]
 	- [[term/web link]]
 	- [[term/file link]]
 	- [[term/backlink]]

@@ -1,4 +1,0 @@
-- description:
-	- a clickable link that will take you to a particular Logseq page
-- produced by:
-	- putting a [page reference]([[term/page reference]])  (i.e. the page title) inside double square brackets `[[ ]]`

@@ -22,11 +22,11 @@ description:: Markdown is a popular markup language with many flavors. Our imple
 	- and so on...
 ### **Extended** syntax
 id:: 60a78b6b-a0ff-49fe-822f-87216fbf79ff
-	- [[term/page link]]
+	- [[term/page reference]]
 	  id:: 60ab4582-5a6e-4f3a-84a2-71ae056455a0
 		- syntax: `[[page name]]`
 		  id:: 60a78b6b-688c-4ced-9104-60784597daf9
-	- [[term/block link]]
+	- [[term/block reference]]
 	  id:: 60ab3eb7-c1e8-47ad-8a18-770896a10c5c
 		- syntax: `((block-uuid))`
 		- How can I get a _block-uuid_ ?
@@ -60,10 +60,10 @@ id:: 60a78b6b-a0ff-49fe-822f-87216fbf79ff
 				- [:code "template-including-parent:: false"]
 				- {{embed ((60a790f8-d187-499a-b2e2-73bf137356dd))}}
 		- see also: [[Properties]]
-	- [[term/page link with label]]
+	- [[term/page reference with label]]
 		- syntax: `[display text]([[page name]])`
 		  id:: 60ab6d72-e70c-4eb4-a60a-3802f12874c4
-	- [[term/block link with label]]
+	- [[term/block reference with label]]
 		- syntax: `[display text](((block-uuid)))`
 		  id:: 60ab6f5b-a01f-44eb-8d4a-fb8ca1893dcf
 	- [[Tasks]] marker

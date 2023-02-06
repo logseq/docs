@@ -20,7 +20,7 @@
 ** {{embed ((60ab3eb7-c1e8-47ad-8a18-770896a10c5c))}}
 ** {{embed ((60ab3eb7-2fb1-4148-af2b-9ba2319ef5b6))}}
 ** {{embed ((60ab3eb7-5a6b-4e6a-90e0-80dd11e47c48))}}
-** [[term/page link with label]]
+** [[term/page reference with label]]
 *** syntax: ~[[page name][display text]]~
 :PROPERTIES:
 :id: 60ab6d72-9ad0-429f-8673-d13e81a93f23
@@ -30,7 +30,7 @@
 :PROPERTIES:
 :id: 60ab7357-2744-42bc-a8fd-a9c8db3051df
 :END:
-** [[term/block link with label]]
+** [[term/block reference with label]]
 *** syntax: ~[[((block-uuid))][display text]]~
 :PROPERTIES:
 :id: 60ab6f5b-eb43-422b-9e89-0969670af709

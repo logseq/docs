@@ -1,4 +1,5 @@
-- description:
-  - a Logseq page title
+alias:: page reference
+description:: A clickable page title to a Logseq page e.g. `[[Page title]]`
+
 - produced by:
-  - entering a new page title in the Search or Create Page field , typing a page link with a new page title
+	- putting a page title inside double square brackets `[[ ]]`
