@@ -1,9 +1,7 @@
 alias:: Whiteboard object
 type:: [[Class]]
+description:: An element that can be placed on the [[Whiteboard/Canvas]]. Just like [[Blocks]] or [[Pages]], objects can be referenced anywhere in your [[Graph]]
 
-- description:
-	- an element that can be placed on the [[Whiteboard/Canvas]]
-	- just like [[Blocks]] or [[Pages]], objects can be referenced anywhere in your [[Graph]]
 - produced by:
 	- select the object of your choice from the [[Toolbar]] and draw it on the [[Whiteboard/Canvas]]
 	- the appearance of the object can be changed via the [[Object Action Bar]]

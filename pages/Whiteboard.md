@@ -65,7 +65,7 @@ alias:: Whiteboards
 		- When you create your first Whiteboard, a new folder titled `whiteboards` is added to your graph folder. All the whiteboards you create are saved in the `whiteboards` folder as `.edn` files. While there are other ways to [delete whiteboards]([[Whiteboard/Deletion]]), you can also directly delete them from your file system by removing the respective `.edn` files.
 			- ![CleanShot 2022-09-22 at 17.30.29@2x.png](../assets/CleanShot_2022-09-22_at_17.30.29@2x_1663860644176_0.png)
 		- Whiteboards are a special type of page. You can find them in-app in the [Whiteboards dashboard]([[Whiteboard/Dashboard]]) and [[All pages]] overview.
-	- A Whiteboard has a [[Whiteboard/Canvas]]. On that canvas, you can create any of the objects (shapes) in [[Whiteboard/Object]].
+	- A Whiteboard has a [[Whiteboard/Canvas]]. On that canvas, you can create any of the objects in [[Whiteboard/Object]].
 	- Currently, there's limited support for [[Whiteboard embeds]]. We plan to expand this functionality in later versions of [[Whiteboards]].
 	  collapsed:: true
 		- When referencing a [[Whiteboard]] in the outliner by its [[Title]], you will see a Whiteboard icon show up at the front of the link. Hovering that link shows you an abstracted preview of the whiteboard.
