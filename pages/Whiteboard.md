@@ -39,14 +39,7 @@ alias:: Whiteboards
 		- You can use the [[Toolbar]] to interact with the canvas and add elements like blocks, pages, and images to it. You can also directly draw on the canvas. These are the current [[Tools]] :
 		  id:: 6380b0a1-0bce-4ecc-b373-fee87e6e9519
 			- [[Select]]
-			  collapsed:: true
-				- Select elements on the canvas
-					- ![CleanShot 2022-09-22 at 16.21.46.gif](../assets/CleanShot_2022-09-22_at_16.21.46_1663856548758_0.gif)
 			- [[Move]]
-			  collapsed:: true
-				- Move around the canvas
-				  collapsed:: true
-					- ![CleanShot 2022-09-22 at 16.23.32.gif](../assets/CleanShot_2022-09-22_at_16.23.32_1663856665325_0.gif)
 			- [[Portal]]
 			- [[Pencil]]
 			- [[Highlight]]
@@ -68,6 +61,7 @@ alias:: Whiteboards
 	- A Whiteboard has a [[Whiteboard/Canvas]]. On that canvas, you can create any of the objects in [[Whiteboard/Object]].
 	- Currently, there's limited support for [[Whiteboard embeds]]. We plan to expand this functionality in later versions of [[Whiteboards]].
 	  collapsed:: true
+	  id:: 63e277f7-93ec-428c-9b36-019ca17dce1e
 		- When referencing a [[Whiteboard]] in the outliner by its [[Title]], you will see a Whiteboard icon show up at the front of the link. Hovering that link shows you an abstracted preview of the whiteboard.
 			- ![CleanShot 2022-09-22 at 17.44.08.gif](../assets/CleanShot_2022-09-22_at_17.44.08_1663861685052_0.gif)
 		- Once you do a [[Page embed]] of a [[Whiteboard]], you will see the abstracted preview of the whiteboard canvas directly in the block.
