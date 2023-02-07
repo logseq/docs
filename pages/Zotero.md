@@ -13,7 +13,7 @@ platform:: [[All Platforms]] except [[Publish Web]]
 	- If you add same item twice, Logseq will append data to same page instead of overwrite existing meta data. If you know what you're doing, delete that page first and re-import.
 - ## Functionality
 	- Currently it only works for users who have enabled Zotero [Syncing](https://www.zotero.org/support/sync)
-	- If you don't have Zotero Syncing enabled, you might want to checkout [this](https://github.com/aljedaxi/logseq-zotero/) third-party plugin. Or [zotero-mdnotes](https://argentinaos.com/zotero-mdnotes/), a Zotero plugin to export item metadata and notes as markdown files.
+	- If you don't have Zotero Syncing enabled, you might want to checkout [this](https://github.com/sawhney17/logseq-citation-manager/) third-party plugin. Or [zotero-mdnotes](https://argentinaos.com/zotero-mdnotes/), a Zotero plugin to export item metadata and notes as markdown files.
 	- Prerequisites:
 	  collapsed:: true
 		- Create a Zotero account and enable [Syncing](https://www.zotero.org/support/sync)
