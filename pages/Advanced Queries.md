@@ -18,7 +18,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	   :collapsed? true
 	  :rules [...]}
 	  #+END_EXAMPLE
-
+	  
 	  | Name             | Description                      | Default | Optional |
 	  |------------------|----------------------------------|---------|----------|
 	  | title            | query title, supports hiccup     |         | true     |
@@ -59,7 +59,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	- 1. Get all tasks
 	  created_at:: 1609232063516
 	  updated-at:: 1609245970090
-
+	  
 	  #+BEGIN_SRC clojure
 	  #+BEGIN_QUERY
 	  {:title "All tasks"
@@ -81,7 +81,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	- id:: 63b70dc8-1d59-4348-9737-e62b17fdabca
 	  3. Blocks in 7ds with a page reference of datalog
 	  #+BEGIN_SRC clojure
-
+	  
 	  #+BEGIN_QUERY
 	  {:title "Journal blocks in last 7 days with a page reference of datalog"
 	   :query [:find (pull ?b [*])
@@ -134,7 +134,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	  #+END_SRC
 	- 7. Get all the blocks with the property "type" and the value "programming_lang"
 	  #+BEGIN_SRC clojure
-
+	  
 	  #+BEGIN_QUERY
 	  {:title [:h2 "Programming languages list"]
 	   :query [:find (pull ?b [*])
@@ -145,7 +145,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	- id:: 63b70dc8-58a5-4a43-ae19-28143edb7752
 	  8. TODO tasks tagged using current page
 	  #+BEGIN_SRC clojure
-
+	  
 	  #+BEGIN_QUERY
 	  {:title "All tasks tagged using current page"
 	   :query [:find (pull ?b [*])
@@ -159,7 +159,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	  #+END_SRC
 	- 9. Active tasks from the last 2 weeks
 	  #+BEGIN_SRC clojure
-
+	  
 	  #+BEGIN_QUERY
 	  {:title "🟢 ACTIVE"
 	    :query [:find (pull ?b [*])
@@ -176,7 +176,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	  #+END_SRC
 	- 10. Tasks referencing due dates in the past
 	  #+BEGIN_SRC clojure
-
+	  
 	  #+BEGIN_QUERY
 	   {:title "⚠️ OVERDUE"
 	    :query [:find (pull ?b [*])
@@ -190,7 +190,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	  #+END_SRC
 	- 11. Tasks referencing due dates up to 10 days ahead
 	  #+BEGIN_SRC clojure
-
+	  
 	  #+BEGIN_QUERY
 	      {:title "📅 NEXT"
 	    :query [:find (pull ?b [*])
@@ -204,7 +204,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	  #+END_SRC
 	- 12. Tasks from last week which are still outstanding (may slip soon!)
 	  #+BEGIN_SRC clojure
-
+	  
 	  #+BEGIN_QUERY
 	     {:title "🟠 SLIPPING"
 	    :query [:find (pull ?b [*])
@@ -221,7 +221,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	  #+END_SRC
 	- 13. Tasks created more than 1 week ago, less old than 2 months but still outstanding
 	  #+BEGIN_SRC clojure
-
+	  
 	  #+BEGIN_QUERY
 	  {:title "🔴 STALLED"
 	    :query [:find (pull ?b [*])
@@ -321,6 +321,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 		- https://bgrolleman.gitlab.io/logseq_publish_toolsontech/#/page/logseq%2Fadvanced%20queries - Some useful tips on advanced queries
 		- https://mschmidtkorth.github.io/logseq-msk-docs/#/page/queries%2Fadvanced%20queries - More useful tips on advanced queries
 	- For advanced users a.k.a. engineers
+		- https://siferiax.github.io/#/page/logseq%2Fadvanced%20queries - Query references for more advanced concepts
 		- [Datomic query documentation](https://docs.datomic.com/query.html) - Thorough reference for datomic dialect of Datalog. Explains most datalog concepts well
 		- https://nextjournal.com/try/learn-xtdb-datalog-today/learn-xtdb-datalog-today - Interactive datalog tutorial for engineers
 		- [Datascript's intro docs](https://github.com/tonsky/datascript/wiki/Getting-started)
