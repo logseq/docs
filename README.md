@@ -8,11 +8,8 @@ Thank you! Looking for something to contribute on documents? There's a [Project 
 To contribute you will want to see how your changes look locally. In order to do this you should:
 
 1. Ensure you have [git](https://git-scm.com/downloads) installed.
-2. Clone this repo locally. This will add the repo to your local files.
-```git
-git clone https://github.com/logseq/docs.git
-``` 
-3. Add the repo to Logseq via the `Add new graph`button on the top left dropdown menu. Select the directory where you cloned the repo.
+2. Fork and Clone THIS REPO. If you have no idea to do, check [This](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop). The upstream should be set to the FORKED REPO.
+3. Add the cloned local repo (of your FORKED REPO) to Logseq via the `Add new graph`button on the top left dropdown menu. Select the directory where you cloned the repo.
 4. Create a branch off of master. The following two commands create a branch called `branch-name` and navigates onto it.
 
 ```git
