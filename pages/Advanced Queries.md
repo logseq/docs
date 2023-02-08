@@ -39,22 +39,90 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	  #+END_TIP
 	- ### Query Inputs
 	  These are special values for a query's `:inputs` key above:
-		- Page and block inputs
+		- #### Special page and block inputs
 			- `:current-page` - Name of current page. See [this example](((63b70dc8-58a5-4a43-ae19-28143edb7752)))
 			- `:current-block` - `:db/id` of current block. See [this example](((63bc5e11-24f1-45fd-945d-4a272e5ecf0d)))
 			- `:parent-block` - `:db/id` of parent block
-		- Inputs for querying journal page blocks and rules like `between`
+		- #### Special date inputs
+		  description:: Useful for querying journal pages or blocks relative to today's date
 			- `:today` - Today's date. See [this example](((63b70dc8-1d59-4348-9737-e62b17fdabca)))
 			- `:yesterday` - Yesterday's date
 			- `:tomorrow` - Tomorrow's date
-			- `:Xd-before` - Date for X number of days before today. See [this example](((63b70dc8-1d59-4348-9737-e62b17fdabca)))
-			- `:Xd-after` - Date for X number of days after today.
-		- Timestamp inputs for block attributes that use millisecond timestamps e.g. `:block/created-at`
-			- `:Xd-before-ms` - Timestamp of X days before today
-			- `:Xd-after-ms` - Timestamp of X days after today
 			- `:right-now-ms` - Timestamp for current time
-			- `:start-of-today-ms` - Timestamp for beginning of today
-			- `:end-of-today-ms` - Timestamp for end of today
+		- #### Relative date inputs
+		  description:: Useful for querying journal pages or blocks relative to a specific date
+			- Relative date queries are created by combining 3 pieces: a direction (`+` or `-`), and amount (any number `X`), and a unit (`d` for days, `w` for weeks, `m` for months, and `y` for years). *(examples within)*
+			  collapsed:: true
+				- `:+200d` - 200 days in the future
+				- `:-11w` - 11 weeks in the past
+				- `:+1m` - 1 month in the future
+				- `:-2y` - 2 years in the past
+			- `:-Xd` - Date for X number of days before today's date
+			- `:-Xw` - Date for X number of weeks before today's date
+			- `:-Xm` - Date for X number of months before today's date
+			- `:-Xy` - Date for X number of years before today's date
+			- `:+Xd` - Date for X number of days after today
+			- `:+Xw` - Date for X number of weeks after today
+			- `:+Xm` - Date for X number of months after today
+			- `:+Xy` - Date for X number of years after today
+		- #### Relative timestamp inputs
+		  description:: Useful for querying for block attributes that use millisecond timestamps e.g. `:block/created-at`
+			- Relative timestamp inputs can be created by adding a **time suffix** to any of the relative date inputs. Multiple **time suffixes** cannot be combined.  The **time suffixes** that are supported are as follows:
+				- `-start` - returns the start of the day you are querying for, returning the timestamp for 00:00:00.000.  *(examples within)*
+				  collapsed:: true
+					- `:+1d-start` will result in the millisecond timestamp for midnight tonight, at 00:00:00.000
+					- `:-1d-start` will result in the millisecond timestamp for midnight the night before yesterday, at 00:00:00.000
+					- This is functionally equivalent to the **time suffixes** `-00`, `-0000`, `-000000`, and `-000000000`
+				- `-end` - returns the end of the day you are querying for, returning the timestamp for 23:59:59:999.  *(examples within)*
+				  collapsed:: true
+					- `:+1d-end` will result in the millisecond timestamp just before midnight tomorrow night, at 23:59:59.999
+					- `:-1d-end` will result in the millisecond timestamp just before midnight last night, at 23:59:59.999
+					- This is functionally equivalent to the **time suffix** `-235959999`
+				- `-HH` - Specific hour of the day you are querying, in 24 hour time. *(examples within)*
+				  collapsed:: true
+					- `:+1d-14` will result in the millisecond timestamp for tomorrow, at 2:00:00.000 pm
+					- `:-2w-00` will result in the millisecond timestamp 14 days ago, at 00:00:00.000 am
+					- `:+1m-23` will result in the millisecond timestamp one month from today, at 11:00:00.000 pm
+				- `-HHMM` - Specific hour and minute of the day you are querying, in 24 hour time.  *(examples within)*
+				  collapsed:: true
+					- `:+1d-1430` will result in the millisecond timestamp for tomorrow, at 2:30:00.000 pm
+					- `:-2w-0000` will result in the millisecond timestamp 14 days ago, at 00:00:00.000 am
+					- `:+1m-2359` will result in the millisecond timestamp one month from today, at 11:59:00.000 pm
+				- `-HHMMSS` - Specific hour, minute, and seconds of the day you are querying for, in 24 hour time.  *(examples within)*
+				  collapsed:: true
+					- `:+1d-143015` will result in the millisecond timestamp for tomorrow, at 2:30:15.000 pm
+					- `:-2w-000000` will result in the millisecond timestamp 14 days ago, at 00:00:00.000 am
+					- `:+1m-235959` will result in the millisecond timestamp one month from today, at 11:59:59.000 pm
+				- `-HHMMSSmmm` - Specific hour, minute, seconds, and milliseconds of the day you are querying for, in 24 hour time.  *(examples within)*
+				  collapsed:: true
+					- `:+1d-143015777` will result in the millisecond timestamp for tomorrow, at 2:30:15.777 pm
+					- `:-2w-000000000` will result in the millisecond timestamp 14 days ago, at 00:00:00.000 am
+					- `:+1m-235959999` will result in the millisecond timestamp one month from today, at 11:59:59.999 pm
+				- `-ms` - when querying for dates in the past, it will return the timestamp 00:00:00.000, and when querying for dates in the future, will return the timestamp for 23:59:59.999.  *(examples within)*
+				  collapsed:: true
+					- `:-1d-ms` will return the timestamp for midnight the night before yesterday, at 00:00:00.000.
+						- Functionally equivalent to `:-1d-start`
+					- `:+1d-ms` will return the timestamp just before midnight tomorrow night, at 23:59:59.999.
+						- Functionallty equivalent to `:+1d-end`
+					-
+			- It should be noted that most **time suffixes** (all besides `-ms`) can be used in combination with the `:today` special date. *(examples within)*
+			  collapsed:: true
+				- `:today-start` - returns a timestamp for 00:00:00.000 today
+				- `:today-end` - returns a timestamp for 23:59:59.000 today
+				- `:today-HH` - returns a timestamp for HH:00:00.000 today
+				- `:today-HHMM` - returns a timestamp for HH:MM:00.000 today
+				- `:today-HHMMSS` - returns a timestamp for HH:MM:SS.000 today
+				- `:today-HHMMSSmmm` - returns a timestamp for HH:MM:SS.mmm today
+		- #### Deprecated inputs
+		  collapsed:: true
+			- Previously we supported different inputs between basic queries and advanced queries. These have now been unified, however we still support the follow queries for the time being. If you are using any of the following, plus upgrade them to the newer syntax mentioned for each item
+			- `:Xd` - Date for X number of days before today. **New syntax:** `:-Xd`
+			- `:Xd-before` - Date for X number of days before today. See [this example](((63b70dc8-1d59-4348-9737-e62b17fdabca))). **New syntax:** `:-Xd`
+			- `:Xd-after` - Date for X number of days after today. **New syntax:** `:+Xd`
+			- `:Xd-before-ms` - Timestamp of X days before today. **New syntax:** `:-Xd-ms`
+			- `:Xd-after-ms` - Timestamp of X days after today. **New syntax** `:+Xd-ms`
+			- `:start-of-today-ms` - Timestamp for beginning of today. **New syntax** `:today-start`
+			- `:end-of-today-ms` - Timestamp for end of today. **New syntax** `:today-end`
 - ## Query Examples
 	- 1. Get all tasks
 	  created_at:: 1609232063516
@@ -89,7 +157,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	           :where
 	           (between ?b ?start ?today)
 	           (page-ref ?b ?tag)]
-	   :inputs [:7d-before :today "datalog"]}
+	   :inputs [:-7d :today "datalog"]}
 	  #+END_QUERY
 	  #+END_SRC
 	- 4. All TODO tasks
@@ -167,7 +235,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	            :where
 	            (task ?b #{"NOW" "DOING"})
 	            (between ?b ?start ?today)]
-	    :inputs [:14d :today]
+	    :inputs [:-2w :today]
 	    :result-transform (fn [result]
 	                        (sort-by (fn [h]
 	                                   (get h :block/priority "Z")) result))
@@ -184,7 +252,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	            :where
 	            (task ?b #{"NOW" "LATER" "TODO" "DOING"})
 	            (between ?b ?start ?today)]
-	    :inputs [:56d :today]
+	    :inputs [:-56d :today]
 	    :collapsed? false}
 	  #+END_QUERY
 	  #+END_SRC
@@ -198,7 +266,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	            :where
 	            (task ?b #{"NOW" "LATER" "TODO" "DOING"})
 	            (between ?b ?start ?next)]
-	    :inputs [:today :10d-after]
+	    :inputs [:today :+10d]
 	    :collapsed? false}
 	  #+END_QUERY
 	  #+END_SRC
@@ -212,7 +280,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	            :where
 	            (task ?b #{"NOW" "LATER" "TODO" "DOING"})
 	            (between ?b ?start ?today)]
-	    :inputs [:7d :today]
+	    :inputs [:-7d :today]
 	    :result-transform (fn [result]
 	                        (sort-by (fn [h]
 	                                   (get h :block/created-at)) result))
@@ -229,7 +297,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	            :where
 	            (task ?b #{"NOW" "LATER" "TODO" "DOING"})
 	            (between ?b ?start ?today)]
-	    :inputs [:56d :8d]
+	    :inputs [:-2m :-1w]
 	    :result-transform (fn [result]
 	                        (sort-by (fn [h]
 	                                   (get h :block/created-at)) result))
@@ -250,7 +318,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	              [?block :block/deadline ?d])
 	            [(> ?d ?start)]
 	            [(< ?d ?next)]]
-	    :inputs [:today :7d-after]
+	    :inputs [:today :+7d]
 	    :collapsed? false}
 	  #+END_QUERY
 	  #+END_SRC
