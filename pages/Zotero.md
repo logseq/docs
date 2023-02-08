@@ -13,7 +13,7 @@ platform:: [[All Platforms]] except [[Publish Web]]
 	- If you add same item twice, Logseq will append data to same page instead of overwrite existing meta data. If you know what you're doing, delete that page first and re-import.
 - ## Functionality
 	- Currently it only works for users who have enabled Zotero [Syncing](https://www.zotero.org/support/sync)
-	- If you don't have Zotero Syncing enabled, you might want to checkout [this](https://github.com/aljedaxi/logseq-zotero/) third-party plugin. Or [zotero-mdnotes](https://argentinaos.com/zotero-mdnotes/), a Zotero plugin to export item metadata and notes as markdown files.
+	- If you don't have Zotero Syncing enabled, you might want to checkout [this](https://github.com/sawhney17/logseq-citation-manager/) third-party plugin. Or [zotero-mdnotes](https://argentinaos.com/zotero-mdnotes/), a Zotero plugin to export item metadata and notes as markdown files.
 	- Prerequisites:
 	  collapsed:: true
 		- Create a Zotero account and enable [Syncing](https://www.zotero.org/support/sync)
@@ -37,5 +37,5 @@ platform:: [[All Platforms]] except [[Publish Web]]
 		- Whether to include children items of attachment links and notes
 		- You can customize your Zotero imported page's prefix, default is `@`, that is all Zotero pages added will begin with `@` for easy of searching. If you'd like some hierarchy, for example you can set it to a namespace prefix like `zotero/`
 - [[Thanks]]
-	- This plugin took the idea and inspiration from the great [zotero-roam](https://alix-lahuec.gitbook.io/zotero-roam/) made by [[@Alix Lahuec ]]. Special thanks to [[@Alix Lahuec]] for providing all kinds of ideas and useful suggestions!
+	- This feature took the idea and inspiration from the great [zotero-roam](https://alix-lahuec.gitbook.io/zotero-roam/) made by [[@Alix Lahuec ]]. Special thanks to [[@Alix Lahuec]] for providing all kinds of ideas and useful suggestions!
 	-
