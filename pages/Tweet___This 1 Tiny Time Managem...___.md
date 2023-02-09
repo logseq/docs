@@ -1,7 +1,7 @@
 title:: Tweet/This 1 Tiny Time Managem...
 author:: [[@dickiebush on Twitter]]
 full-title:: "This 1 Tiny Time Managem..."
-type:: Tweet
+type:: [[TweetURL]]
 source:: https://twitter.com/dickiebush/status/1542528394927263745
 
 - # [[Highlights]]
