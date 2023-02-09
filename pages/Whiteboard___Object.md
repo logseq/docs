@@ -1,4 +1,4 @@
-alias:: Whiteboard object
+alias:: Whiteboard objects, Whiteboard object
 type:: [[Class]]
 description:: An element that can be placed on the [[Whiteboard/Canvas]]. Just like [[Blocks]] or [[Pages]], objects can be referenced anywhere in your [[Graph]]
 
@@ -9,19 +9,18 @@ description:: An element that can be placed on the [[Whiteboard/Canvas]]. Just l
 	- ![ObjectExamples.mp4](../assets/ObjectExamples_1669389480174_0.mp4)
 	- The following objects exist in [[Whiteboards]]:
 	  id:: 6380d82c-a061-4ebb-9b5d-8fe6aabbf454
-		- Pencil
+		- [[Pencil]]
+			- supports:
+				- ((6380d38c-2dda-486a-a1f7-d99bf0b1d7a1))
+				- ((6380d3d9-1725-4968-a19a-2f28eae7f16e))
+				- ((6380d3d2-ce11-4dbd-9765-b302a07932c2))
+		- [[Highlight]]
 		  collapsed:: true
 			- supports:
 				- ((6380d38c-2dda-486a-a1f7-d99bf0b1d7a1))
 				- ((6380d3d9-1725-4968-a19a-2f28eae7f16e))
 				- ((6380d3d2-ce11-4dbd-9765-b302a07932c2))
-		- Highlight
-		  collapsed:: true
-			- supports:
-				- ((6380d38c-2dda-486a-a1f7-d99bf0b1d7a1))
-				- ((6380d3d9-1725-4968-a19a-2f28eae7f16e))
-				- ((6380d3d2-ce11-4dbd-9765-b302a07932c2))
-		- Arrow/Connector
+		- [[Connector]]
 		  collapsed:: true
 			- supports:
 				- ((6380d38c-2dda-486a-a1f7-d99bf0b1d7a1))
@@ -29,7 +28,7 @@ description:: An element that can be placed on the [[Whiteboard/Canvas]]. Just l
 				- ((6380d3a2-71da-49ea-9c9d-349a80e74694))
 				- ((6380d3d9-1725-4968-a19a-2f28eae7f16e))
 				- ((6380d3d2-ce11-4dbd-9765-b302a07932c2))
-		- Text
+		- [[Text]]
 		  collapsed:: true
 			- supports:
 				- ((6380d38c-2dda-486a-a1f7-d99bf0b1d7a1))
@@ -40,7 +39,7 @@ description:: An element that can be placed on the [[Whiteboard/Canvas]]. Just l
 				- ((6380d3b2-3cad-4864-accd-f1b19c5a5bb7))
 				- ((6380d3d9-1725-4968-a19a-2f28eae7f16e))
 				- ((6380d3d2-ce11-4dbd-9765-b302a07932c2))
-		- Shape
+		- [[Shape]] ([[Rectangle]], [[Circle]], [[Triangle]] )
 		  collapsed:: true
 			- supports:
 				- ((6380d38c-2dda-486a-a1f7-d99bf0b1d7a1))
@@ -60,7 +59,7 @@ description:: An element that can be placed on the [[Whiteboard/Canvas]]. Just l
 				- ((6380d3c3-2fa3-408c-9435-a1077185a5d8))
 				- ((6380d3d9-1725-4968-a19a-2f28eae7f16e))
 				- ((6380d3d2-ce11-4dbd-9765-b302a07932c2))
-		- Image
+		- [[Image]]
 		  collapsed:: true
 			- supports:
 				- ((6380d3d9-1725-4968-a19a-2f28eae7f16e))
@@ -77,7 +76,7 @@ description:: An element that can be placed on the [[Whiteboard/Canvas]]. Just l
 				- ((6380d3b8-4f9b-46ba-8066-74aae563e3e6))
 				- ((6380d3d9-1725-4968-a19a-2f28eae7f16e))
 				- ((6380d3d2-ce11-4dbd-9765-b302a07932c2))
-		- iFrame (website)
+		- [[iFrame]] (website)
 		  collapsed:: true
 			- supports:
 				- ((6380d3b6-03af-4743-93f3-e4665871a92f))

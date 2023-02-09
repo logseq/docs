@@ -1,3 +1,3 @@
 alias:: Circle
-type:: [[Tool]]
+type:: [[Tool]], [[Whiteboard/Object]]
 description:: Create circles

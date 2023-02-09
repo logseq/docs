@@ -1,3 +1,3 @@
 alias:: Triangle
-type:: [[Tool]]
+type:: [[Tool]], [[Whiteboard/Object]]
 description:: Create triangles

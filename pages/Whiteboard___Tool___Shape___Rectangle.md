@@ -1,3 +1,3 @@
 alias:: Rectangle, Rect
-type:: [[Tool]]
+type:: [[Tool]], [[Whiteboard/Object]]
 description:: Create rectangles
