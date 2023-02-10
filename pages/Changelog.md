@@ -44,7 +44,7 @@
 		- Auto heading on markdown mode [#8327](https://github.com/logseq/logseq/pull/8327) - [Documentation](https://docs.logseq.com/#/page/headings)
 		- Search tippy component failing [#8373](https://github.com/logseq/logseq/pull/8373)
 		- CodeMirror indenting shortcuts cause page routing [#8415](https://github.com/logseq/logseq/pull/8415)
-		- Page properties not being visible in the query table [#8336](https://github.com/logseq/logseq/pull/8336) [#8482](https://github.com/logseq/logseq/pull/8482)
+		- Page properties not being visible in the query table [#8336](https://github.com/logseq/logseq/pull/8336) [#8482](https://github.com/logseq/logseq/pull/8482) (Re-index required)
 		- Tables not widening in wide mode [#8375](https://github.com/logseq/logseq/pull/8375)
 		- Incorrect undo/redo sequence of indent/outdent [#8228](https://github.com/logseq/logseq/pull/8228)
 		- Fix date-picker opening conditions [#8333](https://github.com/logseq/logseq/pull/8333)
