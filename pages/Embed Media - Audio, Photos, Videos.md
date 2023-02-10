@@ -133,3 +133,4 @@
 	- **[Areas](https://github.com/bsongOT/logseq-plugin-areas) by bsongOT:** draw areas in an image and link those areas to other Logseq pages and blocks
 	- **[logseq-localassets-plugin](https://github.com/hkgnp/logseq-localassets-plugin) by hkgnp:** makes embedding local files easier by opening a file explorer window to select your files. It can even embed links to folders.
 	- **[media controls](https://github.com/stefanbuck/logseq-media-controls) by stefanbuck:** adds playback speed control and skip forward / backward to videos, audio, and YouTube videos
+- TODO Split this page up and/or create multiple features that refer to this page. This page is more a tutorial than a reference page #docs
