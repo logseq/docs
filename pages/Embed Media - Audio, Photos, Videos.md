@@ -1,127 +1,135 @@
-- ## Audio
-	- Using [[Hiccup]] or HTML embedding, it's possible to embed audio to your page and play it back.
+- Logseq lets you embed, preview, and play back a variety of media in a number of ways.
+-
+- For the most part, there are three ways that you can embed media (with `examples`):
+	- 1. Using Markdown: `![](Link-To-File)`
+	- 2. Using HTML elements: `<element src="Link-To-File"></element>`
+	- 3. Using [[Hiccup]] ClojureScript: `[:element :src "Link-To-File"}]`
+-
+- The source link to file will vary depending on whether you're embedding a local asset (a file on your computer) or an asset stored on an online server.
+	- **For online assets:** Copy the URL of the media, making sure that the file name and extension is included.
+		- ex: `https://www.mysite.com/file.mp3`
+	- **For local assets:** Copy your file path (including the file name and extension). You may also need to add `file:///` at the beginning.
+		- ex: `C:/Users/user/Videos/file.mp4`
+-
+- Here's a detailed breakdown of the variety of ways you can embed audio, video, and images to your Logseq pages:
+-
+- # Markdown Method
+	- The Markdown method is the easiest to implement. It involves embedding media in the following way:
+	- ```markdown
+	  - ![](Link-To-File)
+	  ```
+	-
+	- ## Examples
+	- ### Here is how you could use the Markdown method to embed a picture file found online:
+		- ![](https://logseq.github.io/screenshots/1.png){:height 452, :width 785}
+		- ```markdown
+		  - ![](https://logseq.github.io/screenshots/1.png)
+		  ```
+	-
+	- ### Markdown method -> embed a video file in your assets folder
+		- ```markdown
+		   - ![](../assets/video.mp4)
+		  ```
+	-
+	- ### Markdown method -> embed a song saved on your PC:
+		- ![](file:///C:/Users/user/Music/Mix.wav)
+		- ```markdown
+		  - ![](file:///C:\Users\user\Music\Mix.wav)
+		  ```
+		- OR
+		- ```markdown
+		  - ![](file:///C:/Users/user/Music/Mix.wav)
+		  ```
+		- #+BEGIN_TIP
+		  Include `file:///` at the start of the file path
+		  #+END_TIP
+-
+- # HTML Elements Method
+	- The HTML element method is perfect for those comfortable with the markup language. It provides a wider variety of controls and attributes for your media compared to the Markdown method. For instance, you could show/hide playback controls, loop the media, set the size, add CSS classes, etc. Make sure to consult documentation on `<video>`, `<audio>`, and `<img>` HTML tags to learn which options are available for each media type.
+	-
+	- The HTML method involves embedding media in the following way:
+	- ```html
+	  <element src="Link-To-File"></element>
+	  ```
+	-
+	- ## Examples
+	- ### HTML method -> embed an audio file hosted online:
+		- <audio controls src="https://www.kozco.com/tech/piano2-CoolEdit.mp3">  </audio>
+		- ```html
+		  <audio controls src="https://www.kozco.com/tech/piano2-CoolEdit.mp3">  </audio>
+		  ```
+	-
+	- ### HTML method -> embed a video file found online:
+		- <video controls>  <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">  </video>
+		- ```html
+		  <video controls>  <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">  </video>
+		  ```
+	-
+	- ### HTML method -> embed a picture saved on your computer:
+		- ```html
+		  @@html: <img src="C:/Users/user/Pictures/sunset.jpg"> @@
+		  ```
+		- OR
+		- ```html
+		  @@html: <img src="C:\Users\user\Pictures\sunset.jpg"> @@
+		  ```
+		- #+BEGIN_TIP
+		  If you're embedding an **image** using the HTML method, make sure to include `@@html:` at the start and `@@` at the end
+		  #+END_TIP
+-
+- # [[Hiccup]] ClojureScript Method
+	- The [[Hiccup]] ClojureScript method is similar to the HTML method, but the markup tends to be more condensed.
+	- It involves embedding media in the following way:
+	- ```clojurescript
+	  [:element :src "Link-To-File"}]
+	  ```
+	-
+	- ## Examples
+	- ### Hiccup method -> embed a sound file hosted online:
 		- [:audio {:controls true :src "https://www.kozco.com/tech/piano2-CoolEdit.mp3"}]
-	- ### Embedding an audio file on your PC (using [[Hiccup]])
-		- To preview audio saved on your computer, type or copy-paste the following Hiccup ClojureScript, replacing the source `src` in "quotation marks" with the filepath and file name:
+		- ```clojurescript
+		  [:audio {:controls true :src "https://www.kozco.com/tech/piano2-CoolEdit.mp3"}]
 		  ```
-		  [:audio {:controls true :src "file:C://Users/USERNAME/Folder/audio.ogg"}]
+	-
+	- ### Hiccup method -> embed a GIF found online:
+		- [:img {:src "https://i.imgur.com/iYo6B6S.gif"}]
+		- ```clojurescript
+		  [:img {:src "https://i.imgur.com/iYo6B6S.gif"}]
 		  ```
-		  #+BEGIN_TIP
-		  Make sure to include the `file:` at the start and to use forward slashes `/`
+	-
+	- ### Hiccup method -> embed a video clip stored on your computer:
+		- ```clojurescript
+		  [:video {:controls true :src "C:/Users/user/Downloads/video.webm"}]
+		  ```
+		- #+BEGIN_TIP
+		  For local files that use the Hiccup method: Always use forward slashes `/` in the file path
 		  #+END_TIP
-		  #+BEGIN_TIP
-		  You can also access other [HTML attributes for the audio tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio) (see the markup for the `controls` attribute in the above example)
-		  #+END_TIP
-	- ### Embedding an audio file on your PC (using "/Embed HTML")
-		- If you are familiar with HTML markup and [prefer using `<audio>` tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio), you can leverage Logseq's HTML embed feature to preview audio saved on your computer. To do so, type or copy-paste the following line, replacing the source `src` in "quotation marks" with the filepath and file name:
-		  ```
-		  @@html: <audio controls><source src="file:C://Users/USERNAME/Folder/audio.ogg" type="audio/ogg"></audio>@@
-		  ```
-		  #+BEGIN_TIP
-		  Make sure to include the `file:` at the start and to use forward slashes `/`
-		  #+END_TIP
-	- ### Embedding audio from a URL (using [[Hiccup]])
-		- To preview audio stored online, type or copy-paste the following Hiccup ClojureScript, replacing the source `src` in "quotation marks" with the actual URL:
-		  ```
-		  [:audio {:controls true :src "https://www.website.com/audio-file.wav"}]
-		  ```
-			- Example:
-			  [:audio {:controls true :src "https://www.kozco.com/tech/piano2-CoolEdit.mp3"}]
-			  ```
-			  [:audio {:controls true :src "https://www.kozco.com/tech/piano2-CoolEdit.mp3"}]
-			  ```
-			  #+BEGIN_TIP
-			  You can also access other [HTML attributes for the audio tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio) (see the markup for the `controls` attribute in the above example)
-			  #+END_TIP
-	- ### Embedding audio from a URL (using "/Embed HTML")
-		- If you are familiar with HTML markup and [prefer using `<audio>` tags](https://www.w3schools.com/html/html5_audio.asp), you can leverage Logseq's HTML embed feature to preview audio stored online. To do so, type or copy-paste the following line, replacing the source `src` in "quotation marks" with the actual URL:
-		  ```
-		  @@html: <audio controls><source src="https://www.website.com/audio-file.wav" type="audio/wav"></audio>@@
-		  ```
-			- Example:
-			  @@html: <audio controls><source src="https://www.kozco.com/tech/piano2-CoolEdit.mp3" type="audio/mpeg"></audio>@@
-			  ```
-			  @@html: <audio controls><source src="https://www.kozco.com/tech/piano2-CoolEdit.mp3" type="audio/mpeg"></audio>@@
-			  ```
-- ## Photos, Images, GIFs
-	- To embed images, you can either:
-		- Copy-paste them into Logseq (which will duplicate the file into your Logseq's graph's folder in the `Assets` on your PC), OR
-		- Point the photos to a particular path on your computer storage or online storage.
-	- ### Embedding Images
-		- To preview an image saved on your computer, type or copy-paste the following, replacing the filepath in (parenthesis) with the appropriate one:
-		  `![optional: add a name](C://Users/USERNAME/Folder/image.gif)`
-		  
-		  #+BEGIN_TIP
-		  Make sure to include the `!` at the start.
-		  #+END_TIP
-		  
-		  #+BEGIN_TIP
-		  	  You can specify the image size using `{:height --, :width --}` → Example:  `![label](image.gif){:height 418, :width 699}`
-		   #+END_TIP
-		- ### Embedding images from a URL
-			- To preview am image from the internet, copy its link (with the file name and filepath) and paste it into Logseq. The image should automatically appear when you hit Enter.
-				- For example:
-				- ![](https://logseq.github.io/screenshots/1.png){:height 469, :width 819}
-				  collapsed:: true
-				  ```
-				  https://logseq.github.io/screenshots/1.png
-				  ```
-				  #+BEGIN_TIP
-				  You can specify the image size by formatting the image link as such: `![](https://logseq.github.io/screenshots/1.png){:height 469, :width 819}`
-				   #+END_TIP
-- ## Videos
-	- You can also easily embed and play back video files by using the `{{video }}` macro, and pasting the link to the file inside the brackets after `video`:
-		- Example: `{{video file:C://Users/USERNAME/Folder/video.mp4}}` or `{{video https://www.website.com/video-file.webm}}`
-		- Example with relative video path:
+-
+- # BONUS: Video Macros
+	- If you don't have access to a video file's URL, not to stress! Logseq has a macro which can embed video from third-party video hosting services like YouTube and Vimeo. If you're embedding from YouTube, there's even a macro for timestamps.
+	-
+	- Here are the steps to use it:
+		- 1. Type the slash `/` command followed by `Embed Video URL`
+		- 2. Select the command
+		- 3. Paste the URL inside the `{{video }}` macro
+		- 4. To add YouTube timestamps:
+			- a. Play the video to the desired position.
+			- b. Pause and create a new line.
+			- c. Type the slash `/` command followed by `Embed YouTube timestamp`
+	-
+	- ## Example
+		- {{video https://www.youtube.com/watch?v=SUOdfa3MucE}}
+			- {{youtube-timestamp 0}} - A timestamp
+			- {{youtube-timestamp 271}} - Another timestamp
 		- ```
-		  ![](../assets/video.mp4)
+		  - {{video https://www.youtube.com/watch?v=SUOdfa3MucE}}
+		  	- {{youtube-timestamp 0}} - A timestamp
+		  	- {{youtube-timestamp 271}} - Another timestamp
 		  ```
-	- You can also access `{{video }}` by typing the slash `/` command and typing `Embed Video URL`
-	- Using the above method results in videos that autoplay, and may produce black bars for videos with unusual sizing. To mitigate this and access more advanced functions for video playback, you can use `/Embed HTML` or [[Hiccup]] to embed videos. Here are the steps for Hiccup:
-	- ### Embedding a video file
-		- To preview a video saved on your computer, type or copy-paste the following Hiccup ClojureScript, replacing the source `src` in "quotation marks" with the filepath and file name:
-		  ```
-		  [:video {:controls true :src "file:C://Users/USERNAME/Folder/video.mp4"}]
-		  ```
-		  #+BEGIN_TIP
-		  Make sure to include the `file:` at the start and to use forward slashes
-		  #+END_TIP
-		  #+BEGIN_TIP
-		  You can also access other [HTML attributes for the video tag](https://www.w3schools.com/tags/tag_video.asp) (see the markup for the `controls attribute` in the above example)
-		  #+END_TIP
-	- ### Embedding a videos from a URL
-		- To preview videos stored online, type or copy-paste the following Hiccup ClojureScript, replacing the source `src` in "quotation marks" with the actual URL:
-		  ```
-		  [:video {:controls true :src "https://www.website.com/video-file.webm"}]
-		  ```
-		- Example:
-		  
-		   [:video {:controls true :src "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"}]
-		   ```
-		   [:video {:controls true :src "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"}]
-		   ```
-		   #+BEGIN_TIP
-		   You can also access other [HTML attributes for the video tag](https://www.w3schools.com/tags/tag_video.asp) (see the markup for the `controls` attribute in the above example)
-		   #+END_TIP
-	- ### Embedding videos from YouTube, Vimeo, etc
-		- Type the slash `/` command and type `Embed Video URL`
-		- Select the command and paste the URL inside the `{{video }}` macro
-			- Example:
-			   ```
-			   {{video https://www.youtube.com/watch?v=SUOdfa3MucE}}
-			  ```
-			   {{video https://www.youtube.com/watch?v=SUOdfa3MucE}}
-		- To add timestamps, play the video, pause, create a new line. Type the slash `/` command and type `Embed YouTube timestamp`
-			- Select the command and paste the timestamp inside the `{{youtube-timestamp }}` macro
-			- #+BEGIN_CAUTION
-			  "youtube-timestamp" macro works only when there is an embedded youtube video on the page
-			  #+END_CAUTION
-			- Example:
-			- ```
-			   {{youtube-timestamp 369}}
-			  ```
-			- Here is an example (click on the timestamp to jump to this position in the video): {{youtube-timestamp 369}}
-			- See the timestamps embed in action here (skip to 0:42 seconds):
-			   <div style="position: relative; padding-bottom: 80.35714285714286%; height: 0;"><iframe src="https://www.loom.com/embed/995d6755b29c48c6b610646736aa5049" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-		-
-- TODO Split this page up and/or create multiple features that refer to this page. This page is more a tutorial than a reference page #docs
+-
+- # Useful Plugins for Media
+	- **[Media Timestamp](https://github.com/sethyuan/logseq-plugin-media-ts/blob/master/README.en.md) by sethyuan:** generates timestamps for video files, audio files, and Bilibili video
+	- **[Get YouTube Captions](https://github.com/briansunter/logseq-get-youtube-captions) by briansunter:** extracts auto-generated captions from YouTube video and can even add clickable timestamps
+	- **[Areas](https://github.com/bsongOT/logseq-plugin-areas) by bsongOT:** draw areas in an image and link those areas to other Logseq pages and blocks
+	- **[logseq-localassets-plugin](https://github.com/hkgnp/logseq-localassets-plugin) by hkgnp:** makes embedding local files easier by opening a file explorer window to select your files. It can even embed links to folders.
+	- **[media controls](https://github.com/stefanbuck/logseq-media-controls) by stefanbuck:** adds playback speed control and skip forward / backward to videos, audio, and YouTube videos
