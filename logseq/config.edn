@@ -49,7 +49,7 @@
   "mark" "[:mark \"$1\"]"}
  :feature/enable-block-time? true
  :feature/enable-timetracking? true
- :feature/enable-journals? true
+ :feature/enable-journals? false
  :ui/show-brackets? true
  :feature/enable-encryption? false
  :markdown/version 2
