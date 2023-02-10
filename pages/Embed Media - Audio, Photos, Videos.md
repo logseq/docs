@@ -26,6 +26,11 @@
 		  - ![](https://logseq.github.io/screenshots/1.png)
 		  ```
 	-
+	- ### Markdown method -> embed a video file in your assets folder
+		- ```markdown
+		   - ![](../assets/video.mp4)
+		  ```
+	-
 	- ### Markdown method -> embed a song saved on your PC:
 		- ![](file:///C:/Users/user/Music/Mix.wav)
 		- ```markdown
