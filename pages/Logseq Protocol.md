@@ -19,12 +19,14 @@
 			- `append`: (optional, boolean) Append to the end of the page, default to `false`(current editing position)
 			- `page`:    (optional) Page name to insert to, use "TODAY" to insert to today page
 		- Settings (in `config.edn`):
-			- Template variables are `{time}`, `{text}` and `{url}`
+			- Template variables are `{time}`, `{date}`, `{text}` and `{url}`
+				- Use `[[{date}]]` for a reference to today's journal page
 			- ```edn
 			  :quick-capture-templates {:text "[[quick capture]] **{time}** {text} {url}"}
 			  
 			  :quick-capture-options {
 			                          :insert-today? false
 			                          :redirect-page? true
+			                          :default-page "My Captured Page"
 			                          }
 			  ```

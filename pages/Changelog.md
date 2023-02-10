@@ -1,3 +1,71 @@
+- ## Beta 0.8.17 [[Feb 10th, 2023]]
+  id:: 63e5df37-63ae-4caa-ac10-25dec8ec741b
+  Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.17
+	- [[Thanks]]
+		- [[sallto]]
+			- Add css selectors to macros [#8299](https://github.com/logseq/logseq/pull/8299)
+			- Support Media Fragment URIs with audio [#8300](https://github.com/logseq/logseq/pull/8300)
+			- Add error notification if graph can't be opened [#8200](https://github.com/logseq/logseq/pull/8200)
+		- [[situ2001]]
+			- Fix CodeMirror indenting shortcuts cause page routing [#8415](https://github.com/logseq/logseq/pull/8415)
+			- Fix: remove extra braces for some incorrect macro usages [#8381](https://github.com/logseq/logseq/pull/8381)
+			- Fix: searching in page defers while entering Chinese characters using a Pinyin IME [#8399](https://github.com/logseq/logseq/pull/8399)
+			- Fix incorrect undo/redo sequence of indent/outdent [#8228](https://github.com/logseq/logseq/pull/8228)
+			- Fix validating of URLs in `video` block [#8164](https://github.com/logseq/logseq/pull/8164)
+		- [[Bad3r]]
+			- Fix docker web app failing to build [#8384](https://github.com/logseq/logseq/pull/8384)
+			- Add missing user-config options [#8429](https://github.com/logseq/logseq/pull/8429)
+		- [[Brooks Rady]]
+			- Fix normalizing the case of property keys [#8412](https://github.com/logseq/logseq/pull/8412)
+			- Fix rendering of inline symbols [#8358](https://github.com/logseq/logseq/pull/8358)
+		- [[Yuexun Jiang]]
+			- Add support for dragging the PDF viewer head to move the window [#7187](https://github.com/logseq/logseq/issues/7187)
+		- [[Colson]]
+			- Fix tables not widening in wide mode [#8375](https://github.com/logseq/logseq/pull/8375)
+		- [[Paulo Oliva]]
+			- Update European Portuguese translation
+		- [[ksqsf]]
+			- Update Chinese (Simplified) translation
+		- [[Dan Zwell]]
+			- Clarify the option to prefer pasting a file rather than text [#8363](https://github.com/logseq/logseq/pull/8363)
+		- [[Yichen Yan]]
+			- Cache special query value as resolved value [#8263](https://github.com/logseq/logseq/pull/8263)
+		- [[Phoenix Eliot]]
+			- Fix arch/sudo command in instructions in docs [#8476](https://github.com/logseq/logseq/pull/8476)
+		- [[queeup]]
+			- Update Turkish translation
+		- [[Richard Garčár]]
+			- Add Slovak language
+		- [[WsinGithub]]
+			- Fix missing PDF caused by incomplete linked file path from zotero [#7676](https://github.com/logseq/logseq/pull/7676)
+		- [[Ryen Xiang]]
+			- Chinese (Simplified) translation
+	- [[Fixed issues]]
+		- Auto heading on markdown mode [#8327](https://github.com/logseq/logseq/pull/8327)
+		- Search tippy component failing [#8373](https://github.com/logseq/logseq/pull/8373)
+		- CodeMirror indenting shortcuts cause page routing [#8415](https://github.com/logseq/logseq/pull/8415)
+		- Page properties not being visible in the query table [#8336](https://github.com/logseq/logseq/pull/8336) [#8482](https://github.com/logseq/logseq/pull/8482)
+		- Tables not widening in wide mode [#8375](https://github.com/logseq/logseq/pull/8375)
+		- Incorrect undo/redo sequence of indent/outdent [#8228](https://github.com/logseq/logseq/pull/8228)
+		- Fix date-picker opening conditions [#8333](https://github.com/logseq/logseq/pull/8333)
+		- Stability of Logseq Sync, allow ignore checking certs, retrying upload [#8350](https://github.com/logseq/logseq/pull/8350) [#8504](https://github.com/logseq/logseq/pull/8504) [#8486](https://github.com/logseq/logseq/pull/8486)
+		- Missing PDF caused by incomplete linked file path from zotero [#7676](https://github.com/logseq/logseq/pull/7676)
+		- Remove plugin settings entry when plugin disabled [#8548](https://github.com/logseq/logseq/pull/8548)
+		- Mobile: timestamp submenu of toolbar not shown [#8559](https://github.com/logseq/logseq/pull/8559)
+	- [[Enhancement]]
+		- Adds support for `:query-page` as an input [#8449](https://github.com/logseq/logseq/pull/8449)
+		- Support dragging the PDF viewer head to move the window [#8305](https://github.com/logseq/logseq/pull/8305)
+		- Support Media Fragment URIs with audio [#8300](https://github.com/logseq/logseq/pull/8300)
+		- Add error notification if graph can't be opened [#8200](https://github.com/logseq/logseq/pull/8200)
+		- Add css selectors to rendered macros [#8299](https://github.com/logseq/logseq/pull/8299)
+		- Add validation to logseq/config.edn [#8382](https://github.com/logseq/logseq/pull/8382)
+		- Add `{date}` template variable to quick-capture [#8560](https://github.com/logseq/logseq/pull/8560)
+		- Add `:default-page` to `quick-capture-options` [#8529](https://github.com/logseq/logseq/pull/8529)
+		- Add +/- syntax, (w)eek (m)onth (y)ear, and time support to query :inputs [#8387](https://github.com/logseq/logseq/pull/8387)
+		- Add native logging for desktop and android [#8515](https://github.com/logseq/logseq/pull/8515)
+		- File and page commands work in more contexts and warn when they don't work [#8495](https://github.com/logseq/logseq/pull/8495)
+		- I18n: Chinese [#8509](https://github.com/logseq/logseq/pull/8509), Slovak [#8464](https://github.com/logseq/logseq/pull/8464), Portuguese [#8389](https://github.com/logseq/logseq/pull/8389)
+		- Whiteboards: add tweet shape [#8279](https://github.com/logseq/logseq/pull/8279)
 - ## Beta 0.8.16 [[Jan 12th, 2023]]
   id:: 63c01211-e5cd-4bb5-80dd-a33cae5730f3
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.16
