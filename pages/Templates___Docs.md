@@ -16,7 +16,7 @@ title:: Templates/Docs
   template:: Feature
   template-including-parent:: false
 	- type:: [[Feature]]
-	  platform:: [[Desktop]] [[Mobile]]
+	  platform:: [[All Platforms]] 
 	  description:: …
 	  initial-version:: …
 	- ## Usage
