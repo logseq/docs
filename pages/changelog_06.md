@@ -497,7 +497,7 @@
 			- The desktop app can export all the public notes and logseq's Javascript and CSS files to a specified directory, then you can deploy it to GitHub pages, Vercel or your hosting service!
 			  
 			  Read more at [[Publishing (Desktop App Only)]]
-		- Initial support for [[namespace pages]], namespace can be used to avoid name conflicts, also, it can be used for building hierarchical relationships later.
+		- Initial support for [[Namespaces]], namespace can be used to avoid name conflicts, also, it can be used for building hierarchical relationships later.
 		  [[book/how to take dummy notes]] will create the parent page `book`.
 			- Discussion thread at https://discuss.logseq.com/t/auto-create-pages-and-assign-page-tags-when-using-namespaces/573
 		- [[Export]] graph as an [EDN](https://github.com/edn-format/edn) file, it's mostly for developers who'd like to analysis their graphs using other tools.
