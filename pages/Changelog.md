@@ -41,7 +41,7 @@
 		- [[Ryen Xiang]]
 			- Chinese (Simplified) translation
 	- [[Fixed issues]]
-		- Auto heading on markdown mode [#8327](https://github.com/logseq/logseq/pull/8327)
+		- Auto heading on markdown mode [#8327](https://github.com/logseq/logseq/pull/8327) - [Documentation](https://docs.logseq.com/#/page/headings)
 		- Search tippy component failing [#8373](https://github.com/logseq/logseq/pull/8373)
 		- CodeMirror indenting shortcuts cause page routing [#8415](https://github.com/logseq/logseq/pull/8415)
 		- Page properties not being visible in the query table [#8336](https://github.com/logseq/logseq/pull/8336) [#8482](https://github.com/logseq/logseq/pull/8482)
@@ -53,7 +53,7 @@
 		- Remove plugin settings entry when plugin disabled [#8548](https://github.com/logseq/logseq/pull/8548)
 		- Mobile: timestamp submenu of toolbar not shown [#8559](https://github.com/logseq/logseq/pull/8559)
 	- [[Enhancement]]
-		- Adds support for `:query-page` as an input [#8449](https://github.com/logseq/logseq/pull/8449)
+		- Adds support for `:query-page` as an input [#8449](https://github.com/logseq/logseq/pull/8449) - [Documentation](https://docs.logseq.com/#/page/advanced%20queries/block/query%20inputs)
 		- Support dragging the PDF viewer head to move the window [#8305](https://github.com/logseq/logseq/pull/8305)
 		- Support Media Fragment URIs with audio [#8300](https://github.com/logseq/logseq/pull/8300)
 		- Add error notification if graph can't be opened [#8200](https://github.com/logseq/logseq/pull/8200)
@@ -61,11 +61,11 @@
 		- Add validation to logseq/config.edn [#8382](https://github.com/logseq/logseq/pull/8382)
 		- Add `{date}` template variable to quick-capture [#8560](https://github.com/logseq/logseq/pull/8560)
 		- Add `:default-page` to `quick-capture-options` [#8529](https://github.com/logseq/logseq/pull/8529)
-		- Add +/- syntax, (w)eek (m)onth (y)ear, and time support to query :inputs [#8387](https://github.com/logseq/logseq/pull/8387)
+		- Add +/- syntax, (w)eek (m)onth (y)ear, and time support to query :inputs [#8387](https://github.com/logseq/logseq/pull/8387) - [Documentation](https://docs.logseq.com/#/page/advanced%20queries/block/query%20inputs)
 		- Add native logging for desktop and android [#8515](https://github.com/logseq/logseq/pull/8515)
 		- File and page commands work in more contexts and warn when they don't work [#8495](https://github.com/logseq/logseq/pull/8495)
 		- I18n: Chinese [#8509](https://github.com/logseq/logseq/pull/8509), Slovak [#8464](https://github.com/logseq/logseq/pull/8464), Portuguese [#8389](https://github.com/logseq/logseq/pull/8389)
-		- Whiteboards: add tweet shape [#8279](https://github.com/logseq/logseq/pull/8279)
+		- Whiteboards: add tweet shape [#8279](https://github.com/logseq/logseq/pull/8279) - [Documentation](https://docs.logseq.com/#/page/whiteboard%2Fobject%2Ftweet)
 - ## Beta 0.8.16 [[Jan 12th, 2023]]
   id:: 63c01211-e5cd-4bb5-80dd-a33cae5730f3
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.16

@@ -40,7 +40,8 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	- ### Query Inputs
 	  These are special values for a query's `:inputs` key above:
 		- #### Special page and block inputs
-			- `:current-page` - Name of current page. See [this example](((63b70dc8-58a5-4a43-ae19-28143edb7752)))
+			- `:current-page` - Sanitized, lower case name of current page the user is in. See [this example](((63b70dc8-58a5-4a43-ae19-28143edb7752)))
+			- `:query-page` - Sanitized, lower case name of page that query is in. This is useful when a query is to be displayed in an embedded page and the user doesn't want the query to change pages.
 			- `:current-block` - `:db/id` of current block. See [this example](((63bc5e11-24f1-45fd-945d-4a272e5ecf0d)))
 			- `:parent-block` - `:db/id` of parent block
 		- #### Special date inputs
