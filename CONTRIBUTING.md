@@ -8,7 +8,7 @@ section](#documenting-a-feature) on documenting a new feature. We also keep a
 [live list of documentation tasks](https://docs.logseq.com/#/page/docs) that we
 could use help with. Feel free to ask questions on Github or the Discord
 `#documentation` channel if attempting one of these tasks. If you are making
-large changes to the documentation, please open an issue to discuss them first. 
+large changes to the documentation, please open an issue to discuss them first.
 
 We also have [documentation tasks](https://github.com/orgs/logseq/projects/5/views/1?filterQuery=label%3Adocumentation) outside this repository that could use help.
 
@@ -23,7 +23,7 @@ If you only know enough to fill in parts of a page, that's fine. Just add a
 ### What not to Contribute
 
 * Tutorials on how to do X
-  * Quality tutorials live at https://hub.logseq.com/. Reach out to Ramses on Discord if interested in contributing one.
+  * Reach out to Ramses on https://discuss.logseq.com/c/docs/18 or on Discord if interested in contributing one.
 * Changes to how pages are organized or formatted
   * These pages are organized with a fairly specific ontology as they are translated to RDF.
 * Changes to our `TODO ... #docs` tasks
