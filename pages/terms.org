@@ -10,7 +10,7 @@ The team is committed to ensuring that the website is as useful and efficient as
 The service stores and processes personal data that you have provided to us, in order to provide the Service. It’s your responsibility to keep your pc and access to the website secure. 
 
 
-The Serivice does use third party services that declare their own Terms and Conditions.
+The Service does use third party services that declare their own Terms and Conditions.
 
 Link to Terms and Conditions of third party service providers used by the website
 
