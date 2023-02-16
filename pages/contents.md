@@ -58,6 +58,7 @@
 	- [Self Hosting Logseq](https://github.com/dustinlacewell/logseq-guide)
 	- [[Filename format]]
 	- [[Migrate to Logseq Beta]]
+	- [[Git Auto-Commit]]
 - [[Contribute]]
 	- Make a [Feature Request](https://discuss.logseq.com/)
 	- [Check us out on Github](https://github.com/logseq/logseq)
