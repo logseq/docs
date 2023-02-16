@@ -2,7 +2,6 @@ type:: [[Feature]]
 platform:: [[Desktop]]
 description:: Automatically save commit changes to a git repository.
 
-- TODO Check whether other platforms have this feature #docs
 - ## Usage
 	- You can make Logseq save changes to a git repository at a specified interval.
 		- ![version-control-settings-page.png](../assets/version-control-settings-page_1676506969044_0.png)
