@@ -1,5 +1,4 @@
-type:: [[Feature]]
-platform:: [[All Platforms]] except [[Publish Web]]
+type:: [[Command]]
 description:: Draw in blocks using an embedded [[Excalidraw]] canvas
 
 - ## Usage

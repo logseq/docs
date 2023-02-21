@@ -1,5 +1,6 @@
 type:: [[Feature]]
 platform:: [[All Platforms]] except [[Publish Web]]
+description:: Advanced functionality that can be invoked from any block
 
 - ## Usage
 	- Type `<` to kick off #autocompletion and list of advanced commands.
