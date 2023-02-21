@@ -21,13 +21,6 @@ collapsed:: true
 		- 1. You can add either `#card` or `[[card]]` to any block to make it a card.
 		- 2. You can right click the bullet to "Make a card", which will add `#card` to the end of the current block.
 			- ![CleanShot 2021-07-22 at 21.37.06.png](../assets/CleanShot_202021-07-22_20at_2021.37.06_1626961037065_0.png)
-## What's a cloze?
-collapsed:: true
-	- The content in a cloze is not shown by default. For example, {{cloze something}}, you can click it to reveal its content. You can have multiple {{cloze clozes}} in a block too.
-## How do I create a cloze?
-collapsed:: true
-	- Type `/cloze`.
-		- ![2021-07-22 21.53.38.gif](../assets/2021-07-22_21.53.38_1626962063719_0.gif){:height 538, :width 485}
 ## I've created several cards, how can I review all of my cards?
 collapsed:: true
 	- Click the "Flashcards" tab on the [[Left sidebar]].
