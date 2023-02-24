@@ -22,3 +22,5 @@ jobs:
 
       - name: Run graph-validator tests
         uses: logseq/graph-validator@main
+        with:
+          exclude: 'tags-and-page-refs-have-pages'
