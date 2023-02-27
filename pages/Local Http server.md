@@ -48,6 +48,7 @@ title:: Local Http server
 	  Hope you like it!
 - ## Functionality
 	- POST `/api` - `method` can be any of the ones listed in https://plugins-doc.logseq.com/. `args` is an array of arguments to pass to method.
+	- Supports CORS for use from another web page or a browser extension.
 ## Additional Links
 	- Logseq plugins API docs [https://plugins-doc.logseq.com](https://plugins-doc.logseq.com/)
 	- Logseq [[Queries]] to check more query usage.

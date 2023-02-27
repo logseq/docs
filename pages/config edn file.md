@@ -12,6 +12,7 @@ description:: Local config file, `logseq/config.edn`, is the main configuration 
 	- See [[Basic settings]] for config options that have a UI.
 	- This file can be edited outside Logseq and the effects will take place in a few seconds.
 	- Config options are validated when a user saves the file. Errors are displayed for invalid config options.
+	- Config options can be autocompleted after pressing `:`.
 	- ### Specific config options:
 		- `:editor/extra-codemirror-options` (map) - These can be any of the options [documented here](https://codemirror.net/doc/manual.html#config)
 		  collapsed:: true

@@ -13,6 +13,7 @@ initial-version:: 0.8.6
 	- Global config.edn supports all the config options that config.edn supports.
 	- Global config.edn can be edited outside Logseq and the effects will take place in a few seconds.
 	- Config options are validated when a user saves the file. Errors are displayed for invalid config options.
+	- Config options can be autocompleted after pressing `:`.
 	- Local config.edn overrides config options that are present in a global config.edn. However, if the config is a map, the local config option is merged over the global config option.
 		- Here's an example of how merging maps works:
 		  
