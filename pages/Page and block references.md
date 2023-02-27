@@ -11,6 +11,6 @@ platform:: [[All Platforms]]
 	- References can have custom display labels. See [[term/page reference with label]] or [[term/block reference with label]] for more.
 	- Related terms:
 		- {{embed [[term/page reference]]}}
-		- {{embed [[term/block reference]] }}
+		- {{embed [[Block Reference]] }}
 		- {{embed [[term/page reference with label]] }}
 		- {{embed [[term/block reference with label]] }}

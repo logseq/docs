@@ -7,8 +7,7 @@
 	- Why would you bother referencing blocks instead of copying over their contents? The reason is simple: to reduce duplicate content. Many people use block references to quickly reuse content from their graph.
 	- Whenever you reference a block, the counter to the right of the original block will run up. This number indicates how many times the block has been referenced in the graph:
 		- ![block-reference-counter.png](../assets/block-reference-counter_1642512271281_0.png)
-	- By clicking on a block reference counter, the block and all of its references will open in the sidebar:
-		- ![block-reference-sidebar.png](../assets/block-reference-sidebar_1642512299822_0.png)
+	- By clicking on a block reference counter, the block and all of its references will open below
 	- Now that you know the basics of block references, let's see how to create them.
 	  id:: 62bc803c-960a-4f6c-837b-9974c037fc6a
 - ## How to reference blocks

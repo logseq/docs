@@ -26,7 +26,7 @@ id:: 60a78b6b-a0ff-49fe-822f-87216fbf79ff
 	  id:: 60ab4582-5a6e-4f3a-84a2-71ae056455a0
 		- syntax: `[[page name]]`
 		  id:: 60a78b6b-688c-4ced-9104-60784597daf9
-	- [[term/block reference]]
+	- [[Block Reference]]
 	  id:: 60ab3eb7-c1e8-47ad-8a18-770896a10c5c
 		- syntax: `((block-uuid))`
 		- How can I get a _block-uuid_ ?
