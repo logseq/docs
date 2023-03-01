@@ -54,8 +54,6 @@
 	- [[Queries]]
 	- [[Advanced Queries]]
 	- [[Hiccup]]
-	- [[Custom views]]
-	- [Self Hosting Logseq](https://github.com/dustinlacewell/logseq-guide)
 	- [[Filename format]]
 	- [[Migrate to Logseq Beta]]
 - [[Contribute]]
