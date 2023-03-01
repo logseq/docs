@@ -67,7 +67,7 @@
 		- `:hidden` config doesn't work for both nfs and the desktop app
 		- Second settings can't be opened
 		- Entity not found err when import opml with non-existed block-ref-id
-		- Broken slash command registry #plugin
+		- Broken slash command registry #plugins
 		- Unlinked references search alias as well
 		- Copy heading with children
 		- Can't drag a block as the first child of a parent block
@@ -558,7 +558,7 @@
 		  https://discuss.logseq.com/t/css-template-eisenhower-matrix/526
 			- https://discuss.logseq.com/uploads/default/original/1X/b7b600c4c91c6108e9900f093dc69c7e91b4038e.gif
 		- [[Westofer]] made an archlinux aur package [logseq-desktop-bin](https://aur.archlinux.org/packages/logseq-desktop-bin/)
-		- [[Bryan Jenks]] made a #gruvbox #theme
+		- [[Bryan Jenks]] made a gruvbox #theme
 			- https://user-images.githubusercontent.com/479169/110302289-0b3af500-8034-11eb-8232-93c3c459f715.jpeg
 	- [[Features]]
 		- Linked references [[Filters]] by [[Sam]] 🥳
@@ -584,7 +584,7 @@
 - [[Feb 26th, 2021]]
   **Version 0.0.10**
 	- [[Features]]
-		- [[Encryption]] support contributed by [[kanru]] 🔒 #experiment
+		- [[Encryption]] support contributed by [[kanru]] 🔒 `#experiment`
 		  Both git repos and local directories support encryption!
 		  You need to enable the encryption feature on the settings page, and then re-index your graph to make it works.
 		- Resizable right sidebar!
@@ -649,7 +649,7 @@
 	- [[Thanks]]
 		- [[Lupin]] support both Images and [[Time Spaced  Repetition]] (by [[akhater]])
 		  https://github.com/akhater/Lupin
-		- Fix of bug "TODO mobile bar shortcut only works when called in the beginning of the line" (#1283) (by [[akhater]])
+		- Fix of bug "TODO mobile bar shortcut only works when called in the beginning of the line" (`#1283`) (by [[akhater]])
 		- Continue improvements on encryption (by [[kanru]])
 		- Using Logseq with Todoist and Google Calendar (by [[WilliamDurin]])
 		  https://github.com/WilliamDurin/todoist2logseq
@@ -674,16 +674,16 @@
   [[Desktop app]] download link:
   https://github.com/logseq/logseq/releases/tag/0.0.7
 	- [[Features]]
-		- 1. Auto-update support for desktop app #experiment
+		- 1. Auto-update support for desktop app `#experiment`
 		- 2. Add both `data-refs` and `data-href` attributes to [make css more power](https://discuss.logseq.com/t/propositions-to-empower-css-mods/289/1)
 	- [[Thanks]]
 		- German translation by [[rcvd]]
 		- A forked cljs-time by [[rainmote]]
 		- Add TODO and "/" shortcuts to mobile bar, by [[akhater]]
-		- [Create Build LogSeq Desktop for windows on Ubuntu](https://github.com/logseq/logseq/blob/master/docs/Build%20LogSeq%20Desktop%20for%20windows%20on%20Ubuntu.md), by [[akhater]] #doc
-		- [CSS mod colorful indentation lines](https://discuss.logseq.com/t/css-mod-colorful-indentation-lines/229), by [[cannibalox]] #css
-		- [CSS mod custom columns/cards view (kanban)](https://discuss.logseq.com/t/css-mod-custom-columns-cards-view-kanban/228), by [[cannibalox]] #css
-		- [Glossary - draft work in progress](https://discuss.logseq.com/t/glossary-draft-work-in-progress/196), by [[Cobblebot]] #doc
+		- [Create Build LogSeq Desktop for windows on Ubuntu](https://github.com/logseq/logseq/blob/master/docs/Build%20LogSeq%20Desktop%20for%20windows%20on%20Ubuntu.md), by [[akhater]] `#doc`
+		- [CSS mod colorful indentation lines](https://discuss.logseq.com/t/css-mod-colorful-indentation-lines/229), by [[cannibalox]] `#css`
+		- [CSS mod custom columns/cards view (kanban)](https://discuss.logseq.com/t/css-mod-custom-columns-cards-view-kanban/228), by [[cannibalox]] `#css`
+		- [Glossary - draft work in progress](https://discuss.logseq.com/t/glossary-draft-work-in-progress/196), by [[Cobblebot]] `#doc`
 		- Awesome video by [[Santi Younger]] [[Videos]]
 		  {{youtube https://www.youtube.com/watch?v=jovMt17_Vd4&ab_channel=SantiYounger}}
 	- [[Fixed Issues]]

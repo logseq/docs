@@ -34,4 +34,4 @@
 * *Is Logseq just a rip-off of Roam Research or another note-taking program?*
 ** Definitely not :)
 *** {{embed ((61110543-a71f-458d-b42e-b78a4d22f0c0)) }}
-* Feel free to ask more questions over on the [[https://discuss.logseq.com/c/questions-and-help/8][Questions and Help Section of the Forum]] or #questions channel on [[https://discord.gg/KpN4eHY][Discord]]!
+* Feel free to ask more questions over on the [[https://discuss.logseq.com/c/questions-and-help/8][Questions and Help Section of the Forum]] or \#questions channel on [[https://discord.gg/KpN4eHY][Discord]]!

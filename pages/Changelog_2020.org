@@ -28,7 +28,7 @@ This is our last release for 2020,  it is a challenging year for everyone, stay 
 :created_at: 1609249850194
 :updated-at: 1609249850194
 :END:
-**** Simple [[Queries]] support #experiment
+**** Simple [[Queries]] support \#experiment
 :PROPERTIES:
 :created_at: 1609249966260
 :updated-at: 1609251607921
@@ -36,7 +36,7 @@ This is our last release for 2020,  it is a challenging year for everyone, stay 
 For example:
 {{query (and (todo now later done) [[tag1]])}}
 {{embed ((5feb30e3-fedc-4c2a-aa03-b44020c21c68)) }}
-**** [[Block Timestamps]] support #experiment
+**** [[Block Timestamps]] support \#experiment
 :PROPERTIES:
 :created_at: 1609251098164
 :updated-at: 1609251374853
@@ -110,8 +110,8 @@ Go to ~Settings~ and toggle this button:
 *** [[Enhancement]]
 **** 1. Display orange dot when in editing mode
 *** [[Features]]
-**** 1. Auto-export notes as zip files when you refresh the browser and there're new changes on the database schema. #data-safety
-**** 2. Add ~Download all files as a zip~ support #data-safety
+**** 1. Auto-export notes as zip files when you refresh the browser and there're new changes on the database schema. \#data-safety
+**** 2. Add ~Download all files as a zip~ support \#data-safety
 [[https://cdn.logseq.com/%2F8b9a461d-437e-4ca5-a2da-18b51077b5142020_11_29_Screenshot%202020-11-29%2023-42-09%20%2B0800.png?Expires=4760264603&Signature=n-hAo72C2l5wyXfOuPxas0505ftBOHNE~Yv61VEWF9m2ysp5RMkCkUJ5ZH-zYnop3AL5bpZiMIWXRH49yxpPfC1aIvcQWWp~71ZGEAIsLB3~aoL34XsfkNjujsREUE8~QXOabnzbSS8wAJ-X71TRzEOMYAhr5V0UEYJNwDEEDtUNtuE-hX1dTwZgVmoUrONDaw2oeg5cyawoxW2KIgX9UkvnhytKs8BXswM78UCFQTTNBL-QvuyjULmEObBdAjnh9I0X1YHZFg4cF-s7AB5EKYCTidpD--3lw9n-Wa2My~Te2g5VvHCZ8PwDWbCvKVN6CXMf8Zyd56EGqkYujPdwAg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA][2020_11_29_Screenshot 2020-11-29 23-42-09 +0800.png]]
 **** 3. Add escape formatting support
 ((5fc3be83-7f22-4488-b3ec-cfabb0639b3b))
@@ -259,12 +259,12 @@ The spent time for this block is ~18s~.
 ** [[Oct 9th, 2020]]
 *Version 0.0.3.9*
 *** [[Fixed issues]]
-**** 1. [[https://github.com/logseq/logseq/issues/399][Clean up properties for all blocks when inserting from a template]] (by [[meh]]) #editor
-**** 2. [[https://github.com/logseq/logseq/issues/429][Merge simple conflicts automatically using isomorphic-git instead of resorting to manual merging and force-push]] #sync
+**** 1. [[https://github.com/logseq/logseq/issues/399][Clean up properties for all blocks when inserting from a template]] (by [[meh]]) \#editor
+**** 2. [[https://github.com/logseq/logseq/issues/429][Merge simple conflicts automatically using isomorphic-git instead of resorting to manual merging and force-push]] \#sync
 **** 3. Fixed git diff issues
-**** 4. [[https://github.com/logseq/logseq/issues/428][ctrl-o creates a broken page, if page is being created and not existent]] #editor
+**** 4. [[https://github.com/logseq/logseq/issues/428][ctrl-o creates a broken page, if page is being created and not existent]] \#editor
 **** 5. [[https://github.com/logseq/logseq/issues/420][Fix broken tree structure when number of blocks > 500]] (by [[meh]])
-**** 6. [[https://github.com/logseq/logseq/issues/436][Builtin diff/merge does not work well when new files have been created]] #diff #sync
+**** 6. [[https://github.com/logseq/logseq/issues/436][Builtin diff/merge does not work well when new files have been created]] \#diff \#sync
 **** 7. [[https://github.com/logseq/logseq-internal/pull/154][Cannot drag a block to the first position in a page]] (by [[meh]])
 **** 8. [[https://github.com/logseq/logseq/issues/376][Fix cannot drag a block to the first position in a page]] (by [[meh]])
 **** 9. Fix inline math parsing
@@ -302,7 +302,7 @@ Add ~:enable-grammarly? true~ to the file ~logseq/config.edn~.
 **** 3. Allow deleting journal pages
 **** 4. Fixed dropdown modal display (by [[meh]])
 *** [[Features]]
-**** 1. Publishing #experiment
+**** 1. Publishing \#experiment
 Check out the [[https://logseq.github.io/page/publishing][docs]].
 ** [[Sep 28th, 2020]]
 *Version 0.0.3.5*
@@ -418,7 +418,7 @@ If you want to help translate Logseq, sign up here: https://crwd.in/logseq
 **** 6. Make it compatible with new date format with roam when importing json
 **** 7. Fixed page rename && delete
 *** [[Features]]
-**** 1. [[Developer mode]] (by haoji) #experiment
+**** 1. [[Developer mode]] (by haoji) \#experiment
 Developer mode helps contributors and extension developers test their integration with Logseq more efficient.
 ** [[Sep 9th, 2020]]
 *Version 0.0.2.6*

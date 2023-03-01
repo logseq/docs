@@ -66,8 +66,7 @@ description:: Annotates any block or page with multiple pairs of values e.g. `ra
 		- This example data is also used elsewhere.
 	- **Properties** have multiple use cases including:
 		- Selecting (querying) specific pages/blocks:
-		  collapsed:: true
-			- For example, let's query all the blocks with the property `type` and the value `book`: #examples #books
+			- For example, let's query all the blocks with the property `type` and the value `book`:
 			  {{query (property type book)}}
 		- TODO Finish explaining use cases #docs
 - ## Additional Links

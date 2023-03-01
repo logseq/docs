@@ -1,11 +1,12 @@
 type:: [[Feature]]
 platform:: [[All Platforms]]
+tags:: #Academic
 
 - ## What's a "card"?
   collapsed:: true
 	- A card is intended to be used as an aid in memorization. In logseq, it's just a block with either `#card` or `[[card]]`. It can have some [[Clozes]] too.
 		- For example, this block is a card:
-			- What does "Logseq" mean? #card #logseq
+			- What does "Logseq" mean? #card
 			  card-last-interval:: 28.3
 			  card-repeats:: 4
 			  card-ease-factor:: 2.66

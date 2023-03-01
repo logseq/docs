@@ -62,7 +62,7 @@
   id:: 63e5df37-63ae-4caa-ac10-25dec8ec741b
   Desktop app and Android App download link: https://github.com/logseq/logseq/releases/tag/0.8.17
   This is a release focused on bug fixes and minor enhancements.
-  Introduced more query inputs #8387 #8449.
+  Introduced more query inputs `#8387 #8449`.
   Introduced a new template variable `{date}` to quick-capture, [Documentation](https://docs.logseq.com/#/page/logseq%20protocol).
 	- [[Thanks]]
 		- [[sallto]]
@@ -450,7 +450,7 @@
 			-
 		- Fix file links creating garbage pages
 		- Disallow tags as property names
-		- Don't fail publish action if they don't exist for #7067
+		- Don't fail publish action if they don't exist for `#7067`
 		- Open local URL
 		- Can't click the block reference number in published HTML
 		- Main content container overflow when page title too long
@@ -1654,7 +1654,7 @@
 			- Always add target of `redirect-to-page!` to 'Recent' list.
 	- [[Fixed issues]]
 		- Code block are not saved
-		- Empty block not deleted when there's new file detected from #data-safety
+		- Empty block not deleted when there's new file detected from \#data-safety
 		- Wrong indentation for both templates and copied selections
 		- Avoid cyclical refs and deep refs
 		- Cut a block doesn't copy its nested children blocks
@@ -1698,7 +1698,7 @@
 			- Add datalog console extension in dev
 			- Fix GitHub CI
 		- [[David Whittington]]
-			- Support #Arweave URLs for links and images
+			- Support Arweave URLs for links and images
 		- [[Peng Xiao]]
 			- Custom macro click issue
 	- [[Fixed issues]]

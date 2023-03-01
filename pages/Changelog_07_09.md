@@ -38,7 +38,7 @@
 		- [[angusiguess]]
 			- Emit image links as image embeds rather than as html links
 	- [[Fixed issues]]
-		- Can't edit code block #Codemirror
+		- Can't edit code block [[Codemirror]]
 		- Review cards button not working
 		- Search not working when publishing
 		- Smooth auto-complete for `/` commands
@@ -429,7 +429,7 @@
   **Beta 0.3.0**
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.3.0
 	- [[Features]]
-		- [[Zotero]] integration! 🎉 🎉 #Academic
+		- [[Zotero]] integration! 🎉 🎉 `#Academic`
 			- By [[Weihua]] and [[Junyu]]
 			- {{embed ((6103e488-22d4-4751-b27a-69b278067c26))}}
 		- Support `==` for highlight in Markdown
@@ -462,7 +462,7 @@
 		- "Copy as" support both `remove [[]]` and `remove emphasis`
 		- Don't parse quoted string as page references for properties
 		- Property value wrapped by `""` will not be treated as page references
-		- Add a `:breadcrumb-show?` option for custom queries to hide breadcrumbs. #option
+		- Add a `:breadcrumb-show?` option for custom queries to hide breadcrumbs. [[config.edn]]
 			- The value should be `false`
 	- [[Deprecated]]
 		- Block timestamps was deleted to avoid countless rare cases
@@ -478,7 +478,7 @@
 		- [[Sebastian Bensusan]]
 			- fix(calc): don't show errors for empty lines
 		- [[ruffnex]]
-			- add mhchem plugin #latex
+			- add mhchem plugin latex
 	- [[Fixed issues]]
 		- App crashing when auto-complete some page references
 		- Display an error when the file or graph directory was deleted
@@ -508,7 +508,7 @@
   **Beta 0.2.7**
   Desktop app download link: https://github.com/logseq/logseq/releases/tag/0.2.7
 	- [[Features]]
-		- **Cards**  🎉 🎉  #Academic
+		- **Cards**  🎉 🎉  `#Academic`
 			- By [[Zhiyuan]]
 			- [[Demo]]
 				- ![2021-07-22 22.28.02.gif](../assets/2021-07-22_22.28.02_1626964258528_0.gif)

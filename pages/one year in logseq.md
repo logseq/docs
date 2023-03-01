@@ -52,7 +52,7 @@ title: One year in Logseq
 		- Publishing the whole web app to your own website
 - **The future**
 	- More stable and more performant
-	- Better undo/redo #undotree
+	- Better undo/redo `#undotree`
 	- End-to-End encryption storage
 	- Mobile apps
 	- Real-time collaboration
