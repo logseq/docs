@@ -41,7 +41,7 @@
 		- Remove prefix(`@`) checking for links of org mode page [#8589](https://github.com/logseq/logseq/pull/8589)
 		- Force disable the unloaded(error) plugin [#8714](https://github.com/logseq/logseq/pull/8714)
 		- Fix marker layout of area highlight PDF ref in block content [#8630](https://github.com/logseq/logseq/pull/8630)
-		- Fix Logseq Sync network issues; add FreeBSD dev support [#8616](https://github.com/logseq/logseq/pull/8616)
+		- Fix Logseq Sync network issues; add FreeBSD dev support [#8682](https://github.com/logseq/logseq/pull/8682)
 	- [[Enhancement]]
 		- Experimental support of auto-completion UI for [config.edn](https://docs.logseq.com/#/page/config.edn) file editing  [#8584](https://github.com/logseq/logseq/pull/8584)
 		- Add support for [block refs](https://docs.logseq.com/#/page/block%20reference) in properties to backlink to blocks [#8695](https://github.com/logseq/logseq/pull/8695)
