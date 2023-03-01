@@ -1,9 +1,8 @@
 title:: Templates/Docs
 
-- <% today %>
+- ## Beta 0.x.y <% today %>
   template:: Changelog
-  Beta 0.x.x
-  Desktop app and Android App download link:
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.x.y>
 	- [[Features]]
 		-
 	- [[Thanks]]
