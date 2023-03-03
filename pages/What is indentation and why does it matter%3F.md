@@ -8,9 +8,10 @@ title:: What is indentation and why does it matter?
 	- Block **B** is a _child_ of **A** and it's in the same _branch_ as blocks **C** and **D**.
 	- Block **C** is a _child_ of **A** and the _parent_ of **D**.
 - Why is this important? As we've discussed in the previous lessons, Logseq is a networked note-taking tool that works with links. We also discussed that Logseq has no hierarchy, which is actually nuanced. As you've probably deduced by now, hierarchy in Logseq happens at the block level.
-- By associating blocks, you create a branch that you can navigate. Let's turn the example above into links and navigate to the linked references of block **D,** which we'll name _Child **D**_:
+- By indenting blocks, you create a branch that you can navigate. Let's turn the example above into links and navigate to the _**Linked references**_ section of the page of _Child **D,**_ created for block **D**:
 	- ![child-d-path.png](../assets/child-d-path_1641572255030_0.png)
-- By going to the page of _Child **D**_, we can see this hierarchy it's in: first up is _Parent and child **C**_ and then _Parent **A**_.
+- By going to the page of _Child **D**_, we can see this hierarchy as it's composed on this documentation page: first up is _Parent and child **C**_ and then _Parent **A**_.
 - By clicking on one of the parents, the whole branch becomes visible:
 	- ![child-d-branch.png](../assets/child-d-branch_1641572326932_0.png)
+- Click again on one of the parents, and you will end up on that parent's page, again showing the composed hierarchy in the _**Linked Reference**_ section.
 - That's the basics of indentation! It's not much more complex than this, but it opens up a world of possibilities.
