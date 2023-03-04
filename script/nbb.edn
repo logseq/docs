@@ -10,4 +10,9 @@
   {:git/url "https://github.com/logseq/bb-tasks"
    :git/sha "4295d5df0458cc06a09c5d506510ee49b785407d"}
 
+  logseq/rdf-export
+  #_{:local/root "../../../../../rdf-export"}
+  {:git/url "https://github.com/logseq/rdf-export"
+   :git/sha "5ee89dfd20c4e7940cbaa272cf38c02a20198c2a"}
+
   org.babashka/cli {:mvn/version "0.5.40"}}}
