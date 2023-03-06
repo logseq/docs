@@ -15,7 +15,6 @@ jobs:
 
   nbb-tests:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -24,3 +23,13 @@ jobs:
         uses: logseq/graph-validator@main
         with:
           exclude: 'tags-and-page-refs-have-pages'
+
+  rdf-export:
+    runs-on: ubuntu-latest
+    name: Test rdf export
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Export graph as RDF
+        uses: logseq/rdf-export@main
