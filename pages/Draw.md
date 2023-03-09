@@ -1,5 +1,5 @@
 type:: [[Command]]
-description:: Draw in blocks using an embedded [[Excalidraw]] canvas
+description:: Draw in blocks using an embedded Excalidraw canvas
 
 - ## Usage
 	- Type `/draw` command to start drawing.

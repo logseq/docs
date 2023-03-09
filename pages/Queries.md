@@ -1,7 +1,10 @@
+type:: [[Feature]]
+platforms:: [[All Platforms]]
+description:: Also known as simple queries
+
 - **What are "Queries"?**
-  created_at:: 1609230242742
+  created-at:: 1609230242742
   updated-at:: 1609247076654
-  title:: Queries
 	- Queries are for asking questions from your knowledge base and the outside world (in the future).
 	  updated-at:: 1609231528688
 	  created-at:: 1609230243642

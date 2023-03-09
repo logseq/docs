@@ -1,7 +1,10 @@
-description:: Advanced queries are written with [Datalog](https://en.wikipedia.org/wiki/Datalog) and query the [Datascript](https://github.com/tonsky/datascript) database. [[Learn Datalog Today]] is a great first reference if you're not familiar with Datalog.
+type:: [[Feature]]
+platforms:: [[All Platforms]]
+description:: Advanced queries are written with [Datalog](https://en.wikipedia.org/wiki/Datalog) and query the [Datascript](https://github.com/tonsky/datascript) database.
 
 - ## Intro
 	- #+BEGIN_NOTE
+	  [[Learn Datalog Today]] is a great first reference if you're not familiar with Datalog.
 	   If this is your first time looking at an advanced query, first skim our [beginner user resources](((63bc6201-53b1-47a4-834f-83934b69ad49))). Several resources are listed so look ones for that fit your learning style.
 	  #+END_NOTE
 - ## Advanced Query Shape
