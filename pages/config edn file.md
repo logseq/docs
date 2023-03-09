@@ -1,6 +1,6 @@
 title:: config.edn
 type:: [[Feature]]
-platform:: [[All Platforms]]
+platforms:: [[All Platforms]]
 description:: Local config file, `logseq/config.edn`, is the main configuration file for a graph
 
 - ## Usage

@@ -1,5 +1,5 @@
 type:: [[Feature]]
-platform:: [[All Platforms]] except [[Web]] and [[Publish Web]] 
+platforms:: [[All Platforms]] except [[Web]] and [[Publish Web]] 
 description:: Paid feature that provides encrypted synchronization of graphs between devices.
 
 - #+BEGIN_NOTE

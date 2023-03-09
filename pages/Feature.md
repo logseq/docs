@@ -4,7 +4,7 @@ description:: A user-facing piece of functionality. This can be a small piece or
 - ## Conventions
 	- A feature page has the following properties
 		- `type` (required) - Set to `[[Feature]]` to identify it as a feature
-		- `platform` (required) - Indicates what platforms the feature is available
+		- `platforms` (required) - Indicates on what platforms the feature is available
 		- `description` (optional) - A brief description of what the feature does
 		- `initial-version` (optional) - Logseq version the feature was first introduced
 	- A feature page normally contains the following sections:

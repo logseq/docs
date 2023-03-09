@@ -1,5 +1,5 @@
 type:: [[Feature]]
-platform:: [[All Platforms]]
+platforms:: [[All Platforms]]
 
 - ## Usage
 	- Type `[[]]` to create or reference any other page. You can also make a new page in the search bar.

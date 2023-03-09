@@ -1,5 +1,5 @@
 type:: [[Feature]]
-platform:: [[Desktop]]
+platforms:: [[Desktop]]
 description:: User configuration directory located in `~/.logseq/config` that applies to all graphs. Directory consists of [[Global config.edn]] and [[plugins.edn]]
 initial-version:: 0.8.6
 

@@ -1,6 +1,6 @@
 type:: [[Feature]]
 description:: Built in integration that helps import your Zotero items as pages seamlessly. [Zotero](https://www.zotero.org/) is a free, easy-to-use tool to help you collect, organize, cite, and share research.
-platform:: [[All Platforms]] except [[Publish Web]]
+platforms:: [[All Platforms]] except [[Publish Web]]
 tags:: #Academic
 
 - ## Usage

@@ -1,5 +1,5 @@
 type:: [[Feature]]
-platform:: [[Desktop]]
+platforms:: [[Desktop]]
 initial-version:: 0.9.0
 
 - #+BEGIN_NOTE

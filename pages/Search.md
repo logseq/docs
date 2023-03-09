@@ -1,5 +1,5 @@
 type:: [[Feature]]
-platform:: [[All Platforms]]
+platforms:: [[All Platforms]]
 
 - ## Usage
 	- Search pages and full text search blocks by clicking on the search bar at the top or press `Cmd-k`.

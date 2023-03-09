@@ -1,6 +1,6 @@
 alias:: page alias
 type:: [[Feature]]
-platform:: [[All Platforms]]
+platforms:: [[All Platforms]]
 description:: Provides a readable alias for a page. A page can have multiple aliases. Page references with the alias will automatically redirect to the original page
 
 - TODO Describe alias limitations #docs

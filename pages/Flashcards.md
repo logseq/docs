@@ -1,5 +1,5 @@
 type:: [[Feature]]
-platform:: [[All Platforms]]
+platforms:: [[All Platforms]]
 tags:: #Academic
 
 - ## What's a "card"?

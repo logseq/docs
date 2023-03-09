@@ -1,5 +1,5 @@
 type:: [[Feature]]
-platform:: [[Desktop]]
+platforms:: [[Desktop]]
 description:: local HTTP server to access logseq's graph
 initial-version:: 0.8.15
 title:: Local Http server

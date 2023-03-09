@@ -1,5 +1,5 @@
 type:: [[Feature]]
-platform:: [[Desktop]]
+platforms:: [[Desktop]]
 description:: Automatically save commit changes to a git repository.
 
 - ## Usage

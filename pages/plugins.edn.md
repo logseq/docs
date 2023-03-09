@@ -1,6 +1,6 @@
 title:: plugins.edn
 type:: [[Feature]]
-platform:: [[Desktop]]
+platforms:: [[Desktop]]
 description:: Global file that provides a list of a user's current [[Plugins]] 
 initial-version:: 0.8.9
 

@@ -1,4 +1,4 @@
 type:: [[Feature]]
-platform:: [[Desktop]]
+platforms:: [[Desktop]]
 
 - TODO Fill out this page #docs

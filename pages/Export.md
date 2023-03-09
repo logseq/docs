@@ -1,4 +1,4 @@
 type:: [[Feature]]
-platform:: [[All Platforms]]
+platforms:: [[All Platforms]]
 
 - TODO Document feature, page and graph level #docs

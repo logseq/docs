@@ -1,5 +1,5 @@
 type:: [[Feature]]
-platform:: [[All Platforms]]
+platforms:: [[All Platforms]]
 description:: Provides keyboards shortcuts for running core commands and actions. Shortcuts can be customized through user configuration.
 
 - ## Usage

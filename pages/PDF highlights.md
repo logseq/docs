@@ -1,5 +1,5 @@
 type:: [[Feature]]
-platform:: [[Desktop]]
+platforms:: [[Desktop]]
 
 - TODO [[Ramses]] would like to rename to PDF Reader #docs
 - TODO Organize this page into a feature page #docs

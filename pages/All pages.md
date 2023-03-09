@@ -1,6 +1,6 @@
 type:: [[Feature]]
 description:: Page dedicated to page management - search, delete and sort pages.
-platform:: [[All Platforms]]
+platforms:: [[All Platforms]]
 
 - ## Usage
 	- Type `g a` to navigate to this page or click on the [[Left sidebar]] and then the `All pages` link

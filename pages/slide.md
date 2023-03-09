@@ -1,7 +1,7 @@
 title:: slide
 alias:: Presentation
 type:: [[Feature]]
-platform:: [[All Platforms]]
+platforms:: [[All Platforms]]
 
 - Logseq's slide feature is powered by the awesome [Reveal.js](https://revealjs.com/).
   background-image:: https://images.unsplash.com/photo-1498855926480-d98e83099315

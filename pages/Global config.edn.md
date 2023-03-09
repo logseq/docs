@@ -1,6 +1,6 @@
 title:: Global config.edn
 type:: [[Feature]]
-platform:: [[Desktop]]
+platforms:: [[Desktop]]
 description:: Version of [[config.edn]] that applies to all graphs
 initial-version:: 0.8.6
 

@@ -1,6 +1,6 @@
 type:: [[Feature]]
 alias:: Todos
-platform:: [[All Platforms]]
+platforms:: [[All Platforms]]
 
 - ## Usage
 	- Logseq comes with two built-in flavors to mark your block with built-in workflow mark keywords and manage your tasks:

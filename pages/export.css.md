@@ -1,6 +1,6 @@
 title:: export.css
 type:: [[Feature]]
-platform:: [[Publish Web]] 
+platforms:: [[Publish Web]] 
 description:: Local config file, logseq/export.css, loads custom css for a published graph
 
 - ## Functionality

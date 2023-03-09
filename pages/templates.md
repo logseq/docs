@@ -1,5 +1,5 @@
 type:: [[Feature]]
-platform:: [[All Platforms]] except [[Publish Web]]
+platforms:: [[All Platforms]] except [[Publish Web]]
 
 - You can make a block and its children as template for reuse purpose.
 - For example, let's create a meeting note template block as below for reuse:

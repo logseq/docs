@@ -1,5 +1,5 @@
 type:: [[Feature]]
-platform:: [[All Platforms]] but some ways are not supported for [[Publish Web]].
+platforms:: [[All Platforms]] but some ways are not supported for [[Publish Web]].
 
 - ## Usage
 	- There are three ways to install custom themes

@@ -1,5 +1,5 @@
 type:: [[Feature]]
-platform:: [[Desktop]]
+platforms:: [[Desktop]]
 description:: This feature publishes a graph as a [[Publish Web]], single page application.
 
 - ## Usage

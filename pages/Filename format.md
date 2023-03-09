@@ -1,5 +1,5 @@
 type:: [[Feature]]
-platform:: [[Desktop]]
+platforms:: [[Desktop]]
 description:: Allow users to migrate the filenames to the latest format
 initial-version:: 0.8.9
 

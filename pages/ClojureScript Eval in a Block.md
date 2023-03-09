@@ -1,5 +1,5 @@
 type:: [[Feature]]
-platform:: [[All Platforms]] except [[Publish Web]]
+platforms:: [[All Platforms]] except [[Publish Web]]
 description:: Run ClojureScript in a block using [sci](https://github.com/babashka/sci)
 
 - ## Usage

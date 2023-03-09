@@ -1,6 +1,6 @@
 title:: custom.js
 type:: [[Feature]]
-platform:: [[All Platforms]] except [[Publish Web]]
+platforms:: [[All Platforms]] except [[Publish Web]]
 
 - ## Usage
 	- First time you load a custom.js file, you are prompted to confirm you want to load it.

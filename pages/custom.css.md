@@ -1,6 +1,6 @@
 title:: custom.css
 type:: [[Feature]]
-platform:: [[All Platforms]] 
+platforms:: [[All Platforms]] 
 description:: Local config file, logseq/custom.css, loads custom css for a graph on startup
 
 - ## Functionality

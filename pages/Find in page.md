@@ -1,7 +1,7 @@
 type:: [[Feature]] 
 initial-version:: 0.8.3
 description:: Finds any text that is visible or loaded into the current page
-platform:: [[Desktop]]
+platforms:: [[Desktop]]
 
 - ## Usage
 	- Press `Cmd-f` to open this feature. Navigate between search results with `Cmd-g` and `Shift-cmd-g`.

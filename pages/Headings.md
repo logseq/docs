@@ -1,5 +1,5 @@
 type:: [[Feature]]
-platform:: [[All Platforms]] 
+platforms:: [[All Platforms]] 
 description:: Creating headings on a page
 
 - ## Usage

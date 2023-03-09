@@ -1,6 +1,6 @@
 type:: [[Feature]]
 description:: Extends the functionality of logseq with third party tools
-platform:: [[Desktop]]
+platforms:: [[Desktop]]
 
 - ## Usage
 	- To go to the plugins dashboard type `tp`. From this dashboard, third-party plugins from the [[Marketplace]], can be searched, installed, updated and removed.

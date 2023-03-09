@@ -1,6 +1,6 @@
 type:: [[Feature]]
 description:: Users can configure logseq with a number of files. 
-platform:: [[All Platforms]] except for custom.js and global config
+platforms:: [[All Platforms]] except for custom.js and global config
 
 - ## Usage
 	- Configure Logseq with either a local configuration or a global configuration.
