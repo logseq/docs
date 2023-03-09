@@ -13,6 +13,6 @@
   logseq/rdf-export
   #_{:local/root "../../../../../rdf-export"}
   {:git/url "https://github.com/logseq/rdf-export"
-   :git/sha "5ee89dfd20c4e7940cbaa272cf38c02a20198c2a"}
+   :git/sha "3fcbb952469800d766ae5b51af131c3528b928c0"}
 
   org.babashka/cli {:mvn/version "0.5.40"}}}
