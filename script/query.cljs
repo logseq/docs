@@ -44,7 +44,7 @@
    {:query '[:find (pull ?b [*])
              :where
              (page-property ?b :type "Feature")]
-    :columns [:name :platform]
+    :columns [:name :platforms]
     :sort-by :name
     :result-transform propertify}
    :ui-elements
