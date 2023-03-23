@@ -18,8 +18,8 @@ jobs:
         with:
           dest: www
             # Get latest nightly with query builder
-            # from https://github.com/pengx17/logseq-publish/pkgs/container/logseq-base
-          version: nightly@sha256:11121494f3dfa61a6c166c7ebddbaa0c2af636820a30e93c5e3ab432e3166d1e
+            # from https://github.com/pengx17/logseq-publish/pkgs/container/logseq-publish
+          version: nightly@sha256:e29864c7682dc7ab23472bad5f551654e2699b8a3286b135ca94a54e6b65f6e3
 
       - name: Add .nojekyll file
         run: touch www/.nojekyll
