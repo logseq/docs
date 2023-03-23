@@ -23,7 +23,7 @@ description:: Also known as simple queries
 	   #+END_EXAMPLE
 	   You can type `/query` to create a simple query.
 	  2. [[Advanced Queries]]
-- **Query Operators **
+- #### Query Operators
   These three operators can be applied around any query filters.
 	- **and**
 	  created_at:: 1609237410438
@@ -50,7 +50,7 @@ description:: Also known as simple queries
 	  #+BEGIN_EXAMPLE
 	  (not [[page 1]] [[page 2]])
 	  #+END_EXAMPLE
-- **Query filters**
+- #### Query Filters
   updated-at:: 1609237391135
   id:: 62967225-37d9-46b7-859f-92e0311ab4be
   created-at:: 1609237391135
@@ -71,13 +71,14 @@ description:: Also known as simple queries
 	  (between -2w today)
 	  
 	  #+END_EXAMPLE
-	- **Page**
+	- **page**
 	  Examples: [[questions]]
 	  {{query (page "term/alias")}}
 	- **property** [[Properties]]
 	  updated-at:: 1609247365218
 	  id:: 634f6c68-28b3-46c4-85a3-4d1e951194d8
 	  created-at:: 1609237428110
+	  collapsed:: true
 		- This filter matches against any pages or tags in a property value. For the example `type:: [[book]]`, `(property type book)` would match. For the example `description:: I liked this #book and #movie`, `(property description book)` or `(property description movie)` would match. However, `(property description liked)` would not match as "liked" is not a page or tag.
 		- Example:
 			- {{query (property type book)}}
