@@ -16,7 +16,7 @@ description:: This feature publishes a graph as a [[Publish Web]], single page a
 	  collapsed:: true
 		- Most features in a [[Publish Web]] app should work e.g. page [[Search]], block links and page links. Anything that involves editing won't work of course since the app is read-only.
 		- query-table:: true
-		  query-properties:: [:page :platform :initial-version]
+		  query-properties:: [:page :platforms :initial-version]
 		  #+BEGIN_QUERY
 		  {:title "These features are not available in a Publish Web App"
 		   :query [:find (pull ?p [*])
@@ -24,11 +24,11 @@ description:: This feature publishes a graph as a [[Publish Web]], single page a
 		                (page-property ?p :type "Feature")
 		                (or
 		                     ;; Hardcode not Publish Web values for now as not didn't work here
-		                     (page-property ?p :platform "Desktop")
+		                     (page-property ?p :platforms "Desktop")
 		                     ;; All mentions of both of these in platform is to mention it as an exception
 		                     ;; Can create a different property value if this becomes too cumbersome
-		                     (and (page-property ?p :platform "All Platforms")
-		                              (page-property ?p :platform "Publish Web")))]}
+		                     (and (page-property ?p :platforms "All Platforms")
+		                              (page-property ?p :platforms "Publish Web")))]}
 		  #+END_QUERY
 		- Some features that aren't available do have workarounds. For example, applying a [[Custom theme]] is a common request. Since themes are plugins, they do not just work as plugins are [[Desktop]] only. You can workaround this with this example custom.css
 		  ```css

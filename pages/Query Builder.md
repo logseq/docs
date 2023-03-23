@@ -4,6 +4,6 @@ description:: Build [[Queries]] easily including support for filters and nested 
 
 - ## Usage
 	- You can try this feature right here!
-		- {{query }}
+		- {{query "replace me"}}
 - ## Functionality
 -
