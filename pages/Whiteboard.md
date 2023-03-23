@@ -1,6 +1,6 @@
 type:: [[Feature]]
 description:: Put thoughts from your knowledge base as well as new ones next to each other on a spatial canvas together with shapes, drawings, website embeds and connectors. Built on a fork of [tldraw](https://github.com/tldraw/tldraw).
-platforms:: [[Desktop]]
+platforms:: [[All Platforms]]
 alias:: Whiteboards
 
 - #+BEGIN_NOTE
