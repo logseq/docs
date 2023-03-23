@@ -24,6 +24,7 @@ description:: Also known as simple queries
 	   You can type `/query` to create a simple query.
 	  2. [[Advanced Queries]]
 - #### Query Operators
+  id:: 641c8e5f-f890-4c98-8221-652a4ef0970d
   These three operators can be applied around any query filters.
 	- **and**
 	  created_at:: 1609237410438
