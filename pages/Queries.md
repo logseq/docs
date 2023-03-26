@@ -81,6 +81,7 @@ description:: Also known as simple queries
 	  created-at:: 1609237428110
 	  collapsed:: true
 		- This filter matches against any pages or tags in a property value. For the example `type:: [[book]]`, `(property type book)` would match. For the example `description:: I liked this #book and #movie`, `(property description book)` or `(property description movie)` would match. However, `(property description liked)` would not match as "liked" is not a page or tag.
+		- To (efficiently) filter multiple properties in a single query see [this example](((6420630e-860b-4cc1-b2fc-298ac8068897))) in [[Advanced Queries]].
 		- Example:
 			- {{query (property type book)}}
 	- **Full-text query**

@@ -214,8 +214,27 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	           (property ?b :type "programming_lang")]}
 	  #+END_QUERY
 	  #+END_SRC
+	- id:: 6420630e-860b-4cc1-b2fc-298ac8068897
+	  8. Efficiently query multiple block properties:
+	  #+BEGIN_SRC clojure
+	  #+BEGIN_QUERY
+	  {:title [:h2 "Clojure literature notes on a given day"]
+	   :query [:find (pull ?b [*])
+	           :in $ ?in-date ?in-tag ?in-type
+	           :where
+	           [?b :block/properties ?props]
+	           [(get ?props :date) ?date]
+	           [(get ?props :type) ?type]
+	           [(get ?props :tags) ?tags]
+	           [(contains? ?date ?in-date)]
+	           [(= ?type ?in-type)]
+	           [(contains? ?tags ?in-tag)]]
+	   :inputs ["2023-03-25" "clojure" "literature-note"]
+	   :table-view? true}
+	  #+END_QUERY
+	  #+END_SRC
 	- id:: 63b70dc8-58a5-4a43-ae19-28143edb7752
-	  8. TODO tasks tagged using current page
+	  9. TODO tasks tagged using current page
 	  #+BEGIN_SRC clojure
 	  
 	  #+BEGIN_QUERY
@@ -229,7 +248,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	   :inputs [:current-page]}
 	  #+END_QUERY
 	  #+END_SRC
-	- 9. Active tasks from the last 2 weeks
+	- 10. Active tasks from the last 2 weeks
 	  #+BEGIN_SRC clojure
 	  
 	  #+BEGIN_QUERY
@@ -246,7 +265,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	    :collapsed? false}
 	  #+END_QUERY
 	  #+END_SRC
-	- 10. Tasks referencing due dates in the past
+	- 11. Tasks referencing due dates in the past
 	  #+BEGIN_SRC clojure
 	  
 	  #+BEGIN_QUERY
@@ -260,7 +279,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	    :collapsed? false}
 	  #+END_QUERY
 	  #+END_SRC
-	- 11. Tasks referencing due dates up to 10 days ahead
+	- 12. Tasks referencing due dates up to 10 days ahead
 	  #+BEGIN_SRC clojure
 	  
 	  #+BEGIN_QUERY
@@ -274,7 +293,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	    :collapsed? false}
 	  #+END_QUERY
 	  #+END_SRC
-	- 12. Tasks from last week which are still outstanding (may slip soon!)
+	- 13. Tasks from last week which are still outstanding (may slip soon!)
 	  #+BEGIN_SRC clojure
 	  
 	  #+BEGIN_QUERY
@@ -291,7 +310,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	    :collapsed? true}
 	  #+END_QUERY
 	  #+END_SRC
-	- 13. Tasks created more than 1 week ago, less old than 2 months but still outstanding
+	- 14. Tasks created more than 1 week ago, less old than 2 months but still outstanding
 	  #+BEGIN_SRC clojure
 	  
 	  #+BEGIN_QUERY
@@ -309,7 +328,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	   ]}
 	  #+END_QUERY
 	  #+END_SRC
-	- 14. Next 7 days' deadline or schedule
+	- 15. Next 7 days' deadline or schedule
 	   ((60531c23-238e-4748-9b19-27088f9c3771))
 	  #+BEGIN_SRC clojure
 	  #+BEGIN_QUERY
@@ -326,7 +345,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	    :collapsed? false}
 	  #+END_QUERY
 	  #+END_SRC
-	- 15. Query with rules as input
+	- 16. Query with rules as input
 	  #+BEGIN_SRC clojure
 	  #+BEGIN_QUERY
 	  {:title "Blocks containing TODO that are not tasks"
@@ -340,7 +359,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	                      (not [?b :block/marker _])]]]}
 	  #+END_QUERY
 	  #+END_SRC
-	- 16. Query with rules via :rules
+	- 17. Query with rules via :rules
 	    ``` clojure
 	  #+BEGIN_QUERY
 	  {:title "Blocks that start with an https link"
@@ -352,7 +371,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	           [(clojure.string/starts-with? ?content ?substr)]]]}
 	  #+END_QUERY
 	  ```
-	- 17. Query that uses simple query
+	- 18. Query that uses simple query
 	  #+BEGIN_SRC clojure
 	  #+BEGIN_QUERY
 	  {:title "DOING tasks with priority A"
@@ -361,7 +380,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	  #+END_QUERY
 	  #+END_SRC
 	- id:: 63bc5e11-24f1-45fd-945d-4a272e5ecf0d
-	  18. Query that uses :current-block input
+	  19. Query that uses :current-block input
 	  #+BEGIN_SRC clojure
 	  #+BEGIN_QUERY
 	  {:title "Get children blocks of current query block"
@@ -371,7 +390,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	            :where [?b :block/parent ?current-block]]}
 	  #+END_QUERY
 	  #+END_SRC
-	- 19. Aggregate query
+	- 20. Aggregate query
 	  #+BEGIN_SRC clojure
 	  #+BEGIN_QUERY
 	  {:title "Count number of blocks in the current page"
