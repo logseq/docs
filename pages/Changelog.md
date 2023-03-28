@@ -1,3 +1,64 @@
+- ## Beta 0.9.0 [[Mar 28th, 2023]]
+  Download links for Desktop App and Android App: <https://github.com/logseq/logseq/releases/tag/0.9.0>
+	- [[Breaking Changes]]
+		- Refactored file system handling to fix filename issues on mobile platforms, requiring re-indexing of your working graph [#8792](https://github.com/logseq/logseq/pull/8792)
+	- [[Features]]
+		- Added a simple [Query Builder](https://docs.logseq.com/#/page/Query%20Builder) [#8774](https://github.com/logseq/logseq/pull/8774)
+		- Updated the login UI for Logseq Sync [#8865](https://github.com/logseq/logseq/pull/8865)
+		- Made [Whiteboards](https://docs.logseq.com/#/page/whiteboard) publicly available to all users [#8853](https://github.com/logseq/logseq/pull/8853)
+	- [[Thanks]]
+		- [[aiirobyte]]
+			- Add config option to handle default block refs expanding behavior in [#8839](https://github.com/logseq/logseq/pull/8839)
+		- [[AkrISrn]]
+			- fix logbook `with-second-support?` doesn't work in [#8803](https://github.com/logseq/logseq/pull/8803)
+		- [[Bad3r]]
+			- Add Hub & Awesome-logseq to README in [#8738](https://github.com/logseq/logseq/pull/8738)
+		- [[Zhizhen He]]
+			- Format table and update command of docs in [#8845](https://github.com/logseq/logseq/pull/8845)
+		- [[Yichen Yan]]
+			- Upgrade playwright to 1.31.0 in [#8688](https://github.com/logseq/logseq/pull/8688)
+		- [[sallto]]
+			- Add better error messages for duplicate key in config.edn in [#8488](https://github.com/logseq/logseq/pull/8488)
+		- [[Zhaohui Shi]]
+			- Update default config template to correct format in [#8907](https://github.com/logseq/logseq/pull/8907)
+		- [[situ2001]]
+			- Shrink on-click range of sidebar-item in [#8752](https://github.com/logseq/logseq/pull/8752)
+			- Fix: do not convert URL to macro while raw pasting in [#8815](https://github.com/logseq/logseq/pull/8815)
+		- [[Sky Hong]]
+			- Update Traditional Chinese translation (zh-Hant) in [#8791](https://github.com/logseq/logseq/pull/8791)
+		- [[김원웅]]
+			- Update Korean translation in [#8813](https://github.com/logseq/logseq/pull/8813)
+		- [[Yuriy Piskun]]
+			- Fix: hide empty settings description in [#8739](https://github.com/logseq/logseq/pull/8739)
+			- Fix: unwrap hierarchy and unlinked page blocks in [#8798](https://github.com/logseq/logseq/pull/8798)
+	- [[Fixed issues]]
+		- Massive fixes to Whiteboards: pasting shape [#8636](https://github.com/logseq/logseq/pull/8636), autocomplete on portals [#8747](https://github.com/logseq/logseq/pull/8747), shape index and arrow binding [#8885](https://github.com/logseq/logseq/pull/8885), history handling [#8788](https://github.com/logseq/logseq/pull/8788), [#8893](https://github.com/logseq/logseq/pull/8893)
+		- Copy event handling  [#8777](https://github.com/logseq/logseq/pull/8777)
+		- Display page's original name in linked reference [#8773](https://github.com/logseq/logseq/pull/8773)
+		- Multi-window crash when Logseq Sync enabled [#8874](https://github.com/logseq/logseq/pull/8874)
+		- Select only the current block when opening its context menu [#8863](https://github.com/logseq/logseq/pull/8863)
+		- Block edit undo handling [#8833](https://github.com/logseq/logseq/pull/8833) [#8864](https://github.com/logseq/logseq/pull/8864)
+		- Use system certs for Logseq Sync [#8731](https://github.com/logseq/logseq/pull/8731)
+		- Incorrect position of absolute modal on some mobile platforms [#8826](https://github.com/logseq/logseq/pull/8826)
+		- `beforeunload` hook of Plugin system [#8768](https://github.com/logseq/logseq/pull/8768)
+		- Do not convert URL to macro while raw pasting [#8815](https://github.com/logseq/logseq/pull/8815)
+		- Logbook's `with-second-support?` doesn't work [#8803](https://github.com/logseq/logseq/pull/8803)
+		- Shrink on-click range of sidebar-item [#8752](https://github.com/logseq/logseq/pull/8752)
+	- [[Enhancement]]
+		- Whiteboards
+			- Paste and dnd behavior (also add a placeholder to shape labels) [#8753](https://github.com/logseq/logseq/pull/8753)
+			- Publishing [#8899](https://github.com/logseq/logseq/pull/8899)
+			- Refine UX [#8797](https://github.com/logseq/logseq/pull/8797)
+		- Add mldoc ast schema [#8829](https://github.com/logseq/logseq/pull/8829)
+		- Add page column for query tables with block results [#8869](https://github.com/logseq/logseq/pull/8869)
+		- Several copy-as/export enhancements [#8814](https://github.com/logseq/logseq/pull/8814)
+		- I18N: Update Korean translation [#8813](https://github.com/logseq/logseq/pull/8813), Traditional Chinese translation (zh-Hant) [#8791](https://github.com/logseq/logseq/pull/8791)
+		- PDF view UI lag for the case of large highlights data [#8772](https://github.com/logseq/logseq/pull/8772)
+		- Add better error messages for duplicate key in `config.edn` [#8488](https://github.com/logseq/logseq/pull/8488)
+		- Audio and video player render after upload asset command [#8876](https://github.com/logseq/logseq/pull/8876)
+		- Optimize active state of the auto-complete component for mouse interaction [#8808](https://github.com/logseq/logseq/pull/8808)
+		- HTTP APIs server UI indicator [#8744](https://github.com/logseq/logseq/pull/8744)
+		- Add config option to handle default block refs expanding behavior [#8839](https://github.com/logseq/logseq/pull/8839). A new setting item `:ui/auto-expand-block-refs?` is added.
 - ## Beta 0.8.18 [[Mar 1st, 2023]]
   Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.8.18>
 	- [[Features]]
