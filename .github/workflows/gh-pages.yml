@@ -17,9 +17,7 @@ jobs:
         uses: pengx17/logseq-publish@0.1.7
         with:
           dest: www
-            # Get latest nightly with query builder
-            # from https://github.com/pengx17/logseq-publish/pkgs/container/logseq-publish
-          version: nightly@sha256:e29864c7682dc7ab23472bad5f551654e2699b8a3286b135ca94a54e6b65f6e3
+          version: 0.9.0
 
       - name: Add .nojekyll file
         run: touch www/.nojekyll
