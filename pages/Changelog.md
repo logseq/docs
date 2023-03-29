@@ -1,3 +1,13 @@
+- ## Beta 0.9.1 [[Mar 29th, 2023]]
+  Download links for Desktop App and Android App: <https://github.com/logseq/logseq/releases/tag/0.9.1>
+	- [[Fixed issues]]
+		- Internal blocks paste [#8932](https://github.com/logseq/logseq/pull/8932)
+		- File pasting [#8936](https://github.com/logseq/logseq/pull/8936)
+		- Query with breadcrumbs show blocks on the wrong hierarchy [#8939](https://github.com/logseq/logseq/pull/8939)
+		- Asset URL handling for Whiteboards and custom.css [#8927](https://github.com/logseq/logseq/pull/8927) [#8933](https://github.com/logseq/logseq/pull/8933)
+		- Cannot open dir with default app [#8931](https://github.com/logseq/logseq/pull/8931)
+	- [[Enhancement]]
+		- Adapt the Logseq Sync login modal size to responsive layout [#8920](https://github.com/logseq/logseq/pull/8920)
 - ## Beta 0.9.0 [[Mar 28th, 2023]]
   Download links for Desktop App and Android App: <https://github.com/logseq/logseq/releases/tag/0.9.0>
 	- [[Breaking Changes]]
