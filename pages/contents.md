@@ -42,6 +42,7 @@
 	- [[Zotero]] integration
 	- [[Embed Media - Audio, Photos, Videos]]
 	- [[Plugins]]
+	- [[Whiteboard]]
 - [[Logseq School]]
 	- [[Plugins 101]]
 - [[Document syntax]]
