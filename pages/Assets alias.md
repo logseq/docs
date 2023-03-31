@@ -1,6 +1,6 @@
 type:: [[Feature]]
 platforms:: [[Desktop]]
-initial-version:: 0.9.0
+initial-version:: unreleased
 
 - #+BEGIN_NOTE
   It's not supported yet.
