@@ -4,7 +4,7 @@ platforms:: [[All Platforms]]
 alias:: Whiteboards
 
 - #+BEGIN_NOTE
-  This feature is currently in **beta** and only accessible for [Open Collective Sponsors](https://opencollective.com/logseq/contribute/sponsors-21163).
+  Whiteboards are now live and free for everyone!
   #+END_NOTE
 - # Usage
 	- [[Whiteboards]] is a toggleable feature that can be activated in [[Settings]] under the `Features` tab.
