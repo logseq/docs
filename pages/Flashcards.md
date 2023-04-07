@@ -17,11 +17,10 @@ tags:: #Academic
 			- If you right click the bullet and select "Preview Card", you'll see something like this:
 				- ![CleanShot 2021-07-22 at 21.46.52.png](../assets/CleanShot_202021-07-22_20at_2021.46.52_1626961624975_0.png)
 - ## How to create a card?
-  collapsed:: true
 	- There're two ways to create a card.
 		- 1. You can add either `#card` or `[[card]]` to any block to make it a card.
 		- 2. You can right click the bullet to "Make a Flashcard", which will add `#card` to the end of the current block.
-			- ![CleanShot 2021-07-22 at 21.37.06.png](../assets/sidebar-make-a-flashcard.png)
+			- ![../assets/sidebar-make-a-flashcard.png](../assets/sidebar-make-a-flashcard.png)
 - ## I've created several cards, how can I review all of my cards?
   collapsed:: true
 	- Click the "Flashcards" tab on the [[Left sidebar]].
