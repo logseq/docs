@@ -159,11 +159,18 @@ description:: Also known as simple queries
 	  {{query (or [[tag1]] [[tag2]])}}
 	  #+END_EXAMPLE
 	  {{query (or [[tag1]] [[tag2]])}}
-	- 4. Find the blocks containing `tag2` but not `tag1`
+	- updated-at:: 1609236840152
 	  created-at:: 1609234732407
-	  updated-at:: 1609236840152
+	  4. Find the blocks containing `tag2` but not `tag1`
+	  
+	  #+BEGIN_EXAMPLE
 	  {{query (and [[tag2]] (not [[tag1]]))}}
-	- 5. Find journal blocks created between [[Dec 5th, 2020]] to [[Dec 7th, 2020]]
+	  #+END_EXAMPLE 
+	  {{query (and [[tag2]] (not [[tag1]]))}}
+	- updated-at:: 1609242323029
 	  created-at:: 1609242222695
-	  updated-at:: 1609242323029
+	  5. Find journal blocks created between [[Dec 5th, 2020]] to [[Dec 7th, 2020]]
+	  #+BEGIN_EXAMPLE
+	  {{query (between [[Dec 5th, 2020]] [[Dec 7th, 2020]] )}}
+	  #+END_EXAMPLE 
 	  {{query (between [[Dec 5th, 2020]] [[Dec 7th, 2020]] )}}
