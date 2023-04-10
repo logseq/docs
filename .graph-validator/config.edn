@@ -1,0 +1,2 @@
+{:exclude [tags-and-page-refs-have-pages]
+ :add-namespaces [schema]}
