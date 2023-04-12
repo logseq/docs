@@ -1,3 +1,45 @@
+- ## Beta 0.9.2 [[Apr 13th, 2023]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.2>
+	- [[Features]]
+		- Support custom colors in Whiteboards [#9067](https://github.com/logseq/logseq/pull/9067)
+		- Support exporting to image  [#9037](https://github.com/logseq/logseq/pull/9037)
+	- [[Thanks]]
+		- [[Adam Hupp]]
+			- Simplify Windows development docs
+		- [[djaggi]]
+			- Fix twitter badge in readme
+		- [[MyNameIsKitsune]]
+			- Add Ukrainian translation
+		- [[Seokseong Jeon]]
+			- Correct a comment in config.edn
+		- [[Zhizhen He]]
+			- Change feature icon from tie-app-feature to square-asterisk
+		- [[Mikhail Smelov]]
+			- Improve Russian (ru) translation
+		- [[megayu]]
+			- Enhance context menu
+			- Deleting with the backspace key should not delete block IDs or disrupt reference connections
+		- [[queeup]]
+			- Update Turkish translation
+	- [[Enhancement]]
+		- Whiteboards: Auto enter edit mode when we create shapes [#9080](https://github.com/logseq/logseq/pull/9080)
+		- I18n: Ukrainian translation [#9005](https://github.com/logseq/logseq/pull/9005), Russian (ru) translations [#8991](https://github.com/logseq/logseq/pull/8991) [#9050](https://github.com/logseq/logseq/pull/9050), Turkish translation [#9070](https://github.com/logseq/logseq/pull/9070)
+		- Add more functions to context menu [#8930](https://github.com/logseq/logseq/pull/8930)
+		- Make publishing accessible to CLIs [#9033](https://github.com/logseq/logseq/pull/9033)
+		- Plugin-related improvements [#8787](https://github.com/logseq/logseq/pull/8787)
+		- Show custom title instead of live query for custom queries [#9026](https://github.com/logseq/logseq/pull/9026)
+		- Prettify html export [#8968](https://github.com/logseq/logseq/pull/8968)
+		- Add hint class for the blank content block [#9072](https://github.com/logseq/logseq/pull/9072)
+		- Dynamic layout of the plugin UI items from the app toolbar [#8962](https://github.com/logseq/logseq/pull/8962)
+		- Add an apply button to multiple selects in query builder [#9025](https://github.com/logseq/logseq/pull/9025)
+		- Enhance undo redo handling [#9048](https://github.com/logseq/logseq/pull/9048)
+	- [[Fixed issues]]
+		- Bring back result count for built-in queries [#8954](https://github.com/logseq/logseq/pull/8954)
+		- Buggy selection highlights [#9074](https://github.com/logseq/logseq/pull/9074)
+		- Deleting with the backspace key should not delete block IDs or disrupt reference connections [#8974](https://github.com/logseq/logseq/pull/8974)
+		- Fix hash tags enclosed in double brackets are broken [#9030](https://github.com/logseq/logseq/pull/9030)
+		- Sometimes the HTTP api server does not auto restart [#9042](https://github.com/logseq/logseq/pull/9042)
+		- Query performance fix [#9016](https://github.com/logseq/logseq/pull/9016)
 - ## Beta 0.9.1 [[Mar 29th, 2023]]
   Download links for Desktop App and Android App: <https://github.com/logseq/logseq/releases/tag/0.9.1>
 	- [[Fixed issues]]
