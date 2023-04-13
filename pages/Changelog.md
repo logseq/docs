@@ -16,9 +16,6 @@
 			- Change feature icon from tie-app-feature to square-asterisk
 		- [[Mikhail Smelov]]
 			- Improve Russian (ru) translation
-		- [[megayu]]
-			- Enhance context menu
-			- Deleting with the backspace key should not delete block IDs or disrupt reference connections
 		- [[queeup]]
 			- Update Turkish translation
 	- [[Enhancement]]
