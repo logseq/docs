@@ -1,7 +1,5 @@
-{:project {:name "Wiki"
-           :alias "Logseq Wiki"}
- :text-formats [],
- :all-pages-public? true,        ;; Git settings
+{:text-formats [],
+ :all-pages-public? true
  :default-home {:page "Contents"}
 
  ;; Currently, we support either "Markdown" or "Org".
