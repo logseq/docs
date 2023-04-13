@@ -1,6 +1,6 @@
 type:: [[Feature]]
 platforms:: [[Desktop]]
-description:: This feature publishes a graph as a [[Publish Web]], single page application.
+description:: This feature publishes a graph as a [[Publish Web]], single page application (SPA).
 
 - ## Usage
 	- [[Publishing (Desktop App Only)]] is a tutorial to publish your first graph.
@@ -45,5 +45,6 @@ description:: This feature publishes a graph as a [[Publish Web]], single page a
 				- **Note**: This only works for _referenced_ blocks. If a block is not referenced elsewhere than its id is temporary and will change on a subsequent publish.
 		- See [routes.cljs](https://github.com/logseq/logseq/blob/master/src/main/frontend/routes.cljs) for other possible routes.
 - ## Additional Links
-	- https://github.com/pengx17/logseq-publish - Popular approach to publishing graphs on github
+	- https://github.com/logseq/publish-spa - Github action and CLI to publish a graph as a SPA
+	- https://github.com/pengx17/logseq-publish - Popular github action to publish a graph as a SPA
 	- https://github.com/sawhney17/logseq-schrodinger - Plugin to export Logseq pages to Hugo

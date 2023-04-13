@@ -23,12 +23,14 @@ platforms:: [[All Platforms]]
 				- LATER [#A] research balalah is a top priority
 				- LATER [#C] do grocery has lowest priority
 	- ### Deadline and Scheduled
-		- You can leverage command `/Deadline` to setup a deadline for your task
+		- You can leverage command `/Deadline` to setup a deadline for any block
 			- eg: finish reading 1984 by 29th of May
 			  DEADLINE: <2021-05-29 Sat>
-		- You can leverage command `/Scheduled` to setup a scheduled task
+		- You can leverage command `/Scheduled` to setup a schedule for a block
 			- eg: send John a birthday card Monday
 			  SCHEDULED: <2021-05-31 Mon>
+		- Both of the above commands work on blocks, not just tasks.
+		- Both of the above commands default to displaying blocks that are coming up soon. You can configure how soon with `:scheduled/future-days`  in [[config.edn]].
 		- Both of above commands support to mark the task as repeated:
 		  after typing the command and click `Add repeater` in the date picker
 			- eg: daily exercise routine at 7am
