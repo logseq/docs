@@ -10,12 +10,6 @@
  :preferred-format "Markdown"
  :feature/enable-grammarly? false
 
- ;; Git settings
- :git-pull-secs 60
- :git-push-secs 10
- :git-auto-push false
-
-
  ;; The app will ignore those directories or files.
  ;; E.g. "/archived" "/test.md"
  :hidden ["script"]
