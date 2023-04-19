@@ -26,6 +26,7 @@
 	- [[Enhancement]]
 		- Persist block UUID upon external editing [#8823](https://github.com/logseq/logseq/pull/8823)
 		- I18n: Update Spanish translations [#9114](https://github.com/logseq/logseq/pull/9114)
+		- Advanced queries have a new :group-by-page? option [#9133](https://github.com/logseq/logseq/pull/9133)
 - ## Beta 0.9.2 [[Apr 13th, 2023]]
   Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.2>
 	- [[Features]]

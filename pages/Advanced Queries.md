@@ -19,6 +19,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	   :view (fn [query-result] [:div ...]) ;; or :keyword from config.edn
 	   :result-transform (fn [query-result] ...) ;; or :keyword from config.edn
 	   :collapsed? true
+	   :group-by-page? true
 	  :rules [...]}
 	  #+END_EXAMPLE
 	  
@@ -31,6 +32,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	  | collapsed?       | whether to collapse the result   | false   | true     |
 	  | result-transform | fn or keyword |         | true     |
 	  | rules                | list of rules to apply to query | | true |
+	  |group-by-page? | whether to group results by page (onlly applies in list view) | true | true|
 	- **Query Tips**
 	  updated-at:: 1609244703085
 	  created-at:: 1609244703085
