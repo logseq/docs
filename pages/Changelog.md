@@ -1,3 +1,31 @@
+- ## Beta 0.9.3 [[Apr 19th, 2023]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.x.y>
+	- [[Features]]
+		- Add global scale level option to Whiteboards [#9097](https://github.com/logseq/logseq/pull/9097)
+	- [[Thanks]]
+		- [[Ulices]]
+			- Update Spanish translations
+			- Improve contributing-to-translations doc
+		- [[Zhizhen He]]
+			- Remove duplicated item in .gitignore
+		- [[John Doe]]
+			- Update nginx version in Docker image
+		- [[Phoenix Eliot]]
+			- Show marker when block text is empty
+		- [[situ2001]]
+			- Refactor: rename fn params in `frontend.db.model`
+	- [[Fixed issues]]
+		- Broken outliner structure when Backspace at the beginning [#9125](https://github.com/logseq/logseq/pull/9125)
+		- Copy & paste problems [#9145](https://github.com/logseq/logseq/pull/9145)
+		- Disable `group-by-page` when result-transform exists [#9133](https://github.com/logseq/logseq/pull/9133)
+		- Insert properties will truncate other properties if there's any empty property [#9117](https://github.com/logseq/logseq/pull/9117)
+		- Show marker when block text is empty [#9104](https://github.com/logseq/logseq/pull/9104)
+		- Fix for graph parsing for CLIs [#9099](https://github.com/logseq/logseq/pull/9099)
+		- `config.edn` & `custom.css` overwrite by syncing remote versions [#9138](https://github.com/logseq/logseq/pull/9138)
+		- Incorrect position of mobile toolbar [#9118](https://github.com/logseq/logseq/pull/9118)
+	- [[Enhancement]]
+		- Persist block UUID upon external editing [#8823](https://github.com/logseq/logseq/pull/8823)
+		- I18n: Update Spanish translations [#9114](https://github.com/logseq/logseq/pull/9114)
 - ## Beta 0.9.2 [[Apr 13th, 2023]]
   Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.2>
 	- [[Features]]
