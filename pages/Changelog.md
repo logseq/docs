@@ -22,6 +22,7 @@
 		- Show marker when block text is empty [#9104](https://github.com/logseq/logseq/pull/9104)
 		- Fix for graph parsing for CLIs [#9099](https://github.com/logseq/logseq/pull/9099)
 		- `config.edn` & `custom.css` overwrite by syncing remote versions [#9138](https://github.com/logseq/logseq/pull/9138)
+		- Logseq Sync keeps showing yellow badge and not syncing sometimes [#9144](https://github.com/logseq/logseq/pull/9144)
 		- Incorrect position of mobile toolbar [#9118](https://github.com/logseq/logseq/pull/9118)
 	- [[Enhancement]]
 		- Persist block UUID upon external editing [#8823](https://github.com/logseq/logseq/pull/8823)
