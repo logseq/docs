@@ -11,7 +11,7 @@ description:: Markdown is a popular markup language with many flavors. Our imple
 	  card-last-score:: 5
 		- knowledge base
 	- `**Bold**`   -> **Bold**
-	- `_Italics_ ` -> _Italics_
+	- `*Italics* ` -> *Italics*
 	- `~~Strikethrough~~` -> ~~Strikethrough~~
 	- `^^Highlight^^` -> ^^Highlight^^
 	- [:div [:code  "`Code`"]  "-> " [:code "Code"]]
