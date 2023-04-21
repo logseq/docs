@@ -85,7 +85,7 @@
 			    - b        (level 2)
 			       - c      (level 3)
 			          - d    (level 4)
-			  
+
 			  With the default value of level 2, `b` will be collapsed.
 			  If we set the level's value to 3, `b` will be opened and `c` will be collapsed.
 			  #+END_EXAMPLE
@@ -495,7 +495,7 @@
 		  <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/39a34471c10f498bb5c37e898661b2d9" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 		  [:hr]
 			- The desktop app can export all the public notes and logseq's Javascript and CSS files to a specified directory, then you can deploy it to GitHub pages, Vercel or your hosting service!
-			  
+
 			  Read more at [[Publishing (Desktop App Only)]]
 		- Initial support for [[Namespaces]], namespace can be used to avoid name conflicts, also, it can be used for building hierarchical relationships later.
 		  [[book/how to take dummy notes]] will create the parent page `book`.
@@ -528,7 +528,7 @@
 			  {:title "All todos"
 			   :query (todo todo later done)}
 			  #+END_EXAMPLE
-			  
+
 			  #+BEGIN_QUERY
 			  {:title "All todos"
 			   :query (and (todo todo later done doing now))}
@@ -666,7 +666,7 @@
 		- Don't jump to new journal when in editing mode
 		- And other fixes
 	- [[Enhancement]]
-		- Better Undo && Redo
+		- Better [[Undo and Redo]]
 		- Faster full-text search
 		- Add built-in pages such as TODO keywords and priorities
 - [[Feb 5th, 2021]]
@@ -706,9 +706,9 @@
 		- Fix footnotes not working
 		  For example:
 		  Here's a simple footnote,[^1] and here's a longer one.[^bignote]
-		  
+
 		  [^1]: This is the first footnote.
-		  
+
 		  [^bignote]: Here's one with multiple paragraphs and code.
 		- Fix both preferred workflow and preferred format settings not working
 		- Fix `/` commands list is empty
@@ -742,7 +742,7 @@
 		- main.js
 		-
 	- [[Enhancement]]
-		- 1. **Much stable Undo && Redo**
+		- 1. **Much stable [[Undo and Redo]]**
 		  `Notice`: It could be slow with page that has many blocks.
 		  There's a bug with block timestamps enabled, so we disabled it temporally.
 		- 2. `Ctrl+s` to save and push to GitHub
