@@ -283,7 +283,7 @@ The spent time for this block is ~18s~.
 **** 4. Fixed file not saved when switching to other page
 **** 5. Fixed git branches other than ~master~ not working
 *** [[Enhancement]]
-**** Better undo && redo
+**** Better [[Undo and Redo]]
 *** [[Features]]
 **** 1. Type ~s~ to switch between the file and the corresponding page (non editing mode)
 **** 2. Grammarly support even for single-line blocks
@@ -401,7 +401,7 @@ If you want to help translate Logseq, sign up here: https://crwd.in/logseq
 *** [[Fixed issues]]
 **** 1. Fixed issues related to roam json importer (still experiment)
 **** 2. Fixed not creating new journal page automatically
-**** 3. Better undo/redo behavior
+**** 3. Better [[Undo and Redo]] behavior
 **** 4. Support multiple notifications now (by haoji)
 **** 5. *All pages* support ~shift+click~ to open in right sidebar (by haoji)
 *** [[Features]]

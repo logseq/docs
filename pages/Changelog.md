@@ -59,7 +59,7 @@
 		- Add hint class for the blank content block [#9072](https://github.com/logseq/logseq/pull/9072)
 		- Dynamic layout of the plugin UI items from the app toolbar [#8962](https://github.com/logseq/logseq/pull/8962)
 		- Add an apply button to multiple selects in query builder [#9025](https://github.com/logseq/logseq/pull/9025)
-		- Enhance undo redo handling [#9048](https://github.com/logseq/logseq/pull/9048)
+		- Enhance [[Undo and Redo]] handling [#9048](https://github.com/logseq/logseq/pull/9048)
 	- [[Fixed issues]]
 		- Bring back result count for built-in queries [#8954](https://github.com/logseq/logseq/pull/8954)
 		- Buggy selection highlights [#9074](https://github.com/logseq/logseq/pull/9074)
@@ -213,7 +213,7 @@
 			- Fix CodeMirror indenting shortcuts cause page routing [#8415](https://github.com/logseq/logseq/pull/8415)
 			- Fix: remove extra braces for some incorrect macro usages [#8381](https://github.com/logseq/logseq/pull/8381)
 			- Fix: searching in page defers while entering Chinese characters using a Pinyin IME [#8399](https://github.com/logseq/logseq/pull/8399)
-			- Fix incorrect undo/redo sequence of indent/outdent [#8228](https://github.com/logseq/logseq/pull/8228)
+			- Fix incorrect [[Undo and Redo]] sequence of indent/outdent [#8228](https://github.com/logseq/logseq/pull/8228)
 			- Fix validating of URLs in `video` block [#8164](https://github.com/logseq/logseq/pull/8164)
 		- [[Bad3r]]
 			- Fix docker web app failing to build [#8384](https://github.com/logseq/logseq/pull/8384)
@@ -249,7 +249,7 @@
 		- CodeMirror indenting shortcuts cause page routing [#8415](https://github.com/logseq/logseq/pull/8415)
 		- Page properties not being visible in the query table [#8336](https://github.com/logseq/logseq/pull/8336) [#8482](https://github.com/logseq/logseq/pull/8482) (Re-index required)
 		- Tables not widening in wide mode [#8375](https://github.com/logseq/logseq/pull/8375)
-		- Incorrect undo/redo sequence of indent/outdent [#8228](https://github.com/logseq/logseq/pull/8228)
+		- Incorrect [[Undo and Redo]] sequence of indent/outdent [#8228](https://github.com/logseq/logseq/pull/8228)
 		- Fix date-picker opening conditions [#8333](https://github.com/logseq/logseq/pull/8333)
 		- Stability of Logseq Sync, allow ignore checking certs, retrying upload [#8350](https://github.com/logseq/logseq/pull/8350) [#8504](https://github.com/logseq/logseq/pull/8504) [#8486](https://github.com/logseq/logseq/pull/8486)
 		- Missing PDF caused by incomplete linked file path from zotero [#7676](https://github.com/logseq/logseq/pull/7676)
@@ -286,7 +286,7 @@
 		- [[Sergio Miguéns]]
 			- Add a new option to show full blocks in references
 		- [[Phoenix Eliot]]
-			- Refine undo/redo button icons
+			- Refine [[Undo and Redo]] button icons
 			- Add note about auto-formatting in `dev-practices.md`
 		- [[sallto]]
 			- Remove non-clickable space between links in sidebar
@@ -314,7 +314,7 @@
 		- New query inputs for advanced query [#5674](https://github.com/logseq/logseq/pull/5674) [Document: Query Inputs](https://docs.logseq.com/#/page/advanced%20queries/block/query%20inputs)
 		- Add a new option `:ui/show-full-blocks?` to show full blocks in references [#8124](https://github.com/logseq/logseq/pull/8124)
 		- Prevent Ctrl+A from selecting the whole document [#7177](https://github.com/logseq/logseq/pull/7177)
-		- Refine undo/redo button icons [#8201](https://github.com/logseq/logseq/pull/8201)
+		- Refine [[Undo and Redo]] button icons [#8201](https://github.com/logseq/logseq/pull/8201)
 		- Make the weblink PDF filename to be human-readable for the annotations page [#8240](https://github.com/logseq/logseq/pull/8240)
 		- Plugin API: filter hooks of DB block changes for performance [#8234](https://github.com/logseq/logseq/pull/8234)
 		- No need to pass `isPageBlock` for api/insert_block API [#8176](https://github.com/logseq/logseq/pull/8176)
@@ -868,7 +868,7 @@
 			- Fix wrapped-by? utility function
 			- Press the Escape key to close action menu
 			- Fix moving cursor outside brackets when auto-complete
-			- Fix undo/redo while action menu is open
+			- Fix [[Undo and Redo]] while action menu is open
 		- [[Aryan Sawhney]]
 			- Fix incorrect feature request URL
 		- [[swk777]]
@@ -883,7 +883,7 @@
 		- Alias of a page in sidebar did not redirect to the original page [#6085](https://github.com/logseq/logseq/pull/6085)
 		- Fix roam export error caused by a typo [#6364](https://github.com/logseq/logseq/pull/6364)
 		- Fix moving cursor outside brackets when auto-complete [#6283](https://github.com/logseq/logseq/pull/6283)
-		- Fix undo/redo while the action menu is open [#6273](https://github.com/logseq/logseq/pull/6273)
+		- Fix [[Undo and Redo]] while the action menu is open [#6273](https://github.com/logseq/logseq/pull/6273)
 	- [[Enhancement]]
 		- Upgrade Electron to 19 [#6032](https://github.com/logseq/logseq/pull/6032)
 		- I18N: Polish translation [#6318](https://github.com/logseq/logseq/pull/6318), Improved Russian translation [#6324](https://github.com/logseq/logseq/pull/6324)

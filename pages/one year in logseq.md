@@ -4,14 +4,14 @@ title: One year in Logseq
 
 - **Hello, everyone!**
 - **A little about the team**
-	- **Michael** 
+	- **Michael**
 	  ![image.png](../assets/pages_one year in logseq_1616235681415_0.png){:height 560, :width 960}
 	- **Charlie**  ![image.png](../assets/pages_one year in logseq_1616235711538_0.png)
 	- **Zhiyuan**
 	  ![image.png](../assets/pages_one year in logseq_1616235763365_0.png)
 	- **Weihua**
 	  ![image.png](../assets/pages_one year in logseq_1616235785959_0.png)
-	- **Junyu** 
+	- **Junyu**
 	  ![CleanShot 2021-03-20 at 18.53.56@2x.png](../assets/pages_one year in logseq_1616237665640_0.png){:height 379, :width 279}
 	- I'm Tienson from Hangzhou, thanks to my wife we have a beautiful daughter.
 		- ![CleanShot 2021-03-20 at 18.15.54@2x.png](../assets/pages_one year in logseq_1616235368782_0.png){:height 557, :width 518}
@@ -52,7 +52,7 @@ title: One year in Logseq
 		- Publishing the whole web app to your own website
 - **The future**
 	- More stable and more performant
-	- Better undo/redo `#undotree`
+	- Better [[Undo and Redo]] `#undotree`
 	- End-to-End encryption storage
 	- Mobile apps
 	- Real-time collaboration
