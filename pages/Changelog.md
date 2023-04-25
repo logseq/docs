@@ -1,5 +1,30 @@
+- ## Beta 0.9.4 [[Apr 26th, 2023]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.4>
+	- [[Features]]
+		- Element locking for Whiteboards [#9137](https://github.com/logseq/logseq/pull/9137)
+		- Shape conversion for Whiteboards [#9192](https://github.com/logseq/logseq/pull/9192)
+	- [[Thanks]]
+		- [[Anth0rx]]
+			- Update German translation
+		- [[Bad3r]]
+			- Add strikethrough to keyboard shortcuts page
+		- [[situ2001]]
+			- Fix mobile app crashes while trying to swipe the block that has any collapsed block
+	- [[Fixed issues]]
+		- Whiteboards: export grouped elements and zoom to fit selection shortcut [#9221](https://github.com/logseq/logseq/pull/9221)
+		- Whiteboards: portal height calculation bug [#9161](https://github.com/logseq/logseq/pull/9161)
+		- UI elements shake caused by lazy loading [#9139](https://github.com/logseq/logseq/pull/9139)
+		- Mobile app crashes while trying to swipe the block that has any collapsed block [#9154](https://github.com/logseq/logseq/pull/9154)
+		- No block collapse control on collapsed query block for mobile apps [#9233](https://github.com/logseq/logseq/pull/9233)
+		- Two query table fixes - Comma-separated properties display and sorting by page for block queries [#9169](https://github.com/logseq/logseq/pull/9169)
+		- Image renaming fails when resizing PDF highlight area on Windows [#9122](https://github.com/logseq/logseq/pull/9122)
+		- Logseq Sync fails on non-ASCII filenames for mobile platform [#9214](https://github.com/logseq/logseq/pull/9214)
+	- [[Enhancement]]
+		- Add `:remove-block-children?` query option for advanced queries [#9229](https://github.com/logseq/logseq/pull/9229)
+		- Plugin API: restore editing cursor state only for the input element in viewport [#9231](https://github.com/logseq/logseq/pull/9231)
+		- I18n: German translation [#9187](https://github.com/logseq/logseq/pull/9187)
 - ## Beta 0.9.3 [[Apr 19th, 2023]]
-  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.x.y>
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.3>
 	- [[Features]]
 		- Add global scale level option to Whiteboards [#9097](https://github.com/logseq/logseq/pull/9097)
 	- [[Thanks]]
