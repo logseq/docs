@@ -20,9 +20,10 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	   :result-transform (fn [query-result] ...) ;; or :keyword from config.edn
 	   :collapsed? true
 	   :group-by-page? true
-	  :rules [...]}
+	   :remove-block-children? true
+	   :rules [...]}
 	  #+END_EXAMPLE
-
+	  
 	  | Name             | Description                      | Default | Optional |
 	  |------------------|----------------------------------|---------|----------|
 	  | title            | query title, supports hiccup     |         | true     |
@@ -32,7 +33,8 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	  | collapsed?       | whether to collapse the result   | false   | true     |
 	  | result-transform | fn or keyword |         | true     |
 	  | rules                | list of rules to apply to query | | true |
-	  |group-by-page? | whether to group results by page (only applies in list view) | true | true|
+	  |group-by-page? | groups results by page, only applies in list view | true | true|
+	  |remove-block-children? | removes all children/descendants under a block result, only applies to block queries,  | true | true |
 	- **Query Tips**
 	  updated-at:: 1609244703085
 	  created-at:: 1609244703085
@@ -133,7 +135,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	- 1. Get all tasks
 	  created_at:: 1609232063516
 	  updated-at:: 1609245970090
-
+	  
 	  #+BEGIN_SRC clojure
 	  #+BEGIN_QUERY
 	  {:title "All tasks"
@@ -155,7 +157,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	- id:: 63b70dc8-1d59-4348-9737-e62b17fdabca
 	  3. Blocks in 7ds with a page reference of datalog
 	  #+BEGIN_SRC clojure
-
+	  
 	  #+BEGIN_QUERY
 	  {:title "Journal blocks in last 7 days with a page reference of datalog"
 	   :query [:find (pull ?b [*])
@@ -208,7 +210,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	  #+END_SRC
 	- 7. Get all the blocks with the property "type" and the value "programming_lang"
 	  #+BEGIN_SRC clojure
-
+	  
 	  #+BEGIN_QUERY
 	  {:title [:h2 "Programming languages list"]
 	   :query [:find (pull ?b [*])
@@ -219,7 +221,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	- id:: 63b70dc8-58a5-4a43-ae19-28143edb7752
 	  8. TODO tasks tagged using current page
 	  #+BEGIN_SRC clojure
-
+	  
 	  #+BEGIN_QUERY
 	  {:title "All tasks tagged using current page"
 	   :query [:find (pull ?b [*])
@@ -233,7 +235,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	  #+END_SRC
 	- 9. Active tasks from the last 2 weeks
 	  #+BEGIN_SRC clojure
-
+	  
 	  #+BEGIN_QUERY
 	  {:title "🟢 ACTIVE"
 	    :query [:find (pull ?b [*])
@@ -250,7 +252,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	  #+END_SRC
 	- 10. Tasks referencing due dates in the past
 	  #+BEGIN_SRC clojure
-
+	  
 	  #+BEGIN_QUERY
 	   {:title "⚠️ OVERDUE"
 	    :query [:find (pull ?b [*])
@@ -264,7 +266,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	  #+END_SRC
 	- 11. Tasks referencing due dates up to 10 days ahead
 	  #+BEGIN_SRC clojure
-
+	  
 	  #+BEGIN_QUERY
 	      {:title "📅 NEXT"
 	    :query [:find (pull ?b [*])
@@ -278,7 +280,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	  #+END_SRC
 	- 12. Tasks from last week which are still outstanding (may slip soon!)
 	  #+BEGIN_SRC clojure
-
+	  
 	  #+BEGIN_QUERY
 	     {:title "🟠 SLIPPING"
 	    :query [:find (pull ?b [*])
@@ -295,7 +297,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	  #+END_SRC
 	- 13. Tasks created more than 1 week ago, less old than 2 months but still outstanding
 	  #+BEGIN_SRC clojure
-
+	  
 	  #+BEGIN_QUERY
 	  {:title "🔴 STALLED"
 	    :query [:find (pull ?b [*])
