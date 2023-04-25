@@ -16,7 +16,7 @@ jobs:
       - name: Logseq Publish
         uses: logseq/publish-spa@main
         with:
-          dest: www
+          output-directory: www
 
       - name: Add .nojekyll file
         run: touch www/.nojekyll
