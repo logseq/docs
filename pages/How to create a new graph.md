@@ -1,6 +1,6 @@
 - Before we get started, it's first necessary you have the Logseq desktop app installed. While it's possible to use Logseq in a browser, we recommend the desktop app for a variety of reasons—speed being the main one. In the rest of this guide we'll assume you're using the app.
 - To install the Logseq desktop app, head over to [Logseq.com](https://logseq.com/) and click the blue button that says Download desktop app:
-	- ![download-logseq.png](../assets/download-logseq_1641561387597_0.png)
+	- ![download-logseq.png](../assets/download-logseq_1641561387597_0.png){:height 428, :width 747}
 - The site will automatically determine what Operating System you're using and download the appropriate installation file.
 - After you've downloaded the installation file, install it as you would do any other app. Once that's done, start Logseq.
 - Opening Logseq for the first time, you'll see the following screen telling you to open a local directory:

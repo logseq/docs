@@ -18,4 +18,3 @@
 	- To create a page using the search bar, start typing a page name in it (use the `Cmd-k` (macOS)/`Ctrl-k` (Windows) shortcut to focus the cursor on the search bar without using your mouse). Then, select the option that starts with `New Page:` to create the page and open it:
 		- ![new-page.png](../assets/new-page_1641571660386_0.png)
 - These are the ways to create pages in Logseq. We recommend creating pages using links, as this will ensure an entry point to them. Nothing is worse than having no links in a networked note-taking tool, so default to linking pages.
-	-
