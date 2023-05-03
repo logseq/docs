@@ -12,6 +12,7 @@ tags:: [[Publishing]]
 	- 3. The exported assets basically make up a web application, when runs Logseq with your public pages, in read-only mode. After exporting, if you are on Linux-like environment, you can `cd` into the export folder and run `python -m SimpleHTTPServer`. Voilà🎉, you can now visit the published graph at `localhost:8000` in your browser.
 	- 4. Of course publishing your beautiful graph on localhost only is not that fun. Since we have all the assets now, publish them on platforms like [Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) and [Vercel](https://vercel.com/docs) is straightforward. Below is a video tutorial on how to publish Logseq pages to Github Pages.
 		- {{youtube https://www.youtube.com/watch?v=nf9MyWRratI}}
-	- Here're some links might be useful:
+	- Here're some links that might be useful:
 		- 1. [Creating a GitHub Pages site](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site)
 		- 2. [Introduction to Vercel](https://vercel.com/docs)
+		- 3. [Another video publishing tutorial](https://www.youtube.com/watch?v=fHc2cVNMNrA)
