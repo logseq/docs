@@ -2,9 +2,12 @@ name: Publish
 
 on:
   push:
-    branches: [ master ]
+    branches: [ enhance/export-docs ]
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+  
+permissions:
+  contents: write
 
 jobs:
   build:
