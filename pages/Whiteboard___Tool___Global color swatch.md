@@ -10,4 +10,4 @@ initial-version:: 0.8.12
 			-
 # Functionality
 	- Changing the global color will affect the elements that are going to be created afterwards. It would also change the color of the currently selected elements.
-	- Colors from our default color palette automatically adjust depending on the type of the shape and the theme mode, but you are  also allowed to select a custom one.
+	- Colors from our default color palette automatically adjust depending on the type of the shape and the theme mode, but you are also allowed to select a custom one.
