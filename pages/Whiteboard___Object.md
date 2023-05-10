@@ -12,69 +12,65 @@ description:: An element that can be placed on the [[Whiteboard/Canvas]]. Just l
 		- [[Pencil]]
 			- supports:
 				- [[Color swatch]]
+				- [[Scale select]]
 				- [[Link]]
 		- [[Highlight]]
-		  collapsed:: true
-			- supports:
-				- Color swatch
-				- [[Link]]
-				-
-		- [[Connector]]
-		  collapsed:: true
 			- supports:
 				- [[Color swatch]]
-				- ((6380d39c-2417-4a6c-8c0f-c14892b496e2))
+				- [[Scale select]]
+				- [[Link]]
+		- [[Connector]]
+			- supports:
+				- [[Color swatch]]
+				- [[Scale select]]
+				- [[Bold toggle]]
+				- [[Italic toggle]]
 				- [[Arrow head toggle]]
 				- [[Link]]
-				-
 		- [[Text]]
-		  collapsed:: true
 			- supports:
-				- [[Color swatch]]
-				- ((6380d39c-2417-4a6c-8c0f-c14892b496e2))
 				- [[Auto resize toggle]]
+				- [[Scale select]]
+				- [[Color swatch]]
 				- [[Bold toggle]]
 				- [[Italic toggle]]
 				- [[Scale select]]
 				- [[Link]]
 		- [[Shape]] ([[Rectangle]], [[Circle]], [[Triangle]] )
-		  collapsed:: true
 			- supports:
 				- [[Shape select]]
 				- [[Color swatch]]
 				- [[Fill toggle]]
 				- [[Stroke type select]]
+				- [[Scale select]]
+				- [[Bold toggle]]
+				- [[Italic toggle]]
 				- [[Link]]
 		- [[Logseq Portal]] ([[Block]] / [[Page]] / [[Whiteboard]] )
-		  collapsed:: true
 			- supports:
-				- [[Color swatch]]
-				- ((6380d39c-2417-4a6c-8c0f-c14892b496e2))
-				- [[Auto resize toggle]]
-				- [[Scale select]]
 				- [[Collapse toggle]]
+				  id:: 645a7999-ba15-4d17-9285-7319c152cc52
+				- [[Auto resize toggle]]
+				- [[Color swatch]]
+				- [[Scale select]]
 				- [[Link]]
-				-
 		- [[Image]]
-		  collapsed:: true
 			- supports:
 				- [[Link]]
 		- [[YouTube]]
-		  collapsed:: true
 			- supports:
 				- [[Url input]]
+				- [[Open embedded url]]
 				- [[Link]]
 		- [[Tweet]]
-		  collapsed:: true
 			- supports:
 				- [[Url input]]
+				- [[Open embedded url]]
 				- [[Link]]
 		- [[iFrame]] (website)
-		  collapsed:: true
 			- supports:
 				- [[Reload]]
 				- [[Url input]]
 				- [[Open embedded url]]
 				- [[Link]]
-				-
 -
