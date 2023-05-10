@@ -2,7 +2,7 @@ type:: [[Feature]]
 platforms:: [[All Platforms]]
 description:: The Logseq Export feature allows users to export their data in various formats, including text, HTML, OPML, PNG, EDN, JSON, and standard Markdown. It supports exporting text selections, blocks, individual pages, or the entire graph with customizable options.
 
-## Introduction
+- ## Introduction
 	- The Logseq export feature enables users to export selection, a single block or a page, or the entire graph into various formats, such as plain-text, OPML, HTML, or PNG. This feature is designed to enhance the user experience by providing a convenient way to share, backup, or migrate Logseq data to other platforms and applications.
 	- Purpose and benefits include improving compatibility with other tools, simplifying data backup and sharing, and providing multiple export options to suit user requirements.
 - ## Purpose and Benefits
