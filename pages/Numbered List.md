@@ -29,4 +29,4 @@ initial-version:: 0.9.5
 	- A numbered block when copied and pasted remains a numbered block.
 	- ### Limitations
 		- A numbered list is not currently saved in a [standard ordered list format](https://daringfireball.net/projects/markdown/syntax#list).
-		- See https://github.com/logseq/logseq/pull/9141#issuecomment-1517108026 for ux limitations.
+		- See [this comment](https://github.com/logseq/logseq/pull/9141#issuecomment-1517108026) for ux limitations.

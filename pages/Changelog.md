@@ -1,7 +1,8 @@
 - ## Beta 0.9.5 [[May 11th, 2023]]
   Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.5>
 	- [[Features]]
-		- Ordered(numbered) block list support [#9235](https://github.com/logseq/logseq/pull/9235)
+		- Ordered(numbered) block list support [#9235](https://github.com/logseq/logseq/pull/9235) - [Documentation](https://docs.logseq.com/#/page/numbered%20list)
+			- _Breaking change_: dwim lists are disabled by default since we now have block based lists. To reenable them, add `:dwim/settings {:list? true}` to your config.edn
 	- [[Thanks]]
 		- [[Adam Hupp]]
 			- Fix `yarn install` on Windows in [#9299](https://github.com/logseq/logseq/pull/9299)
