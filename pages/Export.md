@@ -32,22 +32,22 @@ description:: The Logseq Export feature allows users to export their data in var
 			- **OPML**: Exports content in the OPML format.
 			- **HTML**: Exports content in HTML format, preserving the original content's formatting and styles.
 			- **PNG**: Captures the appearance of a page, selection, or a [[whiteboard]] as an image.
-		- ### Export Options
-		  Depending on the export format, several options are available:
-			- #### Text, OPML, and HTML Options
-				- **Removal of brackets**: Converts `[[page]]` into `page`.
-				- **Removal of emphasis**: Strips emphasis formats such as **bold**, *italic*, or ~~strikethrough~~.
-				- **Removal of #tags**: Removes #tags from the exported content.
-				- **Block depth level**: Sets the maximum depth of nested blocks to include in the export. Options range from *all* to numbers 1-9.
-			- #### Text-Specific Options
-				- **Indentation style**: Selects the preferred indentation style. Options include dashes, spaces, or no-indent.
-				- **Newline after block**: Adds a newline after each block.
-				- **Removal of properties**: Excludes block properties from the export.
-			- #### HTML-Specific Option
-				- **Include properties**: Option to include block properties in the export.
-			- #### PNG-Specific Option
-				- **Transparent background**: This option removes the background color from the exported content, making it see-through.
-			- After choosing the export format and options, users can *copy* the exported content to the clipboard or *save* it to a file.
+	- ### Export Options
+	  Depending on the export format, several options are available:
+		- #### Text, OPML, and HTML Options
+			- **Removal of brackets**: Converts `[[page]]` into `page`.
+			- **Removal of emphasis**: Strips emphasis formats such as **bold**, *italic*, or ~~strikethrough~~.
+			- **Removal of #tags**: Removes #tags from the exported content.
+			- **Block depth level**: Sets the maximum depth of nested blocks to include in the export. Options range from *all* to numbers 1-9.
+		- #### Text-Specific Options
+			- **Indentation style**: Selects the preferred indentation style. Options include dashes, spaces, or no-indent.
+			- **Newline after block**: Adds a newline after each block.
+			- **Removal of properties**: Excludes block properties from the export.
+		- #### HTML-Specific Option
+			- **Include properties**: Option to include block properties in the export.
+		- #### PNG-Specific Option
+			- **Transparent background**: This option removes the background color from the exported content, making it see-through.
+		- After choosing the export format and options, users can *copy* the exported content to the clipboard or *save* it to a file.
 - ## Background
 	- The Logseq export feature enables users to export selection, a single block or a page, or the entire graph into various formats, such as plain-text, OPML, HTML, or PNG. This feature is designed to enhance the user experience by providing a convenient way to share, backup, or migrate Logseq data to other platforms and applications.
 	- ### Purpose and Benefits
