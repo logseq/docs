@@ -1,3 +1,54 @@
+- ## Beta 0.9.5 [[May 11th, 2023]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.5>
+	- [[Features]]
+		- Ordered(numbered) block list support [#9235](https://github.com/logseq/logseq/pull/9235)
+	- [[Thanks]]
+		- [[Adam Hupp]]
+			- Fix `yarn install` on Windows in [#9299](https://github.com/logseq/logseq/pull/9299)
+		- [[Bad3r]]
+			- Update config.edn template in [#9287](https://github.com/logseq/logseq/pull/9287)
+			- Improve error handling in `mkdir` function in [#9247](https://github.com/logseq/logseq/pull/9247)
+		- [[Calum Lind]]
+			- Fix garbled text in sidebar and dropdown menus on Linux in [#9286](https://github.com/logseq/logseq/pull/9286)
+		- [[EINDEX]]
+			- Fix UI port range in [#9211](https://github.com/logseq/logseq/pull/9211)
+		- [[Zhizhen He]]
+			- Fix duplicated line in config.edn [#9324](https://github.com/logseq/logseq/pull/9324)
+			- Add settings for graph view in [#9325](https://github.com/logseq/logseq/pull/9325)
+		- [[ingepettersen]]
+			- Norwegian translations in [#9319](https://github.com/logseq/logseq/pull/9319)
+		- [[melat0nin]]
+			- Refine UI translation item in [#9267](https://github.com/logseq/logseq/pull/9267)
+		- [[necropolina]]
+			- Remove unneeded menu options for publishing in [#9262](https://github.com/logseq/logseq/pull/9262)
+		- [[John Doe]]
+			- Improve Russian translation in [#9301](https://github.com/logseq/logseq/pull/9301)
+		- [[Yiming Pan]]
+			- Fix date time selection repeater UI in [#9328](https://github.com/logseq/logseq/pull/9328)
+		- [[queeup]]
+			- Update Turkish translation in [#9327](https://github.com/logseq/logseq/pull/9327)
+	- [[Fixed issues]]
+		- Whiteboards
+			- Allow interactions with published embeds and hide lock/unlock [#9322](https://github.com/logseq/logseq/pull/9322)
+			- Keyboard shortcuts [#9338](https://github.com/logseq/logseq/pull/9338)
+			- Page name sanitization [#9259](https://github.com/logseq/logseq/pull/9259)
+		- Date time repeater UI [#9328](https://github.com/logseq/logseq/pull/9328)
+		- App crash caused by broken sqlite cache [#9248](https://github.com/logseq/logseq/pull/9248)
+		- Garbled text in sidebar and dropdown menus on Linux [#9286](https://github.com/logseq/logseq/pull/9286)
+		- Mailto and other protocol URLs creating invalid pages [#9353](https://github.com/logseq/logseq/pull/9353)
+		- Page tags and aliases should be deleted when page is deleted by user [#9293](https://github.com/logseq/logseq/pull/9293)
+		- Stale children block's path-refs when parent's refs change [#9254](https://github.com/logseq/logseq/pull/9254)
+		- Copy & Paste handling bugs [#9335](https://github.com/logseq/logseq/pull/9335), [#9255](https://github.com/logseq/logseq/pull/9255), [#9344](https://github.com/logseq/logseq/pull/9344)
+		- Copy page URL with shortcut key [#9255](https://github.com/logseq/logseq/pull/9255)
+		- Remove unneeded menu options from published pages [#9262](https://github.com/logseq/logseq/pull/9262)
+	- [[Enhancement]]
+		- Performance improvement for inserting and deleting blocks [#9142](https://github.com/logseq/logseq/pull/9142)
+		- Whiteboards
+			- Add prefix to default keyboard shortcuts [#9340](https://github.com/logseq/logseq/pull/9340)
+			- Customizable shortcuts [#9228](https://github.com/logseq/logseq/pull/9228)
+		- I18n: Russian [#9301](https://github.com/logseq/logseq/pull/9301), Turkish [#9327](https://github.com/logseq/logseq/pull/9327), Norwegian [#9319](https://github.com/logseq/logseq/pull/9319)
+		- Add settings for graph view [#9325](https://github.com/logseq/logseq/pull/9325)
+		- Update config.edn template [#9287](https://github.com/logseq/logseq/pull/9287)
 - ## Beta 0.9.4 [[Apr 26th, 2023]]
   Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.4>
 	- [[Features]]
