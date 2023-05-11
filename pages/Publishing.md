@@ -1,10 +1,20 @@
 type:: [[Feature]]
 platforms:: [[Desktop]]
-description:: This feature publishes a graph as a [[Publish Web]], single page application (SPA).
+description:: This feature publishes a graph as a [[Publish Web]], single page application (SPA). This is known as the Export option `Export public pages`.
 
 - ## Usage
 	- [[Publishing (Desktop App Only)]] is a tutorial to publish your first graph.
 	- An alternative to publishing from the menu is running the command `Export public graph pages as html`.
+	- This export can be configured at both graph and page levels:
+		- ### Graph-Level Configuration
+			- #### [[Settings]] Menu
+				- Under the *Editor* tab in the [[Settings]] menu, you will find the option "*Set pages to public by default*". When this setting is enabled (default), all pages within the graph will be considered public and included in the export unless the page's `public` property is explicitly set to `false`.
+				- If this setting is disabled,  all pages will be private and not included in the export unless the page's `public` property is explicitly set to `true`.
+				- This setting corresponds to the `:publishing/all-pages-public?` option in the [[config.edn]] file.
+		- ### Page-Level Configuration
+			- #### Public Page Property
+				- The `public` page property is a boolean attribute that can be set for individual pages to determine their inclusion in an export. It overrides the default setting in the [[Settings]] menu. For example, if a page's `public` property is set to `true`, it will be included in the export even if the "*Set pages to public by default*" setting is disabled.
+		- The interplay between the graph-level configuration and page-level properties can significantly affect the outcome of your export process. Therefore, reviewing these settings before performing an export is crucial to ensure they align with your specific needs.
 - ## Functionality
 	- Publishing permissions are per page, depending on whether the page is "public".
 		- By default no pages are public. Individual pages can be marked as public with the property `publish:: true`.
