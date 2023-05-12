@@ -1,3 +1,17 @@
+- ## Beta 0.9.6 [[May 12th, 2023]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.6>
+	- [[Thanks]]
+		- [[Billy Pinheiro]]
+			- Refine pt-BR translation [#9360](https://github.com/logseq/logseq/pull/9360)
+	- [[Fixed issues]]
+		- Plugin API `get current block` fail [#9372](https://github.com/logseq/logseq/pull/9372)
+		- Minor style tweaks for ordered list [#9370](https://github.com/logseq/logseq/pull/9370)
+		- Incorrect arrangement of ui items from pagebar [#9375](https://github.com/logseq/logseq/pull/9375)
+		- Whiteboards: performance of persist [#9358](https://github.com/logseq/logseq/pull/9358)
+		- Page renaming UI  [#9371](https://github.com/logseq/logseq/pull/9371)
+	- [[Enhancement]]
+		- React icons for tabler extensions [#9333](https://github.com/logseq/logseq/pull/9333)
+		- I18n: pt-BR [#9360](https://github.com/logseq/logseq/pull/9360)
 - ## Beta 0.9.5 [[May 11th, 2023]]
   Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.5>
 	- [[Features]]
