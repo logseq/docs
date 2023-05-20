@@ -6,7 +6,7 @@ platforms:: [[All Platforms]]
 - ## Usage
 	- Watch your knowledge graph grow by going to your main menu (click your profile picture) -> select "Graph"
 - ## Functionality
-	- TODO Fill out feature's functionality #docs
+	- TODO Fill out functionality #docs
 - ## Background
 	- As you add ideas and thoughts into Logseq and connect them, your knowledge graph grows. Just as your brain generates and connects new neurons to form new knowledge and ideas.
 	- These connections are what makes Logseq so powerful as a second brain, we generate and synthesize information much like your own brain does, but better.
