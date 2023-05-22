@@ -43,6 +43,7 @@
 	- [[Embed Media - Audio, Photos, Videos]]
 	- [[Plugins]]
 	- [[Whiteboard]]
+	- [[Tables]]
 - [[Logseq School]]
 	- [[Plugins 101]]
 - [[Document syntax]]
