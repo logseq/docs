@@ -20,7 +20,7 @@ description:: This feature publishes a graph as a [[Publish Web]], single page a
 		- By default no pages are public. Individual pages can be marked as public with the property `publish:: true`.
 		- Alternatively, in [[Settings]] all pages can be made public by default and then the property `publish:: false` can be used to make specific pages private.
 	- All published pages are displayed in a read-only mode.
-	- Published apps can read user configuration from [[config.edn]], [[custom.css]] and [[export.css]]. [[custom.css]] and [[export.css]] are optional.
+	- Published apps can read user configuration from [[config.edn]], [[custom.css]], [[custom.js]] and [[export.css]]. All files are optional except for config.edn.
 	- ### Available Features
 	  id:: 63595c2e-2383-42d4-ad20-5647758a7337
 	  collapsed:: true
