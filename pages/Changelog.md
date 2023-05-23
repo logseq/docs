@@ -1,5 +1,5 @@
-- ## Beta 0.9.7 [[May 24th, 2023]]
-  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.7>
+- ## Beta 0.9.8 [[May 24th, 2023]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.8>
 	- [[BREAKING CHANGE]]
 		- Due to some compatibility issues, we dropped support for iOS 13
 	- [[Features]]
