@@ -19,14 +19,21 @@
 			- `append`: (optional, boolean) Append to the end of the page, default to `false`(current editing position)
 			- `page`:    (optional) Page name to insert to, use "TODAY" to insert to today page
 		- Settings (in `config.edn`):
-			- Template variables are `{time}`, `{date}`, `{text}` and `{url}`
-				- Use `[[{date}]]` for a reference to today's journal page
+			- `{time}`: capture time
+				- `{date}`: capture date using current date format, use `[[{date}]]` to get a page reference
+				- `{text}`: text that users selected before sharing.
+				- `{url}`: URL or assets path for media files stored in Logseq.
+				- #+BEGIN_TIP
+				  Use `[[{date}]]` for a reference to today's journal page
+				  #+END_TIP
 			- ```edn
-			  :quick-capture-templates {:text "[[quick capture]] **{time}** {text} {url}"}
+			  :quick-capture-templates
+			  {:text "[[quick capture]] **{time}**: {text} from {url}"
+			   :media "[[quick capture]] **{time}**: {url}"}
 			  
-			  :quick-capture-options {
-			                          :insert-today? false
-			                          :redirect-page? true
-			                          :default-page "My Captured Page"
-			                          }
+			  :quick-capture-options
+			  {:insert-today? false
+			   :redirect-page? true
+			   :default-page "My Captured Page"}
 			  ```
+-
