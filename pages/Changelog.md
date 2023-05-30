@@ -1,6 +1,6 @@
 - ## Beta 0.9.8 [[May 24th, 2023]]
   Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.8>.
-  
+
   **NOTE**: The previous 0.9.7 version is revoked due to a fatal error caused by third-party library. [#9471](https://github.com/logseq/logseq/issues/9471). If you've upgraded to the broken 0.9.7 version, you might need to replace it with 0.9.8 manually(Download from the release page and install the app). Sorry for the inconvenience.
 	- [[BREAKING CHANGE]]
 		- Due to some compatibility issues, we dropped support for iOS 13
@@ -24,7 +24,7 @@
 		- [[Michele]]
 			- Fix Italian translation error in [#9440](https://github.com/logseq/logseq/pull/9440)
 		- [[Sergey Kolesnik]]
-			- Update `templates/config.edn` in [#9408](https://github.com/logseq/logseq/pull/9408)
+			- Update `config.edn` in [#9408](https://github.com/logseq/logseq/pull/9408)
 	- [[Fixed issues]]
 		- Whiteboards: fix actions like undo on converted shapes [#9410](https://github.com/logseq/logseq/pull/9410)
 		- Broken block refs when cutting or deleting blocks [#9406](https://github.com/logseq/logseq/pull/9406)
