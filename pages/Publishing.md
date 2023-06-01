@@ -56,5 +56,5 @@ description:: This feature publishes a graph as a [[Publish Web]], single page a
 		- See [routes.cljs](https://github.com/logseq/logseq/blob/master/src/main/frontend/routes.cljs) for other possible routes.
 - ## Additional Links
 	- https://github.com/logseq/publish-spa - Github action and CLI to publish a graph as a SPA
-	- https://github.com/pengx17/logseq-publish - Popular github action to publish a graph as a SPA
+	- https://github.com/pengx17/logseq-publish - Archived and previously popular github action to publish a graph as a SPA
 	- https://github.com/sawhney17/logseq-schrodinger - Plugin to export Logseq pages to Hugo
