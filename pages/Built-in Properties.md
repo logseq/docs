@@ -13,6 +13,7 @@ description:: There are built-in in properties that control Logseq functionality
 	- `filters` (N) (page) - store selected filters for linked references on page-level. object with booleans
 	- `public` (1) (page) - defines whether a page should be included in an export. boolean
 	- `exclude-from-graph-view` (1) (page) - defines whether a page should be excluded in global graph view. boolean
+	- See ((646c1b4d-9cf2-4c8c-bb05-7f336e027ea1)) for table related properties
 - Hidden properties
 	- `collapsed` (1) (block) - specifies whether a block is collapsed.
 	- `id` (1) (block) - specifies a block id.

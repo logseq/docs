@@ -6,6 +6,7 @@ description:: Tables are our first versioned component, accepting props to contr
 	- A second version is currently in beta testing, and can be activated by giving a markdown table or query element the prop: `logseq.table.version:: 2`
 - ## Functionality
 	- ### Props
+	  id:: 646c1b4d-9cf2-4c8c-bb05-7f336e027ea1
 		- Logseq tables now render differently depending on the block-level props. The default values for these props can also be set in your `config.edn` as top level keys.
 		- #### logseq.table.version
 			- The `logseq.table.version` prop determines the version of the table. It can take one of two possible values:
