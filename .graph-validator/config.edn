@@ -1,2 +1,2 @@
 {:exclude [tags-and-page-refs-have-pages]
- :add-namespaces [schema]}
+ :add-namespaces [logseq.graph-validator.validations.class schema]}

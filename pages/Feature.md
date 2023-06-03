@@ -1,5 +1,7 @@
 type:: [[Class]]
+parent:: [[Thing]]
 description:: A user-facing piece of functionality. This can be a small piece or it can be a big one that consists of subfeatures
+url:: {{docs-base-url Feature}}
 
 - ## Conventions
 	- A feature page has the following properties

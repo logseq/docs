@@ -1,6 +1,8 @@
 alias:: Whiteboard objects, Whiteboard object
 type:: [[Class]]
+parent:: [[UI Element]]
 description:: An element that can be placed on the [[Whiteboard/Canvas]]. Just like [[Blocks]] or [[Pages]], objects can be referenced anywhere in your [[Graph]]
+url:: {{docs-base-url Whiteboard%2FObject}}
 
 - produced by:
 	- select the object of your choice from the [[Toolbar]] and draw it on the [[Whiteboard/Canvas]]

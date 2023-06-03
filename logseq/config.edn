@@ -37,7 +37,8 @@
  ;; becomes
  ;; Rose is red, violet's blue. Life's ordered: Org assists you.
  :macros
- {"query-done" "{{query (and (task done) $1)}}"
+ {"docs-base-url" "https://docs.logseq.com/#/page/$1"
+  "query-done" "{{query (and (task done) $1)}}"
   "mark" "[:mark \"$1\"]"}
  :feature/enable-block-time? true
  :feature/enable-timetracking? true
