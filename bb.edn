@@ -23,5 +23,15 @@
                  (pr-str (into [".."] *command-line-args*))
                  ")"))}
 
+  write-class-hierarchy
+  {:doc "Run logseq-class-hierarchy as a lib"
+   :depends [-ensure-latest-cached-db]
+   :task (shell {:dir "script"} "yarn -s nbb-logseq -e"
+                (str
+                 "(require '[cldwalker.logseq-clis.cli.logseq-class-hierarchy :as lch])"
+                 "(apply lch/-main "
+                 (pr-str ["../pages/Class Hierarchy.md" "-d" ".."])
+                 ")"))}
+
   -ensure-latest-cached-db
   logseq.bb-tasks.nbb.cached-db/ensure-latest-cached-db}}
