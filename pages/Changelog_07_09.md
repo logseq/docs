@@ -550,7 +550,7 @@
 		- Autocomplete shortcut config
 		- Block timestamps in the code block
 	- [[Features]]
-		- [[Query table/function]]
+		- [[Query function]]
 	- [[Enhancement]]
 		- [[Query table]]
 			- Click to open a block in the right sidebar

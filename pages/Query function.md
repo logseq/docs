@@ -1,14 +1,14 @@
-title:: Query table/function
+title:: Query function
 type:: [[Feature]]
 platforms:: [[All Platforms]]
-description:: This runs custom transformations on a query table's results, usually to calculate aggregations
+description:: This runs custom transformations on a query's results, usually to calculate aggregations
 initial-version:: 0.2.6
 
 ## Usage
-	- First, create a query table like this:
+	- First, build a query like this:
 	  query-table:: true
 	  {{query (property type book)}}
-	  Then, create functions by typing `/function` in a child block under the query table.
+	  Then, create functions by typing `/function` in a child block under the query's results.
 	  
 	  For example:
 		- How many books? `{{function (sum :qty)}}`
@@ -18,7 +18,7 @@ initial-version:: 0.2.6
 		- How much does it cost to buy all of them? `{{function (sum (map (fn [x] (* (:price x) (:qty x))) result))}}`
 			- Answer: {{function (sum (map (fn [x] (* (:price x) (:qty x))) result))}}
 ## Functionality
-	- This macro works with results of simple [[Queries]] or [[Advanced Queries]].
+	- This macro works with results of simple [[Queries]] or [[Advanced Queries]], in both table and list views.
 	- This macro supports the following aggregate functions:
 		- `{{function (sum :property)}}`
 		- `{{function (average :property)}}`
