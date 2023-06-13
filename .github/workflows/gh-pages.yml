@@ -17,7 +17,7 @@ jobs:
         uses: logseq/publish-spa@main
         with:
           output-directory: www
-          version: 0.9.8
+          version: 0.9.9
 
       - name: Add .nojekyll file
         run: touch www/.nojekyll

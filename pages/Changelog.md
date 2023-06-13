@@ -41,7 +41,7 @@
 		- Page renaming issues [#9620](https://github.com/logseq/logseq/pull/9620)
 		- Page search is not updated after changing the capitalization of the page name [#9583](https://github.com/logseq/logseq/pull/9583)
 		- Pasted special URLs on selected text don't get wrapped with macros [#9607](https://github.com/logseq/logseq/pull/9607)
-		- Query functions not working sometimes [#9563](https://github.com/logseq/logseq/pull/9563)
+		- Query functions not working sometimes [#9563](https://github.com/logseq/logseq/pull/9563) - [Documentation](https://docs.logseq.com/#/page/query%20function)
 		- Remove deprecated `:editor/command-trigger` option [#9550](https://github.com/logseq/logseq/pull/9550)
 		- Resizing of pdf area highlight [#9483](https://github.com/logseq/logseq/pull/9483)
 		- Shift clicking on "Pages tagged with" page link doesn't open in sidebar [#9587](https://github.com/logseq/logseq/pull/9587)
@@ -63,7 +63,7 @@
 		- Added keymap manager for plugins [#9430](https://github.com/logseq/logseq/pull/9430)
 - ## Beta 0.9.8 [[May 24th, 2023]]
   Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.8>.
-  
+
   **NOTE**: The previous 0.9.7 version is revoked due to a fatal error caused by third-party library. [#9471](https://github.com/logseq/logseq/issues/9471). If you've upgraded to the broken 0.9.7 version, you might need to replace it with 0.9.8 manually(Download from the release page and install the app). Sorry for the inconvenience.
 	- [[BREAKING CHANGE]]
 		- Due to some compatibility issues, we dropped support for iOS 13
