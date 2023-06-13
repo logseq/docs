@@ -1,0 +1,2 @@
+- > Minor changes are modifications made to a product that do not significantly affect its functionality or user experience. These changes can include simple edits to the user interface, such as adjusting button size or fixing typos, as well as bug fixes that don't impact overall performance. Minor changes can be implemented quickly without disrupting the product or service.
+-
