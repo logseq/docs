@@ -1,2 +1,3 @@
 {:base-url "https://docs.logseq.com/#/page/"
- :prefixes {:d "https://docs.logseq.com/#/page/"}}
+ :prefixes {:d "https://docs.logseq.com/#/page/"}
+ :expand-macros true}
