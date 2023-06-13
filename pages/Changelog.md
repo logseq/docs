@@ -1,6 +1,69 @@
+- ## Beta 0.9.9 [[Jun 13th, 2023]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.9>
+	- [[Features]]
+		- Integrated title bar for Windows and Linux [#9442](https://github.com/logseq/logseq/pull/9442). (Now "Developer Tools" is under the `Ctrl+Shift+I` hotkey on Windows and Linux.)
+	- [[Thanks]]
+		- [[Bad3r]]
+			- remove false positive translations a.k.a. EN definitions in non EN dicts [#9576](https://github.com/logseq/logseq/pull/9576)
+			- Enhancements for E2E test: Log and ignore net errors [#9559](https://github.com/logseq/logseq/pull/9559); editor string formatting and symbols auto-pairing tests [#9388](https://github.com/logseq/logseq/pull/9388)
+			- Fix space in overflow menu [#9521](https://github.com/logseq/logseq/pull/9521)
+			- Add tooltip hint for `prefered-file-paste` setting [#9564](https://github.com/logseq/logseq/pull/9564)
+			- Do not print `nil` in quick capture [#9617](https://github.com/logseq/logseq/pull/9617)
+		- [[Bryan Lee]]
+			- Fix: shift-clicking on "Pages tagged with" page link doesn't open in sidebar [#9587](https://github.com/logseq/logseq/pull/9587)
+		- [[Giuseppe D'Andrea]]
+			- Enhancement for editor: delete selected text when pressing enter key [#9448](https://github.com/logseq/logseq/pull/9448)
+		- [[Ulices]]
+			- Update Spanish translation [#9540](https://github.com/logseq/logseq/pull/9540)
+		- [[ingepettersen]]
+			- Update Norwegian translation [#9618](https://github.com/logseq/logseq/pull/9618)
+		- [[Mikhail Smelov]]
+			- Update Russian translation [#9605](https://github.com/logseq/logseq/pull/9605)
+		- [[David Laing]]
+			- Update dugit #9579
+		- [[necropolina]]
+			- Menu item for toggling theme mode in published graphs [#9528](https://github.com/logseq/logseq/pull/9528)
+		- [[John Doe]]
+			- Improve I18n translations: Convert hardcoded strings in the UI to be translatable in [#9588](https://github.com/logseq/logseq/pull/9588), improve RU translation in [#9465](https://github.com/logseq/logseq/pull/9465), Improve UK (Ukrainian) translation in [#9494](https://github.com/logseq/logseq/pull/9494)
+		- [[situ2001]]
+			- Fix page search is not updated after changing the capitalization of the page name [#9583](https://github.com/logseq/logseq/pull/9583)
+			- Handle backspace when cursor is at beginning of line in embedded page/block [#8421](https://github.com/logseq/logseq/pull/8421)
+		- [[Steven Allen]]
+			- Substitute `date`/`text` in mobile quick-capture templates [#9529](https://github.com/logseq/logseq/pull/9529)
+	- [[Fixed issues]]
+		- Whiteboard:
+			- New page or whiteboard named with capital letter crashes app on rename [#9604](https://github.com/logseq/logseq/pull/9604)
+			- Arrow positions on initialization, undo group delete, hover links jumping and other issues [#9480](https://github.com/logseq/logseq/pull/9480)
+			- Exporting from context menu [#9596](https://github.com/logseq/logseq/pull/9596)
+			- Onboarding triggered on existing whiteboard [#9543](https://github.com/logseq/logseq/pull/9543)
+		- Aliased pages not included in published subgraph [#9600](https://github.com/logseq/logseq/pull/9600)
+		- Fix for quick-capture: Do not print `nil` in quick capture [#9617](https://github.com/logseq/logseq/pull/9617); Substitute `date`/`text` in mobile quick-capture templates [#9529](https://github.com/logseq/logseq/pull/9529)
+		- Page renaming issues [#9620](https://github.com/logseq/logseq/pull/9620)
+		- Page search is not updated after changing the capitalization of the page name [#9583](https://github.com/logseq/logseq/pull/9583)
+		- Pasted special URLs on selected text don't get wrapped with macros [#9607](https://github.com/logseq/logseq/pull/9607)
+		- Query functions not working sometimes [#9563](https://github.com/logseq/logseq/pull/9563)
+		- Remove deprecated `:editor/command-trigger` option [#9550](https://github.com/logseq/logseq/pull/9550)
+		- Resizing of pdf area highlight [#9483](https://github.com/logseq/logseq/pull/9483)
+		- Shift clicking on "Pages tagged with" page link doesn't open in sidebar [#9587](https://github.com/logseq/logseq/pull/9587)
+		- Table v2 and view properties not hidden on display [#9499](https://github.com/logseq/logseq/pull/9499)
+		- Handle backspace when at beginning of line in embed page/block [#8421](https://github.com/logseq/logseq/pull/8421)
+		- iOS watcher path handling for file events [#9589](https://github.com/logseq/logseq/pull/9589)
+		- Missing `:block/properties-order` attribute for the custom query blocks [#9525](https://github.com/logseq/logseq/pull/9525)
+		- Drag and drop assets not working for the right sidebar [#9496](https://github.com/logseq/logseq/pull/9496)
+	- [[Enhancement]]
+		- Whiteboards
+			- Add support for translations [#9567](https://github.com/logseq/logseq/pull/9567)
+			- Auto pan triggers earlier and works for more platforms [#9573](https://github.com/logseq/logseq/pull/9573)
+		- Add tooltip hint for prefered-file-paste setting [#9564](https://github.com/logseq/logseq/pull/9564)
+		- Convert more hardcoded strings in the UI to be translatable [#9588](https://github.com/logseq/logseq/pull/9588)
+		- I18n Updates: Ukrainian [#9494](https://github.com/logseq/logseq/pull/9494), Russian [#9465](https://github.com/logseq/logseq/pull/9465) [#9605](https://github.com/logseq/logseq/pull/9605), Spanish [#9540](https://github.com/logseq/logseq/pull/9540), Norwegian [#9618](https://github.com/logseq/logseq/pull/9618)
+		- Menu item for toggling theme mode in published graphs [#9528](https://github.com/logseq/logseq/pull/9528)
+		- Delete selected text when pressing enter [#9448](https://github.com/logseq/logseq/pull/9448)
+		- Add more semantic classes to the order-list block element [#9519](https://github.com/logseq/logseq/pull/9519)
+		- Added keymap manager for plugins [#9430](https://github.com/logseq/logseq/pull/9430)
 - ## Beta 0.9.8 [[May 24th, 2023]]
   Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.8>.
-
+  
   **NOTE**: The previous 0.9.7 version is revoked due to a fatal error caused by third-party library. [#9471](https://github.com/logseq/logseq/issues/9471). If you've upgraded to the broken 0.9.7 version, you might need to replace it with 0.9.8 manually(Download from the release page and install the app). Sorry for the inconvenience.
 	- [[BREAKING CHANGE]]
 		- Due to some compatibility issues, we dropped support for iOS 13
