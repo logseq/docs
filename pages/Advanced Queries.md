@@ -34,7 +34,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	  | result-transform | fn or keyword |         | true     |
 	  | rules                | list of rules to apply to query | | true |
 	  |group-by-page? | groups results by page, only applies in list view | true | true|
-	  |remove-block-children? | removes all children/descendants under a block result, only applies to block queries,  | true | true |
+	  |remove-block-children? | removes duplicates from the query result, see below. Only applies to block queries.  | true | true |
 	- **Query Tips**
 	  updated-at:: 1609244703085
 	  created-at:: 1609244703085
@@ -44,6 +44,11 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	  3. Most simple query operators are available as [rules](https://docs.datomic.com/on-prem/query/query.html#rules) in queries
 	  4. Titles can be be hiccups or double-quoted strings. For example, if you want to put custom macros into the query title, you can write something like `"{{poem foo,bar}}"`.
 	  #+END_TIP
+	- ### remove-block-children?
+		- When this setting is true, do not return child blocks separately when they are already shown as a sub-bullet of a parent block.
+		- When this setting is false, the parent block is returned including all its children as well as the child blocks individually when they also match the query criteria.
+			- This only applies when the property group-by-page? is set to false.
+		- Only applies to queries that return blocks.
 	- ### Query Inputs
 	  These are special values for a query's `:inputs` key above:
 		- #### Special page and block inputs
