@@ -17,18 +17,31 @@ platforms:: [[All Platforms]]
 			- DONE watch Doctor Who
 - ## Functionality
 	- ### Priorities
-		- Logseq comes with three built-in priority mark to help you manage with task priorities
-			- {{embed ((60ac5b08-d4bb-49de-b415-e63fcf29c59f)) }}
+		- Logseq comes with three optional, built-in priorities that can be set with commands (`/A`, `/B`, `/C`):
+			- type:: [[Command]]
+			  name:: A
+			  description:: Highest priority
+			- type:: [[Command]]
+			  name:: B
+			  description:: Mid level priority
+			- type:: [[Command]]
+			  name:: C
+			  description:: Lowest priority
 			- Example:
 				- LATER [#A] research balalah is a top priority
 				- LATER [#C] do grocery has lowest priority
 	- ### Deadline and Scheduled
-		- You can leverage command `/Deadline` to setup a deadline for any block
-			- eg: finish reading 1984 by 29th of May
-			  DEADLINE: <2021-05-29 Sat>
-		- You can leverage command `/Scheduled` to setup a schedule for a block
-			- eg: send John a birthday card Monday
-			  SCHEDULED: <2021-05-31 Mon>
+		- There are two commands for setting dates on a block:
+			- type:: [[Command]]
+			  name:: Deadline
+			  description:: Type command `/Deadline` to choose a deadline date for a block
+				- eg: finish reading 1984 by 29th of May
+				  DEADLINE: <2021-05-29 Sat>
+			- type:: [[Command]]
+			  name:: Scheduled
+			  description:: Type command `/Scheduled` to setup a scheduled date for a block
+				- eg: send John a birthday card Monday
+				  SCHEDULED: <2021-05-31 Mon>
 		- Both of the above commands work on blocks, not just tasks.
 		- Both of the above commands default to displaying blocks that are coming up soon. You can configure how soon with `:scheduled/future-days`  in [[config.edn]].
 		- Both of above commands support to mark the task as repeated:

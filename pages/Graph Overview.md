@@ -10,6 +10,7 @@
 			- [[Command]]
 			- [[Whiteboard/Tool]]
 		- [[Platform]]
+		- [[Property]]
 		- [[UI Element]]
 			- [[Whiteboard/Object]]
 - ## Pages by Class
@@ -40,10 +41,19 @@
 			  #+END_QUERY
 			- [[Command]]
 			  collapsed:: true
-				- collapsed:: true
+				- query-sort-by:: page
+				  query-table:: true
+				  query-sort-desc:: false
+				  query-properties:: [:name :page :description]
 				  #+BEGIN_QUERY
-				  {:query (page-property :type [[Command]])
-				  :title "Command pages"}
+				  {:query (property :type [[Command]])
+				  :result-transform (fn [res] (map (fn [m] (assoc-in m [:block/properties :name] (get-in m [:block/page :block/original-name]))) res))
+				  :title "Commands"}
+				  #+END_QUERY
+				- query-table:: true
+				  #+BEGIN_QUERY
+				  {:query (property :type [[Command]])
+				  :title "Commands"}
 				  #+END_QUERY
 			- [[Whiteboard/Tool]]
 			  collapsed:: true

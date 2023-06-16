@@ -76,6 +76,9 @@
 		- #+BEGIN_TIP
 		  If you're embedding an **image** using the HTML method, make sure to include `@@html:` at the start and `@@` at the end
 		  #+END_TIP
+		- type:: [[Command]]
+		  name:: Embed HTML
+		  description:: Type `/Embed HTML` to embed html, particularly useful for images.
 -
 - # [[Hiccup]] ClojureScript Method
 	- The [[Hiccup]] ClojureScript method is similar to the HTML method, but the markup tends to be more condensed.
@@ -105,8 +108,8 @@
 		  For local files that use the Hiccup method: Always use forward slashes `/` in the file path
 		  #+END_TIP
 -
-- # BONUS: Video Macros
-	- If you don't have access to a video file's URL, not to stress! Logseq has a macro which can embed video from third-party video hosting services like YouTube and Vimeo. If you're embedding from YouTube, there's even a macro for timestamps.
+- # Video Commands
+	- If you don't have access to a video file's URL, not to stress! Logseq has a command to embed video from third-party video hosting services like YouTube and Vimeo. If you're embedding from YouTube, there's also a command for timestamps.
 	-
 	- Here are the steps to use it:
 		- 1. Type the slash `/` command followed by `Embed Video URL`
@@ -116,7 +119,13 @@
 			- a. Play the video to the desired position.
 			- b. Pause and create a new line.
 			- c. Type the slash `/` command followed by `Embed YouTube timestamp`
-	-
+	- These two commands are:
+		- type:: [[Command]]
+		  name:: Embed Video URL
+		  description:: After invoking this command, simply paste a url to embed the video
+		- type:: [[Command]]
+		  name:: Embed Youtube timestamp
+		  description:: Inserts the current timestamp of the currently watched youtube video
 	- ## Example
 		- {{video https://www.youtube.com/watch?v=SUOdfa3MucE}}
 			- {{youtube-timestamp 0}} - A timestamp
@@ -127,6 +136,13 @@
 		  	- {{youtube-timestamp 271}} - Another timestamp
 		  ```
 -
+- # Other Embed Commands
+	- type:: [[Command]]
+	  name:: Embed twitter tweet
+	  description:: After invoking this command, paste a twitter url to embed it.
+		- For Example:
+		  collapsed:: true
+		  ((645d0145-6ce0-4231-a443-42865cd960f4))
 - # Useful Plugins for Media
 	- **[Media Timestamp](https://github.com/sethyuan/logseq-plugin-media-ts/blob/master/README.en.md) by sethyuan:** generates timestamps for video files, audio files, and Bilibili video
 	- **[Get YouTube Captions](https://github.com/briansunter/logseq-get-youtube-captions) by briansunter:** extracts auto-generated captions from YouTube video and can even add clickable timestamps

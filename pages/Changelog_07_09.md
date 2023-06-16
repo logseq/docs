@@ -438,6 +438,7 @@
 			- `/Embed Twitter` support!
 				- E.g. `{{tweet https://twitter.com/logseq/status/1420968129987969026}} ` will displayed as:
 					- {{tweet https://twitter.com/logseq/status/1420968129987969026}}
+					  id:: 645d0145-6ce0-4231-a443-42865cd960f4
 		- [[Julio Navarro]]
 			- fix: after renaming a page, going back should not goto the original page
 	- [[Fixed issues]]

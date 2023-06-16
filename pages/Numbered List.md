@@ -27,6 +27,13 @@ initial-version:: 0.9.5
 - ## Functionality
 	- Blocks that are dragged into a numbered list are turned into a numbered block.
 	- A numbered block when copied and pasted remains a numbered block.
+	- Two commands are provided for numbered lists:
+		- type:: [[Command]]
+		  name:: Number list
+		  description:: Toggles the current block to be a numbered list item
+		- type:: [[Command]]
+		  name:: Number children
+		  description:: Toggles the current block's children to be a numbered list
 	- ### Limitations
 		- A numbered list is not currently saved in a [standard ordered list format](https://daringfireball.net/projects/markdown/syntax#list).
 		- See [this comment](https://github.com/logseq/logseq/pull/9141#issuecomment-1517108026) for ux limitations.

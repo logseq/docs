@@ -73,8 +73,6 @@ id:: 60a78b6b-a0ff-49fe-822f-87216fbf79ff
 	- Priority
 	  id:: 60ab4582-b191-496a-be39-0a865f9ecece
 		- syntax: `[#A]` `[#B]` `[#C]`
-		- Priorities can be set with commands(`/A`, `/B`, `/C`)
-		  id:: 60ac5b08-d4bb-49de-b415-e63fcf29c59f
 	- [[Hiccup]]
 	  id:: 60ab5bc7-f196-4f87-91aa-164ac71184ed
 		- Sometimes you want to express more complex text structure, you can embed Hiccup in blocks.
