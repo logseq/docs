@@ -1,9 +1,9 @@
-- You can set your preferred daily journal date format via `Settings` page
+- You can set your preferred daily journal date format via `Settings > Editor` page
 - Alternatively, you can add it in [[config.edn]]
 	- {{embed ((60acdeb9-aa65-492b-8398-d4d65c1631c1))}}
 	- Add your favorite date-formatter to [[config.edn]]:
 	  #+BEGIN_SRC clojure
-	  :date-formatter "yyyy-MM-dd"
+	  :journal/page-title-format "yyyy-MM-dd"
 	  #+END_SRC
 	  Currently, logseq support:
 	  #+BEGIN_SRC clojure
