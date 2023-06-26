@@ -5,6 +5,11 @@
   *Note:* This section shows how classes or types of pages are related to each other. A class groups pages that share a common set of properties. `Thing` is the root class from which all other classes are defined. When a class is a child of another class, it usually inherits using the same properties as its parent class.
 	- [[Thing]]
 		- [[Class]]
+			- [[DataType]]
+				- [[Boolean]]
+				- [[StringWithRefs]]
+				- [[String]]
+				- [[Uri]]
 		- [[FeatureTag]]
 		- [[Feature]]
 			- [[Command]]
@@ -48,11 +53,6 @@
 				  #+BEGIN_QUERY
 				  {:query (property :type [[Command]])
 				  :result-transform (fn [res] (map (fn [m] (assoc-in m [:block/properties :name] (get-in m [:block/page :block/original-name]))) res))
-				  :title "Commands"}
-				  #+END_QUERY
-				- query-table:: true
-				  #+BEGIN_QUERY
-				  {:query (property :type [[Command]])
 				  :title "Commands"}
 				  #+END_QUERY
 			- [[Whiteboard/Tool]]

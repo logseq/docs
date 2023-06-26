@@ -1,5 +1,5 @@
 title:: custom page title
-sample:: click me
+description:: click me
 
 - description:
 	- the content displayed at the top of a page, used to uniquely identify the page
