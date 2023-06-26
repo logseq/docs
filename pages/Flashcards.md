@@ -33,7 +33,8 @@ description:: Cards are blocks that are intended to be used as an aid in memoriz
 					- You can read it as "Log sequence" or "Logical sequence" (thank you [[Ed]]).
 				- If you right click the bullet and select "Preview Card", you'll see something like this:
 					- ![CleanShot 2021-07-22 at 21.46.52.png](../assets/CleanShot_202021-07-22_20at_2021.46.52_1626961624975_0.png)
-		- To review a queryable set of cards, the `/cards` command is provided:
+		- To review a queryable set of cards, the `/cards` command is provided
+		  collapsed:: true
 			- type:: [[Command]]
 			  name:: Cards
 			  description:: A [[Query]] that returns cards that meet the query criteria
