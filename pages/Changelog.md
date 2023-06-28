@@ -42,7 +42,7 @@
 		- More translation for UI elements [#9658](https://github.com/logseq/logseq/pull/9658) [#9680](https://github.com/logseq/logseq/pull/9680) [#9711](https://github.com/logseq/logseq/pull/9711)
 		- Punctuation usage in translations [#9610](https://github.com/logseq/logseq/pull/9610)
 		- I18n: Russian [#9645](https://github.com/logseq/logseq/pull/9645), pt-BR [#9655](https://github.com/logseq/logseq/pull/9655), Turkish [#9686](https://github.com/logseq/logseq/pull/9686) [#9716](https://github.com/logseq/logseq/pull/9716), Spanish [#9665](https://github.com/logseq/logseq/pull/9665)
-		- Polish details for the plugin fenced code block [#9590](https://github.com/logseq/logseq/pull/9590)
+		- Polish details for the plugin fenced code block [#9590](https://github.com/logseq/logseq/pull/9590) - [Documentation](https://docs.logseq.com/#/page/code%20block)
 		- Plugin marketplace enhancements [#9609](https://github.com/logseq/logseq/pull/9609)
 		- Plugin API:
 			- Support right sidebar item type as string [#9701](https://github.com/logseq/logseq/pull/9701)
