@@ -75,4 +75,7 @@ url:: {{docs-base-url Whiteboard%2FObject}}
 				- [[Url input]]
 				- [[Open embedded url]]
 				- [[Link]]
--
+		- [[PDF]]
+			- supports:
+				- [[Edit]]
+				- [[Open embedded url]]

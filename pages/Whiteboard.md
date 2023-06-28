@@ -53,7 +53,8 @@ alias:: Whiteboards
 			- [[Global color swatch]]
 			- [[Global scale select]]
 		- You can drag and drop [[Pages]] and [[Blocks]] from both sidebars to the canvas to create [[Page and block embeds]] . Dropping images from your local filesystem is also supported. You can also select a particular block of text, and then drag it to the canvas to create a new block.
-		- Embeds can also be created by copy pasting block references, images and urls. Depending on the domain and the structure of the url, a special [[Whiteboard/Object]] might be created. [[Whiteboards]] currently support [[Youtube videos]] and [[Tweets]]. The rest will be embedded as an iFrame object.
+		- Embeds can also be created by copy pasting block references and urls. Depending on the domain and the structure of the url, a special [[Whiteboard/Object]] might be created. [[Whiteboards]] currently support [[Youtube videos]] and [[Tweets]]. The rest will be embedded as an iFrame object.
+		- Dragging and dropping a file could also create [[Whiteboard/Object]]. The currently supported formats are PDFs, images and videos.
 - # Functionality
 	- Logseq [[Whiteboards]] are local-first like the rest of the software.
 	  collapsed:: true
