@@ -1,3 +1,52 @@
+- ## Beta 0.9.10 [[Jun 28th, 2023]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.10>
+	- [[Features]]
+		- Whiteboards: #[[Snap to grid]] [#9654](https://github.com/logseq/logseq/pull/9654)
+	- [[Thanks]]
+		- [[Allan Chain]]
+			- Update KaTeX from 0.13.18 to 0.16.7 in [#9625](https://github.com/logseq/logseq/pull/9625)
+		- [[Bad3r]]
+			- Replace 'presentation' with 'view as slides' in [#9681](https://github.com/logseq/logseq/pull/9681)
+			- Update playwright config in [#9623](https://github.com/logseq/logseq/pull/9623)
+			- Add tests for selecting codeblock language in [#9557](https://github.com/logseq/logseq/pull/9557)
+			- Fix test intermediate failure in [#9699](https://github.com/logseq/logseq/pull/9699)
+		- [[cui fliter]]
+			- Fix typo  in [#9666](https://github.com/logseq/logseq/pull/9666)
+		- [[Rui Sun]]
+			- Fix setting title does not use i18n translation in [#9711](https://github.com/logseq/logseq/pull/9711)
+		- [[Mikhail Smelov]]
+			- Convert more of the UI to be translatable in [#9658](https://github.com/logseq/logseq/pull/9658) [#9680](https://github.com/logseq/logseq/pull/9680)
+			- Improve Russian (ru) translations in [#9645](https://github.com/logseq/logseq/pull/9645)
+		- [[megayu]]
+			- Fix paste text to link in [#9650](https://github.com/logseq/logseq/pull/9650)
+		- [[Phil Denhoff]]
+			- Improve plugin interfaces for IAppProxy, IEditorProxy, BlockEntity and PageEntity in [#9520](https://github.com/logseq/logseq/pull/9520)
+		- [[queeup]]
+			- Update Turkish translations in [#9686](https://github.com/logseq/logseq/pull/9686) [#9716](https://github.com/logseq/logseq/pull/9716)
+		- [[Taylor Hoffmann]]
+			- Update pt-BR translations in [#9655](https://github.com/logseq/logseq/pull/9655)
+	- [[Fixed issues]]
+		- Paste text to link [#9650](https://github.com/logseq/logseq/pull/9650)
+		- Clicking to edit a block from the right sidebar or a whiteboard can't jump to the correct position [#9657](https://github.com/logseq/logseq/pull/9657)
+		- Disable content selection when blocks have been selected [#9713](https://github.com/logseq/logseq/pull/9713)
+		- Fix pasting from HTML for some specific sites [#9739](https://github.com/logseq/logseq/pull/9739)
+		- Hidden editable block properties showing up when user properties present [#9661](https://github.com/logseq/logseq/pull/9661)
+		- Reactive queries [#9695](https://github.com/logseq/logseq/pull/9695) #[[minor change]]
+		- Trim block whitespace for markdown files for a specific case [#9554](https://github.com/logseq/logseq/pull/9554)
+		- Incorrect behavior for the code editor of file page [#9595](https://github.com/logseq/logseq/pull/9595)
+		- Polish the plugin settings modal [#9669](https://github.com/logseq/logseq/pull/9669)
+	- [[Enhancement]]
+		- Logseq Sync: experimental support for editing conflict handling with diff-merge [#9238](https://github.com/logseq/logseq/pull/9238) #experimental (To enable this, check the Features tab in the Setting menu)
+		- Add slash command for creating code blocks [#9553](https://github.com/logseq/logseq/pull/9553)
+		- Replace 'presentation' with 'view as slides' [#9681](https://github.com/logseq/logseq/pull/9681) #[[minor change]]
+		- More translation for UI elements [#9658](https://github.com/logseq/logseq/pull/9658) [#9680](https://github.com/logseq/logseq/pull/9680) [#9711](https://github.com/logseq/logseq/pull/9711)
+		- Punctuation usage in translations [#9610](https://github.com/logseq/logseq/pull/9610)
+		- I18n: Russian [#9645](https://github.com/logseq/logseq/pull/9645), pt-BR [#9655](https://github.com/logseq/logseq/pull/9655), Turkish [#9686](https://github.com/logseq/logseq/pull/9686) [#9716](https://github.com/logseq/logseq/pull/9716), Spanish [#9665](https://github.com/logseq/logseq/pull/9665)
+		- Polish details for the plugin fenced code block [#9590](https://github.com/logseq/logseq/pull/9590)
+		- Plugin marketplace enhancements [#9609](https://github.com/logseq/logseq/pull/9609)
+		- Plugin API:
+			- Support right sidebar item type as string [#9701](https://github.com/logseq/logseq/pull/9701)
+			- Improve plugin interfaces for IAppProxy, IEditorProxy, BlockEntity and PageEntity [#9520](https://github.com/logseq/logseq/pull/9520)
 - ## Beta 0.9.9 [[Jun 13th, 2023]]
   Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.9>
 	- [[Features]]
