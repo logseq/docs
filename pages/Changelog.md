@@ -1,7 +1,7 @@
 - ## Beta 0.9.10 [[Jun 28th, 2023]]
   Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.10>
 	- [[Features]]
-		- Whiteboards: #[[Snap to grid]] [#9654](https://github.com/logseq/logseq/pull/9654)
+		- Whiteboards: #[[Snap to grid]]  [#9654](https://github.com/logseq/logseq/pull/9654)
 	- [[Thanks]]
 		- [[Allan Chain]]
 			- Update KaTeX from 0.13.18 to 0.16.7 in [#9625](https://github.com/logseq/logseq/pull/9625)
