@@ -1,2 +1,7 @@
 {:exclude [tags-and-page-refs-have-pages]
- :add-namespaces [logseq.graph-validator.validations.class schema]}
+ :add-namespaces [logseq.graph-validator.validations.class
+                  logseq.graph-validator.validations.property
+                  schema]
+ ;; These are all used in examples
+ :property/ignore-list #{:author :project :tag :publication-date :price :qty
+                         :full-title :source}}

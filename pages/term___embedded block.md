@@ -1,7 +1,0 @@
-- description:
-	- shows a block from one Logseq page within a block of a different page and is marked by a different colored background.
-- produced by:
-	- an embedded block is produced by typing /embed, selecting Block embed, and pasting the block ref at the default cursor location. The result, in editing mode, will be something like this: `{{embed ((60011009-ddd9-4a8c-8925-37249791f525))}}`
-- example:
-	- type `/Block Embed`
-	- {{embed ((60a77d63-7340-4c1d-8bbc-68bd4e49fc6c)) }}

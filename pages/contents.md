@@ -25,7 +25,7 @@
 	- [Backlink]([[term/backlink]])
 	- [[Knowledge Graph]]
 	- [[Page and block references]]
-	- [[Page and block embeds]]
+	- [[Page embed]] and [[Block embed]]
 	- [[Tasks]]
 	- [[Commands]]
 	- [[Advanced commands]]
