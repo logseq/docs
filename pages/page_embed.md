@@ -1,13 +1,19 @@
----
-title: Page embed
-tags: [[embed]]
-description:: See [[Block embed]] for block version of this
----
+title:: Page embed
+type:: [[Feature]]
+platforms:: [[All Platforms]]
+alias:: term/embedded page
+tags:: [[embed]]
+description:: Allows an entire page to be displayed within another. Also known as transclusion. See [[Block embed]] for block version of this
 
-- Also commonly known as transclusion, page embedding allows an entire page to be displayed within another.
-- Create a page embed by:
-	- Typing `{{{embed [[page name]]}}}`
-- #+BEGIN_TIP
-  - Edits made to the embedded content are also made to the referenced content.
-  - Embedding does not contribute to a page's [[Linked References]]
-   #+END_TIP
+## Usage
+	- Create a page embed by typing `{{{embed [[page name]]}}}` or by using the `/Page embed` command:
+	  collapsed:: true
+		- type:: [[Command]]
+		  name:: Page embed
+		  description:: Embeds a page with autocompletion ready for the page
+	- For example, embedding [[term/page]] looks like this:
+		- {{embed [[term/page]]}}
+## Functionality
+	- Edits made to the embedded content are also made to the referenced content.
+	- Embedded page is marked by a different colored background.
+	- Embedding does not contribute to a page's [[Linked References]]

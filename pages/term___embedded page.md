@@ -1,7 +1,0 @@
-- description:
-  - shows one Logseq page within a block of a different page and is marked by a different colored background
-- produced by:
-  - an embedded page is produced by typing /embed, selecting Page embed, and pasting the page reference at the default cursor location. The result, in editing mode, will be something like this: `{{embed [[term/page]]}}`
-- example:
-  - type `/Page Embed`
-  - {{embed [[term/page]]}}
