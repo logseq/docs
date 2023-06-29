@@ -5,5 +5,6 @@ description:: Local config file, logseq/custom.js, loads custom js for a graph o
 
 - ## Usage
 	- First time you load a custom.js file, you are prompted to confirm you want to load it.
+	- > **Please use this feature with caution.** Introducing custom javascript might result in unexpected behavior. You are responsible for the implementation and the maintenance of the code. Avoid pasting javascript code that you don't fully understand, for security and stability reasons.
 - ## Functionality
 	- Define a `logseq/custom.js` to have any custom js load
