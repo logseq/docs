@@ -16,7 +16,7 @@ We also have [documentation tasks](https://github.com/orgs/logseq/projects/5/vie
 
 A feature page has a specific format as described in
 https://docs.logseq.com/#/page/Feature. Use the `Feature` template when starting
-a new page. Please filling in as many of the properties and headers as you can.
+a new page. Please fill in as many of the properties and headers as you can.
 If you only know enough to fill in parts of a page, that's fine. Just add a
 `TODO Write Something Descriptive Here #docs` with what's left to do.
 
@@ -37,10 +37,10 @@ file in Github](https://docs.github.com/en/repositories/working-with-files/manag
 For any other contribution it helps to make changes locally so you see you can how it looks in Logseq. In order to do this you should:
 
 1. Ensure you have [git](https://git-scm.com/downloads) installed.
-2. Fork and Clone THIS REPO. The upstream should be set to the FORKED REPO. If you have no idea to do, check:
+2. Fork and Clone THIS REPO. The upstream should be set to the FORKED REPO. If you need more information on what this means, read:
 * [About forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks)
 * [Cloning and forking repositories from GitHub Desktop](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop)
-3. Add the cloned local repo (of your FORKED REPO) to Logseq via the `Add new graph`button on the top left dropdown menu. Select the directory where you cloned the repo.
+3. Add the cloned local repo (of your FORKED REPO) to Logseq via the `Add new graph` button on the top left dropdown menu. Select the directory where you cloned the repo.
 4. Create a branch off of master. The following two commands create a branch called `branch-name` and navigates onto it.
 
 ```git
