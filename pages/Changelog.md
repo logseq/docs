@@ -30,7 +30,7 @@
 		- [[queeup]]
 			- Update Turkish translation in [#9773](https://github.com/logseq/logseq/pull/9773), [#9813](https://github.com/logseq/logseq/pull/9813)
 		- [[ROCKTAKEY]]
-			- Add additional Japanise translation in [#9792](https://github.com/logseq/logseq/pull/9792)
+			- Add additional Japanese translation in [#9792](https://github.com/logseq/logseq/pull/9792)
 	- [[Fixed issues]]
 		- Whiteboards
 			- Blur on empty title and select all on shape labels [#9793](https://github.com/logseq/logseq/pull/9793)
@@ -49,7 +49,7 @@
 	- [[Enhancement]]
 		- Enhance cut and copy blocks [#9094](https://github.com/logseq/logseq/pull/9094)
 		- Android 13 themed icons support [#9862](https://github.com/logseq/logseq/pull/9862)
-		- I18n: Japanise [#9792](https://github.com/logseq/logseq/pull/9792), Chinese [#9801](https://github.com/logseq/logseq/pull/9801), Norwegian [#9771](https://github.com/logseq/logseq/pull/9771), Turkish [#9773](https://github.com/logseq/logseq/pull/9773) [#9813](https://github.com/logseq/logseq/pull/9813)
+		- I18n: Japanese [#9792](https://github.com/logseq/logseq/pull/9792), Chinese [#9801](https://github.com/logseq/logseq/pull/9801), Norwegian [#9771](https://github.com/logseq/logseq/pull/9771), Turkish [#9773](https://github.com/logseq/logseq/pull/9773) [#9813](https://github.com/logseq/logseq/pull/9813)
 - ## Beta 0.9.10 [[Jun 28th, 2023]]
   Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.10>
 	- [[Features]]
