@@ -14,5 +14,5 @@ description:: Renders a block of code with [[Codemirror]] support for a variety 
 	  ```
 ## Functionality
 	- This feature provides support for languages through [CodeMirror's modes](https://codemirror.net/5/mode/index.html)
-- ## Additional Links
+## Additional Links
 	- See [[Calculator]] and [[ClojureScript Eval in a Block]] features which rely on code blocks
