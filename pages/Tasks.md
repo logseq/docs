@@ -22,6 +22,7 @@ platforms:: [[All Platforms]]
 				- (_this is how `CANCELLED` renders_)
 			- IN-PROGRESS the fun thing
 			- WAIT the slow thing
+	- Once the block has been created, if it shows an empty tick-box at the start of the block you can manually click on that box to get it to change to `DONE`, which can be rather satisfying to do.
 - ## Functionality
 	- ### Priorities
 		- Logseq comes with three optional, built-in priorities that can be set with commands (`/A`, `/B`, `/C`):
