@@ -9,7 +9,7 @@ platforms:: [[All Platforms]]
 	  + You can toggle between those two flavors in the settings page
 	- There are two ways to attach workflow markers to your task block:
 		- when editing the block, press `Ctrl/Cmd+enter` to cycle through the workflow markers
-		- type these command directly, eg "LATER" "NOW" "DONE" "TODO" etc.
+		- type these commands directly (eg `/LATER`) anywhere in the block, or manually write the keyword at the start of the block (eg `LATER do grocery`)
 		- Some examples:
 		  todo:: 1621908710666
 			- LATER do grocery
