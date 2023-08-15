@@ -42,6 +42,7 @@
 	- [[Zotero]] integration
 	- [[Embed Media - Audio, Photos, Videos]]
 	- [[Plugins]]
+	- [[Queries]] and [[Query Builder]]
 	- [[Whiteboard]]
 	- [[Tables]]
 - [[Logseq School]]
@@ -53,7 +54,6 @@
 - ✨ [[Tips and Tricks]]
 - [[Advanced Logseq]]
 	- [[Keyboard shortcuts]]
-	- [[Queries]]
 	- [[Advanced Queries]]
 	- [[Hiccup]]
 	- [[Filename format]]
