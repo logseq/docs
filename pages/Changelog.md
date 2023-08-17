@@ -1,5 +1,35 @@
-## Beta 0.9.13 [[Aug 2nd, 2023]]
-Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.13>
+## Beta 0.9.14 [[Aug 17th, 2023]]
+Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.14>
+#+BEGIN_NOTE
+This version introduces left sidebar and right sidebar enhancements, if you encounter some style issues, please revert to the default theme.
+#+END_NOTE
+	- [[Thanks]]
+		- [[HikoriHawky]]
+			- Add Whiteboards pen pressure support in [#9988](https://github.com/logseq/logseq/pull/9988)
+		- [[jomanhattan]]
+			- Update French translation in [#9981](https://github.com/logseq/logseq/pull/9981)
+		- [[matheusfrancisco]]
+			- Fix right sidebar empty string error caused by whiteboards names in [#10018](https://github.com/logseq/logseq/pull/10018)
+		- [[ROCKTAKEY]]
+			- Update Japanese translation in [#10004](https://github.com/logseq/logseq/pull/10004)
+		- [[situ2001]]
+			- Add drag threshold for graph view in [#9989](https://github.com/logseq/logseq/pull/9989)
+	- [[Fixed issues]]
+		- Add sub-pixel anti-aliasing for Electron [#10032](https://github.com/logseq/logseq/pull/10032)
+		- Add drag threshold for graph view [#9989](https://github.com/logseq/logseq/pull/9989)
+		- Display of embedded drawing [#9969](https://github.com/logseq/logseq/pull/9969)
+		- Sometimes template expansion inserts an additional slash [#9972](https://github.com/logseq/logseq/pull/9972)
+		- PDF Viewer: highlighted text layer is overlaid by the PDF.js built-in annotation layer [#9982](https://github.com/logseq/logseq/pull/9982)
+		- Rendering error caused by empty string of whiteboards in the right sidebar [#10018](https://github.com/logseq/logseq/pull/10018)
+	- [[Enhancement]]
+		- Left sidebar enhancements [#9880](https://github.com/logseq/logseq/pull/9880)
+		- Right sidebar enhancements #[[minor change]] [#9846](https://github.com/logseq/logseq/pull/9846)
+		- I18n: French [#9981](https://github.com/logseq/logseq/pull/9981) Japanese [#10004](https://github.com/logseq/logseq/pull/10004)
+		- Whiteboards drawing pen pressure support [#9988](https://github.com/logseq/logseq/pull/9988)
+		- PDF Viewer: support `shift + enter` to pick the previous searching results highlight [#10002](https://github.com/logseq/logseq/pull/10002)
+		- Polish UI details of the zotero search component [#10011](https://github.com/logseq/logseq/pull/10011)
+- ## Beta 0.9.13 [[Aug 2nd, 2023]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.13>
 	- [[Thanks]]
 		- [[atxulo]]
 			- Improvements in Spanish translation in [#9896](https://github.com/logseq/logseq/pull/9896)
