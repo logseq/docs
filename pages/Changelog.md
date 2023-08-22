@@ -1,8 +1,23 @@
-## Beta 0.9.14 [[Aug 17th, 2023]]
-Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.14>
-#+BEGIN_NOTE
-This version introduces left sidebar and right sidebar enhancements, if you encounter some style issues, please revert to the default theme.
-#+END_NOTE
+## Beta 0.9.15 [[Aug 22nd, 2023]]
+Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.15>
+	- [[Thanks]]
+		- [[ingepettersen]]
+			- Update Norwegian translations in [#10068](https://github.com/logseq/logseq/pull/10068)
+		- [[Ulices]]
+			- Update Spanish translations in [#10065](https://github.com/logseq/logseq/pull/10065)
+	- [[Fixed issues]]
+		- Right sidebar pane menu overflow [#10046](https://github.com/logseq/logseq/pull/10046)
+		- Disable sidebar pane content scrolling [#10071](https://github.com/logseq/logseq/pull/10071)
+		- Fix right sidebar pane header wrap and content padding [#10072](https://github.com/logseq/logseq/pull/10072)
+	- [[Enhancement]]
+		- PDF password support [#10034](https://github.com/logseq/logseq/pull/10034)
+		- Plugin API enhancements [#10034](https://github.com/logseq/logseq/pull/10034)
+		- I18n: Norwegian [#10068](https://github.com/logseq/logseq/pull/10068), Spanish [#10065](https://github.com/logseq/logseq/pull/10065)
+- ## Beta 0.9.14 [[Aug 17th, 2023]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.14>
+  #+BEGIN_NOTE
+  This version introduces left sidebar and right sidebar enhancements, if you encounter some style issues, please revert to the default theme.
+  #+END_NOTE
 	- [[Thanks]]
 		- [[HikoriHawky]]
 			- Add Whiteboards pen pressure support in [#9988](https://github.com/logseq/logseq/pull/9988)
