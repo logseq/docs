@@ -11,7 +11,7 @@ Desktop app and Android App download link: <https://github.com/logseq/logseq/rel
 		- Fix right sidebar pane header wrap and content padding [#10072](https://github.com/logseq/logseq/pull/10072)
 	- [[Enhancement]]
 		- PDF password support [#10034](https://github.com/logseq/logseq/pull/10034)
-		- Plugin API enhancements [#10034](https://github.com/logseq/logseq/pull/10034)
+		- Plugin API enhancements [#10022](https://github.com/logseq/logseq/pull/10022)
 		- I18n: Norwegian [#10068](https://github.com/logseq/logseq/pull/10068), Spanish [#10065](https://github.com/logseq/logseq/pull/10065)
 - ## Beta 0.9.14 [[Aug 17th, 2023]]
   Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.14>
