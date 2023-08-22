@@ -5,10 +5,13 @@ description:: Provides a way to write and maintain reusable text. This text can 
 - ## Usage
 	- ### Creating a macro
 		- Open the [[config.edn]] file.
-		- Scroll down to the `:macros` section. Inside the curly brackets, add your macro's name in curly brackets followed by the text template, e.g.:
+		- Scroll down to the `:macros` section. Each macro should be enclosed in curly brackets, with two strings enclosed in quotations.
+		- The first string `"foo"` is the macro name. The second string `"Hello $1"` is the text template.
+		- Variables such as `$1` and `$2` can be used to place parameters in the template.
 		- ```edn
 		  :macros {
-		  "foo" "Hello $1"
+		  {"foo" "Hello $1"}
+		  {"bar" "Goodbye $1"}
 		  }
 		  ```
 		- For readability, use a line break to separate each macro
