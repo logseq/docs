@@ -1,5 +1,6 @@
 ## Beta 0.9.15 [[Aug 22nd, 2023]]
-Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.15>
+Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.15>.
+This version fixes right sidebar regressions introduced in the previous version.
 	- [[Thanks]]
 		- [[ingepettersen]]
 			- Update Norwegian translations in [#10068](https://github.com/logseq/logseq/pull/10068)
