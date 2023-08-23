@@ -7,6 +7,7 @@ platforms:: [[Desktop]]
   This only works on the desktop app at the moment.
   #+END_NOTE
 - **How to add a PDF file?**
+	- NOTE: PDF files get stored inside your graph's assets folder. There's currently no automated way to remove them even if unlinked. You might be able to remove them manually to reclaim space.
 	- There're two ways to add PDF files to your graph:
 		- 1. Create a new block in any page, drag your PDF file to the new block.
 		- 2. Type '/upload an asset' and choose your PDF file.
