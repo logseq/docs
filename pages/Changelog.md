@@ -1,6 +1,48 @@
-## Beta 0.9.15 [[Aug 22nd, 2023]]
-Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.15>.
-This version fixes right sidebar regressions introduced in the previous version.
+## Beta 0.9.16 [[Sep 6th, 2023]]
+Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.16>
+	- [[Thanks]]
+		- [[Allan Chain]]
+			- Fix `input-selection-end` event is not firing correctly in [#10113](https://github.com/logseq/logseq/pull/10113)
+			- Fix plugins can't be disabled if any error is thrown in beforeunload [#10114](https://github.com/logseq/logseq/pull/10114)
+		- [[Affif Mukhlashin]]
+			- Add Bahasa Indonesia translation in [#10148](https://github.com/logseq/logseq/pull/10148)
+		- [[djm2k]]
+			- Update develop-logseq-on-windows.md doc to warn about Choco in [#10075](https://github.com/logseq/logseq/pull/10075)
+		- [[Zhizhen He]]
+			- Update typos CI actions in [#10143](https://github.com/logseq/logseq/pull/10143)
+		- [[omahs]]
+			- Fix typos [#10143](https://github.com/logseq/logseq/pull/10143)
+		- [[Leonardo Salgueiro]]
+			- Fix `logseq.updateSettings` API doesn't update existing settings in [#10111](https://github.com/logseq/logseq/pull/10111)
+		- [[toymil]]
+			- Remove `word-spacing` CSS rule for inline monospace code in [#10077](https://github.com/logseq/logseq/pull/10077)
+	- [[Fixed issues]]
+		- Should Focus draw container when click [#10116](https://github.com/logseq/logseq/pull/10116)
+		- Copy keyboard shortcut not working in PDF view [#10092](https://github.com/logseq/logseq/pull/10092)
+		- PDF pane becomes blank after zooming or resizing [#10115](https://github.com/logseq/logseq/pull/10115)
+		- Annotation of a PDF of different page sizes [#10121](https://github.com/logseq/logseq/pull/10121)
+		- Incorrect path of PDF.js cmaps resources [#10084](https://github.com/logseq/logseq/pull/10084)
+		- Fix Close button visibility of right side panel [#10145](https://github.com/logseq/logseq/pull/10145)
+		- In Plugin API, `input-selection-end` event is not firing correctly [#10113](https://github.com/logseq/logseq/pull/10113)
+		- `logseq.updateSettings` API doesn't update existing settings [#10111](https://github.com/logseq/logseq/pull/10111)
+		- Plugins can't be disabled if any error is thrown in beforeunload [#10114](https://github.com/logseq/logseq/pull/10114)
+		- Fixes for Logseq Sync: Download progress for iOS [#10090](https://github.com/logseq/logseq/pull/10090)
+		- iOS App Crash caused by memory management [#10097](https://github.com/logseq/logseq/pull/10097)
+		- Remove `word-spacing` CSS rule for inline monospace code [#10077](https://github.com/logseq/logseq/pull/10077)
+		- Make linked references filters reactive when the page properties changed [#9638](https://github.com/logseq/logseq/pull/9638)
+	- [[Enhancement]]
+		- New shortcuts(keymap) editing UI [#9803](https://github.com/logseq/logseq/pull/9803)
+		- Enhancements of Plugin APIs [#10127](https://github.com/logseq/logseq/pull/10127)
+		- I18n: Add Bahasa Indonesia translation [#10148](https://github.com/logseq/logseq/pull/10148)
+		- Refine Electron loading [#10049](https://github.com/logseq/logseq/pull/10049)
+		- Add graph folder checking for bad folder names and nested graph [#10141](https://github.com/logseq/logseq/pull/10141)
+		- Add connectivity testing for Logseq Sync [#10112](https://github.com/logseq/logseq/pull/10112) [#10147](https://github.com/logseq/logseq/pull/10147)
+		- Enhancements for Logseq Sync: avoid logging out, reconnect when online [#10134](https://github.com/logseq/logseq/pull/10134)
+		- Remove legacy shortcuts entry from the general settings [#10154](https://github.com/logseq/logseq/pull/10154)
+		- Disable default close window shortcut [#10096](https://github.com/logseq/logseq/pull/10096)
+- ## Beta 0.9.15 [[Aug 22nd, 2023]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.15>.
+  This version fixes right sidebar regressions introduced in the previous version.
 	- [[Thanks]]
 		- [[ingepettersen]]
 			- Update Norwegian translations in [#10068](https://github.com/logseq/logseq/pull/10068)
