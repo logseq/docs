@@ -1,5 +1,11 @@
-## Beta 0.9.16 [[Sep 6th, 2023]]
-Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.16>
+## Beta 0.9.17 [[Sep 7th, 2023]]
+Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.17>.
+	- [[Fixed issues]]
+		- iOS network checking issue for Logseq Sync [#10163](https://github.com/logseq/logseq/pull/10163)
+		- Electron App maximize bug [#10165](https://github.com/logseq/logseq/pull/10165)
+- ## Beta 0.9.16 [[Sep 6th, 2023]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.16>.
+  This version is revoked due to severe bugs.
 	- [[Thanks]]
 		- [[Allan Chain]]
 			- Fix `input-selection-end` event is not firing correctly in [#10113](https://github.com/logseq/logseq/pull/10113)
