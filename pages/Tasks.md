@@ -57,6 +57,10 @@ platforms:: [[All Platforms]]
 		  after typing the command and click `Add repeater` in the date picker
 			- eg: daily exercise routine at 7am
 			  SCHEDULED: <2021-05-26 Wed 7:00 .+1d>
+     			- You can change the repeater kind to:
+				- `.+`: It'll repeat from the last time you marked the block done.
+				- `++`: It'll keep it on the same day of the week.
+				- `+: It'll repeat in X y/m/w/d/h from when you originally scheduled it.
 	- ### Time tracker
 	  id:: 60af74c1-62f8-434a-827c-abc6d2a71734
 		- {{embed ((60acdeba-b3fd-4f90-ab54-3093caa4d5fa))}}
