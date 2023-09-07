@@ -5,7 +5,7 @@ platforms:: [[All Platforms]]
 - ## Usage
 	- Logseq comes with two built-in flavors to mark your block with built-in workflow marker keywords and manage your tasks:
 	  + `LATER` -> `NOW` -> `DONE` flavor (default)
-	  + `TODO` -> `DOING` -> `DONE` flavor 
+	  + `TODO` -> `DOING` -> `DONE` flavor
 	  + You can toggle between those two flavors in the settings page
 	- There are two ways to attach workflow markers to your task block:
 		- when editing the block, press `Ctrl/Cmd+enter` to cycle through the workflow markers
@@ -60,7 +60,7 @@ platforms:: [[All Platforms]]
      			- You can change the repeater kind to:
 				- `.+`: It'll repeat from the last time you marked the block done.
 				- `++`: It'll keep it on the same day of the week.
-				- `+: It'll repeat in X y/m/w/d/h from when you originally scheduled it.
+				- `+`: It'll repeat in X y/m/w/d/h from when you originally scheduled it.
 	- ### Time tracker
 	  id:: 60af74c1-62f8-434a-827c-abc6d2a71734
 		- {{embed ((60acdeba-b3fd-4f90-ab54-3093caa4d5fa))}}
