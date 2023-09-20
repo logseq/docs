@@ -10,10 +10,10 @@ Desktop app and Android App download link: <https://github.com/logseq/logseq/rel
 		- [[queeup]]
 			- Update Turkish translation in [#10180](https://github.com/logseq/logseq/pull/10180)
 		- [[WsinGithub]]
-			- Disable Bilibili autoplay in [#10207](https://github.com/logseq/logseq/pull/10207)
+			- Disable Bilibili video autoplay in [#10207](https://github.com/logseq/logseq/pull/10207)
 	- [[Fixed issues]]
 		- Update rewrite-edn to fix backslash characters unable to be keyboard shortcut [#10224](https://github.com/logseq/logseq/pull/10224)
-		- Disable Bilibili autoplay [#10207](https://github.com/logseq/logseq/pull/10207)
+		- Disable Bilibili video autoplay [#10207](https://github.com/logseq/logseq/pull/10207)
 		- Disable graph name warning [#10253](https://github.com/logseq/logseq/pull/10253)
 		- Support asset filenames with wrong percent encoding [#10191](https://github.com/logseq/logseq/pull/10191)
 		- Incorrect asset resource path for custom CSS on iOS [#10232](https://github.com/logseq/logseq/pull/10232)
