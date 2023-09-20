@@ -1,5 +1,33 @@
-## Beta 0.9.17 [[Sep 7th, 2023]]
-Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.17>.
+## Beta 0.9.18 [[Sep 20th, 2023]]
+Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.18>
+	- [[Thanks]]
+		- [[Jack Case]]
+			- Allow writing to files with group permission without chmod on Linux in [#9297](https://github.com/logseq/logseq/pull/9297)
+		- [[Ulices]]
+			- Update Spanish translations in [#10195](https://github.com/logseq/logseq/pull/10195)
+		- [[jf]]
+			- Allow for single-digit minutes and seconds in youtube-timestamp in [#9930](https://github.com/logseq/logseq/pull/9930)
+		- [[queeup]]
+			- Update Turkish translation in [#10180](https://github.com/logseq/logseq/pull/10180)
+		- [[WsinGithub]]
+			- Disable Bilibili autoplay in [#10207](https://github.com/logseq/logseq/pull/10207)
+	- [[Fixed issues]]
+		- Update rewrite-edn to fix backslash characters unable to be keyboard shortcut [#10224](https://github.com/logseq/logseq/pull/10224)
+		- Disable Bilibili autoplay [#10207](https://github.com/logseq/logseq/pull/10207)
+		- Disable graph name warning [#10253](https://github.com/logseq/logseq/pull/10253)
+		- Support asset filenames with wrong percent encoding [#10191](https://github.com/logseq/logseq/pull/10191)
+		- Incorrect asset resource path for custom CSS on iOS [#10232](https://github.com/logseq/logseq/pull/10232)
+		- Incorrect mouse point payload for the plugin hook of the editor input selection [#10175](https://github.com/logseq/logseq/pull/10175)
+		- Avoid checking network connectivity for non-sync graph [#10171](https://github.com/logseq/logseq/pull/10171)
+	- [[Enhancement]]
+		- Electron loading [#10201](https://github.com/logseq/logseq/pull/10201)
+		- Allow for single-digit minutes and seconds in youtube-timestamp (addresses #9920) [#9930](https://github.com/logseq/logseq/pull/9930)
+		- New option to allow writing to files with group permission without chmod on Linux [#9297](https://github.com/logseq/logseq/pull/9297)
+		- Introduce customizable close window shortcut [#10190](https://github.com/logseq/logseq/pull/10190)
+		- Support Socks5 proxy for Desktop App [#10199](https://github.com/logseq/logseq/pull/10199)
+		- I18n: Spanish [#10195](https://github.com/logseq/logseq/pull/10195), Turkish [#10180](https://github.com/logseq/logseq/pull/10180)
+- ## Beta 0.9.17 [[Sep 7th, 2023]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.17>.
 	- [[Fixed issues]]
 		- iOS network checking issue for Logseq Sync [#10163](https://github.com/logseq/logseq/pull/10163)
 		- Electron App maximize bug [#10165](https://github.com/logseq/logseq/pull/10165)
