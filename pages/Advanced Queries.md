@@ -138,6 +138,33 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 			- `:Xd-after-ms` - Timestamp of X days after today. **New syntax** `:+Xd-ms`
 			- `:start-of-today-ms` - Timestamp for beginning of today. **New syntax** `:today-start`
 			- `:end-of-today-ms` - Timestamp for end of today. **New syntax** `:today-end`
+	- ### Query parameters and functions
+	  created-at:: 1697057234
+   	  updated-at:: 1697057234
+		- You'll see example queries below that compose concepts expressed in this section.
+		  View [comments in the source](https://github.com/logseq/logseq/blob/master/src/main/frontend/db/query_dsl.cljs/#L22-L48)
+		- #### Page data
+			- Page data can be viewed by opening the "(Dev) Show page data" from the page's context menu. This is made available by enabling [[Developer mode]].
+		- #### Block data
+			- Block data can be viewed by opening the "(Dev) Show block data" from the block's context menu. This is made available by enabling [[Developer mode]].
+		- #### Logical Operators
+    			- and
+    			- or
+    			- not
+		- #### Filters
+			- `between`
+			- `property (block)`
+			- `task (block)`
+			- `priority (block)`
+			- `page`
+			- `sample`
+			- `full-text-search ""`
+		- #### Namespace
+			- `page-property (page)`
+			- `page-tags (page)`
+			- `all-page-tags`
+		- #### Sorting
+			- `sort-by (data) (asc|desc)`
 - ## Query Examples
 	- 1. Get all tasks
 	  created_at:: 1609232063516
