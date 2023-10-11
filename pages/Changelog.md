@@ -1,5 +1,38 @@
-## Beta 0.9.18 [[Sep 20th, 2023]]
-Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.18>
+## Beta 0.9.19 [[Oct 11th, 2023]]
+Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.19>
+	- [[Thanks]]
+		- [[Alan Roe]]
+			- Move cursor to end or beginning of line when boundary limit reached in [#10244](https://github.com/logseq/logseq/pull/10244)
+			- Use `cmd/ctrl` + `=` to zoom in [#10241](https://github.com/logseq/logseq/pull/10241)
+		- [[Bad3r]]
+			- Bump CodeMirror version in [#9822](https://github.com/logseq/logseq/pull/9822)
+		- [[Ulices]]
+			- Update Spanish translations in [#10320](https://github.com/logseq/logseq/pull/10320)
+		- [[hkgnp]]
+			- Add marker prop to BlockEntity interface in [#10312](https://github.com/logseq/logseq/pull/10312)
+		- [[jionkitten]]
+			- Fix too frequent highlights saving in PDF view in [#10238](https://github.com/logseq/logseq/pull/10238)
+		- [[Sander]]
+			- Allow plugins to access custom format clipboard data in [#10225](https://github.com/logseq/logseq/pull/10225)
+	- [[Fixed issues]]
+		- Can't close window on macOS with `cmd`+`w` [#10325](https://github.com/logseq/logseq/pull/10325)
+		- The first window does not close when there're multiple windows [#10336](https://github.com/logseq/logseq/pull/10336)
+		- Capture all `logseq://` links on Android [#10266](https://github.com/logseq/logseq/pull/10266)
+		- Allow drag and drop to dummy page [#10292](https://github.com/logseq/logseq/pull/10292)
+		- Bypass corrupted SQLite search index when App starts [#10286](https://github.com/logseq/logseq/pull/10286)
+		- Missing the initial ref highlight block sometimes for PDF view [#10333](https://github.com/logseq/logseq/pull/10333)
+		- Avoid too frequent highlights saving in PDF view [#10238](https://github.com/logseq/logseq/pull/10238)
+		- Fix incorrect auto-complete modal position for overflow editor content input [#10298](https://github.com/logseq/logseq/pull/10298)
+		- Incorrect API call for the electron production bundle [#10329](https://github.com/logseq/logseq/pull/10329)
+	- [[Enhancement]]
+		- Whiteboards: Pen mode (palm rejection) [#10222](https://github.com/logseq/logseq/pull/10222)
+		- Move cursor to end or beginning of line when boundary limit reached [#10244](https://github.com/logseq/logseq/pull/10244)
+		- Upgrade to Capacitor v5 for mobile platforms [#10278](https://github.com/logseq/logseq/pull/10278)
+		- Use `cmd/ctrl` + `=` to zoom [#10241](https://github.com/logseq/logseq/pull/10241)
+		- Allow plugins to access custom format clipboard data [#10225](https://github.com/logseq/logseq/pull/10225)
+		- I18n: Update Spanish translations [#10320](https://github.com/logseq/logseq/pull/10320)
+- ## Beta 0.9.18 [[Sep 20th, 2023]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.18>
 	- [[Thanks]]
 		- [[Jack Case]]
 			- Allow writing to files with group permission without chmod on Linux in [#9297](https://github.com/logseq/logseq/pull/9297)
