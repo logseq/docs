@@ -1,5 +1,33 @@
-## Beta 0.9.19 [[Oct 11th, 2023]]
-Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.19>
+## Beta 0.9.20 [[Nov 1st, 2023]]
+Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.20>
+	- [[Features]]
+		- New handbook [#8524](https://github.com/logseq/logseq/pull/8524)
+	- [[Thanks]]
+		- [[CorrectRoadH]]
+			- Support zoom via touchpad in [#10435](https://github.com/logseq/logseq/pull/10435)
+		- [[Ulices]]
+			- Update Spanish translation in [#10431](https://github.com/logseq/logseq/pull/10431)
+		- [[ingepettersen]]
+			- Update Norwegian translation in [#10361](https://github.com/logseq/logseq/pull/10361)
+		- [[SylvainDuran]]
+			- Update French translations in [#10427](https://github.com/logseq/logseq/pull/10427)
+		- [[udkl]]
+			- Fix `#card` should only be appended to the title in [#10387](https://github.com/logseq/logseq/pull/10387)
+	- [[Fixed issues]]
+		- Fix android back button closing order [#10345](https://github.com/logseq/logseq/pull/10345)
+		- Fix journal name judgement [#10350](https://github.com/logseq/logseq/pull/10350) [#10422](https://github.com/logseq/logseq/pull/10422) [#10434](https://github.com/logseq/logseq/pull/10434)
+		- Refine drag and drop of assets. Fix not being about to save assets sometimes [#10351](https://github.com/logseq/logseq/pull/10351)
+		- `#card` should only be appended to the title [#10387](https://github.com/logseq/logseq/pull/10387)
+		- On Android, activity restarts when a Bluetooth keyboard gets connected [#10444](https://github.com/logseq/logseq/pull/10444)
+		- Shortcuts editor can't edit disabled keymap [#10290](https://github.com/logseq/logseq/pull/10290)
+		- Refine Logseq Sync login box tips [#10443](https://github.com/logseq/logseq/pull/10443)
+	- [[Enhancement]]
+		- Upgrade electron to v25 [#10440](https://github.com/logseq/logseq/pull/10440)
+		- Make Smart Merge the default option for Logseq Sync [#10428](https://github.com/logseq/logseq/pull/10428)
+		- I18n: Spanish [#10431](https://github.com/logseq/logseq/pull/10431), French [#10427](https://github.com/logseq/logseq/pull/10427), Norwegian [#10361](https://github.com/logseq/logseq/pull/10361)
+		- Add toggle option for PDF view: auto opening the highlight context menu from new text selection [#10390](https://github.com/logseq/logseq/pull/10390)
+- ## Beta 0.9.19 [[Oct 11th, 2023]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.19>
 	- [[Thanks]]
 		- [[Alan Roe]]
 			- Move cursor to end or beginning of line when boundary limit reached in [#10244](https://github.com/logseq/logseq/pull/10244)
