@@ -1,7 +1,7 @@
 ## Beta 0.9.20 [[Nov 1st, 2023]]
 Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.20>
 	- [[Features]]
-		- New handbook [#8524](https://github.com/logseq/logseq/pull/8524)
+		- New handbook [#8524](https://github.com/logseq/logseq/pull/8524) - [Documentation]([[Handbook]])
 	- [[Thanks]]
 		- [[CorrectRoadH]]
 			- Support zoom via touchpad in [#10435](https://github.com/logseq/logseq/pull/10435)
