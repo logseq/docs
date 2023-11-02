@@ -43,6 +43,7 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 	  2. Page names are stored as lower case in the database.
 	  3. Most simple query operators are available as [rules](https://docs.datomic.com/on-prem/query/query.html#rules) in queries
 	  4. Titles can be be hiccups or double-quoted strings. For example, if you want to put custom macros into the query title, you can write something like `"{{poem foo,bar}}"`.
+	  5. When [[Developer mode]] is enabled, page and block data can be viewed by running the respective commands `(Dev) Show page data` and `(Dev) Show block data` .
 	  #+END_TIP
 	- ### Query Options
 		- #### remove-block-children?
