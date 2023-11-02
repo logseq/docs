@@ -1,5 +1,5 @@
 type:: [[Feature]]
-platforms:: [[All Platforms]]
+platforms:: [[All Platforms]] except [[Publish Web]]
 description:: Provides in app documentation in the form of short tutorials 
 initial-version:: 0.9.20
 
