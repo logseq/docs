@@ -1,7 +1,8 @@
 ## Beta 0.10.0 [[Nov 21st, 2023]]
 Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.0>
 	- [[Features]]
-		- The new cmdk [#10132](https://github.com/logseq/logseq/pull/10132)
+		- A new and improved [[Search]]! [#10132](https://github.com/logseq/logseq/pull/10132)
+		- Design core enhancements including the ability to set an "Accent color" from Settings [#10132](https://github.com/logseq/logseq/pull/10132)
 	- [[Thanks]]
 		- [[cosmo9able]]
 			- Update Brazilian Portuguese translation in [#10461](https://github.com/logseq/logseq/pull/10461)
