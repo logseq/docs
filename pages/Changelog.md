@@ -1,5 +1,25 @@
-## Beta 0.9.20 [[Nov 1st, 2023]]
-Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.20>
+## Beta 0.10.0 [[Nov 21st, 2023]]
+Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.0>
+	- [[Features]]
+		- The new cmdk [#10132](https://github.com/logseq/logseq/pull/10132)
+	- [[Thanks]]
+		- [[cosmo9able]]
+			- Update Brazilian Portuguese translation in [#10461](https://github.com/logseq/logseq/pull/10461)
+		- [[e-zz]]
+			- Fix wrong bounding coordinates for PDF highlights in [#10426](https://github.com/logseq/logseq/pull/10426)
+		- [[eliovir]]
+			- Update French translation [#10454](https://github.com/logseq/logseq/pull/10454)
+	- [[Fixed issues]]
+		- Remove the need to add a space to trigger search command [#10506](https://github.com/logseq/logseq/pull/10506)
+		- Fix background color for some UI buttons [#10512](https://github.com/logseq/logseq/pull/10512)
+		- Fix demo page creation for browser version [#10497](https://github.com/logseq/logseq/pull/10497)
+		- Fix wrong bounding coordinates for PDF highlights [#10426](https://github.com/logseq/logseq/pull/10426)
+	- [[Enhancement]]
+		- Export asset ref link as dataset value for the pdf asset [#10488](https://github.com/logseq/logseq/pull/10488)
+		- I18n: Brazilian Portuguese [#10461](https://github.com/logseq/logseq/pull/10461), French [#10454](https://github.com/logseq/logseq/pull/10454)
+		- Polish accent color details [#10520](https://github.com/logseq/logseq/pull/10520)
+- ## Beta 0.9.20 [[Nov 1st, 2023]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.20>
 	- [[Features]]
 		- New handbook [#8524](https://github.com/logseq/logseq/pull/8524) - [Documentation]([[Handbook]])
 	- [[Thanks]]
