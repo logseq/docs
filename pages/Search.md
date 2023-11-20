@@ -2,9 +2,12 @@ type:: [[Feature]]
 platforms:: [[All Platforms]]
 
 - ## Usage
-	- Search pages and full text search blocks by clicking on the search bar at the top or press `Cmd-k`.
-	- To search blocks within a page, run the command `Search in the current page` or press `Cmd-shift-k`.
-	- Pages can also be created from search by typing a new unique string and pressing `Enter`.
+	- Search pages, blocks, files and commands by clicking on the search bar in the top left or press `Cmd-k`.
+		- While in the search modal, type `/` to start setting a filter for pages, blocks, file or commands. Press `Esc` to unset the current filter.
+		- Pressing `Enter` will search a result. Pressing `Shift+Enter` will open the search result in the sidebar.
+		- Pressing `Cmd/Ctrl` + `Enter` will move the search to the sidebar.
+		- Creates pages or whiteboards from this modal by typing a new unique string and pressing `Enter`.
+	- When in a page, search blocks within a page by running the command `Search in the current page` or press `Cmd-shift-k`.
 - ## Functionality
 	- Page search can find any page under `journals` or `pages`.
 	- Block search _only_ finds blocks within pages. It does not find blocks _anywhere_ else in the app e.g. linked references, sidebar, settings, etc.
