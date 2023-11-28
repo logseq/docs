@@ -14,5 +14,3 @@ platforms:: [[All Platforms]]
 	- On [[Desktop]], there is full text search which searches across multiple blocks and also matches on search terms that are out of order.
 	- By default, search removes accents from results e.g. `räämat` -> `raamat`. This feature can be turned off by setting the `:feature/enable-search-remove-accents?` option to `false` in [[config.edn]] . After toggling this feature, please run the command `Rebuild search index`.
 	- Search functionality is powered by a search index. If the index is ever out of date or seems buggy, run the command `Rebuild search index`.
-- TODO More specific name for this feature #docs
-	- Possible names include Global search, quick search, general search, omni search, search or create
