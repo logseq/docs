@@ -1,4 +1,4 @@
-## Beta 0.10.0 [[Nov 21st, 2023]]
+## Beta 0.10.0 [[Nov 28th, 2023]] 
 Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.0>
 	- [[Features]]
 		- A new and improved [[Search]]! [#10132](https://github.com/logseq/logseq/pull/10132)
@@ -9,15 +9,21 @@ Desktop app and Android App download link: <https://github.com/logseq/logseq/rel
 		- [[e-zz]]
 			- Fix wrong bounding coordinates for PDF highlights in [#10426](https://github.com/logseq/logseq/pull/10426)
 		- [[eliovir]]
-			- Update French translation [#10454](https://github.com/logseq/logseq/pull/10454)
+			- Update French translation in [#10454](https://github.com/logseq/logseq/pull/10454)
+		- [[ormai]]
+			- Update Italian translation in [#10557](https://github.com/logseq/logseq/pull/10557)
+		- [[queeup]]
+			- Update Turkish translation in [#10492](https://github.com/logseq/logseq/pull/10492)
 	- [[Fixed issues]]
 		- Remove the need to add a space to trigger search command [#10506](https://github.com/logseq/logseq/pull/10506)
 		- Fix background color for some UI buttons [#10512](https://github.com/logseq/logseq/pull/10512)
 		- Fix demo page creation for browser version [#10497](https://github.com/logseq/logseq/pull/10497)
 		- Fix wrong bounding coordinates for PDF highlights [#10426](https://github.com/logseq/logseq/pull/10426)
+		- Fix filesystem path handling, add missing Windows UNC path support [#10525](https://github.com/logseq/logseq/pull/10525)
+		- Fix query builder construction [#10485](https://github.com/logseq/logseq/pull/10485)
 	- [[Enhancement]]
 		- Export asset ref link as dataset value for the pdf asset [#10488](https://github.com/logseq/logseq/pull/10488)
-		- I18n: Brazilian Portuguese [#10461](https://github.com/logseq/logseq/pull/10461), French [#10454](https://github.com/logseq/logseq/pull/10454)
+		- I18n: Brazilian Portuguese [#10461](https://github.com/logseq/logseq/pull/10461), French [#10454](https://github.com/logseq/logseq/pull/10454), Italian [#10557](https://github.com/logseq/logseq/pull/10557), Turkish [#10492](https://github.com/logseq/logseq/pull/10492)
 		- Polish accent color details [#10520](https://github.com/logseq/logseq/pull/10520)
 - ## Beta 0.9.20 [[Nov 1st, 2023]]
   Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.9.20>
