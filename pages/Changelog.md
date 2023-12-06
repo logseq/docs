@@ -11,6 +11,8 @@ Desktop app and Android App download link: <https://github.com/logseq/logseq/rel
 			- Update Japanese translation in [#10612](https://github.com/logseq/logseq/pull/10612)
 		- [[queeup]]
 			- Update Turkish translation in [#10595](https://github.com/logseq/logseq/pull/10595)
+		- [[Vivianne]]
+			- Fixed missing space in fr and es i18n files in [#10644](https://github.com/logseq/logseq/pull/10644)
 	- [[Fixed issues]]
 		- New Search related issues [#10584](https://github.com/logseq/logseq/pull/10584), [#10634](https://github.com/logseq/logseq/pull/10634)
 			- Cross-platform shortcut icons [#10590](https://github.com/logseq/logseq/pull/10590)
@@ -20,7 +22,7 @@ Desktop app and Android App download link: <https://github.com/logseq/logseq/rel
 		- Theme color related issues [#10581](https://github.com/logseq/logseq/pull/10581), [#10638](https://github.com/logseq/logseq/pull/10638)
 		- Block UUID shouldn't be added to recents [#10616](https://github.com/logseq/logseq/pull/10616)
 		- Incorrect background color for the left sidebar on mobile [#10582](https://github.com/logseq/logseq/pull/10582)
-		- Incorrect node edges color for the global graph view [#10585](https://github.com/logseq/logseq/pull/10585)
+		- Incorrect node edge color for the global graph view [#10585](https://github.com/logseq/logseq/pull/10585)
 		- Fix and-or simple query that contains string literals [#10632](https://github.com/logseq/logseq/pull/10632)
 	- [[Enhancement]]
 		- I18n: Turkish translation [#10595](https://github.com/logseq/logseq/pull/10595), Polish translations [#10604](https://github.com/logseq/logseq/pull/10604), Spanish translation [#10594](https://github.com/logseq/logseq/pull/10594), Japanese translation [#10612](https://github.com/logseq/logseq/pull/10612)
