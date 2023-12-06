@@ -1,5 +1,33 @@
-## Beta 0.10.0 [[Nov 28th, 2023]] 
-Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.0>
+## Beta 0.10.1 [[Dec 6th, 2023]]
+Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.1>
+	- [[Thanks]]
+		- [[Blezur]]
+			- Polish translations in [#10604](https://github.com/logseq/logseq/pull/10604)
+		- [[Ulices]]
+			- Update Spanish translation in [#10594](https://github.com/logseq/logseq/pull/10594)
+		- [[ksqsf]]
+			- Fix and-or simple query that contains string literals in [#10632](https://github.com/logseq/logseq/pull/10632)
+		- [[ROCKTAKEY]]
+			- Update Japanese translation in [#10612](https://github.com/logseq/logseq/pull/10612)
+		- [[queeup]]
+			- Update Turkish translation in [#10595](https://github.com/logseq/logseq/pull/10595)
+		- [[Vivianne]]
+			- Fixed missing space in fr and es i18n files in [#10644](https://github.com/logseq/logseq/pull/10644)
+	- [[Fixed issues]]
+		- New Search related issues [#10584](https://github.com/logseq/logseq/pull/10584), [#10634](https://github.com/logseq/logseq/pull/10634)
+			- Cross-platform shortcut icons [#10590](https://github.com/logseq/logseq/pull/10590)
+			- Increase the default search length [#10570](https://github.com/logseq/logseq/pull/10570)
+			- Search does not navigate to block of interest if collapsed [#10633](https://github.com/logseq/logseq/pull/10633)
+			- Add whiteboards to search filters [#10630](https://github.com/logseq/logseq/pull/10630)
+		- Theme color related issues [#10581](https://github.com/logseq/logseq/pull/10581), [#10638](https://github.com/logseq/logseq/pull/10638)
+		- Block UUID shouldn't be added to recents [#10616](https://github.com/logseq/logseq/pull/10616)
+		- Incorrect background color for the left sidebar on mobile [#10582](https://github.com/logseq/logseq/pull/10582)
+		- Incorrect node edge color for the global graph view [#10585](https://github.com/logseq/logseq/pull/10585)
+		- Fix and-or simple query that contains string literals [#10632](https://github.com/logseq/logseq/pull/10632)
+	- [[Enhancement]]
+		- I18n: Turkish translation [#10595](https://github.com/logseq/logseq/pull/10595), Polish translations [#10604](https://github.com/logseq/logseq/pull/10604), Spanish translation [#10594](https://github.com/logseq/logseq/pull/10594), Japanese translation [#10612](https://github.com/logseq/logseq/pull/10612)
+- ## Beta 0.10.0 [[Nov 28th, 2023]] 
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.0>
 	- [[Features]]
 		- A new and improved [[Search]]! [#10132](https://github.com/logseq/logseq/pull/10132)
 		- Design core enhancements including the ability to set an "Accent color" from Settings [#10132](https://github.com/logseq/logseq/pull/10132)
