@@ -28,7 +28,7 @@ Desktop app and Android App download link: <https://github.com/logseq/logseq/rel
 	- [[Enhancement]]
 		- I18n: French [#10706](https://github.com/logseq/logseq/pull/10706) [#10647](https://github.com/logseq/logseq/pull/10647), Slovak [#10673](https://github.com/logseq/logseq/pull/10673), Turkish [#10718](https://github.com/logseq/logseq/pull/10718), Chinese [#10668](https://github.com/logseq/logseq/pull/10668)
 		- Plugin APIs [#10399](https://github.com/logseq/logseq/pull/10399)
-		- Release .zip build for windows [#10678](https://github.com/logseq/logseq/pull/10678)
+		- Release .zip package build for Windows [#10678](https://github.com/logseq/logseq/pull/10678)
 		- Add more localization support for linked references view [#10643](https://github.com/logseq/logseq/pull/10643)
 - ## Beta 0.10.1 [[Dec 6th, 2023]]
   Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.1>
