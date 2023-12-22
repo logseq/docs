@@ -1,5 +1,37 @@
-## Beta 0.10.1 [[Dec 6th, 2023]]
-Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.1>
+## Beta 0.10.2 [[Dec 22nd, 2023]]
+Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.2>
+	- [[Features]]
+		- Clone handles for quickly cloning existing shapes in Whiteboards [#10637](https://github.com/logseq/logseq/pull/10637)
+		  ![Screencast](https://github.com/logseq/logseq/assets/10744960/f05a1de8-4c87-4a94-ab0b-928141261789#screencast.webm)
+	- [[Thanks]]
+		- [[eliovir]]
+			- Update French translation in [#10647](https://github.com/logseq/logseq/pull/10647), [#10706](https://github.com/logseq/logseq/pull/10706)
+		- [[jiyi]]
+			- Update Chinese translation in [#10668](https://github.com/logseq/logseq/pull/10668)
+		- [[queeup]]
+			- Update Turkish translation in [#10718](https://github.com/logseq/logseq/pull/10718)
+		- [[Richard Garčár]]
+			- Update Slovak translation in [#10673](https://github.com/logseq/logseq/pull/10673)
+		- [[Vivianne]]
+			- Add more localization support for linked references view in [#10643](https://github.com/logseq/logseq/pull/10643)
+	- [[Fixed issues]]
+		- Full page content search [#10645](https://github.com/logseq/logseq/pull/10645)
+		- Missing current-page search [#10662](https://github.com/logseq/logseq/pull/10662)
+		- Don't treat blocks with headings as pre-blocks [#10710](https://github.com/logseq/logseq/pull/10710)
+		- Save inline images in excalidraw [#10652](https://github.com/logseq/logseq/pull/10652)
+		- Sync navbar and action bar color for Android when theme change [#10653](https://github.com/logseq/logseq/pull/10653)
+		- Incorrect auto-save state when paste batch blocks [#10672](https://github.com/logseq/logseq/pull/10672)
+		- Incorrect handling of pasting html list [#10674](https://github.com/logseq/logseq/pull/10674)
+		- Incorrect node edge color for Graph view [#10693](https://github.com/logseq/logseq/pull/10693)
+		- Incorrect IME composition detection [#10654](https://github.com/logseq/logseq/pull/10654)
+		- Detached PDF viewer does not open HTTP links in default browser [#10724](https://github.com/logseq/logseq/pull/10724)
+	- [[Enhancement]]
+		- I18n: French [#10706](https://github.com/logseq/logseq/pull/10706) [#10647](https://github.com/logseq/logseq/pull/10647), Slovak [#10673](https://github.com/logseq/logseq/pull/10673), Turkish [#10718](https://github.com/logseq/logseq/pull/10718), Chinese [#10668](https://github.com/logseq/logseq/pull/10668)
+		- Plugin APIs [#10399](https://github.com/logseq/logseq/pull/10399)
+		- Release .zip package build for Windows [#10678](https://github.com/logseq/logseq/pull/10678)
+		- Add more localization support for linked references view [#10643](https://github.com/logseq/logseq/pull/10643)
+- ## Beta 0.10.1 [[Dec 6th, 2023]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.1>
 	- [[Thanks]]
 		- [[Blezur]]
 			- Polish translations in [#10604](https://github.com/logseq/logseq/pull/10604)
