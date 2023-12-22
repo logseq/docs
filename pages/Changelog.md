@@ -1,8 +1,8 @@
-## Beta 0.10.2 [[Dec 21st, 2023]]
+## Beta 0.10.2 [[Dec 22nd, 2023]]
 Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.2>
 	- [[Features]]
-		- Clone handles for Whiteboards [#10637](https://github.com/logseq/logseq/pull/10637)
-		  ![Screencast](https://github.com/logseq/logseq/assets/10744960/f05a1de8-4c87-4a94-ab0b-928141261789#.mp4)
+		- Clone handles for quickly cloning existing shapes in Whiteboards [#10637](https://github.com/logseq/logseq/pull/10637)
+		  ![Screencast](https://github.com/logseq/logseq/assets/10744960/f05a1de8-4c87-4a94-ab0b-928141261789#screencast.webm)
 	- [[Thanks]]
 		- [[eliovir]]
 			- Update French translation in [#10647](https://github.com/logseq/logseq/pull/10647), [#10706](https://github.com/logseq/logseq/pull/10706)
@@ -17,7 +17,7 @@ Desktop app and Android App download link: <https://github.com/logseq/logseq/rel
 	- [[Fixed issues]]
 		- Full page content search [#10645](https://github.com/logseq/logseq/pull/10645)
 		- Missing current-page search [#10662](https://github.com/logseq/logseq/pull/10662)
-		- Don't treat blocks with headings as pre blocks [#10710](https://github.com/logseq/logseq/pull/10710)
+		- Don't treat blocks with headings as pre-blocks [#10710](https://github.com/logseq/logseq/pull/10710)
 		- Save inline images in excalidraw [#10652](https://github.com/logseq/logseq/pull/10652)
 		- Sync navbar and action bar color for Android when theme change [#10653](https://github.com/logseq/logseq/pull/10653)
 		- Incorrect auto-save state when paste batch blocks [#10672](https://github.com/logseq/logseq/pull/10672)
