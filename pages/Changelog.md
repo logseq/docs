@@ -1,5 +1,19 @@
-## Beta 0.10.2 [[Dec 22nd, 2023]]
-Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.2>
+## Beta 0.10.3 [[Dec 25th, 2023]]
+Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.3>
+This bug-fix release addresses the bundled Git bug introduced in 0.10.2.
+	- [[Thanks]]
+		- [[Vivianne]]
+			- Fix French translation in [#10749](https://github.com/logseq/logseq/pull/10749)
+		- [[Hidekazu Kubota]]
+			- Add percent encoding file names with leading dots in [#10746](https://github.com/logseq/logseq/pull/10746)
+	- [[Fixed issues]]
+		- Safety key string for the simple command key value in Plugin API [#10741](https://github.com/logseq/logseq/pull/10741)
+		- Fix missing bundled Git [#10751](https://github.com/logseq/logseq/pull/10751)
+		- Percent encoding file names with leading dots [#10746](https://github.com/logseq/logseq/pull/10746)
+	- [[Enhancement]]
+		- I18n: French translation [#10749](https://github.com/logseq/logseq/pull/10749)
+- ## Beta 0.10.2 [[Dec 22nd, 2023]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.2>
 	- [[Features]]
 		- Clone handles for quickly cloning existing shapes in Whiteboards [#10637](https://github.com/logseq/logseq/pull/10637)
 		  ![Screencast](https://github.com/logseq/logseq/assets/10744960/f05a1de8-4c87-4a94-ab0b-928141261789#screencast.webm)
