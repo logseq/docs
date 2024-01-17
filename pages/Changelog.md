@@ -1,7 +1,5 @@
-## Beta 0.10.4 [[Jan 16th, 2024]]
+## Beta 0.10.4 [[Jan 17th, 2024]]
 Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.4>
-	- [[Features]]
-		- New UI components [#10694](https://github.com/logseq/logseq/pull/10694)
 	- [[Thanks]]
 		- [[alan-roe]]
 			- Fix docker build in [#10287](https://github.com/logseq/logseq/pull/10287)
@@ -36,6 +34,7 @@ Desktop app and Android App download link: <https://github.com/logseq/logseq/rel
 		- Fix incorrect position for the filter modal on the iOS platform [#10798](https://github.com/logseq/logseq/pull/10798)
 		- Prevent button in modal from being clicked twice when pressing enter key [#10820](https://github.com/logseq/logseq/pull/10820)
 	- [[Enhancement]]
+		- New UI components [#10694](https://github.com/logseq/logseq/pull/10694)
 		- Better block selection [#10745](https://github.com/logseq/logseq/pull/10745)
 		- Enhancement of Plugin APIs [#10782](https://github.com/logseq/logseq/pull/10782)
 		- Enhancement of left sidebar UI [#10765](https://github.com/logseq/logseq/pull/10765)
