@@ -1,6 +1,47 @@
-## Beta 0.10.3 [[Dec 25th, 2023]]
-Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.3>
-This bug-fix release addresses the bundled Git bug introduced in 0.10.2.
+## Beta 0.10.4 [[Jan 17th, 2024]]
+Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.4>
+	- [[Thanks]]
+		- [[alan-roe]]
+			- Fix docker build in [#10287](https://github.com/logseq/logseq/pull/10287)
+		- [[aurnik]]
+			- Add highlighted page aliases in search results in [#10761](https://github.com/logseq/logseq/pull/10761)
+			- Prevent jumping when hovering over left sidebar items in [#10760](https://github.com/logseq/logseq/pull/10760)
+		- [[e-zz]]
+			- Fix area highlights in PDF view don't blink in [#10732](https://github.com/logseq/logseq/pull/10732)
+		- [[eliovir]]
+			- Update French translations in [#10810](https://github.com/logseq/logseq/pull/10810)
+		- [[hasecilu]]
+			- Update Spanish translation in [#10840](https://github.com/logseq/logseq/pull/10840)
+		- [[ingepettersen]]
+			- Update Norwegian translation in [#10849](https://github.com/logseq/logseq/pull/10849)
+		- [[megayu]]
+			- Enhance block selection in [#10745](https://github.com/logseq/logseq/pull/10745)
+		- [[situ2001]]
+			- Prevent button in modal from being clicked twice when pressing enter key in [#10820](https://github.com/logseq/logseq/pull/10820)
+		- [[ZerdoX-x]]
+			- Update project deps in [#10857](https://github.com/logseq/logseq/pull/10857)
+	- [[Fixed issues]]
+		- Highlight page aliases in search results [#10761](https://github.com/logseq/logseq/pull/10761)
+		- Prevent jumping when hovering over left sidebar items [#10760](https://github.com/logseq/logseq/pull/10760)
+		- Android App crash caused by special filenames [#10845](https://github.com/logseq/logseq/pull/10845)
+		- Missing Git SDK in Plugin API [#10767](https://github.com/logseq/logseq/pull/10767)
+		- Remove prefix spaces when no-indent is used in exporting [#10807](https://github.com/logseq/logseq/pull/10807)
+		- Accept video as mobile shared content [#10797](https://github.com/logseq/logseq/pull/10797)
+		- PDF view's area highlights don't blink [#10732](https://github.com/logseq/logseq/pull/10732)
+		- Cannot toggle updated-at and created-at in query view [#10759](https://github.com/logseq/logseq/pull/10759)
+		- Add support for older GLIBC on Linux [#10832](https://github.com/logseq/logseq/pull/10832), note that search index is still not available on old Linux
+		- Do not notify network status when logged out [#10813](https://github.com/logseq/logseq/pull/10813)
+		- Fix incorrect position for the filter modal on the iOS platform [#10798](https://github.com/logseq/logseq/pull/10798)
+		- Prevent button in modal from being clicked twice when pressing enter key [#10820](https://github.com/logseq/logseq/pull/10820)
+	- [[Enhancement]]
+		- New UI components [#10694](https://github.com/logseq/logseq/pull/10694)
+		- Better block selection [#10745](https://github.com/logseq/logseq/pull/10745)
+		- Enhancement of Plugin APIs [#10782](https://github.com/logseq/logseq/pull/10782)
+		- Enhancement of left sidebar UI [#10765](https://github.com/logseq/logseq/pull/10765)
+		- I18n: French translations [#10810](https://github.com/logseq/logseq/pull/10810), Norwegian translation [#10849](https://github.com/logseq/logseq/pull/10849), Spanish translation [#10840](https://github.com/logseq/logseq/pull/10840)
+- ## Beta 0.10.3 [[Dec 25th, 2023]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.3>
+  This bug-fix release addresses the bundled Git bug introduced in 0.10.2.
 	- [[Thanks]]
 		- [[Vivianne]]
 			- Fix French translation in [#10749](https://github.com/logseq/logseq/pull/10749)
