@@ -1,5 +1,14 @@
-## Beta 0.10.4 [[Jan 17th, 2024]]
-Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.4>
+## Beta 0.10.5 [[Jan 18th, 2024]]
+Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.5>
+This version fixes a language-specific App crash in the French translation file. This bug does not affect non-French users.
+	- [[Thanks]]
+		- [[DavidLapous]]
+			- Fix typo in French translation in [10874](https://github.com/logseq/logseq/pull/10874)
+	- [[Fixed issues]]
+		- A language-specific app crash occurred due to an incorrect French translation file [#10876](https://github.com/logseq/logseq/pull/10876)
+		- Typo in French translation [10874](https://github.com/logseq/logseq/pull/10874)
+- ## Beta 0.10.4 [[Jan 17th, 2024]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.4>
 	- [[Thanks]]
 		- [[alan-roe]]
 			- Fix docker build in [#10287](https://github.com/logseq/logseq/pull/10287)
