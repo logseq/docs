@@ -13,7 +13,7 @@ description:: Paid feature that provides encrypted synchronization of graphs bet
 - ## Functionality
 	- Syncs up to 10 graphs between Logseq Desktop, Android, and iOS.
 	- Syncing is a choice that is made per graph and thus allows for some graphs to be local only.
-	- Each graph is encrypted with a password.
+	- Each graph is encrypted with a password. The contents of the file as well as its name are all encrypted. See [[Logseq Sync Encryption]].
 	- Sync automatically happens in the background. Click on the cloud icon and the `Sync now` button to force a sync.
 - ## FAQ
 	- **Question**: Can I use Sync with git?
