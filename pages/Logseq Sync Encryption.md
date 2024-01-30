@@ -1,4 +1,5 @@
-type:: #Feature
+type:: [[Feature]]
+platforms:: [[All Platforms]]
 
 - > This doc describes the #[[Logseq Sync]] encryption scheme.
 - ## Client-side Encryption in Logseq File Sync
