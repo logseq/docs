@@ -1,6 +1,26 @@
-## Beta 0.10.5 [[Jan 18th, 2024]]
-Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.5>
-This version fixes a language-specific App crash in the French translation file. This bug does not affect non-French users.
+## Beta 0.10.6 [[Jan 30th, 2024]]
+Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.6>
+	- [[Thanks]]
+		- [[ChristianAvila]]
+			- Adding larger auto commit interval in [#10536](https://github.com/logseq/logseq/pull/10536)
+		- [[mfenniak]]
+			- Fix outdent-then-delete removing incorrect block in [#10790](https://github.com/logseq/logseq/pull/10790)
+		- [[ReillyBrogan]]
+			- Update better-sqlite3 to v9.3.0 in [#10884](https://github.com/logseq/logseq/pull/10884)
+		- [[TaylorHo]]
+			- Enhance Brazilian Portuguese translations in [#10891](https://github.com/logseq/logseq/pull/10891)
+	- [[Fixed issues]]
+		- Publishing not working [#10911](https://github.com/logseq/logseq/pull/10911)
+		- Logseq Sync crash on Android [#10922](https://github.com/logseq/logseq/pull/10922)
+		- Performance of Search on mobile platforms [#10924](https://github.com/logseq/logseq/pull/10924)
+		- Commit composing text when using toolbar buttons [#10921](https://github.com/logseq/logseq/pull/10921)
+		- Outdent-then-delete removing incorrect block [#10790](https://github.com/logseq/logseq/pull/10790)
+	- [[Enhancement]]
+		- Git auto commit: support commit on close, allow changing settings on-the-fly, allowing larger auto commit interval [#10536](https://github.com/logseq/logseq/pull/10536)
+		- I18n: Brazilian Portuguese translations [#10891](https://github.com/logseq/logseq/pull/10891)
+- ## Beta 0.10.5 [[Jan 18th, 2024]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.5>
+  This version fixes a language-specific App crash in the French translation file. This bug does not affect non-French users.
 	- [[Thanks]]
 		- [[DavidLapous]]
 			- Fix typo in French translation in [10874](https://github.com/logseq/logseq/pull/10874)
