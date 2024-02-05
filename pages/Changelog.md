@@ -2,7 +2,7 @@
 Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.6>
 	- [[Thanks]]
 		- [[ChristianAvila]]
-			- Adding larger auto commit interval in [#10536](https://github.com/logseq/logseq/pull/10536)
+			- Adding larger auto-commit interval in [#10536](https://github.com/logseq/logseq/pull/10536)
 		- [[mfenniak]]
 			- Fix outdent-then-delete removing incorrect block in [#10790](https://github.com/logseq/logseq/pull/10790)
 		- [[ReillyBrogan]]
@@ -12,7 +12,7 @@ Desktop app and Android App download link: <https://github.com/logseq/logseq/rel
 		- [[Mostafa Ahangarha]]
 			- Minor typo fixes and grammar improvements in docs in [#10940](https://github.com/logseq/logseq/pull/10940)
 		- [[CNLHC]]
-			- Add support for closing history panel after select a version in [#10530](https://github.com/logseq/logseq/pull/10530)
+			- Add support for closing history panel after selecting a version in [#10530](https://github.com/logseq/logseq/pull/10530)
 		- [[linsui]]
 			- Add fastlane structure for F-Droid in [#10925](https://github.com/logseq/logseq/pull/10925)
 		- [[Morgan Plain]]
@@ -27,11 +27,11 @@ Desktop app and Android App download link: <https://github.com/logseq/logseq/rel
 		- Wrong new page button click handling in graph view [#10962](https://github.com/logseq/logseq/pull/10962)
 		- Save composing text when clicking mobile bar buttons [#10921](https://github.com/logseq/logseq/pull/10921)
 	- [[Enhancement]]
-		- Git auto commit: support commit on close, allow changing settings on-the-fly, allowing larger auto commit interval [#10536](https://github.com/logseq/logseq/pull/10536)
+		- Git auto-commit: support commit on close, allow changing settings on-the-fly, allowing larger auto-commit interval [#10536](https://github.com/logseq/logseq/pull/10536)
 		- Trigger on-change for slider when mouse up instead of input value change [#10972](https://github.com/logseq/logseq/pull/10972)
-		- Support time offset of youtube links [#10945](https://github.com/logseq/logseq/pull/10945)
+		- Support time offset of YouTube links [#10945](https://github.com/logseq/logseq/pull/10945)
 		- Support changing graph forces via UI [#10755](https://github.com/logseq/logseq/pull/10755)
-		- Support for closing history panel after select a version [#10530](https://github.com/logseq/logseq/pull/10530)
+		- Support for closing history panel after selecting a version [#10530](https://github.com/logseq/logseq/pull/10530)
 		- I18n: Brazilian Portuguese translations [#10891](https://github.com/logseq/logseq/pull/10891), Turkish translation [#10937](https://github.com/logseq/logseq/pull/10937)
 - ## Beta 0.10.5 [[Jan 18th, 2024]]
   Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.5>
