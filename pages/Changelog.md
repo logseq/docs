@@ -1,5 +1,33 @@
-## Beta 0.10.6 [[Feb 5th, 2024]]
-Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.6>
+## Beta 0.10.7 [[Feb 29th, 2024]]
+Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.7>
+	- [[Thanks]]
+		- [[Mostafa Ahangarha]]
+			- Add partial Persian translation in [#10938](https://github.com/logseq/logseq/pull/10938)
+		- [[Vladimir Pouzanov]]
+			- Fix :graph/current usage in the electron state in [#11013](https://github.com/logseq/logseq/pull/11013)
+		- [[Puneeth Chaganti]]
+			- Fix typo in mldoc package name in [#10995](https://github.com/logseq/logseq/pull/10995)
+		- [[Tobias Domhan]]
+			- Fix preserve root node block refs when cutting + pasting in [#10841](https://github.com/logseq/logseq/pull/10841)
+		- [[Topher Hunt]]
+			- Add new keybinding for "toggle expand/collapse this block" in [#10980](https://github.com/logseq/logseq/pull/10980)
+		- [[YU000jp]]
+			- Fix main scrollbar jumps in [#10037](https://github.com/logseq/logseq/pull/10037)
+	- [[Fixed issues]]
+		- Add .heic to media type [#11017](https://github.com/logseq/logseq/pull/11017)
+		- Preserve root node block refs when cutting + pasting. [#10841](https://github.com/logseq/logseq/pull/10841)
+		- Fix main scrollbar jumps [#10037](https://github.com/logseq/logseq/pull/10037)
+		- Fix wrong `:command/toggle-favorite` handling in config [#10998](https://github.com/logseq/logseq/pull/10998)
+		- Fix search term query highlight performance [#11030](https://github.com/logseq/logseq/pull/11030)
+	- [[Enhancement]]
+		- New keybinding for "toggle expand/collapse this block" [#10980](https://github.com/logseq/logseq/pull/10980)
+		- I18n: Persian [#10938](https://github.com/logseq/logseq/pull/10938),
+		- Add share/open asset file for Android App [#10977](https://github.com/logseq/logseq/pull/10977)
+		- Enhance accent color related details [#10986](https://github.com/logseq/logseq/pull/10986)
+		- refactoring dropdown/context menu with the new components [#10897](https://github.com/logseq/logseq/pull/10897)
+		- Better handling for macOS scrollbar system setting of auto scrolling mode [#11048](https://github.com/logseq/logseq/pull/11048)
+- ## Beta 0.10.6 [[Feb 5th, 2024]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.6>
 	- [[Thanks]]
 		- [[ChristianAvila]]
 			- Adding larger auto-commit interval in [#10536](https://github.com/logseq/logseq/pull/10536)
