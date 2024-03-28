@@ -1,5 +1,32 @@
-## Beta 0.10.7 [[Feb 29th, 2024]]
-Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.7>
+## Beta 0.10.8 [[Mar 28th, 2024]]
+Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.8>
+	- [[Thanks]]
+		- [[albanobattistella]]
+			- Update Italian translation in [#11154](https://github.com/logseq/logseq/pull/11154)
+		- [[e-zz]]
+			- Fix shift+mouse click on PDF View not invoking area highlight on Linux in [#10973](https://github.com/logseq/logseq/pull/10973)
+		- [[Liu Cheng]]
+			- Fix missing newline after multiline block when exporting a page in [#10934](https://github.com/logseq/logseq/pull/10934)
+		- [[Jon Ramos]]
+			- Fix toggling of task list in [#11079](https://github.com/logseq/logseq/pull/11079)
+		- [[liymike]]
+			- Update Simplified Chinese) translation in [#11119](https://github.com/logseq/logseq/pull/11119)
+		- [[queeup]]
+			- Update Turkish translation in [#11063](https://github.com/logseq/logseq/pull/11063)
+		- [[yannicka]]
+			- Remove obsolete "@tailwindcss/line-clamp" dependency in [#11130](https://github.com/logseq/logseq/pull/11130)
+	- [[Fixed issues]]
+		- Fix toggling of task list [#11079](https://github.com/logseq/logseq/pull/11079)
+		- Missing newline after multiline block when exporting a page [#10934](https://github.com/logseq/logseq/pull/10934)
+		- Incorrect cursor move for the emoji from the line head [#11112](https://github.com/logseq/logseq/pull/11112)
+		- Shift+mouse click on PDF View not invoking area highlight on Linux [#10973](https://github.com/logseq/logseq/pull/10973)
+		- Fine tune page title search strategy [#11147](https://github.com/logseq/logseq/pull/11147)
+		- Logout and clear keys for Logseq Sync [#11111](https://github.com/logseq/logseq/pull/11111)
+		- Fix ui button component's click handling [#11068](https://github.com/logseq/logseq/pull/11068)
+	- [[Enhancement]]
+		- I18n: Simplified Chinese [#11119](https://github.com/logseq/logseq/pull/11119), Turkish [#11063](https://github.com/logseq/logseq/pull/11063), Italian [#11154](https://github.com/logseq/logseq/pull/11154)
+- ## Beta 0.10.7 [[Feb 29th, 2024]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.7>
 	- [[Thanks]]
 		- [[Mostafa Ahangarha]]
 			- Add partial Persian translation in [#10938](https://github.com/logseq/logseq/pull/10938)
