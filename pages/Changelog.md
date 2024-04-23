@@ -1,5 +1,26 @@
-## Beta 0.10.8 [[Mar 28th, 2024]]
-Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.8>
+## Beta 0.10.9 [[Apr 23rd, 2024]]
+Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.9>
+	- [[Thanks]]
+		- [[desk7]]
+			- Update Italian translation in [#11179](https://github.com/logseq/logseq/pull/11179)
+		- [[KaMeHb-UA]]
+			- Add Linux ARM64 build support in [#11183](https://github.com/logseq/logseq/pull/11183)
+		- [[Sun-Wukung]]
+			- Update tutorial-sk.md in #11226
+		- [[thief-sty]]
+			- Update docs/develop-logseq.md in [#11218](https://github.com/logseq/logseq/pull/11218)
+			- Fix e2e-test command in [#11217](https://github.com/logseq/logseq/pull/11217)
+	- [[Fixed issues]]
+		- Fix missing refs for property text values when creating a page [#11208](https://github.com/logseq/logseq/pull/11208)
+		- Fix incorrect behavior of the delete key for deleting the last char [#11190](https://github.com/logseq/logseq/pull/11190)
+		- Fix missing default colors for highlight mark tag [#11247](https://github.com/logseq/logseq/pull/11247)
+	- [[Enhancement]]
+		- New block placeholder should accept tab and enter key [#11255](https://github.com/logseq/logseq/pull/11255)
+		- Restore App window at current workspace [#11246](https://github.com/logseq/logseq/pull/11246)
+		- I18n: Italian [#11179](https://github.com/logseq/logseq/pull/11179), Slovak [#11226](https://github.com/logseq/logseq/pull/11226)
+		- Linux ARM64 build support [#11183](https://github.com/logseq/logseq/pull/11183)
+- ## Beta 0.10.8 [[Mar 28th, 2024]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.8>
 	- [[Thanks]]
 		- [[albanobattistella]]
 			- Update Italian translation in [#11154](https://github.com/logseq/logseq/pull/11154)
