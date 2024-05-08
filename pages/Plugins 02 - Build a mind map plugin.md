@@ -15,7 +15,7 @@
 	  ```html 
 	    <script src="https://cdn.jsdelivr.net/npm/@logseq/libs/dist/lsplugin.user.min.js"></script>
 	    <script src="https://cdn.jsdelivr.net/npm/regenerator-runtime"></script>
-	    <script src="https://cdn.jsdelivr.net/npm/mind-elixir/dist/mind-elixir.js"></script
+	    <script src="https://cdn.jsdelivr.net/npm/mind-elixir/dist/mind-elixir.js"></script>
 	  ```
 	- The `@logseq/libs` should be obvious. We will use async/await in our JavaScript, hence the regenerator-runtime is needed. Finally, we load the wonderful mind-elixir library to actually draw our mind map.
 ## Build the Map
