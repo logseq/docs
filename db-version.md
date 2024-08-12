@@ -54,7 +54,9 @@ For example, say we created a new tag `Person` and added `lastName` and `birthda
 
 ### Parent Tags
 
-New tags can have a parent tag. By default new tags have the `Root tag` as a parent. Allowing new tags to have or be a parent is useful as it allows tags to organized in a hierachy. This is similar to directories on your computer or the previous namespace feature. A powerful feature of using a parent tag is that the new tag inherits the properties from its parent. For example, if we created a new `#Actor`, made its parent `#Person` from above and gave it an additional `actedIn` property. `#Actor` would display 3 properties when used, with two coming from the parent: `lastName`, `birthday` and `actedIn`.
+New tags can have a parent tag, defaulting to `Root tag` when none is specified. Allowing new tags to be related to each other as a parent to child is useful as it allows tags to organized in a hierarchy. This is similar to directories on your computer or the previous namespace feature. When a new tag is used as a parent, you can see the tag hierarchy under it by navigating to the tag's page and seeing a `Child tags` section.
+
+A powerful feature of using a parent tag is that the new tag inherits the properties from its parent. For example, if we created a new `#Actor`, made its parent `#Person` from above and gave it an additional `actedIn` property. `#Actor` would display 3 properties when used, with two coming from the parent: `lastName`, `birthday` and `actedIn`.
 
 ### Configure a New Tag
 
