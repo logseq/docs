@@ -6,9 +6,14 @@ NOTE: There is currently no automated graph backup for the DB version. Recommend
 
 ## Overview
 
+* [Nodes](#nodes)
 * [Properties](#properties)
 * [New Tags](#new-tags)
 * [DB Graph Importer](#db-graph-importer)
+
+## Nodes
+
+Pages or blocks are now called nodes because the two behave more similarly. A block can be named like a page when it is used with a new tag e.g. the block `Inception #Movie` has Inception as the block name. This block name can then be referenced e.g. `[[Inception]]`. Blocks also have a Linked References section like pages. You can see this by zooming into a block or clicking on a block link. Blocks and pages still have some differences that we are hoping to unify like their name and property display and editing as well as the blocks under a page/block.
 
 ## Properties
 
