@@ -1,6 +1,6 @@
 ## Description
 
-This is a description of DB graph functionality as of Aug 12th.
+This is a description of DB graph functionality as of Aug 21st.
 
 NOTE: There is currently no automated graph backup for the DB version. Recommend only using this for testing purposes.
 
@@ -9,6 +9,7 @@ NOTE: There is currently no automated graph backup for the DB version. Recommend
 * [Nodes](#nodes)
 * [Properties](#properties)
 * [New Tags](#new-tags)
+* [Tasks](#tasks)
 * [DB Graph Importer](#db-graph-importer)
 
 ## Nodes
@@ -77,9 +78,45 @@ In the Configure modal:
 * Parent tag: Use this to allow the class to inherit the parent classes properties. By default the parent tag is the `Root tag` which doesn't have any properties.
 * Properties: Below `Parent tag`, you can add or remove existing properties to associate them with a new tag. These properties can be sorted by dragging one above or below the other. These properties will then display sorted when a new tag is used on a block or page.
 
+## Tasks
+
+Tasks are improved from the previous version as they more powerful and customizable. All tasks are blocks with the built-in new tag `#Task`. When a task is created it has the properties status, priority and deadline.
+
+### Create a Task
+
+A new task can be created in a number of ways:
+* Set the status of a block i.e. by typing `/STATUS` where `STATUS` is one of the status values e.g. `/todo`.
+* Type text in a block and end it with `#Task`.
+* When on the `Task` page, create a new row in the Task table.
+
+### Task Shortcuts
+
+Any block can have a task property value set with a command or a keybinding. The commands start with `Add task` and the keybindings are:
+
+* To set property `status`, press `p s`.
+* To set property `priority`, press `p p`.
+* To set property `deadline`, press `p d`.
+
+### Task Status
+
+The status property is probably the most often used task property and thus it has been simplified and made customizable. The `TODO/DOING` and `NOW/LATER` workflows have been merged into `TODO/DOING` and some of the other TODO keywords have been converted to built-in status values. The default built-in values for status are:
+
+* `Backlog`
+* `Todo`
+* `Doing`
+* `In Review`
+* `Done`
+* `Canceled`
+
 ## DB Graph Importer
 
-The DB Graph Importer converts a file graph to a DB graph. Currently it imports markdown files and assets like images. Import of org mode files will be added later. For blocks the importer converts all uses of [new tags](#new-tags) to [page references](https://docs.logseq.com/#/page/term%2Fpage%20reference) because tags are now used for new tag features while page references handle inline referencing functionality. For pages the importer imports the previous tags to a `pageTags` property. If you'd like some previous tags to behave like new tags, you can specify them in the first optional input. Using this option also results in those converted tags not being imported as `pageTags`. The importer also provides two options to convert property related pages to new tags.
+The DB Graph Importer converts a file graph to a DB graph. Currently it imports markdown files and assets like images. Import of org mode files will be added later. For blocks the importer converts all uses of [new tags](#new-tags) to [page references](https://docs.logseq.com/#/page/term%2Fpage%20reference) because ~~tags are now used for new tag features while page references handle inline referencing functionality~~ this behavior is still WIP. For pages the importer imports the previous tags to a `pageTags` property. If you'd like some previous tags to behave like new tags, you can specify them in the first optional input. Using this option also results in those converted tags not being imported as `pageTags`. The importer also provides two options to convert property related pages to new tags.
+
+All tasks are imported as new [tasks](#tasks). Since tasks only have statuses for the one default workflow, the following statuses from alternate workflows have been remapped as follows:
+
+* `LATER` -> `Todo`
+* `IN-PROGRESS` and `NOW` -> `Doing`
+* `WAIT` and `WAITING` -> `Backlog`
 
 ### Convert File Graph to DB graph
 
