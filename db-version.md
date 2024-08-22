@@ -85,7 +85,7 @@ Tasks are improved from the previous version as they more powerful and customiza
 ### Create a Task
 
 A new task can be created in a number of ways:
-* Set the status of a block i.e. by typing `/STATUS` where `STATUS` is one of the status values e.g. `/todo`.
+* Set the status of a block by typing the status choice e.g. `/todo` or cyling status with `cmd-enter`.
 * Type text in a block and end it with `#Task`.
 * When on the `Task` page, create a new row in the Task table.
 
@@ -99,6 +99,8 @@ Any block can have a task property value set with a command or a keybinding. The
 
 The statuses `Todo`, `Doing` and `Done` can be cycled through with `cmd-enter`.
 
+The `/STATUS` commands can set a status where `STATUS` is one of the status choices e.g. `/todo`. Similarly, priority choices can be set with `/PRIORITY` commands. `/Deadline` sets the deadline property.
+
 ### Task Status
 
 The status property is probably the most often used task property and thus it has been simplified and made customizable. The `TODO/DOING` and `NOW/LATER` workflows have been merged into `TODO/DOING` and some of the other TODO keywords have been converted to built-in status values. The default built-in values for status are:
@@ -109,6 +111,15 @@ The status property is probably the most often used task property and thus it ha
 * `In Review`
 * `Done`
 * `Canceled`
+
+### Customizing Tasks
+
+Since tasks are now powered by properties and [new tags](#new-tags), they can be customized in a number of ways. Some parts of a task can't be customized because tasks are built into core features like the [Query Builder](https://docs.logseq.com/#/page/query%20builder) and queries on today's journal. Here are ways to customize tasks:
+
+1. The `Status` property choices can be customized by going to the `Status` page with `cmd-k`. From the property's [configuration modal](#configure-a-property) edit the name and icon of built-in choices. You can add new choices but not delete the built-in ones.
+2. Task properties can be configured by going to the property's [configuration modal](#configure-a-property). From this modal, you can customize the property's icon and ui position.
+3. `#Task` can be configured to have additional properties from the new tag's [configuration modal](#configure-a-new-tag).
+4. Custom types of tasks can be created by creating a new tag that has `#Task` as the [parent tag](#parent-tags). For example, create a `#ProjectTask` from `cmd-k` and configure it to have `Task` as the parent. Then add a property on the `project` property on `#ProjectTask`. You now have a task for projects!
 
 ## DB Graph Importer
 
