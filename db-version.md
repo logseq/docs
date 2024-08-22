@@ -97,6 +97,8 @@ Any block can have a task property value set with a command or a keybinding. The
 * To set property `priority`, press `p p`.
 * To set property `deadline`, press `p d`.
 
+The statuses `Todo`, `Doing` and `Done` can be cycled through with `cmd-enter`.
+
 ### Task Status
 
 The status property is probably the most often used task property and thus it has been simplified and made customizable. The `TODO/DOING` and `NOW/LATER` workflows have been merged into `TODO/DOING` and some of the other TODO keywords have been converted to built-in status values. The default built-in values for status are:
@@ -112,7 +114,7 @@ The status property is probably the most often used task property and thus it ha
 
 The DB Graph Importer converts a file graph to a DB graph. Currently it imports markdown files and assets like images. Import of org mode files will be added later. For blocks the importer converts all uses of [new tags](#new-tags) to [page references](https://docs.logseq.com/#/page/term%2Fpage%20reference) because ~~tags are now used for new tag features while page references handle inline referencing functionality~~ this behavior is still WIP. For pages the importer imports the previous tags to a `pageTags` property. If you'd like some previous tags to behave like new tags, you can specify them in the first optional input. Using this option also results in those converted tags not being imported as `pageTags`. The importer also provides two options to convert property related pages to new tags.
 
-All tasks are imported as new [tasks](#tasks). Since tasks only have statuses for the one default workflow, the following statuses from alternate workflows have been remapped as follows:
+All tasks are imported as new [tasks](#tasks). Some task statuses have been remapped to avoid duplicates e.g. `TODO` and `LATER`. The following statuses have been remapped:
 
 * `LATER` -> `Todo`
 * `IN-PROGRESS` and `NOW` -> `Doing`
