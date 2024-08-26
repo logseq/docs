@@ -48,7 +48,7 @@ Property fields in the Configure modal:
 
 ### Built-in Properties
 
-Logseq uses built-in properties to provide core features. A few of these properties are public and editable by the user. To navigate to a public built-in property use `cmd-k`. For example, type `status` to go to the `Status` property used by [tasks](#tasks). When on a built-in property page's, only some of its property fields are editable as allowing all fields to be edited could break functionality. The property fields that can be edited are, `Icon`, `UI position`, `Hide by default` and `Available choices`.
+Logseq uses built-in properties to provide core features. A few of these properties are public and editable by the user. To navigate to a public built-in property use `cmd-k`. For example, type `status` to go to the `Status` property used by [tasks](#tasks). When on a built-in property page, only some of its property fields are editable as allowing all fields to be edited could break functionality. The property fields that can be edited are, `Icon`, `UI position`, `Hide by default` and `Available choices`.
 
 ### Property Types
 
