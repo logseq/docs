@@ -1,6 +1,6 @@
 ## Description
 
-This is a description of DB graph functionality as of Aug 21st.
+This is a description of DB graph functionality as of Aug 26th.
 
 NOTE: There is currently no automated graph backup for the DB version. Recommend only using this for testing purposes.
 
@@ -37,22 +37,29 @@ Properties are configurable from any block or page they appear on by clicking on
 
 Property fields in the Configure modal:
 
-* Name: Name to visually identify the property
-* Icon: Choose one and it will appear wherever its name appears
-* Schema type: There are 7 types of properties: Text, Number, Checkbox, Url, Page, Date and Object. If you're unsure of what type to choose, use Text as it behaves like a block.
+* `Name`: Name to visually identify the property
+* `Icon`: Choose one and it will appear wherever its name appears
+* `Property type`: This determines what type a property's property values will have. Once a property is used this field cannot change. If you're unsure of what type to choose, use `Text`. See [property-types](#property-types) for more.
 * Multiple values: When selected, a property can have multiple values associated with it. All property types can have multiple values except for checkbox.
-* Available choices: Use this to limit a property to specific values. Once a choice is defined, a user can only select from one of the defined choices. Each choice has a value, a description and an optional icon.
+* Available choices: Use this to limit a property to specific values. Once a choice is defined, a user can only select from one of the defined choices. Each choice has a value, a description and an optional icon. Drag the choices up and down to order how they appear.
 * UI position: This determines where the property values are displayed. By default the values are displayed as a row-like block under a block (`Block properties`). You can also choose to display property values at the beginning like task status, under a block like deadline date, or at the end of a block.
 * Hide by default: When selected, a property won't be visible on any of its blocks by default. But it will be visible if you zoom in on its blocks or display them in the sidebar.
-* Description: A description for the property that is mainly displayed on the property's page
+* Description: A description for the property that is mainly displayed on the property's page.
 
+### Built-in Properties
 
-TODO:
-- Built in properties and what can be modified
-- Property types
-- Drag and drop
-- Querying
-- idents?
+Logseq uses built-in properties to provide core features. A few of these properties are public and editable by the user. To navigate to a public built-in property use `cmd-k`. For example, type `status` to go to the `Status` property used by [tasks](#tasks). When on a built-in property page's, only some of its property fields are editable as allowing all fields to be edited could break functionality. The property fields that can be edited are, `Icon`, `UI position`, `Hide by default` and `Available choices`.
+
+### Property Types
+
+A property type determines what type a property's property values can have. There are 6 types of property values: Text, Number, Date, Checkbox, Url, and Node. Here is more info on each:
+
+* `Text`: This is the recommended default as it allows for any text and behaves like a block. This means that node references work here and children blocks can be created under the block.
+* `Number`: This is for numbers including negative numbers and floats e.g. 3.5. Unlike file graph properties, these are stored as actual numbers. This means that all features and queries that use this property type correctly sort as numbers by default.
+* `Date`: This is for dates and is editable with a date picker. When a date property value is used, it correctly links to the journal page.
+* `Checkbox`: This is used to set or unset a property value and displays as a checkbox. To engineers this type is known as a boolean.
+* `Url`: This limits text to only allow urls e.g. `https://logseq.com`. This does not behave like `Text` e.g. no referencing or child blocks.
+* `Node`: This allows a property value to link to other nodes i.e. pages or blocks. When first configuring this, you are prompted to select a new tag. You can choose to skip a tag if you don't care about limiting the available nodes. When a tag is selected or created, only nodes with that tag will appear as options for the property. For example, if you define the property `Author`, you could create a new tag `#Person` that only allows nodes tagged with `#Person` as values. Also worth noting that tag selection works for all child tags of the chosen new tag. Using the previous example, if there was an `#Actor` that is a child of `#Person`, nodes tagged with `#Person` or `#Actor` are allowed values.
 
 ## New Tags
 
