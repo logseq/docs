@@ -40,11 +40,11 @@ Property fields in the Configure modal:
 * `Name`: Name to visually identify the property
 * `Icon`: Choose one and it will appear wherever its name appears
 * `Property type`: This determines what type a property's property values will have. Once a property is used this field cannot change. If you're unsure of what type to choose, use `Text`. See [property-types](#property-types) for more.
-* Multiple values: When selected, a property can have multiple values associated with it. All property types can have multiple values except for checkbox.
-* Available choices: Use this to limit a property to specific values. Once a choice is defined, a user can only select from one of the defined choices. Each choice has a value, a description and an optional icon. Drag the choices up and down to order how they appear.
-* UI position: This determines where the property values are displayed. By default the values are displayed as a row-like block under a block (`Block properties`). You can also choose to display property values at the beginning like task status, under a block like deadline date, or at the end of a block.
-* Hide by default: When selected, a property won't be visible on any of its blocks by default. But it will be visible if you zoom in on its blocks or display them in the sidebar.
-* Description: A description for the property that is mainly displayed on the property's page.
+* `Multiple values`: When selected, a property can have multiple values associated with it. All property types can have multiple values except for checkbox.
+* `Available choices`: Use this to limit a property to specific values. Once a choice is defined, a user can only select from one of the defined choices. Each choice has a value, a description and an optional icon. Drag the choices up and down to order how they appear.
+* `UI position`: This determines where the property values are displayed. By default the values are displayed as a row-like block under a block (`Block properties`). You can also choose to display property values at the beginning like task status, under a block like deadline date, or at the end of a block.
+* `Hide by default`: When selected, a property won't be visible on any of its blocks by default. But it will be visible if you zoom in on its blocks or display them in the sidebar.
+* `Description`: A description for the property that is mainly displayed on the property's page.
 
 ### Built-in Properties
 
@@ -59,7 +59,7 @@ A property type determines what type a property's property values can have. Ther
 * `Date`: This is for dates and is editable with a date picker. When a date property value is used, it correctly links to the journal page.
 * `Checkbox`: This is used to set or unset a property value and displays as a checkbox. To engineers this type is known as a boolean.
 * `Url`: This limits text to only allow urls e.g. `https://logseq.com`. This does not behave like `Text` e.g. no referencing or child blocks.
-* `Node`: This allows a property value to link to other nodes i.e. pages or blocks. When first configuring this, you are prompted to select a new tag. You can choose to skip a tag if you don't care about limiting the available nodes. When a tag is selected or created, only nodes with that tag will appear as options for the property. For example, if you define the property `Author`, you could create a new tag `#Person` that only allows nodes tagged with `#Person` as values. Also worth noting that tag selection works for all child tags of the chosen new tag. Using the previous example, if there was an `#Actor` that is a child of `#Person`, nodes tagged with `#Person` or `#Actor` are allowed values.
+* `Node`: This allows a property value to link to other nodes i.e. pages or blocks. When first configuring this, you are prompted to select a new tag. You can choose to skip a tag if you don't care about limiting the available nodes. When a tag is selected or created, only nodes with that tag will appear as options for the property. For example, if you define the property `Author`, you could create a new tag `#Person` that only allows nodes tagged with `#Person` as values. Also worth noting that tag selection works for all child tags of the chosen new tag. Using the previous example, if `#Actor` is a child of `#Person`, nodes tagged with `#Person` or `#Actor` are allowed values.
 
 ## New Tags
 
