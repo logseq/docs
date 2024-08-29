@@ -1,6 +1,6 @@
 ## Description
 
-This is a description of DB graph functionality as of Aug 26th.
+This is a description of DB graph functionality as of Aug 29th.
 
 NOTE: There is currently no automated graph backup for the DB version. Recommend only using this for testing purposes.
 
@@ -14,7 +14,7 @@ NOTE: There is currently no automated graph backup for the DB version. Recommend
 
 ## Nodes
 
-Pages or blocks are now called nodes because the two behave more similarly. A block can be named like a page when it is used with a new tag e.g. the block `Inception #Movie` has Inception as the block name. This block name can then be referenced e.g. `[[Inception]]`. Blocks also have a Linked References section like pages. You can see this by zooming into a block or clicking on a block link. Blocks and pages still have some differences that we are hoping to unify like their name and property display and editing as well as the blocks under a page/block.
+Nodes is a new term for pages or blocks because the two now behave similarly. Nodes are both referenced by using `[[]]`. Nodes have a similar editing experience as they can set properties, use `/` commands, and use the [new tags](#new-tags). Like pages, blocks have a `Linked References` section when you zoom into a block.. Blocks and pages still have some differences that we are hoping to unify like the block view when it is zoomed in.
 
 ## Properties
 
@@ -27,28 +27,28 @@ To create your first property:
 * Press `cmd-p` and type the name of a new property
 * Select `Text` as the property type and then type some property value
 
+A property itself can have properties on its property page. By default the `Description` property is available for adding a description to a property.
+
 `cmd-p` is useful for quickly adding properties to a block or a page. You can create or select existing properties from it.
 
 `cmd-j` is useful for quickly editing block or page properties from the keyboard. After pressing `cmd-j`, choose which property or property value by typing the letters in the bubble next to it e.g. `c` or `ab`.
 
 ### Configure a Property
 
-Properties are configurable from any block or page they appear on by clicking on its name. Alternatively, navigate to any property with `cmd-k` and then click on `Configure` above its name.
+Properties are configurable wherever they are used by clicking on its name to display a dropdown menu. Property icons are set by clicking on the property's default icon to the left of its name. Properties can also be configured by navigating to their page with `cmd-k` and then clicking on the `Configure property` link below its name.
 
-Property fields in the Configure modal:
+Property fields in the dropdown menu:
 
 * `Name`: Name to visually identify the property
-* `Icon`: Choose one and it will appear wherever its name appears
 * `Property type`: This determines what type a property's property values will have. Once a property is used this field cannot change. If you're unsure of what type to choose, use `Text`. See [property-types](#property-types) for more.
+* `Available choices`: This limits a property to only have one of the defined choices. See [property choices](#property-choices) for more.
 * `Multiple values`: When selected, a property can have multiple values associated with it. All property types can have multiple values except for checkbox.
-* `Available choices`: Use this to limit a property to specific values. Once a choice is defined, a user can only select from one of the defined choices. Each choice has a value, a description and an optional icon. Drag the choices up and down to order how they appear.
 * `UI position`: This determines where the property values are displayed. By default the values are displayed as a row-like block under a block (`Block properties`). You can also choose to display property values at the beginning like task status, under a block like deadline date, or at the end of a block.
 * `Hide by default`: When selected, a property won't be visible on any of its blocks by default. But it will be visible if you zoom in on its blocks or display them in the sidebar.
-* `Description`: A description for the property that is mainly displayed on the property's page.
 
 ### Built-in Properties
 
-Logseq uses built-in properties to provide core features. A few of these properties are public and editable by the user. To navigate to a public built-in property use `cmd-k`. For example, type `status` to go to the `Status` property used by [tasks](#tasks). When on a built-in property page, only some of its property fields are editable as allowing all fields to be edited could break functionality. The property fields that can be edited are, `Icon`, `UI position`, `Hide by default` and `Available choices`.
+Logseq uses built-in properties to provide core features. A few of these properties are public and editable by the user. To navigate to a public built-in property use `cmd-k`. For example, type `status` to go to the `Status` property used by [tasks](#tasks). When on a built-in property page, only some of its property fields are editable as allowing all fields to be edited could break functionality. The property fields that can be edited are its icon, `UI position`, `Hide by default` and `Available choices`.
 
 ### Property Types
 
@@ -61,6 +61,12 @@ A property type determines what type a property's property values can have. Ther
 * `Url`: This limits text to only allow urls e.g. `https://logseq.com`. This does not behave like `Text` e.g. no referencing or child blocks.
 * `Node`: This allows a property value to link to other nodes i.e. pages or blocks. When first configuring this, you are prompted to select a new tag. You can choose to skip a tag if you don't care about limiting the available nodes. When a tag is selected or created, only nodes with that tag will appear as options for the property. For example, if you define the property `Author`, you could create a new tag `#Person` that only allows nodes tagged with `#Person` as values. Also worth noting that tag selection works for all child tags of the chosen new tag. Using the previous example, if `#Actor` is a child of `#Person`, nodes tagged with `#Person` or `#Actor` are allowed values.
 
+### Property Choices
+
+Property choices allow a property to only have one of the defined choices. Only the property types `Text`, `Url` and `Number` support this. From the [configuration dropdown](#configure-a-property), a property choice can be added, deleted and edited to have a required value, an optional description and an optional icon. Drag the choices up and down to order how they appear. For a good example of choices see the `Status` property.
+
+If a property has already been used, it is possible to convert it to use choices. After clicking `Add choice`, a panel displays to convert all existing property values to choices. If a property is using choices, it is possible to stop using choices by deleting them from the property. Caution: deleting a choice from a property also currently deletes the choice from all blocks it is used.
+
 ## New Tags
 
 NOTE: New tags are currently labeled as tags in the app and do not behave like the previous tags. These `new tags` are also known as classes, types or supertags. Feedback is welcome on names for `new tags`.
@@ -71,6 +77,8 @@ To create your first new tag:
 
 For example, say we created a new tag `Person` and added `lastName` and `birthday` properties to it. Now when `#Person` is added to a block or page, those two properties automatically display and are associated to it. A useful thing about new tags is that when its properties change those changes are immediately made to all tagged blocks and pages.
 
+A new tag can have properties on its own page. By default the `Description` property is available for adding a description to a new tag.
+
 ### Parent Tags
 
 New tags can have a parent tag, defaulting to `Root tag` when none is specified. Allowing new tags to be related to each other as a parent to child is useful as it allows tags to organized in a hierarchy. This is similar to directories on your computer or the previous namespace feature. When a new tag is used as a parent, you can see the tag hierarchy under it by navigating to the tag's page and seeing a `Child tags` section.
@@ -79,9 +87,9 @@ A powerful feature of using a parent tag is that the new tag inherits the proper
 
 ### Configure a New Tag
 
-New tags are configurable by navigating to their page e.g. via `cmd-k` or clicking on their `#` name. Then click on the `Configure` link above its name.
+New tags are configurable by navigating to their page e.g. via `cmd-k` or clicking on their `#` name. Then click on the `Configure tag` link below its name.
 
-In the Configure modal:
+In the Configure panel:
 * Parent tag: Use this to allow the class to inherit the parent classes properties. By default the parent tag is the `Root tag` which doesn't have any properties.
 * Properties: Below `Parent tag`, you can add or remove existing properties to associate them with a new tag. These properties can be sorted by dragging one above or below the other. These properties will then display sorted when a new tag is used on a block or page.
 
@@ -123,9 +131,9 @@ The status property is probably the most often used task property and thus it ha
 
 Since tasks are now powered by properties and [new tags](#new-tags), they can be customized in a number of ways. Some parts of a task can't be customized because tasks are built into core features like the [Query Builder](https://docs.logseq.com/#/page/query%20builder) and queries on today's journal. Here are ways to customize tasks:
 
-1. The `Status` property choices can be customized by going to the `Status` page with `cmd-k`. From the property's [configuration modal](#configure-a-property) edit the name and icon of built-in choices. You can add new choices but not delete the built-in ones.
-2. Task properties can be configured by going to the property's [configuration modal](#configure-a-property). From this modal, you can customize the property's icon and ui position.
-3. `#Task` can be configured to have additional properties from the new tag's [configuration modal](#configure-a-new-tag).
+1. The `Status` property choices can be customized by going to the `Status` page with `cmd-k`. From the property's [configuration dropdown](#configure-a-property) edit the name and icon of built-in choices. You can add new choices but not delete the built-in ones.
+2. Task properties can be configured by going to the property's page. From this page you can configure its icon or the ui position via the [configuration dropdown](#configure-a-property).
+3. `#Task` can be configured to have additional properties from the new tag's [configuration panel](#configure-a-new-tag).
 4. Custom types of tasks can be created by creating a new tag that has `#Task` as the [parent tag](#parent-tags). For example, create a `#ProjectTask` from `cmd-k` and configure it to have `Task` as the parent. Then add a property on the `project` property on `#ProjectTask`. You now have a task for projects!
 
 ## DB Graph Importer
