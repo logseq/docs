@@ -36,6 +36,7 @@ WIP changes:
 * Exports only partially work.
 
 Miscelleanous changes:
+* Page properties are no longer set by using the first block of a page. Rather, a page property is [set the same way a block property is](./db-version.md#add-and-edit-property-values) - by editing from the page title (block content).
 * There is no re-index like in file graphs.
 * For browsers, currently only one tab can be open. This is a limitation we hope to remove later.
 

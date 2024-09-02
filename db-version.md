@@ -24,7 +24,8 @@ Properties can be added to any block or page.
 
 To create your first property:
 * Create a new block
-* Press `cmd-p` and type the name of a new property
+* Press `cmd-p` and type the name of a new property.
+    * Alternatively, if your cursor is in the block, type `/pro<ENTER>` to kick off the same `Add new property` command
 * Select `Text` as the property type and then type some property value
 
 A property itself can have properties on its property page. By default the `Description` property is available for adding a description to a property.
@@ -73,9 +74,9 @@ NOTE: New tags are currently labeled as tags in the app and do not behave like t
 
 To create your first new tag:
 * Press `cmd-k` and then type `#NAME` where NAME is new tag name.
-* A dialog pops up that lets you create and/or add properties to the new tag. 
+* A dialog pops up that lets you create and/or add tag properties to the new tag. These tag properties are inherited by every node that uses the new tag.
 
-For example, say we created a new tag `Person` and added `lastName` and `birthday` properties to it. Now when `#Person` is added to a block or page, those two properties automatically display and are associated to it. A useful thing about new tags is that when its properties change those changes are immediately made to all tagged blocks and pages.
+For example, say we created a new tag `Person` and added `lastName` and `birthday` tag properties to it. Now when `#Person` is added to a block or page, those two properties automatically display and are editable for them. A powerful thing about new tags is that when its tag properties change those changes immediately show up on all tagged nodes.
 
 A new tag can have properties on its own page. By default the `Description` property is available for adding a description to a new tag.
 
@@ -91,7 +92,7 @@ New tags are configurable by navigating to their page e.g. via `cmd-k` or clicki
 
 In the Configure panel:
 * Parent tag: Use this to allow the class to inherit the parent classes properties. By default the parent tag is the `Root tag` which doesn't have any properties.
-* Properties: Below `Parent tag`, you can add or remove existing properties to associate them with a new tag. These properties can be sorted by dragging one above or below the other. These properties will then display sorted when a new tag is used on a block or page.
+* Properties: Below `Parent tag`, you can add tag properties or remove them. These tag properties are inherited by every node that uses the new tag. Drag one above or below the other to sort them. These properties will then display sorted when a new tag is used on a block or page.
 
 ## Tasks
 
