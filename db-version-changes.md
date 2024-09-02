@@ -13,6 +13,7 @@ This page describes changes for existing Logseq features on the [database versio
 The following changes affect both file and the new db graphs:
 * To simplify editor `/` commands, [Commands](https://docs.logseq.com/#/page/commands) and [Advanced Commands](https://docs.logseq.com/#/page/advanced%20commands) are merged together under `/`.
 * A good amount of the UI is rewritten to use [shadcn](https://github.com/shadcn-ui/ui). This means a more beautiful, consistent and powerful UI!
+* The application performance is better - loading faster and handling larger graphs. For DB graphs, our last performance test exercised 30k+ pages.
 * On desktop, the graph cache directory `~/.logseq/graphs/` has moved to `~/logseq/graphs`. See [DB Graph Directories](#db-graph-directories) for how they are used for DB graphs.
 
 ## DB Graph Changes
@@ -22,7 +23,6 @@ High level changes:
 * Properties have a lot more functionality with the [new properties](./db-version.md#properties)!
 * Previous tags should behave like before that an inline tag is entered using `Cmd-Enter`.
     * NOTE: Pressing enter on a `#` input triggers a powerful [new tags](./db-version.md#new-tags) feature.
-* The application loads should load _much_ faster. Our last performance test exercised 30k+ pages.
 * All blocks and pages have created-at and updated-at timestamps! With this built-in dimension of time, time powered features are possible.
 *  The [previous tables](https://docs.logseq.com/#/page/tables) including version 2 are replaced by a shadcn based table. The new tables have inline editing like spreadsheets by default. Currently these tables are seen on pages of properties, new tags and the `All pages` page.
 * Markdown is the only supported format. Org mode file graphs will be able to convert to DB graphs.
@@ -34,6 +34,10 @@ WIP changes:
 * Whiteboards are disabled for now and will be enabled later.
 * Flashcards are disabled for now and will be enabled later.
 * Exports only partially work.
+
+Miscelleanous changes:
+* There is no re-index like in file graphs.
+* For browsers, currently only one tab can be open. This is a limitation we hope to remove later.
 
 ### Changes by Feature
 
