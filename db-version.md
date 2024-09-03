@@ -1,6 +1,6 @@
 ## Description
 
-This page describes DB (database) graph functionality as of Aug 30th. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
+This page describes DB (database) graph functionality as of Sep 3rd. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
 
 NOTE: There is currently no automated graph backup for the DB version. Recommend only using this for testing purposes.
 
@@ -88,11 +88,10 @@ A powerful feature of using a parent tag is that the new tag inherits the proper
 
 ### Configure a New Tag
 
-New tags are configurable by navigating to their page e.g. via `cmd-k` or clicking on their `#` name. Then click on the `Configure tag` link below its name.
+New tags are configurable from their page. Navigate to their page by using `cmd-k` or clicking on their `#` name links. On their page below their title, two important properties display by default and are editable:
 
-In the Configure panel:
-* Parent tag: Use this to allow the class to inherit the parent classes properties. By default the parent tag is the `Root tag` which doesn't have any properties.
-* Properties: Below `Parent tag`, you can add tag properties or remove them. These tag properties are inherited by every node that uses the new tag. Drag one above or below the other to sort them. These properties will then display sorted when a new tag is used on a block or page.
+* `Parent`: Use this to allow the class to inherit the parent classes properties. By default the parent tag is the `Root tag` which doesn't have any properties.
+* `Tag Properties`: These tag properties are inherited by every node that uses the new tag. Drag one above or below the other to sort them. These properties will then display sorted on the tagged node.
 
 ## Tasks
 
@@ -134,7 +133,7 @@ Since tasks are now powered by properties and [new tags](#new-tags), they can be
 
 1. The `Status` property choices can be customized by going to the `Status` page with `cmd-k`. From the property's [configuration dropdown](#configure-a-property) edit the name and icon of built-in choices. You can add new choices but not delete the built-in ones.
 2. Task properties can be configured by going to the property's page. From this page you can configure its icon or the ui position via the [configuration dropdown](#configure-a-property).
-3. `#Task` can be configured to have additional properties from the new tag's [configuration panel](#configure-a-new-tag).
+3. `#Task` can be configured to have additional properties from the new tag's [page](#configure-a-new-tag).
 4. Custom types of tasks can be created by creating a new tag that has `#Task` as the [parent tag](#parent-tags). For example, create a `#ProjectTask` from `cmd-k` and configure it to have `Task` as the parent. Then add a property on the `project` property on `#ProjectTask`. You now have a task for projects!
 
 ## DB Graph Importer
