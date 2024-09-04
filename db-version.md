@@ -1,6 +1,6 @@
 ## Description
 
-This page describes DB (database) graph functionality as of Sep 3rd. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
+This page describes DB (database) graph functionality as of Sep 4th. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
 
 NOTE: There is currently no automated graph backup for the DB version. Recommend only using this for testing purposes.
 
@@ -24,19 +24,20 @@ Properties can be added to any block or page.
 
 To create your first property:
 * Create a new block
-* Press `cmd-p` and type the name of a new property.
+* Press `Cmd-p` and type the name of a new property.
+    * The keybinding is `Ctrl-alt-p` for Windows and Linux.
     * Alternatively, if your cursor is in the block, type `/pro<ENTER>` to kick off the same `Add new property` command
 * Select `Text` as the property type and then type some property value
 
 A property itself can have properties on its property page. By default the `Description` property is available for adding a description to a property.
 
-`cmd-p` is useful for quickly adding properties to a block or a page. You can create or select existing properties from it.
+`Cmd-p` is useful for quickly adding properties to a block or a page. You can create or select existing properties from it.
 
-`cmd-j` is useful for quickly editing block or page properties from the keyboard. After pressing `cmd-j`, choose which property or property value by typing the letters in the bubble next to it e.g. `c` or `ab`.
+`Cmd-j` is useful for quickly editing block or page properties from the keyboard. After pressing `Cmd-j`, choose which property or property value by typing the letters in the bubble next to it e.g. `c` or `ab`.
 
 ### Configure a Property
 
-Properties are configurable wherever they are used by clicking on its name to display a dropdown menu. Property icons are set by clicking on the property's default icon to the left of its name. Properties can also be configured by navigating to their page with `cmd-k` and then clicking on the `Configure property` link below its name.
+Properties are configurable wherever they are used by clicking on its name to display a dropdown menu. Property icons are set by clicking on the property's default icon to the left of its name. Properties can also be configured by navigating to their page with [Search](https://docs.logseq.com/#/page/search) and then clicking on the `Configure property` link below its name.
 
 Property fields in the dropdown menu:
 
@@ -49,7 +50,7 @@ Property fields in the dropdown menu:
 
 ### Built-in Properties
 
-Logseq uses built-in properties to provide core features. A few of these properties are public and editable by the user. To navigate to a public built-in property use `cmd-k`. For example, type `status` to go to the `Status` property used by [tasks](#tasks). When on a built-in property page, only some of its property fields are editable as allowing all fields to be edited could break functionality. The property fields that can be edited are its icon, `UI position`, `Hide by default` and `Available choices`.
+Logseq uses built-in properties to provide core features. A few of these properties are public and editable by the user. To navigate to a public built-in property use [Search](https://docs.logseq.com/#/page/search). For example, type `status` to go to the `Status` property used by [tasks](#tasks). When on a built-in property page, only some of its property fields are editable as allowing all fields to be edited could break functionality. The property fields that can be edited are its icon, `UI position`, `Hide by default` and `Available choices`.
 
 ### Property Types
 
@@ -73,25 +74,34 @@ If a property has already been used, it is possible to convert it to use choices
 NOTE: New tags are currently labeled as tags in the app and do not behave like the previous tags. These `new tags` are also known as classes, types or supertags. Feedback is welcome on names for `new tags`.
 
 To create your first new tag:
-* Press `cmd-k` and then type `#NAME` where NAME is new tag name.
+* Open [Search](https://docs.logseq.com/#/page/search) and type `#NAME` where NAME is new tag name.
 * A dialog pops up that lets you create and/or add tag properties to the new tag. These tag properties are inherited by every node that uses the new tag.
 
-For example, say we created a new tag `Person` and added `lastName` and `birthday` tag properties to it. Now when `#Person` is added to a block or page, those two properties automatically display and are editable for them. A powerful thing about new tags is that when its tag properties change those changes immediately show up on all tagged nodes.
+For example, say we created a new tag `Person` and added `lastName` and `birthday` tag properties to it. Now when `#Person` is added to a block or page, those two properties automatically display and are editable for them. A powerful thing about new tags is that when its tag properties change those changes immediately show up on all [tagged nodes](#tagged-node).
 
 A new tag can have properties on its own page. By default the `Description` property is available for adding a description to a new tag.
 
 ### Parent Tags
 
-New tags can have a parent tag, defaulting to `Root tag` when none is specified. Allowing new tags to be related to each other as a parent to child is useful as it allows tags to organized in a hierarchy. This is similar to directories on your computer or the previous namespace feature. When a new tag is used as a parent, you can see the tag hierarchy under it by navigating to the tag's page and seeing a `Child tags` section.
+New tags can have a parent tag, defaulting to `Root tag` when none is specified. Allowing new tags to be related to each other as a parent to child is useful as it allows tags to organized in a hierarchy. This is similar to directories on your computer or the previous namespace feature. When a new tag is used as a parent, you can see the tag hierarchy under it by navigating to the tag's page and seeing a `Children` section.
 
 A powerful feature of using a parent tag is that the new tag inherits the properties from its parent. For example, if we created a new `#Actor`, made its parent `#Person` from above and gave it an additional `actedIn` property. `#Actor` would display 3 properties when used, with two coming from the parent: `lastName`, `birthday` and `actedIn`.
 
 ### Configure a New Tag
 
-New tags are configurable from their page. Navigate to their page by using `cmd-k` or clicking on their `#` name links. On their page below their title, two important properties display by default and are editable:
+New tags are configurable from their page. Navigate to their page by using [Search](https://docs.logseq.com/#/page/search) or clicking on their `#` name links. On their page below their title, two important properties display by default and are editable:
 
 * `Parent`: Use this to allow the class to inherit the parent classes properties. By default the parent tag is the `Root tag` which doesn't have any properties.
 * `Tag Properties`: These tag properties are inherited by every node that uses the new tag. Drag one above or below the other to sort them. These properties will then display sorted on the tagged node.
+
+### Tagged Node
+
+A tagged node is a page or block that has a new tag. A tagged node is also known as an object or a new tag instance. There are a couple of ways to create tagged nodes:
+* In the current block or page title, type `#` at the end and select a new tag.
+* In [Search](https://docs.logseq.com/#/page/search), type `PAGE #TAG` to create a page named `PAGE` with new tag `TAG`.
+* In a block after `[[]]`, type `#` and select a new tag. For example `[[block content]]#TAG` links to the block with `block content` and adds `#TAG`. For existing references, a new tag is added to the node. For new references, a new page is created with the new tag.
+
+A tagged node can have multiple new tags. Once a node is tagged it displays all tags' properties as empty off the node in positions configured by each property. The only properties that don't display are ones hidden via `Hide by default`.
 
 ## Tasks
 
@@ -100,7 +110,7 @@ Tasks are improved from the previous version as they more powerful and customiza
 ### Create a Task
 
 A new task can be created in a number of ways:
-* Set the status of a block by typing the status choice e.g. `/todo` or cyling status with `cmd-enter`.
+* Set the status of a block by typing the status choice e.g. `/todo` or cyling status with `Cmd-Enter`.
 * Type text in a block and end it with `#Task`.
 * When on the `Task` page, create a new row in the Task table.
 
@@ -112,7 +122,7 @@ Any block can have a task property value set with a command or a keybinding. The
 * To set property `priority`, press `p p`.
 * To set property `deadline`, press `p d`.
 
-The statuses `Todo`, `Doing` and `Done` can be cycled through with `cmd-enter`.
+The statuses `Todo`, `Doing` and `Done` can be cycled through with `Cmd-Enter`.
 
 The `/STATUS` commands can set a status where `STATUS` is one of the status choices e.g. `/todo`. Similarly, priority choices can be set with `/PRIORITY` commands. `/Deadline` sets the deadline property.
 
@@ -131,10 +141,10 @@ The status property is probably the most often used task property and thus it ha
 
 Since tasks are now powered by properties and [new tags](#new-tags), they can be customized in a number of ways. Some parts of a task can't be customized because tasks are built into core features like the [Query Builder](https://docs.logseq.com/#/page/query%20builder) and queries on today's journal. Here are ways to customize tasks:
 
-1. The `Status` property choices can be customized by going to the `Status` page with `cmd-k`. From the property's [configuration dropdown](#configure-a-property) edit the name and icon of built-in choices. You can add new choices but not delete the built-in ones.
+1. The `Status` property choices can be customized by going to the `Status` page with [Search](https://docs.logseq.com/#/page/search). From the property's [configuration dropdown](#configure-a-property) edit the name and icon of built-in choices. You can add new choices but not delete the built-in ones.
 2. Task properties can be configured by going to the property's page. From this page you can configure its icon or the ui position via the [configuration dropdown](#configure-a-property).
 3. `#Task` can be configured to have additional properties from the new tag's [page](#configure-a-new-tag).
-4. Custom types of tasks can be created by creating a new tag that has `#Task` as the [parent tag](#parent-tags). For example, create a `#ProjectTask` from `cmd-k` and configure it to have `Task` as the parent. Then add a property on the `project` property on `#ProjectTask`. You now have a task for projects!
+4. Custom types of tasks can be created by creating a new tag that has `#Task` as the [parent tag](#parent-tags). For example, create a `#ProjectTask` from [Search](https://docs.logseq.com/#/page/search) and configure it to have `Task` as the parent. Then add a property on the `project` property on `#ProjectTask`. You now have a task for projects!
 
 ## DB Graph Importer
 
