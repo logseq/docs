@@ -107,6 +107,7 @@ New tags are configurable from their page. Navigate to their page by using [Sear
 
 * `Parent`: Use this to allow the class to inherit the parent classes properties. By default the parent tag is the `Root tag` which doesn't have any properties.
 * `Tag Properties`: These tag properties are inherited by every node that uses the new tag. Drag one above or below the other to sort them. These properties will then display sorted on the tagged node.
+  * To the right of each tag property there is an optional block for describing the property. This description also shows up on the property's page.
 
 ### Tagged Node
 
