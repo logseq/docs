@@ -29,23 +29,26 @@ High level changes:
 * Zotero integration isn't planned to be a built-in feature and will hopefully moved to a plugin.
 
 WIP changes:
-* Namespaces don't exist for now. This is likely to change. In the meantime, use [new tags](./db-version.md#new-tags) and their ability to have child tags to recreate most of it.
 * Queries are to be updated to use the new tables and have more powerful filters.
 * Whiteboards are disabled for now and will be enabled later.
 * Flashcards are disabled for now and will be enabled later.
 * Exports only partially work.
 
 Miscelleanous changes:
-* Page properties are no longer set by using the first block of a page. Rather, a page property is [set the same way a block property is](./db-version.md#add-and-edit-property-values) - by editing from the page title (block content).
 * There is no re-index like in file graphs.
 * For browsers, currently only one tab can be open. This is a limitation we hope to remove later.
 
 ### Changes by Feature
 
+#### Pages
+* Page properties are no longer set by using the first block of a page. Rather, a page property is [set the same way a block property is](./db-version.md#add-and-edit-property-values) - by editing from the page title (block content).
+* Clicking on a page title edits it instead of navigating to the page. To navigate to the page, press `Cmd` and click.
+
 #### Tasks
 
 * Using terms from the [previous tasks](https://docs.logseq.com/#/page/tasks), a task marker, priority and deadline are respectively now `Status`, `Priority` and `Deadline` properties on a task.
 * [Scheduled](https://docs.logseq.com/#/page/tasks/block/deadline%20and%20scheduled) has been deprecated.
+* Recurring tasks aren't ported and are a TODO.
 * Logbook timestamps have been deprecated.
 * Read more about the [new tasks](./db-version.md#tasks).
 
@@ -54,6 +57,12 @@ Miscelleanous changes:
 * Since block timestamps are available, they display in table view where possible.
 * Some old advanced queries will no longer work and need to be rewritten. For engineers, see [this file](https://github.com/logseq/logseq/blob/feat/db/deps/db/src/logseq/db/frontend/schema.cljs) and compare `schema` with `schema-for-db-based-graph` to see what has changed.
 * Some old simple queries for tasks will no longer work and must be manually converted e.g. `(priority A)` -> `(priority high)`.
+
+#### Namespaces
+* There is partial support for namespaces but it's still a TODO to port over popular workflows.
+* Pages can have hierarchy by using the `Parent` property. For example, create a page `block`. Add a `Parent` property page and create a page called `term` in it. There is now a `term > block` hierarchy.
+* A namespace page like `term` above has its children pages listed on its page under the `Children` section.
+* Children pages like `block` above link back to its namespace with the `Parent` property.
 
 #### Config.edn
 

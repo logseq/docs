@@ -14,7 +14,21 @@ NOTE: There is currently no automated graph backup for the DB version. Recommend
 
 ## Nodes
 
-Nodes is a new term for pages or blocks because the two now behave similarly. Nodes are both referenced by using `[[]]`. Nodes have a similar editing experience as they can set properties, use `/` commands, and use the [new tags](#new-tags). Like pages, blocks have a `Linked References` section when you zoom into a block.. Blocks and pages still have some differences that we are hoping to unify like the block view when it is zoomed in.
+A node is a new term for a page or block because the two now behave similarly. Nodes have the following common behaviors:
+
+* Nodes are referenced by using `[[]]`
+* Nodes have a pretty similar editing experience whether changing block content or a page title. In the editing block, properties can be set, `/` commands are available and [new tags](#new-tags) can be set.
+* Nodes have `Linked References` and `Unlinked References` sections. Blocks need to be zoomed in to see this.
+* Nodes can be favorited. For a zoomed in block, use the `Add to/remove from favorites` command.
+* Nodes share the same keybindings for properties including [adding and editing them](#add-and-edit-property-values) and toggling their visibility with `Cmd-;`.
+
+Blocks and pages still have some differences that we are hoping to unify like the block view when it is zoomed in.
+
+### Pages
+
+While pages and blocks have become more unified as explained above, there are some unique things to pages:
+* Press `Cmd` and click on a page title to navigate to it.
+* Hovering over a page title shows common features like `Set Property` to add a property to the page.
 
 ## Properties
 
@@ -37,7 +51,7 @@ A property itself can have properties on its property page. By default the `Desc
 
 ### Configure a Property
 
-Properties are configurable wherever they are used by clicking on its name to display a dropdown menu. Property icons are set by clicking on the property's default icon to the left of its name. Properties can also be configured by navigating to their page with [Search](https://docs.logseq.com/#/page/search) and then clicking on the `Configure property` link below its name.
+Properties are configurable wherever they are used by clicking on its name to display a dropdown menu. Press `Cmd` and click to navigate to a property page. Property icons are set by clicking on the property's default icon to the left of its name. Properties can also be configured by navigating to their page with [Search](https://docs.logseq.com/#/page/search) and then clicking on the `Configure property` link below its name.
 
 Property fields in the dropdown menu:
 
@@ -102,6 +116,8 @@ A tagged node is a page or block that has a new tag. A tagged node is also known
 * In a block after `[[]]`, type `#` and select a new tag. For example `[[block content]]#TAG` links to the block with `block content` and adds `#TAG`. For existing references, a new tag is added to the node. For new references, a new page is created with the new tag.
 
 A tagged node can have multiple new tags. Once a node is tagged it displays all tags' properties as empty off the node in positions configured by each property. The only properties that don't display are ones hidden via `Hide by default`.
+
+A tagged node can have an icon. When it does have an icon, it will appear to the left of its name or in a reference.
 
 ## Tasks
 
