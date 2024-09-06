@@ -10,6 +10,7 @@ NOTE: There is currently no automated graph backup for the DB version. Recommend
 * [Properties](#properties)
 * [New Tags](#new-tags)
 * [Tasks](#tasks)
+* [Journals](#journals)
 * [DB Graph Importer](#db-graph-importer)
 
 ## Nodes
@@ -20,7 +21,8 @@ A node is a new term for a page or block because the two now behave similarly. N
 * Nodes have a pretty similar editing experience whether changing block content or a page title. In the editing block, properties can be set, `/` commands are available and [new tags](#new-tags) can be set.
 * Nodes have `Linked References` and `Unlinked References` sections. Blocks need to be zoomed in to see this.
 * Nodes can be favorited. For a zoomed in block, use the `Add to/remove from favorites` command.
-* Nodes share the same keybindings for properties including [adding and editing them](#add-and-edit-property-values) and toggling their visibility with `Cmd-;`.
+* Nodes share the same keybindings for [properties](#property-shortcuts) and blocks e.g. toggling block properties visibility with `Cmd-;`.
+* Nodes are embedded with the same `/Node embed` command.
 
 Blocks and pages still have some differences that we are hoping to unify like the block view when it is zoomed in.
 
@@ -45,9 +47,12 @@ To create your first property:
 
 A property itself can have properties on its property page. By default the `Description` property is available for adding a description to a property.
 
-`Cmd-p` is useful for quickly adding properties to a block or a page. You can create or select existing properties from it.
+### Property Shortcuts
 
-`Cmd-j` is useful for quickly editing block or page properties from the keyboard. After pressing `Cmd-j`, choose which property or property value by typing the letters in the bubble next to it e.g. `c` or `ab`.
+* `Cmd-p` is useful for quickly adding properties to a block or a page. You can create or select existing properties from it.
+* `Cmd-j` is useful for quickly editing block or page properties from the keyboard. After pressing `Cmd-j`, choose which property or property value by typing the letters in the bubble next to it e.g. `c` or `ab`.
+* `p t` toggles displaying all the current node's properties below it. This is useful to quickly view properties that are hidden or in a different position.
+* `p i` opens the icon picker to set an icon for the current node.
 
 ### Configure a Property
 
@@ -93,7 +98,7 @@ To create your first new tag:
 
 For example, say we created a new tag `Person` and added `lastName` and `birthday` tag properties to it. Now when `#Person` is added to a block or page, those two properties automatically display and are editable for them. A powerful thing about new tags is that when its tag properties change those changes immediately show up on all [tagged nodes](#tagged-node).
 
-A new tag can have properties on its own page. By default the `Description` property is available for adding a description to a new tag.
+A new tag can have properties on its own page. By default the `Description` property is available for adding a description and `Hide from node` is available to hide the new tag on tagged nodes that float to the far right.
 
 ### Parent Tags
 
@@ -156,12 +161,16 @@ The status property is probably the most often used task property and thus it ha
 
 ### Customizing Tasks
 
-Since tasks are now powered by properties and [new tags](#new-tags), they can be customized in a number of ways. Some parts of a task can't be customized because tasks are built into core features like the [Query Builder](https://docs.logseq.com/#/page/query%20builder) and queries on today's journal. Here are ways to customize tasks:
+Since tasks are powered by properties and [new tags](#new-tags), they can be customized in a number of ways. Some parts of a task can't be customized because tasks are built into core features like the [Query Builder](https://docs.logseq.com/#/page/query%20builder) and queries on today's journal. Here are ways to customize tasks:
 
 1. The `Status` property choices can be customized by going to the `Status` page with [Search](https://docs.logseq.com/#/page/search). From the property's [configuration dropdown](#configure-a-property) edit the name and icon of built-in choices. You can add new choices but not delete the built-in ones.
 2. Task properties can be configured by going to the property's page. From this page you can configure its icon or the ui position via the [configuration dropdown](#configure-a-property).
 3. `#Task` can be configured to have additional properties from the new tag's [page](#configure-a-new-tag).
 4. Custom types of tasks can be created by creating a new tag that has `#Task` as the [parent tag](#parent-tags). For example, create a `#ProjectTask` from [Search](https://docs.logseq.com/#/page/search) and configure it to have `Task` as the parent. Then add a property on the `project` property on `#ProjectTask`. You now have a task for projects!
+
+## Journals
+
+A journal page has the [new tag](#new-tags) `#Journal`. Like tasks, journals can be customized by adding properties to its tag. For example, navigate to the `#Journal` page and add a property. This property now shows up on all journals!
 
 ## DB Graph Importer
 
