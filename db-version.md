@@ -50,6 +50,7 @@ A property itself can have properties on its property page. By default the `Desc
 ### Property Shortcuts
 
 * `Cmd-p` is useful for quickly adding properties to a block or a page. You can create or select existing properties from it.
+   * `CMD+Alt+p` on Linux and Windows
 * `Cmd-j` is useful for quickly editing block or page properties from the keyboard. After pressing `Cmd-j`, choose which property or property value by typing the letters in the bubble next to it e.g. `c` or `ab`.
 * `p t` toggles displaying all the current node's properties below it. This is useful to quickly view properties that are hidden or in a different position.
 * `p i` opens the icon picker to set an icon for the current node.
