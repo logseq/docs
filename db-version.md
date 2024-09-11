@@ -1,6 +1,6 @@
 ## Description
 
-This page describes DB (database) graph functionality as of Sep 4th. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
+This page describes DB (database) graph functionality as of Sep 11th. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
 
 NOTE: There is currently no automated graph backup for the DB version. Recommend only using this for testing purposes.
 
@@ -23,13 +23,13 @@ A node is a new term for a page or block because the two now behave similarly. N
 * Nodes can be favorited. For a zoomed in block, use the `Add to/remove from favorites` command.
 * Nodes share the same keybindings for [properties](#property-shortcuts) and blocks e.g. toggling block properties visibility with `Cmd-;`.
 * Nodes are embedded with the same `/Node embed` command.
+* Nodes are collapsible with an arrow on the left that appears on hover.
 
 Blocks and pages still have some differences that we are hoping to unify like the block view when it is zoomed in.
 
 ### Pages
 
 While pages and blocks have become more unified as explained above, there are some unique things to pages:
-* Press `Cmd` and click on a page title to navigate to it.
 * Hovering over a page title shows common features like `Set Property` to add a property to the page.
 
 ## Properties

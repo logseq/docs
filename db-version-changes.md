@@ -42,7 +42,6 @@ Miscelleanous changes:
 
 #### Pages
 * Page properties are no longer set by using the first block of a page. Rather, a page property is [set the same way a block property is](./db-version.md#add-and-edit-property-values) - by editing from the page title (block content).
-* Clicking on a page title edits it instead of navigating to the page. To navigate to the page, press `Cmd` and click.
 
 #### Tasks
 
