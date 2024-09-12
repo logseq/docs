@@ -17,20 +17,35 @@ NOTE: There is currently no automated graph backup for the DB version. Recommend
 
 A node is a new term for a page or block because the two now behave similarly. Nodes have the following common behaviors:
 
-* Nodes are referenced by using `[[]]`
+* Nodes are referenced by using `[[]]`.
 * Nodes have a pretty similar editing experience whether changing block content or a page title. In the editing block, properties can be set, `/` commands are available and [new tags](#new-tags) can be set.
 * Nodes have `Linked References` and `Unlinked References` sections. Blocks need to be zoomed in to see this.
 * Nodes can be favorited. For a zoomed in block, use the `Add to/remove from favorites` command.
 * Nodes share the same keybindings for [properties](#property-shortcuts) and blocks e.g. toggling block properties visibility with `Cmd-;`.
+* Nodes can be tagged to become a [tagged node](#tagged-node).
 * Nodes are embedded with the same `/Node embed` command.
 * Nodes are collapsible with an arrow on the left that appears on hover.
 
 Blocks and pages still have some differences that we are hoping to unify like the block view when it is zoomed in.
+However, blocks and pages will have some differences as noted in the [pages](#pages) and [blocks](#blocks) sections.
 
 ### Pages
 
-While pages and blocks have become more unified as explained above, there are some unique things to pages:
+Things that are specific to pages:
+* Pages have a dedicated view called `All pages`.
+* As seen on `All pages`, pages have different page types: `Page, Property, Tag, Journal and Whiteboard`. Think of these as directories on a file system.
+* Pages are unique as follows:
+  * Page names of type 'page' are unique by tag e.g. there can be `Apple #Company` and `Apple #Fruit`.
+  * Property names are unique and can have the same names as built-in property names.
+  * Page names of other types are unique for their page type e.g. there can be a `#Journal` and a Journal page.
+  * The uniqueness of these pages should be visible everywhere in the app with icons for page types and the display of a page's tag(s).
 * Hovering over a page title shows common features like `Set Property` to add a property to the page.
+
+### Blocks
+
+Things that are specific to blocks:
+* Blocks are created in a page.
+* Tagged blocks a.k.a. blocks with names do not have unique names.
 
 ## Properties
 
@@ -41,7 +56,7 @@ Properties can be added to any block or page.
 To create your first property:
 * Create a new block
 * Press `Cmd-p` and type the name of a new property.
-    * The keybinding is `Ctrl-alt-p` for Windows and Linux.
+    * The keybinding is `Ctrl-alt-p` on Linux and Windows.
     * Alternatively, if your cursor is in the block, type `/pro<ENTER>` to kick off the same `Add new property` command
 * Select `Text` as the property type and then type some property value
 
@@ -49,8 +64,7 @@ A property itself can have properties on its property page. By default the `Desc
 
 ### Property Shortcuts
 
-* `Cmd-p` is useful for quickly adding properties to a block or a page. You can create or select existing properties from it.
-   * `Ctrl+Alt+p` on Linux and Windows
+* `Cmd-p` is useful for quickly adding properties to a block or a page. You can create or select existing properties from it. Keybinding is `Ctrl-Alt-p` on Linux and Windows.
 * `Cmd-j` is useful for quickly editing block or page properties from the keyboard. After pressing `Cmd-j`, choose which property or property value by typing the letters in the bubble next to it e.g. `c` or `ab`.
 * `p t` toggles displaying all the current node's properties below it. This is useful to quickly view properties that are hidden or in a different position.
 * `p i` opens the icon picker to set an icon for the current node.
