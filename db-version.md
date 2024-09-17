@@ -1,8 +1,8 @@
 ## Description
 
-This page describes DB (database) graph functionality as of Sep 11th. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
+This page describes DB (database) graph functionality as of Sep 17th. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
 
-NOTE: There is currently no automated graph backup for the DB version. Recommend only using this for testing purposes.
+NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we recommend only using this for testing purposes.
 
 ## Overview
 
@@ -11,7 +11,10 @@ NOTE: There is currently no automated graph backup for the DB version. Recommend
 * [New Tags](#new-tags)
 * [Tasks](#tasks)
 * [Journals](#journals)
+* [Queries](#queries)
+* [Tables](#tables)
 * [DB Graph Importer](#db-graph-importer)
+* [Automated Backup](#automated-backup)
 
 ## Nodes
 
@@ -188,6 +191,29 @@ Since tasks are powered by properties and [new tags](#new-tags), they can be cus
 
 A journal page has the [new tag](#new-tags) `#Journal`. Like tasks, journals can be customized by adding properties to its tag. For example, navigate to the `#Journal` page and add a property. This property now shows up on all journals!
 
+Journals are automatically created for the current day in the Journals view. There are a couple of ways to create a journal:
+* Use the `/Date picker` command to insert a specific date. The date picker is keyboard friendly as arrow keys change calendar days and `Tab` focuses the input. The input takes natural language e.g. `next week` and converts it to a date. See [the library we use](https://github.com/wanasit/chrono#readme) for other natural language examples.
+* Properties with the :date property type e.g. `Deadline` create journals for their property values.
+* When on a journal day, create a journal for the next day or previous day by using the keybindings `g n` or `g p` respectively.
+
+## Queries
+
+A [query](https://docs.logseq.com/#/page/queries) has the [new tag](#new-tags) `#Query`. Queries are created by using the `/Query` command. Like other new tags, go to the `#Query` page to see a table to manage queries. Query results are displayed with the new [tables](#tables).
+
+## Tables
+
+A table displays a group of nodes as rows and a node's properties as columns. A table behaves like a spreadsheet as table cells are editable by default. A node has the following special columns which are available by default: `Name`, `Created At` and `Updated At`. Tables have the following features:
+* Sort rows by any column, ascending or descending.
+* Filter rows by multiple columns by clicking on the filter icon. For columns with a specific property type e.g. :number and :date, there are specific filters for that type.
+* Hide columns by clicking on the three dots menu and selecting `Columns visibility`.
+* Drag columns to sort their order.
+* Switch between `Table View` and `List View` by selecting one in the table's header. The `List View` displays nodes in an outliner with nodes grouped by pages.
+* Click on the magnifying glass icon to live search a table. This is the only feature that doesn't persist when switching away from a table.
+
+A powerful new feature of tables is the ability to create a table view. This is currently enabled for tag pages. To use it, click the `+` icon in the upper left to create a new tab in the table. Click on the tab's header to rename or delete this new view. Within this view, all of the above persisting features will save!
+
+Tables are currently found on new tag pages, property pages, query results and the `All Pages` view.
+
 ## DB Graph Importer
 
 The DB Graph Importer converts a file graph to a DB graph. Currently it imports markdown files and assets like images. Import of org mode files will be added later. For blocks the importer converts all uses of [new tags](#new-tags) to [page references](https://docs.logseq.com/#/page/term%2Fpage%20reference) because ~~tags are now used for new tag features while page references handle inline referencing functionality~~ this behavior is still WIP. For pages the importer imports the previous tags to a `pageTags` property. If you'd like some previous tags to behave like new tags, you can specify them in the first optional input. Using this option also results in those converted tags not being imported as `pageTags`. The importer also provides two options to convert property related pages to new tags.
@@ -208,3 +234,7 @@ All tasks are imported as new [tasks](#tasks). Some task statuses have been rema
     1. `Tags to import ...` - This input converts any of your old tags to the [new tags](#new-tags). This is helpful if you've been using a particular tag like a new tag. You can also convert pages later by right clicking on a page's name.
     2. `Properties whose values are imported as new tags` - This input converts property values for the specified property to the new tags. For example, in the official docs graph the [type property](https://docs.logseq.com/#/page/type) is used this way. This means that all `type` property values like [Feature](https://docs.logseq.com/#/page/feature) on [this page](https://docs.logseq.com/#/page/code%20block) would get converted to the new tag.
     3. `Properties whose values are imported as parents of ...` - This input converts property values for the specified property to be [a parent of a new tag](#parent-tags). For example, in the official docs graph the [parent property](https://docs.logseq.com/#/page/parent) is used this way. This means that all `parent` property values like [Thing](https://docs.logseq.com/#/page/thing) on [this page](https://docs.logseq.com/#/page/feature) would get converted to the new tag.
+
+## Automated Backup
+
+An automated backup of graphs is available by clicking on the upper right three dots menu and selecting `Export Graph`. Within this modal, you can specify a folder to save backups. A backup folder can be reused across graphs as each graph gets its own folder within a backup folder. After choosing this folder, hourly backups begin. The last 12 backups are saved. This backup feature is currently only for the browser.

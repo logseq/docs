@@ -24,19 +24,22 @@ High level changes:
 * Previous tags should behave like before that an inline tag is entered using `Cmd-Enter`.
     * NOTE: Pressing enter on a `#` input triggers a powerful [new tags](./db-version.md#new-tags) feature.
 * All blocks and pages have created-at and updated-at timestamps! With this built-in dimension of time, time powered features are possible.
-*  The [previous tables](https://docs.logseq.com/#/page/tables) including version 2 are replaced by a shadcn based table. The new tables have inline editing like spreadsheets by default. Currently these tables are seen on pages of properties, new tags and the `All pages` page.
+*  The [previous tables](https://docs.logseq.com/#/page/tables) including version 2 are replaced by a shadcn based table. The new tables have inline editing like spreadsheets by default. See [here](./db-version.md#tables) for more.
 * Markdown is the only supported format. Org mode file graphs will be able to convert to DB graphs.
-* Zotero integration isn't planned to be a built-in feature and will hopefully moved to a plugin.
+* Zotero integration isn't planned to be a built-in feature and will hopefully be moved to a plugin.
 
 WIP changes:
-* Queries are to be updated to use the new tables and have more powerful filters.
+* Advanced queries are to be updated to use the new tables and `#Query`. Query filters are likely to be changed.
 * Whiteboards are disabled for now and will be enabled later.
 * Flashcards are disabled for now and will be enabled later.
 * Exports only partially work.
 
 Miscelleanous changes:
+* Embedded pages and blocks look almost the same as other nodes. The main indicator of an embed will be an icon to the left of the block.
+* Default date picker now has an input for typing a date in natural language.
 * There is no re-index like in file graphs.
 * For browsers, currently only one tab can be open. This is a limitation we hope to remove later.
+* `All Pages` view can toggle between table and list view.
 
 ### Changes by Feature
 
@@ -56,6 +59,8 @@ Miscelleanous changes:
 * Since block timestamps are available, they display in table view where possible.
 * Some old advanced queries will no longer work and need to be rewritten. For engineers, see [this file](https://github.com/logseq/logseq/blob/feat/db/deps/db/src/logseq/db/frontend/schema.cljs) and compare `schema` with `schema-for-db-based-graph` to see what has changed.
 * Some old simple queries for tasks will no longer work and must be manually converted e.g. `(priority A)` -> `(priority high)`.
+* The `sort-by` query filter no longer exists. Sorting is done via the table component.
+* When using the query builder, the resulting query's text is not meant to be easily read as internal ids are used for some concepts e.g. properties.
 
 #### Namespaces
 * There is partial support for namespaces but it's still a TODO to port over popular workflows.
@@ -63,9 +68,10 @@ Miscelleanous changes:
 * A namespace page like `term` above has its children pages listed on its page under the `Children` section.
 * Children pages like `block` above link back to its namespace with the `Parent` property.
 
-#### Config.edn
+#### User Config
 
-* The following config options are no longer used: `:block-hidden-properties, :favorites, :hidden, :ignored-page-references-keywords, :preferred-format, :preferred-workflow, :feature/enable-block-timestamps?, :file/name-format, :org-mode/insert-file-link?, :property/separated-by-commas, :property-pages/enabled?, :property-pages/excludelist`. See [this code](https://github.com/logseq/logseq/blob/043927031e11053a837d8289e3334368e6647bea/src/main/frontend/handler/common/config_edn.cljs#L89-L115) for more details.
+* A graph's config.edn, custom.js and custom.css files are only editable within Logseq from `Settings`.
+* The following config.edn options are no longer used: `:block-hidden-properties, :favorites, :hidden, :ignored-page-references-keywords, :preferred-format, :preferred-workflow, :feature/enable-block-timestamps?, :file/name-format, :org-mode/insert-file-link?, :property/separated-by-commas, :property-pages/enabled?, :property-pages/excludelist`. See [this code](https://github.com/logseq/logseq/blob/043927031e11053a837d8289e3334368e6647bea/src/main/frontend/handler/common/config_edn.cljs#L89-L115) for more details.
 
 #### DB Graph Directories
 
@@ -73,7 +79,7 @@ Miscelleanous changes:
 * Inside a graph directory:
     * `db.sqlite` - Stores all your graph's data including user configs.
     * `assets/` - Stores assets like before
-    * `logseq/` no longer exists
+* `logseq/` inside a directory no longer exists.
 * It's still a TODO to sync markdown files to these graph directories.
 
 ## File Graph Changes
