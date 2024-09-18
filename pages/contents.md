@@ -1,64 +1,71 @@
-- 🌟 [[New to Logseq?]]
-	- [[Start here]]
-	- [[How to create a new graph]]
-	- [[How to create a Logseq graph using existing Markdown files]]
-	- [[Getting started with the Journals page]]
-	- [[How to create pages in Logseq]]
-	- [[Why linking matters]]
-	- [[Aliases and external links]]
-	- [[What is indentation and why does it matter?]]
-	- [[How to filter linked references]]
-	- [[The basics of block references]]
-	- [[The difference between block embeds and block references]]
-	- [[The difference between block embeds and page embeds]]
-	- [[How to work with the right-hand sidebar]]
-	- [[How to sync your Logseq graph across devices]]
-- Miscellaneous
+## 🌟[[New to Logseq?]]
+	- ### Basics
+		- [[Start here]]
+		- [[How to create a new graph]]
+		- [[How to create a Logseq graph using existing Markdown files]]
+		- [[Getting started with the Journals page]]
+		- [[How to create pages in Logseq]]
+		- [[What is indentation and why does it matter?]]
+	- ### Linking
+		- [[Why linking matters]]
+		- [[Aliases and external links]]
+		- [[How to filter linked references]]
+	- ### References and Embeds
+		- [[The basics of block references]]
+		- [[The difference between block embeds and block references]]
+		- [[The difference between block embeds and page embeds]]
+	- ### Extra
+		- [[How to work with the right-hand sidebar]]
+		- [[How to sync your Logseq graph across devices]]
+- ## Miscellaneous
 	- [Roadmap](https://trello.com/b/8txSM12G/logseq-roadmap)
 	- [[Changelog]]
 	- [[Videos]]
 	- [[FAQ]]
 	- [[Glossary]]
 	- [[Testimonials]]
-	- [Awesome Logseq](https://github.com/logseq/awesome-logseq) (community contributions)
-- [[Features]]
-	- [Backlink]([[term/backlink]])
-	- [[Knowledge Graph]]
-	- [[Page and block references]]
-	- [[Page embed]] and [[Block embed]]
-	- [[Tasks]]
-	- [[Commands]]
-	- [[Advanced commands]]
-	- [[Templates]]
-	- [Page alias]([[term/alias]])
-	- [[Properties]]
-	- [[Publishing]]
-	- [[PDF highlights]]
-	- [[Flashcards]]
-	- [[Draw]]
-	- [[Slide]]
-	- [[Calculator]]
-	- [[Custom theme]]
-	- [[Zotero]] integration
-	- [[Embed Media - Audio, Photos, Videos]]
-	- [[Plugins]]
-	- [[Queries]] and [[Query Builder]]
-	- [[Whiteboard]]
-	- [[Tables]]
-- [[Logseq School]]
-	- [[Plugins 101]]
-- [[Document syntax]]
-	- [[Markdown]]
-	- [[Org Mode]]
-- 👤 [[Settings]]
-- ✨ [[Tips and Tricks]]
-- [[Advanced Logseq]]
+	- [Awesome Logseq](https://github.com/logseq/awesome-logseq) (community extensions and resources)
+- ## [[Features]]
+	- ### Basic Features
+		- [[Document syntax]]
+			- [[Markdown]]
+			- [[Org Mode]]
+		- [Backlink]([[term/backlink]])
+		- [[Knowledge Graph]]
+		- [[Page and block references]]
+		- [[Page embed]] and [[Block embed]]
+		- [Page alias]([[term/alias]])
+		- [[Properties]]
+	- ### Productivity
+		- [[Tasks]]
+		- [[Commands]]
+		- [[Advanced commands]]
+		- [[Templates]]
+	- ### Media
+		- [[Draw]]
+		- [[Whiteboard]]
+		- [[PDF highlights]]
+		- [[Embed Media - Audio, Photos, Videos]]
+		- [[Zotero]] integration
+	- ### Tools
+		- [[Flashcards]]
+		- [[Slide]]
+		- [[Calculator]]
+		- [[Queries]] and [[Query Builder]]
+		- [[Tables]]
+		- [[Publishing]]
+	- ### Customization
+		- [[Custom theme]]
+		- [[Plugins]]
+		- 👤 [[Settings]]
+- ## [[Advanced Logseq]]
+	- ✨ [[Tips and Tricks]]
 	- [[Keyboard shortcuts]]
 	- [[Advanced Queries]]
 	- [[Hiccup]]
 	- [[Filename format]]
 	- [[Migrate to Logseq Beta]]
-- [[Contribute]]
+- ## [[Contribute]]
 	- Make a [Feature Request](https://discuss.logseq.com/)
 	- [Check us out on Github](https://github.com/logseq/logseq)
 	- [Contribute to Our Docs](https://github.com/logseq/docs)
