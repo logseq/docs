@@ -73,6 +73,8 @@ A property itself can have properties on its property page. By default the `Desc
 * `p i` opens the icon picker to set an icon for the current node.
 * See [task shortcuts](#task-shortcuts) for task specific ones.
 
+NOTE: Most shortcuts have a corresponding search command. You can find the command for a given shortcut's keys keybinding by using `Settings > Keymap`, clicking the keystroke filter and typing the keys.
+
 ### Configure a Property
 
 Properties are configurable wherever they are used by clicking on its name to display a dropdown menu. Press `Cmd` and click to navigate to a property page. Property icons are set by clicking on the property's default icon to the left of its name. Properties can also be configured by navigating to their page with [Search](https://docs.logseq.com/#/page/search) and then clicking on the `Configure property` link below its name.
