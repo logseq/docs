@@ -15,6 +15,7 @@ NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we 
 * [Tables](#tables)
 * [DB Graph Importer](#db-graph-importer)
 * [Automated Backup](#automated-backup)
+* [Cards](#cards)
 
 ## Nodes
 
@@ -240,3 +241,18 @@ All tasks are imported as new [tasks](#tasks). Some task statuses have been rema
 ## Automated Backup
 
 An automated backup of graphs is available by clicking on the upper right three dots menu and selecting `Export Graph`. Within this modal, you can specify a folder to save backups. A backup folder can be reused across graphs as each graph gets its own folder within a backup folder. After choosing this folder, hourly backups begin. The last 12 backups are saved. This backup feature is currently only for the browser.
+
+## Cards
+SRS Cards feature has been re-implemented in DB-version based on [cljc-fsrs](https://github.com/open-spaced-repetition/cljc-fsrs).
+
+### Create new cards
+* Tag blocks with `#Card` to create new cards.
+* To convert multiple blocks into cards at once, select them, right-click and choose `Make a flashcard`.
+
+### View cards
+All cards are accessible on the `#Card` page within the tagged-nodes table.  
+The `Due` column indicates when the next review is scheduled.
+  
+### Review cards
+Select `Flashcards` from the left sidebar to view all cards due for review.  
+you can rating them using 4 levels to arrange their next review date.
