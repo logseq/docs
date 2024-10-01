@@ -1,6 +1,6 @@
 ## Description
 
-This page describes DB (database) graph functionality as of Sep 17th. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
+This page describes DB (database) graph functionality as of Oct 1st. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
 
 NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we recommend only using this for testing purposes.
 
@@ -9,13 +9,14 @@ NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we 
 * [Nodes](#nodes)
 * [Properties](#properties)
 * [New Tags](#new-tags)
-* [Tasks](#tasks)
-* [Journals](#journals)
-* [Queries](#queries)
+* [Tag Based Features](#tag-based-features)
+  * [Tasks](#tasks)
+  * [Journals](#journals)
+  * [Queries](#queries)
+  * [Cards](#cards)
 * [Tables](#tables)
 * [DB Graph Importer](#db-graph-importer)
 * [Automated Backup](#automated-backup)
-* [Cards](#cards)
 
 ## Nodes
 
@@ -100,6 +101,7 @@ A property type determines what type a property's property values can have. Ther
 * `Text`: This is the recommended default as it allows for any text and behaves like a block. This means that node references work here and children blocks can be created under the block.
 * `Number`: This is for numbers including negative numbers and floats e.g. 3.5. Unlike file graph properties, these are stored as actual numbers. This means that all features and queries that use this property type correctly sort as numbers by default.
 * `Date`: This is for dates and is editable with a date picker. When a date property value is used, it correctly links to the journal page.
+* `DateTime`: This is for date times and is editable with a datetime picker. See the `Due` property in [cards](#cards) for an example property that uses this.
 * `Checkbox`: This is used to set or unset a property value and displays as a checkbox. To engineers this type is known as a boolean.
 * `Url`: This limits text to only allow urls e.g. `https://logseq.com`. This does not behave like `Text` e.g. no referencing or child blocks.
 * `Node`: This allows a property value to link to other nodes i.e. pages or blocks. When first configuring this, you are prompted to select a new tag. You can choose to skip a tag if you don't care about limiting the available nodes. When a tag is selected or created, only nodes with that tag will appear as options for the property. For example, if you define the property `Author`, you could create a new tag `#Person` that only allows nodes tagged with `#Person` as values. Also worth noting that tag selection works for all child tags of the chosen new tag. Using the previous example, if `#Actor` is a child of `#Person`, nodes tagged with `#Person` or `#Actor` are allowed values.
@@ -112,7 +114,7 @@ If a property has already been used, it is possible to convert it to use choices
 
 ## New Tags
 
-NOTE: New tags are currently labeled as tags in the app and do not behave like the previous tags. These `new tags` are also known as classes, types or supertags. Feedback is welcome on names for `new tags`.
+NOTE: New tags are currently labeled as tags in the app and should be backwards compatible with the previous tags. These `new tags` are also known as classes, types or supertags. Feedback is welcome on names for `new tags`.
 
 To create your first new tag:
 * Open [Search](https://docs.logseq.com/#/page/search) and type `#NAME` where NAME is new tag name.
@@ -122,9 +124,20 @@ For example, say we created a new tag `Person` and added `lastName` and `birthda
 
 A new tag can have properties on its own page. By default the `Description` property is available for adding a description and `Hide from node` is available to hide the new tag on tagged nodes that float to the far right.
 
+### Create Tags
+
+Ways to create tags:
+* Open search and type `#NAME` where `NAME` is the new tag name.
+* In any block including a page name, type `#NAME` and press `Enter`. The tag floats to the right of the block.
+* In a block type `#NAME` and press `Cmd-Enter`. An inline tag is created.
+* Paste text in a block that includes `#NAME`. An inline tag is created for tag `NAME`.
+* Configure a `Node` property type to have a new tag config.
+* Configure a new tag to have a `Parent`, the new `Parent` value becomes a tag.
+* In a block type `#NAME` and press `Esc`. An inline tag is created. Not recommended as it doesn't work for all use cases.
+
 ### Parent Tags
 
-New tags can have a parent tag, defaulting to `Root Tag` when none is specified. Allowing new tags to be related to each other as a parent to child is useful as it allows tags to organized in a hierarchy. This is similar to directories on your computer or the previous namespace feature. When a new tag is used as a parent, you can see the tag hierarchy under it by navigating to the tag's page and seeing a `Children` section.
+New tags can have a parent tag, defaulting to `Root Tag` when none is specified. Allowing new tags to be related to each other as a parent to child is useful as it allows tags to organized in a hierarchy. This is similar to directories on your computer. When a new tag is used as a parent, you can see the tag hierarchy under it by navigating to the tag's page and seeing a `Children` section.
 
 A powerful feature of using a parent tag is that the new tag inherits the properties from its parent. For example, if we created a new `#Actor`, made its parent `#Person` from above and gave it an additional `actedIn` property. `#Actor` would display 3 properties when used, with two coming from the parent: `lastName`, `birthday` and `actedIn`.
 
@@ -147,18 +160,22 @@ A tagged node can have multiple new tags. Once a node is tagged it displays all 
 
 A tagged node can have an icon. When it does have an icon, it will appear to the left of its name or in a reference.
 
-## Tasks
+## Tag Based Features
+
+The features in this section use [new tags](#new-tags). Each of these features have built-in [tables](#tables) (dashboards) to view and manage them on their tag page!
+
+### Tasks
 
 Tasks are improved from the previous version as they more powerful and customizable. All tasks are blocks with the built-in new tag `#Task`. When a task is created it has the properties status, priority and deadline.
 
-### Create a Task
+#### Create a Task
 
 A new task can be created in a number of ways:
 * Set the status of a block by typing the status choice e.g. `/todo` or cyling status with `Cmd-Enter`.
 * Type text in a block and end it with `#Task`.
 * When on the `Task` page, create a new row in the Task table.
 
-### Task Shortcuts
+#### Task Shortcuts
 
 Any block can have a task property value set with a command or a keybinding. The commands start with `Add task` and the keybindings are:
 
@@ -170,7 +187,7 @@ The statuses `Todo`, `Doing` and `Done` can be cycled through with `Cmd-Enter`.
 
 The `/STATUS` commands can set a status where `STATUS` is one of the status choices e.g. `/todo`. Similarly, priority choices can be set with `/PRIORITY` commands. `/Deadline` sets the deadline property.
 
-### Task Status
+#### Task Status
 
 The status property is probably the most often used task property and thus it has been simplified and made customizable. The `TODO/DOING` and `NOW/LATER` workflows have been merged into `TODO/DOING` and some of the other TODO keywords have been converted to built-in status values. The default built-in values for status are:
 
@@ -181,7 +198,7 @@ The status property is probably the most often used task property and thus it ha
 * `Done`
 * `Canceled`
 
-### Customizing Tasks
+#### Customizing Tasks
 
 Since tasks are powered by properties and [new tags](#new-tags), they can be customized in a number of ways. Some parts of a task can't be customized because tasks are built into core features like the [Query Builder](https://docs.logseq.com/#/page/query%20builder) and queries on today's journal. Here are ways to customize tasks:
 
@@ -190,18 +207,41 @@ Since tasks are powered by properties and [new tags](#new-tags), they can be cus
 3. `#Task` can be configured to have additional properties from the new tag's [page](#configure-a-new-tag).
 4. Custom types of tasks can be created by creating a new tag that has `#Task` as the [parent tag](#parent-tags). For example, create a `#ProjectTask` from [Search](https://docs.logseq.com/#/page/search) and configure it to have `Task` as the parent. Then add a property on the `project` property on `#ProjectTask`. You now have a task for projects!
 
-## Journals
+### Journals
 
 A journal page has the [new tag](#new-tags) `#Journal`. Like tasks, journals can be customized by adding properties to its tag. For example, navigate to the `#Journal` page and add a property. This property now shows up on all journals!
 
 Journals are automatically created for the current day in the Journals view. There are a couple of ways to create a journal:
+* Natural language that autocompletes within `[[]]` can reference specific days e.g. `[[Today]]`. A specific day this week, last week or next week can be described e.g. `[[This Friday]]`, `[[Last Friday]]` or `[[Next Friday]]`.
 * Use the `/Date picker` command to insert a specific date. The date picker is keyboard friendly as arrow keys change calendar days and `Tab` focuses the input. The input takes natural language e.g. `next week` and converts it to a date. See [the library we use](https://github.com/wanasit/chrono#readme) for other natural language examples.
 * Properties with the :date property type e.g. `Deadline` create journals for their property values.
 * When on a journal day, create a journal for the next day or previous day by using the keybindings `g n` or `g p` respectively.
 
-## Queries
+### Queries
 
-A [query](https://docs.logseq.com/#/page/queries) has the [new tag](#new-tags) `#Query`. Queries are created by using the `/Query` command. Like other new tags, go to the `#Query` page to see a table to manage queries. Query results are displayed with the new [tables](#tables).
+A [query](https://docs.logseq.com/#/page/queries) and [advanced query](https://docs.logseq.com/#/page/advanced%20queries) have the [new tag](#new-tags) `#Query`. Queries are created in one of the following ways:
+* Type the `/Query` command to create a query through the [query builder](https://docs.logseq.com/#/page/query%20builder).
+* Type a simple query in a block and then type the `/Query` command to run the query.
+* Type the `/Advanced Query` command to create an advanced query.
+
+Like other new tags, go to the `#Query` page to see a table to manage queries. Query results are displayed with the new [tables](#tables).
+
+### Cards
+
+A [(flash)card](https://docs.logseq.com/#/page/flashcards) has the new tag `#Card`. This feature has been re-implemented to use a [new algorithm](https://github.com/open-spaced-repetition/free-spaced-repetition-scheduler).
+
+#### Create Cards
+* Tag blocks with `#Card` to create new cards.
+* To convert multiple blocks into cards at once, select them, right-click and choose `Make a flashcard`.
+
+#### View Cards
+All cards are accessible on the `#Card` page within the tagged-nodes table.
+The `Due` column indicates when the next review is scheduled.
+
+#### Review Cards
+
+Select `Flashcards` from the left sidebar to view all cards due for review.
+You can rate them using 4 levels to arrange their next review date.
 
 ## Tables
 
@@ -211,6 +251,7 @@ A table displays a group of nodes as rows and a node's properties as columns. A 
 * Hide columns by clicking on the three dots menu and selecting `Columns visibility`.
 * Drag columns to sort their order.
 * Switch between `Table View` and `List View` by selecting one in the table's header. The `List View` displays nodes in an outliner with nodes grouped by pages.
+* Resize columns by dragging the resize handle at a column header's border.
 * Click on the magnifying glass icon to live search a table. This is the only feature that doesn't persist when switching away from a table.
 
 A powerful new feature of tables is the ability to create a table view. This is currently enabled for tag pages. To use it, click the `+` icon in the upper left to create a new tab in the table. Click on the tab's header to rename or delete this new view. Within this view, all of the above persisting features will save!
@@ -241,18 +282,3 @@ All tasks are imported as new [tasks](#tasks). Some task statuses have been rema
 ## Automated Backup
 
 An automated backup of graphs is available by clicking on the upper right three dots menu and selecting `Export Graph`. Within this modal, you can specify a folder to save backups. A backup folder can be reused across graphs as each graph gets its own folder within a backup folder. After choosing this folder, hourly backups begin. The last 12 backups are saved. This backup feature is currently only for the browser.
-
-## Cards
-SRS Cards feature has been re-implemented in DB-version based on [cljc-fsrs](https://github.com/open-spaced-repetition/cljc-fsrs).
-
-### Create new cards
-* Tag blocks with `#Card` to create new cards.
-* To convert multiple blocks into cards at once, select them, right-click and choose `Make a flashcard`.
-
-### View cards
-All cards are accessible on the `#Card` page within the tagged-nodes table.  
-The `Due` column indicates when the next review is scheduled.
-  
-### Review cards
-Select `Flashcards` from the left sidebar to view all cards due for review.  
-you can rating them using 4 levels to arrange their next review date.

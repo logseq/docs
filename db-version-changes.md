@@ -25,14 +25,19 @@ High level changes:
     * NOTE: Pressing enter on a `#` input triggers a powerful [new tags](./db-version.md#new-tags) feature.
 * All blocks and pages have created-at and updated-at timestamps! With this built-in dimension of time, time powered features are possible.
 *  The [previous tables](https://docs.logseq.com/#/page/tables) including version 2 are replaced by a shadcn based table. The new tables have inline editing like spreadsheets by default. See [here](./db-version.md#tables) for more.
+* Flashcards have been re-implemented with [a new algorithm](https://github.com/open-spaced-repetition/free-spaced-repetition-scheduler). It isn't compatible with the previous flashcards so none of the properties and srs data from the previous version is imported.
 * Markdown is the only supported format. Org mode file graphs will be able to convert to DB graphs.
 * Zotero integration isn't planned to be a built-in feature and will hopefully be moved to a plugin.
+* A few [Advanced Commands](https://docs.logseq.com/#/page/advanced%20commands) are available. More may become available as requested. The available commands are:
+  * `>Query` is now `/Advanced Query`
+  * `>Src` is now `/Code block`
+  * `>Quote` is `/Quote`
 
 WIP changes:
-* Advanced queries are to be updated to use the new tables and `#Query`. Query filters are likely to be changed.
+* Query filters are likely to be changed.
 * Whiteboards are disabled for now and will be enabled later.
-* Flashcards are disabled for now and will be enabled later.
 * Exports only partially work.
+* Sync and RTC will be enabled later.
 
 Miscelleanous changes:
 * Embedded pages and blocks look almost the same as other nodes. The main indicator of an embed will be an icon to the left of the block.
@@ -40,11 +45,17 @@ Miscelleanous changes:
 * There is no re-index like in file graphs.
 * For browsers, currently only one tab can be open. This is a limitation we hope to remove later.
 * `All Pages` view can toggle between table and list view.
+* Run the command `Customize appearance` to display a modal of appearance related settings.
 
 ### Changes by Feature
 
 #### Pages
 * Page properties are no longer set by using the first block of a page. Rather, a page property is [set the same way a block property is](./db-version.md#add-and-edit-property-values) - by editing from the page title (block content).
+* `#` and `/` are disallowered characters for page names.
+
+#### Tags
+* Tags have [a lot of new functionality](./db-version.md#new-tags).
+* When a tag is added on a block, it now displays to the right of the block. To inline a tag like before, press `Cmd-Enter` in the tag dropdown.
 
 #### Tasks
 
@@ -56,6 +67,8 @@ Miscelleanous changes:
 
 #### Queries
 
+* Simple queries can now have titles.
+* Advanced queries are now edited in a code block which means queries are syntax highlighted.
 * Since block timestamps are available, they display in table view where possible.
 * Some old advanced queries will no longer work and need to be rewritten. For engineers, see [this file](https://github.com/logseq/logseq/blob/feat/db/deps/db/src/logseq/db/frontend/schema.cljs) and compare `schema` with `schema-for-db-based-graph` to see what has changed.
 * Some old simple queries for tasks will no longer work and must be manually converted e.g. `(priority A)` -> `(priority high)`.
@@ -63,10 +76,12 @@ Miscelleanous changes:
 * When using the query builder, the resulting query's text is not meant to be easily read as internal ids are used for some concepts e.g. properties.
 
 #### Namespaces
-* There is partial support for namespaces but it's still a TODO to port over popular workflows.
-* Pages can have hierarchy by using the `Parent` property. For example, create a page `block`. Add a `Parent` property page and create a page called `term` in it. There is now a `term > block` hierarchy.
-* A namespace page like `term` above has its children pages listed on its page under the `Children` section.
-* Children pages like `block` above link back to its namespace with the `Parent` property.
+* Creating namespaces through `/` in `[[]]` should work as before e.g. `[[foo/bar/baz]]` creates the hierarchy of `foo` > `bar` > `baz`.
+* Namespaced pages no longer have their namespace embedded in their page name. The big advantage of this is that renaming any part of the namespace does not affect all the pages under a namespace.
+* Pages can manage their namespace explicitly by using the `Parent` property. Previously managing a namespace could only be done by renaming a namespace. Using a property allows for easier management of namespace relationships.
+* The `Hierarchy` section is called `Children` for DB graphs. It now displays as a collapsible tree as this allows for viewing large namespaces more easily.
+* Children pages like `baz` above link back to its parent(namespace) with the `Parent` property.
+* The macro `{{namespace}}` is TODO.
 
 #### User Config
 
