@@ -67,13 +67,16 @@ Miscelleanous changes:
 
 #### Queries
 
-* Simple queries can now have titles.
-* Advanced queries are now edited in a code block which means queries are syntax highlighted.
+* [Simple queries](https://docs.logseq.com/#/page/queries)
+  * Simple queries can now have titles.
+  * Some old simple queries for tasks will no longer work and must be manually converted e.g. `(priority A)` -> `(priority high)`.
+  * The `sort-by` query filter no longer exists. Sorting is done via the table component.
+  * When using the query builder, the resulting query's text is not meant to be easily read as internal ids are used for some concepts e.g. properties.
+* [Advanced queries](https://docs.logseq.com/#/page/advanced%20queries)
+  * Advanced queries are now edited in a code block which means queries are syntax highlighted.
+  * Some old advanced queries will no longer work and need to be rewritten. For engineers, see [this file](https://github.com/logseq/logseq/blob/feat/db/deps/db/src/logseq/db/frontend/schema.cljs) and compare `schema` with `schema-for-db-based-graph` to see what has changed.
+  * These advanced query options are deprecated: :title, :group-by-page? and :collapsed?.
 * Since block timestamps are available, they display in table view where possible.
-* Some old advanced queries will no longer work and need to be rewritten. For engineers, see [this file](https://github.com/logseq/logseq/blob/feat/db/deps/db/src/logseq/db/frontend/schema.cljs) and compare `schema` with `schema-for-db-based-graph` to see what has changed.
-* Some old simple queries for tasks will no longer work and must be manually converted e.g. `(priority A)` -> `(priority high)`.
-* The `sort-by` query filter no longer exists. Sorting is done via the table component.
-* When using the query builder, the resulting query's text is not meant to be easily read as internal ids are used for some concepts e.g. properties.
 
 #### Namespaces
 * Creating namespaces through `/` in `[[]]` should work as before e.g. `[[foo/bar/baz]]` creates the hierarchy of `foo` > `bar` > `baz`.
