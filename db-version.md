@@ -86,7 +86,7 @@ Property fields in the dropdown menu:
 * `Name`: Name to visually identify the property
 * `Property type`: This determines what type a property's property values will have. Once a property is used this field cannot change. If you're unsure of what type to choose, use `Text`. See [property-types](#property-types) for more.
 * `Available choices`: This limits a property to only have one of the defined choices. See [property choices](#property-choices) for more.
-* `Multiple values`: When selected, a property can have multiple values associated with it. All property types can have multiple values except for checkbox.
+* `Multiple values`: When selected, a property can have multiple values associated with it. All property types can have multiple values except for checkbox and datetime.
 * `UI position`: This determines where the property values are displayed. By default the values are displayed as a row-like block under a block (`Block properties`). You can also choose to display property values at the beginning like task status, under a block like deadline date, or at the end of a block.
 * `Hide by default`: When selected, a property won't be visible on any of its blocks by default. But it will be visible if you zoom in on its blocks or display them in the sidebar.
 

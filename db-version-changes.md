@@ -79,7 +79,7 @@ Miscelleanous changes:
 * Since block timestamps are available, they display in table view where possible.
 
 #### Namespaces
-* Creating namespaces through `/` in `[[]]` should work as before e.g. `[[foo/bar/baz]]` creates the hierarchy of `foo` > `bar` > `baz`.
+* Creating namespaces through `/` in `[[]]` should work as before e.g. `[[foo/bar/baz]]` creates the hierarchy of `foo` > `bar` > `baz`. Unlike before, the reference will turn into `[[baz]]` after it is created.
 * Namespaced pages no longer have their namespace embedded in their page name. The big advantage of this is that renaming any part of the namespace does not affect all the pages under a namespace.
 * Pages can manage their namespace explicitly by using the `Parent` property. Previously managing a namespace could only be done by renaming a namespace. Using a property allows for easier management of namespace relationships.
 * The `Hierarchy` section is called `Children` for DB graphs. It now displays as a collapsible tree as this allows for viewing large namespaces more easily.
