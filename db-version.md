@@ -1,6 +1,6 @@
 ## Description
 
-This page describes DB (database) graph functionality as of Oct 1st. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
+This page describes DB (database) graph functionality as of Oct 15th. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
 
 NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we recommend only using this for testing purposes.
 
