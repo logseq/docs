@@ -32,11 +32,13 @@ High level changes:
   * `>Query` is now `/Advanced Query`
   * `>Src` is now `/Code block`
   * `>Quote` is `/Quote`
+* Code blocks, quote blocks and math blocks [have tags](./db-version.md#more-new-tags). Since properties are not are a part of the block content, properties can more naturally be added to these blocks.
+* Pdf annotations [have a tag](./db-version.md#more-new-tags). This allows annotations to be viewed across pdfs and to have custom views of annotations while using the pdf viewer.
 
 WIP changes:
 * Query filters are likely to be changed.
 * Whiteboards are disabled for now and will be enabled later.
-* Exports only partially work.
+* Exports to more formats including markdown.
 * Sync and RTC will be enabled later.
 
 Miscelleanous changes:
@@ -65,9 +67,15 @@ Miscelleanous changes:
 * Logbook timestamps have been deprecated.
 * Read more about the [new tasks](./db-version.md#tasks).
 
+#### Assets
+* Assets can have custom user properties.
+* Assets are blocks and thus can show their linked references when zoomed in on the asset block.
+
 #### Queries
 
+* Read more about the [new queries](./db-version.md#queries).
 * [Simple queries](https://docs.logseq.com/#/page/queries)
+  * Simple queries are created via the `/Query` command and not the `{{query}}` macro This means that user macros cannot be used to create specialized queries.
   * Simple queries can now have titles.
   * Some old simple queries for tasks will no longer work and must be manually converted e.g. `(priority A)` -> `(priority high)`.
   * The `sort-by` query filter no longer exists. Sorting is done via the table component.
@@ -96,7 +104,7 @@ Miscelleanous changes:
 * Graphs have a convention of `~/logseq/graphs/GRAPH-NAME` where `GRAPH-NAME` is the graph name. 
 * Inside a graph directory:
     * `db.sqlite` - Stores all your graph's data including user configs.
-    * `assets/` - Stores assets like before
+    * `assets/` - Stores assets like before.
 * `logseq/` inside a directory no longer exists.
 * It's still a TODO to sync markdown files to these graph directories.
 

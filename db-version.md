@@ -14,9 +14,12 @@ NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we 
   * [Journals](#journals)
   * [Queries](#queries)
   * [Cards](#cards)
+  * [Assets](#assets)
+  * [More New Tags](#more-new-tags)
 * [Tables](#tables)
 * [DB Graph Importer](#db-graph-importer)
 * [Automated Backup](#automated-backup)
+* [Export and Import](#export-and-import)
 
 ## Nodes
 
@@ -235,13 +238,27 @@ A [(flash)card](https://docs.logseq.com/#/page/flashcards) has the new tag `#Car
 * To convert multiple blocks into cards at once, select them, right-click and choose `Make a flashcard`.
 
 #### View Cards
-All cards are accessible on the `#Card` page within the tagged-nodes table.
+All cards are accessible on the `#Card` page within the `Tagged Nodes` table.
 The `Due` column indicates when the next review is scheduled.
 
 #### Review Cards
 
 Select `Flashcards` from the left sidebar to view all cards due for review.
 You can rate them using 4 levels to arrange their next review date.
+
+### Assets
+
+An asset has the new tag `#Asset`. Assets are created by dragging and dropping a file onto a block. They can also be batch uploaded by going to the `#Asset` page and clicking the `+` icon from the `Tagged Nodes` table. Asset files are stored under a graph's `assets/` directory. Manage assets from the `#Asset` page's `Tagged Nodes` section. The `Gallery View` is a helpful way to view assets.
+
+### More New Tags
+
+Here are more new tags that are built-in, most of which are created with `/` commands:
+* `#Code` - Create a code block with the `/Code block` command or by typing the backtick ` three times.
+* `#Quote` - Create a quote block with the `/Quote` command or by typing `>`.
+* `#Math` - Create a math block written as LaTeX with the `/Math block` command.
+* `#Pdf Annotation` - A node with this tag is created each a [pdf is annotated or highlighted](https://docs.logseq.com/#/page/pdf%20highlights).
+
+Like other tags, go to their tag pages to view and manage all of them in one place. Also like other tags, extend any tag by adding more properties to it. For example, add an author property to `#Quote` to optionally add authors to quotes.
 
 ## Tables
 
@@ -250,7 +267,7 @@ A table displays a group of nodes as rows and a node's properties as columns. A 
 * Filter rows by multiple columns by clicking on the filter icon. For columns with a specific property type e.g. :number and :date, there are specific filters for that type.
 * Hide columns by clicking on the three dots menu and selecting `Columns visibility`.
 * Drag columns to sort their order.
-* Switch between `Table View` and `List View` by selecting one in the table's header. The `List View` displays nodes in an outliner with nodes grouped by pages.
+* Switch between `Table View`, `List View` or `Gallery View` by selecting one in the table's header. The `List View` displays nodes in an outliner with nodes grouped by pages. The `Gallery View` is useful for viewing blocks as square tiles, especially for assets.
 * Resize columns by dragging the resize handle at a column header's border.
 * Click on the magnifying glass icon to live search a table. This is the only feature that doesn't persist when switching away from a table.
 
@@ -260,13 +277,17 @@ Tables are currently found on new tag pages, property pages, query results and t
 
 ## DB Graph Importer
 
-The DB Graph Importer converts a file graph to a DB graph. Currently it imports markdown files and assets like images. Import of org mode files will be added later. For blocks the importer converts all uses of [new tags](#new-tags) to [page references](https://docs.logseq.com/#/page/term%2Fpage%20reference) because ~~tags are now used for new tag features while page references handle inline referencing functionality~~ this behavior is still WIP. For pages the importer imports the previous tags to a `Page Tags` property. If you'd like some previous tags to behave like new tags, you can specify them in the first optional input. Using this option also results in those converted tags not being imported as `Page Tags`. The importer also provides two options to convert property related pages to new tags.
+The DB Graph Importer converts a file graph to a DB graph. Some of the main things it does:
+* It imports markdown files and assets like images. Import of org mode files will be added later.
+* All tasks are imported as new [tasks](#tasks). Some task statuses have been remapped to avoid duplicates e.g. `TODO` and `LATER`. The following statuses have been remapped:
+  * `LATER` -> `Todo`
+  * `IN-PROGRESS` and `NOW` -> `Doing`
+  * `WAIT` and `WAITING` -> `Backlog`
+* Tags are handled as follows:
+  * For blocks the importer converts all uses of [new tags](#new-tags) to [page references](https://docs.logseq.com/#/page/term%2Fpage%20reference) because ~~tags are now used for new tag features while page references handle inline referencing functionality~~ this behavior is still WIP.
+  * For pages the importer imports the previous tags to a `Page Tags` property. If you'd like some previous tags to behave like new tags, you can specify them in the first optional input. Using this option also results in those converted tags not being imported as `Page Tags`. The importer also provides two options to convert property related pages to new tags.
+* Property types are automatically detected for Number, Date, Checkbox, Url, Node and Text. If a property value has two conflicting but compatible types like Number and Text, it will choose the more lenient Text type.
 
-All tasks are imported as new [tasks](#tasks). Some task statuses have been remapped to avoid duplicates e.g. `TODO` and `LATER`. The following statuses have been remapped:
-
-* `LATER` -> `Todo`
-* `IN-PROGRESS` and `NOW` -> `Doing`
-* `WAIT` and `WAITING` -> `Backlog`
 
 ### Convert File Graph to DB graph
 
@@ -281,4 +302,10 @@ All tasks are imported as new [tasks](#tasks). Some task statuses have been rema
 
 ## Automated Backup
 
-An automated backup of graphs is available by clicking on the upper right three dots menu and selecting `Export Graph`. Within this modal, you can specify a folder to save backups. A backup folder can be reused across graphs as each graph gets its own folder within a backup folder. After choosing this folder, hourly backups begin. The last 12 backups are saved. This backup feature is currently only for the browser.
+An automated backup of graphs is available by clicking on the upper right three dots menu and selecting `Export Graph`. Within this modal, you can specify a folder (directory) to save backups. A backup folder can be reused across graphs as each graph gets its own folder within a backup folder. After choosing this folder, hourly backups begin. The last 12 backups are saved. This backup feature is currently only for the browser.
+
+## Export and Import
+
+Currently the graph can only be exported as a [SQLite](https://sqlite.org/) DB file. To do so, click on the three dots menu in the upper right corner, select `Export Graph` and click the `Export SQLite DB` item. This creates a .sqlite file for use with Logseq. From that same menu, you can also select `Export both SQLite DB and assets` to create a .zip file which contains the .sqlite file and any asset files packaged as a .zip file.
+
+To import the exported .sqlite file, click on the three dots menu in the upper right corner, select `Import` and click the `SQLite` item.
