@@ -70,6 +70,7 @@ Miscelleanous changes:
 #### Assets
 * Assets can have custom user properties.
 * Assets are blocks and thus can show their linked references when zoomed in on the asset block.
+* Assets are resized by hovering over them and then dragging the left-right arrows that are visible over the scrollbars.
 
 #### Queries
 

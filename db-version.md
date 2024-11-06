@@ -1,6 +1,6 @@
 ## Description
 
-This page describes DB (database) graph functionality as of Oct 15th. See [here](https://test.logseq.com/#/) to try the latest stable version. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
+This page describes DB (database) graph functionality as of Nov 6th. See [here](https://test.logseq.com/#/) to try the latest stable version. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
 
 NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we recommend only using DB graphs for testing purposes.
 
@@ -92,6 +92,7 @@ Property fields in the dropdown menu:
 * `Multiple values`: When selected, a property can have multiple values associated with it. All property types can have multiple values except for checkbox and datetime.
 * `UI position`: This determines where the property values are displayed. By default the values are displayed as a row-like block under a block (`Block properties`). You can also choose to display property values at the beginning like task status, under a block like deadline date, or at the end of a block.
 * `Hide by default`: When selected, a property won't be visible on any of its blocks by default. But it will be visible if you zoom in on its blocks or display them in the sidebar.
+* `Hide empty value`: When selected, a property won't be visible on a block if it is has an empty property value.
 
 ### Built-in Properties
 
@@ -294,11 +295,13 @@ The DB Graph Importer converts a file graph to a DB graph. Some of the main thin
 * Click on the three dots menu in the upper right corner and select `Import`.
 * Click on the `File to DB graph` button.
 * This brings up a dialog. For larger graphs it takes longer for the dialog to display.
-* The dialog requires you to input a name for your graph. On desktop this new graph will be located under `~/logseq/graphs/GRAPH-NAME` so it is ok to give it the same name it currently has.
+* The dialog requires you to input a name for your graph.
 * The dialog has the following optional inputs:
-    1. `Tags to import ...` - This input converts any of your old tags to the [new tags](#new-tags). This is helpful if you've been using a particular tag like a new tag. You can also convert pages later by right clicking on a page's name.
-    2. `Properties whose values are imported as new tags` - This input converts property values for the specified property to the new tags. For example, in the official docs graph the [type property](https://docs.logseq.com/#/page/type) is used this way. This means that all `type` property values like [Feature](https://docs.logseq.com/#/page/feature) on [this page](https://docs.logseq.com/#/page/code%20block) would get converted to the new tag.
-    3. `Properties whose values are imported as parents of ...` - This input converts property values for the specified property to be [a parent of a new tag](#parent-tags). For example, in the official docs graph the [parent property](https://docs.logseq.com/#/page/parent) is used this way. This means that all `parent` property values like [Thing](https://docs.logseq.com/#/page/thing) on [this page](https://docs.logseq.com/#/page/feature) would get converted to the new tag.
+    1. `Import all tags` - This checkbox convert all existing tags to be [new tags](#new-tags).
+    1. `Import specific tags` - This input is an alternative to `Import all tags` in which you only convert specific tags to be [new tags](#new-tags). This is helpful if you don't want most of your existing tags to behave like new tags. You can also convert pages later by right clicking on a page's name.
+    1. `Remove inline tags` - This checkbox removes inline tags from block content for any converted tags. This matches the DB graph behavior since all tags are now visible to the right of a block.
+    1. `Import additional tags from property values` - This input converts property values for the specified property/properties to the new tags. For example, in the official docs graph the [type property](https://docs.logseq.com/#/page/type) is used this way. This means that all `type` property values like [Feature](https://docs.logseq.com/#/page/feature) on [this page](https://docs.logseq.com/#/page/code%20block) would get converted to a new tag.
+    1. `Import tag parents from property values` - This input converts property values for the specified property to be [a parent of a new tag](#parent-tags). For example, in the official docs graph the [parent property](https://docs.logseq.com/#/page/parent) is used this way. This means that all `parent` property values like [Thing](https://docs.logseq.com/#/page/thing) on [this page](https://docs.logseq.com/#/page/feature) would get converted to a new tag.
 
 ## Automated Backup
 
