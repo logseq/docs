@@ -65,6 +65,7 @@ Miscelleanous changes:
 * [Scheduled](https://docs.logseq.com/#/page/tasks/block/deadline%20and%20scheduled) has been deprecated.
 * Recurring tasks aren't ported and are a TODO.
 * Logbook timestamps have been deprecated.
+* Tasks are no longer created by typing keywords like `TODO` but instead with commands like '/todo'.
 * Read more about the [new tasks](./db-version.md#tasks).
 
 #### Assets
@@ -102,7 +103,7 @@ Miscelleanous changes:
 
 #### DB Graph Directories
 
-* Graphs have a convention of `~/logseq/graphs/GRAPH-NAME` where `GRAPH-NAME` is the graph name. 
+* Graphs have a convention of `~/logseq/graphs/GRAPH-NAME` where `GRAPH-NAME` is the graph name.
 * Inside a graph directory:
     * `db.sqlite` - Stores all your graph's data including user configs.
     * `assets/` - Stores assets like before.
