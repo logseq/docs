@@ -1,6 +1,6 @@
 ## Description
 
-This page describes DB (database) graph functionality as of Nov 6th. See [here](https://test.logseq.com/#/) to try the latest stable version. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
+This page describes DB (database) graph functionality as of Nov 27th. See [here](https://test.logseq.com/#/) to try the latest stable version. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
 
 NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we recommend only using DB graphs for testing purposes.
 
@@ -20,6 +20,7 @@ NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we 
 * [DB Graph Importer](#db-graph-importer)
 * [Automated Backup](#automated-backup)
 * [Export and Import](#export-and-import)
+* [Scripting](#scripting)
 
 ## Nodes
 
@@ -88,6 +89,7 @@ Property fields in the dropdown menu:
 
 * `Name`: Name to visually identify the property
 * `Property type`: This determines what type a property's property values will have. Once a property is used this field cannot change. If you're unsure of what type to choose, use `Text`. See [property-types](#property-types) for more.
+* `Default value`: This sets the default value for a property. See [property-default-values](#property-default-values) for more.
 * `Available choices`: This limits a property to only have one of the defined choices. See [property choices](#property-choices) for more.
 * `Multiple values`: When selected, a property can have multiple values associated with it. All property types can have multiple values except for checkbox and datetime.
 * `UI position`: This determines where the property values are displayed. By default the values are displayed as a row-like block under a block (`Block properties`). You can also choose to display property values at the beginning like task status, under a block like deadline date, or at the end of a block.
@@ -115,6 +117,14 @@ A property type determines what type a property's property values can have. Ther
 Property choices allow a property to only have one of the defined choices. Only the property types `Text`, `Url` and `Number` support this. From the [configuration dropdown](#configure-a-property), a property choice can be added, deleted and edited to have a required value, an optional description and an optional icon. Drag the choices up and down to order how they appear. For a good example of choices see the `Status` property.
 
 If a property has already been used, it is possible to convert it to use choices. After clicking `Add choice`, a panel displays to convert all existing property values to choices. If a property is using choices, it is possible to stop using choices by deleting them from the property. Caution: deleting a choice from a property also currently deletes the choice from all blocks it is used.
+
+### Property Default Values
+
+Properties can have default values, currently just for the types Text, Number and Checkbox. A property's default value takes effect for these two use cases:
+* When a property is added to a node, it defaults to the default value.
+* When a property is a tag property for a tag and that tag is added to a node, the node defaults to having the default value for that property.
+
+When using simple queries, properties for the above two use cases will have that default value. When using property choices, one of them can be set as a default value by checking the default choice box in the list of property choices.
 
 ## New Tags
 
@@ -223,7 +233,7 @@ Journals are automatically created for the current day in the Journals view. The
 
 ### Queries
 
-A [query](https://docs.logseq.com/#/page/queries) and [advanced query](https://docs.logseq.com/#/page/advanced%20queries) have the [new tag](#new-tags) `#Query`. Queries are created in one of the following ways:
+A [(simple) query](https://docs.logseq.com/#/page/queries) and [advanced query](https://docs.logseq.com/#/page/advanced%20queries) have the [new tag](#new-tags) `#Query`. Queries are created in one of the following ways:
 * Type the `/Query` command to create a query through the [query builder](https://docs.logseq.com/#/page/query%20builder).
 * Type a simple query in a block and then type the `/Query` command to run the query.
 * Type the `/Advanced Query` command to create an advanced query.
@@ -284,9 +294,13 @@ The DB Graph Importer converts a file graph to a DB graph. Some of the main thin
   * `LATER` -> `Todo`
   * `IN-PROGRESS` and `NOW` -> `Doing`
   * `WAIT` and `WAITING` -> `Backlog`
-* Tags are handled as follows:
-  * For blocks the importer converts all uses of [new tags](#new-tags) to [page references](https://docs.logseq.com/#/page/term%2Fpage%20reference) because ~~tags are now used for new tag features while page references handle inline referencing functionality~~ this behavior is still WIP.
-  * For pages the importer imports the previous tags to a `Page Tags` property. If you'd like some previous tags to behave like new tags, you can specify them in the first optional input. Using this option also results in those converted tags not being imported as `Page Tags`. The importer also provides two options to convert property related pages to new tags.
+* Tags are imported as follows:
+  * By default, all tags are imported as [new tags](#new-tags) using the `Import all tags` input. This allows you to use all your tags as you have previously, along with the new capabilities they have.
+  * Alternatively you can import only specific tags to [new tags](#new-tags) using the `Import specific tags` input. Tags that aren't specified in this input are then imported as follows:
+    * All such tags become pages.
+    * Tags in a block are converted to [page references](https://docs.logseq.com/#/page/term%2Fpage%20reference).
+    * Tags associated with a page are associated to that page with a `Page Tags` property.
+  * Tags are removed from their blocks when the `Remove inline tags` checkbox is checked. This matches the behavior of the DB version.
 * Property types are automatically detected for Number, Date, Checkbox, Url, Node and Text. If a property value has two conflicting but compatible types like Number and Text, it will choose the more lenient Text type.
 
 
@@ -312,3 +326,11 @@ An automated backup of graphs is available by clicking on the upper right three 
 Currently the graph can only be exported as a [SQLite](https://sqlite.org/) DB file. To do so, click on the three dots menu in the upper right corner, select `Export Graph` and click the `Export SQLite DB` item. This creates a .sqlite file for use with Logseq. From that same menu, you can also select `Export both SQLite DB and assets` to create a .zip file which contains the .sqlite file and any asset files packaged as a .zip file.
 
 To import the exported .sqlite file, click on the three dots menu in the upper right corner, select `Import` and click the `SQLite` item.
+
+## Scripting
+
+DB graphs are scriptable using https://github.com/logseq/nbb-logseq/tree/feat/db. Scripts can both read and _write any_ data in a DB graph. To write your own script, you'll need a package.json and nbb.edn. Use [this example package.json](https://github.com/logseq/publish-spa/blob/feat/db/package.json) and [this example nbb.edn](https://github.com/logseq/publish-spa/blob/feat/db/nbb.edn). Some example scripts:
+
+* https://github.com/logseq/logseq/tree/feat/db/deps/db/script - Scripts to query, validate and create any graph
+* https://github.com/logseq/logseq/blob/feat/db/deps/outliner/script/transact.cljs - Script to transact (modify) nodes queried from the commandline
+* https://github.com/logseq/logseq/tree/feat/db/scripts/src/logseq/tasks/db_graph - More complex scripts to generate graphs with all property types or with schema.org's ontology. See [this readme](https://github.com/logseq/logseq/tree/feat/db/scripts#nbb-scripts) for using these.

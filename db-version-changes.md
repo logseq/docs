@@ -36,12 +36,12 @@ High level changes:
 * Pdf annotations [have a tag](./db-version.md#more-new-tags). This allows annotations to be viewed across pdfs and to have custom views of annotations while using the pdf viewer.
 
 WIP changes:
-* Query filters are likely to be changed.
 * Whiteboards are disabled for now and will be enabled later.
 * Exports to more formats including markdown.
 * Sync and RTC will be enabled later.
 
 Miscelleanous changes:
+* Scripts using [nbb-logseq](https://github.com/logseq/nbb-logseq) can read and write graphs. Previously with file graphs, scripts could only read graphs.
 * Embedded pages and blocks look almost the same as other nodes. The main indicator of an embed will be an icon to the left of the block.
 * Default date picker now has an input for typing a date in natural language.
 * There is no re-index like in file graphs.
@@ -77,11 +77,16 @@ Miscelleanous changes:
 
 * Read more about the [new queries](./db-version.md#queries).
 * [Simple queries](https://docs.logseq.com/#/page/queries)
-  * Simple queries are created via the `/Query` command and not the `{{query}}` macro This means that user macros cannot be used to create specialized queries.
-  * Simple queries can now have titles.
-  * Some old simple queries for tasks will no longer work and must be manually converted e.g. `(priority A)` -> `(priority high)`.
-  * The `sort-by` query filter no longer exists. Sorting is done via the table component.
+  * Simple queries are created via the `/Query` command and not the `{{query}}` macro. This means that user macros cannot be used to create specialized queries.
+  * Simple queries can have titles.
   * When using the query builder, the resulting query's text is not meant to be easily read as internal ids are used for some concepts e.g. properties.
+  * The query builder's queries run against all [nodes](./db-version.md#nodes) instead of forcing the user to choose between blocks or pages.
+  * Query filter changes:
+    * These previous query filters will no longer work and should be manually converted:
+      * `(page-tags)` -> `(tags)`
+      * `(page-property)` -> `(property)`
+      * `(priority A)` -> `(priority high)`
+    * The `all-page-tags` and `sort-by` query filters no longer exists. Sorting is done via the table component.
 * [Advanced queries](https://docs.logseq.com/#/page/advanced%20queries)
   * Advanced queries are now edited in a code block which means queries are syntax highlighted.
   * Some old advanced queries will no longer work and need to be rewritten. For engineers, see [this file](https://github.com/logseq/logseq/blob/feat/db/deps/db/src/logseq/db/frontend/schema.cljs) and compare `schema` with `schema-for-db-based-graph` to see what has changed.
