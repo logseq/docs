@@ -1,4 +1,4 @@
-## 🌟[[New to Logseq?]]
+- ## 🌟[[New to Logseq?]]
 	- ### Basics
 		- [[Start here]]
 		- [[How to create a new graph]]
@@ -25,45 +25,42 @@
 	- [[Glossary]]
 	- [[Testimonials]]
 	- [Awesome Logseq](https://github.com/logseq/awesome-logseq) (community extensions and resources)
-- ## [[Features]]
+- ## [Features]([[Feature]])
 	- ### Basic Features
-		- [[Document syntax]]
-			- [[Markdown]]
-			- [[Org Mode]]
 		- [Backlink]([[term/backlink]])
-		- [[Knowledge Graph]]
 		- [[Page and block references]]
 		- [[Page embed]] and [[Block embed]]
-		- [Page alias]([[term/alias]])
 		- [[Properties]]
+		- [Page alias]([[term/alias]])
 	- ### Productivity
 		- [[Tasks]]
-		- [[Commands]]
-		- [[Advanced commands]]
+		- [[Commands]] and [[Advanced commands]]
+		- [[Queries]] and [[Query Builder]]
 		- [[Templates]]
 	- ### Media
-		- [[Draw]]
-		- [[Whiteboard]]
 		- [[PDF highlights]]
+		- [[Whiteboard]]
 		- [[Embed Media - Audio, Photos, Videos]]
+		- [[Draw]]
 		- [[Zotero]] integration
 	- ### Tools
 		- [[Flashcards]]
 		- [[Slide]]
 		- [[Calculator]]
-		- [[Queries]] and [[Query Builder]]
 		- [[Tables]]
 		- [[Publishing]]
+		- [[Knowledge Graph]]
 	- ### Customization
+		- [[User configuration]]
 		- [[Custom theme]]
 		- [[Plugins]]
 		- 👤 [[Settings]]
+		- Document formats: [[Markdown]] and [[Org Mode]]
 - ## [[Advanced Logseq]]
 	- ✨ [[Tips and Tricks]]
 	- [[Keyboard shortcuts]]
 	- [[Advanced Queries]]
 	- [[Hiccup]]
-	- [[Filename format]]
 	- [[Migrate to Logseq Beta]]
 - ## [[Contribute]]
 	- Make a [Feature Request](https://discuss.logseq.com/)
