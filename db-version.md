@@ -267,7 +267,7 @@ Here are more new tags that are built-in, most of which are created with `/` com
 * `#Code` - Create a code block with the `/Code block` command or by typing the backtick ` three times.
 * `#Quote` - Create a quote block with the `/Quote` command or by typing `>`.
 * `#Math` - Create a math block written as LaTeX with the `/Math block` command.
-* `#Pdf Annotation` - A node with this tag is created each a [pdf is annotated or highlighted](https://docs.logseq.com/#/page/pdf%20highlights).
+* `#PDF Annotation` - A node with this tag is created each a [pdf is annotated or highlighted](https://docs.logseq.com/#/page/pdf%20highlights).
 
 Like other tags, go to their tag pages to view and manage all of them in one place. Also like other tags, extend any tag by adding more properties to it. For example, add an author property to `#Quote` to optionally add authors to quotes.
 
@@ -288,8 +288,8 @@ Tables are currently found on new tag pages, property pages, query results and t
 
 ## DB Graph Importer
 
-The DB Graph Importer converts a file graph to a DB graph. Some of the main things it does:
-* It imports markdown files and assets like images. Import of org mode files will be added later.
+The DB Graph Importer converts a file graph to a DB graph. An overview of what it does:
+* It imports markdown files.
 * All tasks are imported as new [tasks](#tasks). Some task statuses have been remapped to avoid duplicates e.g. `TODO` and `LATER`. The following statuses have been remapped:
   * `LATER` -> `Todo`
   * `IN-PROGRESS` and `NOW` -> `Doing`
@@ -303,6 +303,12 @@ The DB Graph Importer converts a file graph to a DB graph. Some of the main thin
   * Tags are removed from their blocks when the `Remove inline tags` checkbox is checked. This matches the behavior of the DB version.
 * Property types are automatically detected for Number, Date, Checkbox, Url, Node and Text. If a property value has two conflicting but compatible types like Number and Text, it will choose the more lenient Text type.
 
+There are existing features that have a database equivalent that are still a TODO for the importer:
+  * Import assets as `#Asset` and pdf annotations as `#PDF Annotation`
+  * Import org mode files
+  * Import text files e.g. *.txt or *.edn
+  * Import advanced command blocks that begin with `#+BEGIN`
+  * Query macros and related query filters that have changed
 
 ### Convert File Graph to DB graph
 
