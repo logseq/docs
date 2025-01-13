@@ -303,6 +303,8 @@ The DB Graph Importer converts a file graph to a DB graph. An overview of what i
   * Tags are removed from their blocks when the `Remove inline tags` checkbox is checked. This matches the behavior of the DB version.
 * Property types are automatically detected for Number, Date, Checkbox, Url, Node and Text. If a property value has two conflicting but compatible types like Number and Text, it will choose the more lenient Text type.
 
+### Importer Todos
+
 There are existing features that have a database equivalent that are still a TODO for the importer:
   * Import assets as `#Asset` and pdf annotations as `#PDF Annotation`
   * Import org mode files
