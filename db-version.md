@@ -1,6 +1,6 @@
 ## Description
 
-This page describes DB (database) graph functionality as of Nov 27th. See [here](https://test.logseq.com/#/) to try the latest stable version. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
+This page describes DB (database) graph functionality as of Jan 22nd. See [here](https://test.logseq.com/#/) to try the latest stable version. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
 
 NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we recommend only using DB graphs for testing purposes.
 
@@ -42,13 +42,12 @@ However, blocks and pages will have some differences as noted in the [pages](#pa
 
 Things that are specific to pages:
 * Pages have a dedicated view called `All pages`.
-* As seen on `All pages`, pages have different page types: `Page, Property, Tag, Journal and Whiteboard`. Think of these as directories on a file system.
+* When a property, new tag, journal or whiteboard are created, they are created as a page.
 * Pages are unique as follows:
-  * Page names of type 'page' are unique by tag e.g. there can be `Apple #Company` and `Apple #Fruit`.
+  * Page names are unique by tag e.g. there can be `Apple #Company` and `Apple #Fruit`.
   * Property names are unique and can have the same names as built-in property names.
-  * Page names of other types are unique for their page type e.g. there can be a `#Journal` and a Journal page.
   * The uniqueness of these pages should be visible everywhere in the app with icons for page types and the display of a page's tag(s).
-* Hovering over a page title shows common features like `Set Property` to add a property to the page.
+* Hovering over a page title shows common features like `Set page property` to add a property to the page.
 
 ### Blocks
 
@@ -83,7 +82,7 @@ NOTE: Most shortcuts have a corresponding search command. You can find the comma
 
 ### Configure a Property
 
-Properties are configurable wherever they are used by clicking on its name to display a dropdown menu. Press `Cmd` and click to navigate to a property page. Property icons are set by clicking on the property's default icon to the left of its name. Properties can also be configured by navigating to their page with [Search](https://docs.logseq.com/#/page/search) and then clicking on the `Configure property` link below its name.
+Properties are configurable wherever they are used by clicking on its name to display a dropdown menu. Press `Cmd` and click to navigate to a property page. Property icons are set by clicking on the property's default icon to the left of its name. Properties can also be configured by navigating to their page with [Search](https://docs.logseq.com/#/page/search) and then clicking on the `Configure property` button below its name.
 
 Property fields in the dropdown menu:
 
@@ -91,10 +90,14 @@ Property fields in the dropdown menu:
 * `Property type`: This determines what type a property's property values will have. Once a property is used this field cannot change. If you're unsure of what type to choose, use `Text`. See [property-types](#property-types) for more.
 * `Default value`: This sets the default value for a property. See [property-default-values](#property-default-values) for more.
 * `Available choices`: This limits a property to only have one of the defined choices. See [property choices](#property-choices) for more.
+* `Checkbox state mapping`: For properties that have [property choices](#property-choices), this defines mapping two choices to be checked or unchecked on a checkbox. To enable seeing the checkbox, configure the `Show as checkbox on ...` field.
 * `Multiple values`: When selected, a property can have multiple values associated with it. All property types can have multiple values except for checkbox and datetime.
 * `UI position`: This determines where the property values are displayed. By default the values are displayed as a row-like block under a block (`Block properties`). You can also choose to display property values at the beginning like task status, under a block like deadline date, or at the end of a block.
 * `Hide by default`: When selected, a property won't be visible on any of its blocks by default. But it will be visible if you zoom in on its blocks or display them in the sidebar.
 * `Hide empty value`: When selected, a property won't be visible on a block if it is has an empty property value.
+
+Some property fields are only configurable from certain contexts:
+* `Show as checkbox on ...`: This appears when clicked from a node or from a tag's `Tag properties`. When selected, a checkbox will show on that node or any node with that tag respectively. For this to take affect, the property must have configured `Checkbox state mapping`.
 
 ### Built-in Properties
 
@@ -106,15 +109,15 @@ A property type determines what type a property's property values can have. Ther
 
 * `Text`: This is the recommended default as it allows for any text and behaves like a block. This means that node references work here and children blocks can be created under the block.
 * `Number`: This is for numbers including negative numbers and floats e.g. 3.5. Unlike file graph properties, these are stored as actual numbers. This means that all features and queries that use this property type correctly sort as numbers by default.
-* `Date`: This is for dates and is editable with a date picker. When a date property value is used, it correctly links to the journal page.
-* `DateTime`: This is for date times and is editable with a datetime picker. See the `Due` property in [cards](#cards) for an example property that uses this.
+* `Date`: This is for dates and is editable with a date picker. When a date property value is used, it correctly links to the journal page. This property type can be used with [repeated nodes](#repeated-tasks-and-nodes).
+* `DateTime`: This is for date times and is editable with a datetime picker. See the `Due` property in [cards](#cards) for an example property that uses this. This property type can be used with [repeated nodes](#repeated-tasks-and-nodes).
 * `Checkbox`: This is used to set or unset a property value and displays as a checkbox. To engineers this type is known as a boolean.
 * `Url`: This limits text to only allow urls e.g. `https://logseq.com`. This does not behave like `Text` e.g. no referencing or child blocks.
 * `Node`: This allows a property value to link to other nodes i.e. pages or blocks. When first configuring this, you are prompted to select a new tag. You can choose to skip a tag if you don't care about limiting the available nodes. When a tag is selected or created, only nodes with that tag will appear as options for the property. For example, if you define the property `Author`, you could create a new tag `#Person` that only allows nodes tagged with `#Person` as values. Also worth noting that tag selection works for all child tags of the chosen new tag. Using the previous example, if `#Actor` is a child of `#Person`, nodes tagged with `#Person` or `#Actor` are allowed values.
 
 ### Property Choices
 
-Property choices allow a property to only have one of the defined choices. Only the property types `Text`, `Url` and `Number` support this. From the [configuration dropdown](#configure-a-property), a property choice can be added, deleted and edited to have a required value, an optional description and an optional icon. Drag the choices up and down to order how they appear. For a good example of choices see the `Status` property.
+Property choices allow a property to only have one of the defined choices. Only the property types `Text`, `Url` and `Number` support this. From the [configuration dropdown](#configure-a-property), a property choice can be added, deleted and edited to have a required value, an optional description and an optional icon. Drag the choices up and down to order how they appear. For a good example of choices see the `Status` property. A property with property choices can be used with [repeated nodes](#repeated-tasks-and-nodes).
 
 If a property has already been used, it is possible to convert it to use choices. After clicking `Add choice`, a panel displays to convert all existing property values to choices. If a property is using choices, it is possible to stop using choices by deleting them from the property. Caution: deleting a choice from a property also currently deletes the choice from all blocks it is used.
 
@@ -136,7 +139,7 @@ To create your first new tag:
 
 For example, say we created a new tag `Person` and added `lastName` and `birthday` tag properties to it. Now when `#Person` is added to a block or page, those two properties automatically display and are editable for them. A powerful thing about new tags is that when its tag properties change those changes immediately show up on all [tagged nodes](#tagged-node).
 
-A new tag can have properties on its own page. By default the `Description` property is available for adding a description and `Hide from node` is available to hide the new tag on tagged nodes that float to the far right.
+A new tag can have properties on its own page. By default the `Description` property is available for adding a description and `Hide from node` is available to hide the new tag on tagged nodes that float to the far right. To set these properties you must be on the tag's page, hover over the tag's name and click on `Set page property`.
 
 ### Create Tags
 
@@ -148,6 +151,9 @@ Ways to create tags:
 * Configure a `Node` property type to have a new tag config.
 * Configure a new tag to have a `Parent`, the new `Parent` value becomes a tag.
 * In a block type `#NAME` and press `Esc`. An inline tag is created. Not recommended as it doesn't work for all use cases.
+* Convert any page to a tag by clicking on the three dots menu in the upper right corner and clicking `Convert to Tag`.
+
+Any tag can be converted to a page by clicking on the three dots menu and clicking `Convert Tag to Page`.
 
 ### Parent Tags
 
@@ -157,9 +163,9 @@ A powerful feature of using a parent tag is that the new tag inherits the proper
 
 ### Configure a New Tag
 
-New tags are configurable from their page. Navigate to their page by using [Search](https://docs.logseq.com/#/page/search) or clicking on their `#` name links. On their page below their title, two important properties display by default and are editable:
+New tags are configurable from their page. Navigate to their page by using [Search](https://docs.logseq.com/#/page/search) or clicking on their `#` name links. On their page, hover over their name to see the rotating triangle icon to the left. Click on it to see the tag page's properties. Two important properties you'll see for configuring a tag:
 
-* `Parent`: Use this to allow the class to inherit the parent classes properties. By default the parent tag is the `Root Tag` which doesn't have any properties.
+* `Parent`: Use this to allow the new tag to inherit its parent's tag properties. By default the parent tag is the `Root Tag` which doesn't have any properties.
 * `Tag Properties`: These tag properties are inherited by every node that uses the new tag. Drag one above or below the other to sort them. These properties will then display sorted on the tagged node.
   * To the right of each tag property there is an optional block for describing the property. This description also shows up on the property's page.
 
@@ -180,7 +186,7 @@ The features in this section use [new tags](#new-tags). Each of these features h
 
 ### Tasks
 
-Tasks are improved from the previous version as they more powerful and customizable. All tasks are blocks with the built-in new tag `#Task`. When a task is created it has the properties status, priority and deadline.
+Tasks are improved from the previous version as they more powerful and customizable. All tasks are blocks with the built-in new tag `#Task`. When a task is created it has the properties `Status`, `Priority`, `Deadline` and `Scheduled`.
 
 #### Create a Task
 
@@ -193,13 +199,13 @@ A new task can be created in a number of ways:
 
 Any block can have a task property value set with a command or a keybinding. The commands start with `Add task` and the keybindings are:
 
-* To set property `status`, press `p s`.
-* To set property `priority`, press `p p`.
-* To set property `deadline`, press `p d`.
+* To set property `Status`, press `p s`.
+* To set property `Priority`, press `p p`.
+* To set property `Deadline`, press `p d`.
 
 The statuses `Todo`, `Doing` and `Done` can be cycled through with `Cmd-Enter`.
 
-The `/STATUS` commands can set a status where `STATUS` is one of the status choices e.g. `/todo`. Similarly, priority choices can be set with `/PRIORITY` commands. `/Deadline` sets the deadline property.
+The `/STATUS` commands can set a status where `STATUS` is one of the status choices e.g. `/todo`. Similarly, priority choices can be set with `/PRIORITY` commands. `/Deadline` sets the `Deadline` property. `/Scheduled` sets the `Scheduled` property.
 
 #### Task Status
 
@@ -211,6 +217,18 @@ The status property is probably the most often used task property and thus it ha
 * `In Review`
 * `Done`
 * `Canceled`
+
+This property keeps a history of status changes for each block. Once this property changes from `Todo` to another status, its history is available by clicking on the task's spent time e.g. `9s` on the right side of a block.
+
+#### Repeated Tasks and Nodes
+
+Repeating works for tasks as well as for user defined properties. Read to the end to define your own repeated nodes.
+
+Repeated tasks are available on any task that has a `Deadline` (or `Scheduled`) property. When setting the values for these properties in a popup, check `Repeat task` to enable repeating. The datetime interval for repeating is customizable. Click on the number or time interval e.g. `Day` to change it. Once repetition is enabled on a node, it works as follows:
+* When `Status` changes to `Done`, the `Status` resets to `Todo`.
+* When `Status` changes to `Done`, the `Deadline` (or `Scheduled`) property changes to the current day/time plus the current repeated interval. For example, if it's currently 12:20 and the interval is 1 hr, the new value is 13:20.
+
+To define your own repeated nodes, create a `Date` or `DateTime` property and a property with [property choices](#property-choices) that has `Checkbox state mapping` configured. To configure a node with your user properties, re-read the previous paragraph replacing `Status`, `Deadline`, `Todo` and `Done` with your properties and checkbox mapping. One additional configuration you'll want to choose in a date/datetime popup is the property dropdown next to `When`.
 
 #### Customizing Tasks
 
@@ -332,9 +350,20 @@ An automated backup of graphs is available by clicking on the upper right three 
 
 ## Export and Import
 
-Currently the graph can only be exported as a [SQLite](https://sqlite.org/) DB file. To do so, click on the three dots menu in the upper right corner, select `Export Graph` and click the `Export SQLite DB` item. This creates a .sqlite file for use with Logseq. From that same menu, you can also select `Export both SQLite DB and assets` to create a .zip file which contains the .sqlite file and any asset files packaged as a .zip file.
+To export a DB graph, click on the three dots menu in the upper right corner, select `Export graph` and then choose one of the following options:
 
-To import the exported .sqlite file, click on the three dots menu in the upper right corner, select `Import` and click the `SQLite` item.
+1. `Export SQLite DB` - Export graph as a [SQLite](https://sqlite.org/) .db file.
+2. `Export both SQLite DB and assets` - Export graph as a .zip file containing the DB file and the graph's assets.
+3. `Export debug transit file` - Export graph as a transit file to be shared with the Logseq team for debugging. Any personal sensitive data is removed.
+4. `Export public pages` - Export graph in order to publish it on the web. See https://docs.logseq.com/#/page/publishing for more.
+
+To import a DB graph, click on the three dots menu in the upper right corner, selecting `Export graph` and then choose one of the following options:
+
+To import the exported .sqlite file, click on the three dots menu in the upper right corner, select `Import` and then choose one of the following options:
+
+1. `SQLite` - Import using the SQLite DB file from export.
+2. `File to DB graph` - Import a markdown graph. See the [db graph importer](#db-graph-importer) for more on it.
+3. `Debug Transit` - Import a debug transit file from export.
 
 ## Scripting
 

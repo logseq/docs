@@ -15,6 +15,8 @@ The following changes affect both file and the new db graphs:
 * A good amount of the UI is rewritten to use [shadcn](https://github.com/shadcn-ui/ui). This means a more beautiful, consistent and powerful UI!
 * The application performance is better - loading faster and handling larger graphs. For DB graphs, our last performance test exercised 30k+ pages.
 * On desktop, the graph cache directory `~/.logseq/graphs/` has moved to `~/logseq/graphs`. See [DB Graph Directories](#db-graph-directories) for how they are used for DB graphs.
+* Plugins can be used from the web.
+* The visibility of left sidebar items are configurable. To configure, hover over the `Navigations` header and click on the filter icon to open a dropdown for toggling visibility of sidebar items.
 
 ## DB Graph Changes
 
@@ -48,6 +50,7 @@ Miscelleanous changes:
 * For browsers, currently only one tab can be open. This is a limitation we hope to remove later.
 * `All Pages` view can toggle between table and list view.
 * Run the command `Customize appearance` to display a modal of appearance related settings.
+* For developers, there is a `Validate current graph` command.
 
 ### Changes by Feature
 
@@ -118,4 +121,5 @@ Miscelleanous changes:
 ## File Graph Changes
 
 * There is no longer a [conversion feature for filename formats](https://docs.logseq.com/#/page/filename%20format)
+* The attribute `:block/content` no longer exists. If used in an advanced query including in config.edn's `:default-queries`, change it to use `:block/title` e.g. `[?b :block/content "content"]` -> `[?b :block/title "content"]`
 * The attribute `:block/journal?` no longer exists. If used in an advanced query including in config.edn's `:default-queries`, change it to use `:block/type` e.g. `[?p :block/journal? true]` -> `[?p :block/type "journal"]`
