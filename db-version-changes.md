@@ -15,7 +15,7 @@ The following changes affect both file and the new db graphs:
 * A good amount of the UI is rewritten to use [shadcn](https://github.com/shadcn-ui/ui). This means a more beautiful, consistent and powerful UI!
 * The application performance is better - loading faster and handling larger graphs. For DB graphs, our last performance test exercised 30k+ pages.
 * On desktop, the graph cache directory `~/.logseq/graphs/` has moved to `~/logseq/graphs`. See [DB Graph Directories](#db-graph-directories) for how they are used for DB graphs.
-* Plugins can be used from the web.
+* Plugins can be used from the web. For security reasons only [plugins configured with no "effect"](https://github.com/logseq/marketplace#how-to-submit-your-plugin) are usable. We will gradually open up effect plugins to certified/trustworthy plugins.
 * The visibility of left sidebar items are configurable. To configure, hover over the `Navigations` header and click on the filter icon to open a dropdown for toggling visibility of sidebar items.
 
 ## DB Graph Changes
