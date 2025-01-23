@@ -224,11 +224,13 @@ This property keeps a history of status changes for each block. Once this proper
 
 Repeating works for tasks as well as for user defined properties. Read to the end to define your own repeated nodes.
 
-Repeated tasks are available on any task that has a `Deadline` (or `Scheduled`) property. When setting the values for these properties in a popup, check `Repeat task` to enable repeating. The datetime interval for repeating is customizable. Click on the number or time interval e.g. `Day` to change it. Once repetition is enabled on a node, it works as follows:
+Repeated tasks are available on any task that has a `Deadline` (or `Scheduled`) property. When setting the values for these properties in a popup, check `Repeat task` to enable repeating. The datetime interval for repeating is customizable. Click on the number or time interval e.g. `Day` to change it. For dates, the time interval ranges from `Day` to `Year`. For datetimes, the time interval ranges from `Minute` to `Year`.
+
+Once repetition is enabled on a node, it works as follows:
 * When `Status` changes to `Done`, the `Status` resets to `Todo`.
 * When `Status` changes to `Done`, the `Deadline` (or `Scheduled`) property changes to the current day/time plus the current repeated interval. For example, if it's currently 12:20 and the interval is 1 hr, the new value is 13:20.
 
-To define your own repeated nodes, create a `Date` or `DateTime` property and a property with [property choices](#property-choices) that has `Checkbox state mapping` configured. To configure a node with your user properties, re-read the previous paragraph replacing `Status`, `Deadline`, `Todo` and `Done` with your properties and checkbox mapping. One additional configuration you'll want to choose in a date/datetime popup is the property dropdown next to `When`.
+To define your own repeated nodes, create a `Date` or `DateTime` property and a property with [property choices](#property-choices) that has `Checkbox state mapping` configured. To configure a node with your user properties, re-read the previous paragraphs replacing `Status`, `Deadline`, `Todo` and `Done` with your properties and checkbox mapping. One additional configuration you'll want to choose in a date/datetime popup is the property dropdown next to `When`.
 
 #### Customizing Tasks
 
