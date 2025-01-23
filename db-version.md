@@ -218,7 +218,7 @@ The status property is probably the most often used task property and thus it ha
 * `Done`
 * `Canceled`
 
-This property keeps a history of status changes for each block. Once this property changes from `Todo` to another status, its history is available by clicking on the task's spent time e.g. `9s` on the right side of a block.
+This property keeps a history of status changes for each block. Once this property changes from `Todo` to another status, its history is available by clicking on the task's spent time e.g. `9s` on the right side of a block. This history is queryable through advanced queries.
 
 #### Repeated Tasks and Nodes
 
