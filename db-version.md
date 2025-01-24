@@ -301,6 +301,7 @@ A table displays a group of nodes as rows and a node's properties as columns. A 
 * Switch between `Table View`, `List View` or `Gallery View` by selecting one in the table's header. The `List View` displays nodes in an outliner with nodes grouped by pages. The `Gallery View` is useful for viewing blocks as square tiles, especially for assets.
 * Resize columns by dragging the resize handle at a column header's border.
 * Click on the magnifying glass icon to live search a table. This is the only feature that doesn't persist when switching away from a table.
+* Click `+ New` at the bottom of a table to create a new block. If in a property or tags table, the newly created block will be associated with the respective property or tag.
 
 A powerful new feature of tables is the ability to create a table view. This is currently enabled for tag pages. To use it, click the `+` icon in the upper left to create a new tab in the table. Click on the tab's header to rename or delete this new view. Within this view, all of the above persisting features will save!
 
