@@ -93,6 +93,7 @@ Miscelleanous changes:
 * [Advanced queries](https://docs.logseq.com/#/page/advanced%20queries)
   * Advanced queries are now edited in a code block which means queries are syntax highlighted.
   * Some old advanced queries will no longer work and need to be rewritten. For engineers, see [this file](https://github.com/logseq/logseq/blob/feat/db/deps/db/src/logseq/db/frontend/schema.cljs) and compare `schema` with `schema-for-db-based-graph` to see what has changed.
+  * The attribute `:block/content` was renamed to `:block/title`. If used in an advanced query including in config.edn's `:default-queries`, change it to use `:block/title` e.g. `[?b :block/content "content"]` -> `[?b :block/title "content"]`
   * These advanced query options are deprecated: :title, :group-by-page? and :collapsed?.
 * Since block timestamps are available, they display in table view where possible.
 
@@ -121,5 +122,5 @@ Miscelleanous changes:
 ## File Graph Changes
 
 * There is no longer a [conversion feature for filename formats](https://docs.logseq.com/#/page/filename%20format)
-* The attribute `:block/content` no longer exists. If used in an advanced query including in config.edn's `:default-queries`, change it to use `:block/title` e.g. `[?b :block/content "content"]` -> `[?b :block/title "content"]`
+  * The attribute `:block/content` was renamed to `:block/title`. If used in an advanced query including in config.edn's `:default-queries`, change it to use `:block/title` e.g. `[?b :block/content "content"]` -> `[?b :block/title "content"]`
 * The attribute `:block/journal?` no longer exists. If used in an advanced query including in config.edn's `:default-queries`, change it to use `:block/type` e.g. `[?p :block/journal? true]` -> `[?p :block/type "journal"]`
