@@ -1,6 +1,6 @@
 ## Description
 
-This page describes DB (database) graph functionality as of Jan 22nd. See [here](https://test.logseq.com/#/) to try the latest stable version. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
+This page describes DB (database) graph functionality as of Feb 12th. See [here](https://test.logseq.com/#/) to try the latest stable version. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
 
 NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we recommend only using DB graphs for testing purposes.
 
@@ -191,9 +191,10 @@ Tasks are improved from the previous version as they more powerful and customiza
 #### Create a Task
 
 A new task can be created in a number of ways:
-* Set the status of a block by typing the status choice e.g. `/todo` or cyling status with `Cmd-Enter`.
+* On a block without a tag, add the `Status` property by typing the status choice e.g. `/todo` or cyling status with `Cmd-Enter`.
 * Type text in a block and end it with `#Task`.
 * When on the `Task` page, create a new row in the Task table.
+* On a block without a tag, add the `Deadline` or `Scheduled` property by typing `/Deadline` or `/Scheduled`.
 
 #### Task Shortcuts
 
@@ -294,14 +295,21 @@ Like other tags, go to their tag pages to view and manage all of them in one pla
 ## Tables
 
 A table displays a group of nodes as rows and a node's properties as columns. A table behaves like a spreadsheet as table cells are editable by default. A node has the following special columns which are available by default: `Name`, `Created At` and `Updated At`. Tables have the following features:
-* Sort rows by any column, ascending or descending.
-* Filter rows by multiple columns by clicking on the filter icon. For columns with a specific property type e.g. :number and :date, there are specific filters for that type.
-* Hide columns by clicking on the three dots menu and selecting `Columns visibility`.
-* Drag columns to sort their order.
+* Sort rows by multiples columns, sorting each by ascending or descending. Click on the sort icon to remove a sorting.
+* Filter rows by multiple columns by clicking on the filter icon.
+  * Multiple filters can be applied. By default, only rows that match all filters display (AND the filters). To match on any filter (OR filters), change the dropdown on the right to `Match any filter`.
+  * For columns with a specific property type e.g. :number and :date, there are specific filters for that type.
+* Group rows by a column by clicking on the three dots menu and selecting `Group by`.
+  * Rows can be grouped by all property types except `DateTime`.
+  * While each group is displayed as a different table, they all obey the same column configurations.
 * Switch between `Table View`, `List View` or `Gallery View` by selecting one in the table's header. The `List View` displays nodes in an outliner with nodes grouped by pages. The `Gallery View` is useful for viewing blocks as square tiles, especially for assets.
-* Resize columns by dragging the resize handle at a column header's border.
 * Click on the magnifying glass icon to live search a table. This is the only feature that doesn't persist when switching away from a table.
 * Click `+ New` at the bottom of a table to create a new block. If in a property or tags table, the newly created block will be associated with the respective property or tag.
+* Columns can be configured in a number of ways:
+  * Hide columns by clicking on the three dots menu and selecting `Columns visibility`.
+  * Drag columns to sort their order.
+  * Pin column(s) to ensure they appear first.
+  * Resize columns by dragging the resize handle at a column header's border.
 
 A powerful new feature of tables is the ability to create a table view. This is currently enabled for tag pages. To use it, click the `+` icon in the upper left to create a new tab in the table. Click on the tab's header to rename or delete this new view. Within this view, all of the above persisting features will save!
 
@@ -353,6 +361,8 @@ An automated backup of graphs is available by clicking on the upper right three 
 
 ## Export and Import
 
+### Graph Export
+
 To export a DB graph, click on the three dots menu in the upper right corner, select `Export graph` and then choose one of the following options:
 
 1. `Export SQLite DB` - Export graph as a [SQLite](https://sqlite.org/) .db file.
@@ -367,6 +377,18 @@ To import the exported .sqlite file, click on the three dots menu in the upper r
 1. `SQLite` - Import using the SQLite DB file from export.
 2. `File to DB graph` - Import a markdown graph. See the [db graph importer](#db-graph-importer) for more on it.
 3. `Debug Transit` - Import a debug transit file from export.
+
+### EDN Data Export
+
+Exported EDN data allows any DB graph content to be shared between users as text. With this text, a user can then import it to replicate the same visible and behavioral content including the content's properties, tags. This is important as it gives users control of their content and enables some workflows that aren't possible with file graphs. This feature is available with the following commands:
+
+* `Export block EDN data` - Run this command on the current block to copy it to the clipboard. When this data is imported, it will overwrite the current block.
+* `Export page EDN data` - Run this command on the current page to copy it to the clipboard. When this is imported to an existing page, it will append to the existing page.
+* `Export graph's tags and properties EDN data` - Run this command to copy the entire graph's tags and properties. This is useful for sharing your workflows with others without sharing your graph-specific data. This is an example of a workflow that was not possible with file graphs.
+* `Import EDN data` - Run this command to import any of the above exported data. If importing a block, you must have focus on the block you want to import into.
+
+For developers, this shareable EDN data can also be used in scripts to create or modify existing graphs. For example, a page's data could be passed to [this script](https://github.com/logseq/logseq/blob/feat/db/deps/db/script/create_graph.cljs) to create a new DB graph with that page.
+
 
 ## Scripting
 
