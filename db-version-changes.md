@@ -122,5 +122,8 @@ Miscelleanous changes:
 ## File Graph Changes
 
 * There is no longer a [conversion feature for filename formats](https://docs.logseq.com/#/page/filename%20format)
+* Attribute changes:
   * The attribute `:block/content` was renamed to `:block/title`. If used in an advanced query including in config.edn's `:default-queries`, change it to use `:block/title` e.g. `[?b :block/content "content"]` -> `[?b :block/title "content"]`
-* The attribute `:block/journal?` no longer exists. If used in an advanced query including in config.edn's `:default-queries`, change it to use `:block/type` e.g. `[?p :block/journal? true]` -> `[?p :block/type "journal"]`
+  * The attribute `:block/original-name` was renamed to `:block/title`. If used in an advanced query including in config.edn's `:default-queries`, change it to use `:block/title` e.g. `[?b :block/original-name "name"]` -> `[?b :block/title "name"]`
+  * The attribute `:block/journal?` no longer exists. If used in an advanced query including in config.edn's `:default-queries`, change it to use `:block/type` e.g. `[?p :block/journal? true]` -> `[?p :block/type "journal"]`
+  * The attribute `:block/left` no longer exists and has been replaced by `:block/order`. It is not recommended to write queries with this attribute.
