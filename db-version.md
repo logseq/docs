@@ -435,3 +435,11 @@ DB graphs are scriptable using https://github.com/logseq/nbb-logseq/tree/feat/db
 * https://github.com/logseq/logseq/tree/feat/db/deps/db/script - Scripts to query, validate and create any graph
 * https://github.com/logseq/logseq/blob/feat/db/deps/outliner/script/transact.cljs - Script to transact (modify) nodes queried from the commandline
 * https://github.com/logseq/logseq/tree/feat/db/scripts/src/logseq/tasks/db_graph - More complex scripts to generate graphs with all property types or with schema.org's ontology. See [this readme](https://github.com/logseq/logseq/tree/feat/db/scripts#nbb-scripts) for using these.
+
+### Modify a DB Graph
+
+On desktop, it is easy to modify an existing DB graph with a script and see the change in Logseq. To do so:
+
+1. Press Cmd-S to persist a graph to `~/logseq/graphs/GRAPH-NAME/db.sqlite`.
+2. Modify the db.sqlite with a nbb-logseq script.
+3. Update the app to use the modified db.sqlite by using the `Replace graph with its db.sqlite file` dev command.
