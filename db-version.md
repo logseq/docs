@@ -15,8 +15,11 @@ NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we 
   * [Queries](#queries)
   * [Cards](#cards)
   * [Assets](#assets)
+  * [Templates](#templates)
   * [More New Tags](#more-new-tags)
-* [Tables](#tables)
+* [Bulk Actions](#bulk-actions)
+* [Views](#views)
+  * [Tables](#tables)
 * [DB Graph Importer](#db-graph-importer)
 * [Automated Backup](#automated-backup)
 * [Export and Import](#export-and-import)
@@ -259,7 +262,7 @@ A [(simple) query](https://docs.logseq.com/#/page/queries) and [advanced query](
 * Type a simple query in a block and then type the `/Query` command to run the query.
 * Type the `/Advanced Query` command to create an advanced query.
 
-Like other new tags, go to the `#Query` page to see a table to manage queries. Query results are displayed with the new [tables](#tables).
+Like other new tags, go to the `#Query` page to see a table to manage queries. Query results are displayed in a [view](#views).
 
 ### Cards
 
@@ -282,6 +285,12 @@ You can rate them using 4 levels to arrange their next review date.
 
 An asset has the new tag `#Asset`. Assets are created by dragging and dropping a file onto a block. They can also be batch uploaded by going to the `#Asset` page and clicking the `+` icon from the `Tagged Nodes` table. Asset files are stored under a graph's `assets/` directory. Manage assets from the `#Asset` page's `Tagged Nodes` section. The `Gallery View` is a helpful way to view assets.
 
+### Template
+
+A template has the new tag `#Template`. A template allows for block(s) and their children to be easily copied. To create a template, write the name of the template in a new block and tag the block with `#Template`. Then add children blocks (however many levels deep) under the template block. To insert a copy of a template, use the `/Template` command.
+
+When creating a template block, there is an optional `Apply template to tags` property to use. This property provides interesting automation whenever a [tagged node](#tagged-node) is created for a configured tag. For example, create a template and configure the property to apply to `#Journal`. Now whenever a journal page is created, the template gets applied at the top of the page. If a tag is configured with multiple templates, the templates are applied in succession. When a tagged node is a block instead of a page e.g. `#Task`, the template is applied as the first child of the block. Templates can apply to built-in and user tags.
+
 ### More New Tags
 
 Here are more new tags that are built-in, most of which are created with `/` commands:
@@ -292,28 +301,53 @@ Here are more new tags that are built-in, most of which are created with `/` com
 
 Like other tags, go to their tag pages to view and manage all of them in one place. Also like other tags, extend any tag by adding more properties to it. For example, add an author property to `#Quote` to optionally add authors to quotes.
 
-## Tables
+## Bulk Actions
+
+Bulk actions are a powerful way to make changes across nodes. When multiple nodes are selected, bulk actions can be taken on them. To select nodes in a block context, use a mouse or the shift + arrow keys. Once nodes are selected, a bulk action header appears above the blocks. The bulk action header can be closed with `Esc`. The following bulk actions are available in the header:
+* `Tag`: Click on `#` icon to add/update/remove [new tags](#new-tags) for selected nodes.
+* `Copy`: Copy the block or page title of selected nodes.
+* `Set Property`: Add or update a [property](#properties) for selected nodes.
+* `Unset Property`: Remove a [property](#properties) for selected nodes.
+* `Delete`: Click on the trash icon to delete selected nodes.
+* `Three dots menu`: Click on the three dots icon to invoke additional actions to apply to selected nodes. These actions mostly consist of ones that are available when right clicking on a block.
+
+Nodes can also be selected and have bulk actions in [tables](#tables).
+
+## Views
+
+Views are a powerful way to visualize a group of nodes in different ways. A view can switch between the following view types: `Table View`, `List View` or `Gallery View`. Most views default to the [Table View](#tables). The `List View` displays nodes in an outliner with nodes grouped by pages. The `Gallery View` is useful for viewing blocks as square tiles, especially for assets.
+
+Views are used in a number of features including queries, (un)linked references, property and tag pages and `All pages`. For all these features except queries, multiple views can be created. Regardless of which view type you're in, a view's header has these common actions from left to right:
+
+* `View name`: A view's name is editable by clicking on it and renaming it. A view can also be deleted from here.
+* `New view`: Click on `+` to create a new view. Since a view is fairly customizable, this is useful for creating different views on the same nodes and to view a specific subgroup of nodes with filters.
+* `Filter`: Filter nodes by any properties/columns by clicking on the filter icon.
+  * Multiple filters can be created and applied.
+  * By default, only rows that match all filters display (AND the filters). To match on any filter (OR filters), change the dropdown on the right to `Match any filter`.
+  * There are different operators to filter values for every property value type e.g. `Date` and `DateTime`. For example, string values can have `is` or `is not` operators while numbers can also have `<, >, <=, >= and between` operators.
+* `Search`: Live search a view by clicking on the magnifying glass icon. This is the only feature that doesn't persist when switching away from a view.
+* `View type`: Click on the view type name to switch between different types.
+* `Three dots menu`: Click on the three dots menu to invoke additional actions. Some actions are specific to a view type. The following actions are common across view types:
+  * `Group by`: Group by a column/property and its values i.e. a different group for each property value. The different groups are vertically stacked.
+    * Nodes can be grouped by all property types except for `DateTime`.
+    * While each group is displayed as a different view, they all obey the same view-level configuration.
+  * `Export EDN`: Exports the currently viewable nodes to your clipboard as [EDN Data](#edn-data-export). The exported nodes are affected by `Search` or `Filter` usage.
+* `New node`: Click on the `+` icon to create a new node in the view. Different features will behave differently for this. For example, when clicked from a tag or property page, the new node will have that tag or property added to it.
+
+NOTE: All actions that alter what you see are saved except for `Search`!
+
+### Tables
 
 A table displays a group of nodes as rows and a node's properties as columns. A table behaves like a spreadsheet as table cells are editable by default. A node has the following special columns which are available by default: `Name`, `Created At` and `Updated At`. Tables have the following features:
-* Sort rows by multiples columns, sorting each by ascending or descending. Click on the sort icon to remove a sorting.
-* Filter rows by multiple columns by clicking on the filter icon.
-  * Multiple filters can be applied. By default, only rows that match all filters display (AND the filters). To match on any filter (OR filters), change the dropdown on the right to `Match any filter`.
-  * For columns with a specific property type e.g. :number and :date, there are specific filters for that type.
-* Group rows by a column by clicking on the three dots menu and selecting `Group by`.
-  * Rows can be grouped by all property types except `DateTime`.
-  * While each group is displayed as a different table, they all obey the same column configurations.
-* Switch between `Table View`, `List View` or `Gallery View` by selecting one in the table's header. The `List View` displays nodes in an outliner with nodes grouped by pages. The `Gallery View` is useful for viewing blocks as square tiles, especially for assets.
-* Click on the magnifying glass icon to live search a table. This is the only feature that doesn't persist when switching away from a table.
-* Click `+ New` at the bottom of a table to create a new block. If in a property or tags table, the newly created block will be associated with the respective property or tag.
-* Columns can be configured in a number of ways:
-  * Hide columns by clicking on the three dots menu and selecting `Columns visibility`.
+
+* `Sort`: Click on a column to sort it by ascending or descending. Multiples sorts can be applied. Click on the sort icon in the header to remove a sort.
+* `Columns visibility`: Under the three dots menu, this menu can toggle the visibility of any column.
+* `+ New`: At the bottom of the table, this creates a new node, like the `+` icon in the view header.
+* Column actions:
+  * Click on column(s) and select `Pin` to ensure they appear first.
   * Drag columns to sort their order.
-  * Pin column(s) to ensure they appear first.
   * Resize columns by dragging the resize handle at a column header's border.
-
-A powerful new feature of tables is the ability to create a table view. This is currently enabled for tag pages. To use it, click the `+` icon in the upper left to create a new tab in the table. Click on the tab's header to rename or delete this new view. Within this view, all of the above persisting features will save!
-
-Tables are currently found on new tag pages, property pages, query results and the `All Pages` view.
+* Bulk actions: When rows in the table are selected, bulk actions appear in the table header. All the bulk actions [described above](#bulk-actions) are available except for the `Three dots menu`.
 
 ## DB Graph Importer
 
@@ -368,7 +402,8 @@ To export a DB graph, click on the three dots menu in the upper right corner, se
 1. `Export SQLite DB` - Export graph as a [SQLite](https://sqlite.org/) .db file.
 2. `Export both SQLite DB and assets` - Export graph as a .zip file containing the DB file and the graph's assets.
 3. `Export debug transit file` - Export graph as a transit file to be shared with the Logseq team for debugging. Any personal sensitive data is removed.
-4. `Export public pages` - Export graph in order to publish it on the web. See https://docs.logseq.com/#/page/publishing for more.
+4. `Export EDN file` - Export graph as EDN described in [EDN Data Export](#edn-data-export).
+5. `Export public pages` - Export graph in order to publish it on the web. See https://docs.logseq.com/#/page/publishing for more.
 
 To import a DB graph, click on the three dots menu in the upper right corner, selecting `Export graph` and then choose one of the following options:
 
@@ -377,6 +412,7 @@ To import the exported .sqlite file, click on the three dots menu in the upper r
 1. `SQLite` - Import using the SQLite DB file from export.
 2. `File to DB graph` - Import a markdown graph. See the [db graph importer](#db-graph-importer) for more on it.
 3. `Debug Transit` - Import a debug transit file from export.
+4. `EDN to DB graph` - Import a DB graph that was exported as EDN into a new DB graph.
 
 ### EDN Data Export
 
@@ -386,6 +422,8 @@ Exported EDN data allows any DB graph content to be shared between users as text
 * `Export page EDN data` - Run this command on the current page to copy it to the clipboard. When this is imported to an existing page, it will append to the existing page.
 * `Export graph's tags and properties EDN data` - Run this command to copy the entire graph's tags and properties. This is useful for sharing your workflows with others without sharing your graph-specific data. This is an example of a workflow that was not possible with file graphs.
 * `Import EDN data` - Run this command to import any of the above exported data. If importing a block, you must have focus on the block you want to import into.
+
+This feature is also available for the whole graph using the `Export EDN file` and `EDN to DB graph` options described above.
 
 For developers, this shareable EDN data can also be used in scripts to create or modify existing graphs. For example, a page's data could be passed to [this script](https://github.com/logseq/logseq/blob/feat/db/deps/db/script/create_graph.cljs) to create a new DB graph with that page.
 

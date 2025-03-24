@@ -67,7 +67,6 @@ Miscelleanous changes:
 
 * Using terms from the [previous tasks](https://docs.logseq.com/#/page/tasks), a task marker, priority and deadline are respectively now `Status`, `Priority` and `Deadline` properties on a task.
 * [Scheduled](https://docs.logseq.com/#/page/tasks/block/deadline%20and%20scheduled) has been deprecated.
-* Recurring tasks aren't ported and are a TODO.
 * Logbook timestamps have been deprecated.
 * Tasks are no longer created by typing keywords like `TODO` but instead with commands like '/todo'.
 * Read more about the [new tasks](./db-version.md#tasks).
@@ -110,6 +109,10 @@ Miscelleanous changes:
 
 * A graph's config.edn, custom.js and custom.css files are only editable within Logseq from `Settings`.
 * The following config.edn options are no longer used: `:block-hidden-properties, :favorites, :hidden, :ignored-page-references-keywords, :preferred-format, :preferred-workflow, :feature/enable-block-timestamps?, :file/name-format, :org-mode/insert-file-link?, :property/separated-by-commas, :property-pages/enabled?, :property-pages/excludelist`. See [this code](https://github.com/logseq/logseq/blob/043927031e11053a837d8289e3334368e6647bea/src/main/frontend/handler/common/config_edn.cljs#L89-L115) for more details.
+
+#### Search
+* When search modal first opens, recently updated pages display at the top.
+* Tags can be created from the modal as described in [new tags](./db-version.md#new-tags).
 
 #### DB Graph Directories
 
