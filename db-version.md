@@ -23,6 +23,9 @@ NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we 
 * [DB Graph Importer](#db-graph-importer)
 * [Automated Backup](#automated-backup)
 * [Export and Import](#export-and-import)
+  * [Graph Export](#graph-export)
+  * [Graph Import](#graph-import)
+  * [EDN Data Export](#edn-data-export)
 * [Scripting](#scripting)
 
 ## Nodes
@@ -404,6 +407,8 @@ To export a DB graph, click on the three dots menu in the upper right corner, se
 3. `Export debug transit file` - Export graph as a transit file to be shared with the Logseq team for debugging. Any personal sensitive data is removed.
 4. `Export EDN file` - Export graph as EDN described in [EDN Data Export](#edn-data-export).
 5. `Export public pages` - Export graph in order to publish it on the web. See https://docs.logseq.com/#/page/publishing for more.
+
+### Graph Import
 
 To import a DB graph, click on the three dots menu in the upper right corner, selecting `Export graph` and then choose one of the following options:
 
