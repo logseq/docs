@@ -405,7 +405,7 @@ To export a DB graph, click on the three dots menu in the upper right corner, se
 1. `Export SQLite DB` - Export graph as a [SQLite](https://sqlite.org/) .db file.
 2. `Export both SQLite DB and assets` - Export graph as a .zip file containing the DB file and the graph's assets.
 3. `Export debug transit file` - Export graph as a transit file to be shared with the Logseq team for debugging. Any personal sensitive data is removed.
-4. `Export EDN file` - Export graph as EDN described in [EDN Data Export](#edn-data-export).
+4. `Export EDN file` - Export graph as EDN described in [EDN Data Export](#edn-data-export). This feature is not yet recommended as the only means to backup a graph.
 5. `Export public pages` - Export graph in order to publish it on the web. See https://docs.logseq.com/#/page/publishing for more.
 
 ### Graph Import
