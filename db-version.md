@@ -27,6 +27,7 @@ NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we 
   * [Graph Import](#graph-import)
   * [EDN Data Export](#edn-data-export)
 * [Scripting](#scripting)
+* [Additional Links](#additional-links)
 
 ## Nodes
 
@@ -448,3 +449,6 @@ On desktop, it is easy to modify an existing DB graph with a script and see the 
 1. Press Cmd-S to persist a graph to `~/logseq/graphs/GRAPH-NAME/db.sqlite`.
 2. Modify the db.sqlite with a nbb-logseq script.
 3. Update the app to use the modified db.sqlite by using the `Replace graph with its db.sqlite file` dev command.
+
+## Additional Links
+* https://github.com/C0ntr0lledCha0s/logseq-template-graph - Example graph with useful properties and tags
