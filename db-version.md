@@ -1,6 +1,6 @@
 ## Description
 
-This page describes DB (database) graph functionality as of Feb 12th. See [here](https://test.logseq.com/#/) to try the latest stable version. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
+This page describes DB (database) graph functionality as of April 30th. See [here](https://test.logseq.com/#/) to try the latest stable version. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
 
 NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we recommend only using DB graphs for testing purposes.
 
@@ -84,6 +84,7 @@ A property itself can have properties on its property page. By default the `Desc
 * `p t` toggles displaying all the current node's properties below it. This is useful to quickly view properties that are hidden or in a different position.
 * `p i` opens the icon picker to set an icon for the current node.
 * See [task shortcuts](#task-shortcuts) for task specific ones.
+* To navigate between property values across nodes, use the up and down arrow keys.
 
 NOTE: Most shortcuts have a corresponding search command. You can find the command for a given shortcut's keys keybinding by using `Settings > Keymap`, clicking the keystroke filter and typing the keys.
 
@@ -119,7 +120,7 @@ A property type determines what type a property's property values can have. Ther
 * `Date`: This is for dates and is editable with a date picker. When a date property value is used, it correctly links to the journal page. This property type can be used with [repeated nodes](#repeated-tasks-and-nodes).
 * `DateTime`: This is for date times and is editable with a datetime picker. See the `Due` property in [cards](#cards) for an example property that uses this. This property type can be used with [repeated nodes](#repeated-tasks-and-nodes).
 * `Checkbox`: This is used to set or unset a property value and displays as a checkbox. To engineers this type is known as a boolean.
-* `Url`: This limits text to only allow urls e.g. `https://logseq.com`. This does not behave like `Text` e.g. no referencing or child blocks.
+* `Url`. This limits text to only allow urls e.g. `https.//logseq.com`. This does not behave like `Text` e.g. no referencing or child blocks.
 * `Node`: This allows a property value to link to other nodes i.e. pages or blocks. When first configuring this, you are prompted to select a new tag. You can choose to skip a tag if you don't care about limiting the available nodes. When a tag is selected or created, only nodes with that tag will appear as options for the property. For example, if you define the property `Author`, you could create a new tag `#Person` that only allows nodes tagged with `#Person` as values. Also worth noting that tag selection works for all child tags of the chosen new tag. Using the previous example, if `#Actor` is a child of `#Person`, nodes tagged with `#Person` or `#Actor` are allowed values.
 
 ### Property Choices
@@ -405,9 +406,10 @@ To export a DB graph, click on the three dots menu in the upper right corner, se
 
 1. `Export SQLite DB` - Export graph as a [SQLite](https://sqlite.org/) .db file.
 2. `Export both SQLite DB and assets` - Export graph as a .zip file containing the DB file and the graph's assets.
-3. `Export debug transit file` - Export graph as a transit file to be shared with the Logseq team for debugging. Any personal sensitive data is removed.
-4. `Export EDN file` - Export graph as EDN described in [EDN Data Export](#edn-data-export). This feature is not yet recommended as the only means to backup a graph.
+3. `Export EDN file` - Export graph as EDN described in [EDN Data Export](#edn-data-export). This is the only export type that fully captures a graph's data and is editable. This export is not yet recommended as the only means to backup a graph.
+4. `Export as standard Markdown (no block properties)` - Export graph as standard markdown, not Logseq markdown. Since this export is unlikely to ever export timestamps or all properties, it cannot capture all data in a graph. See the EDN export for an export type that captures all data and is editable.
 5. `Export public pages` - Export graph in order to publish it on the web. See https://docs.logseq.com/#/page/publishing for more.
+6. `Export debug transit file` - Export graph as a transit file to be shared with the Logseq team for debugging. Any personal sensitive data is removed.
 
 ### Graph Import
 
@@ -422,17 +424,19 @@ To import the exported .sqlite file, click on the three dots menu in the upper r
 
 ### EDN Data Export
 
-Exported EDN data allows any DB graph content to be shared between users as text. With this text, a user can then import it to replicate the same visible and behavioral content including the content's properties, tags. This is important as it gives users control of their content and enables some workflows that aren't possible with file graphs. This feature is available with the following commands:
+Exported [EDN data](https://github.com/edn-format/edn) allows any DB graph content to be shared between users as text. With this text, a user can then import it to replicate the same visible and behavioral content including the content's properties and tags. This is important as it gives users control of their content and enables some workflows that aren't possible with file graphs. This feature is available with the following commands:
 
 * `Export block EDN data` - Run this command on the current block to copy it to the clipboard. When this data is imported, it will overwrite the current block.
 * `Export page EDN data` - Run this command on the current page to copy it to the clipboard. When this is imported to an existing page, it will append to the existing page.
 * `Export graph's tags and properties EDN data` - Run this command to copy the entire graph's tags and properties. This is useful for sharing your workflows with others without sharing your graph-specific data. This is an example of a workflow that was not possible with file graphs.
 * `Import EDN data` - Run this command to import any of the above exported data. If importing a block, you must have focus on the block you want to import into.
 
-This feature is also available for the whole graph using the `Export EDN file` and `EDN to DB graph` options described above.
+This feature is also available:
+* for the whole graph using the `Export EDN file` and `EDN to DB graph` options described above.
+* from any [view](#views) as a header action. For example, go to the `All pages` view and filter it to only export the viewable pages.
+* for multiple selected nodes with the `Copy / Export as` modal.
 
 For developers, this shareable EDN data can also be used in scripts to create or modify existing graphs. For example, a page's data could be passed to [this script](https://github.com/logseq/logseq/blob/feat/db/deps/db/script/create_graph.cljs) to create a new DB graph with that page.
-
 
 ## Scripting
 
