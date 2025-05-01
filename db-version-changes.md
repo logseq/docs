@@ -66,9 +66,8 @@ Miscelleanous changes:
 
 #### Tasks
 
-* Using terms from the [previous tasks](https://docs.logseq.com/#/page/tasks), a task marker, priority and deadline are respectively now `Status`, `Priority` and `Deadline` properties on a task.
-* [Scheduled](https://docs.logseq.com/#/page/tasks/block/deadline%20and%20scheduled) has been deprecated.
-* Logbook timestamps have been deprecated.
+* Using terms from the [previous tasks](https://docs.logseq.com/#/page/tasks), a task marker, priority, deadline and scheduled are respectively now `Status`, `Priority`, `Deadline` and `Scheduled` properties on a task.
+* Logbook timestamps have been replaced with Status change history.
 * Tasks are no longer created by typing keywords like `TODO` but instead with commands like '/todo'.
 * Read more about the [new tasks](./db-version.md#tasks).
 
