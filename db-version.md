@@ -290,7 +290,7 @@ You can rate them using 4 levels to arrange their next review date.
 
 An asset has the new tag `#Asset`. Assets are created by dragging and dropping a file onto a block. They can also be batch uploaded by going to the `#Asset` page and clicking the `+` icon from the `Tagged Nodes` table. Asset files are stored under a graph's `assets/` directory. Manage assets from the `#Asset` page's `Tagged Nodes` section. The `Gallery View` is a helpful way to view assets.
 
-### Template
+### Templates
 
 A template has the new tag `#Template`. A template allows for block(s) and their children to be easily copied. To create a template, write the name of the template in a new block and tag the block with `#Template`. Then add children blocks (however many levels deep) under the template block. To insert a copy of a template, use the `/Template` command.
 
