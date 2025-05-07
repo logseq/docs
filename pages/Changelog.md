@@ -12,6 +12,10 @@ Desktop app and Android App download link: <https://github.com/logseq/logseq/rel
 			- Catalan translation [#11587](https://github.com/logseq/logseq/pull/11587)
 		- [xraysight](https://github.com/xraysight)
 			- PL translation update 100% [#11306](https://github.com/logseq/logseq/pull/11306)
+		- [queeup](https://github.com/queeup)
+			- update Turkish translation [#11098](https://github.com/logseq/logseq/pull/11098)
+		- [keonu05](https://github.com/keonu05)
+			- Update Korean translation [#11454](https://github.com/logseq/logseq/pull/11454)
 		-
 	- [[Fixed issues]]
 		- fix: graph keep re-index when loading
