@@ -3,7 +3,8 @@ Desktop app and Android App download link: <https://github.com/logseq/logseq/rel
 	- [[Thanks]]
 		- [chiefnoah](https://github.com/chiefnoah)
 			- Fix Twitter's rename breaking macro wrapping [#11325](https://github.com/logseq/logseq/pull/11325)
-		-
+		- [rappire](https://github.com/rappire)
+			- Update Korean translation [#11320](https://github.com/logseq/logseq/pull/11320)
 	- [[Fixed issues]]
 		- fix: graph keep re-index when loading
 		- fix(sync): cannot delete some nested files
