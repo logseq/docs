@@ -16,7 +16,6 @@ Desktop app and Android App download link: <https://github.com/logseq/logseq/rel
 			- update Turkish translation [#11098](https://github.com/logseq/logseq/pull/11098)
 		- [keonu05](https://github.com/keonu05)
 			- Update Korean translation [#11454](https://github.com/logseq/logseq/pull/11454)
-		-
 	- [[Fixed issues]]
 		- fix: graph keep re-index when loading
 		- fix(sync): cannot delete some nested files
