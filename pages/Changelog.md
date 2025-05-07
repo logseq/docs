@@ -1,5 +1,17 @@
-## Beta 0.10.9 [[Apr 23rd, 2024]]
-Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.9>
+## Beta 0.10.10 [[May 7th, 2025]]
+Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.10>
+	- [[Features]]
+		-
+	- [[Thanks]]
+		-
+	- [[Fixed issues]]
+		- fix(sync): cannot delete some nested files
+		- fix(mobile): incorrect theme color for the android status bar
+		- Fix Twitter's rename breaking macro wrapping (#11325)
+	- [[Enhancement]]
+		-
+- ## Beta 0.10.9 [[Apr 23rd, 2024]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.9>
 	- [[Thanks]]
 		- [[desk7]]
 			- Update Italian translation in [#11179](https://github.com/logseq/logseq/pull/11179)
