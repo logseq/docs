@@ -5,6 +5,9 @@ Desktop app and Android App download link: <https://github.com/logseq/logseq/rel
 			- Fix Twitter's rename breaking macro wrapping [#11325](https://github.com/logseq/logseq/pull/11325)
 		- [rappire](https://github.com/rappire)
 			- Update Korean translation [#11320](https://github.com/logseq/logseq/pull/11320)
+		- [AyushAgrawal-A2](https://github.com/AyushAgrawal-A2)
+			- fix: cut/delete blocks should work in page-embed [#11216](https://github.com/logseq/logseq/pull/11216)
+		-
 	- [[Fixed issues]]
 		- fix: graph keep re-index when loading
 		- fix(sync): cannot delete some nested files
@@ -12,7 +15,6 @@ Desktop app and Android App download link: <https://github.com/logseq/logseq/rel
 		- Fix Twitter's rename breaking macro wrapping
 		- fix(mobile): invalid keyboard input for the `create account` pane form
 		- fix: Open as Page in sidebar does not work
-		- fix: cut/delete blocks should work in page-embed
 		- fix: drag-drop / copy-paste should work for multiple files
 	- [[Enhancement]]
 		- Upgrade Electron to 35.0.1
