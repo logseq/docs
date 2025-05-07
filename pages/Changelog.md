@@ -1,7 +1,5 @@
 ## Beta 0.10.10 [[May 7th, 2025]]
 Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.10>
-	- [[Features]]
-		-
 	- [[Thanks]]
 		-
 	- [[Fixed issues]]
@@ -14,6 +12,8 @@ Desktop app and Android App download link: <https://github.com/logseq/logseq/rel
 		- fix: cut/delete blocks should work in page-embed
 		- fix: drag-drop / copy-paste should work for multiple files
 	- [[Enhancement]]
+		- Upgrade Electron to 35.0.1
+		- enhance(ux): better highlights page name for the search result items
 		-
 - ## Beta 0.10.9 [[Apr 23rd, 2024]]
   Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.9>
