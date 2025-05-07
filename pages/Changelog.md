@@ -10,6 +10,8 @@ Desktop app and Android App download link: <https://github.com/logseq/logseq/rel
 			- fix: drag-drop / copy-paste should work for multiple files [#11214](https://github.com/logseq/logseq/pull/11214)
 		- [scayuela](https://github.com/scayuela)
 			- Catalan translation [#11587](https://github.com/logseq/logseq/pull/11587)
+		- [xraysight](https://github.com/xraysight)
+			- PL translation update 100% [#11306](https://github.com/logseq/logseq/pull/11306)
 		-
 	- [[Fixed issues]]
 		- fix: graph keep re-index when loading
