@@ -92,7 +92,7 @@ Miscelleanous changes:
     * The `all-page-tags` and `sort-by` query filters no longer exists. Sorting is done via the table component.
 * [Advanced queries](https://docs.logseq.com/#/page/advanced%20queries)
   * Advanced queries are now edited in a code block which means queries are syntax highlighted.
-  * Some old advanced queries will no longer work and need to be rewritten. For engineers, see [this file](https://github.com/logseq/logseq/blob/feat/db/deps/db/src/logseq/db/frontend/schema.cljs) and compare `schema` with `schema-for-db-based-graph` to see what has changed.
+  * Some old advanced queries will no longer work and need to be rewritten. For engineers, compare the [db graph `schema`](https://github.com/logseq/logseq/blob/feat/db/deps/db/src/logseq/db/frontend/schema.cljs) vs the [file graph `schema`](https://github.com/logseq/logseq/blob/feat/db/deps/db/src/logseq/db/file_based/schema.cljs).
   * The attribute `:block/content` was renamed to `:block/title`. If used in an advanced query including in config.edn's `:default-queries`, change it to use `:block/title` e.g. `[?b :block/content "content"]` -> `[?b :block/title "content"]`
   * These advanced query options are deprecated: :title, :group-by-page? and :collapsed?.
 * Since block timestamps are available, they display in table view where possible.
