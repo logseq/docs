@@ -7,6 +7,7 @@ Desktop app and Android App download link: <https://github.com/logseq/logseq/rel
 			- Update Korean translation [#11320](https://github.com/logseq/logseq/pull/11320)
 		- [AyushAgrawal-A2](https://github.com/AyushAgrawal-A2)
 			- fix: cut/delete blocks should work in page-embed [#11216](https://github.com/logseq/logseq/pull/11216)
+			- fix: drag-drop / copy-paste should work for multiple files [#11214](https://github.com/logseq/logseq/pull/11214)
 		-
 	- [[Fixed issues]]
 		- fix: graph keep re-index when loading
@@ -15,7 +16,6 @@ Desktop app and Android App download link: <https://github.com/logseq/logseq/rel
 		- Fix Twitter's rename breaking macro wrapping
 		- fix(mobile): invalid keyboard input for the `create account` pane form
 		- fix: Open as Page in sidebar does not work
-		- fix: drag-drop / copy-paste should work for multiple files
 	- [[Enhancement]]
 		- Upgrade Electron to 35.0.1
 		- enhance(ux): better highlights page name for the search result items
