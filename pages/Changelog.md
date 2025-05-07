@@ -2,6 +2,7 @@
 Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.10>
 	- [[Thanks]]
 		-
+		- Fix Twitter's rename breaking macro wrapping
 	- [[Fixed issues]]
 		- fix: graph keep re-index when loading
 		- fix(sync): cannot delete some nested files
@@ -14,6 +15,7 @@ Desktop app and Android App download link: <https://github.com/logseq/logseq/rel
 	- [[Enhancement]]
 		- Upgrade Electron to 35.0.1
 		- enhance(ux): better highlights page name for the search result items
+		- Add MSI build for windows
 		-
 - ## Beta 0.10.9 [[Apr 23rd, 2024]]
   Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.9>
