@@ -1,4 +1,5 @@
 ## Beta 0.10.10 [[May 7th, 2025]]
+id:: 681b5cd1-444a-46a8-8b6f-2dd5e6ece3fd
 Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.10>
 	- [[Thanks]]
 		- [chiefnoah](https://github.com/chiefnoah)
