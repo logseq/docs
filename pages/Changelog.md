@@ -8,6 +8,8 @@ Desktop app and Android App download link: <https://github.com/logseq/logseq/rel
 		- [AyushAgrawal-A2](https://github.com/AyushAgrawal-A2)
 			- fix: cut/delete blocks should work in page-embed [#11216](https://github.com/logseq/logseq/pull/11216)
 			- fix: drag-drop / copy-paste should work for multiple files [#11214](https://github.com/logseq/logseq/pull/11214)
+		- [scayuela](https://github.com/scayuela)
+			- Catalan translation [#11587](https://github.com/logseq/logseq/pull/11587)
 		-
 	- [[Fixed issues]]
 		- fix: graph keep re-index when loading
