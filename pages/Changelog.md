@@ -1,8 +1,9 @@
 ## Beta 0.10.10 [[May 7th, 2025]]
 Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.10>
 	- [[Thanks]]
+		- [chiefnoah](https://github.com/chiefnoah)
+			- Fix Twitter's rename breaking macro wrapping [#11325](https://github.com/logseq/logseq/pull/11325)
 		-
-		- Fix Twitter's rename breaking macro wrapping
 	- [[Fixed issues]]
 		- fix: graph keep re-index when loading
 		- fix(sync): cannot delete some nested files
