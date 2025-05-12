@@ -96,6 +96,7 @@ Miscelleanous changes:
   * The attribute `:block/content` was renamed to `:block/title`. If used in an advanced query including in config.edn's `:default-queries`, change it to use `:block/title` e.g. `[?b :block/content "content"]` -> `[?b :block/title "content"]`
   * These advanced query options are deprecated: :title, :group-by-page? and :collapsed?.
 * Since block timestamps are available, they display in table view where possible.
+* `{{function}}` used with queries is a TODO.
 
 #### Namespaces
 * Creating namespaces through `/` in `[[]]` should work as before e.g. `[[foo/bar/baz]]` creates the hierarchy of `foo` > `bar` > `baz`. Unlike before, the reference will turn into `[[baz]]` after it is created.
@@ -121,7 +122,6 @@ Miscelleanous changes:
     * `db.sqlite` - Stores all your graph's data including user configs.
     * `assets/` - Stores assets like before.
 * `logseq/` inside a directory no longer exists.
-* It's still a TODO to sync markdown files to these graph directories.
 
 ## File Graph Changes
 
