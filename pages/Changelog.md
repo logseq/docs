@@ -1,8 +1,10 @@
 - ## Beta 0.10.11 [[May 21st, 2025]]
+Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.11>
 	- Includes all changes from ((681b5cd1-444a-46a8-8b6f-2dd5e6ece3fd)) and fixes major regressions with it.
 	- [[Fixed Issues]]
 		- Images and themes not working [#11486](https://github.com/logseq/logseq/issues/11846)
 		- Global search in blocks not working [#11851](https://github.com/logseq/logseq/issues/11851)
+			- **NOTE**: You may need to run the command `Rebuild search index` for this fix.
 		- Drag and drop of pdfs not working [#11850](https://github.com/logseq/logseq/issues/11850)
 	- [[Enhancement]]
 		- Upgrade Electron to 36.2.0
