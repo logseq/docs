@@ -380,6 +380,7 @@ There are existing features that have a database equivalent that are still a TOD
   * Import advanced command blocks that begin with `#+BEGIN`
   * Query macros and related query filters that have changed
   * Page and block embeds
+  * Import templates
 
 ### Convert File Graph to DB graph
 
