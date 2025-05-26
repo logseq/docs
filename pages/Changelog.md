@@ -1,5 +1,12 @@
+- ## Beta 0.10.12 [[May 26th, 2025]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.12>
+	- [[Fixed issues]]
+		- App freeze, high CPU/GPU usage, and frequent diff prompts [#11880](https://github.com/logseq/logseq/issues/11880)
+		- High CPU consumption [#11874](https://github.com/logseq/logseq/issues/11874)
+		- Using GTK 2/3 and GTK 4 in the same process is not supported [#11873](https://github.com/logseq/logseq/issues/11873)
+		- App crashes on Mac
 - ## Beta 0.10.11 [[May 21st, 2025]]
-Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.11>
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.11>
 	- Includes all changes from ((681b5cd1-444a-46a8-8b6f-2dd5e6ece3fd)) and fixes major regressions with it.
 	- [[Fixed Issues]]
 		- Images and themes not working [#11486](https://github.com/logseq/logseq/issues/11846)
