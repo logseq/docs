@@ -1,6 +1,6 @@
 ## Description
 
-This page describes DB (database) graph functionality as of April 30th. See [here](https://test.logseq.com/#/) to try the latest stable version. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
+This page describes DB (database) graph functionality as of June 3rd. See [here](https://test.logseq.com/#/) to try the latest stable version. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
 
 NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we recommend only using DB graphs for testing purposes.
 
@@ -90,7 +90,7 @@ NOTE: Most shortcuts have a corresponding search command. You can find the comma
 
 ### Configure a Property
 
-Properties are configurable wherever they are used by clicking on its name to display a dropdown menu. Press `Cmd` and click to navigate to a property page. Property icons are set by clicking on the property's default icon to the left of its name. Properties can also be configured by navigating to their page with [Search](https://docs.logseq.com/#/page/search) and then clicking on the `Configure property` button below its name.
+Properties are configurable wherever they are used by clicking on its name to display a dropdown menu. Press `Cmd` and click to navigate to a property page. Property icons are set by clicking on the property's default icon to the left of its name. Properties can also be configured by navigating to their page with [Search](https://docs.logseq.com/#/page/search) and then clicking on the `Configure` button that appears above when hovering over the name.
 
 Property fields in the dropdown menu:
 
@@ -147,7 +147,7 @@ To create your first new tag:
 
 For example, say we created a new tag `Person` and added `lastName` and `birthday` tag properties to it. Now when `#Person` is added to a block or page, those two properties automatically display and are editable for them. A powerful thing about new tags is that when its tag properties change those changes immediately show up on all [tagged nodes](#tagged-node).
 
-A new tag can have properties on its own page. By default the `Description` property is available for adding a description and `Hide from node` is available to hide the new tag on tagged nodes that float to the far right. To set these properties you must be on the tag's page, hover over the tag's name and click on `Set page property`.
+A new tag can have properties on its own page. By default the `Description` property is available for adding a description and `Hide from node` is available to hide the new tag on tagged nodes that float to the far right. To set these properties go to the tag's page and click on the `Add property` link.
 
 ### Create Tags
 
@@ -174,8 +174,7 @@ A powerful feature of using a parent tag is that the new tag inherits the proper
 New tags are configurable from their page. Navigate to their page by using [Search](https://docs.logseq.com/#/page/search) or clicking on their `#` name links. On their page, hover over their name to see the rotating triangle icon to the left. Click on it to see the tag page's properties. Two important properties you'll see for configuring a tag:
 
 * `Parent`: Use this to allow the new tag to inherit its parent's tag properties. By default the parent tag is the `Root Tag` which doesn't have any properties.
-* `Tag Properties`: These tag properties are inherited by every node that uses the new tag. Drag one above or below the other to sort them. These properties will then display sorted on the tagged node.
-  * To the right of each tag property there is an optional block for describing the property. This description also shows up on the property's page.
+* `Tag Properties`: These tag properties are inherited by every node that uses the new tag.
 
 ### Tagged Node
 
@@ -353,6 +352,7 @@ A table displays a group of nodes as rows and a node's properties as columns. A 
   * Drag columns to sort their order.
   * Resize columns by dragging the resize handle at a column header's border.
 * Bulk actions: When rows in the table are selected, bulk actions appear in the table header. All the bulk actions [described above](#bulk-actions) are available except for the `Three dots menu`.
+* Keyboard shortcuts: Use arrow keys to navigate between cells. Press `Enter` to edit a cell and `Esc` to exit editing.
 
 ## DB Graph Importer
 
@@ -451,9 +451,10 @@ DB graphs are scriptable using https://github.com/logseq/nbb-logseq/tree/feat/db
 
 On desktop, it is easy to modify an existing DB graph with a script and see the change in Logseq. To do so:
 
-1. Press Cmd-S to persist a graph to `~/logseq/graphs/GRAPH-NAME/db.sqlite`.
+1. Press `Cmd-S` to persist a graph to `~/logseq/graphs/GRAPH-NAME/db.sqlite`.
 2. Modify the db.sqlite with a nbb-logseq script.
 3. Update the app to use the modified db.sqlite by using the `Replace graph with its db.sqlite file` dev command.
 
 ## Additional Links
-* https://github.com/C0ntr0lledCha0s/logseq-template-graph - Example graph with useful properties and tags
+* https://discuss.logseq.com/t/introducing-newtags-with-examples/32310 - Helpful tutorial on new tags
+* https://github.com/C0ntr0lledCha0s/logseq-template-graph - Example graph with useful properties and tags. Import graph as EDN.

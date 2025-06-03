@@ -38,11 +38,12 @@ High level changes:
 * Code blocks, quote blocks and math blocks [have tags](./db-version.md#more-new-tags). Since properties are not are a part of the block content, properties can more naturally be added to these blocks.
 * Pdf annotations [have a tag](./db-version.md#more-new-tags). This allows annotations to be viewed across pdfs and to have custom views of annotations while using the pdf viewer.
 * Markdown syntax for blocks e.g. a heading or quote is no longer visible or editable. Removing a block's heading is done by right-click on a block and choosing the crossed out H icon.
+* Slides have been removed as a feature and we can support it as 3rd party plugin.
 
 WIP changes:
+* RTC a.k.a. DB version sync will be enabled later.
+* Add back support for dynamic variables.
 * Whiteboards are disabled for now and will be enabled later.
-* Exports to more formats including markdown.
-* Sync and RTC will be enabled later.
 
 Miscelleanous changes:
 * Scripts using [nbb-logseq](https://github.com/logseq/nbb-logseq) can read and write graphs. Previously with file graphs, scripts could only read graphs.
@@ -51,8 +52,11 @@ Miscelleanous changes:
 * There is no re-index like in file graphs.
 * For browsers, currently only one tab can be open. This is a limitation we hope to remove later.
 * `All Pages` view can toggle between table and list view.
-* Run the command `Customize appearance` to display a modal of appearance related settings.
-* For developers, there is a `Validate current graph` command.
+* New commands:
+  * Run the command `Customize appearance` to display a modal of appearance related settings.
+  * Commands from [property shortcuts](./db-version#property-shortcuts).
+  * Commands from [edn data export](./db-version.md#edn-data-export).
+  * For developers, there are `Validate current graph` and `Garbage collect graph` commands.
 
 ### Changes by Feature
 
@@ -96,7 +100,6 @@ Miscelleanous changes:
   * The attribute `:block/content` was renamed to `:block/title`. If used in an advanced query including in config.edn's `:default-queries`, change it to use `:block/title` e.g. `[?b :block/content "content"]` -> `[?b :block/title "content"]`
   * These advanced query options are deprecated: :title, :group-by-page? and :collapsed?.
 * Since block timestamps are available, they display in table view where possible.
-* `{{function}}` used with queries is a TODO.
 
 #### Namespaces
 * Creating namespaces through `/` in `[[]]` should work as before e.g. `[[foo/bar/baz]]` creates the hierarchy of `foo` > `bar` > `baz`. Unlike before, the reference will turn into `[[baz]]` after it is created.
@@ -109,7 +112,8 @@ Miscelleanous changes:
 #### User Config
 
 * A graph's config.edn, custom.js and custom.css files are only editable within Logseq from `Settings`.
-* The following config.edn options are no longer used: `:block-hidden-properties, :favorites, :hidden, :ignored-page-references-keywords, :preferred-format, :preferred-workflow, :feature/enable-block-timestamps?, :file/name-format, :org-mode/insert-file-link?, :property/separated-by-commas, :property-pages/enabled?, :property-pages/excludelist`. See [this code](https://github.com/logseq/logseq/blob/043927031e11053a837d8289e3334368e6647bea/src/main/frontend/handler/common/config_edn.cljs#L89-L115) for more details.
+* The following config.edn options are no longer used by any graphs: `:ref/linked-references-collapsed-threshold`.
+* The following config.edn options are no longer used: `:block-hidden-properties, :default-templates, :favorites, :hidden, :ignored-page-references-keywords, :journals-directory, :pages-directory, :preferred-format, :preferred-workflow, :whiteboards-directory, :feature/enable-block-timestamps?, :file/name-format, :file-sync/ignore-files, :journal/file-name-format, :journal/page-title-format, :logbook/settings, :org-mode/insert-file-link?, :property/separated-by-commas, :property-pages/enabled?, :property-pages/excludelist, :srs/initial-interval, :srs/learning-fraction` in DB graphs. See [this code](https://github.com/logseq/logseq/blob/b0a255f96bfd512d5b87acca52c8d9f958c6a593/deps/common/src/logseq/common/config.cljs#L124-L157) for more details.
 
 #### Search
 * When search modal first opens, recently updated pages display at the top.
