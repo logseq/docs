@@ -79,6 +79,7 @@ Miscelleanous changes:
 * Assets can have custom user properties.
 * Assets are blocks and thus can show their linked references when zoomed in on the asset block.
 * Assets are resized by hovering over them and then dragging the left-right arrows that are visible over the scrollbars.
+* Pdf annotations are visible under an asset block by default. Previously this view was in a separate page and required clicking in the pdf viewer.
 
 #### Queries
 
