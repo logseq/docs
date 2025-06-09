@@ -363,7 +363,7 @@ The DB Graph Importer converts a file graph to a DB graph. An overview of what i
   * `IN-PROGRESS` and `NOW` -> `Doing`
   * `WAIT` and `WAITING` -> `Backlog`
 * Tags are imported as follows:
-  * By default, all tags are imported as [new tags](#new-tags) using the `Import all tags` input. This allows you to use all your tags as you have previously, along with the new capabilities they have.
+  * By default, all tags are imported as [new tags](#new-tags) using the `Import all tags` input. This allows you to use all your tags as you have previously, along with the new functionality they have. Any properties associated with a tag are added to tags to take advantage of the new functionality.
   * Alternatively you can import only specific tags to [new tags](#new-tags) using the `Import specific tags` input. Tags that aren't specified in this input are then imported as follows:
     * All such tags become pages.
     * Tags in a block are converted to [page references](https://docs.logseq.com/#/page/term%2Fpage%20reference).
