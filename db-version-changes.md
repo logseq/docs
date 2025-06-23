@@ -109,7 +109,7 @@ Miscelleanous changes:
 * Pages can manage their namespace explicitly by using the `Parent` property. Previously managing a namespace could only be done by renaming a namespace. Using a property allows for easier management of namespace relationships.
 * The `Hierarchy` section is called `Children` for DB graphs. It now displays as a collapsible tree as this allows for viewing large namespaces more easily.
 * Children pages like `baz` above link back to its parent(namespace) with the `Parent` property.
-* The macro `{{namespace}}` is TODO.
+* The macro `{{namespace}}` is deprecated. Use the Library feature instead.
 
 #### User Config
 

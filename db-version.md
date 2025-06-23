@@ -147,7 +147,7 @@ To create your first new tag:
 
 For example, say we created a new tag `Person` and added `lastName` and `birthday` tag properties to it. Now when `#Person` is added to a block or page, those two properties automatically display and are editable for them. A powerful thing about new tags is that when its tag properties change those changes immediately show up on all [tagged nodes](#tagged-node).
 
-A new tag can have properties on its own page. By default the `Description` property is available for adding a description and `Hide from node` is available to hide the new tag on tagged nodes that float to the far right. To set these properties go to the tag's page and click on the `Add property` link.
+A new tag can have properties on its own page. By default the `Description` property is available for adding a description and `Hide from node` is available to hide the new tag on tagged nodes that float to the far right. To set these properties, go to the tag's page and with the focus on the title press the add property shortcut from [property shortcuts](#property-shortcuts) e.g. `Cmd-p`.
 
 ### Create Tags
 
