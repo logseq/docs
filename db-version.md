@@ -1,6 +1,6 @@
 ## Description
 
-This page describes DB (database) graph functionality as of June 3rd. See [here](https://test.logseq.com/#/) to try the latest stable version. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
+This page describes DB (database) graph functionality as of July 3rd. See [here](https://test.logseq.com/#/) to try the latest stable version. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
 
 NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we recommend only using DB graphs for testing purposes.
 
@@ -20,6 +20,7 @@ NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we 
 * [Bulk Actions](#bulk-actions)
 * [Views](#views)
   * [Tables](#tables)
+* [Library](#library)
 * [DB Graph Importer](#db-graph-importer)
 * [Automated Backup](#automated-backup)
 * [Export and Import](#export-and-import)
@@ -157,7 +158,7 @@ Ways to create tags:
 * In a block type `#NAME` and press `Cmd-Enter`. An inline tag is created.
 * Paste text in a block that includes `#NAME`. An inline tag is created for tag `NAME`.
 * Configure a `Node` property type to have a new tag config.
-* Configure a new tag to have a `Parent`, the new `Parent` value becomes a tag.
+* Configure a new tag to have an `Extends` property, the new `Extends` value becomes a tag.
 * In a block type `#NAME` and press `Esc`. An inline tag is created. Not recommended as it doesn't work for all use cases.
 * Convert any page to a tag by clicking on the three dots menu in the upper right corner and clicking `Convert to Tag`.
 
@@ -165,16 +166,24 @@ Any tag can be converted to a page by clicking on the three dots menu and clicki
 
 ### Parent Tags
 
-New tags can have a parent tag, defaulting to `Root Tag` when none is specified. Allowing new tags to be related to each other as a parent to child is useful as it allows tags to organized in a hierarchy. This is similar to directories on your computer. When a new tag is used as a parent, you can see the tag hierarchy under it by navigating to the tag's page and seeing a `Children` section.
+New tags can have multiple parent tags via the `Extends` property and default to the `Root Tag` as a parent.  Parent tags are powerful as the new tag inherits the properties from each of its parent tags. For example, say we have `#Book` with property `author` and `#MediaObject` with property `duration`. If we create a new `#Audiobook` with property `readBy` and give it parents of `#Book` and `#MediaObject`, any node tagged with `#Audiobook` would have 3 properties: `author`, `duration` and `readBy`.
 
-A powerful feature of using a parent tag is that the new tag inherits the properties from its parent. For example, if we created a new `#Actor`, made its parent `#Person` from above and gave it an additional `actedIn` property. `#Actor` would display 3 properties when used, with two coming from the parent: `lastName`, `birthday` and `actedIn`.
+Parent tags also provide a way of organizing tags in a tree hierarchy. Since a new tag can have multiple parents, it can appear multiple times in a hierarchy. For example, here's the tree hierarchy of the example in the previous paragraph:
+
+- Root Tag
+  - Book
+    - AudioBook
+  - MediaObject
+    - AudioBook
+
+On any new tag page that is a parent tag, you can see this hierarchy under the `Children` section.
 
 ### Configure a New Tag
 
 New tags are configurable from their page. Navigate to their page by using [Search](https://docs.logseq.com/#/page/search) or clicking on their `#` name links. On their page, hover over their name to see the rotating triangle icon to the left. Click on it to see the tag page's properties. Two important properties you'll see for configuring a tag:
 
-* `Parent`: Use this to allow the new tag to inherit its parent's tag properties. By default the parent tag is the `Root Tag` which doesn't have any properties.
-* `Tag Properties`: These tag properties are inherited by every node that uses the new tag.
+* `Extends`: Use this to allow the new tag to inherit properties from one or more parent tags. This defaults to the `Root Tag` which doesn't have any properties.
+* `Tag Properties`: These tag properties are inherited by every node that uses the new tag. Drag one above or below the other to sort them. These properties will then display sorted on the tagged node.
 
 ### Tagged Node
 
@@ -354,6 +363,12 @@ A table displays a group of nodes as rows and a node's properties as columns. A 
 * Bulk actions: When rows in the table are selected, bulk actions appear in the table header. All the bulk actions [described above](#bulk-actions) are available except for the `Three dots menu`.
 * Keyboard shortcuts: Use arrow keys to navigate between cells. Press `Enter` to edit a cell and `Esc` to exit editing.
 
+## Library
+
+The Library is a built-in page that displays and edits namespaced pages as if they were blocks on a page. This is powerful as it allows us to use an outliner to build and organize a hierarchy of pages. This is useful for those who want to organize their pages as if they were under folders on a computer. Pages that have no common properties are a good fit for namespaces. Pages that have common properties are better organized with [new tags](#new-tags).
+
+Pages that you want to namespace can be added to the Library with the `Add existing pages to Library` button.
+
 ## DB Graph Importer
 
 The DB Graph Importer converts a file graph to a DB graph. An overview of what it does:
@@ -374,12 +389,10 @@ The DB Graph Importer converts a file graph to a DB graph. An overview of what i
 ### Importer Todos
 
 There are existing features that have a database equivalent that are still a TODO for the importer:
-  * Import assets as `#Asset` and pdf annotations as `#PDF Annotation`
+  * Import pdf annotations as `#PDF Annotation`
   * Import org mode files
   * Import text files e.g. *.txt or *.edn
-  * Import advanced command blocks that begin with `#+BEGIN`
   * Query macros and related query filters that have changed
-  * Page and block embeds
   * Import templates
 
 ### Convert File Graph to DB graph

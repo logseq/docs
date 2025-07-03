@@ -51,7 +51,7 @@ Miscelleanous changes:
 * Default date picker now has an input for typing a date in natural language.
 * There is no re-index like in file graphs.
 * For browsers, currently only one tab can be open. This is a limitation we hope to remove later.
-* `All Pages` view can toggle between table and list view.
+* `All Pages` screen is renamed to `Pages`. Also it can toggle between table and list view.
 * New commands:
   * Run the command `Customize appearance` to display a modal of appearance related settings.
   * Commands from [property shortcuts](./db-version#property-shortcuts).
@@ -105,10 +105,9 @@ Miscelleanous changes:
 
 #### Namespaces
 * Creating namespaces through `/` in `[[]]` should work as before e.g. `[[foo/bar/baz]]` creates the hierarchy of `foo` > `bar` > `baz`. Unlike before, the reference will turn into `[[baz]]` after it is created.
+* Pages can edit their namespace explicitly by going to the `Library` page and moving it under the desired parent namespace. Previously managing a namespace could only be done by renaming a namespace.
+* The `Hierarchy` section displays above a namespaced page's blocks. It displays as a collapsible tree as this allows for viewing large namespaces more easily.
 * Namespaced pages no longer have their namespace embedded in their page name. The big advantage of this is that renaming any part of the namespace does not affect all the pages under a namespace.
-* Pages can manage their namespace explicitly by using the `Parent` property. Previously managing a namespace could only be done by renaming a namespace. Using a property allows for easier management of namespace relationships.
-* The `Hierarchy` section is called `Children` for DB graphs. It now displays as a collapsible tree as this allows for viewing large namespaces more easily.
-* Children pages like `baz` above link back to its parent(namespace) with the `Parent` property.
 * The macro `{{namespace}}` is deprecated. Use the Library feature instead.
 
 #### User Config
