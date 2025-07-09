@@ -450,15 +450,15 @@ This feature is also available:
 * from any [view](#views) as a header action. For example, go to the `All pages` view and filter it to only export the viewable pages.
 * for multiple selected nodes with the `Copy / Export as` modal.
 
-For developers, this shareable EDN data can also be used in scripts to create or modify existing graphs. For example, a page's data could be passed to [this script](https://github.com/logseq/logseq/blob/feat/db/deps/db/script/create_graph.cljs) to create a new DB graph with that page.
+For developers, this shareable EDN data can also be used in scripts to create or modify existing graphs. For example, a page's data could be passed to [this script](https://github.com/logseq/logseq/blob/master/deps/db/script/create_graph.cljs) to create a new DB graph with that page.
 
 ## Scripting
 
 DB graphs are scriptable using https://github.com/logseq/nbb-logseq/tree/feat/db. Scripts can both read and _write any_ data in a DB graph. To write your own script, you'll need a package.json and nbb.edn. Use [this example package.json](https://github.com/logseq/publish-spa/blob/feat/db/package.json) and [this example nbb.edn](https://github.com/logseq/publish-spa/blob/feat/db/nbb.edn). Some example scripts:
 
-* https://github.com/logseq/logseq/tree/feat/db/deps/db/script - Scripts to query, validate and create any graph
-* https://github.com/logseq/logseq/blob/feat/db/deps/outliner/script/transact.cljs - Script to transact (modify) nodes queried from the commandline
-* https://github.com/logseq/logseq/tree/feat/db/scripts/src/logseq/tasks/db_graph - More complex scripts to generate graphs with all property types or with schema.org's ontology. See [this readme](https://github.com/logseq/logseq/tree/feat/db/scripts#nbb-scripts) for using these.
+* https://github.com/logseq/logseq/tree/master/deps/db/script - Scripts to query, validate and create any graph
+* https://github.com/logseq/logseq/blob/master/deps/outliner/script/transact.cljs - Script to transact (modify) nodes queried from the commandline
+* https://github.com/logseq/logseq/tree/master/scripts/src/logseq/tasks/db_graph - More complex scripts to generate graphs with all property types or with schema.org's ontology. See [this readme](https://github.com/logseq/logseq/tree/master/scripts#nbb-scripts) for using these.
 
 ### Modify a DB Graph
 
