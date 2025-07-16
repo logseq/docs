@@ -2,7 +2,7 @@
   "Enforce schema constraints on page types"
   (:require [clojure.test :refer [deftest is]]
             [logseq.graph-validator.state :as state]
-            [logseq.db.rules :as rules]
+            [logseq.db.file-based.rules :as file-rules]
             [datascript.core :as d]))
 
 (defn- get-property-names-for-type [type']
@@ -11,7 +11,7 @@
               :where (page-property ?b :type ?type)]
             @state/db-conn
             type'
-            (vals rules/query-dsl-rules))
+            [(:page-property file-rules/query-dsl-rules)])
        (map (comp :block/properties first))
        (mapcat keys)
        set
@@ -24,7 +24,7 @@
               :where (page-property ?b :type ?type)]
             @state/db-conn
             type'
-            (vals rules/query-dsl-rules))
+            [(:page-property file-rules/query-dsl-rules)])
        (map (comp :block/properties first))))
 
 (deftest feature-schema
