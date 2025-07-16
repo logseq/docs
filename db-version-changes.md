@@ -97,7 +97,7 @@ Miscelleanous changes:
     * The `all-page-tags` and `sort-by` query filters no longer exists. Sorting is done via the table component.
 * [Advanced queries](https://docs.logseq.com/#/page/advanced%20queries)
   * Advanced queries are now edited in a code block which means queries are syntax highlighted.
-  * Some old advanced queries will no longer work and need to be rewritten. For engineers, compare the [db graph `schema`](https://github.com/logseq/logseq/blob/feat/db/deps/db/src/logseq/db/frontend/schema.cljs) vs the [file graph `schema`](https://github.com/logseq/logseq/blob/feat/db/deps/db/src/logseq/db/file_based/schema.cljs).
+  * Some old advanced queries will no longer work and need to be rewritten. For engineers, compare the [db graph `schema`](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/frontend/schema.cljs) vs the [file graph `schema`](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/file_based/schema.cljs).
   * The attribute `:block/content` was renamed to `:block/title`. If used in an advanced query including in config.edn's `:default-queries`, change it to use `:block/title` e.g. `[?b :block/content "content"]` -> `[?b :block/title "content"]`
   * The task related properties `:block/marker`, `:block/priority`, `:block/deadline` and `:block/scheduled` have been respectively renamed to `:logseq.property/status`, `:logseq.property/priority`, `:logseq.property/deadline` and `:logseq.property/scheduled`. These properties should be queried via rules like `property` e.g. `(property :logseq.property/deadline ...)`.
   * These advanced query options are deprecated: :title, :group-by-page? and :collapsed?.
