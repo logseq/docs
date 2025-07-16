@@ -454,11 +454,7 @@ For developers, this shareable EDN data can also be used in scripts to create or
 
 ## Scripting
 
-DB graphs are scriptable using https://github.com/logseq/nbb-logseq/tree/feat/db. Scripts can both read and _write any_ data in a DB graph. To write your own script, you'll need a package.json and nbb.edn. Use [this example package.json](https://github.com/logseq/publish-spa/blob/feat/db/package.json) and [this example nbb.edn](https://github.com/logseq/publish-spa/blob/feat/db/nbb.edn). Some example scripts:
-
-* https://github.com/logseq/logseq/tree/master/deps/db/script - Scripts to query, validate and create any graph
-* https://github.com/logseq/logseq/blob/master/deps/outliner/script/transact.cljs - Script to transact (modify) nodes queried from the commandline
-* https://github.com/logseq/logseq/tree/master/scripts/src/logseq/tasks/db_graph - More complex scripts to generate graphs with all property types or with schema.org's ontology. See [this readme](https://github.com/logseq/logseq/tree/master/scripts#nbb-scripts) for using these.
+DB graphs are scriptable using https://github.com/logseq/nbb-logseq. Scripts can both read and _write any_ data in a DB graph. See https://github.com/logseq/nbb-logseq#database-version to get started.
 
 ### Modify a DB Graph
 
