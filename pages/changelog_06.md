@@ -77,7 +77,7 @@
 		- Alt-dragging to create a block reference
 	- [[Enhancement]]
 		- Open the second level children by default for linked references
-			- A new option `:ref/default-open-blocks-level` was added to `config.edn` #settings, the default value is `2`
+			- A new option `:ref/default-open-blocks-level` was added to `config.edn` #Settings, the default value is `2`
 			  #+BEGIN_EXAMPLE
 			  The default level to be opened for the linked references.
 			  For example, if we have some example blocks like this:
