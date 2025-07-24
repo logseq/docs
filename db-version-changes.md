@@ -128,6 +128,11 @@ Miscelleanous changes:
     * `assets/` - Stores assets like before.
 * `logseq/` inside a directory no longer exists.
 
+#### API
+* `logseq.db.*` methods like `logseq.db.q` are renamed to `logseq.app.q`
+* All property related calls like `upsertBlockProperty` work with DB graphs. Property values can now be numbers and booleans. Properties are namespaced to `:plugin.property._api`
+* See [this test file](https://github.com/logseq/logseq/blob/master/clj-e2e/test/logseq/e2e/plugins_basic_test.clj) for using the api with DB graphs.
+
 ## File Graph Changes
 
 * File graphs are no longer supported in browser.
