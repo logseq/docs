@@ -34,7 +34,7 @@ If you only know enough to fill in parts of a page, that's fine. Just add a
 For minor fixes like typos, feel free to just [edit a
 file in Github](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files).
 
-For any other contribution it helps to make changes locally so you see you can how it looks in Logseq. In order to do this you should:
+For any other contribution it helps to make changes locally so you can see how it looks in Logseq. In order to do this you should:
 
 1. Ensure you have [git](https://git-scm.com/downloads) installed.
 2. Fork and Clone THIS REPO. The upstream should be set to the FORKED REPO. If you need more information on what this means, read:
