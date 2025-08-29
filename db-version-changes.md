@@ -52,11 +52,6 @@ Miscelleanous changes:
 * There is no re-index like in file graphs.
 * For browsers, currently only one tab can be open. This is a limitation we hope to remove later.
 * `All Pages` screen is renamed to `Pages`. Also it can toggle between table and list view.
-* New commands:
-  * Run the command `Customize appearance` to display a modal of appearance related settings.
-  * Commands from [property shortcuts](./db-version#property-shortcuts).
-  * Commands from [edn data export](./db-version.md#edn-data-export).
-  * For developers, there are `Validate current graph` and `Garbage collect graph` commands.
 
 ### Changes by Feature
 

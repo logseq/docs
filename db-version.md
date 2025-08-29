@@ -1,6 +1,6 @@
 ## Description
 
-This page describes DB (database) graph functionality as of July 3rd. See [here](https://test.logseq.com/#/) to try the latest stable version. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
+This page describes DB (database) graph functionality as of Aug 29th. See [here](https://test.logseq.com/#/) to try the latest stable version. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
 
 NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we recommend only using DB graphs for testing purposes.
 
@@ -21,6 +21,8 @@ NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we 
 * [Views](#views)
   * [Tables](#tables)
 * [Library](#library)
+* [Search Commands](#search-commands)
+* [Semantic Search](#semantic-search)
 * [DB Graph Importer](#db-graph-importer)
 * [Automated Backup](#automated-backup)
 * [Export and Import](#export-and-import)
@@ -28,6 +30,7 @@ NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we 
   * [Graph Import](#graph-import)
   * [EDN Data Export](#edn-data-export)
 * [Scripting](#scripting)
+* [CLI](#cli)
 * [Additional Links](#additional-links)
 
 ## Nodes
@@ -43,13 +46,15 @@ A node is a new term for a page or block because the two now behave similarly. N
 * Nodes are embedded with the same `/Node embed` command.
 * Nodes are collapsible with an arrow on the left that appears on hover.
 
+Blocks that have a page as a parent i.e. usually top-level blocks can be converted to a page and back to a block easily. To convert this block to a page, simply tag the block with `#Page`. This also makes the newly created a page a namespaced page under its parent(s). For example, if the block `b1` on the journal `Aug 29th, 2025` is converted to the page, `b1` becomes a namespaced page in the [Library](#library) with parent `Aug 29th, 2025`. To convert this type of page back to a block, press `p t` and remove `#Page` from the node.
+
 Blocks and pages still have some differences that we are hoping to unify like the block view when it is zoomed in.
 However, blocks and pages will have some differences as noted in the [pages](#pages) and [blocks](#blocks) sections.
 
 ### Pages
 
 Things that are specific to pages:
-* Pages have a dedicated view called `All pages`.
+* Pages have a dedicated view called `Pages`.
 * When a property, new tag, journal or whiteboard are created, they are created as a page.
 * Pages are unique as follows:
   * Page names are unique by tag e.g. there can be `Apple #Company` and `Apple #Fruit`.
@@ -80,9 +85,10 @@ A property itself can have properties on its property page. By default the `Desc
 
 ### Property Shortcuts
 
-* `Cmd-p` is useful for quickly adding properties to a block or a page. You can create or select existing properties from it. Keybinding is `Ctrl-Alt-p` on Linux and Windows.
-* `Cmd-j` is useful for quickly editing block or page properties from the keyboard. After pressing `Cmd-j`, choose which property or property value by typing the letters in the bubble next to it e.g. `c` or `ab`.
-* `p t` toggles displaying all the current node's properties below it. This is useful to quickly view properties that are hidden or in a different position.
+* `Cmd-p` quickly adds properties to the current node or selected nodes. You can create or select existing properties from it. Keybinding is `Ctrl-Alt-p` on Linux and Windows.
+* `Cmd-j` quickly edits block or page properties from the keyboard. After pressing `Cmd-j`, choose which property or property value by typing the letters in the bubble next to it e.g. `c` or `ab`.
+* `p a` toggles displaying all the current node's properties below it. This is useful to quickly view properties that are hidden or in a different position.
+* `p t` adds or removes or tags to the current node or selected nodes.
 * `p i` opens the icon picker to set an icon for the current node.
 * See [task shortcuts](#task-shortcuts) for task specific ones.
 * To navigate between property values across nodes, use the up and down arrow keys.
@@ -95,7 +101,7 @@ Properties are configurable wherever they are used by clicking on its name to di
 
 Property fields in the dropdown menu:
 
-* `Name`: Name to visually identify the property
+* `Property name`: Name to visually identify the property
 * `Property type`: This determines what type a property's property values will have. Once a property is used this field cannot change. If you're unsure of what type to choose, use `Text`. See [property-types](#property-types) for more.
 * `Default value`: This sets the default value for a property. See [property-default-values](#property-default-values) for more.
 * `Available choices`: This limits a property to only have one of the defined choices. See [property choices](#property-choices) for more.
@@ -330,7 +336,7 @@ Nodes can also be selected and have bulk actions in [tables](#tables).
 
 Views are a powerful way to visualize a group of nodes in different ways. A view can switch between the following view types: `Table View`, `List View` or `Gallery View`. Most views default to the [Table View](#tables). The `List View` displays nodes in an outliner with nodes grouped by pages. The `Gallery View` is useful for viewing blocks as square tiles, especially for assets.
 
-Views are used in a number of features including queries, (un)linked references, property and tag pages and `All pages`. For all these features except queries, multiple views can be created. Regardless of which view type you're in, a view's header has these common actions from left to right:
+Views are used in a number of features including queries, (un)linked references, property and tag pages and `Pages`. For all these features except queries, multiple views can be created. Regardless of which view type you're in, a view's header has these common actions from left to right:
 
 * `View name`: A view's name is editable by clicking on it and renaming it. A view can also be deleted from here.
 * `New view`: Click on `+` to create a new view. Since a view is fairly customizable, this is useful for creating different views on the same nodes and to view a specific subgroup of nodes with filters.
@@ -344,6 +350,8 @@ Views are used in a number of features including queries, (un)linked references,
   * `Group by`: Group by a column/property and its values i.e. a different group for each property value. The different groups are vertically stacked.
     * Nodes can be grouped by all property types except for `DateTime`.
     * While each group is displayed as a different view, they all obey the same view-level configuration.
+  * `Sort groups by`: When grouping nodes by page, sort group by options including `Journal date`, `Page name` and `Page created date`.
+  * `Sort groups order`: When grouping nodes by page, sort groups `Ascending` or `Descending`.
   * `Export EDN`: Exports the currently viewable nodes to your clipboard as [EDN Data](#edn-data-export). The exported nodes are affected by `Search` or `Filter` usage.
 * `New node`: Click on the `+` icon to create a new node in the view. Different features will behave differently for this. For example, when clicked from a tag or property page, the new node will have that tag or property added to it.
 
@@ -365,9 +373,25 @@ A table displays a group of nodes as rows and a node's properties as columns. A 
 
 ## Library
 
-The Library is a built-in page that displays and edits namespaced pages as if they were blocks on a page. This is powerful as it allows us to use an outliner to build and organize a hierarchy of pages. This is useful for those who want to organize their pages as if they were under folders on a computer. Pages that have no common properties are a good fit for namespaces. Pages that have common properties are better organized with [new tags](#new-tags).
+The `Library` is a built-in page that displays and edits namespaced pages as if they were blocks on a page. This is powerful as it allows an outliner to build and organize a hierarchy of pages. This is useful for those who want to organize their pages as if they were under folders on a computer. Pages that have no common properties are a good fit for namespaces. Pages that have common properties are better organized with [new tags](#new-tags). The following actions can be done on the `Library` page:
 
-Pages that you want to namespace can be added to the Library with the `Add existing pages to Library` button.
+* Add to the Library with the `Add existing pages to Library` button.
+* Delete from the Library by selecting a block and pressing `Backspace` or `Cmd-X`. This also deletes the page's relationship to its namespace. This does not delete the page.
+
+## Search Commands
+
+Search commands run commands from the [Search modal](https://docs.logseq.com/#/page/search). To invoke a search command, press `Cmd+Shift-P` on Mac/Linux or `Ctrl+Shift-P` on Windows, type the command and press `Enter`. The following commands are new and only for DB graphs unless otherwise noted:
+
+* Command `Quick add` - Opens a modal to quickly jot down notes without losing context. This feature is in its own tab in the mobile app. The modal's contents are sent to the current journal day by pressing a button or the keybinding `Cmd-E`.
+* Command `Customize appearance` - Opens a modal to edit appearance related settings.
+* Command `Move blocks to` - Moves the current or selected nodes to the chosen page. Also available for file graphs.
+* Commands from [property shortcuts](#property-shortcuts).
+* Commands from [edn data export](#edn-data-export).
+* For developers, there are `Validate current graph` and `Garbage collect graph` commands.
+
+## Semantic Search
+
+[Search](https://docs.logseq.com/#/page/search) can optionally do a semantic search. To enable this, go to `Settings > AI` and choose a _local_ AI model. This feature is available on browsers that are [WebGPU capable](https://caniuse.com/webgpu) and the desktop.
 
 ## DB Graph Importer
 
@@ -389,11 +413,10 @@ The DB Graph Importer converts a file graph to a DB graph. An overview of what i
 ### Importer Todos
 
 There are existing features that have a database equivalent that are still a TODO for the importer:
-  * Import pdf annotations as `#PDF Annotation`
-  * Import org mode files
   * Import text files e.g. *.txt or *.edn
   * Query macros and related query filters that have changed
   * Import templates
+  * Import org mode files
 
 ### Convert File Graph to DB graph
 
@@ -447,7 +470,7 @@ Exported [EDN data](https://github.com/edn-format/edn) allows any DB graph conte
 
 This feature is also available:
 * for the whole graph using the `Export EDN file` and `EDN to DB graph` options described above.
-* from any [view](#views) as a header action. For example, go to the `All pages` view and filter it to only export the viewable pages.
+* from any [view](#views) as a header action. For example, go to the `Pages` view and filter it to only export the viewable pages.
 * for multiple selected nodes with the `Copy / Export as` modal.
 
 For developers, this shareable EDN data can also be used in scripts to create or modify existing graphs. For example, a page's data could be passed to [this script](https://github.com/logseq/logseq/blob/master/deps/db/script/create_graph.cljs) to create a new DB graph with that page.
@@ -463,6 +486,20 @@ On desktop, it is easy to modify an existing DB graph with a script and see the 
 1. Press `Cmd-S` to persist a graph to `~/logseq/graphs/GRAPH-NAME/db.sqlite`.
 2. Modify the db.sqlite with a nbb-logseq script.
 3. Update the app to use the modified db.sqlite by using the `Replace graph with its db.sqlite file` dev command.
+
+## CLI
+
+The `logseq` [CLI](https://www.npmjs.com/package/@logseq/cli) provides commands to interact with desktop DB graphs from the command line. The CLI works independent of the Logseq app and makes Logseq features available for automation on CI/CD platforms like [Github Actions](https://github.com/features/actions). For example, a DB graph could have a Markdown export created on every push to Github. Some CLI commands also interact with the current DB graph if the [HTTP API Server](https://docs.logseq.com/#/page/local%20http%20server) is turned on. The CLI provides the following commands including:
+
+* list - List graphs
+* show - Show DB graph(s) info
+* search - Search DB graph like grep
+* query - Query DB graph
+* export - Export DB graph as Markdown
+* export-edn - Export DB graph as EDN
+* append - Append text to current page
+
+Read the [CLI's homepage](https://www.npmjs.com/package/@logseq/cli) to learn more.
 
 ## Additional Links
 * https://discuss.logseq.com/t/introducing-newtags-with-examples/32310 - Helpful tutorial on new tags
