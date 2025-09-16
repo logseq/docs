@@ -104,6 +104,7 @@ Property fields in the dropdown menu:
 * `Property name`: Name to visually identify the property
 * `Property type`: This determines what type a property's property values will have. Once a property is used this field cannot change. If you're unsure of what type to choose, use `Text`. See [property-types](#property-types) for more.
 * `Default value`: This sets the default value for a property. See [property-default-values](#property-default-values) for more.
+* `Specify node tags`: For a `Node` type property, specify tags that a property value is allowed to have. Only property values with these tags will be displayed as possible values.
 * `Available choices`: This limits a property to only have one of the defined choices. See [property choices](#property-choices) for more.
 * `Checkbox state mapping`: For properties that have [property choices](#property-choices), this defines mapping two choices to be checked or unchecked on a checkbox. To enable seeing the checkbox, configure the `Show as checkbox on ...` field.
 * `Multiple values`: When selected, a property can have multiple values associated with it. All property types can have multiple values except for checkbox and datetime.
