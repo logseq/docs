@@ -46,7 +46,7 @@ A node is a new term for a page or block because the two now behave similarly. N
 * Nodes are embedded with the same `/Node embed` command.
 * Nodes are collapsible with an arrow on the left that appears on hover.
 
-Blocks that have a page as a parent i.e. usually top-level blocks can be converted to a page and back to a block easily. To convert this block to a page, simply tag the block with `#Page`. This also makes the newly created a page a namespaced page under its parent(s). For example, if the block `b1` on the journal `Aug 29th, 2025` is converted to the page, `b1` becomes a namespaced page in the [Library](#library) with parent `Aug 29th, 2025`. To convert this type of page back to a block, press `p t` and remove `#Page` from the node.
+Blocks that have a page as a parent i.e. usually top-level blocks can be converted to a page and back to a block easily. To convert this block to a page, simply tag the block with `#Page`. This also makes the newly created page a namespaced page under its parent(s). For example, if the block `b1` on the journal `Aug 29th, 2025` is converted to the page, `b1` becomes a namespaced page in the [Library](#library) with parent `Aug 29th, 2025`. To convert this type of page back to a block, press `p t` and remove `#Page` from the node.
 
 Blocks and pages still have some differences that we are hoping to unify like the block view when it is zoomed in.
 However, blocks and pages will have some differences as noted in the [pages](#pages) and [blocks](#blocks) sections.
