@@ -1,3 +1,13 @@
+- ## Beta 0.10.14 [[Sep 18th, 2025]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.14>
+	- [[Fixed issues]]
+		- Bump pdf.js to 4.2.67, thanks to [https://github.com/Th-o-mas](https://github.com/Th-o-mas)
+		  Security vulnerability ([GHSA-92h5-2358-7xjv](https://github.com/logseq/logseq/security/advisories/GHSA-92h5-2358-7xjv)) with remote code execution has been closed.
+		- fix: match paste of x.com links for twitter [#12043](https://github.com/logseq/logseq/pull/12043)
+- ## Beta 0.10.13 [[Aug 7th, 2025]]
+  Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.13>
+	- [[Fixed issues]]
+		- Fix: Youtube embeds not working [#12031](https://github.com/logseq/logseq/issues/12031)
 - ## Beta 0.10.12 [[May 26th, 2025]]
   Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.12>
 	- [[Fixed issues]]
