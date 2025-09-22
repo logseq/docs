@@ -108,7 +108,7 @@ Property fields in the dropdown menu:
 * `Available choices`: This limits a property to only have one of the defined choices. See [property choices](#property-choices) for more.
 * `Checkbox state mapping`: For properties that have [property choices](#property-choices), this defines mapping two choices to be checked or unchecked on a checkbox. To enable seeing the checkbox, configure the `Show as checkbox on ...` field.
 * `Multiple values`: When selected, a property can have multiple values associated with it. All property types can have multiple values except for checkbox and datetime.
-* `UI position`: This determines where the property values are displayed. By default the values are displayed as a row-like block under a block (`Block properties`). You can also choose to display property values at the beginning like task status, under a block like deadline date, or at the end of a block.
+* `UI position`: This determines where the property values are displayed. By default the values are displayed as a row-like block under a block (`Block properties`). You can also choose to display property values at the beginning like task status, under a block like deadline date, or at the end of a block. This config is available to all property types except `Url` and `DateTime`.
 * `Hide by default`: When selected, a property won't be visible on any of its blocks by default. But it will be visible if you zoom in on its blocks or display them in the sidebar.
 * `Hide empty value`: When selected, a property won't be visible on a block if it is has an empty property value.
 
