@@ -30,7 +30,7 @@ High level changes:
 *  The [previous tables](https://docs.logseq.com/#/page/tables) including version 2 are replaced by a shadcn based table. The new tables have inline editing like spreadsheets by default. See [here](./db-version.md#tables) for more.
 * Flashcards have been re-implemented with [a new algorithm](https://github.com/open-spaced-repetition/free-spaced-repetition-scheduler). It isn't compatible with the previous flashcards so none of the properties and srs data from the previous version is imported.
 * Markdown is the only supported format. Org mode file graphs will be able to convert to DB graphs.
-* Zotero integration isn't planned to be a built-in feature and will hopefully be moved to a plugin.
+* Zotero integration is no longer a built-in feature and will hopefully be moved to a plugin.
 * A few [Advanced Commands](https://docs.logseq.com/#/page/advanced%20commands) are available. More may become available as requested. The available commands are:
   * `>Query` is now `/Advanced Query`
   * `>Src` is now `/Code block`
@@ -39,6 +39,7 @@ High level changes:
 * Pdf annotations [have a tag](./db-version.md#more-new-tags). This allows annotations to be viewed across pdfs and to have custom views of annotations while using the pdf viewer.
 * Markdown syntax for blocks e.g. a heading or quote is no longer visible or editable. Removing a block's heading is done by right-click on a block and choosing the crossed out H icon.
 * Slides have been removed as a feature and we can support it as 3rd party plugin.
+* Excalidraw e.g. `/draw` is no longer a built-in feature and will hopefully be moved to a plugin.
 
 WIP changes:
 * RTC a.k.a. DB version sync will be enabled later.
