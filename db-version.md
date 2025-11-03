@@ -434,7 +434,7 @@ There are existing features that have a database equivalent that are still a TOD
 
 ### Importer Limitations
 
-The importer does its best to import all file graph content and loudly error or warn when something doesn't fully import. The only exceptions to that are the following cases:
+The importer does its best to import all file graph content and loudly error or warn when something doesn't fully import. The only exceptions are the following cases:
 * A block with multiple simple queries, multiple advanced queries, multiple embeds or multiple quotes only imports the first of these. This is because file graphs could have multiple of these in one block whereas DB graphs can only have one of these per block.
 * A block with a mix of simple queries, advanced queries, embeds or quotes only imports one of these. This is because file graphs could have multiple of these in one block whereas DB graphs can only have one of these per block.
 
