@@ -411,14 +411,6 @@ The DB Graph Importer converts a file graph to a DB graph. An overview of what i
   * Tags are removed from their blocks when the `Remove inline tags` checkbox is checked. This matches the behavior of the DB version.
 * Property types are automatically detected for Number, Date, Checkbox, Url, Node and Text. If a property value has two conflicting but compatible types like Number and Text, it will choose the more lenient Text type.
 
-### Importer Todos
-
-There are existing features that have a database equivalent that are still a TODO for the importer:
-  * Import text files e.g. *.txt or *.edn
-  * Query macros and related query filters that have changed
-  * Import templates
-  * Import org mode files
-
 ### Convert File Graph to DB graph
 
 * Click on the three dots menu in the upper right corner and select `Import`.
@@ -431,6 +423,20 @@ There are existing features that have a database equivalent that are still a TOD
     1. `Remove inline tags` - This checkbox removes inline tags from block content for any converted tags. This matches the DB graph behavior since all tags are now visible to the right of a block.
     1. `Import additional tags from property values` - This input converts property values for the specified property/properties to the new tags. For example, in the official docs graph the [type property](https://docs.logseq.com/#/page/type) is used this way. This means that all `type` property values like [Feature](https://docs.logseq.com/#/page/feature) on [this page](https://docs.logseq.com/#/page/code%20block) would get converted to a new tag.
     1. `Import tag parents from property values` - This input converts property values for the specified property to be [a parent of a new tag](#parent-tags). For example, in the official docs graph the [parent property](https://docs.logseq.com/#/page/parent) is used this way. This means that all `parent` property values like [Thing](https://docs.logseq.com/#/page/thing) on [this page](https://docs.logseq.com/#/page/feature) would get converted to a new tag.
+
+### Importer Todos
+
+There are existing features that have a database equivalent that are still a TODO for the importer:
+  * Import text files e.g. *.txt or *.edn
+  * Query macros and related query filters that have changed
+  * Import templates
+  * Import org mode files
+
+### Importer Limitations
+
+The importer does its best to import all file graph content and loudly error or warn when something doesn't fully import. The only exceptions to that are the following cases:
+* A block with multiple simple queries, multiple advanced queries, multiple embeds or multiple quotes only imports the first of these. This is because file graphs could have multiple of these in one block whereas DB graphs can only have one of these per block.
+* A block with a mix of simple queries, advanced queries, embeds or quotes only imports one of these. This is because file graphs could have multiple of these in one block whereas DB graphs can only have one of these per block.
 
 ## Automated Backup
 
