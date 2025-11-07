@@ -409,4 +409,4 @@ description:: Advanced queries are written with [Datalog](https://en.wikipedia.o
 		- [Datomic query documentation](https://docs.datomic.com/query.html) - Thorough reference for datomic dialect of Datalog. Explains most datalog concepts well
 		- https://nextjournal.com/try/learn-xtdb-datalog-today/learn-xtdb-datalog-today - Interactive datalog tutorial for engineers
 		- [Datascript's intro docs](https://github.com/tonsky/datascript/wiki/Getting-started)
-		- [Logseq's database schema](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/schema.cljs)
+		- [Logseq's database schema](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/file_based/schema.cljs)

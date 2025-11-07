@@ -8,7 +8,7 @@ description:: Local config file, `logseq/config.edn`, is the main configuration 
 	- Alternatively, edit your graph's config file located at `logseq/config.edn`.
 	- Some options are editable via the UI from other tabs in Settings.
 - ## Functionality
-	- See the [config.edn template](https://github.com/logseq/logseq/blob/master/src/resources/templates/config.edn) for documentation on all config options.
+	- See the [config.edn template](https://github.com/logseq/logseq/blob/master/deps/common/resources/templates/config.edn) for documentation on all config options.
 	- See [[Basic settings]] for config options that have a UI.
 	- This file can be edited outside Logseq and the effects will take place in a few seconds.
 	- Config options are validated when a user saves the file. Errors are displayed for invalid config options.
