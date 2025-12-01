@@ -1,3 +1,10 @@
+## Beta 0.10.15 [[Dec 1st, 2025]]
+id:: 692d8283-7f1d-44cf-81b0-bb25c469a64e
+Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.15>
+	- [[Fixed issues]]
+		- Fix: Youtube embeds not working
+	- [[Enhancement]]
+		- Bump Electron to 38.4.0
 - ## Beta 0.10.14 [[Sep 18th, 2025]]
   Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/0.10.14>
 	- [[Fixed issues]]
