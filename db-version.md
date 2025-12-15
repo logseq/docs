@@ -440,7 +440,7 @@ The importer does its best to import all file graph content and loudly error or 
 
 ## Automated Backup
 
-An automated backup of graphs is available by clicking on the upper right three dots menu and selecting `Export Graph`. Within this modal, you can specify a folder (directory) to save backups. A backup folder can be reused across graphs as each graph gets its own folder within a backup folder. After choosing this folder, hourly backups begin. The last 12 backups are saved. This backup feature is currently only for the browser.
+This feature is _only_ for the browser. An automated backup of graphs is available by clicking on the upper right three dots menu and selecting `Export Graph`. Within this modal, you can specify a folder (directory) to save backups. A backup folder can be reused across graphs as each graph gets its own folder within a backup folder. After choosing this folder, hourly backups begin. The last 12 backups are saved.
 
 ## Export and Import
 
