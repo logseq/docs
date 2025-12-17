@@ -511,3 +511,4 @@ Read the [CLI's homepage](https://www.npmjs.com/package/@logseq/cli) to learn mo
 ## Additional Links
 * https://discuss.logseq.com/t/introducing-newtags-with-examples/32310 - Helpful tutorial on new tags
 * https://github.com/C0ntr0lledCha0s/logseq-template-graph - Example graph with useful properties and tags. Import graph as EDN.
+* https://github.com/jcblemai/logseq-graph-ci - Github workflow that uses CLI to validate a graph
