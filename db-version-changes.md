@@ -40,6 +40,7 @@ High level changes:
 * Markdown syntax for blocks e.g. a heading or quote is no longer visible or editable. Removing a block's heading is done by right-click on a block and choosing the crossed out H icon.
 * Slides have been removed as a feature and we can support it as 3rd party plugin.
 * Excalidraw e.g. `/draw` is no longer a built-in feature and will hopefully be moved to a plugin.
+* Templates are created by tagging a block with `#Template` as described [here](./db-version.md#templates). Previously templates were made by adding a `template` property or through a menu item `Make a template`.
 
 WIP changes:
 * RTC a.k.a. DB version sync will be enabled later.
@@ -75,6 +76,7 @@ Miscelleanous changes:
 * Assets can have custom user properties.
 * Assets are blocks and thus can show their linked references when zoomed in on the asset block.
 * Assets are resized by hovering over them and then dragging the left-right arrows that are visible over the scrollbars.
+* Maximum allowed asset size is 100M
 * Pdf annotations are visible under an asset block by default. Previously this view was in a separate page and required clicking in the pdf viewer.
 
 #### Queries
@@ -94,9 +96,14 @@ Miscelleanous changes:
 * [Advanced queries](https://docs.logseq.com/#/page/advanced%20queries)
   * Advanced queries are now edited in a code block which means queries are syntax highlighted.
   * Some old advanced queries will no longer work and need to be rewritten. For engineers, compare the [db graph `schema`](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/frontend/schema.cljs) vs the [file graph `schema`](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/file_based/schema.cljs).
-  * The attribute `:block/content` was renamed to `:block/title`. If used in an advanced query including in config.edn's `:default-queries`, change it to use `:block/title` e.g. `[?b :block/content "content"]` -> `[?b :block/title "content"]`
   * The task related properties `:block/marker`, `:block/priority`, `:block/deadline` and `:block/scheduled` have been respectively renamed to `:logseq.property/status`, `:logseq.property/priority`, `:logseq.property/deadline` and `:logseq.property/scheduled`. These properties should be queried via rules like `property` e.g. `(property :logseq.property/deadline ...)`.
   * These advanced query options are deprecated: :title, :group-by-page? and :collapsed?.
+  * Attribute changes:
+    * The attribute `:block/content` was renamed to `:block/title`. If used in an advanced query including in config.edn's `:default-queries`, change it to use `:block/title` e.g. `[?b :block/content "content"]` -> `[?b :block/title "content"]`
+    * The attribute `:block/original-name` was renamed to `:block/title`. If used in an advanced query including in config.edn's `:default-queries`, change it to use `:block/title` e.g. `[?b :block/original-name "name"]` -> `[?b :block/title "name"]`
+    * The attribute `:block/journal?` no longer exists. If used in an advanced query including in config.edn's `:default-queries`, change `[?p :block/journal? true]` to `[?p :blocks/tags :logseq.class/Journal]`
+    * The attribute `:block/left` no longer exists and has been replaced by `:block/order`. It is not recommended to write queries with this attribute.
+    * The attribute `:block/path-refs` no longer exists. Please use `(has-ref ?b ?ref)` instead of `[?b :block/path-refs ?ref]`.
 * Since block timestamps are available, they display in table view where possible.
 
 #### Namespaces
@@ -137,3 +144,4 @@ Miscelleanous changes:
   * The attribute `:block/original-name` was renamed to `:block/title`. If used in an advanced query including in config.edn's `:default-queries`, change it to use `:block/title` e.g. `[?b :block/original-name "name"]` -> `[?b :block/title "name"]`
   * The attribute `:block/journal?` no longer exists. If used in an advanced query including in config.edn's `:default-queries`, change it to use `:block/type` e.g. `[?p :block/journal? true]` -> `[?p :block/type "journal"]`
   * The attribute `:block/left` no longer exists and has been replaced by `:block/order`. It is not recommended to write queries with this attribute.
+  * The attribute `:block/path-refs` no longer exists. Please use `(has-ref ?b ?ref)` instead of `[?b :block/path-refs ?ref]`.

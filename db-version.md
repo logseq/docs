@@ -1,6 +1,6 @@
 ## Description
 
-This page describes DB (database) graph functionality as of Aug 29th. See [here](https://test.logseq.com/#/) to try the latest stable version. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
+This page describes DB (database) graph functionality as of Dec 19th, 2025. See [here](https://test.logseq.com/#/) to try the latest stable version. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
 
 NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we recommend only using DB graphs for testing purposes.
 
@@ -23,12 +23,17 @@ NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we 
 * [Library](#library)
 * [Search Commands](#search-commands)
 * [Semantic Search](#semantic-search)
+* [MCP Server](#mcp-server)
+* [Sync](#sync)
+* [Plugins](#plugins)
 * [DB Graph Importer](#db-graph-importer)
 * [Automated Backup](#automated-backup)
 * [Export and Import](#export-and-import)
   * [Graph Export](#graph-export)
   * [Graph Import](#graph-import)
   * [EDN Data Export](#edn-data-export)
+* [iOS App](#ios-app)
+* [Android App](#android-app)
 * [Scripting](#scripting)
 * [CLI](#cli)
 * [Additional Links](#additional-links)
@@ -303,7 +308,12 @@ You can rate them using 4 levels to arrange their next review date.
 
 ### Assets
 
-An asset has the new tag `#Asset`. Assets are created by dragging and dropping a file onto a block. They can also be batch uploaded by going to the `#Asset` page and clicking the `+` icon from the `Tagged Nodes` table. Asset files are stored under a graph's `assets/` directory. Manage assets from the `#Asset` page's `Tagged Nodes` section. The `Gallery View` is a helpful way to view assets.
+An asset has the new tag `#Asset`. Create an asset in the following ways:
+* Drag and drop a file onto a block.
+* Upload a file by going to the `#Asset` page and clicking on the `+ New` icon under the `Tagged Nodes` table.
+* Create from an external file by creating an image link in a block e.g. `![test](https://logseq.com/logo-with-border.a30e7bd0.png)`, clicking on it and then highlighting it. You'll be prompted to create an asset from the external one. This works for urls as well as local file paths e.g. `/Users/user/...`.
+
+Asset files are stored under a graph's `assets/` directory. Manage assets from the `#Asset` page's `Tagged Nodes` section. The `Gallery View` is a helpful way to view assets.
 
 ### Templates
 
@@ -394,6 +404,52 @@ Search commands run commands from the [Search modal](https://docs.logseq.com/#/p
 
 [Search](https://docs.logseq.com/#/page/search) can optionally do a semantic search. To enable this, go to `Settings > AI` and choose a _local_ AI model. This feature is available on browsers that are [WebGPU capable](https://caniuse.com/webgpu) and the desktop.
 
+## MCP Server
+
+There is an optional [MCP](https://modelcontextprotocol.io/docs/getting-started/intro) server to allow AI applications to connect to a graph. An MCP server can run from the desktop app against the current graph or from the [cli](#cli) against a local or current graph. To configure the server on desktop:
+
+1. Go to `Settings > AI` and enable the `MCP Server` switch.
+2. Then create an authorization token to your [HTTP Server](https://docs.logseq.com/#/page/local%20http%20server) for MCP requests and start the HTTP server.
+3. Configure a Local LLM that supports the [Streamable HTTP](https://modelcontextprotocol.io/specification/2025-11-25/basic/transports#streamable-http) mode:
+  * [Gemini](https://gemini.google.com/) can be used on a free tier with a google account. Add the server with the gemini cli: `gemini mcp add logseq-http http://127.0.0.1:12315/mcp --transport http --header "Authorization: Bearer TOKEN"` where `TOKEN` is your server's auth token.
+  * [LM Studio](https://lmstudio.ai/) can be used locally for free. Add a MCP server [as documented](https://lmstudio.ai/docs/app/plugins/mcp) and use http://127.0.0.1:12315/mcp for the url and for the Authorization header use `Bearer TOKEN` where `TOKEN` is your server's auth token.
+
+NOTE: When running from the cli, you can skip step 1.
+
+The MCP Server supports the following features:
+
+* All creates and edits support one or many nodes as the MCP server can batch creates and edits in one invocation.
+* All creates and edits have a pretend option e.g. "pretend add page X with y blocks". This is useful for seeing how many changes would occur.
+* All changes to a current graph are undo/redo-able e.g. `Cmd-Z` in the app.
+* Search any node e.g. cmd-k.
+* Create and list pages.
+* Create and list tags. When creating tags, their properties and parent can be specified
+* Create and list properties. When creating properties, their type, cardinality and tags (for node type) can be specified
+* Add blocks to a page or edit them. When adding, tags can be specified. When editing, only block titles are supported.
+* All references to tags, properties or pages can handle new ones or reference existing ones.
+* Creation of pages, tags and properties runs the same app validations to prevent invalid data.
+
+The following are TODOs for the MCP server:
+* Edit pages, tags and properties
+* Read and write properties that are associated with any node type
+* Read and write block children. This includes listing blocks beyond the top-level in a page.
+* Anything related to namespaces or property values
+
+## Sync
+
+NOTE: This feature is a paid feature that is currently _invite only_.
+
+Logseq Sync syncs DB graphs between devices. It is also referred to as RTC (Real Time Collaboration) since this sync supports collaboration between users in real time like Google Docs! Some workflows that are specific to Sync:
+
+* To create a synced DB graph:
+  * On a desktop or browser client, do a one-time setup of setting up an encryption password. Go to `Settings > Encryption` and follow the instructions.
+  * Click on the left sidebar graph name to open a menu and choose the `Create db graph` menu item.
+  * Check 'Use Logseq Sync?'
+
+## Plugins
+
+The [JS Plugin SDK](https://logseq.github.io/plugins/) adds support for DB graphs, including DB-graph specific methods. There is also a CLJS SDK. See https://github.com/logseq/cljs-plugin-example for an example plugin using the CLJS SDK.
+
 ## DB Graph Importer
 
 The DB Graph Importer converts a file graph to a DB graph. An overview of what it does:
@@ -410,6 +466,7 @@ The DB Graph Importer converts a file graph to a DB graph. An overview of what i
     * Tags associated with a page are associated to that page with a `Page Tags` property.
   * Tags are removed from their blocks when the `Remove inline tags` checkbox is checked. This matches the behavior of the DB version.
 * Property types are automatically detected for Number, Date, Checkbox, Url, Node and Text. If a property value has two conflicting but compatible types like Number and Text, it will choose the more lenient Text type.
+* Assets are copied and renamed to unique uuids. Zotero pdfs are imported, if the importer is run on desktop.
 
 ### Convert File Graph to DB graph
 
@@ -473,7 +530,7 @@ Exported [EDN data](https://github.com/edn-format/edn) allows any DB graph conte
 * `Export block EDN data` - Run this command on the current block to copy it to the clipboard. When this data is imported, it will overwrite the current block.
 * `Export page EDN data` - Run this command on the current page to copy it to the clipboard. When this is imported to an existing page, it will append to the existing page.
 * `Export graph's tags and properties EDN data` - Run this command to copy the entire graph's tags and properties. This is useful for sharing your workflows with others without sharing your graph-specific data. This is an example of a workflow that was not possible with file graphs.
-* `Import EDN data` - Run this command to import any of the above exported data. If importing a block, you must have focus on the block you want to import into.
+* `Import EDN data` - Run this command to import any of the above exported data. If importing a block, you must have focus on the block you want to import into. If you do not want the import after seeing it, press `Cmd-Z` to undo it.
 
 This feature is also available:
 * for the whole graph using the `Export EDN file` and `EDN to DB graph` options described above.
@@ -481,6 +538,28 @@ This feature is also available:
 * for multiple selected nodes with the `Copy / Export as` modal.
 
 For developers, this shareable EDN data can also be used in scripts to create or modify existing graphs. For example, a page's data could be passed to [this script](https://github.com/logseq/logseq/blob/master/deps/db/script/create_graph.cljs) to create a new DB graph with that page.
+
+## iOS App
+
+NOTE: This is _invite only_ for now.
+
+The new iOS App works on the latest iOS versions and should work on both iPhones and iPads. The app has native UI components and provides a mobile-first outliner experience. While it doesn't have all the features of the desktop app, it adds mobile-specific features. Here is an overview of high level navigation and features:
+
+* There are five tabs: Home, Graphs, Capture, Go To and Search. There is also a datepicker in the upper left for easy journal navigation and a three dots menu in the upper right with tab-specific actions.
+* The outliner is available in all tabs except for `Graphs`.
+* In `Home`, see a default Journals view. Click on the three dots menu for more info about your app.
+* In `Graphs`, manage local, personal remote and shared remote graphs. Click on the the three dots menu for additional actions like `Import`.
+* In `Capture`, view and create new blocks. Click on the upper left audio button to capture a voice recording. Click on the upper right icon to send the captured blocks to today's journal.
+* In `Go To`, view favorited and recent nodes.
+* In `Search`, search nodes like you would with `Cmd-K` search in the desktop app.
+* External apps can send text to Logseq via their `Share` button. This quick capture will insert block into today's journal.
+* Outliner:
+  * When editing a block, there is a block action bar that pops up at the bottom. The block action bar has buttons for several actions including ones to create a task, insert/create a photo, create a voice recording and open the `/` commands menu.
+  * Collapse blocks by clicking on arrows on the right.
+
+## Android App
+
+There is a new Android app that has native UI components. This has not been opened up for alpha testing yet.
 
 ## Scripting
 
@@ -496,15 +575,18 @@ On desktop, it is easy to modify an existing DB graph with a script and see the 
 
 ## CLI
 
-The `logseq` [CLI](https://en.wikipedia.org/wiki/Command-line_interface) provides commands to interact with desktop DB graphs from the command line. The CLI works independent of the Logseq app and makes Logseq features available for automation on CI/CD platforms like [Github Actions](https://github.com/features/actions). For example, a DB graph could have a Markdown export created on every push to Github. Some CLI commands also interact with the current DB graph if the [HTTP API Server](https://docs.logseq.com/#/page/local%20http%20server) is turned on. The CLI provides the following commands including:
+The `logseq` [CLI](https://en.wikipedia.org/wiki/Command-line_interface) provides commands to interact with desktop DB graphs and local graphs from the command line. The CLI works independent of the Logseq app and makes Logseq features available for automation on CI/CD platforms like [Github Actions](https://github.com/features/actions). For example, a DB graph could have a Markdown export created on every push to Github. Some CLI commands also interact with the current DB graph if the [HTTP API Server](https://docs.logseq.com/#/page/local%20http%20server) is turned on. The CLI provides the following commands including:
 
-* list - List graphs
+* list - List local graphs
 * show - Show DB graph(s) info
 * search - Search DB graph like grep
-* query - Query DB graph
+* query - Query DB graph(s)
 * export - Export DB graph as Markdown
 * export-edn - Export DB graph as EDN
+* import-edn Import into DB graph with EDN
 * append - Append text to current page
+* mcp-server - Run a MCP server
+* validate - Validate DB graph
 
 Read the [CLI's homepage](https://www.npmjs.com/package/@logseq/cli) to learn more.
 
