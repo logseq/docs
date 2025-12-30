@@ -450,6 +450,8 @@ Logseq Sync syncs DB graphs between devices. It is also referred to as RTC (Real
 
 The [JS Plugin SDK](https://logseq.github.io/plugins/) adds support for DB graphs, including DB-graph specific methods. There is also a CLJS SDK. See https://github.com/logseq/cljs-plugin-example for an example plugin using the CLJS SDK.
 
+For example plugins that work with DB graphs, see https://github.com/benjypng/logseq-zoterolocal-plugin and https://github.com/kerim/logseq-checklist.
+
 ## DB Graph Importer
 
 The DB Graph Importer converts a file graph to a DB graph. An overview of what it does:
@@ -594,3 +596,5 @@ Read the [CLI's homepage](https://www.npmjs.com/package/@logseq/cli) to learn mo
 * https://discuss.logseq.com/t/introducing-newtags-with-examples/32310 - Helpful tutorial on new tags
 * https://github.com/C0ntr0lledCha0s/logseq-template-graph - Example graph with useful properties and tags. Import graph as EDN.
 * https://github.com/jcblemai/logseq-graph-ci - Github workflow that uses CLI to validate a graph
+- https://github.com/kerim/logseq-db-query-builder - Visual advanced query builder
+- https://github.com/kerim/logseq-db-knowledge - Skills for working with DB graphs
