@@ -448,9 +448,9 @@ Logseq Sync syncs DB graphs between devices. It is also referred to as RTC (Real
 
 ## Plugins
 
-The [JS Plugin SDK](https://logseq.github.io/plugins/) adds support for DB graphs, including DB-graph specific methods. There is also a CLJS SDK. See https://github.com/logseq/cljs-plugin-example for an example plugin using the CLJS SDK.
+There are currently 20+ plugins that support DB graphs. To see them, go to https://logseq.github.io/marketplace/ and filter by `Supports DB?` column.
 
-For example plugins that work with DB graphs, see https://github.com/benjypng/logseq-zoterolocal-plugin and https://github.com/kerim/logseq-checklist.
+The [JS Plugin SDK](https://logseq.github.io/plugins/) adds support for DB graphs, including DB-graph specific methods. There is also a CLJS SDK. See https://github.com/logseq/cljs-plugin-example for an example plugin using the CLJS SDK. For example DB-compatible plugins, see https://github.com/benjypng/logseq-zoterolocal-plugin and https://github.com/kerim/logseq-checklist.
 
 ## DB Graph Importer
 
