@@ -596,5 +596,7 @@ Read the [CLI's homepage](https://www.npmjs.com/package/@logseq/cli) to learn mo
 * https://discuss.logseq.com/t/introducing-newtags-with-examples/32310 - Helpful tutorial on new tags
 * https://github.com/C0ntr0lledCha0s/logseq-template-graph - Example graph with useful properties and tags. Import graph as EDN.
 * https://github.com/jcblemai/logseq-graph-ci - Github workflow that uses CLI to validate a graph
-- https://github.com/kerim/logseq-db-query-builder - Visual advanced query builder
-- https://github.com/kerim/logseq-db-knowledge - Skills for working with DB graphs
+* https://github.com/kerim/logseq-db-query-builder - Visual advanced query builder
+* https://github.com/kerim/logseq-db-knowledge - Skills for working with DB graphs
+* https://github.com/benjypng/logseq-todo-pwa - PWA that uses HTTP API
+* https://github.com/clstb/yalms - MCP server that uses HTTP API
