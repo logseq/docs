@@ -600,3 +600,5 @@ Read the [CLI's homepage](https://www.npmjs.com/package/@logseq/cli) to learn mo
 * https://github.com/kerim/logseq-db-knowledge - Skills for working with DB graphs
 * https://github.com/benjypng/logseq-todo-pwa - PWA that uses HTTP API
 * https://github.com/clstb/yalms - MCP server that uses HTTP API
+* https://bit.ly/logseqdbfaq - Informal DB version FAQ by power user
+* https://www.youtube.com/@HDanzu/videos - Several videos on DB version
