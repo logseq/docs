@@ -25,7 +25,7 @@ High level changes:
 * Blocks and pages are united as [nodes](./db-version.md#nodes). They are referenced as `[[]]` and blocks no longer use `(())` for referencing.
 * Properties have a lot more functionality with the [new properties](./db-version.md#properties)!
 * Previous tags should behave like before that an inline tag is entered using `Cmd-Enter`.
-    * NOTE: Pressing enter on a `#` input triggers a powerful [new tags](./db-version.md#new-tags) feature.
+    * NOTE: Pressing enter on a `#` input triggers a powerful [new tags](./db-version.md#tags) feature.
 * All blocks and pages have created-at and updated-at timestamps! With this built-in dimension of time, time powered features are possible.
 *  The [previous tables](https://docs.logseq.com/#/page/tables) including version 2 are replaced by a shadcn based table. The new tables have inline editing like spreadsheets by default. See [here](./db-version.md#tables) for more.
 * Flashcards have been re-implemented with [a new algorithm](https://github.com/open-spaced-repetition/free-spaced-repetition-scheduler). It isn't compatible with the previous flashcards so none of the properties and srs data from the previous version is imported.
@@ -35,8 +35,8 @@ High level changes:
   * `>Query` is now `/Advanced Query`
   * `>Src` is now `/Code block`
   * `>Quote` is `/Quote`
-* Code blocks, quote blocks and math blocks [have tags](./db-version.md#more-new-tags). Since properties are not are a part of the block content, properties can more naturally be added to these blocks.
-* Pdf annotations [have a tag](./db-version.md#more-new-tags). This allows annotations to be viewed across pdfs and to have custom views of annotations while using the pdf viewer.
+* Code blocks, quote blocks and math blocks [have tags](./db-version.md#more-tags). Since properties are not are a part of the block content, properties can more naturally be added to these blocks.
+* Pdf annotations [have a tag](./db-version.md#more-tags). This allows annotations to be viewed across pdfs and to have custom views of annotations while using the pdf viewer.
 * Markdown syntax for blocks e.g. a heading or quote is no longer visible or editable. Removing a block's heading is done by right-click on a block and choosing the crossed out H icon.
 * Slides have been removed as a feature and we can support it as 3rd party plugin.
 * Excalidraw e.g. `/draw` is no longer a built-in feature and will hopefully be moved to a plugin.
@@ -62,7 +62,7 @@ Miscelleanous changes:
 * `#` and `/` are disallowered characters for page names.
 
 #### Tags
-* Tags have [a lot of new functionality](./db-version.md#new-tags).
+* Tags have [a lot of new functionality](./db-version.md#tags).
 * When a tag is added on a block, it now displays to the right of the block. To inline a tag like before, press `Cmd-Enter` in the tag dropdown.
 
 #### Tasks
@@ -121,7 +121,7 @@ Miscelleanous changes:
 
 #### Search
 * When search modal first opens, recently updated pages display at the top.
-* Tags can be created from the modal as described in [new tags](./db-version.md#new-tags).
+* Tags can be created from the modal as described in [tags](./db-version.md#tags).
 
 #### DB Graph Directories
 

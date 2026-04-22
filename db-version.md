@@ -8,7 +8,7 @@ NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we 
 
 * [Nodes](#nodes)
 * [Properties](#properties)
-* [New Tags](#new-tags)
+* [Tags](#tags)
 * [Tag Based Features](#tag-based-features)
   * [Tasks](#tasks)
   * [Journals](#journals)
@@ -16,7 +16,7 @@ NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we 
   * [Cards](#cards)
   * [Assets](#assets)
   * [Templates](#templates)
-  * [More New Tags](#more-new-tags)
+  * [More Tags](#more-tags)
 * [Bulk Actions](#bulk-actions)
 * [Views](#views)
   * [Tables](#tables)
@@ -43,7 +43,7 @@ NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we 
 A node is a new term for a page or block because the two now behave similarly. Nodes have the following common behaviors:
 
 * Nodes are referenced by using `[[]]`.
-* Nodes have a pretty similar editing experience whether changing block content or a page title. In the editing block, properties can be set, `/` commands are available and [new tags](#new-tags) can be set.
+* Nodes have a pretty similar editing experience whether changing block content or a page title. In the editing block, properties can be set, `/` commands are available and [tags](#tags) can be set.
 * Nodes have `Linked References` and `Unlinked References` sections. Blocks need to be zoomed in to see this.
 * Nodes can be favorited. For a zoomed in block, use the `Add to/remove from favorites` command.
 * Nodes share the same keybindings for [properties](#property-shortcuts) and blocks e.g. toggling block properties visibility with `Cmd-;`.
@@ -60,7 +60,7 @@ However, blocks and pages will have some differences as noted in the [pages](#pa
 
 Things that are specific to pages:
 * Pages have a dedicated view called `Pages`.
-* When a property, new tag, journal or whiteboard are created, they are created as a page.
+* When a property, tag, journal or whiteboard are created, they are created as a page.
 * Pages are unique as follows:
   * Page names are unique by tag e.g. there can be `Apple #Company` and `Apple #Fruit`.
   * Property names are unique and can have the same names as built-in property names.
@@ -134,7 +134,7 @@ A property type determines what type a property's property values can have. Ther
 * `DateTime`: This is for date times and is editable with a datetime picker. See the `Due` property in [cards](#cards) for an example property that uses this. This property type can be used with [repeated nodes](#repeated-tasks-and-nodes).
 * `Checkbox`: This is used to set or unset a property value and displays as a checkbox. To engineers this type is known as a boolean.
 * `Url`. This limits text to only allow urls e.g. `https.//logseq.com`. This does not behave like `Text` e.g. no referencing or child blocks.
-* `Node`: This allows a property value to link to other nodes i.e. pages or blocks. When first configuring this, you are prompted to select a new tag. You can choose to skip a tag if you don't care about limiting the available nodes. When a tag is selected or created, only nodes with that tag will appear as options for the property. For example, if you define the property `Author`, you could create a new tag `#Person` that only allows nodes tagged with `#Person` as values. Also worth noting that tag selection works for all child tags of the chosen new tag. Using the previous example, if `#Actor` is a child of `#Person`, nodes tagged with `#Person` or `#Actor` are allowed values.
+* `Node`: This allows a property value to link to other nodes i.e. pages or blocks. When first configuring this, you are prompted to select a tag. You can choose to skip a tag if you don't care about limiting the available nodes. When a tag is selected or created, only nodes with that tag will appear as options for the property. For example, if you define the property `Author`, you could create a tag `#Person` that only allows nodes tagged with `#Person` as values. Also worth noting that tag selection works for all child tags of the chosen tag. Using the previous example, if `#Actor` is a child of `#Person`, nodes tagged with `#Person` or `#Actor` are allowed values.
 
 ### Property Choices
 
@@ -150,27 +150,27 @@ Properties can have default values, currently just for the types Text, Number an
 
 When using simple queries, properties for the above two use cases will have that default value. When using property choices, one of them can be set as a default value by checking the default choice box in the list of property choices.
 
-## New Tags
+## Tags
 
-NOTE: New tags are currently labeled as tags in the app and should be backwards compatible with the previous tags. These `new tags` are also known as classes, types or supertags. Feedback is welcome on names for `new tags`.
+Tags are an easy way to group nodes across pages i.e. flexible lists. Tags can have `Tag Properties` which are properties that all nodes inherit from a tag. Using this functionality allows you to create flexible tables. Using tags this way is known in other applications as types, classes or supertags.
 
-To create your first new tag:
-* Open [Search](https://docs.logseq.com/#/page/search) and type `#NAME` where NAME is new tag name.
-* A dialog pops up that lets you create and/or add tag properties to the new tag. These tag properties are inherited by every node that uses the new tag.
+To create your first tag:
+* Open [Search](https://docs.logseq.com/#/page/search) and type `#NAME` where NAME is tag name.
+* A dialog pops up that lets you create and/or add tag properties to the tag. These tag properties are inherited by every node that uses the tag.
 
-For example, say we created a new tag `Person` and added `lastName` and `birthday` tag properties to it. Now when `#Person` is added to a block or page, those two properties automatically display and are editable for them. A powerful thing about new tags is that when its tag properties change those changes immediately show up on all [tagged nodes](#tagged-node).
+For example, say we created a tag `Person` and added `lastName` and `birthday` tag properties to it. Now when `#Person` is added to a block or page, those two properties automatically display and are editable for them. A powerful thing about tags is that when its tag properties change those changes immediately show up on all [tagged nodes](#tagged-node).
 
-A new tag can have properties on its own page. By default the `Description` property is available for adding a description and `Hide from node` is available to hide the new tag on tagged nodes that float to the far right. To set these properties, go to the tag's page and with the focus on the title press the add property shortcut from [property shortcuts](#property-shortcuts) e.g. `Cmd-p`.
+A tag can have properties on its own page. By default the `Description` property is available for adding a description and `Hide from node` is available to hide the tag on tagged nodes that float to the far right. To set these properties, go to the tag's page and with the focus on the title press the add property shortcut from [property shortcuts](#property-shortcuts) e.g. `Cmd-p`.
 
 ### Create Tags
 
 Ways to create tags:
-* Open search and type `#NAME` where `NAME` is the new tag name.
+* Open search and type `#NAME` where `NAME` is the tag name.
 * In any block including a page name, type `#NAME` and press `Enter`. The tag floats to the right of the block.
 * In a block type `#NAME` and press `Cmd-Enter`. An inline tag is created.
 * Paste text in a block that includes `#NAME`. An inline tag is created for tag `NAME`.
-* Configure a `Node` property type to have a new tag config.
-* Configure a new tag to have an `Extends` property, the new `Extends` value becomes a tag.
+* Configure a `Node` property type to have a tag config.
+* Configure a tag to have an `Extends` property, the new `Extends` value becomes a tag.
 * In a block type `#NAME` and press `Esc`. An inline tag is created. Not recommended as it doesn't work for all use cases.
 * Convert any page to a tag by clicking on the three dots menu in the upper right corner and clicking `Convert to Tag`.
 
@@ -178,9 +178,9 @@ Any tag can be converted to a page by clicking on the three dots menu and clicki
 
 ### Parent Tags
 
-New tags can have multiple parent tags via the `Extends` property and default to the `Root Tag` as a parent.  Parent tags are powerful as the new tag inherits the properties from each of its parent tags. For example, say we have `#Book` with property `author` and `#MediaObject` with property `duration`. If we create a new `#Audiobook` with property `readBy` and give it parents of `#Book` and `#MediaObject`, any node tagged with `#Audiobook` would have 3 properties: `author`, `duration` and `readBy`.
+Tags can have multiple parent tags via the `Extends` property and default to the `Root Tag` as a parent.  Parent tags are powerful as the tag inherits the properties from each of its parent tags. For example, say we have `#Book` with property `author` and `#MediaObject` with property `duration`. If we create a new `#Audiobook` with property `readBy` and give it parents of `#Book` and `#MediaObject`, any node tagged with `#Audiobook` would have 3 properties: `author`, `duration` and `readBy`.
 
-Parent tags also provide a way of organizing tags in a tree hierarchy. Since a new tag can have multiple parents, it can appear multiple times in a hierarchy. For example, here's the tree hierarchy of the example in the previous paragraph:
+Parent tags also provide a way of organizing tags in a tree hierarchy. Since a tag can have multiple parents, it can appear multiple times in a hierarchy. For example, here's the tree hierarchy of the example in the previous paragraph:
 
 - Root Tag
   - Book
@@ -188,33 +188,33 @@ Parent tags also provide a way of organizing tags in a tree hierarchy. Since a n
   - MediaObject
     - AudioBook
 
-On any new tag page that is a parent tag, you can see this hierarchy under the `Children` section.
+On any tag page that is a parent tag, you can see this hierarchy under the `Children` section.
 
-### Configure a New Tag
+### Configure a Tag
 
-New tags are configurable from their page. Navigate to their page by using [Search](https://docs.logseq.com/#/page/search) or clicking on their `#` name links. On their page, hover over their name to see the rotating triangle icon to the left. Click on it to see the tag page's properties. Two important properties you'll see for configuring a tag:
+Tags are configurable from their page. Navigate to their page by using [Search](https://docs.logseq.com/#/page/search) or clicking on their `#` name links. On their page, hover over their name to see the rotating triangle icon to the left. Click on it to see the tag page's properties. Two important properties you'll see for configuring a tag:
 
-* `Extends`: Use this to allow the new tag to inherit properties from one or more parent tags. This defaults to the `Root Tag` which doesn't have any properties.
-* `Tag Properties`: These tag properties are inherited by every node that uses the new tag. Drag one above or below the other to sort them. These properties will then display sorted on the tagged node.
+* `Extends`: Use this to allow the tag to inherit properties from one or more parent tags. This defaults to the `Root Tag` which doesn't have any properties.
+* `Tag Properties`: These tag properties are inherited by every node that uses the tag. Drag one above or below the other to sort them. These properties will then display sorted on the tagged node.
 
 ### Tagged Node
 
-A tagged node is a page or block that has a new tag. A tagged node is also known as an object or a new tag instance. There are a couple of ways to create tagged nodes:
-* In the current block or page title, type `#` at the end and select a new tag.
-* In [Search](https://docs.logseq.com/#/page/search), type `PAGE #TAG` to create a page named `PAGE` with new tag `TAG`.
-* In a block after `[[]]`, type `#` and select a new tag. For example `[[block content]]#TAG` links to the block with `block content` and adds `#TAG`. For existing references, a new tag is added to the node. For new references, a new page is created with the new tag.
+A tagged node is a page or block that has a tag. A tagged node is also known as an object or a tag instance. There are a couple of ways to create tagged nodes:
+* In the current block or page title, type `#` at the end and select a tag.
+* In [Search](https://docs.logseq.com/#/page/search), type `PAGE #TAG` to create a page named `PAGE` with tag `TAG`.
+* In a block after `[[]]`, type `#` and select a tag. For example `[[block content]]#TAG` links to the block with `block content` and adds `#TAG`. For existing references, a tag is added to the node. For new references, a new page is created with the tag.
 
-A tagged node can have multiple new tags. Once a node is tagged it displays all tags' properties as empty off the node in positions configured by each property. The only properties that don't display are ones hidden via `Hide by default`.
+A tagged node can have multiple tags. Once a node is tagged it displays all tags' properties as empty off the node in positions configured by each property. The only properties that don't display are ones hidden via `Hide by default`.
 
 A tagged node can have an icon. When it does have an icon, it will appear to the left of its name or in a reference.
 
 ## Tag Based Features
 
-The features in this section use [new tags](#new-tags). Each of these features have built-in [tables](#tables) (dashboards) to view and manage them on their tag page!
+The features in this section use [tags](#tags). Each of these features have built-in [tables](#tables) (dashboards) to view and manage them on their tag page!
 
 ### Tasks
 
-Tasks are improved from the previous version as they more powerful and customizable. All tasks are blocks with the built-in new tag `#Task`. When a task is created it has the properties `Status`, `Priority`, `Deadline` and `Scheduled`.
+Tasks are improved from the previous version as they more powerful and customizable. All tasks are blocks with the built-in tag `#Task`. When a task is created it has the properties `Status`, `Priority`, `Deadline` and `Scheduled`.
 
 #### Create a Task
 
@@ -263,16 +263,16 @@ To define your own repeated nodes, create a `Date` or `DateTime` property and a 
 
 #### Customizing Tasks
 
-Since tasks are powered by properties and [new tags](#new-tags), they can be customized in a number of ways. Some parts of a task can't be customized because tasks are built into core features like the [Query Builder](https://docs.logseq.com/#/page/query%20builder) and queries on today's journal. Here are ways to customize tasks:
+Since tasks are powered by properties and [tags](#tags), they can be customized in a number of ways. Some parts of a task can't be customized because tasks are built into core features like the [Query Builder](https://docs.logseq.com/#/page/query%20builder) and queries on today's journal. Here are ways to customize tasks:
 
 1. The `Status` property choices can be customized by going to the `Status` page with [Search](https://docs.logseq.com/#/page/search). From the property's [configuration dropdown](#configure-a-property) edit the name and icon of built-in choices. You can add new choices but not delete the built-in ones.
 2. Task properties can be configured by going to the property's page. From this page you can configure its icon or the ui position via the [configuration dropdown](#configure-a-property).
-3. `#Task` can be configured to have additional properties from the new tag's [page](#configure-a-new-tag).
-4. Custom types of tasks can be created by creating a new tag that has `#Task` as the [parent tag](#parent-tags). For example, create a `#ProjectTask` from [Search](https://docs.logseq.com/#/page/search) and configure it to have `Task` as the parent. Then add a property on the `project` property on `#ProjectTask`. You now have a task for projects!
+3. `#Task` can be configured to have additional properties from the tag's [page](#configure-a-tag).
+4. Custom types of tasks can be created by creating a tag that has `#Task` as the [parent tag](#parent-tags). For example, create a `#ProjectTask` from [Search](https://docs.logseq.com/#/page/search) and configure it to have `Task` as the parent. Then add a property on the `project` property on `#ProjectTask`. You now have a task for projects!
 
 ### Journals
 
-A journal page has the [new tag](#new-tags) `#Journal`. Like tasks, journals can be customized by adding properties to its tag. For example, navigate to the `#Journal` page and add a property. This property now shows up on all journals!
+A journal page has the [tag](#tags) `#Journal`. Like tasks, journals can be customized by adding properties to its tag. For example, navigate to the `#Journal` page and add a property. This property now shows up on all journals!
 
 Journals are automatically created for the current day in the Journals view. There are a couple of ways to create a journal:
 * Natural language that autocompletes within `[[]]` can reference specific days e.g. `[[Today]]`. A specific day this week, last week or next week can be described e.g. `[[This Friday]]`, `[[Last Friday]]` or `[[Next Friday]]`.
@@ -282,16 +282,16 @@ Journals are automatically created for the current day in the Journals view. The
 
 ### Queries
 
-A [(simple) query](https://docs.logseq.com/#/page/queries) and [advanced query](https://docs.logseq.com/#/page/advanced%20queries) have the [new tag](#new-tags) `#Query`. Queries are created in one of the following ways:
+A [(simple) query](https://docs.logseq.com/#/page/queries) and [advanced query](https://docs.logseq.com/#/page/advanced%20queries) have the [tag](#tags) `#Query`. Queries are created in one of the following ways:
 * Type the `/Query` command to create a query through the [query builder](https://docs.logseq.com/#/page/query%20builder).
 * Type a simple query in a block and then type the `/Query` command to run the query.
 * Type the `/Advanced Query` command to create an advanced query.
 
-Like other new tags, go to the `#Query` page to see a table to manage queries. Query results are displayed in a [view](#views).
+Like other tags, go to the `#Query` page to see a table to manage queries. Query results are displayed in a [view](#views).
 
 ### Cards
 
-A [(flash)card](https://docs.logseq.com/#/page/flashcards) has the new tag `#Card`. This feature has been re-implemented to use a [new algorithm](https://github.com/open-spaced-repetition/free-spaced-repetition-scheduler).
+A [(flash)card](https://docs.logseq.com/#/page/flashcards) has the tag `#Card`. This feature has been re-implemented to use a [new algorithm](https://github.com/open-spaced-repetition/free-spaced-repetition-scheduler).
 
 #### Create Cards
 * Tag blocks with `#Card` to create new cards.
@@ -308,7 +308,7 @@ You can rate them using 4 levels to arrange their next review date.
 
 ### Assets
 
-An asset has the new tag `#Asset`. Create an asset in the following ways:
+An asset has the tag `#Asset`. Create an asset in the following ways:
 * Drag and drop a file onto a block.
 * Upload a file by going to the `#Asset` page and clicking on the `+ New` icon under the `Tagged Nodes` table.
 * Create from an external file by creating an image link in a block e.g. `![test](https://logseq.com/logo-with-border.a30e7bd0.png)`, clicking on it and then highlighting it. You'll be prompted to create an asset from the external one. This works for urls as well as local file paths e.g. `/Users/user/...`.
@@ -317,13 +317,13 @@ Asset files are stored under a graph's `assets/` directory. Manage assets from t
 
 ### Templates
 
-A template has the new tag `#Template`. A template allows for block(s) and their children to be easily copied. To create a template, write the name of the template in a new block and tag the block with `#Template`. Then add children blocks (however many levels deep) under the template block. To insert a copy of a template, use the `/Template` command.
+A template has the tag `#Template`. A template allows for block(s) and their children to be easily copied. To create a template, write the name of the template in a new block and tag the block with `#Template`. Then add children blocks (however many levels deep) under the template block. To insert a copy of a template, use the `/Template` command.
 
 When creating a template block, there is an optional `Apply template to tags` property to use. This property provides interesting automation whenever a [tagged node](#tagged-node) is created for a configured tag. For example, create a template and configure the property to apply to `#Journal`. Now whenever a journal page is created, the template gets applied at the top of the page. If a tag is configured with multiple templates, the templates are applied in succession. When a tagged node is a block instead of a page e.g. `#Task`, the template is applied as the first child of the block. Templates can apply to built-in and user tags.
 
-### More New Tags
+### More Tags
 
-Here are more new tags that are built-in, most of which are created with `/` commands:
+Here are more tags that are built-in, most of which are created with `/` commands:
 * `#Code` - Create a code block with the `/Code block` command or by typing the backtick ` three times.
 * `#Quote` - Create a quote block with the `/Quote` command or by typing `>`.
 * `#Math` - Create a math block written as LaTeX with the `/Math block` command.
@@ -334,7 +334,7 @@ Like other tags, go to their tag pages to view and manage all of them in one pla
 ## Bulk Actions
 
 Bulk actions are a powerful way to make changes across nodes. When multiple nodes are selected, bulk actions can be taken on them. To select nodes in a block context, use a mouse or the shift + arrow keys. Once nodes are selected, a bulk action header appears above the blocks. The bulk action header can be closed with `Esc`. The following bulk actions are available in the header:
-* `Tag`: Click on `#` icon to add/update/remove [new tags](#new-tags) for selected nodes.
+* `Tag`: Click on `#` icon to add/update/remove [tags](#tags) for selected nodes.
 * `Copy`: Copy the block or page title of selected nodes.
 * `Set Property`: Add or update a [property](#properties) for selected nodes.
 * `Unset Property`: Remove a [property](#properties) for selected nodes.
@@ -384,7 +384,7 @@ A table displays a group of nodes as rows and a node's properties as columns. A 
 
 ## Library
 
-The `Library` is a built-in page that displays and edits namespaced pages as if they were blocks on a page. This is powerful as it allows an outliner to build and organize a hierarchy of pages. This is useful for those who want to organize their pages as if they were under folders on a computer. Pages that have no common properties are a good fit for namespaces. Pages that have common properties are better organized with [new tags](#new-tags). The following actions can be done on the `Library` page:
+The `Library` is a built-in page that displays and edits namespaced pages as if they were blocks on a page. This is powerful as it allows an outliner to build and organize a hierarchy of pages. This is useful for those who want to organize their pages as if they were under folders on a computer. Pages that have no common properties are a good fit for namespaces. Pages that have common properties are better organized with [tags](#tags). The following actions can be done on the `Library` page:
 
 * Add to the Library with the `Add existing pages to Library` button.
 * Delete from the Library by selecting a block and pressing `Backspace` or `Cmd-X`. This also deletes the page's relationship to its namespace. This does not delete the page.
@@ -461,8 +461,8 @@ The DB Graph Importer converts a file graph to a DB graph. An overview of what i
   * `IN-PROGRESS` and `NOW` -> `Doing`
   * `WAIT` and `WAITING` -> `Backlog`
 * Tags are imported as follows:
-  * By default, all tags are imported as [new tags](#new-tags) using the `Import all tags` input. This allows you to use all your tags as you have previously, along with the new functionality they have. Any properties associated with a tag are added to tags to take advantage of the new functionality.
-  * Alternatively you can import only specific tags to [new tags](#new-tags) using the `Import specific tags` input. Tags that aren't specified in this input are then imported as follows:
+  * By default, all tags are imported as [tags](#tags) using the `Import all tags` input. This allows you to use all your tags as you have previously, along with the new functionality they have. Any properties associated with a tag are added to tags to take advantage of the new functionality.
+  * Alternatively you can import only specific tags to [tags](#tags) using the `Import specific tags` input. Tags that aren't specified in this input are then imported as follows:
     * All such tags become pages.
     * Tags in a block are converted to [page references](https://docs.logseq.com/#/page/term%2Fpage%20reference).
     * Tags associated with a page are associated to that page with a `Page Tags` property.
@@ -477,11 +477,11 @@ The DB Graph Importer converts a file graph to a DB graph. An overview of what i
 * This brings up a dialog. For larger graphs it takes longer for the dialog to display.
 * The dialog requires you to input a name for your graph.
 * The dialog has the following optional inputs:
-    1. `Import all tags` - This checkbox convert all existing tags to be [new tags](#new-tags).
-    1. `Import specific tags` - This input is an alternative to `Import all tags` in which you only convert specific tags to be [new tags](#new-tags). This is helpful if you don't want most of your existing tags to behave like new tags. You can also convert pages later by right clicking on a page's name.
+    1. `Import all tags` - This checkbox convert all existing tags to be [tags](#tags).
+    1. `Import specific tags` - This input is an alternative to `Import all tags` in which you only convert specific tags to be [tags](#tags). This is helpful if you don't want most of your existing tags to behave like tags. You can also convert pages later by right clicking on a page's name.
     1. `Remove inline tags` - This checkbox removes inline tags from block content for any converted tags. This matches the DB graph behavior since all tags are now visible to the right of a block.
-    1. `Import additional tags from property values` - This input converts property values for the specified property/properties to the new tags. For example, in the official docs graph the [type property](https://docs.logseq.com/#/page/type) is used this way. This means that all `type` property values like [Feature](https://docs.logseq.com/#/page/feature) on [this page](https://docs.logseq.com/#/page/code%20block) would get converted to a new tag.
-    1. `Import tag parents from property values` - This input converts property values for the specified property to be [a parent of a new tag](#parent-tags). For example, in the official docs graph the [parent property](https://docs.logseq.com/#/page/parent) is used this way. This means that all `parent` property values like [Thing](https://docs.logseq.com/#/page/thing) on [this page](https://docs.logseq.com/#/page/feature) would get converted to a new tag.
+    1. `Import additional tags from property values` - This input converts property values for the specified property/properties to the tags. For example, in the official docs graph the [type property](https://docs.logseq.com/#/page/type) is used this way. This means that all `type` property values like [Feature](https://docs.logseq.com/#/page/feature) on [this page](https://docs.logseq.com/#/page/code%20block) would get converted to a tag.
+    1. `Import tag parents from property values` - This input converts property values for the specified property to be [a parent of a tag](#parent-tags). For example, in the official docs graph the [parent property](https://docs.logseq.com/#/page/parent) is used this way. This means that all `parent` property values like [Thing](https://docs.logseq.com/#/page/thing) on [this page](https://docs.logseq.com/#/page/feature) would get converted to a tag.
 
 ### Importer Todos
 
@@ -593,7 +593,7 @@ The `logseq` [CLI](https://en.wikipedia.org/wiki/Command-line_interface) provide
 Read the [CLI's homepage](https://www.npmjs.com/package/@logseq/cli) to learn more.
 
 ## Additional Links
-* https://discuss.logseq.com/t/introducing-newtags-with-examples/32310 - Helpful tutorial on new tags
+* https://discuss.logseq.com/t/introducing-newtags-with-examples/32310 - Helpful tutorial on tags
 * https://github.com/C0ntr0lledCha0s/logseq-template-graph - Example graph with useful properties and tags. Import graph as EDN.
 * https://github.com/jcblemai/logseq-graph-ci - Github workflow that uses CLI to validate a graph
 * https://github.com/kerim/logseq-db-query-builder - Visual advanced query builder
