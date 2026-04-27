@@ -82,6 +82,7 @@ This page describes changes for existing Logseq features on the [database versio
     * These previous query filters will no longer work and should be manually converted:
       * `(page-tags)` -> `(tags)`
       * `(page-property)` -> `(property)`
+      * `(has-page-property)` -> `(has-property)`
       * `(priority A)` -> `(priority high)`
     * The `all-page-tags` and `sort-by` query filters no longer exists. Sorting is done via the table component.
 * [Advanced queries](https://docs.logseq.com/#/page/advanced%20queries)
