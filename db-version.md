@@ -1,6 +1,6 @@
 ## Description
 
-This page describes DB (database) graph functionality as of Dec 19th, 2025. See [here](https://test.logseq.com/#/) to try the latest stable version. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
+This page describes DB (database) graph functionality as of April 27th, 2026. See [here](https://test.logseq.com/#/) to try the latest stable version. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
 
 NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we recommend only using DB graphs for testing purposes.
 
@@ -22,9 +22,9 @@ NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we 
   * [Tables](#tables)
 * [Library](#library)
 * [Search Commands](#search-commands)
-* [Semantic Search](#semantic-search)
 * [MCP Server](#mcp-server)
 * [Sync](#sync)
+* [Publish](#publish)
 * [Plugins](#plugins)
 * [DB Graph Importer](#db-graph-importer)
 * [Automated Backup](#automated-backup)
@@ -50,6 +50,7 @@ A node is a new term for a page or block because the two now behave similarly. N
 * Nodes can be tagged to become a [tagged node](#tagged-node).
 * Nodes are embedded with the same `/Node embed` command.
 * Nodes are collapsible with an arrow on the left that appears on hover.
+* Nodes can have an icon which floats to the left.
 
 Blocks that have a page as a parent i.e. usually top-level blocks can be converted to a page and back to a block easily. To convert this block to a page, simply tag the block with `#Page`. This also makes the newly created page a namespaced page under its parent(s). For example, if the block `b1` on the journal `Aug 29th, 2025` is converted to the page, `b1` becomes a namespaced page in the [Library](#library) with parent `Aug 29th, 2025`. To convert this type of page back to a block, press `p t` and remove `#Page` from the node.
 
@@ -65,13 +66,18 @@ Things that are specific to pages:
   * Page names are unique by tag e.g. there can be `Apple #Company` and `Apple #Fruit`.
   * Property names are unique and can have the same names as built-in property names.
   * The uniqueness of these pages should be visible everywhere in the app with icons for page types and the display of a page's tag(s).
-* Hovering over a page title shows common features like `Set page property` to add a property to the page.
+* Hovering over a page title shows common features like `Set property` to add a property to the page.
+* Page deletion and recycling works as follows:
+  * If a page is a tag, property or today's journal, the deletion is permanent and can't be recovered.
+  * Otherwise, a page is recycled and can be recovered for up to 30 days before being deleted. To recover the page, simply re-create the page. Alternatively, click three dots menu in the upper right corner and select `Recycle`. Click `Restore` on the recycled page block to restore it.
+  * Note: Deleting anything else in the app is permanent and no recycling is available unless explicitly mentioned.
 
 ### Blocks
 
 Things that are specific to blocks:
 * Blocks are created in a page.
 * Tagged blocks a.k.a. blocks with names do not have unique names.
+* A block can have multiple reactions set by `Add reaction` from the bulleted, right click menu. Each user can have multiple reactions on a node.
 
 ## Properties
 
@@ -95,6 +101,7 @@ A property itself can have properties on its property page. By default the `Desc
 * `p a` toggles displaying all the current node's properties below it. This is useful to quickly view properties that are hidden or in a different position.
 * `p t` adds or removes or tags to the current node or selected nodes.
 * `p i` opens the icon picker to set an icon for the current node.
+* `p r` opens the emoji picker to set an emoji for the current node.
 * See [task shortcuts](#task-shortcuts) for task specific ones.
 * To navigate between property values across nodes, use the up and down arrow keys.
 
@@ -141,6 +148,8 @@ A property type determines what type a property's property values can have. Ther
 Property choices allow a property to only have one of the defined choices. Only the property types `Text`, `Url` and `Number` support this. From the [configuration dropdown](#configure-a-property), a property choice can be added, deleted and edited to have a required value, an optional description and an optional icon. Drag the choices up and down to order how they appear. For a good example of choices see the `Status` property. A property with property choices can be used with [repeated nodes](#repeated-tasks-and-nodes).
 
 If a property has already been used, it is possible to convert it to use choices. After clicking `Add choice`, a panel displays to convert all existing property values to choices. If a property is using choices, it is possible to stop using choices by deleting them from the property. Caution: deleting a choice from a property also currently deletes the choice from all blocks it is used.
+
+Property choices can be scoped to a tag. To do this, go to a tag's page, click on a property in `Tag Properties`, click on its `Available choices` and create or edit the choices. Create a choice from this context to scope it to only show up for this tag. Edit a choice and from its three dots menu, select `Hide for #X` to hide the choice for tag X. Scoping property choices by tags is useful to offer different choices depending on the tag. For example, say we have the tag `#MyTask` with the `Status` property. Tag-scoped property choices allows us to hide built-in Status choices for `#MyTask` and create a couple `#MyTask` choices without altering the `Status` choices for the built-in `#Task`.
 
 ### Property Default Values
 
@@ -196,6 +205,7 @@ Tags are configurable from their page. Navigate to their page by using [Search](
 
 * `Extends`: Use this to allow the tag to inherit properties from one or more parent tags. This defaults to the `Root Tag` which doesn't have any properties.
 * `Tag Properties`: These tag properties are inherited by every node that uses the tag. Drag one above or below the other to sort them. These properties will then display sorted on the tagged node.
+* `Enable bidirectional properties` - Enable this so that a tag's properties of type :node become bidirectional. For example, say we enable bidirectionality on a `#Book` tag with an `author` property. When going on a book's author page, a `Books` bidirectional property will display. By default the bidirectional title is a tag's name pluralized. To customize this title, set the `Bidirectional property title` on the bidirectional tag e.g. `#Book`.
 
 ### Tagged Node
 
@@ -298,7 +308,7 @@ A [(flash)card](https://docs.logseq.com/#/page/flashcards) has the tag `#Card`. 
 * To convert multiple blocks into cards at once, select them, right-click and choose `Make a flashcard`.
 
 #### View Cards
-All cards are accessible on the `#Card` page within the `Tagged Nodes` table.
+All cards are accessible on the `#Card` page within the tagged nodes table.
 The `Due` column indicates when the next review is scheduled.
 
 #### Review Cards
@@ -310,10 +320,10 @@ You can rate them using 4 levels to arrange their next review date.
 
 An asset has the tag `#Asset`. Create an asset in the following ways:
 * Drag and drop a file onto a block.
-* Upload a file by going to the `#Asset` page and clicking on the `+ New` icon under the `Tagged Nodes` table.
+* Upload a file by going to the `#Asset` page and clicking on the `+ New` icon under the tagged nodes table.
 * Create from an external file by creating an image link in a block e.g. `![test](https://logseq.com/logo-with-border.a30e7bd0.png)`, clicking on it and then highlighting it. You'll be prompted to create an asset from the external one. This works for urls as well as local file paths e.g. `/Users/user/...`.
 
-Asset files are stored under a graph's `assets/` directory. Manage assets from the `#Asset` page's `Tagged Nodes` section. The `Gallery View` is a helpful way to view assets.
+Asset files are stored under a graph's `assets/` directory. Manage assets from the `#Asset` page's tagged nodes table. The `Gallery View` is a helpful way to view assets.
 
 ### Templates
 
@@ -400,10 +410,6 @@ Search commands run commands from the [Search modal](https://docs.logseq.com/#/p
 * Commands from [edn data export](#edn-data-export).
 * For developers, there are `Validate current graph` and `Garbage collect graph` commands.
 
-## Semantic Search
-
-[Search](https://docs.logseq.com/#/page/search) can optionally do a semantic search. To enable this, go to `Settings > AI` and choose a _local_ AI model. This feature is available on browsers that are [WebGPU capable](https://caniuse.com/webgpu) and the desktop.
-
 ## MCP Server
 
 There is an optional [MCP](https://modelcontextprotocol.io/docs/getting-started/intro) server to allow AI applications to connect to a graph. An MCP server can run from the desktop app against the current graph or from the [cli](#cli) against a local or current graph. To configure the server on desktop:
@@ -437,7 +443,7 @@ The following are TODOs for the MCP server:
 
 ## Sync
 
-NOTE: This feature is a paid feature that is currently _invite only_.
+NOTE: This feature is a paid feature that is currently _invite only_. This feature can also be self hosted!
 
 Logseq Sync syncs DB graphs between devices. It is also referred to as RTC (Real Time Collaboration) since this sync supports collaboration between users in real time like Google Docs! Some workflows that are specific to Sync:
 
@@ -445,10 +451,33 @@ Logseq Sync syncs DB graphs between devices. It is also referred to as RTC (Real
   * On a desktop or browser client, do a one-time setup of setting up an encryption password. Go to `Settings > Encryption` and follow the instructions.
   * Click on the left sidebar graph name to open a menu and choose the `Create db graph` menu item.
   * Check 'Use Logseq Sync?'
+* To configure a self host sync url, go to `Settings > Advanced > Sync Server URL`. For more on self hosting, see guides in [Additional Links](#additional-links).
+
+## Publish
+
+NOTE: This paid feature requires an account used with Sync.
+
+Logseq Publish allows users to share pages of any graph. Pages are published to https://logseq.io with [CloudFlare](https://www.cloudflare.com/) and can be optionally password protected. The published page is a read-only, minimal outliner with the ability to collapse blocks and a few other features. If you're looking to publish a whole graph, there is an older [publishing feature](https://docs.logseq.com/#/page/publishing).
+
+After logging in, publish the current page by pressing `Cmd-M` or run the command `Open publish dialog ...`. Before publishing, there is an optional password that can be provided. After publishing, the current page has a `Published URL` property for the url to share and the option to `Unpublish` next to it. To update local changes to the page, simply re-publish. To customize any css or js for published pages, edit the `publish.css` and `publish.js` pages through `Cmd-K`.
+
+A published page has the following features:
+* Search across published pages for the graph with `Cmd-K` or the search bar at the top.
+  * If a page is password protected, it is excluded from search results to ensure its privacy.
+* Press `t o` to toggle collapse/expand of all blocks.
+* Press `t t` or use the slider at the top to toggle dark mode.
+* Click on a tag to see all nodes with that tag.
+
+The publishing platform has the following url routes that are useful to know:
+* `https://logseq.io/tag/TAG` to see all nodes across users tagged with `TAG`.
+* `https://logseq.io/ref/REF` to see all nodes across users referenced by page `REF`.
+* `https://logseq.io/u/USER` to see all pages for `USER`.
+* `https://logseq.io/graph/GRAPH-UUID` to see all pages for a graph.
+* `https://logseq.io/page/GRAPH-UUID/TAG-UUID` to see all blocks in a published page. If the page is a tag, all nodes tagged with the tag are shown.
 
 ## Plugins
 
-There are currently 20+ plugins that support DB graphs. To see them, go to https://logseq.github.io/marketplace/ and filter by the `Supports DB?` column.
+There are currently 65+ plugins that support DB graphs. To see them, go to https://logseq.github.io/marketplace/ and filter by the `Supports DB?` column. In the app's `Marketplace`, plugins that support DB have a DB icon with  a heart in the upper right corner. Sort by `Supports DB graphs` to see DB supported plugins first.
 
 The [JS Plugin SDK](https://logseq.github.io/plugins/) adds support for DB graphs, including DB-graph specific methods. There is also a CLJS SDK. See https://github.com/logseq/cljs-plugin-example for an example plugin using the CLJS SDK. For example DB-compatible plugins, see https://github.com/benjypng/logseq-zoterolocal-plugin and https://github.com/kerim/logseq-checklist.
 
@@ -477,19 +506,12 @@ The DB Graph Importer converts a file graph to a DB graph. An overview of what i
 * This brings up a dialog. For larger graphs it takes longer for the dialog to display.
 * The dialog requires you to input a name for your graph.
 * The dialog has the following optional inputs:
+    1. `Extract inline code snippets as child blocks` - When checked, this handles blocks with multiple code snippets by extracting them to child blocks. By default only the first snippet is imported as a block can only support one `#Code` (snippet).
     1. `Import all tags` - This checkbox convert all existing tags to be [tags](#tags).
     1. `Import specific tags` - This input is an alternative to `Import all tags` in which you only convert specific tags to be [tags](#tags). This is helpful if you don't want most of your existing tags to behave like tags. You can also convert pages later by right clicking on a page's name.
     1. `Remove inline tags` - This checkbox removes inline tags from block content for any converted tags. This matches the DB graph behavior since all tags are now visible to the right of a block.
     1. `Import additional tags from property values` - This input converts property values for the specified property/properties to the tags. For example, in the official docs graph the [type property](https://docs.logseq.com/#/page/type) is used this way. This means that all `type` property values like [Feature](https://docs.logseq.com/#/page/feature) on [this page](https://docs.logseq.com/#/page/code%20block) would get converted to a tag.
     1. `Import tag parents from property values` - This input converts property values for the specified property to be [a parent of a tag](#parent-tags). For example, in the official docs graph the [parent property](https://docs.logseq.com/#/page/parent) is used this way. This means that all `parent` property values like [Thing](https://docs.logseq.com/#/page/thing) on [this page](https://docs.logseq.com/#/page/feature) would get converted to a tag.
-
-### Importer Todos
-
-There are existing features that have a database equivalent that are still a TODO for the importer:
-  * Import text files e.g. *.txt or *.edn
-  * Query macros and related query filters that have changed
-  * Import templates
-  * Import org mode files
 
 ### Importer Limitations
 
@@ -499,7 +521,11 @@ The importer does its best to import all file graph content and loudly error or 
 
 ## Automated Backup
 
-This feature is _only_ for the browser. An automated backup of graphs is available by clicking on the upper right three dots menu and selecting `Export Graph`. Within this modal, you can specify a folder (directory) to save backups. A backup folder can be reused across graphs as each graph gets its own folder within a backup folder. After choosing this folder, hourly backups begin. The last 12 backups are saved.
+This feature is _only_ for the browser and desktop. An automated backup of graphs is available by clicking on the upper right three dots menu and selecting `Export Graph`.
+
+For the browser, you can specify a folder (directory) to save backups. A backup folder can be reused across graphs as each graph gets its own folder within a backup folder. After choosing this folder, hourly backups begin. The last 12 backups are saved.
+
+For the desktop, backups are automatically enabled at the `backups` folder inside your graph directory. The last 12 backups are saved.
 
 ## Export and Import
 
@@ -521,9 +547,10 @@ To import a DB graph, click on the three dots menu in the upper right corner, se
 To import the exported .sqlite file, click on the three dots menu in the upper right corner, select `Import` and then choose one of the following options:
 
 1. `SQLite` - Import using the SQLite DB file from export.
-2. `File to DB graph` - Import a markdown graph. See the [db graph importer](#db-graph-importer) for more on it.
-3. `Debug Transit` - Import a debug transit file from export.
-4. `EDN to DB graph` - Import a DB graph that was exported as EDN into a new DB graph.
+2. `SQLite + assets (.zip)` - Import a zip file that contains a graph's DB file and assets.
+3. `File to DB graph` - Import a markdown graph. See the [db graph importer](#db-graph-importer) for more on it.
+4. `Debug Transit` - Import a debug transit file from export.
+5. `EDN to DB graph` - Import a DB graph that was exported as EDN into a new DB graph.
 
 ### EDN Data Export
 
@@ -602,3 +629,5 @@ Read the [CLI's homepage](https://www.npmjs.com/package/@logseq/cli) to learn mo
 * https://github.com/clstb/yalms - MCP server that uses HTTP API
 * https://bit.ly/logseqdbfaq - Informal DB version FAQ by power user
 * https://www.youtube.com/@HDanzu/videos - Several videos on DB version
+* https://github.com/yshalsager/logseq-selfhost - Guide on self hosting Logseq web and sync
+* https://discuss.logseq.com/t/logseq-db-changelog/30013 - Helpful changelog for DB updates

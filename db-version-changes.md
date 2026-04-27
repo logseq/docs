@@ -1,36 +1,27 @@
 ## Description
 
-This page describes changes for existing Logseq features on the [database version](https://github.com/logseq/logseq/pull/9858). Some of these changes may change depending on user feedback.
+This page describes changes for existing Logseq features on the [database version](https://github.com/logseq/logseq/pull/9858). The changes described here only apply to DB graphs. File graphs have been split off into https://github.com/logseq/og as [explained in more detail with this post](https://logseq.io/page/b2ad9ce1-9cb7-4436-8083-54cb4516d324/df4dc09d-0a12-4c87-904e-22a9bf4c350a).
 
 ## Overview
 
-* [Changes for All Graphs](#changes-for-all-graphs)
-* [DB Graph Changes](#db-graph-changes)
-* [File Graph Changes](#file-graph-changes)
+* [High Level Changes](#high-level-changes)
+* [Miscelleanous Changes](#miscelleanous-changes)
+* [Changes By Feature](#changes-by-feature)
 
-## Changes for All Graphs
+## High Level Changes
 
-The following changes affect both file and the new db graphs:
-* To simplify editor `/` commands, [Commands](https://docs.logseq.com/#/page/commands) and [Advanced Commands](https://docs.logseq.com/#/page/advanced%20commands) are merged together under `/`.
-* A good amount of the UI is rewritten to use [shadcn](https://github.com/shadcn-ui/ui). This means a more beautiful, consistent and powerful UI!
 * The application performance is better - loading faster, handling larger graphs and large tables. See https://github.com/logseq/logseq/pull/11774 for latest details.
-* On desktop, the graph cache directory `~/.logseq/graphs/` has moved to `~/logseq/graphs`. See [DB Graph Directories](#db-graph-directories) for how they are used for DB graphs.
-* Plugins can be used from the web. For security reasons only [plugins configured with no "effect"](https://github.com/logseq/marketplace#how-to-submit-your-plugin) are usable. We will gradually open up effect plugins to certified/trustworthy plugins.
-* On browser, multiple tabs can be opened and kept in sync, even when offline. Syncing between tabs _does not_ require a sync server.
-* The visibility of left sidebar items are configurable. To configure, hover over the `Navigations` header and click on the filter icon to open a dropdown for toggling visibility of sidebar items.
-
-## DB Graph Changes
-
-High level changes:
 * Blocks and pages are united as [nodes](./db-version.md#nodes). They are referenced as `[[]]` and blocks no longer use `(())` for referencing.
 * Properties have a lot more functionality with the [new properties](./db-version.md#properties)!
 * Previous tags should behave like before that an inline tag is entered using `Cmd-Enter`.
-    * NOTE: Pressing enter on a `#` input triggers a powerful [new tags](./db-version.md#tags) feature.
+    * NOTE: Pressing enter on a `#` input triggers a powerful [tags](./db-version.md#tags) feature.
 * All blocks and pages have created-at and updated-at timestamps! With this built-in dimension of time, time powered features are possible.
-*  The [previous tables](https://docs.logseq.com/#/page/tables) including version 2 are replaced by a shadcn based table. The new tables have inline editing like spreadsheets by default. See [here](./db-version.md#tables) for more.
+* The [previous tables](https://docs.logseq.com/#/page/tables) including version 2 are replaced by a shadcn based table. The new tables have inline editing like spreadsheets by default. See [here](./db-version.md#tables) for more.
+* A good amount of the UI is rewritten to use [shadcn](https://github.com/shadcn-ui/ui). This means a more beautiful, consistent and powerful UI!
 * Flashcards have been re-implemented with [a new algorithm](https://github.com/open-spaced-repetition/free-spaced-repetition-scheduler). It isn't compatible with the previous flashcards so none of the properties and srs data from the previous version is imported.
-* Markdown is the only supported format. Org mode file graphs will be able to convert to DB graphs.
+* Markdown is the only supported format. Org mode files are no longer supported.
 * Zotero integration is no longer a built-in feature and will hopefully be moved to a plugin.
+* To simplify editor `/` commands, [Commands](https://docs.logseq.com/#/page/commands) and [Advanced Commands](https://docs.logseq.com/#/page/advanced%20commands) are merged together under `/`.
 * A few [Advanced Commands](https://docs.logseq.com/#/page/advanced%20commands) are available. More may become available as requested. The available commands are:
   * `>Query` is now `/Advanced Query`
   * `>Src` is now `/Code block`
@@ -39,47 +30,47 @@ High level changes:
 * Pdf annotations [have a tag](./db-version.md#more-tags). This allows annotations to be viewed across pdfs and to have custom views of annotations while using the pdf viewer.
 * Markdown syntax for blocks e.g. a heading or quote is no longer visible or editable. Removing a block's heading is done by right-click on a block and choosing the crossed out H icon.
 * Slides have been removed as a feature and we can support it as 3rd party plugin.
+* Whiteboards have been removed as a feature and will hopefully be available as a plugin.
 * Excalidraw e.g. `/draw` is no longer a built-in feature and will hopefully be moved to a plugin.
 * Templates are created by tagging a block with `#Template` as described [here](./db-version.md#templates). Previously templates were made by adding a `template` property or through a menu item `Make a template`.
+* Plugins can be used from the web. For security reasons only [plugins configured with no "effect"](https://github.com/logseq/marketplace#how-to-submit-your-plugin) are usable. We will gradually open up effect plugins to certified/trustworthy plugins.
 
-WIP changes:
-* RTC a.k.a. DB version sync will be enabled later.
-* Add back support for dynamic variables.
-* Whiteboards are disabled for now and will be enabled later.
+## Miscelleanous Changes
 
-Miscelleanous changes:
+* On desktop, the graph cache directory `~/.logseq/graphs/` has moved to `~/logseq/graphs/`. See [Graph Directories](#graph-directories) for how they are used for DB graphs.
 * Scripts using [nbb-logseq](https://github.com/logseq/nbb-logseq) can read and write graphs. Previously with file graphs, scripts could only read graphs.
 * Embedded pages and blocks look almost the same as other nodes. The main indicator of an embed will be an icon to the left of the block.
 * Default date picker now has an input for typing a date in natural language.
 * There is no re-index like in file graphs.
-* For browsers, currently only one tab can be open. This is a limitation we hope to remove later.
 * `All Pages` screen is renamed to `Pages`. Also it can toggle between table and list view.
+* On browser, multiple tabs can be opened and kept in sync, even when offline. Syncing between tabs _does not_ require a sync server.
+* The visibility of left sidebar items are configurable. To configure, hover over the `Navigations` header and click on the filter icon to open a dropdown for toggling visibility of sidebar items.
 
-### Changes by Feature
+## Changes by Feature
 
-#### Pages
+### Pages
 * Page properties are no longer set by using the first block of a page. Rather, a page property is [set the same way a block property is](./db-version.md#add-and-edit-property-values) - by editing from the page title (block content).
 * `#` and `/` are disallowered characters for page names.
 
-#### Tags
+### Tags
 * Tags have [a lot of new functionality](./db-version.md#tags).
 * When a tag is added on a block, it now displays to the right of the block. To inline a tag like before, press `Cmd-Enter` in the tag dropdown.
 
-#### Tasks
+### Tasks
 
 * Using terms from the [previous tasks](https://docs.logseq.com/#/page/tasks), a task marker, priority, deadline and scheduled are respectively now `Status`, `Priority`, `Deadline` and `Scheduled` properties on a task.
 * Logbook timestamps have been replaced with Status change history.
 * Tasks are no longer created by typing keywords like `TODO` but instead with commands like '/todo'.
 * Read more about the [new tasks](./db-version.md#tasks).
 
-#### Assets
+### Assets
 * Assets can have custom user properties.
 * Assets are blocks and thus can show their linked references when zoomed in on the asset block.
 * Assets are resized by hovering over them and then dragging the left-right arrows that are visible over the scrollbars.
 * Maximum allowed asset size is 100M
 * Pdf annotations are visible under an asset block by default. Previously this view was in a separate page and required clicking in the pdf viewer.
 
-#### Queries
+### Queries
 
 * Read more about the [new queries](./db-version.md#queries).
 * [Simple queries](https://docs.logseq.com/#/page/queries)
@@ -106,24 +97,24 @@ Miscelleanous changes:
     * The attribute `:block/path-refs` no longer exists. Please use `(has-ref ?b ?ref)` instead of `[?b :block/path-refs ?ref]`.
 * Since block timestamps are available, they display in table view where possible.
 
-#### Namespaces
+### Namespaces
 * Creating namespaces through `/` in `[[]]` should work as before e.g. `[[foo/bar/baz]]` creates the hierarchy of `foo` > `bar` > `baz`. Unlike before, the reference will turn into `[[baz]]` after it is created.
 * Pages can edit their namespace explicitly by going to the `Library` page and moving it under the desired parent namespace. Previously managing a namespace could only be done by renaming a namespace.
 * The `Hierarchy` section displays above a namespaced page's blocks. It displays as a collapsible tree as this allows for viewing large namespaces more easily.
 * Namespaced pages no longer have their namespace embedded in their page name. The big advantage of this is that renaming any part of the namespace does not affect all the pages under a namespace.
 * The macro `{{namespace}}` is deprecated. Use the Library feature instead.
 
-#### User Config
+### User Config
 
 * A graph's config.edn, custom.js and custom.css files are only editable within Logseq from `Settings`.
 * The following config.edn options are no longer used by any graphs: `:ref/linked-references-collapsed-threshold`.
 * The following config.edn options are no longer used: `:block-hidden-properties, :default-templates, :favorites, :hidden, :ignored-page-references-keywords, :journals-directory, :pages-directory, :preferred-format, :preferred-workflow, :whiteboards-directory, :feature/enable-block-timestamps?, :file/name-format, :file-sync/ignore-files, :journal/file-name-format, :journal/page-title-format, :logbook/settings, :org-mode/insert-file-link?, :property/separated-by-commas, :property-pages/enabled?, :property-pages/excludelist, :srs/initial-interval, :srs/learning-fraction` in DB graphs. See [this code](https://github.com/logseq/logseq/blob/b0a255f96bfd512d5b87acca52c8d9f958c6a593/deps/common/src/logseq/common/config.cljs#L124-L157) for more details.
 
-#### Search
+### Search
 * When search modal first opens, recently updated pages display at the top.
 * Tags can be created from the modal as described in [tags](./db-version.md#tags).
 
-#### DB Graph Directories
+### Graph Directories
 
 * Graphs have a convention of `~/logseq/graphs/GRAPH-NAME` where `GRAPH-NAME` is the graph name.
 * Inside a graph directory:
@@ -131,17 +122,6 @@ Miscelleanous changes:
     * `assets/` - Stores assets like before.
 * `logseq/` inside a directory no longer exists.
 
-#### API
+### API
 * All property related calls like `upsertBlockProperty` work with DB graphs. Property values can now be numbers and booleans. Properties are namespaced to `:plugin.property._api`
 * See [this test file](https://github.com/logseq/logseq/blob/master/clj-e2e/test/logseq/e2e/plugins_basic_test.clj) for using the api with DB graphs.
-
-## File Graph Changes
-
-* File graphs are no longer supported in browser.
-* There is no longer a [conversion feature for filename formats](https://docs.logseq.com/#/page/filename%20format)
-* Attribute changes:
-  * The attribute `:block/content` was renamed to `:block/title`. If used in an advanced query including in config.edn's `:default-queries`, change it to use `:block/title` e.g. `[?b :block/content "content"]` -> `[?b :block/title "content"]`
-  * The attribute `:block/original-name` was renamed to `:block/title`. If used in an advanced query including in config.edn's `:default-queries`, change it to use `:block/title` e.g. `[?b :block/original-name "name"]` -> `[?b :block/title "name"]`
-  * The attribute `:block/journal?` no longer exists. If used in an advanced query including in config.edn's `:default-queries`, change it to use `:block/type` e.g. `[?p :block/journal? true]` -> `[?p :block/type "journal"]`
-  * The attribute `:block/left` no longer exists and has been replaced by `:block/order`. It is not recommended to write queries with this attribute.
-  * The attribute `:block/path-refs` no longer exists. Please use `(has-ref ?b ?ref)` instead of `[?b :block/path-refs ?ref]`.
