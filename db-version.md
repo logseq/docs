@@ -475,7 +475,7 @@ The publishing platform has the following url routes that are useful to know:
 * `https://logseq.io/graph/GRAPH-UUID` to see all pages for a graph.
 * `https://logseq.io/page/GRAPH-UUID/TAG-UUID` to see all blocks in a published page. If the page is a tag, all nodes tagged with the tag are shown.
 
-To configure a self host publish url, go to `Settings > Advanced > Publish Server URL`. You will need a Cloudflare account in order to self host.
+To configure a self host publish url, go to `Settings > Advanced > Publish Server URL`. You will need a Cloudflare account in order to self host. For more on self hosting, see guides in [Additional Links](#additional-links).
 
 ## Plugins
 
@@ -631,5 +631,5 @@ Read the [CLI's homepage](https://www.npmjs.com/package/@logseq/cli) to learn mo
 * https://github.com/clstb/yalms - MCP server that uses HTTP API
 * https://bit.ly/logseqdbfaq - Informal DB version FAQ by power user
 * https://www.youtube.com/@HDanzu/videos - Several videos on DB version
-* https://github.com/yshalsager/logseq-selfhost - Guide on self hosting Logseq web and sync
+* https://github.com/yshalsager/logseq-selfhost - Guide on self hosting Logseq Publish, Sync and web
 * https://discuss.logseq.com/t/logseq-db-changelog/30013 - Helpful changelog for DB updates
