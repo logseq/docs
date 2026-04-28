@@ -1,6 +1,6 @@
 ## Description
 
-This page describes DB (database) graph functionality as of April 27th, 2026. See [here](https://test.logseq.com/#/) to try the latest stable version. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
+This page describes DB (database) graph functionality as of April 28th, 2026. See [here](https://test.logseq.com/#/) to try the latest stable version. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
 
 NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we recommend only using DB graphs for testing purposes.
 
@@ -455,7 +455,7 @@ Logseq Sync syncs DB graphs between devices. It is also referred to as RTC (Real
 
 ## Publish
 
-NOTE: This paid feature requires an account used with Sync.
+NOTE: This paid feature requires an account used with Sync. This feature can also be self hosted!
 
 Logseq Publish allows users to share pages of any graph. Pages are published to https://logseq.io with [CloudFlare](https://www.cloudflare.com/) and can be optionally password protected. The published page is a read-only, minimal outliner with the ability to collapse blocks and a few other features. If you're looking to publish a whole graph, there is an older [publishing feature](https://docs.logseq.com/#/page/publishing).
 
@@ -474,6 +474,8 @@ The publishing platform has the following url routes that are useful to know:
 * `https://logseq.io/u/USER` to see all pages for `USER`.
 * `https://logseq.io/graph/GRAPH-UUID` to see all pages for a graph.
 * `https://logseq.io/page/GRAPH-UUID/TAG-UUID` to see all blocks in a published page. If the page is a tag, all nodes tagged with the tag are shown.
+
+To configure a self host publish url, go to `Settings > Advanced > Publish Server URL`. You will need a Cloudflare account in order to self host.
 
 ## Plugins
 
