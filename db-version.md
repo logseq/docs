@@ -2,8 +2,6 @@
 
 This page describes DB (database) graph functionality as of April 28th, 2026. See [here](https://test.logseq.com/#/) to try the latest stable version. If you're an existing user of Logseq, you'll be interested in [changes with the db version](./db-version-changes.md).
 
-NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we recommend only using DB graphs for testing purposes.
-
 ## Overview
 
 * [Nodes](#nodes)
@@ -31,7 +29,7 @@ NOTE: While there is an [automated backup](#automated-backup) for DB graphs, we 
 * [Export and Import](#export-and-import)
   * [Graph Export](#graph-export)
   * [Graph Import](#graph-import)
-  * [EDN Data Export](#edn-data-export)
+  * [Build EDN Data](#build-edn-data)
 * [iOS App](#ios-app)
 * [Android App](#android-app)
 * [Scripting](#scripting)
@@ -373,7 +371,7 @@ Views are used in a number of features including queries, (un)linked references,
     * While each group is displayed as a different view, they all obey the same view-level configuration.
   * `Sort groups by`: When grouping nodes by page, sort group by options including `Journal date`, `Page name` and `Page created date`.
   * `Sort groups order`: When grouping nodes by page, sort groups `Ascending` or `Descending`.
-  * `Export EDN`: Exports the currently viewable nodes to your clipboard as [EDN Data](#edn-data-export). The exported nodes are affected by `Search` or `Filter` usage.
+  * `Export EDN`: Exports the currently viewable nodes to your clipboard as [Build EDN Data](#build-edn-data). The exported nodes are affected by `Search` or `Filter` usage.
 * `New node`: Click on the `+` icon to create a new node in the view. Different features will behave differently for this. For example, when clicked from a tag or property page, the new node will have that tag or property added to it.
 
 NOTE: All actions that alter what you see are saved except for `Search`!
@@ -407,7 +405,7 @@ Search commands run commands from the [Search modal](https://docs.logseq.com/#/p
 * Command `Customize appearance` - Opens a modal to edit appearance related settings.
 * Command `Move blocks to` - Moves the current or selected nodes to the chosen page. Also available for file graphs.
 * Commands from [property shortcuts](#property-shortcuts).
-* Commands from [edn data export](#edn-data-export).
+* Commands from [Build EDN Data](#build-edn-data).
 * For developers, there are `Validate current graph` and `Garbage collect graph` commands.
 
 ## MCP Server
@@ -537,7 +535,7 @@ To export a DB graph, click on the three dots menu in the upper right corner, se
 
 1. `Export SQLite DB` - Export graph as a [SQLite](https://sqlite.org/) .db file.
 2. `Export both SQLite DB and assets` - Export graph as a .zip file containing the DB file and the graph's assets.
-3. `Export EDN file` - Export graph as EDN described in [EDN Data Export](#edn-data-export). This is the only export type that fully captures a graph's data and is editable. This export is not yet recommended as the only means to backup a graph.
+3. `Export EDN file` - Export graph as EDN described in [Build EDN Data](#build-edn-data). This is the only export type that fully captures a graph's data and is editable. This export is not yet recommended as the only means to backup a graph.
 4. `Export as standard Markdown (no block properties)` - Export graph as standard markdown, not Logseq markdown. Since this export is unlikely to ever export timestamps or all properties, it cannot capture all data in a graph. See the EDN export for an export type that captures all data and is editable.
 5. `Export public pages` - Export graph in order to publish it on the web. See https://docs.logseq.com/#/page/publishing for more.
 6. `Export debug transit file` - Export graph as a transit file to be shared with the Logseq team for debugging. Any personal sensitive data is removed.
@@ -554,21 +552,24 @@ To import the exported .sqlite file, click on the three dots menu in the upper r
 4. `Debug Transit` - Import a debug transit file from export.
 5. `EDN to DB graph` - Import a DB graph that was exported as EDN into a new DB graph.
 
-### EDN Data Export
+### Build EDN Data
 
-Exported [EDN data](https://github.com/edn-format/edn) allows any DB graph content to be shared between users as text. With this text, a user can then import it to replicate the same visible and behavioral content including the content's properties and tags. This is important as it gives users control of their content and enables some workflows that aren't possible with file graphs. This feature is available with the following commands:
+Build [EDN](https://github.com/edn-format/edn) data is a data format to represent DB graph content. This allows for data to be shared between users as text in a graph-agnostic way. With this text, a user can import it to replicate another user's content including the content's properties and tags. This is important as it gives users control of their content like Markdown did for [the original Logseq](https://github.com/logseq/og) although not as user friendly. It also enables workflows that aren't possible with file graphs. The following commands use Build EDN:
 
 * `Export block EDN data` - Run this command on the current block to copy it to the clipboard. When this data is imported, it will overwrite the current block.
 * `Export page EDN data` - Run this command on the current page to copy it to the clipboard. When this is imported to an existing page, it will append to the existing page.
 * `Export graph's tags and properties EDN data` - Run this command to copy the entire graph's tags and properties. This is useful for sharing your workflows with others without sharing your graph-specific data. This is an example of a workflow that was not possible with file graphs.
 * `Import EDN data` - Run this command to import any of the above exported data. If importing a block, you must have focus on the block you want to import into. If you do not want the import after seeing it, press `Cmd-Z` to undo it.
 
-This feature is also available:
+Build EDN data is also available:
 * for the whole graph using the `Export EDN file` and `EDN to DB graph` options described above.
 * from any [view](#views) as a header action. For example, go to the `Pages` view and filter it to only export the viewable pages.
 * for multiple selected nodes with the `Copy / Export as` modal.
 
-For developers, this shareable EDN data can also be used in scripts to create or modify existing graphs. For example, a page's data could be passed to [this script](https://github.com/logseq/logseq/blob/master/deps/db/script/create_graph.cljs) to create a new DB graph with that page.
+
+For developers, Build EDN is EDN with logseq-specific keywords from namespaces [logseq.db.sqlite.build](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/sqlite/build.cljs) and [logseq.db.sqlite.export](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/sqlite/export.cljs). See those namespaces for more documentation on this format. Build EDN is used extensively by [test helpers](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/test/helper.cljs) to test Logseq internally. It is also useful for writing scripts e.g. [this script](https://github.com/logseq/logseq/blob/master/deps/db/script/create_graph.cljs) to create a new DB graph or [these scripts](https://github.com/logseq/logseq/tree/master/scripts#create-graph-scripts) to create custom graphs.
+
+NOTE: Build EDN has no association with `--output` EDN from the CLI or any EDN from the original Logseq.
 
 ## iOS App
 
