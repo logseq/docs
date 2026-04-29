@@ -607,6 +607,10 @@ On desktop, it is easy to modify an existing DB graph with a script and see the 
 
 ## CLI
 
+NOTE: This refers to the old CLI which will soon be replaced by https://github.com/logseq/logseq/pull/12340
+
+TODO: Update this section
+
 The `logseq` [CLI](https://en.wikipedia.org/wiki/Command-line_interface) provides commands to interact with desktop DB graphs and local graphs from the command line. The CLI works independent of the Logseq app and makes Logseq features available for automation on CI/CD platforms like [Github Actions](https://github.com/features/actions). For example, a DB graph could have a Markdown export created on every push to Github. Some CLI commands also interact with the current DB graph if the [HTTP API Server](https://docs.logseq.com/#/page/local%20http%20server) is turned on. The CLI provides the following commands including:
 
 * list - List local graphs
