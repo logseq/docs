@@ -637,4 +637,5 @@ Read the [CLI's homepage](https://www.npmjs.com/package/@logseq/cli) to learn mo
 * https://bit.ly/logseqdbfaq - Informal DB version FAQ by power user
 * https://www.youtube.com/@HDanzu/videos - Several videos on DB version
 * https://github.com/yshalsager/logseq-selfhost - Guide on self hosting Logseq Publish, Sync and web
+* https://adri99.net/self-hosting-logseq-sync-locally/ - Another self host Sync guide building on yshalsager's
 * https://discuss.logseq.com/t/logseq-db-changelog/30013 - Helpful changelog for DB updates
