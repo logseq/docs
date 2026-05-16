@@ -607,24 +607,12 @@ On desktop, it is easy to modify an existing DB graph with a script and see the 
 
 ## CLI
 
-NOTE: This refers to the old CLI which will soon be replaced by https://github.com/logseq/logseq/pull/12340
+The `logseq` [CLI](https://en.wikipedia.org/wiki/Command-line_interface) provides commands to interact with DB graphs from the command line. The CLI works independent of the Logseq app and makes Logseq features available for automation on CI/CD platforms like [Github Actions](https://github.com/features/actions). For example, a DB graph could have a query run on every push to Github.
 
-TODO: Update this section
+Install the CLI by installing the application from https://github.com/logseq/logseq/releases/tag/nightly. Read the [CLI's homepage](https://github.com/logseq/logseq/blob/master/docs/cli/logseq-cli.md) to learn more.
 
-The `logseq` [CLI](https://en.wikipedia.org/wiki/Command-line_interface) provides commands to interact with desktop DB graphs and local graphs from the command line. The CLI works independent of the Logseq app and makes Logseq features available for automation on CI/CD platforms like [Github Actions](https://github.com/features/actions). For example, a DB graph could have a Markdown export created on every push to Github. Some CLI commands also interact with the current DB graph if the [HTTP API Server](https://docs.logseq.com/#/page/local%20http%20server) is turned on. The CLI provides the following commands including:
-
-* list - List local graphs
-* show - Show DB graph(s) info
-* search - Search DB graph like grep
-* query - Query DB graph(s)
-* export - Export DB graph as Markdown
-* export-edn - Export DB graph as EDN
-* import-edn Import into DB graph with EDN
-* append - Append text to current page
-* mcp-server - Run a MCP server
-* validate - Validate DB graph
-
-Read the [CLI's homepage](https://www.npmjs.com/package/@logseq/cli) to learn more.
+NOTE: There was an [old CLI](https://www.npmjs.com/package/@logseq/cli) which has some capabilities
+that may not be found in the current CLI.
 
 ## Additional Links
 * https://discuss.logseq.com/t/introducing-newtags-with-examples/32310 - Helpful tutorial on tags
