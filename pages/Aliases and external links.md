@@ -2,4 +2,7 @@
 	- `[This is the label or name of the link](https://thisistheurl.com)`
 - Apart from linking to pages outside of Logseq, you can also use the alias function to link to an internal page. This is handy for when you want to show a different label for an internal link. For example, `[I worked on projects]([[Projects]])` will make the entire "I worked on projects" sentence clickable and point it to the _Projects_ page.
 - Finally, for aliases that you use often it's best to add a page alias. For example, you might want the link `[[PKM]]` to point to the page `Personal Knowledge Management`. To do this, add the following in the **first block** of the page `Personal Knowledge Management`: `alias:: PKM`
+	- A page can have more than one alias, separated by tags.
+		- For example, `alias:: PKM, Knowledge Management`
+	- Aliases can include a [namespace]([[Namespaces]]) as well. For example, `alias:: Recipes/Pho`
 - Now, anytime you click a `[[PKM]]` link, you'll end up on the `Personal Knowledge Management` page.
