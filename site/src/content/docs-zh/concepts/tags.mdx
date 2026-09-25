@@ -26,6 +26,8 @@ DB 版标签的特殊之处是**标签属性（tag properties）**：声明在�
 
 一个节点可以挂多个标签；它会显示所有标签的属性（标记了 `Hide by default` 的除外）。
 
+![一本书的页面：标签继承来的属性——author、rating、reading status](/screenshots/book-page.png)
+
 ## 父标签（Extends）
 
 标签通过 `Extends` 属性形成层级。`#Audiobook` 同时继承 `#Book` 和 `#MediaObject`，就拿到*全部*属性，并在两棵树里都出现。父标签对 [Node 型属性](/zh/concepts/properties)同样生效——限定 `#Person` 的属性也接受打了 `#Actor` 的节点，只要 `#Actor` 继承 `#Person`。
@@ -44,6 +46,8 @@ DB 版标签的特殊之处是**标签属性（tag properties）**：声明在�
 </Aside>
 
 ## 实战里的标签
+
+![#Book 标签页——自动维护的书单表格](/screenshots/tag-book.png)
 
 标签就是一张自己会写字的数据库表——下面这些用法都来自社区真实玩法：
 

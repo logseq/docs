@@ -26,6 +26,8 @@ What makes DB-version tags special is **tag properties**: properties declared on
 
 A node can carry multiple tags; it shows every tag's properties (minus ones set to `Hide by default`).
 
+![A book page showing inherited tag properties — author, rating, reading status](/screenshots/book-page.png)
+
 ## Parent tags (Extends)
 
 Tags form a hierarchy via the `Extends` property. `#Audiobook` extending both `#Book` and `#MediaObject` inherits *all* their properties, and shows up under each in the tree. Parent tags matter for [Node-type properties](/concepts/properties) too — a property restricted to `#Person` also accepts nodes tagged `#Actor` if `#Actor` extends `#Person`.
@@ -44,6 +46,8 @@ On a tag's page, hover its title and click the triangle to edit:
 </Aside>
 
 ## Tags in practice
+
+![The #Book tag page — a self-maintaining table of every book](/screenshots/tag-book.png)
 
 A tag is a tiny database table that writes itself — the patterns below come straight from how people actually use them:
 
