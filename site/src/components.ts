@@ -11,6 +11,7 @@ import { CardGrid } from "./components/ui/card-grid";
 import { PackageManagers } from "./components/ui/package-managers";
 import { Step, Steps } from "./components/ui/steps";
 import { Tabs, TabItem } from "./components/ui/tabs";
+import Video from "./components/Video.astro";
 
 export const components = {
   Aside,
@@ -22,4 +23,5 @@ export const components = {
   Steps,
   TabItem,
   Tabs,
+  Video,
 };

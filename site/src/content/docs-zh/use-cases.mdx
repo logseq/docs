@@ -1,0 +1,70 @@
+---
+title: 谁在用 Logseq
+description: 五种真实的 Logseq 用法 —— 附可直接导入的演示 graph。
+sidebar:
+  order: 8
+---
+
+Logseq 不替你决定怎么组织东西——它给你页面、块、标签和属性,由你自己搭出适合你工作的形状。下面是五种用户真实搭出来的样子。
+
+每个例子都有一个**可以下载导入的演示 graph**(File → Import → SQLite),随便翻:
+
+| 角色 | Graph |
+|---|---|
+| 学生 | [student.sqlite](/demo-graphs/student.sqlite) |
+| 研究者 | [researcher.sqlite](/demo-graphs/researcher.sqlite) |
+| 写作者 | [writer.sqlite](/demo-graphs/writer.sqlite) |
+| 工程师 | [engineer.sqlite](/demo-graphs/engineer.sqlite) |
+| 个人知识库 | [personal.sqlite](/demo-graphs/personal.sqlite) |
+
+## 学生
+
+课程笔记按讲义组织,概念单独成页,日志是每天的记录。
+
+- **标签:** `#Course`(带 `instructor`、`semester` 属性)、`#Lecture`、`#Concept`、`#Assignment`
+- **日常流程:** 日志 → 链接今天的讲义 → 在讲义页下用嵌套块记笔记 → 复习问题加 `#card` 自动变成闪卡
+- **为什么好使:** 点开概念页(比如 `[[Mitochondria]]`)能看到所有提到过它的讲义和闪卡。课件 PDF 直接贴在页面上做标注。
+- 试一下:打开 `#Lecture` 标签页,所有讲义按课程列成一张表。
+
+## 研究者
+
+论文是带元数据的一等对象,不只是引用时的一个名字。
+
+- **标签:** `#Paper`(带 `venue`、`authors`、`topic`、`paper-status` 属性)、`#Project`
+- **日常流程:** 导入或链接 PDF → 页面内直接标注 → 在论文页写摘要 → 日志记录今天读了什么
+- **为什么好使:** `#Paper` 标签页就是你整个文献库的可筛选表格——按 venue 排序、过滤 `paper-status: unread`,阅读清单自动维护。
+- 试一下:打开 `Attention Is All You Need`——笔记、PDF、引用它的页面都在同一页上。
+
+## 写作者
+
+角色、场景、章节都是带结构的页面,草稿就是大纲。
+
+- **标签:** `#Character`(带 `role`)、`#Scene`(带 `pov`、`setting`、`scene-status`)、`#Chapter`
+- **日常流程:** 日志记字数 → 用嵌套块写场景 → `[[场景名]]` 让每个角色、地点的出现都找得回来
+- **为什么好使:** 打开 `#Scene` 所有场景连同状态列成一张表——哪些写完了、哪些还是大纲一目了然。点开角色页就能看到他出现在哪些场景里。
+
+## 工程师
+
+工单、会议、项目共享一个 graph,琐碎的事交给 CLI 自动化。
+
+- **标签:** `#Ticket`(带 `ticket-priority`、`area`、`owner`)、`#Project`、`#Meeting`(带 `sprint`、`attendees`)
+- **日常流程:** 站会内容写进日志 → 工单是带属性和复现步骤的页面 → sprint 会议链接到它覆盖的工单
+- **为什么好使:** `#Ticket` 标签页就是一个活的 bug tracker,代码块直接写在笔记里。[CLI](/zh/cli) 能从脚本里提工单、改状态,或者通过 [MCP](/zh/cli/mcp) 让 AI agent 查"payments 下所有高优先级工单"。
+
+## 个人知识库
+
+书、电影、菜谱、杂事——真正属于你的东西放在一起。
+
+- **标签:** `#Book`(带 `author`、`genre`、`reading-status`、`rating`)、`#Movie`、`#Recipe`
+- **日常流程:** 日志用自然语言记当天的事(`Finished [[Exhalation]]`)→ 标签自动把内容归进集合 → 杂事是带日期的任务
+- **为什么好使:** 不用先规划结构。先自然地写,有用的时候打上标签,标签页自动变成你从没刻意维护过的阅读记录和观影清单。
+
+## 共同的模式
+
+注意这些人都没有提前规划文件夹结构。他们都是:
+
+1. 在日志或当天顺手的页面里写
+2. 当一类东西出现时打上标签(`#Paper`、`#Scene`、`#Ticket`)
+3. 让标签页和查询去做组织工作
+
+这就是 Logseq 围绕的工作流——先记下来,结构有用的时候再加。
