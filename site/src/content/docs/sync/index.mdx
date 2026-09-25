@@ -1,0 +1,35 @@
+---
+title: Sync
+description: Logseq Sync — end-to-end encrypted, real-time sync between devices (and self-hostable).
+sidebar:
+  order: 6
+  group:
+    label: Sync & data
+---
+
+Logseq Sync (aka RTC — Real-Time Collaboration) keeps DB graphs in sync across your devices, end-to-end encrypted. It also supports real-time collaboration — multiple people in one graph, Google Docs style.
+
+<Aside type="note" title="Paid feature, invite only">
+  Sync is a paid feature and currently invite-only. The server is open source, so you can also [run it yourself](/sync/self-hosting).
+</Aside>
+
+## Set it up
+
+<Steps>
+<Step>
+  Set an encryption password once: **Settings → Encryption**, follow the instructions. This password encrypts your data end-to-end — Logseq can't read it, so keep it safe.
+</Step>
+<Step>
+  Create a synced graph: click the graph name in the left sidebar → **Create db graph** → check **Use Logseq Sync?**
+</Step>
+<Step>
+  Sign in on your other devices and the graph appears. Same account, same encryption password.
+</Step>
+</Steps>
+
+## Notes
+
+- E2EE is real: content is encrypted before it leaves your device. Lose the password and the data can't be recovered — that's the point.
+- Local graphs and synced graphs can coexist; sync is per-graph.
+- A self-hosted sync URL goes in **Settings → Advanced → Sync Server URL**. See [Self-hosting](/sync/self-hosting).
+- For moving a graph around manually (not live sync), see [Backup & export](/sync/backup-export).

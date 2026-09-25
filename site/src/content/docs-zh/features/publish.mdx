@@ -1,0 +1,38 @@
+---
+title: 发布
+description: 把只读页面分享到网上——可选密码保护。
+sidebar:
+  order: 7
+---
+
+Publish 把单个页面发布到 `logseq.io`——托管在 Cloudflare 上，渲染成干净的只读大纲。
+
+<Aside type="note" title="需要账号">
+  Publish 需要 Logseq 账号（和 Sync 同一个）。发布服务器也可以自托管——见[自托管](/zh/sync/self-hosting)。
+</Aside>
+
+## 发布一页
+
+1. 按 `Cmd-M` 或运行 `Open publish dialog ...`。
+2. 可选设密码——加密页面不进共享搜索。
+3. 页面上出现的 `Published URL` 直接分享。改完随时重新发布推送更新；`Unpublish` 撤下。
+
+## 读者看到什么
+
+- 极简大纲：折叠/展开块（`t o` 一键全切），暗色模式（`t t` 或滑杆）。
+- 跨已发布页面搜索（`Cmd-K` 或搜索栏）。
+- 点标签看所有打了它的已发布节点。
+
+自定义 `publish.css` / `publish.js` 页面（`Cmd-K` 搜出来编辑）可以打扮你的发布页。
+
+## URL 结构
+
+- `logseq.io/u/用户`——你发布的全部页面
+- `logseq.io/graph/图谱-UUID`——某图谱的页面
+- `logseq.io/tag/标签`——全站打了该标签的节点
+- `logseq.io/ref/引用`——全站引用该名字的节点
+- `logseq.io/page/图谱-UUID/标签-UUID`——单个已发布页面
+
+## 自托管发布
+
+把 `Settings > Advanced > Publish Server URL` 指向自己的实例——publish worker 开源在 [`deps/publish`](https://github.com/logseq/logseq/tree/master/deps/publish)，社区有现成镜像。见[自托管](/zh/sync/self-hosting)。

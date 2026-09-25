@@ -1,0 +1,30 @@
+---
+title: Templates
+description: Reusable block skeletons — insert them anywhere, or auto-apply them to tagged nodes.
+sidebar:
+  order: 4
+---
+
+A template is a block tagged `#Template` plus whatever children you nest under it. `/Template` inserts a copy anywhere.
+
+## Make one
+
+1. Write the template's name in a block and tag it `#Template`.
+2. Indent everything the template should contain under it — as many levels as you need.
+3. `/Template` → pick it → the whole tree copies in.
+
+All templates live in the `#Template` page's table, so your collection stays findable.
+
+## Auto-apply templates to tags
+
+The optional `Apply template to tags` property is where templates get interesting: whenever a node with the configured tag is created, the template lands on it automatically.
+
+- On `#Journal` → a daily skeleton (checklist, standup prompts) appears on every new journal page.
+- On `#Task` → every task gets your sub-blocks as its first child.
+- On your own tags — `#Meeting` → attendees/notes/actions sections materialize.
+
+Stack multiple templates on a tag — they apply in sequence.
+
+<Aside type="tip">
+  Templates + tag properties cover most "database entry" workflows: tag defines the fields, template defines the sections.
+</Aside>

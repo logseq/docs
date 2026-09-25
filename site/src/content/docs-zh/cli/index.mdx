@@ -1,0 +1,93 @@
+---
+title: CLI
+description: logseq 命令行工具——建图谱、编辑节点、跑查询、自动化同步。
+sidebar:
+  order: 7
+  group:
+    label: CLI 与自动化
+---
+
+`logseq` CLI 在终端里驱动 DB 图谱——建图谱、编辑节点、跑 Datascript 查询、导出、备份、同步——规则和应用一致。支持完全无头运行，天然适合 CI、cron 和脚本。
+
+<Aside type="note">
+  本页所有内容都对照仓库源码构建实测过：构建 → `graph create` → `upsert` → `query` → `export` → sync upload/download，全链路跑通。
+</Aside>
+
+## 安装
+
+- **预编译**：从 [logseq/logseq releases](https://github.com/logseq/logseq/releases/tag/nightly) 下载对应平台包。
+- **源码构建**（需要仓库工具链——Node 24、pnpm、Clojure、opam/OCaml）：
+
+```bash
+git clone https://github.com/logseq/logseq.git && cd logseq
+pnpm install
+pnpm cli:release                      # 打包 cli/ → static/logseq-cli.js
+pnpm db-worker-node:release:bundle    # 图谱运行时 → dist/db-worker-node.js
+node static/logseq-cli.js --help
+```
+
+`logseq doctor` 检查环境：找 worker 脚本、验根目录可写、列出运行中的 server。
+
+## 基本姿势
+
+- **根目录**——图谱存放处，默认 `~/logseq`（`--root-dir` 改）。
+- **`-g, --graph`**——几乎所有命令都要：`logseq ... -g my-graph`。
+- **`-o human|json|edn`**——输出格式；脚本里用 `json`/`edn`。
+
+```bash
+logseq --help            # 顶层命令
+logseq <command> --help  # 每个命令的参数 + 例子
+logseq example           # 可跑的示例
+```
+
+## 日常命令
+
+```bash
+# 图谱
+logseq graph create -g notes
+logseq graph list
+logseq graph info -g notes
+logseq graph validate -g notes
+
+# 写
+logseq upsert page -g notes --page "Reading list"
+logseq upsert block -g notes --target-page "Reading list" \
+  --blocks $'- TODO 读 [[Meditations]]\n- [[Deep Work]] 笔记'
+
+# 读
+logseq show -g notes --page "Reading list"     # 树形输出带块 id
+logseq list page -g notes
+logseq list task -g notes
+logseq search block -g notes --content "Meditations"
+
+# 查询（Datascript）
+logseq query -g notes --query \
+  '[:find [?t ...] :where [?b :block/title ?t] [?b :block/page ?p] [?p :block/title "Reading list"]]'
+
+# 导出 / 备份
+logseq graph export -g notes --type sqlite --file notes.sqlite
+logseq graph export -g notes --type edn --file notes.edn --pretty-print
+logseq graph import -g restored --type sqlite --input notes.sqlite
+logseq graph backup create -g notes
+```
+
+## 终端同步
+
+CLI 直连 Logseq Sync——官方的或[你自己的服务器](/zh/sync/self-hosting)：
+
+```bash
+logseq login --username you@example.com --password '•••'
+logseq sync config set http-base https://sync.example.com   # 官方托管可跳过
+logseq sync upload -g notes --e2ee-password 'graph-secret'
+logseq sync remote-graphs -g notes
+logseq sync download -g notes --e2ee-password 'graph-secret'   # 另一台机器
+```
+
+## 自动化
+
+- 每个命令都支持 JSON/EDN 输出 → 接 `jq`、脚本、随便什么。
+- `logseq server` 管理常驻 `db-worker-node` 服务，CLI 可直接连——反复打同一图谱时省事。
+- CI 例子：[jcblemai/logseq-graph-ci](https://github.com/jcblemai/logseq-graph-ci) 用 CLI 在 GitHub Actions 里每次 push 校验图谱。
+- `logseq completion` 生成 shell 补全；`logseq skill` 管理内置 agent skill。
+
+相关：[MCP server](/zh/cli/mcp)（同一图谱，给 AI 工具用）、[脚本](/zh/cli/scripting)（nbb-logseq）、[HTTP API](/zh/cli/http-api)（应用内的 REST）。

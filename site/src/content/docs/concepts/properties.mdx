@@ -1,0 +1,67 @@
+---
+title: Properties
+description: Typed fields on any node — Text, Number, Date, Checkbox, Url, Node.
+sidebar:
+  order: 5
+---
+
+Properties attach typed fields to any block or page. Think of them as columns: once a property exists, every node that has it becomes a row you can sort, filter, group, and query.
+
+## Add a property
+
+1. In a block, press `Cmd-p` (`Ctrl-Alt-p` on Linux/Windows) or type `/prop` and hit Enter.
+2. Name it and pick a type — `Text` if unsure.
+3. Type a value.
+
+The property itself is a page. Its own page can hold a `Description` and other configuration.
+
+## Property types
+
+| Type | Holds | Notes |
+| --- | --- | --- |
+| `Text` | Any text | The default. Behaves like a block — `[[links]]` and child blocks work inside it. |
+| `Number` | Numbers incl. decimals | Stored as real numbers — sorts correctly, usable in comparisons. |
+| `Date` | Dates | Date picker; links to the journal day. Works with [repeated nodes](/features/tasks). |
+| `DateTime` | Date + time | Same, with a clock. |
+| `Checkbox` | True/false | A boolean checkbox. |
+| `Url` | A URL | Plain link, no references or children. |
+| `Node` | Another node | Restrictable to a tag — see below. |
+
+**Node-type properties** are the interesting one: when you create one, you can require values to carry a specific tag. `author` restricted to `#Person` only accepts people. Child tags count too — if `#Actor` extends `#Person`, actors qualify.
+
+## Configure a property
+
+Click the property's name anywhere it appears to open its config dropdown (`Cmd`-click opens its page instead):
+
+- **Property type** — fixed once the property is in use.
+- **Default value** — pre-fills when the property is added (Text, Number, Checkbox).
+- **Specify node tags** — the tag restriction for Node-type properties.
+- **Available choices** — limit values to a defined list (Text, Url, Number only).
+- **Checkbox state mapping** — for choice properties: which choice = checked, which = unchecked. Enables `Show as checkbox on ...`.
+- **Multiple values** — allow a list of values (not for Checkbox/DateTime).
+- **UI position** — where values show: under the block, at the start, or at the end.
+- **Hide by default** — invisible on the node unless you zoom in or open it in the sidebar.
+- **Hide empty value** — invisible until it has a value.
+
+## Property choices
+
+Choices turn a property into a dropdown — a value, optional description, and optional icon each. Drag to reorder. The built-in `Status` property is the canonical example.
+
+Converting an in-use property to choices: click `Add choice`, and Logseq offers to convert existing values into choices. Deleting a choice removes it from every block that uses it — careful.
+
+Choices can also be **scoped to a tag** (see [Tags](/concepts/tags)): same property, different choice lists per tag.
+
+## Handy shortcuts
+
+- `Cmd-p` / `Ctrl-Alt-p` — add/set property on the current node or selected nodes.
+- `Cmd-j` — edit properties entirely from the keyboard; type the letters in the bubble.
+- `p a` — toggle showing all the node's properties below it.
+- `p t` — add/remove tags on the node.
+- `p i` / `p r` — pick an icon / emoji for the node.
+- Arrow keys move between property values across nodes.
+
+Every shortcut has a matching search command — check `Settings > Keymap` to find the command name for a keystroke.
+
+## Built-in properties
+
+Properties like `Status`, `Deadline`, `Scheduled` ship with Logseq and power core features. They're real pages — find them via Search — and you can edit their icon, UI position, visibility, and choices. The rest is locked, since changing it would break features that depend on them.

@@ -1,0 +1,26 @@
+---
+title: HTTP API
+description: 桌面应用内的本地 REST API——给集成、PWA 客户端和轻量自动化用。
+sidebar:
+  order: 3
+---
+
+桌面版可以宿主一个本地 HTTP API，让别的工具——脚本、快捷指令、小 web 应用——不走 CLI 也能驱动你的图谱。
+
+## 开启
+
+1. `Settings → Features` → 打开 HTTP server。
+2. 创建授权 token；请求带 `Authorization: Bearer TOKEN`。
+3. 服务监听本地（`127.0.0.1`，默认端口 12315）。
+
+## 适合什么
+
+- 别的工具的快速自动化：Alfred/快捷指令式的"追加到今天的 journal"、启动器集成、桌面小组件。
+- 第三方客户端：[logseq-todo-pwa](https://github.com/benjypng/logseq-todo-pwa) 是完整的 PWA 任务客户端；[yalms](https://github.com/clstb/yalms) 把它包装成 MCP server。
+- [MCP server](/zh/cli/mcp) 本身就跑在这个 API 之上。
+
+## 其他选择
+
+- 批量/无头任务 → [CLI](/zh/cli)。
+- 深度程序化访问 → [nbb-logseq 脚本](/zh/cli/scripting)。
+- AI 客户端 → [MCP server](/zh/cli/mcp)。

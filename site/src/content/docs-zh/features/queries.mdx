@@ -1,0 +1,166 @@
+---
+title: 查询
+description: Simple 查询、Query Builder、advanced Datascript 查询——把任意一组节点拉成实时视图。
+sidebar:
+  order: 2
+---
+
+查询是打了 `#Query` 的节点，把符合条件的节点拉进一个实时[视图](/zh/features/views)。三种写法，由易到难：
+
+1. **Query Builder**——点选条件，零语法。
+2. **Simple query**——Logseq 的紧凑查询语言，直接写在块里。
+3. **Advanced query**——原生 Datascript datalog，前两者表达不了的都用它。
+
+## Query Builder
+
+块里输入 `/Query`，点击搭条件：有标签、有属性、属性 = 值、文本包含、journal 日期范围——用 AND/OR 组合。结果在下方实时渲染成视图。
+
+日常需求它基本都够。不够用的时候，上 simple query。
+
+## Simple query
+
+在块里写好查询表达式，然后对它执行 `/Query`。simple query 由这些积木组成：
+
+| 积木 | 例子 | 匹配 |
+| --- | --- | --- |
+| `[[节点]]` | `[[Project X]]` | 引用了该节点的块——页面或块都行 |
+| `#标签` | `#Task` | 带该标签的节点（子标签也算） |
+| `"文本"` | `"牛奶"` | 包含该文本的块 |
+| `(task ...)` | `(task todo doing)` | 这些状态的任务 |
+| `(priority ...)` | `(priority a)` | 这些优先级的任务 |
+| `(property 名)` | `(property rating)` | 设了该属性的节点 |
+| `(property 名 值)` | `(property rating 4)` | 属性等于该值的节点 |
+| `(page 名)` | `(page "Reading list")` | 该页面上的块 |
+| `(tags ...)` | `(tags book article)` | 带任一标签的节点 |
+| `(between a b)` | `(between -7d today)` | 日期范围内的 journal 页 |
+| `(between 属性 a b)` | `(between created-at -7d now)` | 时间戳属性在范围内 |
+| `(and ...)` | `(and #task (property status doing))` | 全部条件成立 |
+| `(or ...)` | `(or #book #article)` | 任一条件成立 |
+| `(not ...)` | `(not #task)` | 条件不成立 |
+| `(sample n)` | `(and #quote (sample 5))` | 随机 n 条结果 |
+
+随便组合：
+
+```text
+(and #task (property status todo) (between deadline -3d +3d))
+(and (or [[工作]] [[生活]]) (not (task done canceled)))
+(property author [[Ada]])
+```
+
+值的写法注意：`(property ...)` 里的 `#标签` 会去掉 `#`；`[[名字]]` 解析成页面。状态和优先级不区分大小写——`(task TODO)` 和 `(task todo)` 一样。
+
+## Advanced query
+
+`/Advanced Query` 打开 datalog 编辑器——和 CLI 的 `logseq query` 跑的是同一套查询语言，方便在 CI 里测试。
+
+Datascript 查询三段式：
+
+```clojure
+[:find (pull ?b [*])          ;; 返回什么
+ :where                      ;; 条件
+ [?b :block/tags ?t]
+ [?t :db/ident :logseq.class/Task]]
+```
+
+`?b` 是绑定到每个匹配实体的变量。`[?b :属性 值]` 是匹配模式；`[?b :属性 ?v]` 把值绑到 `?v` 供复用。谓词写方括号里：`[(> ?rating 3)]`。
+
+### 配方
+
+所有 Doing 状态的任务：
+
+```clojure
+[:find (pull ?b [*])
+ :where
+ [?b :logseq.task/status ?s]
+ [?s :db/ident :logseq.task/status.doing]]
+```
+
+所有评分 ≥4 的 `#Book`：
+
+```clojure
+[:find (pull ?b [*])
+ :where
+ [?b :block/tags ?t]
+ [?t :block/title "Book"]
+ [?b :user.property/rating ?r]
+ [(>= ?r 4)]]
+```
+
+引用某页面的块：
+
+```clojure
+[:find (pull ?b [*])
+ :where
+ [?p :block/name "project x"]
+ [?b :block/refs ?p]]
+```
+
+本月 journal：
+
+```clojure
+[:find (pull ?p [*])
+ :where
+ [?p :block/journal? true]
+ [?p :block/journal-day ?d]
+ [(>= ?d 20260901)] [(<= ?d 20260930)]]
+```
+
+包含某文本的块：
+
+```clojure
+[:find (pull ?b [*])
+ :where
+ [?b :block/title ?t]
+ [(clojure.string/includes? ?t "roadmap")]]
+```
+
+最近创建的页面：
+
+```clojure
+[:find (pull ?p [*])
+ :where
+ [?p :block/type "page"]
+ [?p :logseq.property/created-at ?c]
+ [(> ?c 1790300000000)]]
+```
+
+### 常用属性名
+
+| 属性 | 存什么 |
+| --- | --- |
+| `:block/title` | 节点文本（文件版叫 `:block/content`） |
+| `:block/page` | 所在页面 |
+| `:block/parent` | 父块 |
+| `:block/order` | 兄弟中的位置 |
+| `:block/refs` | 引用的所有页面/块 |
+| `:block/tags` | 带的标签 |
+| `:block/uuid` | 稳定 UUID——`[[ ]]` 块引用存的就是它 |
+| `:block/journal?` / `:block/journal-day` | journal 页（day 是 YYYYMMDD 整数） |
+| `:block/name` / `:block/original-name` | 页面名，小写 / 原始写法 |
+| `:block/type` | `"page"`、`"class"`、`"property"`… |
+| `:logseq.task/status` `/priority` `/deadline` `/scheduled` | 任务属性 |
+| `:logseq.property/created-at` `/updated-at` | 毫秒时间戳 |
+| `:user.property/<名>` | 你的自定义属性，按 ident |
+| `:db/ident` | 节点的关键字 ident（如 `:logseq.class/Task`） |
+
+参数用 `:in` 传：
+
+```clojure
+[:find (pull ?b [*])
+ :in $ ?status
+ :where
+ [?b :logseq.task/status ?s]
+ [?s :db/ident ?status]]
+;; 输入：:logseq.task/status.todo
+```
+
+## 查询出现在哪
+
+- 结果渲染成实时视图——排序、筛选、分组，或 `Export EDN` 导出当前可见行。
+- `#Query` 页面的表格列出全图所有查询。
+- Journal 页自带"今天到期任务"查询。
+- 查询本身也是节点——能打标、能嵌入、能收藏。
+
+<Aside type="tip">
+  很多 simple query 的场景用[视图](/zh/features/views)的筛选就够了，一个语法都不用写——先试试视图，需要 AND/OR/NOT 组合或计算输出时再升级成查询。
+</Aside>

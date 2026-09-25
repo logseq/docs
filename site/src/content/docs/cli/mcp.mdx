@@ -1,0 +1,36 @@
+---
+title: MCP server
+description: Let AI tools read and write your graph over MCP (Model Context Protocol).
+sidebar:
+  order: 1
+---
+
+Logseq has an optional [MCP](https://modelcontextprotocol.io/) server so AI clients can work with your graph — search nodes, create pages/tags/properties, add and edit blocks — with the app's own validation, and every change undoable (`Cmd-Z`) in the app.
+
+Two ways to run it:
+
+- **Desktop**: `Settings → AI` → enable `MCP Server`, create an HTTP-server auth token, start the HTTP server. The server runs against your current graph at `http://127.0.0.1:12315/mcp`.
+- **CLI**: the `logseq` CLI exposes the same MCP server against a local graph — skip the app entirely.
+
+## Wire up a client
+
+Any MCP client that speaks Streamable HTTP works. Examples:
+
+```bash
+# Gemini CLI
+gemini mcp add logseq-http http://127.0.0.1:12315/mcp \
+  --transport http --header "Authorization: Bearer TOKEN"
+```
+
+In LM Studio, add an MCP server with URL `http://127.0.0.1:12315/mcp` and header `Authorization: Bearer TOKEN`. `TOKEN` is the auth token you created under the HTTP server settings.
+
+## What it can do
+
+- Search any node (like `Cmd-K`).
+- Create/list pages, tags, properties — specifying parent tags, property types, cardinality.
+- Add blocks to a page, edit block titles; attach tags on creation.
+- **Batch creates/edits** in one call.
+- **Pretend mode** — "pretend add page X with y blocks" to preview the change count before committing.
+- Everything lands in your real graph with undo support.
+
+Known gaps (as of now): editing pages/tags/properties (not just creating), reading/writing arbitrary node properties, listing blocks deeper than top-level, namespace and property-value operations.

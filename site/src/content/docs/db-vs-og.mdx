@@ -1,0 +1,46 @@
+---
+title: DB vs OG
+description: What changed between the file-based (OG) version and the current DB version of Logseq.
+sidebar:
+  order: 2
+---
+
+The DB version keeps everything your notes live in a **SQLite database** instead of one markdown file per page. That one change unlocks most of what's new: real properties, typed data, tags with inherited fields, tables, and fast queries — while the core idea stays the same. Everything is still a graph of blocks and pages you can link, and everything still lives on your machine.
+
+## What's the same
+
+- The outliner. Blocks, indentation, zooming in on a block, `[[links]]` — all unchanged.
+- Local-first. No account needed, works offline, your data is on disk.
+- Journals, queries, flashcards, templates, publishing — same features, mostly rebuilt on top of the database.
+
+## What changed
+
+| Area | OG (file graph) | DB version |
+| --- | --- | --- |
+| Storage | One markdown/org file per page | One `db.sqlite` per graph |
+| Pages vs blocks | Two different kinds of things | Both are **nodes** — same linking, tagging, properties, embedding |
+| Properties | Text key-values in `property::` syntax, untyped | Typed: Text, Number, Date, Checkbox, Url, Node — with choices, defaults, and UI position |
+| Tags | Plain `#tag` text | Tags are real objects with **tag properties** every tagged node inherits, plus parent tags |
+| Tasks | `TODO`/`DOING`/`NOW`/`LATER`/`WAIT` keywords | Tasks are blocks tagged `#Task` with a customizable `Status` property and choices |
+| Queries | Simple + advanced queries in query blocks | Query Builder (simple) and advanced queries — plus table views on any tag or property |
+| Block references | `((uuid))` syntax | Unified into `[[ ]]` — a link can point at any node, page or block |
+| Config | `config.edn` | No `config.edn`; settings are per-graph in the UI |
+| Org mode | Supported | Not supported |
+| Whiteboards | Yes | Not yet |
+| Slides | Built-in presentation | Removed |
+
+## Things you get that OG didn't have
+
+- **Tables** — every tag, property, or query result is a spreadsheet-like table with sort, filter, group-by, and inline editing.
+- **Node type properties** — a property can point at another node and only accept values with a given tag (e.g. `author` only accepts `#Person` nodes).
+- **Tag inheritance** — `#Audiobook` extending `#Book` and `#MediaObject` gets all three parents' properties.
+- **Repeated tasks** — done tasks re-schedule themselves by a configurable interval.
+- **Recycling** — deleted pages can be restored for 30 days.
+- **Bidirectional properties** — an `author` link on a book can show a "Books" property back on the author.
+- **A CLI, an MCP server, and an HTTP API** — real automation surfaces, see [CLI](/cli).
+
+## Migration notes
+
+- Markdown files are imported wholesale — the importer maps old task keywords onto new statuses and old properties onto typed properties. See [Migrate](/migrate) for the full rundown and its options.
+- The old publishing-to-a-static-site feature still exists; the new [Publish](/features/publish) feature shares single pages to `logseq.io` instead.
+- If you relied on `config.edn` (custom CSS, default filters, journal title format), most of those settings now live in **Settings** inside the app or per-graph.

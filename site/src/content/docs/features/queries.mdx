@@ -1,0 +1,166 @@
+---
+title: Queries
+description: Simple queries, the Query Builder, and advanced Datascript queries — pull any set of nodes into a live view.
+sidebar:
+  order: 2
+---
+
+A query is a node tagged `#Query` that pulls matching nodes into a live [view](/features/views). There are three ways to write one, easiest to hardest:
+
+1. **Query Builder** — visual conditions, no syntax.
+2. **Simple query** — Logseq's compact query language, typed in a block.
+3. **Advanced query** — raw Datascript datalog, for anything the others can't express.
+
+## Query Builder
+
+Type `/Query` in any block and build conditions with clicks: has tag, has property, property = value, text contains, journal day range — combined with AND/OR groups. Results render as a live view underneath.
+
+This covers most everyday needs. When you outgrow it, drop to simple queries.
+
+## Simple queries
+
+Type a query in a block, then run `/Query` on it. A simple query is one expression built from these pieces:
+
+| Piece | Example | Matches |
+| --- | --- | --- |
+| `[[Node]]` | `[[Project X]]` | Blocks referencing that node — page or block |
+| `#tag` | `#Task` | Nodes with that tag (child tags included) |
+| `"text"` | `"milk"` | Blocks containing the text |
+| `(task ...)` | `(task todo doing)` | Tasks with those statuses |
+| `(priority ...)` | `(priority a)` | Tasks by priority |
+| `(property name)` | `(property rating)` | Nodes where the property is set |
+| `(property name value)` | `(property rating 4)` | Nodes where it equals the value |
+| `(page name)` | `(page "Reading list")` | Blocks on that page |
+| `(tags ...)` | `(tags book article)` | Nodes with any of those tags |
+| `(between a b)` | `(between -7d today)` | Journal pages in a day range |
+| `(between prop a b)` | `(between created-at -7d now)` | Timestamped properties in range |
+| `(and ...)` | `(and #task (property status doing))` | All clauses true |
+| `(or ...)` | `(or #book #article)` | Any clause true |
+| `(not ...)` | `(not #task)` | Clause false |
+| `(sample n)` | `(and #quote (sample 5))` | Random n results |
+
+Compose freely:
+
+```text
+(and #task (property status todo) (between deadline -3d +3d))
+(and (or [[work]] [[home]]) (not (task done canceled)))
+(property author [[Ada]])
+```
+
+Value syntax notes: `#tag` inside `(property ...)` strips the `#`; `[[name]]` resolves the page. Task status and priority names are case-insensitive — `(task TODO)` and `(task todo)` are the same.
+
+## Advanced queries
+
+`/Advanced Query` opens a datalog editor — the same query language the CLI's `logseq query` runs headlessly, which makes it easy to test in CI.
+
+A Datascript query is three clauses:
+
+```clojure
+[:find (pull ?b [*])          ;; what to return
+ :where                      ;; conditions
+ [?b :block/tags ?t]
+ [?t :db/ident :logseq.class/Task]]
+```
+
+`?b` is a variable bound to every matching entity. `[?b :attr value]` is a match pattern; `[?b :attr ?v]` binds `?v` for reuse. Predicates go in brackets: `[(> ?rating 3)]`.
+
+### Recipes
+
+All tasks currently Doing:
+
+```clojure
+[:find (pull ?b [*])
+ :where
+ [?b :logseq.task/status ?s]
+ [?s :db/ident :logseq.task/status.doing]]
+```
+
+All nodes tagged `#Book` with rating ≥ 4:
+
+```clojure
+[:find (pull ?b [*])
+ :where
+ [?b :block/tags ?t]
+ [?t :block/title "Book"]
+ [?b :user.property/rating ?r]
+ [(>= ?r 4)]]
+```
+
+Blocks referencing a page:
+
+```clojure
+[:find (pull ?b [*])
+ :where
+ [?p :block/name "project x"]
+ [?b :block/refs ?p]]
+```
+
+Journals this month:
+
+```clojure
+[:find (pull ?p [*])
+ :where
+ [?p :block/journal? true]
+ [?p :block/journal-day ?d]
+ [(>= ?d 20260901)] [(<= ?d 20260930)]]
+```
+
+Blocks containing text:
+
+```clojure
+[:find (pull ?b [*])
+ :where
+ [?b :block/title ?t]
+ [(clojure.string/includes? ?t "roadmap")]]
+```
+
+Recently created pages:
+
+```clojure
+[:find (pull ?p [*])
+ :where
+ [?p :block/type "page"]
+ [?p :logseq.property/created-at ?c]
+ [(> ?c 1790300000000)]]
+```
+
+### Key attributes
+
+| Attribute | Holds |
+| --- | --- |
+| `:block/title` | Node's text (was `:block/content` on file graphs) |
+| `:block/page` | Parent page |
+| `:block/parent` | Parent block |
+| `:block/order` | Position among siblings |
+| `:block/refs` | All pages/blocks it references |
+| `:block/tags` | Its tags |
+| `:block/uuid` | Stable UUID — what `[[ ]]` block references store |
+| `:block/journal?` / `:block/journal-day` | Journal pages (day = YYYYMMDD int) |
+| `:block/name` / `:block/original-name` | Page name, lowercased / as typed |
+| `:block/type` | `"page"`, `"class"`, `"property"`… |
+| `:logseq.task/status` `/priority` `/deadline` `/scheduled` | Task properties |
+| `:logseq.property/created-at` `/updated-at` | ms timestamps |
+| `:user.property/<name>` | Your custom properties, by ident |
+| `:db/ident` | A node keyword ident (e.g. `:logseq.class/Task`) |
+
+Parameters via `:in`:
+
+```clojure
+[:find (pull ?b [*])
+ :in $ ?status
+ :where
+ [?b :logseq.task/status ?s]
+ [?s :db/ident ?status]]
+;; input: :logseq.task/status.todo
+```
+
+## Where queries show up
+
+- Results render in a live view — sort, filter, group, or `Export EDN` the visible rows.
+- The `#Query` page's table lists every query in the graph.
+- Journal pages run built-in queries for tasks due today.
+- A query is a node — tag it, embed it, favorite it.
+
+<Aside type="tip">
+  View filters cover many simple-query cases without any syntax — try a [view](/features/views) first, upgrade to a query when you need AND/OR/NOT composition or computed output.
+</Aside>

@@ -1,0 +1,39 @@
+---
+title: Links & embeds
+description: Connect nodes with [[links]], embeds, and references.
+sidebar:
+  order: 3
+---
+
+`[[double brackets]]` are how Logseq becomes a graph instead of a pile of notes. Write `[[anything]]` and you've linked to a node — creating the page on the spot if it didn't exist. There is one syntax for every kind of node: pages and blocks are both linked with `[[ ]]`.
+
+## Page references
+
+- `[[Page name]]` links to a page. Click to jump, hover to preview.
+- Every page shows its **Linked References** (nodes that mention it) and **Unlinked References** (nodes that mention the name without a link — click to link them).
+
+## Block references
+
+A block reference points to one specific block, not a whole page — same `[[ ]]` syntax:
+
+- Type `[[` and keep typing — the picker matches block contents too, not just page names.
+- Or right-click a block's bullet → `Copy block ref`, then paste — it inserts a `[[ ]]` link to that block.
+
+Block refs are *live*: edit either end and the other updates. They're the cheapest way to reuse a sentence or a todo across pages. The old `((uuid))` syntax from file graphs is gone — the importer converts those to `[[ ]]` links automatically.
+
+## Embeds
+
+An embed pulls a whole node — children included — into another context:
+
+- `/Node embed` and pick a page or block.
+- `/Page embed` / `/Block embed` still work too.
+
+The embed shows live content. Links inside it navigate as usual.
+
+## Tagged references
+
+Type `[[name]]#Tag` to create the page *and* tag it in one stroke — e.g. `[[Ada]]#Person` makes a `#Person` page named Ada. Tags on references make [tag pages](/concepts/tags) and [tables](/features/views) pick the node up automatically.
+
+## Namespaces
+
+`[[Parent/Child]]` creates a namespaced page. Namespaces build a hierarchy you can browse in the [Library](/concepts/library) — closest thing to folders, for people who want them.

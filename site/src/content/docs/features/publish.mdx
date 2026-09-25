@@ -1,0 +1,38 @@
+---
+title: Publish
+description: Share read-only pages to the web — optionally password-protected.
+sidebar:
+  order: 7
+---
+
+Publish shares individual pages to `logseq.io` — hosted on Cloudflare, rendered as a clean read-only outliner.
+
+<Aside type="note" title="Account required">
+  Publish requires a Logseq account (the same one used for Sync). The publish server can also be self-hosted — see [Self-hosting](/sync/self-hosting).
+</Aside>
+
+## Publish a page
+
+1. Press `Cmd-M` or run `Open publish dialog ...`.
+2. Optionally set a password — protected pages are excluded from shared search.
+3. Share the `Published URL` that lands on the page. Re-publish anytime to push edits; `Unpublish` to take it down.
+
+## What readers get
+
+- A minimal outliner: collapse/expand blocks (`t o` toggles all), dark mode (`t t` or the slider).
+- Search across the published pages (`Cmd-K` or the search bar).
+- Click a tag to see every published node with it.
+
+Custom `publish.css` / `publish.js` pages (edit via `Cmd-K`) style your published pages.
+
+## URL routes
+
+- `logseq.io/u/USER` — all your published pages
+- `logseq.io/graph/GRAPH-UUID` — a graph's pages
+- `logseq.io/tag/TAG` — nodes tagged TAG across users
+- `logseq.io/ref/REF` — nodes referencing REF across users
+- `logseq.io/page/GRAPH-UUID/TAG-UUID` — a single published page
+
+## Self-hosted publish
+
+Point `Settings > Advanced > Publish Server URL` at your own instance — the publish worker is open source in [`deps/publish`](https://github.com/logseq/logseq/tree/master/deps/publish) and community images exist. See [Self-hosting](/sync/self-hosting).

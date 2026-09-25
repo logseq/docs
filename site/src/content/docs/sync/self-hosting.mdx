@@ -1,0 +1,98 @@
+---
+title: Self-hosted sync
+description: Run the Logseq sync server yourself — from source, with Docker, and connect your clients.
+sidebar:
+  order: 1
+---
+
+The whole sync backend ships in the open-source repo ([`deps/db-sync`](https://github.com/logseq/logseq/tree/master/deps/db-sync)), including a **Node.js adapter** that runs the same code as the managed service on a plain Node process. Everything below is verified against the current tree.
+
+<Aside type="note" title="Auth still uses Logseq accounts">
+  Your *data* lives entirely on your server — but sign-in still goes through Logseq's Cognito, so clients log in with a Logseq account. Fully independent auth isn't supported by the client yet.
+</Aside>
+
+## Run the sync server from source
+
+**Requirements**: Node.js 24, pnpm, Java + Clojure CLI (for the build), and an opam/OCaml setup for repo deps — the repo's own build environment. If you don't want to build, skip to [Docker](#docker-images) below.
+
+<Steps>
+<Step>
+
+Clone and install:
+
+```bash
+git clone https://github.com/logseq/logseq.git
+cd logseq
+pnpm install
+```
+
+</Step>
+<Step>
+
+Build the adapter:
+
+```bash
+cd deps/db-sync
+pnpm build:node-adapter        # → worker/dist/node-adapter.js
+```
+
+</Step>
+<Step>
+
+Run it:
+
+```bash
+mkdir -p /var/lib/logseq-sync
+DB_SYNC_PORT=8787 \
+DB_SYNC_DATA_DIR=/var/lib/logseq-sync \
+COGNITO_ISSUER=https://cognito-idp.us-east-1.amazonaws.com/us-east-1_dtagLnju8 \
+COGNITO_CLIENT_ID=69cs1lgme7p8kbgld8n5kseii6 \
+COGNITO_JWKS_URL=https://cognito-idp.us-east-1.amazonaws.com/us-east-1_dtagLnju8/.well-known/jwks.json \
+node worker/dist/node-adapter.js
+```
+
+</Step>
+</Steps>
+
+Verify it's alive:
+
+```bash
+curl http://localhost:8787/health    # → {"ok":true}
+curl http://localhost:8787/graphs    # → 401 (needs a signed-in client)
+```
+
+### Environment variables
+
+| Variable | Purpose |
+| --- | --- |
+| `DB_SYNC_PORT` | Port to listen on |
+| `DB_SYNC_DATA_DIR` | Where sqlite graph data + assets are stored |
+| `DB_SYNC_BASE_URL` | External URL, used when generating asset links |
+| `COGNITO_ISSUER` / `COGNITO_CLIENT_ID` / `COGNITO_JWKS_URL` | Auth — point at Logseq's Cognito (values above) |
+| `DB_SYNC_STORAGE_DRIVER` / `DB_SYNC_ASSETS_DRIVER` | Backends: `sqlite` / `filesystem` (defaults) |
+| `DB_SYNC_ADMIN_TOKEN` | Enables operator admin endpoints (e.g. graph deletion) |
+| `SENTRY_*` | Optional error reporting |
+
+## Point Logseq at it
+
+**In the app**: `Settings → Advanced → Sync Server URL` → `https://your-server` (or `http://localhost:8787`). Then create a synced graph as usual — it syncs to your server.
+
+**From the CLI** (great for verification and automation):
+
+```bash
+logseq login --username you@example.com --password '•••'
+logseq sync config set http-base http://localhost:8787
+logseq sync upload -g my-graph --e2ee-password 'a-secret'
+logseq sync remote-graphs -g my-graph     # shows your uploaded graph
+logseq sync download -g my-graph --e2ee-password 'a-secret'   # on another machine
+```
+
+That last block is a full end-to-end check: it uploads an encrypted snapshot to *your* server and downloads it on another machine. We ran exactly this against a local adapter — upload, `remote-graphs`, download with all blocks intact.
+
+## Docker images
+
+The community project [yshalsager/logseq-selfhost](https://github.com/yshalsager/logseq-selfhost) publishes ready-made images for sync, publish, and the web client (on GHCR). It's the fastest path if you don't want the repo toolchain. The [self-hosting guide there](https://github.com/yshalsager/logseq-selfhost) covers compose setups; [adri99.net's write-up](https://adri99.net/self-hosting-logseq-sync-locally/) builds on it for local installs.
+
+## Publish server
+
+The publish backend is a Cloudflare worker in [`deps/publish`](https://github.com/logseq/logseq/tree/master/deps/publish). Self-hosting it needs a (free) Cloudflare account and `wrangler`; the community images wrap it too. Then set `Settings → Advanced → Publish Server URL`.

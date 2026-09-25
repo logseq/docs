@@ -1,0 +1,42 @@
+---
+title: Nodes
+description: Pages and blocks are the same thing — a node. The core idea behind everything in Logseq.
+sidebar:
+  order: 1
+---
+
+**Node** is the term for what a page and a block have in common. They used to be different animals; in the DB version they behave almost identically.
+
+## What every node can do
+
+- Be referenced with `[[double brackets]]`.
+- Be tagged — a node with a tag shows that tag's properties and joins its table.
+- Have typed [properties](/concepts/properties) — set them in the same way, whether it's a page title or a nested block.
+- Be embedded — the `/Node embed` command works on pages and blocks alike.
+- Be favorited — zoom into a block to favorite it just like a page.
+- Show `Linked References` and `Unlinked References` — on a page it appears at the bottom; on a block, zoom in to see it.
+- Have an icon floating to its left, and collapse/expand with the arrow on hover.
+
+Same keyboard shortcuts, too: property shortcuts like `Cmd-;` (toggle property display) work identically on pages and blocks.
+
+## What's still page-only
+
+- Pages appear in the **Pages** view and get created when you make a property, tag, or journal.
+- Page names are unique *per tag* — `Apple #Company` and `Apple #Fruit` can coexist.
+- Hovering a page title surfaces page-level actions like `Set property`.
+- Deleting a page moves it to a **Recycle** bin for 30 days — recreate the page or restore it from the three-dots menu. (Tag pages, property pages, and today's journal delete permanently.)
+
+## What's still block-only
+
+- Blocks live inside a page and have a position in the outline.
+- Block names don't have to be unique.
+- Blocks can have reactions — right-click the bullet → `Add reaction`.
+
+## Block ↔ page conversion
+
+A top-level block can become a page and back again:
+
+- Tag the block `#Page` — it becomes a page, namespaced under its parent.
+- To turn it back, press `p t` and remove `#Page`.
+
+Handy when a stray note grows into something that deserves its own page.

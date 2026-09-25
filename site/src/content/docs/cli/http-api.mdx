@@ -1,0 +1,26 @@
+---
+title: HTTP API
+description: A local REST API inside the desktop app — for integrations, PWA clients, and quick automation.
+sidebar:
+  order: 3
+---
+
+The desktop app can host a local HTTP API so other tools — scripts, shortcuts, small web apps — can drive your graph without the CLI.
+
+## Enable it
+
+1. `Settings → Features` → turn on the HTTP server.
+2. Create an authorization token; requests authenticate with `Authorization: Bearer TOKEN`.
+3. The server listens locally (`127.0.0.1`, default port 12315).
+
+## What it's for
+
+- Quick automations from other tools: Alfred/Shortcuts-style "append to today's journal", launcher integrations, widgets.
+- Third-party clients: [logseq-todo-pwa](https://github.com/benjypng/logseq-todo-pwa) is a full PWA task client talking to the API; [yalms](https://github.com/clstb/yalms) exposes it as an MCP server.
+- The [MCP server](/cli/mcp) itself runs on top of this API.
+
+## Alternatives
+
+- Batch/headless jobs → [CLI](/cli).
+- Deep programmatic access → [nbb-logseq scripting](/cli/scripting).
+- AI clients → [MCP server](/cli/mcp).

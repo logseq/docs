@@ -1,0 +1,70 @@
+---
+title: FAQ
+description: Common questions — DB vs file graphs, sync, tags, data safety, and troubleshooting.
+sidebar:
+  order: 99
+---
+
+## Is the DB version replacing the file version?
+
+The DB version **is** Logseq now — "Logseq OG" (the markdown-file version) is in maintenance mode: security patches and compatibility updates only, no new features. File graphs keep working, and there's a [built-in importer](/migrate) when you're ready to move. The [DB vs OG](/db-vs-og) page lists exactly what changed.
+
+## Where is my data?
+
+On your machine. Desktop keeps each graph as a `db.sqlite` file in the folder you picked. The web version stores it in browser storage — still local, just less convenient to back up. Nothing needs an account unless you opt into Sync or Publish.
+
+## Can I still use plain markdown?
+
+Markdown imports fine (see [Migrate](/migrate)). But the DB version doesn't keep live `.md` files — the database is the source of truth. In exchange you get faster sync, real-time collaboration, and typed structure. Standard-markdown export exists for leaving; the [EDN export](/sync/backup-export) captures everything if you want a text-format mirror. If live markdown files are a hard requirement, the OG version still exists.
+
+## What's the difference between `[[page]]`, `#tag`, and properties?
+
+Three different tools for three different jobs:
+
+- **`[[page]]`** — mention/link. Links one node to another inside a sentence. Use whenever you're *talking about* something.
+- **`#tag`** — classification. "This node *is a* Book/Person/Task." Tags give the node a table row, tag properties, and a type.
+- **Property** — a field. `rating: 4`, `status: reading`. Key → typed value.
+
+Rule of thumb from the community: link inside sentences, tag to say what something *is*, properties for the *facts about it*. More in [Links](/concepts/links), [Tags](/concepts/tags), [Properties](/concepts/properties).
+
+## What happened to `#tags` from my old graph?
+
+Old-style `#tags` and `[[pages]]` were the same thing in OG. In DB they're different — tags are typed classes with properties, pages are just nodes. On import you choose: **all tags → new tags** (recommended: tags keep working *and* gain properties), or **specific tags only**, or **tags → pages** (closest to OG behavior). You can change your mind later — `Convert to Tag` / `Convert Tag to Page` on any page's menu.
+
+## What happened to my tasks / properties / queries after importing?
+
+- `TODO`-style markers became a `Status` property with choices — see the [remap table](/migrate#what-the-importer-does).
+- Old `key:: value` properties became typed [properties](/concepts/properties), types auto-detected.
+- Simple and advanced queries still work — see [Queries](/features/queries).
+- Org-mode files, `BEGIN_` advanced blocks, and some query macros don't import — check the [limitations list](/migrate#before-you-start).
+
+## Is Sync really encrypted?
+
+Yes — E2EE, encrypted on your device before upload. The server stores ciphertext. Your encryption password is the only key; keep it somewhere safe because it can't be recovered.
+
+## What is Logseq Pro?
+
+The paid tier bundles **sync**, **real-time collaboration** (RTC — multiple people editing one graph live), and **Publish**. Everything else — the apps, the outliner, the database, the CLI — is free and open source. A free self-hosted sync option exists too ([guide](/sync/self-hosting)).
+
+## Can I sync without Logseq's server?
+
+Yes — [run the sync server yourself](/sync/self-hosting) and point `Settings → Advanced → Sync Server URL` at it. Note sign-in still goes through Logseq's Cognito (a Logseq account is needed), though all data stays on your server. Community alternatives like Git or Syncthing also work on desktop if you export/backup to files.
+
+## What happened to whiteboards and Zotero?
+
+Whiteboards were removed in the DB version (they still work in OG; the team is deciding how to bring them back). Zotero moved out of core — use community plugins like `zotero-local`, which already supports DB graphs.
+
+## Is there a calendar view? Mobile apps?
+
+Calendar view is on the public [roadmap](https://discuss.logseq.com/t/logseq-product-roadmap/34267). New DB mobile apps exist — iOS via TestFlight, Android APK via [nightly releases](https://github.com/logseq/logseq/releases). Mobile plugins aren't supported yet.
+
+## A block or page disappeared — how do I get it back?
+
+Deleted pages recycle for 30 days: three-dots menu → `Recycle`, or just recreate the page. Tags, property pages, and today's journal delete permanently. Everything else — `Cmd-Z` undoes almost anything while you're in the session.
+
+## Logseq feels broken — what do I check?
+
+1. `logseq doctor` in the [CLI](/cli) verifies the worker script and root dir.
+2. In the app: `Validate current graph` and `Garbage collect graph` commands (command palette) fix common graph issues.
+3. Graph corrupted? Restore from the `backups/` folder — the last 12 hourly backups are automatic on desktop.
+4. Still stuck: [community forum](https://discuss.logseq.com) and the [DB changelog thread](https://discuss.logseq.com/t/logseq-db-changelog/30013) — and the community-run [unofficial DB FAQ](https://bit.ly/logseqdbfaq).

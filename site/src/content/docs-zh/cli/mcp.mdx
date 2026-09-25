@@ -1,0 +1,36 @@
+---
+title: MCP server
+description: 让 AI 工具通过 MCP（Model Context Protocol）读写你的图谱。
+sidebar:
+  order: 1
+---
+
+Logseq 有个可选的 [MCP](https://modelcontextprotocol.io/) server，让 AI 客户端操作你的图谱——搜节点、建页面/标签/属性、增删改块——走应用自己的校验，所有改动都能在应用里 `Cmd-Z` 撤销。
+
+两种跑法：
+
+- **桌面版**：`Settings → AI` → 打开 `MCP Server`，创建 HTTP-server 认证 token，启动 HTTP server。server 跑在当前图谱上，地址 `http://127.0.0.1:12315/mcp`。
+- **CLI**：`logseq` CLI 对本地图谱暴露同一个 MCP server——不用开应用。
+
+## 接客户端
+
+任何说 Streamable HTTP 的 MCP 客户端都行。例子：
+
+```bash
+# Gemini CLI
+gemini mcp add logseq-http http://127.0.0.1:12315/mcp \
+  --transport http --header "Authorization: Bearer TOKEN"
+```
+
+LM Studio 里加 MCP server：URL `http://127.0.0.1:12315/mcp`，header `Authorization: Bearer TOKEN`。`TOKEN` 就是你在 HTTP server 设置里创建的认证 token。
+
+## 能干什么
+
+- 搜任意节点（等价 `Cmd-K`）。
+- 建/列页面、标签、属性——可指定父标签、属性类型、cardinality。
+- 往页面加块、改块标题；创建时带标签。
+- 一次调用**批量增改**。
+- **Pretend 模式**——"假装加页面 X 带 y 个块"，先预览改动数再落地。
+- 一切改动落进真实图谱，可撤销。
+
+已知缺口（当前）：编辑（非新建）页面/标签/属性、读写任意节点属性、列出顶层以下的块、namespace 和属性值操作。

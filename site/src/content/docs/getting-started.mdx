@@ -1,0 +1,49 @@
+---
+title: Getting started
+description: Get Logseq, create your first graph, and write your first notes.
+sidebar:
+  order: 1
+---
+
+You can run Logseq in a browser or as a desktop app. Both work fully offline — the desktop app just keeps your graph in a real folder on your disk, which makes backups and scripting easier.
+
+## Get Logseq
+
+- **Web**: open [logseq.com](https://logseq.com) in a Chromium-based browser. Nothing to install; your graph lives in the browser's local storage.
+- **Desktop**: download the app from [github.com/logseq/logseq/releases](https://github.com/logseq/logseq/releases). Graphs live on disk, so you can point your own backup tools at them.
+- **Mobile**: the new iOS app is in invite-only testing; an Android app is on the way.
+
+<Aside type="tip">
+  The docs you're reading cover the DB version. If you're on the older file-based version and want to move over, jump to [Migrate](/migrate).
+</Aside>
+
+## Create a graph
+
+A graph is one notebook: a database of all your pages, blocks, tags, and properties.
+
+1. Click the graph name in the left sidebar.
+2. Choose **Create db graph** and give it a name.
+3. On desktop, pick a folder — the graph becomes a `db.sqlite` file inside it.
+
+That's it. There's no signup, no "project setup" wizard, and nothing to configure before you can write.
+
+## Your first journal
+
+Logseq opens on **Journals** — one page per day, always today's at the bottom. This is where most people write everything first and organize later.
+
+Try it:
+
+1. On today's journal page, type a sentence and hit `Enter` for a new block.
+2. Hit `Tab` to indent — you now have a nested block. `Shift-Tab` brings it back.
+3. Type `[[Project X]]` anywhere to make a link. The link itself creates the page — no "new page" ceremony needed.
+4. Add `#Task` to the end of a block and press `Enter`. It becomes a task with a status checkbox. `Cmd-Enter` (macOS) / `Ctrl-Enter` cycles it through Todo → Doing → Done.
+
+## The handful of things worth knowing
+
+Everything in Logseq is a **node** — pages and blocks behave almost identically. They all can be linked with `[[]]`, tagged with `#`, given properties, embedded elsewhere, and favorited. Once that clicks, the rest of the app is just different views over the same data.
+
+- [Nodes](/concepts/nodes) — the one concept everything else builds on
+- [Tags](/concepts/tags) — group nodes and give them shared properties
+- [Properties](/concepts/properties) — typed fields on any block or page
+- [Journals](/concepts/journals) — the daily-driver page
+- [Tasks](/features/tasks) — statuses, deadlines, repeating

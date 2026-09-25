@@ -1,0 +1,44 @@
+---
+title: The outliner
+description: Why block-level editing beats flat documents — zoom, move, reference, and restructure without friction.
+sidebar:
+  order: 0
+---
+
+Logseq is an outliner first: everything you write is a **block** in a nested list, not a paragraph in a document. That sounds like a limitation until you realize what it buys you.
+
+## Blocks are the unit, not documents
+
+In a normal editor the smallest thing you can reference, move, or link is a whole file. In Logseq the unit is a bullet:
+
+- Every block can be **linked** — `[[ ]]` points at one bullet, live on both ends.
+- Every block can be **tagged and given properties** — one bullet can be a task, the next a card, the next a book.
+- Every block can be **embedded** elsewhere — same content, live, inside a different page.
+- Every block can be **moved** — drag it, `Move blocks to` it to another page, no copy-paste.
+
+Write in one place, reuse everywhere. A todo buried in last Tuesday's meeting notes is still a real task — it shows up on the `#Task` table, in queries, on your journal when due.
+
+## Structure is cheap
+
+- `Enter` → new block. `Tab`/`Shift-Tab` → indent/outdent. There's no formatting ceremony between you and an idea.
+- Click a block's bullet (or zoom) and it becomes its own page — a scratchpad for one thought, with its own linked references. Zoom back out when you're done.
+- Collapse any block with the arrow on hover. Long notes fold into an outline; expand only what you're working on.
+- Drag the bullet to re-parent a block and its whole subtree.
+
+## Write first, organize never
+
+The outliner + links + tags means structure emerges later for free. Dump everything into today's journal; when a block turns out to be a project, tag it `#Project` — it instantly has a row in a table, its own properties, and backlinks from everywhere you mentioned it.
+
+## Keyboard-first editing
+
+| Keys | Does |
+| --- | --- |
+| `Enter` | New block |
+| `Tab` / `Shift-Tab` | Indent / outdent |
+| `Cmd-Shift-↑/↓` | Move block up/down (drag works too) |
+| `/` | Open the [command menu](/features/editor-commands) |
+| `[[` | Link to a node — picker matches block contents too |
+| `Cmd-K` | Search / go to |
+| `Esc` | Blur / exit |
+
+Combined with [bulk actions](/features/views#bulk-actions) — select a run of blocks and tag, move, or set properties on all of them — the outliner turns reorganizing a hundred blocks into a two-second job.

@@ -1,0 +1,70 @@
+---
+title: 常见问题
+description: 高频问题——DB vs 文件图谱、同步、标签、数据安全、排障。
+sidebar:
+  order: 99
+---
+
+## DB 版是要取代文件版吗？
+
+DB 版**就是现在的 Logseq**——"Logseq OG"（markdown 文件版）已进入维护期：只有安全补丁和兼容性更新，不再加新功能。文件图谱继续可用，想搬家时用[内置导入器](/zh/migrate)。[DB vs OG](/zh/db-vs-og) 一页列清了所有变化。
+
+## 我的数据在哪？
+
+在你机器上。桌面版每个图谱是你选定目录下的 `db.sqlite` 文件；Web 版存在浏览器本地存储——同样在本机，只是备份没那么方便。不选 Sync 或 Publish，完全不需要账号。
+
+## 还能用纯 markdown 吗？
+
+markdown 导入没问题（见[迁移](/zh/migrate)）。但 DB 版不再有活的 `.md` 文件——数据库是唯一事实来源。换来的是更快的同步、实时协作和类型化结构。标准 markdown 导出仍在，给你离开用；[EDN 导出](/zh/sync/backup-export)能捕获全部数据，想要文本镜像就用它。如果活文件是硬需求，OG 版本还在。
+
+## `[[页面]]`、`#标签`、属性到底什么区别？
+
+三种工具干三件事：
+
+- **`[[页面]]`**——提及/链接。句子里把一个节点连到另一个。只要你在*谈论*某个东西就用它。
+- **`#标签`**——分类。"这个节点*是一本*书 / *是一个*人 / *是一条*任务。"标签给节点一个表格行、标签属性和类型。
+- **属性**——字段。`rating: 4`、`status: 在读`。键 → 类型化值。
+
+社区经验法则：句子里用链接，说"是什么"用标签，属性记"关于它的硬事实"。详见[链接](/zh/concepts/links)、[标签](/zh/concepts/tags)、[属性](/zh/concepts/properties)。
+
+## 我旧图谱的 `#标签` 怎么样了？
+
+老式 `#标签` 和 `[[页面]]` 在 OG 里是同一个东西；DB 版里不同了——标签是带属性的类型化 class，页面只是节点。导入时你选择：**全部标签 → 新标签**（推荐：标签照常工作*还*白得属性）、**只转部分标签**、或**标签 → 页面**（最接近 OG 行为）。随时反悔——任何页面的菜单里 `Convert to Tag` / `Convert Tag to Page`。
+
+## 导入后我的任务/属性/查询呢？
+
+- `TODO` 系关键字变成 `Status` 属性的选项——见[对照表](/zh/migrate#导入器做了什么)。
+- 老的 `key:: value` 属性变成类型化[属性](/zh/concepts/properties)，类型自动识别。
+- simple 和 advanced 查询照常工作——见[查询](/zh/features/queries)。
+- Org-mode 文件、`BEGIN_` 高级块、部分查询宏不导入——查[限制清单](/zh/migrate#开始之前)。
+
+## Sync 真的加密吗？
+
+真的——E2EE，离开设备前就加密。服务器存的只有密文。加密密码是唯一的钥匙，务必存好——丢了救不回来。
+
+## Logseq Pro 是什么？
+
+付费档打包了三样：**同步**、**实时协作**（RTC——多人实时编同一图谱）、**Publish**。除此之外——应用、大纲、数据库、CLI——全部免费开源。也有免费的自托管同步（[指南](/zh/sync/self-hosting)）。
+
+## 不用 Logseq 服务器能同步吗？
+
+能——[自己跑同步服务器](/zh/sync/self-hosting)，`Settings → Advanced → Sync Server URL` 指过去。注意登录仍走 Logseq Cognito（需要 Logseq 账号），但数据全部在你服务器上。桌面版也可以用 Git、Syncthing 这类社区方案（配合导出/备份到文件）。
+
+## 白板和 Zotero 呢？
+
+白板在 DB 版里移除了（OG 还能用；团队在琢磨怎么带回来）。Zotero 挪出核心——用社区插件，比如已支持 DB 图谱的 `zotero-local`。
+
+## 有日历视图吗？移动端呢？
+
+日历视图在公开 [roadmap](https://discuss.logseq.com/t/logseq-product-roadmap/34267) 上。新的 DB 移动应用已有——iOS 走 TestFlight，Android 装 [nightly release](https://github.com/logseq/logseq/releases) 的 APK。移动端暂时不支持插件。
+
+## 块或页面不见了——怎么找回来？
+
+删掉的页面回收 30 天：三点菜单 → `Recycle`，或直接重建页面。标签、属性页和今天的 journal 是永久删除。其余的——`Cmd-Z` 在会话内几乎什么都能撤销。
+
+## Logseq 感觉坏了——查什么？
+
+1. [CLI](/zh/cli) 里 `logseq doctor` 验证 worker 脚本和根目录。
+2. 应用内：`Validate current graph` 和 `Garbage collect graph`（命令面板）修常见图谱问题。
+3. 图谱坏了？从 `backups/` 目录恢复——桌面版自动留最近 12 个小时级备份。
+4. 还不行：[社区论坛](https://discuss.logseq.com)和 [DB changelog 帖](https://discuss.logseq.com/t/logseq-db-changelog/30013)——还有社区维护的[非官方 DB FAQ](https://bit.ly/logseqdbfaq)。

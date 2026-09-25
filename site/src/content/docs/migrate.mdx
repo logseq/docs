@@ -1,0 +1,58 @@
+---
+title: Migrate a file graph to DB
+description: Convert an OG markdown graph into a DB graph with the built-in importer.
+sidebar:
+  order: 3
+---
+
+The importer reads your markdown files and builds a fresh DB graph from them. Your original folder of files is left untouched — the import creates a *new* graph, so there's zero risk to try it.
+
+## What the importer does
+
+- **Markdown files** → pages and blocks, preserving the outline structure.
+- **Tasks** → real `#Task` nodes. Old keywords remap to statuses: `LATER`→`Todo`, `IN-PROGRESS`/`NOW`→`Doing`, `WAIT`/`WAITING`→`Backlog`.
+- **Tags** → real [tags](/concepts/tags), optionally importing all of them or a chosen subset. Tag properties are added to the tags automatically.
+- **Properties** → typed [properties](/concepts/properties). Types are detected automatically (Number, Date, Checkbox, Url, Node, Text); ambiguous values fall back to Text.
+- **Assets** → copied in and renamed to unique IDs. Zotero PDFs import too, on desktop.
+
+## Run the import
+
+<Steps>
+<Step>
+  Open your file graph in Logseq, click the **three-dots menu** in the upper right, and choose **Import**.
+</Step>
+<Step>
+  Click **File to DB graph**. Large graphs take a moment to build the dialog.
+</Step>
+<Step>
+  Name the new graph and pick your options (below), then let it run.
+</Step>
+</Steps>
+
+## Options worth thinking about
+
+- **Import all tags** — the simple choice. Every `#tag` becomes a real DB tag, so you keep your habits and gain tag properties.
+- **Import specific tags** — convert only the tags you list. Everything else becomes a page and inline `#tag` mentions become `[[page references]]`. Pick this if your tags were mostly loose keywords.
+- **Import additional tags from property values** — turn values of a property into tags (e.g. `type: book` → `#book`).
+- **Import tag parents from property values** — turn values of a property into [parent tags](/concepts/tags) (e.g. `parent: media` makes `#media` a parent).
+- **Remove inline tags** — strips the `#tag` text from block bodies, since DB renders tags as a real node attribute instead of inline text.
+- **Extract inline code snippets as child blocks** — a block can only hold one `#Code` snippet, so this pulls extra snippets out into children.
+
+<Aside type="tip">
+  Not sure? Import all tags first. You can always convert a tag back to a page later (three-dots menu → **Convert Tag to Page**).
+</Aside>
+
+## Known limits
+
+These are the only things the importer can't fully carry over:
+
+- A block with **multiple** simple queries, advanced queries, embeds, or quotes keeps only the first — DB allows one per block.
+- A block mixing those features (query + embed, etc.) keeps only one.
+
+Everything else either imports cleanly or the importer tells you what it couldn't do.
+
+## After the import
+
+1. Spot-check a few pages, a few tasks, and a couple of tag pages.
+2. Look at the `#Task` page — your old tasks live there as a table now.
+3. If something looks off, delete the new graph and re-run with different options. The source files are never modified.

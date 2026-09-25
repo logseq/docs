@@ -1,0 +1,23 @@
+---
+title: Journals
+description: One page per day — the default place to write in Logseq.
+sidebar:
+  order: 2
+---
+
+A journal page carries the built-in tag `#Journal` and a date. The Journals view is what Logseq opens to: today's page at the bottom, an endless scroll of days behind it.
+
+Most Logseq users write everything in today's journal first — meeting notes, tasks, stray thoughts — and let `[[links]]` and `#tags` pull it into structure automatically. The journal isn't a diary; it's your inbox.
+
+## Create journal pages
+
+- `[[Today]]`, `[[This Friday]]`, `[[Last Friday]]`, `[[Next Friday]]` — natural language inside brackets resolves to dates.
+- `/Date picker` — insert a specific date. Keyboard friendly: arrows move days, `Tab` focuses the input, and the input also accepts natural language like `next week`.
+- Date-type [properties](/concepts/properties) (like `Deadline`) create journal entries for their values.
+- On any journal page, `g n` and `g p` jump to the next and previous day.
+
+## Journals are just tagged nodes
+
+Because `#Journal` is a tag, you can customize it like any other: open the `#Journal` page and add tag properties — say a `mood` or `weather` field — and every journal page shows them.
+
+The same goes for templates: a [template](/features/templates) with `Apply template to tags` set to `#Journal` lands at the top of every new journal page. That's how you get a daily checklist or standup skeleton without doing anything.

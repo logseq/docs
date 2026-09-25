@@ -1,0 +1,47 @@
+---
+title: 任务
+description: 打了 #Task 的块，带 Status、Priority、Deadline、Scheduled——全部可定制。
+sidebar:
+  order: 1
+---
+
+任务就是打了 `#Task` 的块。开箱自带四个属性——`Status`、`Priority`、`Deadline`、`Scheduled`——因为它们只是普通[属性](/zh/concepts/properties)，任务的几乎一切都能改。
+
+## 创建任务
+
+- 输入 `/todo`（或任意状态选项：`/doing`、`/done`、`/backlog`…）
+- `Cmd-Enter` 循环切换状态——自动打标签。
+- 块结尾写 `#Task`。
+- 直接在 `#Task` 页的任务表格里加行。
+
+## 键盘改属性
+
+- `p s`——Status
+- `p p`——Priority
+- `p d`——Deadline
+- `/Deadline`、`/Scheduled`——行内选日期
+
+## 状态
+
+内置选项：`Backlog`、`Todo`、`Doing`、`In Review`、`Done`、`Canceled`。
+
+老的 `NOW/LATER` 工作流合并进了 `TODO/DOING`。Status 对每个块保留历史——点任务右侧的耗时标签（`9s`）能看到每次变更时间；advanced 查询里也能查。
+
+在 `Status` 属性页上定制选项：改名、换图标、加新的。（内置选项不能删。）
+
+## 重复任务
+
+任何有 `Deadline` 或 `Scheduled` 的任务：
+
+1. 打开日期弹窗，勾选 `Repeat task`。
+2. 选间隔——日期是 `Day` 到 `Year`，datetime 是 `Minute` 到 `Year`。
+
+`Status` 翻到 `Done` 时自动重置回 `Todo`，日期按间隔往后跳。周五的报告交完 → 下一个 Deadline 自动出现。
+
+同样的行为可以建在自己的属性上：`Date`/`DateTime` 属性 + 配置了 `Checkbox state mapping` 的选项属性 = 自定义重复节点——习惯打卡、复习周期、什么都行。
+
+## 继续定制任务
+
+- 给 `#Task` 本身加属性（在它的标签页上）——每个任务都有。
+- 造自己的任务类型：建个标签，`Extends` 设成 `#Task`，加自己的属性。`#ProjectTask` 带个 `project` 字段 = 真任务 + 你的字段。
+- 按标签定制状态选项：[tag-scoped property choices](/zh/concepts/properties) 让 `#MyTask` 有自己的状态列表，不动内置的。

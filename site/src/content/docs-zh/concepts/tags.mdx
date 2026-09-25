@@ -1,0 +1,60 @@
+---
+title: 标签
+description: 跨页面给节点分组，并让所有成员共享一套属性。
+sidebar:
+  order: 4
+---
+
+标签把全图里的节点归成一组——Logseq 里最松散、最灵活的结构。别的应用管它叫类型、class 或 supertag。
+
+DB 版标签的特殊之处是**标签属性（tag properties）**：声明在标签上的属性，每个被打标的节点自动继承。给 `#Book` 配上 `author`、`rating`、`status`——每个 `#Book` 节点立刻拥有这些字段，并且全部出现在标签页上一张可排序、可筛选的[表格](/zh/features/views)里。
+
+## 创建标签
+
+- 搜索 `#名称`——弹窗让你创建它并配置标签属性。
+- 在块里输入 `#名称` 回车——标签浮到块右侧。
+- 用 `Cmd-Enter` 代替 `Enter` 则是**行内**标签（嵌在文字里，而不是附在节点上）。
+- 配置 Node 型[属性](/zh/concepts/properties)时它问你要的标签会顺手创建。
+- 把标签的 `Extends` 设成一个新名字——那个名字就变成了标签。
+- 转换任意页面：三点菜单 → `Convert to Tag`（反向是 `Convert Tag to Page`）。
+
+## 给节点打标
+
+- 块或页面标题结尾敲 `#` 选标签。
+- 搜索里输入 `页面名 #标签`——一步建好已打标的页面。
+- 块里写 `[[name]]#Tag`，链接 + 打标一次完成。
+
+一个节点可以挂多个标签；它会显示所有标签的属性（标记了 `Hide by default` 的除外）。
+
+## 父标签（Extends）
+
+标签通过 `Extends` 属性形成层级。`#Audiobook` 同时继承 `#Book` 和 `#MediaObject`，就拿到*全部*属性，并在两棵树里都出现。父标签对 [Node 型属性](/zh/concepts/properties)同样生效——限定 `#Person` 的属性也接受打了 `#Actor` 的节点，只要 `#Actor` 继承 `#Person`。
+
+## 配置标签
+
+在标签页上悬停标题，点三角图标编辑：
+
+- **Extends**——要继承的父标签（默认 Root Tag）。
+- **Tag properties**——每个被打标节点拿到的字段，可拖拽排序。
+- **Description**——这个标签是干嘛的。
+- **Enable bidirectional properties**——让这个标签上的 Node 型属性自动生成反向链接。`#Book` 的 `author` 属性会在每位作者页上自动出现"Books"列表，可用 `Bidirectional property title` 改名。
+
+<Aside type="tip">
+  按标签定制属性选项是个隐藏大招：在标签页上打开某个属性的 `Available choices`，可以添加只对这个标签生效的选项——或者藏掉内置选项。`#MyTask` 可以有自己的 Status 选项，不用动 `#Task` 的。
+</Aside>
+
+## 实战里的标签
+
+标签就是一张自己会写字的数据库表——下面这些用法都来自社区真实玩法：
+
+- **联系人**——社区里最经典的例子。`#Contact` 配 `phone`、`email`、`company`、`last-contacted`。认识个人？在 journal 里写 `张三 #Contact`——一条人物档案 + 一次带日期的提及，一行搞定。`#Contact` 页面就是你的通讯录；再写个"90 天没 `last-contacted`"的查询防止关系变冷。
+- **读书**——`#Book` 配 `author`（Node 型，限定 `#Person`）、`status`（想读/在读/读完）、`rating`。笔记写在当天 journal 里被打标的块*下面*——书的页面会通过 Linked References 收齐每次读书笔记。打开 bidirectional properties，作者页面白送你一个"Books"列表。
+- **项目**——`#Project` 配 `status`、`deadline`、`owner`。在 journal 里给项目计划的首行块打标；`#Project` 表格就是项目组合看板——按 deadline 排序，按 status 分组。
+- **会议**——`#Meeting` 配 `attendees`（Node → `#Contact`��和 `project`（Node → `#Project`）。一个标签把人和项目织到一起。
+- **值得回访的想法**——`#idea`、`#quote`、`#recipe` 这种低摩擦标签*不需要*属性。先打上，攒多了需要排序再加字段。
+- **继承做分类法**——`#Audiobook` 继承 `#Book` + `#MediaObject`：书有的（author、rating）全有，再加 runtime、narrator。查 `#Book` 自动命中 audiobook——`(tags book)` 连子标签一起匹配。
+
+社区趟出来的两个反模式：
+
+- **别给"话题"打标**——给块打 `#效率`、`#python` 这种话题标签只会让标签页变吵；话题用 `[[链接]]`，标签留给"*是什么东西*"。
+- **别提前搭分类法**——先用纯文本和链接写；哪天想要一套共享字段或一张表，再上标签，别提前。

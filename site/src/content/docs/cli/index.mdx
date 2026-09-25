@@ -1,0 +1,93 @@
+---
+title: CLI
+description: The logseq command-line tool — create graphs, edit nodes, run queries, and automate sync.
+sidebar:
+  order: 7
+  group:
+    label: CLI & automation
+---
+
+The `logseq` CLI drives DB graphs from a terminal — create and edit nodes, run Datascript queries, export, back up, and sync — with the same rules as the app. It works headlessly, which makes it the right tool for CI, cron jobs, and scripting.
+
+<Aside type="note">
+  Everything on this page was verified against a source build of the current repo: build → `graph create` → `upsert` → `query` → `export` → sync upload/download, end to end.
+</Aside>
+
+## Install
+
+- **Prebuilt**: download the package for your platform from [logseq/logseq releases](https://github.com/logseq/logseq/releases/tag/nightly).
+- **From source** (needs the repo toolchain — Node 24, pnpm, Clojure, opam/OCaml):
+
+```bash
+git clone https://github.com/logseq/logseq.git && cd logseq
+pnpm install
+pnpm cli:release                      # bundles cli/ → static/logseq-cli.js
+pnpm db-worker-node:release:bundle    # the graph runtime → dist/db-worker-node.js
+node static/logseq-cli.js --help
+```
+
+`logseq doctor` checks the setup: finds the worker script, verifies the root dir is writable, reports running servers.
+
+## Orientation
+
+- **Root dir** — where graphs live, `~/logseq` by default (`--root-dir` to change).
+- **`-g, --graph`** — almost every command needs it: `logseq ... -g my-graph`.
+- **`-o human|json|edn`** — output format; `json`/`edn` for scripting.
+
+```bash
+logseq --help            # top-level commands
+logseq <command> --help  # per-command flags + examples
+logseq example           # runnable examples
+```
+
+## Everyday commands
+
+```bash
+# graphs
+logseq graph create -g notes
+logseq graph list
+logseq graph info -g notes
+logseq graph validate -g notes
+
+# write
+logseq upsert page -g notes --page "Reading list"
+logseq upsert block -g notes --target-page "Reading list" \
+  --blocks $'- TODO Read [[Meditations]]\n- Notes on [[Deep Work]]'
+
+# read
+logseq show -g notes --page "Reading list"     # tree with block ids
+logseq list page -g notes
+logseq list task -g notes
+logseq search block -g notes --content "Meditations"
+
+# query (Datascript)
+logseq query -g notes --query \
+  '[:find [?t ...] :where [?b :block/title ?t] [?b :block/page ?p] [?p :block/title "Reading list"]]'
+
+# export / backup
+logseq graph export -g notes --type sqlite --file notes.sqlite
+logseq graph export -g notes --type edn --file notes.edn --pretty-print
+logseq graph import -g restored --type sqlite --input notes.sqlite
+logseq graph backup create -g notes
+```
+
+## Sync from the terminal
+
+The CLI speaks to Logseq Sync — the hosted one or [your own server](/sync/self-hosting):
+
+```bash
+logseq login --username you@example.com --password '•••'
+logseq sync config set http-base https://sync.example.com   # skip for hosted
+logseq sync upload -g notes --e2ee-password 'graph-secret'
+logseq sync remote-graphs -g notes
+logseq sync download -g notes --e2ee-password 'graph-secret'   # other machine
+```
+
+## Automation
+
+- JSON/EDN output on every command → pipe into `jq`, scripts, whatever.
+- `logseq server` manages long-running `db-worker-node` servers the CLI can talk to — useful when hammering the same graph.
+- CI example: [jcblemai/logseq-graph-ci](https://github.com/jcblemai/logseq-graph-ci) uses the CLI in GitHub Actions to validate a graph on every push.
+- `logseq completion` generates shell completions; `logseq skill` manages a built-in agent skill.
+
+Related: [MCP server](/cli/mcp) (same graph, for AI tools), [Scripting](/cli/scripting) (nbb-logseq scripts), [HTTP API](/cli/http-api) (REST in the app).

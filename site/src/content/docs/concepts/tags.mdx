@@ -1,0 +1,60 @@
+---
+title: Tags
+description: Group nodes across pages, and give every member shared properties.
+sidebar:
+  order: 4
+---
+
+A tag groups nodes across your whole graph — the loosest, most flexible structure Logseq has. Other apps call this a type, class, or supertag.
+
+What makes DB-version tags special is **tag properties**: properties declared on a tag that every tagged node inherits. Tag `#Book` with `author`, `rating`, `status` — every `#Book` node gets those fields instantly, and every `#Book` node also appears in a sortable, filterable [table](/features/views) on the tag's page.
+
+## Create a tag
+
+- Search for `#NAME` — a dialog lets you create it and add tag properties.
+- Type `#NAME` in a block and press `Enter` — the tag floats to the right of the block.
+- `Cmd-Enter` instead of `Enter` makes an **inline** tag (tag inside the text rather than attached to the node).
+- Configure a Node-type [property](/concepts/properties) — the tag it asks for is created.
+- Set a tag's `Extends` to a new name — that name becomes a tag.
+- Convert any page: three-dots menu → `Convert to Tag` (and back with `Convert Tag to Page`).
+
+## Tag a node
+
+- End a block or page title with `#` and pick the tag.
+- In Search, type `PAGE #TAG` — creates the page tagged in one step.
+- `[[name]]#Tag` inside a block links and tags at once.
+
+A node can carry multiple tags; it shows every tag's properties (minus ones set to `Hide by default`).
+
+## Parent tags (Extends)
+
+Tags form a hierarchy via the `Extends` property. `#Audiobook` extending both `#Book` and `#MediaObject` inherits *all* their properties, and shows up under each in the tree. Parent tags matter for [Node-type properties](/concepts/properties) too — a property restricted to `#Person` also accepts nodes tagged `#Actor` if `#Actor` extends `#Person`.
+
+## Configure a tag
+
+On a tag's page, hover its title and click the triangle to edit:
+
+- **Extends** — parent tags to inherit from (defaults to Root Tag).
+- **Tag properties** — the fields every tagged node gets. Drag to reorder.
+- **Description** — what this tag is for.
+- **Enable bidirectional properties** — for Node-type properties on this tag, the reverse link shows up automatically. A `#Book`'s `author` property puts a "Books" list on each author page. Rename it with `Bidirectional property title`.
+
+<Aside type="tip">
+  Tag-scoped property choices are a hidden gem: on a tag's page, open a property's `Available choices` and you can add choices that only apply to that tag — or hide built-in ones. `#MyTask` can have its own Status options without touching `#Task`'s.
+</Aside>
+
+## Tags in practice
+
+A tag is a tiny database table that writes itself — the patterns below come straight from how people actually use them:
+
+- **Contacts** — the community's canonical example. `#Contact` with properties `phone`, `email`, `company`, `last-contacted`. Meeting someone? Type `Sarah Chen #Contact` in your journal — a person record plus a dated mention, in one line. The `#Contact` page is your address book; queries for "no `last-contacted` in 90 days" keep it warm.
+- **Reading** — `#Book` with `author` (Node type restricted to `#Person`), `status` (to-read/reading/finished), `rating`. Take notes *under* the tagged block on any journal day — the book's page collects every session via Linked References. Enable bidirectional properties and each author page shows a "Books" list for free.
+- **Projects** — `#Project` with `status`, `deadline`, `owner`. Tag the top block of a project plan in your journal; the `#Project` table becomes a portfolio dashboard — sort by deadline, group by status.
+- **Meetings** — `#Meeting` extending `#Journal`? No — meetings are usually `#Meeting` with `attendees` (Node → `#Contact`) and `project` (Node → `#Project`). One tag joins people to projects; each meeting block becomes a row in both tables' worlds.
+- **Ideas worth revisiting** — low-friction tags like `#idea`, `#quote`, `#recipe` need *no* properties. Tag first, add properties later only if the pile grows big enough to need sorting.
+- **Inheritance for taxonomies** — `#Audiobook` extends `#Book` + `#MediaObject`: everything books know (author, rating) plus runtime, narrator. Queries for `#Book` catch audiobooks automatically — `(tags book)` matches child tags.
+
+Two anti-patterns the forum learned the hard way:
+
+- **Don't tag topics** — tagging blocks `#productivity` or `#python` makes tag pages noisy; use `[[links]]` for topics, tags for *types of things*.
+- **Don't pre-build a taxonomy** — start with plain text and links; introduce a tag the day you want a shared set of fields or a table, not before.

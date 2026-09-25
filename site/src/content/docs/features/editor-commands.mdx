@@ -1,0 +1,82 @@
+---
+title: Editor commands
+description: Everything under the / menu — text formatting, tasks, embeds, queries, and block-level tools.
+sidebar:
+  order: 10
+---
+
+Type `/` in any block to open the command menu — start typing to filter, `Enter` to run. This page is the whole catalog, grouped the way the menu groups it.
+
+## Basic
+
+| Command | Does |
+| --- | --- |
+| `Node reference` | Backlink to any node — page or block |
+| `Node embed` | Live-embed a node (children included) |
+
+## Format
+
+| Command | Does |
+| --- | --- |
+| `Link` | Insert an HTTP link |
+| `Image link` | Insert an image URL |
+| `Underline` | Underline text |
+| `Code block` | Code block with syntax highlighting (`#Code`) — or type ` ``` ` |
+| `Quote` | Quote block (`#Quote`) — or start the block with `>` |
+| `Math block` | LaTeX block (`#Math`) |
+| `Cloze` | Flashcard cloze text |
+
+Inline formatting also has markdown shortcuts: `**bold**`, `*italic*`, `~~strike~~`, `` `code` ``.
+
+## Task status & dates
+
+The `TASK STATUS` group lists every choice on your `Status` property — `/todo`, `/doing`, `/done`, `/backlog`, `/in review`, `/canceled`, plus any custom choices you add.
+
+The `TASK DATE` group: `Deadline` and `Scheduled` — both open the date picker, where `Repeat task` sets up [repeating nodes](/features/tasks).
+
+## Priority
+
+`Priority A` / `B` / `C` / `No priority` — your `Priority` property's choices, so custom choices appear here too.
+
+## Headings
+
+`Heading 1` – `Heading 6`, `Clear heading`, `Normal text`. Headings are a block property, not markdown `#` prefixes.
+
+## Time & date
+
+| Command | Does |
+| --- | --- |
+| `Today` / `Tomorrow` / `Yesterday` | Inserts a `[[journal link]]` for that day |
+| `Current time` | Inserts the time |
+| `Date picker` | Pick any date — arrow keys move days, `Tab` focuses the input, and the input accepts natural language (`next week`, `this friday`) |
+
+## List type
+
+- `Number list` — turn the block into an ordered list item.
+- `Number children` — number all of this block's children.
+
+## Advanced
+
+| Command | Does |
+| --- | --- |
+| `Query` | A simple-query node via the [Query Builder](/features/queries) — also runs an inline simple query typed before it |
+| `Advanced Query` | A Datascript query block |
+| `Query function` | A custom JS/Clojure function transforming query results |
+
+## Everything else
+
+| Command | Does |
+| --- | --- |
+| `Template` | Insert a [template](/features/templates) |
+| `Upload asset` | Upload a file — image, PDF, DOCX… becomes an [`#Asset`](/features/assets) |
+| `Calculator` | Inline calculator |
+| `Embed HTML` | Raw HTML in the block |
+| `Embed Video URL` | Video player for a URL |
+| `Embed YouTube timestamp` | YouTube link at a timestamp |
+| `Embed Twitter tweet` | Tweet embed |
+
+Plugins can add their own commands — they appear under `PLUGINS`.
+
+## Block menu (right-click the bullet)
+
+Not slash commands, but just as useful: copy block ref, add reaction, move to, convert to page, cut/copy/delete, and more. On a page title, the same menu adds page-level actions — recycle, convert to tag, set icon.

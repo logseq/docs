@@ -1,0 +1,45 @@
+---
+title: Search & shortcuts
+description: Cmd-K search, the command palette, and the keyboard map that ties it together.
+sidebar:
+  order: 8
+---
+
+Two modals cover almost every interaction:
+
+- **`Cmd-K`** — find and go to nodes. Also creates pages (`name`) and tagged pages (`name #Tag`) inline.
+- **`Cmd-Shift-P`** (`Ctrl-Shift-P` on Windows) — run any command by name.
+
+Every keyboard shortcut has a matching command in the palette. If you forget the keys, type what you want to do.
+
+## Handy search commands
+
+- `Quick add` — jot a note without leaving context; `Cmd-E` sends it to today's journal.
+- `Customize appearance` — theme and appearance tweaks.
+- `Move blocks to` — move selected nodes to another page.
+- `Validate current graph` / `Garbage collect graph` — dev maintenance commands.
+- The [property shortcuts](/concepts/properties) (`p s`, `p t`, `p i`…) all have command equivalents.
+- The Build EDN [export/import commands](/features/backup-export) live here too.
+
+## Find a command for a keystroke
+
+`Settings > Keymap` lists every binding. Click the keystroke filter and press the keys — it shows the matching command. Useful both directions: "what does `p s` do?" and "does this have a shortcut?"
+
+## The everyday set
+
+| Keys | Does |
+| --- | --- |
+| `Cmd-K` | Search / go to node |
+| `Cmd-Shift-P` | Command palette |
+| `Cmd-Enter` | Cycle task status |
+| `Cmd-p` | Add property |
+| `Cmd-j` | Edit properties by keyboard |
+| `p s` / `p p` / `p d` | Task status / priority / deadline |
+| `p t` | Add/remove tags |
+| `p a` | Toggle showing all node properties |
+| `p i` / `p r` | Icon / emoji for the node |
+| `g n` / `g p` | Next / previous journal day |
+| `Cmd-Z` / `Cmd-Shift-Z` | Undo / redo |
+| `Esc` | Close modals, bulk bar |
+
+On Linux/Windows swap `Cmd`→`Ctrl` for the `Cmd-` shortcuts (and `Cmd-p`→`Ctrl-Alt-p`, `Cmd-K`→`Ctrl-K`).

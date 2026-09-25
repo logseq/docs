@@ -1,0 +1,23 @@
+---
+title: Journals
+description: 一天一页——Logseq 默认的写作入口。
+sidebar:
+  order: 2
+---
+
+journal 页自带内置标签 `#Journal` 和一个日期。Journals 视图就是 Logseq 的启动页：今天的页面垫底，往前是无尽滚动的往日。
+
+多数 Logseq 用户什么都先往今天的 journal 里写——会议纪要、任务、闪念——然后靠 `[[链接]]` 和 `#标签` 自动归位。journal 不是日记本，是你的收件箱。
+
+## 创建 journal 页
+
+- `[[Today]]`、`[[This Friday]]`、`[[Last Friday]]`、`[[Next Friday]]`——括号里的自然语言会解析成日期。
+- `/Date picker`——插入指定日期。键盘友好：方向键移天，`Tab` 聚焦输入框，输入框也认 `next week` 这种自然语言。
+- Date 型[属性](/zh/concepts/properties)（比如 `Deadline`）会为它的值生成 journal 条目。
+- 在任何 journal 页上，`g n` 和 `g p` 跳到后一天/前一天。
+
+## Journal 只是打了标的节点
+
+既然 `#Journal` 是个标签，就能像别的标签一样定制：打开 `#Journal` 页加标签属性——比如 `mood`、`weather`——每个 journal 页都会显示它们。
+
+模板同理：一个[模板](/zh/features/templates)把 `Apply template to tags` 设成 `#Journal`，它就会躺在每个新 journal 页顶部。每日清单、晨会骨架，就这么不用动手地长出来。

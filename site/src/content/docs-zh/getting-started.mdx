@@ -1,0 +1,49 @@
+---
+title: 快速上手
+description: 获取 Logseq、创建第一个图谱、写下第一段笔记。
+sidebar:
+  order: 1
+---
+
+Logseq 可以在浏览器里跑，也可以装桌面应用。两者都完全离线可用——桌面版只是把图谱放在磁盘上真实的文件夹里，备份和写脚本更方便。
+
+## 获取 Logseq
+
+- **网页版**：用 Chromium 内核浏览器打开 [logseq.com](https://logseq.com)。不用安装，图谱存在浏览器本地存储里。
+- **桌面版**：从 [github.com/logseq/logseq/releases](https://github.com/logseq/logseq/releases) 下载。图谱落在磁盘上，你自己的备份工具可以直接覆盖。
+- **移动端**：新的 iOS 应用正在邀请测试；Android 应用在路上。
+
+<Aside type="tip">
+  你正在读的文档面向 DB 版本。如果你还在用旧的文件版，想搬过来，直接跳到 [迁移](/zh/migrate)。
+</Aside>
+
+## 创建图谱
+
+一个图谱（graph）就是一本笔记：装着所有页面、块、标签和属性的一个数据库。
+
+1. 点击左侧边栏里的图谱名。
+2. 选择 **Create db graph**，起个名字。
+3. 桌面版上选一个文件夹——图谱就是里面的一个 `db.sqlite` 文件。
+
+就这样。没有注册、没有「项目设置」向导，开始写之前不需要配置任何东西。
+
+## 第一篇 journal
+
+Logseq 打开就是 **Journals**——每天一页，最新的在最底下。大多数人先把所有东西写进今天的 journal，再慢慢整理。
+
+试试：
+
+1. 在今天的 journal 页输入一句话，按 `Enter` 换一个新块（block）。
+2. 按 `Tab` 缩进——这就是一个嵌套块了，`Shift-Tab` 退回一层。
+3. 随便哪里输入 `[[Project X]]` 就建了一个链接——链接本身就会创建页面，不需要「新建页面」的仪式。
+4. 在一个块末尾加 `#Task` 按 `Enter`，它就变成带状态复选框的任务。`Cmd-Enter`（macOS）/ `Ctrl-Enter` 在 Todo → Doing → Done 之间循环。
+
+## 最值得知道的一件事
+
+Logseq 里的一切都是**节点（node）**——页面和块几乎是同一种东西：都能用 `[[]]` 链接、用 `#` 加标签、挂属性、被嵌入、被收藏。想通这一点，剩下的功能都只是同一份数据的不同视图。
+
+- [节点](/zh/concepts/nodes)——一切其他概念的地基
+- [标签](/zh/concepts/tags)——给节点分组并赋予共同属性
+- [属性](/zh/concepts/properties)——任意块或页面上的类型化字段
+- [Journal](/zh/concepts/journals)——日常主力页面
+- [任务](/zh/features/tasks)——状态、截止日期、重复任务

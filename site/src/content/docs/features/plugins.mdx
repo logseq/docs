@@ -1,0 +1,20 @@
+---
+title: Plugins
+description: Community extensions — which work on DB graphs, and how to build them.
+sidebar:
+  order: 9
+---
+
+Logseq's plugin ecosystem works on DB graphs — the [marketplace](https://logseq.github.io/marketplace/) has 65+ DB-compatible plugins and counting. In the app's Marketplace, DB-compatible plugins carry a DB badge in the corner; sort by `Supports DB graphs` to see them first.
+
+## Install
+
+Open **Marketplace** from the app menu, browse, click install. Themes install the same way.
+
+## Writing plugins
+
+- The [JS Plugin SDK](https://logseq.github.io/plugins/) supports DB graphs, including DB-specific APIs.
+- ClojureScript option: the [CLJS SDK](https://github.com/logseq/cljs-plugin-example).
+- DB-compatible examples to crib from: [logseq-zoterolocal-plugin](https://github.com/benjypng/logseq-zoterolocal-plugin), [logseq-checklist](https://github.com/kerim/logseq-checklist).
+
+For heavier automation that doesn't need a UI, the [CLI](/cli) and [MCP server](/cli/mcp) are usually a better fit than a plugin.

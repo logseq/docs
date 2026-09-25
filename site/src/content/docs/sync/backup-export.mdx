@@ -1,0 +1,45 @@
+---
+title: Backup & export
+description: Automatic backups, SQLite/EDN/markdown exports, and moving graphs around.
+sidebar:
+  order: 2
+---
+
+Your graph is a file (`db.sqlite`), so backing it up is trivial — but Logseq also has built-in hourly backups and several export formats for different jobs.
+
+## Automatic backups
+
+- **Desktop**: always on. The last 12 hourly backups live in a `backups/` folder inside the graph directory.
+- **Web**: pick a backup folder once (three-dots menu → `Export Graph` → set the folder). Hourly backups, last 12 kept, per-graph subfolders.
+
+## Export a graph
+
+Three-dots menu → `Export graph`:
+
+| Format | Use it for |
+| --- | --- |
+| **SQLite DB** | The complete graph in one file — the normal backup/migration choice. |
+| **SQLite + assets (.zip)** | Same, with the `assets/` folder included. |
+| **EDN file** | The only format capturing *all* data editable as text — schema, properties, tags, blocks. Great for diffs, version control, and hand-edits. |
+| **Standard Markdown** | Plain `.md` files readable anywhere. No properties/timestamps — a one-way door, for leaving Logseq. |
+| **Public pages** | Static-site export for classic publish-to-web. |
+| **Debug transit** | Scrubbed of personal data — for sharing with the Logseq team when debugging. |
+
+## Import
+
+Three-dots menu → `Import`: SQLite, SQLite+assets zip, EDN, debug transit — or `File to DB graph` for markdown (see [Migrate](/migrate)).
+
+## Build EDN — share pieces of a graph
+
+Build EDN is Logseq's text format for graph data. Beyond whole-graph export, it works on slices:
+
+- `Export block EDN data` / `Export page EDN data` — clipboard; importing a block overwrites it, importing a page appends.
+- `Export graph's tags and properties EDN data` — share your *schema* (tags + property configs) without any content. Someone else can replicate your whole workflow setup.
+- `Import EDN data` — paste any of the above back in. `Cmd-Z` undoes a bad import.
+- Any [view's](/features/views) three-dots menu exports the visible nodes as EDN — filter first, export second.
+
+Developers: Build EDN is EDN with `logseq.db.sqlite.build`/`logseq.db.sqlite.export` keywords — see the [scripting page](/cli/scripting) for programmatic uses. It's unrelated to the CLI's `-o edn` output flag.
+
+<Aside type="tip">
+  Belt and suspenders: keep the app's hourly backups on, *and* let your normal file backup (Time Machine, restic, whatever) cover the graph directory. `db.sqlite` is just a file — treat it like one.
+</Aside>

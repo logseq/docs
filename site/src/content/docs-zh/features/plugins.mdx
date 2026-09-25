@@ -1,0 +1,20 @@
+---
+title: 插件
+description: 社区扩展——哪些能在 DB 图谱上用，怎么自己写。
+sidebar:
+  order: 9
+---
+
+Logseq 插件生态在 DB 图谱上照常工作——[市场](https://logseq.github.io/marketplace/)里有 65+ 个 DB 兼容插件还在涨。应用内 Marketplace 里 DB 兼容插件带角标；按 `Supports DB graphs` 排序优先显示。
+
+## 安装
+
+应用菜单打开 **Marketplace**，浏览，点安装。主题同样装法。
+
+## 写插件
+
+- [JS Plugin SDK](https://logseq.github.io/plugins/) 支持 DB 图谱，含 DB 专属 API。
+- ClojureScript 方案：[CLJS SDK](https://github.com/logseq/cljs-plugin-example)。
+- 可直接抄的 DB 兼容例子：[logseq-zoterolocal-plugin](https://github.com/benjypng/logseq-zoterolocal-plugin)、[logseq-checklist](https://github.com/kerim/logseq-checklist)。
+
+不需要 UI 的重型自动化，[CLI](/zh/cli) 和 [MCP server](/zh/cli/mcp) 通常比插件更合适。

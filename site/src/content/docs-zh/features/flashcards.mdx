@@ -1,0 +1,23 @@
+---
+title: 闪卡
+description: 基于 #Card 的间隔重复——创建、复习、追踪。
+sidebar:
+  order: 5
+---
+
+卡片是打了 `#Card` 的块，由 [FSRS 算法](https://github.com/open-spaced-repetition/free-spaced-repetition-scheduler)调度——和 Anki 同一族。没有牌组要管理，任何块都能变成卡。
+
+## 做卡
+
+- 给块打 `#Card`。
+- 选中若干块 → 右键 → `Make a flashcard`。
+
+写法随意——常见模式是块上写问题，答案缩进在下面。
+
+## 复习
+
+左侧栏打开 **Flashcards**。到期卡片一张张出现；翻开答案，按 4 级自评。FSRS 据此重排。
+
+## 管理卡片
+
+`#Card` 页的表格列出所有卡片——`Due` 告诉你每张下次到期时间。筛逾期的、按到期排序、批量改标签，和别的[视图](/zh/features/views)一样玩。

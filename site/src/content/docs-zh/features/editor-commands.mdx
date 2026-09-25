@@ -1,0 +1,82 @@
+---
+title: 编辑器命令
+description: / 菜单下的全部命令——格式、任务、嵌入、查询和块级工具。
+sidebar:
+  order: 10
+---
+
+在任意块里输入 `/` 打开命令菜单——继续输入过滤，`Enter` 执行。这一页是完整目录，按菜单里的分组排列。
+
+## 基础（BASIC）
+
+| 命令 | 作用 |
+| --- | --- |
+| `Node reference` | 反向链接到任意节点——页面或块 |
+| `Node embed` | 把节点实时嵌入进来（含子块） |
+
+## 格式（FORMAT）
+
+| 命令 | 作用 |
+| --- | --- |
+| `Link` | 插入 HTTP 链接 |
+| `Image link` | 插入图片 URL |
+| `Underline` | 下划线 |
+| `Code block` | 语法高亮代码块（`#Code`）——也可直接输 ` ``` ` |
+| `Quote` | 引用块（`#Quote`）——或块开头输 `>` |
+| `Math block` | LaTeX 块（`#Math`） |
+| `Cloze` | 闪卡挖空文本 |
+
+行内格式也有 markdown 快捷写法：`**粗体**`、`*斜体*`、`~~删除线~~`、`` `code` ``。
+
+## 任务状态与日期
+
+`TASK STATUS` 组列出 `Status` 属性的全部选项——`/todo`、`/doing`、`/done`、`/backlog`、`/in review`、`/canceled`，加上你自己加的选项。
+
+`TASK DATE` 组：`Deadline` 和 `Scheduled`——都打开日期选择器，`Repeat task` 可以设置[重复节点](/zh/features/tasks)。
+
+## 优先级（PRIORITY）
+
+`Priority A` / `B` / `C` / `No priority`——就是 `Priority` 属性的选项，自定义选项同样会出现在这。
+
+## 标题（HEADING）
+
+`Heading 1` – `Heading 6`、`Clear heading`、`Normal text`。标题是块的属性，不是 markdown 的 `#` 前缀。
+
+## 时间与日期（TIME & DATE）
+
+| 命令 | 作用 |
+| --- | --- |
+| `Today` / `Tomorrow` / `Yesterday` | 插入对应日期的 `[[journal 链接]]` |
+| `Current time` | 插入当前时间 |
+| `Date picker` | 选任意日期——方向键移天，`Tab` 聚焦输入框，输入框认自然语言（`next week`、`this friday`） |
+
+## 列表类型（LIST TYPE）
+
+- `Number list`——把块变成有序列表项。
+- `Number children`——给该块的全部子块编号。
+
+## 高级（ADVANCED）
+
+| 命令 | 作用 |
+| --- | --- |
+| `Query` | 通过 [Query Builder](/zh/features/queries) 建 simple 查询节点——也能直接运行块里先写好的 simple query |
+| `Advanced Query` | Datascript 查询块 |
+| `Query function` | 处理查询结果的自定义 JS/Clojure 函数 |
+
+## 其他
+
+| 命令 | 作用 |
+| --- | --- |
+| `Template` | 插入[模板](/zh/features/templates) |
+| `Upload asset` | 上传文件——图片、PDF、DOCX…变成 [`#Asset`](/zh/features/assets) |
+| `Calculator` | 行内计算器 |
+| `Embed HTML` | 块内原始 HTML |
+| `Embed Video URL` | URL 视频播放器 |
+| `Embed YouTube timestamp` | 带时间戳的 YouTube 链接 |
+| `Embed Twitter tweet` | 推文嵌入 |
+
+插件可以注册自己的命令——出现在 `PLUGINS` 组。
+
+## 块菜单（右键 bullet）
+
+不算斜杠命令，但同样好用：copy block ref、添加表情回应、move to、转页面、剪切/复制/删除等。页面标题上的同一菜单还有页面级操作——回收、转标签、设图标。

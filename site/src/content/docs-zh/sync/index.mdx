@@ -1,0 +1,35 @@
+---
+title: 同步
+description: Logseq Sync——端到端加密的实时多设备同步（可自托管）。
+sidebar:
+  order: 6
+  group:
+    label: 同步与数据
+---
+
+Logseq Sync（也叫 RTC——Real-Time Collaboration）让 DB 图谱在多设备间保持同步，端到端加密。也支持实时协作——多人同图编辑，Google Docs 那种。
+
+<Aside type="note" title="付费功能，邀请制">
+  Sync 是付费功能，目前邀请制。服务器是开源的，也可以[自己跑](/zh/sync/self-hosting)。
+</Aside>
+
+## 设置
+
+<Steps>
+<Step>
+  先设一次加密密码：**Settings → Encryption**，照提示走。这个密码端到端加密你的数据——Logseq 都读不了，务必存好。
+</Step>
+<Step>
+  建同步图谱：点左侧栏图谱名 → **Create db graph** → 勾选 **Use Logseq Sync?**
+</Step>
+<Step>
+  其他设备登录同一账号，图谱自动出现。同一账号，同一加密密码。
+</Step>
+</Steps>
+
+## 注意
+
+- E2EE 是真的：内容离开设备前就加密。密码丢了数据救不回来——这正是设计意图。
+- 本地图谱和同步图谱可以并存；同步按图谱开关。
+- 自托管同步地址填 **Settings → Advanced → Sync Server URL**。见[自托管](/zh/sync/self-hosting)。
+- 手动搬图谱（非实时同步）看[备份与导出](/zh/sync/backup-export)。

@@ -1,0 +1,58 @@
+---
+title: 从文件版迁移到 DB
+description: 用内置导入器把 OG markdown 图谱转换成 DB 图谱。
+sidebar:
+  order: 3
+---
+
+导入器读取你的 markdown 文件，构建一个全新的 DB 图谱。原来的文件夹原样保留——导入创建的是*新*图谱，随便试，零风险。
+
+## 导入器做了什么
+
+- **Markdown 文件** → 页面和块，保留大纲结构。
+- **任务** → 真正的 `#Task` 节点。旧关键字映射到状态：`LATER`→`Todo`，`IN-PROGRESS`/`NOW`→`Doing`，`WAIT`/`WAITING`→`Backlog`。
+- **标签** → 真正的[标签](/zh/concepts/tags)，可以全部导入，也可以只导入指定的子集。标签上原有的属性会自动挂到标签上。
+- **属性** → 类型化[属性](/zh/concepts/properties)。类型自动检测（Number、Date、Checkbox、Url、Node、Text），有歧义的值退回 Text。
+- **资源文件** → 复制进去并重命名为唯一 ID。Zotero 的 PDF 也能导入（桌面版）。
+
+## 开始导入
+
+<Steps>
+<Step>
+  在 Logseq 里打开你的文件版图谱，点右上角的**三点菜单**，选 **Import**。
+</Step>
+<Step>
+  点 **File to DB graph**。图谱大的话，对话框要等多一会儿。
+</Step>
+<Step>
+  给新图谱起个名字，选好下面的选项，开始跑。
+</Step>
+</Steps>
+
+## 值得想想的选项
+
+- **Import all tags** —— 最省事。每个 `#tag` 都变成真正的 DB 标签，习惯不变，还能享受标签属性。
+- **Import specific tags** —— 只转换列出的标签。其余的都变成页面，行内的 `#tag` 变成 `[[页面引用]]`。如果你的标签大多是松散的关键词，选这个。
+- **Import additional tags from property values** —— 把某个属性的值变成标签（比如 `type: book` → `#book`）。
+- **Import tag parents from property values** —— 把某个属性的值变成[父标签](/zh/concepts/tags)（比如 `parent: media` 让 `#media` 成为父级）。
+- **Remove inline tags** —— 从块正文里去掉 `#tag` 文本，因为 DB 版把标签作为节点属性显示在块右侧。
+- **Extract inline code snippets as child blocks** —— 一个块只能容纳一个 `#Code`，勾选后多余的代码片段会被拆成子块。
+
+<Aside type="tip">
+  拿不准就先 Import all tags。之后随时可以右键把某个标签转回页面（三点菜单 → **Convert Tag to Page**）。
+</Aside>
+
+## 已知限制
+
+只有这两类内容没法完整迁移：
+
+- 一个块里有**多个** simple query、advanced query、embed 或 quote 时，只保留第一个——DB 每块只允许一个。
+- 一个块混有这些功能（query + embed 等）时，只保留一种。
+
+其他内容要么完整导入，要么导入器会明确告诉你哪里没做好。
+
+## 导入之后
+
+1. 抽查几个页面、几个任务、几个标签页。
+2. 打开 `#Task` 页面——你的旧任务都在那张表里。
+3. 有问题就删掉新图谱，换个选项重跑。源文件从来不会被改动。

@@ -1,0 +1,36 @@
+---
+title: 脚本
+description: nbb-logseq 脚本和 Build EDN——DB 图谱的可编程读写。
+sidebar:
+  order: 2
+---
+
+[nbb-logseq](https://github.com/logseq/nbb-logseq) 用 Node.js 跑 ClojureScript 脚本操作 DB 图谱——对图谱里所有内容的完整读*写*权限，不需要应用在场。上手看仓库的 [database version 部分](https://github.com/logseq/nbb-logseq#database-version)。
+
+## 闭环：脚本 → 应用里看效果
+
+桌面版可以对正在看的图谱跑脚本：
+
+<Steps>
+<Step>
+  应用里按 `Cmd-S`——图谱落到 `~/logseq/graphs/图谱名/db.sqlite`。
+</Step>
+<Step>
+  对这个 `db.sqlite` 跑 nbb-logseq 脚本。
+</Step>
+<Step>
+  回应用执行开发者命令 `Replace graph with its db.sqlite file`——应用带着脚本改动重载。
+</Step>
+</Steps>
+
+纯无头的活[CLI](/zh/cli) 通常更简单；nbb-logseq 适合动 CLI 没暴露的东西。
+
+## Build EDN
+
+Build EDN 是图谱导出/导入和脚本 API 背后的数据格式——纯 EDN（Clojure 系数据记号）描述节点、标签、属性。脚本用它*声明式地构建*图内容，而不是一个个调变更函数。
+
+- 关键字在 [`logseq.db.sqlite.build`](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/sqlite/build.cljs) 和 [`logseq.db.sqlite.export`](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/sqlite/export.cljs)——格式的权威出处。
+- 建图谱脚本示例：[`deps/db/script/create_graph.cljs`](https://github.com/logseq/logseq/blob/master/deps/db/script/create_graph.cljs) 和 [`scripts#create-graph-scripts`](https://github.com/logseq/logseq/tree/master/scripts#create-graph-scripts)。
+- [C0ntr0lledCha0s/logseq-template-graph](https://github.com/C0ntr0lledCha0s/logseq-template-graph) 是现成的 schema（标签 + 属性）EDN——导入即整套配置。
+
+用户侧命令（`Export block/page EDN data`、`Import EDN data`）见[备份与导出 → Build EDN](/zh/sync/backup-export)。

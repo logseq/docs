@@ -1,0 +1,45 @@
+---
+title: 备份与导出
+description: 自动备份、SQLite/EDN/markdown 导出，以及图谱搬迁。
+sidebar:
+  order: 2
+---
+
+图谱就是一个文件（`db.sqlite`），备份本来就简单——但 Logseq 还内置了每小时自动备份和好几种导出格式应对不同需求。
+
+## 自动备份
+
+- **桌面版**：常开。最近 12 个小时级备份在图谱目录的 `backups/` 文件夹里。
+- **Web 版**：先选一个备份目录（三点菜单 → `Export Graph` → 设置文件夹）。每小时一次，留最近 12 个，按图谱分子目录。
+
+## 导出图谱
+
+三点菜单 → `Export graph`：
+
+| 格式 | 用途 |
+| --- | --- |
+| **SQLite DB** | 完整图谱一个文件——常规备份/迁移选项。 |
+| **SQLite + assets (.zip)** | 同上，连 `assets/` 文件夹一起。 |
+| **EDN file** | 唯一能*以文本形式编辑全部数据*的格式——schema、属性、标签、块都在。适合 diff、版本控制、手改。 |
+| **Standard Markdown** | 哪都能读的纯 `.md` 文件。没有属性/时间戳——单行道，给离开 Logseq 用的。 |
+| **Public pages** | 静态站点导出，老版 publish-to-web 玩法。 |
+| **Debug transit** | 抹掉个人数据——报 bug 给 Logseq 团队时分享用。 |
+
+## 导入
+
+三点菜单 → `Import`：SQLite、SQLite+assets zip、EDN、debug transit——markdown 走 `File to DB graph`（见[迁移](/zh/migrate)）。
+
+## Build EDN——分享图谱的一角
+
+Build EDN 是 Logseq 的图数据文本格式。除了整图导出，还能切局部：
+
+- `Export block EDN data` / `Export page EDN data`——把块/页复制到剪贴板；导块覆盖，导页追加。
+- `Export graph's tags and properties EDN data`——只分享*schema*（标签 + 属性配置）不带内容。别人可以整套复刻你的工作流。
+- `Import EDN data`——把上面任何一种贴回来。`Cmd-Z` 可撤销坏导入。
+- 任何[视图](/zh/features/views)的三点菜单能把可见节点导成 EDN——先筛后导。
+
+开发者：Build EDN 是带 `logseq.db.sqlite.build`/`logseq.db.sqlite.export` 关键字的 EDN——程序化用法见[脚本页](/zh/cli/scripting)。和 CLI 的 `-o edn` 输出参数无关。
+
+<Aside type="tip">
+  双保险：应用的小时级备份开着，*再*让常规文件备份（Time Machine、restic、随便什么）覆盖图谱目录。`db.sqlite` 就是个文件——按文件的方式对待它。
+</Aside>

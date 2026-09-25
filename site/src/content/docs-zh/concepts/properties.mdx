@@ -1,0 +1,67 @@
+---
+title: 属性
+description: 任意节点上的类型化字段——Text、Number、Date、Checkbox、Url、Node。
+sidebar:
+  order: 5
+---
+
+属性给任何块或页面挂上类型化字段。把它想成列：属性一旦存在，每个带它的节点都变成一行，可以排序、筛选、分组、查询。
+
+## 添加属性
+
+1. 块里按 `Cmd-p`（Linux/Windows 是 `Ctrl-Alt-p`），或输入 `/prop` 回车。
+2. 起名，选类型——拿不准就 `Text`。
+3. 填值。
+
+属性本身也是一个页面，属性页上可以写 `Description` 和其他配置。
+
+## 属性类型
+
+| 类型 | 存什么 | 说明 |
+| --- | --- | --- |
+| `Text` | 任意文本 | 默认。表现得像块——里面可以用 `[[链接]]`、可以有子块。 |
+| `Number` | 数字含小数 | 存真数字——排序正确、可以参与比较。 |
+| `Date` | 日期 | 日期选择器；链接到对应 journal 日。支持[重复节点](/zh/features/tasks)。 |
+| `DateTime` | 日期 + 时间 | 同上，带时钟。 |
+| `Checkbox` | 真/假 | 布尔勾选框。 |
+| `Url` | 一个 URL | 纯链接，无引用无子块。 |
+| `Node` | 另一个节点 | 可限定标签——见下。 |
+
+**Node 型属性**是最有意思的一种：创建时可以要求值必须带某个标签。`author` 限定 `#Person` 就只接受人。子标签也算——`#Actor` 继承 `#Person` 的话，演员同样合法。
+
+## 配置属性
+
+在任何出现属性名的地方点它打开配置下拉（`Cmd`-点击则打开属性页）：
+
+- **Property type**——属性投入使用后不可改。
+- **Default value**——添加属性时预填（Text、Number、Checkbox）。
+- **Specify node tags**——Node 型属性的标签限定。
+- **Available choices**——把取值限定成列表（仅 Text、Url、Number）。
+- **Checkbox state mapping**——选项型属性：哪个选项算勾选、哪个算未勾。解锁 `Show as checkbox on ...`。
+- **Multiple values**——允许值列表（Checkbox/DateTime 不支持）。
+- **UI position**——值显示在哪：块下方、开头或结尾。
+- **Hide by default**——节点上不显示，zoom 进去或在侧栏打开才可见。
+- **Hide empty value**——没值之前不显示。
+
+## 属性选项
+
+选项把属性变成下拉菜单——每项一个值，可选描述和图标，可拖拽排序。内置 `Status` 属性就是标准例子。
+
+给已投入使用的属性转选项：点 `Add choice`，Logseq 会主动提出把现有值转成选项。删除选项会从所有用它的块上抹掉——小心。
+
+选项还能**按标签定制**（见[标签](/zh/concepts/tags)）：同一个属性，不同标签不同的选项列表。
+
+## 顺手快捷键
+
+- `Cmd-p` / `Ctrl-Alt-p`——给当前节点或选中节点加/改属性。
+- `Cmd-j`——纯键盘编辑属性；敲气泡里的字母。
+- `p a`——切换显示节点的全部属性。
+- `p t`——给节点加/删标签。
+- `p i` / `p r`——给节点挑图标 / emoji。
+- 方向键在跨节点的属性值之间移动。
+
+每个快捷键都有对应的搜索命令——`Settings > Keymap` 里能查到按键对应的命令名。
+
+## 内置属性
+
+`Status`、`Deadline`、`Scheduled` 这类属性随 Logseq 自带，驱动核心功能。它们是真实的页面——搜索能找到——图标、UI position、可见性、选项都能改。其余部分锁死，因为改掉会弄坏依赖它们的功能。

@@ -1,0 +1,47 @@
+---
+title: Tasks
+description: Blocks tagged #Task with Status, Priority, Deadline, and Scheduled — fully customizable.
+sidebar:
+  order: 1
+---
+
+A task is just a block tagged `#Task`. Out of the box it gets four properties — `Status`, `Priority`, `Deadline`, `Scheduled` — and since they're ordinary [properties](/concepts/properties), nearly everything about tasks is customizable.
+
+## Make a task
+
+- Type `/todo` (or any status choice: `/doing`, `/done`, `/backlog`…)
+- Cycle statuses with `Cmd-Enter` — adds the tag automatically.
+- End a block with `#Task`.
+- Add a row directly in the Task table on the `#Task` page.
+
+## Set properties from the keyboard
+
+- `p s` — Status
+- `p p` — Priority
+- `p d` — Deadline
+- `/Deadline`, `/Scheduled` — pick dates inline
+
+## Statuses
+
+Built-in choices: `Backlog`, `Todo`, `Doing`, `In Review`, `Done`, `Canceled`.
+
+The old `NOW/LATER` workflow merged into `TODO/DOING`. Status keeps a history per block — click the spent-time label (`9s`) on the right of a task to see when it changed; it's also queryable in advanced queries.
+
+Customize the choices on the `Status` property page: rename them, change icons, add new ones. (Built-ins can't be deleted.)
+
+## Repeating tasks
+
+On any task with `Deadline` or `Scheduled`:
+
+1. Open the date popup and check `Repeat task`.
+2. Pick an interval — `Day` to `Year` for dates, `Minute` to `Year` for datetimes.
+
+When `Status` flips to `Done`, it resets to `Todo` and the date jumps forward by the interval. Finish Friday's report → next Deadline appears automatically.
+
+You can build the same behavior on your own properties: a `Date`/`DateTime` property + a choice property with `Checkbox state mapping` gives you custom repeating nodes — habit trackers, review cycles, anything.
+
+## Customize tasks further
+
+- Add properties to `#Task` itself (on its tag page) — every task gets them.
+- Make your own task type: create a tag, set its `Extends` (parent) to `#Task`, add its own properties. `#ProjectTask` with a `project` property is a real task plus your field.
+- Per-tag status choices: [tag-scoped property choices](/concepts/properties) let `#MyTask` show different statuses without touching built-ins.

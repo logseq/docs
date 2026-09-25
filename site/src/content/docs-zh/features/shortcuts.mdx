@@ -1,0 +1,45 @@
+---
+title: 搜索与快捷键
+description: Cmd-K 搜索、命令面板，以及把它们串起来的键盘体系。
+sidebar:
+  order: 8
+---
+
+两个弹窗覆盖几乎所有操作：
+
+- **`Cmd-K`**——查找并跳到节点。也能行内建页面（`名字`）和打标的页面（`名字 #标签`）。
+- **`Cmd-Shift-P`**（Windows `Ctrl-Shift-P`）——按名字执行任何命令。
+
+每个快捷键都对应命令面板里的一条命令。忘了按键，就把想做的事打出来。
+
+## 常用搜索命令
+
+- `Quick add`——不打断上下文随手记；`Cmd-E` 送进今天的 journal。
+- `Customize appearance`——主题与外观调整。
+- `Move blocks to`——把选中节点移到别的页面。
+- `Validate current graph` / `Garbage collect graph`——图谱维护命令。
+- [属性快捷键](/zh/concepts/properties)（`p s`、`p t`、`p i`…）都有对应命令。
+- Build EDN 的[导出/导入命令](/zh/sync/backup-export)也在这。
+
+## 按键查命令
+
+`Settings > Keymap` 列出全部绑定。点按键筛选，按下组合键——显示对应命令。两个方向都好使："`p s` 是干嘛的？"和"这个功能有快捷键吗？"
+
+## 日常一套
+
+| 按键 | 作用 |
+| --- | --- |
+| `Cmd-K` | 搜索 / 跳转节点 |
+| `Cmd-Shift-P` | 命令面板 |
+| `Cmd-Enter` | 循环任务状态 |
+| `Cmd-p` | 加属性 |
+| `Cmd-j` | 键盘编辑属性 |
+| `p s` / `p p` / `p d` | 任务状态 / 优先级 / deadline |
+| `p t` | 加/删标签 |
+| `p a` | 切换显示节点全部属性 |
+| `p i` / `p r` | 节点图标 / emoji |
+| `g n` / `g p` | 后一天 / 前一天 journal |
+| `Cmd-Z` / `Cmd-Shift-Z` | 撤销 / 重做 |
+| `Esc` | 关弹窗、批量操作条 |
+
+Linux/Windows 把 `Cmd` 换成 `Ctrl`（`Cmd-p` → `Ctrl-Alt-p`，`Cmd-K` → `Ctrl-K`）。

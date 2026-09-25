@@ -1,0 +1,36 @@
+---
+title: Scripting
+description: nbb-logseq scripts and Build EDN — programmable read/write access to DB graphs.
+sidebar:
+  order: 2
+---
+
+[nbb-logseq](https://github.com/logseq/nbb-logseq) runs ClojureScript scripts against DB graphs via Node.js — full read *and write* access to everything in a graph, no app required. See the repo's [database version section](https://github.com/logseq/nbb-logseq#database-version) to get started.
+
+## The loop: script → see it in the app
+
+On desktop you can script against a graph you're looking at:
+
+<Steps>
+<Step>
+  Press `Cmd-S` in the app — this persists the graph to `~/logseq/graphs/GRAPH-NAME/db.sqlite`.
+</Step>
+<Step>
+  Run your nbb-logseq script against that `db.sqlite`.
+</Step>
+<Step>
+  Back in the app, run the dev command `Replace graph with its db.sqlite file` — the app reloads with your scripted changes.
+</Step>
+</Steps>
+
+For headless work the [CLI](/cli) is usually simpler; nbb-logseq is for when you need to touch things the CLI doesn't expose.
+
+## Build EDN
+
+Build EDN is the data format behind graph export/import and the scripting APIs — plain EDN (Clojure-flavored data notation) describing nodes, tags, and properties. It lets scripts *construct* graph content declaratively instead of calling mutation functions one by one.
+
+- Keywords live in [`logseq.db.sqlite.build`](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/sqlite/build.cljs) and [`logseq.db.sqlite.export`](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/sqlite/export.cljs) — the source of truth for the format.
+- Example graph-creation scripts: [`deps/db/script/create_graph.cljs`](https://github.com/logseq/logseq/blob/master/deps/db/script/create_graph.cljs) and [`scripts#create-graph-scripts`](https://github.com/logseq/logseq/tree/master/scripts#create-graph-scripts).
+- [C0ntr0lledCha0s/logseq-template-graph](https://github.com/C0ntr0lledCha0s/logseq-template-graph) is a ready-made schema (tags + properties) distributed as EDN — import it to clone the setup.
+
+See [Backup & export → Build EDN](/sync/backup-export) for the user-facing commands (`Export block/page EDN data`, `Import EDN data`).

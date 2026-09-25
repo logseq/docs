@@ -1,0 +1,55 @@
+---
+title: Views & tables
+description: See any group of nodes as a table, list, or gallery — with sort, filter, group-by, and inline editing.
+sidebar:
+  order: 3
+---
+
+A view renders a group of nodes — a tag's members, a query result, linked references, your pages — in one of three layouts: **Table** (spreadsheet), **List** (outline grouped by page), or **Gallery** (tiles, great for assets).
+
+Every tag page, property page, query, Pages view, and references section uses the same view machinery, so once you learn the header, you know them all.
+
+## The view header
+
+- **View name** — rename or delete the view.
+- **`+` New view** — multiple views over the same nodes, each with its own filters/sorts.
+- **Filter** — conditions on any property. AND by default; switch to `Match any filter` for OR. Operators fit the type (`is`/`is not`, `<`/`>`/`between`, etc.).
+- **Search** — live search inside the view (the one thing that doesn't persist).
+- **View type** — switch between Table, List, Gallery.
+- **Three-dots menu** — group-by, export, and view-type-specific actions.
+- **`+` New node** — create a node in the view; on a tag page it's auto-tagged.
+
+Everything except Search persists between visits.
+
+## Group by
+
+From the three-dots menu, group nodes by any property value — statuses into columns, books by author. Groups stack vertically and share the view's other settings. Sort groups by journal date, page name, or created date; ascending or descending.
+
+DateTime properties can't be grouped.
+
+## Table specifics
+
+Tables work like spreadsheets:
+
+- Click a column header to sort; multiple sorts allowed. Remove sorts from the header icon.
+- Show/hide columns from the three-dots menu.
+- Pin, drag, and resize columns.
+- Every cell is editable inline — `Enter` to edit, arrows to move, `Esc` to stop.
+- Special always-available columns: `Name`, `Created At`, `Updated At`.
+- `+ New` at the bottom creates a node in place.
+
+## Bulk actions
+
+Select rows (click, or `Shift` + arrows) and a bulk-action header appears:
+
+- **Tag** — add/update/remove tags across the selection
+- **Copy** — copy titles
+- **Set Property** / **Unset Property** — mass-edit fields
+- **Delete**
+- **Three-dots** — the rest of the block menu
+
+Bulk actions work on outliner selections too — select a run of blocks and the same header shows up.
+
+## Export what you see
+
+`Export EDN` in the three-dots menu copies the *currently visible* nodes — filtered and searched — to the clipboard as Build EDN. A filtered view is the quickest way to package a slice of your graph for someone else.

@@ -1,0 +1,98 @@
+---
+title: 自托管同步
+description: 自己跑 Logseq 同步服务器——源码、Docker，以及客户端接入。
+sidebar:
+  order: 1
+---
+
+整个同步后端就在开源仓库里（[`deps/db-sync`](https://github.com/logseq/logseq/tree/master/deps/db-sync)），包含一个 **Node.js adapter**——让托管服务同一份代码跑在普通 Node 进程上。以下步骤全部对照当前代码树实测过。
+
+<Aside type="note" title="登录仍走 Logseq 账号">
+  你的*数据*完全在自己的服务器上——但登录仍经过 Logseq 的 Cognito，客户端要用 Logseq 账号登录。客户端暂时还不支持完全独立的认证。
+</Aside>
+
+## 源码跑同步服务器
+
+**要求**：Node.js 24、pnpm、Java + Clojure CLI（构建用）、opam/OCaml 环境——也就是仓库自己的构建环境。不想构建就直接跳到下面的 [Docker](#docker-镜像)。
+
+<Steps>
+<Step>
+
+克隆装依赖：
+
+```bash
+git clone https://github.com/logseq/logseq.git
+cd logseq
+pnpm install
+```
+
+</Step>
+<Step>
+
+构建 adapter：
+
+```bash
+cd deps/db-sync
+pnpm build:node-adapter        # → worker/dist/node-adapter.js
+```
+
+</Step>
+<Step>
+
+跑起来：
+
+```bash
+mkdir -p /var/lib/logseq-sync
+DB_SYNC_PORT=8787 \
+DB_SYNC_DATA_DIR=/var/lib/logseq-sync \
+COGNITO_ISSUER=https://cognito-idp.us-east-1.amazonaws.com/us-east-1_dtagLnju8 \
+COGNITO_CLIENT_ID=69cs1lgme7p8kbgld8n5kseii6 \
+COGNITO_JWKS_URL=https://cognito-idp.us-east-1.amazonaws.com/us-east-1_dtagLnju8/.well-known/jwks.json \
+node worker/dist/node-adapter.js
+```
+
+</Step>
+</Steps>
+
+验证活着：
+
+```bash
+curl http://localhost:8787/health    # → {"ok":true}
+curl http://localhost:8787/graphs    # → 401（需要已登录客户端）
+```
+
+### 环境变量
+
+| 变量 | 用途 |
+| --- | --- |
+| `DB_SYNC_PORT` | 监听端口 |
+| `DB_SYNC_DATA_DIR` | sqlite 图谱数据 + 资产的存放目录 |
+| `DB_SYNC_BASE_URL` | 外部 URL，生成资产链接时用 |
+| `COGNITO_ISSUER` / `COGNITO_CLIENT_ID` / `COGNITO_JWKS_URL` | 认证——指向 Logseq Cognito（值如上） |
+| `DB_SYNC_STORAGE_DRIVER` / `DB_SYNC_ASSETS_DRIVER` | 后端：`sqlite` / `filesystem`（默认） |
+| `DB_SYNC_ADMIN_TOKEN` | 开启管理员端点（如删图谱） |
+| `SENTRY_*` | 可选错误上报 |
+
+## 客户端接入
+
+**应用里**：`Settings → Advanced → Sync Server URL` → `https://你的服务器`（或 `http://localhost:8787`）。然后照常建同步图谱——它同步到你的服务器。
+
+**CLI 里**（验证和自动化的好工具）：
+
+```bash
+logseq login --username you@example.com --password '•••'
+logseq sync config set http-base http://localhost:8787
+logseq sync upload -g my-graph --e2ee-password 'a-secret'
+logseq sync remote-graphs -g my-graph     # 看到刚上传的图谱
+logseq sync download -g my-graph --e2ee-password 'a-secret'   # 另一台机器
+```
+
+最后这段就是完整的端到端验证：把加密快照传到*你的*服务器，再在另一台机器下载回来。我们在本地 adapter 上实测过——upload、`remote-graphs`、download，所有块原样回来。
+
+## Docker 镜像
+
+社区项目 [yshalsager/logseq-selfhost](https://github.com/yshalsager/logseq-selfhost) 发布了现成镜像：sync、publish、web 客户端三件（在 GHCR 上）。不想折腾仓库工具链的话这是最快的路。那边的[自托管指南](https://github.com/yshalsager/logseq-selfhost)讲了 compose 配置；[adri99.net 的教程](https://adri99.net/self-hosting-logseq-sync-locally/)在此基础上写了本地安装。
+
+## Publish 服务器
+
+publish 后端是 [`deps/publish`](https://github.com/logseq/logseq/tree/master/deps/publish) 里的 Cloudflare worker。自托管需要（免费的）Cloudflare 账号和 `wrangler`；社区镜像也打包了它。然后设 `Settings → Advanced → Publish Server URL`。
