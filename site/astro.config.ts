@@ -48,7 +48,9 @@ export default defineConfig({
       // ready to enforce them — see `nimbus-docs lint --help`.
       rules: {
         "nimbus/frontmatter-shape": "error",
-        "nimbus/internal-link": "error",
+        // Downloadable assets live in public/ — they're not page routes,
+        // so tell the link checker not to expect them there.
+        "nimbus/internal-link": ["error", { ignore: ["/demo-graphs/*"] }],
       },
       // Wrap wide tables so they scroll instead of overflowing the page
       // (styled by `.nb-table-scroll` in src/styles/prose.css).
