@@ -19,8 +19,8 @@
 		- [[How to sync your Logseq graph across devices]]
 - ## Miscellaneous
 	- [Roadmap](https://logseq.io/p/NX4mc_ggEV)
-	- [[DB changelog]]
-	- [[OG changelog]]
+	- [[Changelog]]
+	- [[OG version changelog]]
 	- [[Videos]]
 	- [[FAQ]]
 	- [[Glossary]]

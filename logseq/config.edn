@@ -46,6 +46,6 @@
  :ui/show-brackets? true
  :feature/enable-encryption? false
  :markdown/version 2
- :favorites ["DB changelog" "og changelog" "Getting started" "Videos"]
+ :favorites ["changelog" "og version changelog" "db changelog" "og changelog" "getting started" "videos"]
  :file/name-format :triple-lowbar
  :feature/enable-whiteboards? true}
