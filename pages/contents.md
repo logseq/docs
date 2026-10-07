@@ -1,4 +1,4 @@
-- ## 🌟[[New to Logseq?]]
+## 🌟[[New to Logseq?]]
 	- ### Basics
 		- [[Start here]]
 		- [[How to create a new graph]]
@@ -18,8 +18,9 @@
 		- [[How to work with the right-hand sidebar]]
 		- [[How to sync your Logseq graph across devices]]
 - ## Miscellaneous
-	- [Roadmap](https://trello.com/b/8txSM12G/logseq-roadmap)
-	- [[Changelog]]
+	- [Roadmap](https://logseq.io/p/NX4mc_ggEV)
+	- [[DB changelog]]
+	- [[OG changelog]]
 	- [[Videos]]
 	- [[FAQ]]
 	- [[Glossary]]
