@@ -441,7 +441,7 @@ The following are TODOs for the MCP server:
 
 ## Sync
 
-NOTE: This feature is a paid feature that is currently _invite only_. This feature can also be self hosted!
+NOTE: This feature is a paid feature that is currently avaialable to all OpenCollective Sponsors ($15/month) and Backers ($5/month). This feature can also be self hosted!
 
 Logseq Sync syncs DB graphs between devices. It is also referred to as RTC (Real Time Collaboration) since this sync supports collaboration between users in real time like Google Docs! Some workflows that are specific to Sync:
 
