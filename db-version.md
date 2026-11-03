@@ -449,6 +449,10 @@ Logseq Sync syncs DB graphs between devices. It is also referred to as RTC (Real
   * On a desktop or browser client, do a one-time setup of setting up an encryption password. Go to `Settings > Encryption` and follow the instructions.
   * Click on the left sidebar graph name to open a menu and choose the `Create db graph` menu item.
   * Check 'Use Logseq Sync?'
+* To sync an existing local DB graph, use the [CLI](#cli) with the encryption password from `Settings > Encryption`:
+  * `logseq sync upload --graph "My graph" --e2ee-password "..."` uploads it and prints its `graph-id`.
+  * `logseq sync start --graph "My graph" --e2ee-password "..."` keeps it in sync. `logseq sync status --graph "My graph"` shows progress.
+  * Tip: in bash, `read -rs P` and then `--e2ee-password "$P"` keeps the password out of shell history.
 * To configure a self host sync url, go to `Settings > Advanced > Sync Server URL`. For more on self hosting, see guides in [Additional Links](#additional-links).
 
 ## Publish
