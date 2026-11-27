@@ -1,3 +1,24 @@
+## Beta 2.0.3
+id:: 08f19461-830b-4e6d-9a97-7ca21ba16c22
+Desktop downloads: <https://github.com/logseq/logseq/releases>
+	- [[Features]]
+		- **Preview imports before creating a DB graph.** Import a Logseq file graph or a plain Markdown folder. Review the expected page, journal, and block counts before confirming, and download a report of skipped items after the import.
+		- **Use graph-scoped personal access tokens.** Create tokens in Settings for the Logseq REST API, including for end-to-end encrypted graphs.
+		- **Sync larger attachments.** DB graph sync supports assets up to 200 MiB.
+	- [[Thanks]]
+		- **Thank you to everyone who contributed to this release.** Your fixes, translations, and reviews helped make this beta better. Contributors include [@btw04](https://github.com/btw04), [@DandelionSprout](https://github.com/DandelionSprout), [@Durbatuluk1701](https://github.com/Durbatuluk1701), [@ivan-danilov](https://github.com/ivan-danilov), [@LZong-tw](https://github.com/LZong-tw), [@pimarti](https://github.com/pimarti), [@PlunderStruck](https://github.com/PlunderStruck), [@RaphaelFakhri](https://github.com/RaphaelFakhri), [@Sanilas-ai](https://github.com/Sanilas-ai), [@SiddheshP2709](https://github.com/SiddheshP2709), [@VictorVow](https://github.com/VictorVow), [@YusufBeratZengin](https://github.com/YusufBeratZengin), and [@yuxi-liu-wired](https://github.com/yuxi-liu-wired).
+		- **Thank you to everyone testing the DB beta.** Your bug reports, reproduction steps, feedback, and follow-up testing helped us improve Logseq for real-world graphs and workflows.
+	- [[Enhancement]]
+		- **Find pages and commands faster.** Search ranks matching page-title prefixes more reliably. Slash-command search matches command groups, and Tab completes the selected command.
+		- **Update the Markdown mirror more efficiently.** Editing a block updates the affected parts of the page when writing the desktop Markdown mirror.
+	- [[Fixed issues]]
+		- **Open local graphs, links, and assets.** Add an existing local DB graph from the desktop app, open graph links when Logseq starts, and open or preview local file links. Clicking a PDF annotation reference opens the PDF at the highlight.
+		- **Keep edits and block structure intact.** Fix rapid paste and Backspace cases, preserve selected blocks' order through EDN export and import, and keep descendants attached when converting a page to a block.
+		- **Keep task dates and journal links consistent.** Clearing a date with the trash button keeps the task's repeat rule intact, and custom journal date formats preserve journal identity.
+		- **Make tables and queries more reliable.** Keep table search open as data refreshes, restore horizontal scrolling in grouped and query tables, and isolate query errors so other blocks can render.
+		- **Improve graph and asset sync.** Download snapshots from the configured self-hosted server, show graph download failures, and preserve recovered references when replaying sync changes.
+		- **Fix publishing and unpublishing.** Render LaTeX on published pages, keep private blocks out of all-pages-public exports, and use the stored URL to unpublish a page.
+
 ## Beta 2.0.2 [[Oct 7th, 2026]]
 id:: 6ac64cef-100d-4cc6-add7-eb20df7aeec1
 Desktop app and Android App download link: <https://github.com/logseq/logseq/releases/tag/2.0.2>,

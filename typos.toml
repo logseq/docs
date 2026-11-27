@@ -4,4 +4,4 @@ edn = "edn"
 juxt = "juxt"
 OT = "OT"     # bsongOT
 [files]
-extend-exclude = ["Changelog*.md", "Changelog*.org"]
+extend-exclude = ["Changelog*.md", "Changelog*.org", "pages/OG version changelog.md"]
