@@ -125,4 +125,4 @@ This page describes changes for existing Logseq features on the [database versio
 
 ### API
 * All property related calls like `upsertBlockProperty` work with DB graphs. Property values can now be numbers and booleans. When called through the HTTP API (or any caller without a plugin id), properties are namespaced to `:plugin.property._test_plugin` (and classes to `:plugin.class._test_plugin`).
-* See [this test file](https://github.com/logseq/logseq/blob/master/clj-e2e/test/logseq/e2e/plugins_basic_test.clj) for using the api with DB graphs.
+* See [this test file](https://github.com/logseq/logseq/blob/master/clj-e2e/test/logseq/e2e/plugins_basic_test.clj) for using the API with DB graphs.
